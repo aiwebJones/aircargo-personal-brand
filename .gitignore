@@ -8,6 +8,9 @@ dist/
 .vscode/
 .idea/
 
+# TypeScript
+tsconfig.tsbuildinfo
+
 # OS
 .DS_Store
 Thumbs.db
