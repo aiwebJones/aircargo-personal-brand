@@ -5,10 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
+  { label: '关于我', href: '#about' },
   { label: '问题洞察', href: '#problems' },
-  { label: '方法论', href: '#methodology' },
-  { label: '能力版图', href: '#capabilities' },
-  { label: '合作对象', href: '#audience' },
+  { label: '我的方法', href: '#methodology' },
+  { label: '解决方案', href: '#services' },
+  { label: '我的思考', href: '#insights' },
   { label: '联系我', href: '#contact' },
 ]
 
@@ -55,7 +56,7 @@ export default function Navigation() {
               }}
               className="text-white font-semibold tracking-wide hover:text-amberGold transition-colors"
             >
-              神仙Jones
+              神仙货运
             </a>
 
             {/* Desktop Nav */}

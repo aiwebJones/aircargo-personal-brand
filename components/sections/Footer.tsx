@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Linkedin, Twitter } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -17,11 +17,11 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-white font-semibold">神仙Jones</p>
-            <p className="text-industrialGray/50 text-sm">国际空运系统化交付专家</p>
+            <p className="text-white font-semibold">神仙货运 · 郑坚</p>
+            <p className="text-industrialGray/50 text-sm">16年国际空运 · AI赋能物流 · 精准交付</p>
           </motion.div>
 
-          {/* Social Links */}
+          {/* WeChat Contact */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -30,22 +30,11 @@ export default function Footer() {
             className="flex items-center gap-4"
           >
             <a
-              href="https://linkedin.com/in/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-industrialGray/50 hover:text-amberGold transition-colors"
-              aria-label="LinkedIn"
+              href="weixin://dl/chat?air931"
+              className="flex items-center gap-2 px-4 py-2 border border-amberGold/30 text-amberGold text-sm hover:bg-amberGold/10 transition-colors"
             >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-industrialGray/50 hover:text-amberGold transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
+              <MessageCircle className="w-4 h-4" />
+              <span>微信：air931</span>
             </a>
           </motion.div>
 
@@ -57,7 +46,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-industrialGray/40 text-sm"
           >
-            <p>© {currentYear} All rights reserved.</p>
+            <p>&copy; {currentYear} 神仙货运 All rights reserved.</p>
           </motion.div>
         </div>
 
@@ -70,7 +59,7 @@ export default function Footer() {
           className="mt-12 pt-8 border-t border-white/5 text-center"
         >
           <p className="text-industrialGray/30 text-xs tracking-wider">
-            "我不是在卖运价，我是在把不可控的世界，变成你可以下注的系统。"
+            &ldquo;复杂的物流问题和极限运动一样，需要清晰的规划、精准的风险控制和强大的执行力。&rdquo;
           </p>
         </motion.div>
       </div>

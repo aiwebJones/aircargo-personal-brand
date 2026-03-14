@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Mail, MessageCircle } from 'lucide-react'
+import { MessageCircle, QrCode, Clock, Gift, Handshake } from 'lucide-react'
 
 interface CTASectionProps {
   onOpenContact: () => void
@@ -18,55 +18,71 @@ export default function CTASection({ onOpenContact }: CTASectionProps) {
           transition={{ duration: 0.6 }}
         >
           {/* Headline */}
-          <p className="text-amberGold text-sm tracking-widest mb-6">行动入口</p>
+          <p className="text-amberGold text-sm tracking-widest mb-6">直接与主理人交流</p>
           <h2 className="text-heading md:text-heading font-bold text-white mb-6">
-            如果你正在面对高风险决策，<br />
-            我们可以聊一次。
+            如果你正在为物流问题头疼，<br />
+            我们可以聊20分钟。
           </h2>
           <p className="text-industrialGray/60 text-lg mb-12 max-w-2xl mx-auto">
-            不是销售对话，是理性探讨。我会告诉你我的判断，你也可以验证我的思路是否匹配你的需求。
+            不是销售对话，是理性诊断。我会告诉你我的判断，你可以验证我的思路是否匹配你的需求。
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* Primary CTA - Opens Modal */}
-            <motion.button
-              onClick={onOpenContact}
+          {/* WeChat Primary CTA */}
+          <div className="max-w-md mx-auto mb-12">
+            <motion.div
+              className="p-8 border border-amberGold/30 bg-amberGold/[0.03]"
+              whileHover={{ borderColor: 'rgba(245, 166, 35, 0.5)' }}
+            >
+              <QrCode className="w-16 h-16 text-amberGold mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">微信扫码联系</h3>
+              <p className="text-industrialGray/60 text-sm mb-4">
+                直接与主理人郑坚交流，无中间环节
+              </p>
+              <p className="text-amberGold text-sm font-medium">
+                微信号：air931
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Secondary Actions */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <motion.a
+              href="weixin://dl/chat?air931"
               className="group inline-flex items-center gap-3 px-8 py-4 bg-amberGold text-deepBlue font-medium hover:bg-amberGold/90 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Mail className="w-5 h-5" />
-              <span className="tracking-wide">发起一次理性对话</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+              <MessageCircle className="w-5 h-5" />
+              <span className="tracking-wide">微信直接联系</span>
+            </motion.a>
 
-            {/* Secondary CTA */}
-            <motion.a
-              href="weixin://dl/chat?air931"
+            <motion.button
+              onClick={onOpenContact}
               className="group inline-flex items-center gap-3 px-8 py-4 border border-white/20 text-white hover:border-amberGold/50 hover:text-amberGold transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <MessageCircle className="w-5 h-5" />
-              <span className="tracking-wide">微信联系</span>
-            </motion.a>
+              <span className="tracking-wide">留下您的需求</span>
+            </motion.button>
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-16 pt-16 border-t border-white/5">
+          {/* Service Details */}
+          <div className="pt-12 border-t border-white/5">
             <div className="grid md:grid-cols-3 gap-8 text-sm text-industrialGray/50">
-              <div>
-                <p className="text-white/70 mb-2">响应时间</p>
+              <div className="flex flex-col items-center gap-2">
+                <Clock className="w-5 h-5 text-amberGold/50" />
+                <p className="text-white/70">响应时间</p>
                 <p>工作日 24 小时内</p>
               </div>
-              <div>
-                <p className="text-white/70 mb-2">首次沟通</p>
-                <p>30 分钟，免费</p>
+              <div className="flex flex-col items-center gap-2">
+                <Gift className="w-5 h-5 text-amberGold/50" />
+                <p className="text-white/70">首次诊断</p>
+                <p>20 分钟，完全免费</p>
               </div>
-              <div>
-                <p className="text-white/70 mb-2">后续合作</p>
-                <p>按项目或年度</p>
+              <div className="flex flex-col items-center gap-2">
+                <Handshake className="w-5 h-5 text-amberGold/50" />
+                <p className="text-white/70">合作方式</p>
+                <p>按项目或年度合作</p>
               </div>
             </div>
           </div>
