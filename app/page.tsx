@@ -11,6 +11,8 @@ import AboutSection from '@/components/sections/AboutSection'
 import AboutSectionEN from '@/components/sections/AboutSectionEN'
 import CasesSection from '@/components/sections/CasesSection'
 import Footer from '@/components/sections/Footer'
+import BlogSection from '@/components/BlogSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -31,6 +33,8 @@ export default function Home() {
             />
             <AboutSection onOpenContact={() => setIsContactOpen(true)} />
             <CasesSection />
+            <TestimonialsSection />
+            <BlogSection />
             <Footer />
           </>
         ) : (

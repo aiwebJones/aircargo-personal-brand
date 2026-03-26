@@ -11,13 +11,15 @@ interface NavigationProps {
 
 const navItemsZh = [
   { label: '关于', href: '#about' },
-  { label: '案例', href: '#cases' },
+  { label: '案例', href: '/cases' },
+  { label: '博客', href: '#blog' },
   { label: '联系', href: '#contact' },
 ]
 
 const navItemsEn = [
   { label: 'About', href: '#about' },
-  { label: 'Cases', href: '#cases' },
+  { label: 'Cases', href: '/cases' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ]
 
