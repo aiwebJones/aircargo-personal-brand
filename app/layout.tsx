@@ -15,10 +15,13 @@ export const metadata: Metadata = {
   authors: [{ name: '神仙货运Jones' }],
   creator: '神仙货运Jones',
   metadataBase: new URL('https://www.eascargo.com'),
+  alternates: {
+    canonical: 'https://www.eascargo.com',
+  },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://yourdomain.com',
+    url: 'https://www.eascargo.com',
     title: '神仙货运Jones | 国际空运系统化交付专家',
     description: '15+年国际航空货运实战经验，擅长复杂航线、项目货、包机、系统化运营。',
     siteName: '神仙货运Jones - 国际空运专家',
