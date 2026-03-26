@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   keywords: ['国际空运', '货代', '航空货运', '空运专家', '供应链', '项目货', '包机'],
   authors: [{ name: '神仙货运Jones' }],
   creator: '神仙货运Jones',
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://www.eascargo.com'),
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
@@ -52,6 +52,12 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className={inter.variable}>
       <head>
+        {/* Preload critical images */}
+        <link rel="preload" href="/case-17t-1.jpg" as="image" />
+        <link rel="preload" href="/case-17t-2.jpg" as="image" />
+        <link rel="preload" href="/case-17t-3.jpg" as="image" />
+        <link rel="preload" href="/case-17t-4.jpg" as="image" />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -61,7 +67,7 @@ export default function RootLayout({
               name: '神仙货运Jones',
               jobTitle: '国际空运系统化交付专家',
               description: '15+年国际航空货运实战经验',
-              url: 'https://yourdomain.com',
+              url: 'https://www.eascargo.com',
               sameAs: [
                 'https://linkedin.com/in/yourprofile',
                 'https://twitter.com/yourhandle',
