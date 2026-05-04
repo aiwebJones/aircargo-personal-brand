@@ -42,6 +42,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.eascargo.com'),
   alternates: {
     canonical: 'https://www.eascargo.com',
+    languages: {
+      zh: 'https://www.eascargo.com/',
+      en: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
+    },
   },
   openGraph: {
     type: 'website',
@@ -67,9 +71,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
 }
 
 export default function RootLayout({
@@ -94,9 +95,10 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               'name': '神仙货运Jones',
-              'alternateName': 'Shenxian Jones',
+              'alternateName': ['Shenxian Jones', 'EASCargo Jones', '神仙货运'],
               'url': 'https://www.eascargo.com',
-              'description': '15年国际航空货运专家，擅长747全货机开鼻门装载、大件空运、包机服务。中国到非洲ABJ/BKO/LUN/CKY专线。',
+              'description': 'China to Africa oversized air freight specialist. LGG/BRU Europe transit, B747F freighters, JNB/FBM/LUN/LBV Africa project cargo routing, customs document checks and inland delivery planning.',
+              'slogan': 'China to Africa oversized air freight expert',
               'address': {
                 '@type': 'PostalAddress',
                 'addressCountry': 'CN'
@@ -112,16 +114,28 @@ export default function RootLayout({
                 'https://www.linkedin.com/in/shenxian-jones',
                 'https://twitter.com/shenxianjones'
               ],
-              'areaServed': ['CN', 'CI', 'ML', 'ZM', 'GN', 'FR', 'DE'],
+              'areaServed': ['CN', 'ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI', 'FR', 'BE'],
+              'memberOf': [
+                { '@type': 'Organization', 'name': 'WCA' },
+                { '@type': 'Organization', 'name': 'IATA' },
+                { '@type': 'Organization', 'name': 'JCtrans' },
+                { '@type': 'Organization', 'name': 'OLO' },
+                { '@type': 'Organization', 'name': 'GLA' },
+                { '@type': 'Organization', 'name': 'WIFFA' }
+              ],
               'knowsAbout': [
-                '国际空运',
-                '航空货运',
-                '747全货机',
-                '开鼻门装载',
-                '大件运输',
-                '包机运营',
-                '冷链运输',
-                '非洲航线'
+                'China to Africa oversized air freight',
+                'Africa project cargo',
+                'LGG Europe transit',
+                'BRU Europe transit',
+                'B747F freighter cargo',
+                'JNB air freight',
+                'FBM Lubumbashi air freight',
+                'LUN Lusaka air freight',
+                'LBV Libreville air freight',
+                '非洲大件项目空运',
+                '矿业设备空运',
+                '非洲清关资料'
               ]
             }),
           }}
@@ -134,38 +148,40 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              'name': '神仙货运Jones',
-              'jobTitle': '国际空运系统化交付专家',
-              'description': '15年国际航空货运实战经验，擅长复杂航线、项目货、包机、系统化运营',
+              'name': 'Jones',
+              'alternateName': ['神仙', '神仙货运Jones', 'Shenxian Jones'],
+              'jobTitle': 'China to Africa Oversized Air Freight Specialist',
+              'description': 'Specialist in oversized and heavy air freight from China to Africa, including LGG/BRU Europe transit, B747F freighter planning, African hubs and customs document checks.',
               'url': 'https://www.eascargo.com',
               'knowsAbout': [
-                '国际空运',
-                '航空货运',
-                '747全货机',
-                '开鼻门装载',
-                '大件运输',
-                '包机运营',
-                '非洲航线',
-                'ET联运'
+                'Africa oversized air freight',
+                'China to Africa air cargo',
+                'B747F main deck cargo',
+                'LGG Africa gateway',
+                'African mining equipment logistics',
+                'JNB FBM LUN LBV air freight',
+                '非洲大件项目空运'
               ]
             }),
           }}
         />
 
-        {/* Service Schema: 747开鼻门装载 */}
+        {/* Service Schema: Africa oversized cargo */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Service',
-              'name': '747全货机开鼻门装载服务',
-              'description': '专业747-400F开鼻门装载方案，精确配重计算，安全装载超长设备',
+              'name': 'China to Africa oversized air freight',
+              'alternateName': '非洲大件项目空运',
+              'description': 'Oversized and heavy air freight from China to Africa via LGG/BRU Europe transit, B747F freighters, African hubs and inland delivery planning.',
               'provider': {
                 '@type': 'Organization',
-                'name': '神仙货运Jones'
+                'name': 'EASCargo Jones'
               },
-              'areaServed': ['CN', 'FR', 'DE']
+              'areaServed': ['China', 'South Africa', 'Democratic Republic of the Congo', 'Zambia', 'Gabon', 'Nigeria', 'Kenya', 'Uganda', 'Ghana', 'Ivory Coast'],
+              'serviceType': 'Oversized cargo air freight'
             }),
           }}
         />
@@ -177,13 +193,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Service',
-              'name': '中国到非洲空运专线',
-              'description': 'ABJ/BKO/LUN/CKY专线，ET联运，清关协助，门到门服务',
+              'name': 'LGG/BRU Europe transit for Africa project cargo',
+              'description': 'Europe transit planning through LGG/BRU for China-origin Africa oversized cargo, including JNB, FBM, LUN, LBV and inland points.',
               'provider': {
                 '@type': 'Organization',
-                'name': '神仙货运Jones'
+                'name': 'EASCargo Jones'
               },
-              'areaServed': ['CI', 'ML', 'ZM', 'GN']
+              'areaServed': ['ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI']
             }),
           }}
         />
