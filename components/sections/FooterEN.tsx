@@ -14,11 +14,11 @@ export default function FooterEN() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Plane className="w-6 h-6 text-amberGold" />
-              <span className="text-xl font-bold text-textPrimary">Shenxian Jones Air Freight</span>
+              <span className="text-xl font-bold text-textPrimary">EASCargo Jones</span>
             </div>
             <p className="text-textMuted mb-6 max-w-md">
-              Don&apos;t just move cargo. Solve problems. 10+ years of international air freight expertise, 
-              delivering end-to-end logistics solutions for businesses worldwide.
+              China to Africa oversized and project cargo air freight via LGG/BRU Europe transit,
+              B747F freighters, African hubs and inland delivery planning.
             </p>
             <div className="flex gap-4">
               <a href="mailto:globegsa@gmail.com" className="text-textMuted hover:text-amberGold transition-colors">
@@ -64,10 +64,10 @@ export default function FooterEN() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-borderLight flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-textMuted text-sm">
-            © {currentYear} Shenxian Jones Air Freight. All rights reserved.
+            © {currentYear} EASCargo Jones. All rights reserved.
           </p>
           <p className="text-textMuted text-sm">
-            Professional Air Freight Solutions
+            China to Africa Oversized Air Freight
           </p>
         </div>
       </div>

@@ -5,126 +5,125 @@ import { Scale, Package, Clock, CheckCircle, AlertTriangle, Wrench } from 'lucid
 
 const cases = [
   {
-    id: 'heavy-cargo-17t',
-    title: '17-Ton Single Piece Heavy Cargo',
-    client: 'Industrial Equipment Manufacturer',
-    industry: 'Manufacturing',
-    origin: 'Shanghai (PVG)',
-    destination: 'Middle East',
-    challenge: {
-      icon: AlertTriangle,
-      points: [
-        'Single piece weight: 16,730 kg (normal limit: 6,500 kg)',
-        'Dimensions: 735×135×150 cm (exceeds standard pallet size)',
-        'Airport forklift max: 1,000 kg',
-        'Security scanner limit: 1,000 kg / 150 cm width',
-        'Return goods: complex customs clearance required',
-      ]
-    },
-    solution: {
-      icon: Wrench,
-      points: [
-        'Applied for oversized/heavy-duty pallet from airline',
-        'Added 1 ton of wooden supports to distribute weight',
-        'Coordinated crane rental at airport (¥1,000+/hour)',
-        'Pre-arranged 24-hour warehouse hold to bypass security scan',
-        'Handled magnetic inspection and customs documentation',
-        'Avoided mandatory customs inspection (saved ¥10,000+)',
-      ]
-    },
-    result: {
-      icon: CheckCircle,
-      points: [
-        'Delivered on time despite 3x weight limit',
-        'Zero customs inspection fees',
-        'Client continued partnership for future shipments',
-      ]
-    },
-    stats: [
-      { label: 'Weight', value: '16.7T', unit: 'single piece' },
-      { label: 'vs Limit', value: '3x', unit: 'over standard' },
-      { label: 'Timeline', value: '48h', unit: 'total' },
-      { label: 'Cost Saved', value: '¥10K+', unit: 'customs fees' },
-    ]
-  },
-  {
-    id: 'bulk-charter',
-    title: '65-Ton Charter-Size Cargo on Scheduled Flight',
-    client: 'Automotive Parts Supplier',
-    industry: 'Automotive',
-    origin: 'Shanghai (PVG)',
-    destination: 'Europe',
-    challenge: {
-      icon: AlertTriangle,
-      points: [
-        '45 tons total shipment weight',
-        'Required same-flight departure',
-        'Peak season capacity constraints',
-        'Multiple oversized pieces',
-      ]
-    },
-    solution: {
-      icon: Wrench,
-      points: [
-        'Leveraged 20-30 ton block space agreement with EY',
-        'Coordinated multiple flights for simultaneous departure',
-        'Pre-allocated positions on A330 freighter',
-        'Managed ground handling at all airports',
-      ]
-    },
-    result: {
-      icon: CheckCircle,
-      points: [
-        '65 tons shipped on single flight (excluding charter)',
-        'Nearly 50% of A330 cargo capacity utilized',
-        'On-time delivery for production line',
-      ]
-    },
-    stats: [
-      { label: 'Total Weight', value: '45T', unit: 'shipment' },
-      { label: 'Flight Share', value: '65T', unit: 'our cargo' },
-      { label: 'Capacity Used', value: '50%', unit: 'of aircraft' },
-      { label: 'Delivery', value: '100%', unit: 'on time' },
-    ]
-  },
-  {
-    id: 'repair-return',
-    title: 'Complex Repair Return Shipment',
-    client: 'Medical Equipment Company',
-    industry: 'Healthcare',
+    id: 'lbv-long-cargo',
+    title: '8-Meter Long Cargo to LBV via LGG/BRU',
+    client: 'Industrial Equipment Trader',
+    industry: 'Oversized Project Cargo',
     origin: 'China',
-    destination: 'Germany',
+    destination: 'Libreville (LBV)',
     challenge: {
       icon: AlertTriangle,
       points: [
-        'Sea-imported goods requiring air export for repair',
-        'Mandatory customs inspection for return goods',
-        '9 different documents required',
-        'Magnetic materials requiring special clearance',
+        'Single piece length around 8 meters',
+        'No practical direct air option from China',
+        'Normal lower-deck capacity could not support the cargo',
+        'European transit handover had to match freighter departure',
+        'Destination unloading and customs documents needed early confirmation',
       ]
     },
     solution: {
       icon: Wrench,
       points: [
-        'Prepared complete documentation package',
-        'Obtained airline guarantee letter for magnetic cargo',
-        'Coordinated with customs broker for expedited clearance',
-        'Used relationships to minimize inspection probability',
+        'Designed China to LGG/BRU Europe transit route',
+        'Matched B747F nose-door freighter capability for the Africa leg',
+        'Checked cargo length, height, center of gravity and lifting method',
+        'Coordinated European warehouse transfer window',
+        'Confirmed LBV ground handling and import document requirements',
       ]
     },
     result: {
       icon: CheckCircle,
       points: [
-        'Zero customs inspection (avoided mandatory check)',
-        'Saved client ¥10,000+ in warehouse fees',
-        'Shipped within 48-hour deadline',
+        'Created an executable route when direct departure had no solution',
+        'Reduced project cost by nearly RMB 200,000 versus a global forwarder option',
+        'Gave the factory and trader a clear risk checklist before booking',
       ]
     },
     stats: [
-      { label: 'Documents', value: '9', unit: 'types' },
-      { label: 'Risk', value: '100%', unit: 'inspection rate' },
-      { label: 'Result', value: '0', unit: 'inspections' },
-      { label: 'Saved', value: '¥10K+', unit: 'fees' },
+      { label: 'Length', value: '8M', unit: 'single piece' },
+      { label: 'Aircraft', value: 'B747F', unit: 'main deck' },
+      { label: 'Transit', value: 'LGG/BRU', unit: 'Europe hub' },
+      { label: 'Saved', value: '¥200K', unit: 'approx.' },
+    ]
+  },
+  {
+    id: 'fbm-copperbelt',
+    title: 'Mining Equipment to FBM Lubumbashi',
+    client: 'Mining Supply Chain Client',
+    industry: 'Mining and Copperbelt',
+    origin: 'China',
+    destination: 'Lubumbashi (FBM)',
+    challenge: {
+      icon: AlertTriangle,
+      points: [
+        'Copperbelt destination with limited direct cargo options',
+        'Heavy spares and industrial equipment required route feasibility check',
+        'Client needed clarity on hub selection, customs and inland delivery',
+        'A false low-rate quote could cause serious production delay',
+      ]
+    },
+    solution: {
+      icon: Wrench,
+      points: [
+        'Compared Europe transit and Africa hub extension options',
+        'Checked main-deck loading limits and second-leg availability',
+        'Prepared customs document checklist before rate confirmation',
+        'Separated air freight, destination clearance and final delivery risks',
+      ]
+    },
+    result: {
+      icon: CheckCircle,
+      points: [
+        'Turned a vague inquiry into an executable shipment plan',
+        'Explained timing, cost boundaries and risk points to the importer',
+        'Helped the client avoid booking a route that could not actually load',
+      ]
+    },
+    stats: [
+      { label: 'Destination', value: 'FBM', unit: 'Copperbelt' },
+      { label: 'Cargo', value: 'Heavy', unit: 'mining spares' },
+      { label: 'Route', value: 'Hub', unit: 'extension' },
+      { label: 'Focus', value: 'Risk', unit: 'control' },
+    ]
+  },
+  {
+    id: 'jnb-southern-africa',
+    title: 'Urgent Project Cargo to JNB Johannesburg',
+    client: 'Factory and Trading Company',
+    industry: 'Southern Africa Project Cargo',
+    origin: 'China',
+    destination: 'Johannesburg (JNB)',
+    challenge: {
+      icon: AlertTriangle,
+      points: [
+        'Urgent mining and industrial spares with a fixed shutdown window',
+        'Cargo had to be judged by dimensions, weight and airport capability',
+        'Destination handover and consignee readiness affected the real timeline',
+        'Factories often only provided cargo name and total weight at inquiry stage',
+      ]
+    },
+    solution: {
+      icon: Wrench,
+      points: [
+        'Requested HS Code, packing photos, lifting points and latest arrival time',
+        'Checked whether the cargo required main-deck or freighter uplift',
+        'Confirmed customs document consistency before booking',
+        'Planned JNB arrival and onward delivery as one complete chain',
+      ]
+    },
+    result: {
+      icon: CheckCircle,
+      points: [
+        'Made the route decision understandable for factory and trader teams',
+        'Reduced back-and-forth by collecting the right inquiry data upfront',
+        'Protected the client from hidden loading, clearance and handover risks',
+      ]
+    },
+    stats: [
+      { label: 'Gateway', value: 'JNB', unit: 'South Africa' },
+      { label: 'Cargo', value: 'Urgent', unit: 'project spares' },
+      { label: 'Checklist', value: '10+', unit: 'items' },
+      { label: 'Goal', value: 'Clear', unit: 'route decision' },
     ]
   }
 ]
@@ -143,10 +142,10 @@ export default function CasesSectionEN() {
         >
           <p className="text-amberGold text-sm tracking-widest mb-4">Case Studies</p>
           <h2 className="text-heading md:text-heading font-bold text-textPrimary mb-6">
-            Problems Solved.
+            Africa Oversized Cargo Cases.
           </h2>
           <p className="text-textSecondary text-lg max-w-2xl">
-            Real challenges. Real solutions. Here&apos;s how we move what others can&apos;t.
+            Real route judgment for long, heavy and urgent China to Africa project cargo.
           </p>
         </motion.div>
 
@@ -258,15 +257,15 @@ export default function CasesSectionEN() {
           <div className="grid md:grid-cols-3 gap-6 text-textSecondary">
             <div>
               <Package className="w-5 h-5 text-amberGold mb-2" />
-              <p className="text-sm"><strong>20-30 tons</strong> block space per flight with EY, CZ, CA, QR, LH, and more across Shanghai, Zhengzhou, Guangzhou, and Hong Kong</p>
+              <p className="text-sm"><strong>China origin options</strong> from Shanghai, Zhengzhou, Guangzhou, Shenzhen, Hong Kong and other cargo gateways</p>
             </div>
             <div>
               <Clock className="w-5 h-5 text-amberGold mb-2" />
-              <p className="text-sm">Handle <strong>multiple 30+ ton shipments monthly</strong>. Up to <strong>65 tons</strong> on a single scheduled flight (not charter)</p>
+              <p className="text-sm">Route design through <strong>LGG/BRU Europe transit</strong>, B747F freighters, Africa hubs and inland delivery points</p>
             </div>
             <div>
               <CheckCircle className="w-5 h-5 text-amberGold mb-2" />
-              <p className="text-sm">Strong relationships with airlines and ground handling companies. Professional field operations team</p>
+              <p className="text-sm">WCA, IATA, JCtrans, OLO, GLA and WIFFA network support for destination agent verification</p>
             </div>
           </div>
         </motion.div>

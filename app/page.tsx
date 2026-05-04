@@ -11,8 +11,11 @@ import AfricaNetworkSection from '@/components/sections/AfricaNetworkSection'
 import AboutSection from '@/components/sections/AboutSection'
 import AboutSectionEN from '@/components/sections/AboutSectionEN'
 import CasesSection from '@/components/sections/CasesSection'
+import CasesSectionEN from '@/components/sections/CasesSectionEN'
 import Footer from '@/components/sections/Footer'
+import FooterEN from '@/components/sections/FooterEN'
 import BlogSection from '@/components/BlogSection'
+import BlogSectionEN from '@/components/BlogSectionEN'
 import TestimonialsSection from '@/components/TestimonialsSection'
 
 export default function Home() {
@@ -43,8 +46,9 @@ export default function Home() {
           <>
             <HeroSectionEN onOpenContact={() => setIsContactOpen(true)} />
             <AboutSectionEN onOpenContact={() => setIsContactOpen(true)} />
-            <CasesSection />
-            <Footer />
+            <CasesSectionEN />
+            <BlogSectionEN />
+            <FooterEN />
           </>
         )}
       </main>
