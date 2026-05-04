@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import {
   ArrowRight,
   CheckCircle2,
+  ExternalLink,
   FileCheck2,
   MapPinned,
   PackageCheck,
@@ -387,6 +388,54 @@ const process = [
   },
 ]
 
+const ownedCaseStudies = [
+  {
+    route: '中国 -> LGG/BRU -> LBV 利伯维尔',
+    title: '8米长大件，经欧洲联运到加蓬',
+    cargo: '单件约8米长，需按全货机主甲板和开鼻门装载逻辑评估。',
+    solution: '中国段先飞欧洲LGG/BRU，再衔接B747F全货机飞往LBV，重点控制欧洲中转交接、板型、开鼻门装载窗口和目的地文件。',
+    result: '对比某全球货代方案，整体成本节省接近20万人民币，同时把“国内无直飞”的路线做成可执行方案。',
+  },
+  {
+    route: '中国 -> 欧洲Hub -> 非洲项目点',
+    title: '单件14吨大件空运方案',
+    cargo: '单件重量达到14吨，普通客机腹舱、常规板型和机场地面操作都容易卡住。',
+    solution: '先核对货物尺寸、重心、吊点、包装和机场装卸能力，再匹配全货机、重板、吊装和中转路径。',
+    result: '核心价值不是报一个低价，而是先判断“能不能飞、怎么装、哪里会卡、需要哪些确认”。',
+  },
+]
+
+const publicMarketSignals = [
+  {
+    title: 'LUN 卢萨卡：工业设备和备件空运需求真实存在',
+    summary:
+      '公开案例显示，欧洲到赞比亚卢萨卡的工业设备、化工泵和备件空运，重点不是普通运价，而是包装、防震、防潮、文件和时效稳定。',
+    source: 'M9 Logistics',
+    href: 'https://m9logistics.com/airfreight-of-industrial-equipment-to-zambia-and-zimbabwe/',
+  },
+  {
+    title: 'JNB 约堡：矿业急件和南部非洲项目货有强时效压力',
+    summary:
+      '公开案例显示，约翰内斯堡相关矿业设备空运会围绕停产风险、技术装载、固定绑扎和跨办公室协同展开。',
+    source: 'Bertling Logistics',
+    href: 'https://www.bertling.com/case-studies/mining-and-construction/bertling-logistics-successfully-performed-an-air-charter-shipment-to-suriname/',
+  },
+  {
+    title: 'FBM 卢本巴希：矿区逻辑决定大件需求长期存在',
+    summary:
+      '卢本巴希背后是刚果金铜钴矿区。公开非洲项目货资料也能看到，矿山、工程设备、发电机、变压器等重货需要专门的项目物流设计。',
+    source: 'Africa Shipping Logistics',
+    href: 'https://www.africashippinglogistics.com/project-cargo/',
+  },
+  {
+    title: '非洲矿业项目：重货不一定都走空运，但路线判断方法相同',
+    summary:
+      '公开报道中，非洲矿业项目曾涉及数百吨重型设备的多式联运。对空运页面来说，重点是告诉客户：超限货必须先做可执行性判断。',
+    source: 'Air Freight News',
+    href: 'https://airfreight.news/articles/full/airland-logistics-manages-transport-of-heavy-equipment-for-african-mining-project',
+  },
+]
+
 export default function LggAfricaGatewayZhPage() {
   return (
     <main className="min-h-screen bg-white text-textPrimary">
@@ -430,6 +479,12 @@ export default function LggAfricaGatewayZhPage() {
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-amberGold hover:text-amberGold"
               >
                 查看覆盖点
+              </a>
+              <a
+                href="#cases"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-amberGold hover:text-amberGold"
+              >
+                查看大件案例
               </a>
             </div>
           </div>
@@ -518,6 +573,72 @@ export default function LggAfricaGatewayZhPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" className="py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">大件案例</p>
+            <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+              客户最想看的不是口号，是这种货到底有没有做过。
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-textSecondary">
+              下面分两类：前面是我们实际操作过的非洲大件路线，后面是公开资料里的市场场景参考。
+              自有案例证明操作能力，公开案例说明JNB、FBM、LUN这类非洲工业和矿业目的地确实有长期大件需求。
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {ownedCaseStudies.map((item) => (
+              <div key={item.title} className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
+                <div className="mb-3 inline-flex rounded-full bg-amberGold/10 px-3 py-1 text-sm font-semibold text-amberGold">
+                  自有操作案例
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-slate-950">{item.title}</h3>
+                <p className="mb-5 text-sm font-semibold text-textSecondary">{item.route}</p>
+                <div className="space-y-4 text-sm leading-7 text-textSecondary">
+                  <div>
+                    <span className="font-semibold text-slate-950">货物情况：</span>
+                    {item.cargo}
+                  </div>
+                  <div>
+                    <span className="font-semibold text-slate-950">方案设计：</span>
+                    {item.solution}
+                  </div>
+                  <div>
+                    <span className="font-semibold text-slate-950">结果：</span>
+                    {item.result}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-lg bg-slate-950 p-6 text-white">
+            <div className="mb-5 flex items-center gap-3">
+              <PackageCheck className="h-6 w-6 text-amberGold" />
+              <h3 className="text-xl font-semibold">公开市场场景参考</h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {publicMarketSignals.map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-white/10 bg-white/5 p-5 transition hover:border-amberGold/70"
+                >
+                  <div className="mb-2 flex items-start justify-between gap-3">
+                    <h4 className="font-semibold leading-6 text-white">{item.title}</h4>
+                    <ExternalLink className="mt-1 h-4 w-4 flex-shrink-0 text-amberGold" />
+                  </div>
+                  <p className="text-sm leading-6 text-slate-300">{item.summary}</p>
+                  <div className="mt-4 text-sm font-semibold text-amberGold">{item.source}</div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
