@@ -61,7 +61,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-textPrimary font-semibold">神仙货运 Jones</p>
-            <p className="text-textMuted text-sm">16年物流老兵 · AI实战派 · 极限运动爱好者</p>
+            <p className="text-textMuted text-sm">16年空运实操 · 大件项目货 · 非洲欧洲中转</p>
           </motion.div>
 
           {/* Back to top */}
@@ -96,7 +96,7 @@ export default function Footer() {
           className="mt-12 pt-8 border-t border-borderLight text-center"
         >
           <p className="text-textMuted text-sm tracking-wide">
-            "告别物流盲区：用16年经验+AI工具，为您的跨境货物提供清晰、可控、高性价比的空运方案"
+            "专注中国到非洲大件项目货：先判断能不能飞，再把欧洲中转、全货机和非洲二程路线做清楚"
           </p>
         </motion.div>
       </div>
