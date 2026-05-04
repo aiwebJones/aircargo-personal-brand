@@ -131,6 +131,129 @@ const cases = [
       { label: '实际查验', value: '0', unit: '次' },
       { label: '节省', value: '¥10K+', unit: '费用' },
     ]
+  },
+  {
+    id: 'lbv-8m-via-europe',
+    title: '8米长大件！经LGG/BRU联运到LBV',
+    client: '某非洲项目客户',
+    industry: '非洲项目货',
+    origin: '中国',
+    destination: '加蓬 LBV',
+    images: [],
+    challenge: {
+      icon: AlertTriangle,
+      points: [
+        '单件约8米长，普通腹舱无法承接',
+        '国内直飞非洲无可执行方案',
+        '需要B747F主甲板和开鼻门逻辑判断',
+        '欧洲中转交接、板型和目的地文件都要提前确认',
+      ]
+    },
+    solution: {
+      icon: Wrench,
+      points: [
+        '中国段先飞LGG/BRU欧洲Hub',
+        '欧洲段衔接B747F全货机飞LBV',
+        '提前核对包装、重心、吊点和装卸窗口',
+        '把中转交接和目的地清关资料列成操作清单',
+      ]
+    },
+    result: {
+      icon: CheckCircle,
+      points: [
+        '把“国内无直飞”的货做成可执行路线',
+        '对比某全球货代方案节省接近20万人民币',
+        '客户看清每个节点的风险和成本逻辑',
+      ]
+    },
+    stats: [
+      { label: '货长', value: '8M', unit: '单件' },
+      { label: '路径', value: 'LGG/BRU', unit: '欧洲中转' },
+      { label: '机型', value: 'B747F', unit: '全货机' },
+      { label: '节省', value: '¥200K', unit: '接近' },
+    ]
+  },
+  {
+    id: '14t-africa-heavy-piece',
+    title: '单件14吨！非洲大件项目货路线预判',
+    client: '某工程设备客户',
+    industry: '工程设备',
+    origin: '中国',
+    destination: '非洲项目点',
+    images: [],
+    challenge: {
+      icon: AlertTriangle,
+      points: [
+        '单件重量达到14吨，普通板型和机场设备容易卡住',
+        '目的地可能不是主机场，需要非洲Hub延伸',
+        '客户前期只拿到“没方案”反馈',
+        '报价前必须先确认能不能装、能不能落、能不能卸',
+      ]
+    },
+    solution: {
+      icon: Wrench,
+      points: [
+        '逐项核对尺寸、毛重、重心、吊点和包装照片',
+        '比较B747F/B777F/重板等可行路径',
+        '确认欧洲Hub中转能力和非洲入口机场地面资源',
+        '把清关资料和最终交付责任提前拆分',
+      ]
+    },
+    result: {
+      icon: CheckCircle,
+      points: [
+        '先排除不可执行路线，避免客户被虚假低价误导',
+        '形成可解释的操作路径和风险清单',
+        '让工厂、贸易商和货代能对终端客户说清楚',
+      ]
+    },
+    stats: [
+      { label: '单件', value: '14T', unit: '重量' },
+      { label: '确认项', value: '12+', unit: '前置资料' },
+      { label: '路径', value: 'Hub', unit: '延伸' },
+      { label: '目标', value: '可执行', unit: '方案' },
+    ]
+  },
+  {
+    id: 'fbm-copperbelt-spares',
+    title: 'FBM铜钴矿区备件：空运不只到机场',
+    client: '某矿区供应链客户',
+    industry: '矿业备件',
+    origin: '中国',
+    destination: '刚果金 FBM',
+    images: [],
+    challenge: {
+      icon: AlertTriangle,
+      points: [
+        '目的地是内陆矿区，机场到工地仍有二程风险',
+        '矿山停产窗口紧，晚到一天损失可能大于运费差价',
+        '清关资料、收货人资质和目的地卸货资源必须前置',
+        '常规空运报价无法覆盖全链路风险',
+      ]
+    },
+    solution: {
+      icon: Wrench,
+      points: [
+        '把JNB/NBO/EBB等非洲Hub延伸可能性列出比较',
+        '提前确认进口商资料、HS Code、商业发票和装箱单',
+        '同步核对卡车延伸、边境或目的地交付条件',
+        '按停产风险倒推最晚起飞和最晚到港时间',
+      ]
+    },
+    result: {
+      icon: CheckCircle,
+      points: [
+        '客户在订舱前知道哪段最容易卡',
+        '报价从“机场到机场”升级为“项目交付路径”',
+        '更适合矿业、能源和工程类长期客户复购',
+      ]
+    },
+    stats: [
+      { label: '目的地', value: 'FBM', unit: '矿区' },
+      { label: '风险', value: '二程', unit: '核心' },
+      { label: '资料', value: 'HS', unit: '前置' },
+      { label: '客户', value: '矿业', unit: '项目' },
+    ]
   }
 ]
 

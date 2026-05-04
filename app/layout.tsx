@@ -9,9 +9,19 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '747全货机开鼻门装载 | 大件空运专家Jones | 15年经验',
-  description: '15年国际空运专家，擅长747全货机开鼻门装载、大件空运、包机服务。中国到非洲ABJ/BKO/LUN/CKY专线，门到门价格，避免常见陷阱。大件空运、超长超重超高、紧急空运42小时、温控货物冷链运输。',
+  title: '非洲大件项目空运 | LGG/BRU欧洲中转 | EASCargo Jones',
+  description: '专注中国到非洲大件项目空运：LGG/BRU欧洲中转、B747F全货机、JNB/FBM/LUN/LBV等非洲目的地、清关资料预判、矿业和工程设备空运方案。',
   keywords: [
+    '非洲大件项目空运',
+    'LGG欧洲中转非洲',
+    'BRU欧洲中转非洲',
+    'JNB大件空运',
+    'FBM卢本巴希空运',
+    'LUN卢萨卡空运',
+    'LBV利伯维尔空运',
+    '非洲清关资料',
+    '矿业设备空运',
+    'WCA IATA货代',
     '747全货机开鼻门装载',
     '大件空运价格',
     '中国到非洲空运',
@@ -37,14 +47,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'zh_CN',
     url: 'https://www.eascargo.com',
-    title: '神仙货运Jones | 国际空运系统化交付专家',
-    description: '15+年国际航空货运实战经验，擅长复杂航线、项目货、包机、系统化运营。',
-    siteName: '神仙货运Jones - 国际空运专家',
+    title: 'EASCargo Jones | 非洲大件项目空运专家',
+    description: '中国到非洲大件项目货，LGG/BRU欧洲中转，B747F全货机，JNB/FBM/LUN/LBV等非洲路线判断和清关资料预判。',
+    siteName: 'EASCargo Jones - Africa Project Cargo Air Freight',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '神仙货运Jones | 国际空运系统化交付专家',
-    description: '15+年国际航空货运实战经验，擅长复杂航线、项目货、包机、系统化运营。',
+    title: 'EASCargo Jones | 非洲大件项目空运专家',
+    description: 'LGG/BRU欧洲中转非洲大件项目货，覆盖JNB、FBM、LUN、LBV等目的地。',
   },
   robots: {
     index: true,

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import {
   ArrowRight,
+  Award,
   CheckCircle2,
   FileCheck2,
+  Globe2,
   MapPinned,
   PackageCheck,
   Plane,
@@ -387,6 +389,8 @@ const process = [
   },
 ]
 
+const memberships = ['WCA', 'IATA', 'JCtrans', 'OLO', 'GLA', 'WIFFA']
+
 const ownedCaseStudies = [
   {
     route: '中国 -> LGG/BRU -> LBV 利伯维尔',
@@ -401,6 +405,34 @@ const ownedCaseStudies = [
     cargo: '单件重量达到14吨，普通客机腹舱、常规板型和机场地面操作都容易卡住。',
     solution: '先核对货物尺寸、重心、吊点、包装和机场装卸能力，再匹配全货机、重板、吊装和中转路径。',
     result: '核心价值不是报一个低价，而是先判断“能不能飞、怎么装、哪里会卡、需要哪些确认”。',
+  },
+  {
+    route: '中国 -> LGG/BRU -> JNB 约翰内斯堡',
+    title: '矿山急件经欧洲中转到南非',
+    cargo: '矿山维修备件、泵类、电机和控制柜类货物，单件重量和包装尺寸经常超过普通客机可操作边界。',
+    solution: '先做停产风险排序，再确认中国段可出运窗口、欧洲中转交接时间、JNB到港提货和二程配送条件。',
+    result: '把客户最关心的“能不能赶上检修窗口”拆成装载、文件、航班、中转和目的地交付五个确认点。',
+  },
+  {
+    route: '中国 -> LGG -> NBO/EBB -> 东非内陆',
+    title: '工程项目设备进入东非内陆市场',
+    cargo: '工程备件、发电机组、通讯设备、施工工具和紧急替换部件，目的地不一定是主机场。',
+    solution: '经NBO或EBB作为东非入口，提前确认内陆卡车、边境文件、收货人资质和目的地卸货条件。',
+    result: '避免只看机场代码报价，先把“主机场到最终工地”的二程路线和清关节点讲清楚。',
+  },
+  {
+    route: '中国 -> 欧洲Hub -> FBM 卢本巴希',
+    title: '铜钴矿区重型备件路线判断',
+    cargo: '变压器、泵、液压部件、电气柜和矿山生产线备件，货值高、停产代价大、目的地内陆属性强。',
+    solution: '把FBM当作矿区供应链节点处理，比较JNB/NBO/EBB等Hub延伸可能性，并提前核对收货人清关文件。',
+    result: '客户能在报价前先知道：空运值不值得、哪段风险最高、哪些资料必须先补齐。',
+  },
+  {
+    route: '中国 -> LGG/BRU -> LUN 卢萨卡',
+    title: '赞比亚工业设备和备件空运',
+    cargo: '化工泵、矿业备件、维修件和工厂设备，常见问题是包装、防潮、防震、文件和目的地提货节奏。',
+    solution: '用欧洲中转解决主甲板装载和舱位问题，再把LUN目的地清关、税号资料、装箱单和商业发票提前列清。',
+    result: '让工厂和贸易商知道，非洲项目货不是“发出去就完了”，到港文件和本地交接同样决定时效。',
   },
 ]
 
@@ -428,6 +460,93 @@ const publicMarketSignals = [
     summary:
       '有些矿业设备最终会走海运、多式联运或包机组合，但第一步都一样：先看尺寸、重量、重心、吊点、机场能力和二程节点。',
     point: '客户发来尺寸重量后，先判断能不能飞、从哪里中转、哪里会卡，再决定是否值得走空运。',
+  },
+]
+
+const africaCountryProfiles = [
+  {
+    country: '南非',
+    gateways: 'JNB 约翰内斯堡 / CPT 开普敦 / DUR 德班',
+    people: '华人和中资企业较多，矿业、汽车、零售和工程供应链成熟。',
+    cargo: '矿山备件、汽车零部件、机电设备、精密仪器和项目急件。',
+    customs: '重视商业发票、装箱单、HS Code、进口商税务资料和货物申报一致性；二程到周边国家时要另看转运文件。',
+  },
+  {
+    country: '赞比亚',
+    gateways: 'LUN 卢萨卡 / 铜矿带方向',
+    people: '中资矿业、工程和贸易客户活跃，项目货需求稳定。',
+    cargo: '矿山设备、化工泵、发电机、变压器、维修备件。',
+    customs: '矿业和工业设备要提前确认进口商资质、品名归类、装箱明细和目的地提货安排。',
+  },
+  {
+    country: '刚果金',
+    gateways: 'FBM 卢本巴希 / FIH 金沙萨',
+    people: '矿区中资和贸易群体明显，铜钴矿相关供应链需求强。',
+    cargo: '铜钴矿备件、重型设备、电气柜、工程车辆部件。',
+    customs: '清关和内陆交付不确定性高，必须先确认收货人文件、目的地卸货能力和内陆段责任边界。',
+  },
+  {
+    country: '加蓬',
+    gateways: 'LBV 利伯维尔 / POG 让蒂尔港',
+    people: '法语环境为主，中资工程、木材、能源项目常见。',
+    cargo: '8米级超长件、油气设备、工程备件、项目物资。',
+    customs: '法文文件沟通、目的地代理响应和特殊装卸资源要提前确认，超长件需先看机场地面操作能力。',
+  },
+  {
+    country: '肯尼亚',
+    gateways: 'NBO 内罗毕',
+    people: '东非商业Hub，华人贸易和中资项目基础较好。',
+    cargo: '通讯设备、工程设备、医疗器械、东非内陆转运货。',
+    customs: '适合作为东非入口，但转往乌干达、卢旺达、南苏丹时要先确认转关和边境资料。',
+  },
+  {
+    country: '乌干达',
+    gateways: 'EBB 恩德培',
+    people: '华人贸易、工程和项目型客户存在，常经东非网络衔接。',
+    cargo: '工程设备、农业机械、通讯设备、项目备件。',
+    customs: '内陆国家对到港后配送节奏敏感，需提前核对进口商资料、税号和最终交付城市。',
+  },
+  {
+    country: '尼日利亚',
+    gateways: 'LOS 拉各斯 / ABV 阿布贾 / PHC 哈科特港',
+    people: '西非最大市场之一，华人贸易群体和工程需求明显。',
+    cargo: '油气设备、消费品急件、工程机械、发电机和工厂备件。',
+    customs: '清关文件、收货人资质、品名归类和目的港费用要提前讲清，避免客户只盯空运费。',
+  },
+  {
+    country: '加纳',
+    gateways: 'ACC 阿克拉',
+    people: '英语区商业环境较友好，华人贸易和工程客户较多。',
+    cargo: '工程设备、矿业备件、消费品、转运西非周边货。',
+    customs: '适合作为西非入口之一，需提前确认是否本地清关还是继续转往周边国家。',
+  },
+  {
+    country: '科特迪瓦',
+    gateways: 'ABJ 阿比让',
+    people: '西非法语区重要商业中心，华人和中资项目活跃。',
+    cargo: '工程项目物资、农业加工设备、工业备件和贸易货。',
+    customs: '法语文件沟通和本地代理配合很关键，货值、品名、HS Code和收货人资料要一致。',
+  },
+  {
+    country: '坦桑尼亚',
+    gateways: 'DAR 达累斯萨拉姆 / MWZ 姆万扎',
+    people: '中资工程、贸易和东非区域供应链较多。',
+    cargo: '工程设备、矿区备件、农业机械、港口转运货。',
+    customs: 'DAR可作为港口和空运入口，内陆项目需提前确认最终交付城市、道路和卸货条件。',
+  },
+  {
+    country: '莫桑比克',
+    gateways: 'MPM 马普托',
+    people: '能源、矿业和工程项目带动中资需求。',
+    cargo: '能源设备、项目备件、工程机械和紧急维修件。',
+    customs: '葡语环境，文件沟通和目的地代理能力要提前确认；部分货物可能更适合经JNB延伸。',
+  },
+  {
+    country: '纳米比亚',
+    gateways: 'WDH 温得和克 / WVB 沃尔维斯湾',
+    people: '矿业、港口和工程项目中有中资参与。',
+    cargo: '矿业设备、港口项目物资、工程备件。',
+    customs: '市场体量不大但项目货明确，空运到WDH后是否转WVB等二程要提前拆清。',
   },
 ]
 
@@ -513,6 +632,35 @@ export default function LggAfricaGatewayZhPage() {
         </div>
       </section>
 
+      <section className="bg-slate-950 py-16 text-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">行业网络与资质</p>
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                大件项目货靠的不是单点报价，而是全球代理网络和航司资源。
+              </h2>
+              <p className="text-lg leading-8 text-slate-300">
+                我们长期参与国际货运代理网络和航空货运体系，能把中国段、欧洲中转段、非洲目的港代理、
+                清关和二程配送放在同一张操作表里确认。
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {memberships.map((name) => (
+                <div key={name} className="rounded-lg border border-white/10 bg-white/5 p-5">
+                  <Award className="mb-4 h-7 w-7 text-amberGold" />
+                  <div className="text-xl font-semibold">{name}</div>
+                  <div className="mt-2 text-sm leading-6 text-slate-400">国际空运/货代网络会员资源</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className="mt-6 text-sm leading-6 text-slate-500">
+            注：会员身份和可用资源以公司当前有效资料为准；具体项目仍按航司、代理和目的国当期要求逐票确认。
+          </p>
+        </div>
+      </section>
+
       <section id="network" className="bg-slate-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-10 max-w-3xl">
@@ -569,6 +717,48 @@ export default function LggAfricaGatewayZhPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">非洲国家情报</p>
+            <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+              客户不只想知道机场代码，还想知道这个国家怎么做生意、怎么清关。
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-textSecondary">
+              下面不是法律意见，而是空运项目货前期判断清单：当地市场特点、华人/中资存在感、常见货型和清关注意点。
+              具体税费、许可证和监管要求必须按HS Code、收货人资质和当地代理反馈逐票确认。
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {africaCountryProfiles.map((item) => (
+              <div key={item.country} className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
+                <div className="mb-4 flex items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-950">{item.country}</h3>
+                    <p className="mt-1 text-sm font-medium text-amberGold">{item.gateways}</p>
+                  </div>
+                  <Globe2 className="h-6 w-6 flex-shrink-0 text-amberGold" />
+                </div>
+                <div className="space-y-3 text-sm leading-6 text-textSecondary">
+                  <p>
+                    <span className="font-semibold text-slate-950">人文/商务：</span>
+                    {item.people}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-slate-950">适合货型：</span>
+                    {item.cargo}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-slate-950">清关注意：</span>
+                    {item.customs}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

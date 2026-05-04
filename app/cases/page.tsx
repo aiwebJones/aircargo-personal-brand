@@ -95,6 +95,45 @@ const caseStudies: CaseStudy[] = [
     timeline: '2024年2月',
     image: '/case-17t-2.jpg',
     tags: ['精密设备', '温控运输', 'ET联运', '高价值货物']
+  },
+  {
+    id: '7',
+    title: 'LBV 8米长货：欧洲中转+B747F开鼻门',
+    route: '中国 → LGG/BRU → LBV (利伯维尔)',
+    cargo: '非洲项目超长件',
+    weight: '8米长',
+    challenge: '国内没有直飞非洲的可执行方案，货长超出普通腹舱能力，欧洲中转和LBV目的地文件都必须提前确认',
+    solution: '中国段先飞LGG/BRU，欧洲Hub完成交接、组板和二程准备，再衔接B747F全货机飞往LBV',
+    result: '把“无方案”的货做成可执行路线，对比某全球货代方案节省接近20万人民币',
+    timeline: '非洲大件项目',
+    image: '/case-17t-3.jpg',
+    tags: ['LBV', '8米长货', 'LGG中转', 'B747F']
+  },
+  {
+    id: '8',
+    title: '单件14吨：非洲内陆项目货路线判断',
+    route: '中国 → 欧洲Hub → 非洲项目点',
+    cargo: '工程设备重件',
+    weight: '14吨/件',
+    challenge: '单件重量高，普通板型、机场设备、目的地卸货和二程衔接都可能卡住',
+    solution: '先核对尺寸、毛重、重心、吊点、包装照片，再比较B747F/B777F/重板和非洲Hub延伸方案',
+    result: '客户在订舱前看清能不能飞、哪里会卡、哪些资料必须补齐，避免被虚假低价误导',
+    timeline: '路线预判',
+    image: '/case-17t-4.jpg',
+    tags: ['14吨单件', '非洲项目货', '路线判断', '重板']
+  },
+  {
+    id: '9',
+    title: 'FBM矿区备件：空运到机场之外，还要做二程',
+    route: '中国 → 欧洲Hub/非洲Hub → FBM (卢本巴希)',
+    cargo: '铜钴矿备件',
+    weight: '项目重货',
+    challenge: '目的地是刚果金矿区，清关、内陆卡车、卸货设备和停产窗口比单纯空运费更关键',
+    solution: '比较JNB/NBO/EBB等Hub延伸路径，提前确认进口商资料、HS Code、目的地代理和最终交付责任',
+    result: '报价从机场到机场升级为项目交付路径，更适合矿业、能源和工程类客户长期复购',
+    timeline: '矿区供应链',
+    image: '/case-17t-1.jpg',
+    tags: ['FBM', '刚果金', '矿业备件', '二程配送']
   }
 ]
 
