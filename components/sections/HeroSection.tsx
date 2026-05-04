@@ -122,7 +122,7 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
               </motion.button>
 
               <motion.a
-                href="/china-africa-oversized-cargo-via-europe/"
+                href="/zh/lgg-africa-gateway/"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-300 text-slate-700 hover:border-amberGold hover:text-amberGold hover:shadow-lg transition-all duration-300 rounded-xl"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
