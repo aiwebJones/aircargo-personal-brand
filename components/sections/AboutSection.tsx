@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mountain, Droplets, Brain, Users, TrendingUp, ArrowRight, MessageCircle } from 'lucide-react'
+import { AlertTriangle, ArrowRight, MessageCircle, Plane, Route, Ruler, Wrench } from 'lucide-react'
 
 interface AboutSectionProps {
   onOpenContact: () => void
@@ -35,17 +35,18 @@ export default function AboutSection({ onOpenContact }: AboutSectionProps) {
         >
           <div className="flex flex-wrap gap-3 mb-6">
             <span className="px-4 py-2 bg-amberGold/10 text-amberGold text-sm font-medium rounded-full">
-              16年物流老兵
+              16年空运实操
             </span>
             <span className="px-4 py-2 bg-amberGold/10 text-amberGold text-sm font-medium rounded-full">
-              AI工具实战派
+              大件项目货
             </span>
             <span className="px-4 py-2 bg-amberGold/10 text-amberGold text-sm font-medium rounded-full">
-              极限运动爱好者
+              非洲欧洲中转
             </span>
           </div>
           <p className="text-xl text-textPrimary leading-relaxed max-w-3xl">
-            我相信，<span className="text-amberGold font-semibold">复杂的物流问题和极限运动一样</span>，需要清晰的规划、精准的风险控制和强大的执行力。
+            我现在只把重点放在一类货上：<span className="text-amberGold font-semibold">普通货代容易卡住的大件项目货</span>。
+            先判断货能不能飞，再设计全货机、欧洲中转、非洲Hub和落地衔接。
           </p>
         </motion.div>
 
@@ -57,12 +58,14 @@ export default function AboutSection({ onOpenContact }: AboutSectionProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-12 p-8 bg-surface rounded-2xl border border-borderLight"
         >
-          <h3 className="text-lg font-semibold text-textPrimary mb-4">从操作到管理，从传统到AI</h3>
+          <h3 className="text-lg font-semibold text-textPrimary mb-4">不是卖一条运价，而是先把路线做成立</h3>
           <p className="text-textSecondary leading-relaxed mb-4">
-            16年物流行业摸爬滚打，从底层操作到团队管理，该踩的坑都踩遍了。但我越来越厌倦行业内<span className="text-red-500">信息不透明</span>和<span className="text-red-500">低效沟通</span>的现状。
+            大件空运最贵的错误，不是价格高一点，而是前期没看清尺寸、重心、板型、机场装卸能力和二程节点，
+            最后订了舱却装不上、到了欧洲接不上、到了非洲落不下。
           </p>
           <p className="text-textSecondary leading-relaxed">
-            现在，我正尝试用<span className="text-amberGold font-semibold">AI工具和数据分析</span>，让货运过程像我的运动数据一样<span className="text-amberGold font-semibold">清晰可追踪</span>。帮助客户减少不确定性，真正掌控成本与时效。
+            我的价值是把这些风险提前摊开：<span className="text-amberGold font-semibold">能不能飞、走哪个Hub、用什么机型、哪里需要确认、成本差在哪里</span>。
+            这比单纯报一个“几块钱一公斤”更适合项目货。
           </p>
         </motion.div>
 
@@ -78,12 +81,12 @@ export default function AboutSection({ onOpenContact }: AboutSectionProps) {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="p-4 border border-borderLight rounded-xl">
               <p className="text-textSecondary">
-                为<span className="text-amberGold font-semibold">跨境电商</span>和<span className="text-amberGold font-semibold">高端制造企业</span>，提供华东区域及全球的精准空运解决方案
+                <span className="text-amberGold font-semibold">中国到非洲大件项目货</span>：JNB、FBM、LUN、LBV，以及更多非洲内陆目的地
               </p>
             </div>
             <div className="p-4 border border-borderLight rounded-xl">
               <p className="text-textSecondary">
-                不仅提供仓位，更提供<span className="text-amberGold font-semibold">基于数据分析的路线优化、风险预警和成本透明化</span>服务
+                <span className="text-amberGold font-semibold">LGG/BRU欧洲中转方案</span>：B747F全货机、开鼻门、非洲Hub卡车延伸和成本对比
               </p>
             </div>
           </div>
@@ -100,39 +103,39 @@ export default function AboutSection({ onOpenContact }: AboutSectionProps) {
           <p className="text-textMuted text-sm tracking-widest mb-6">我的能力版图</p>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="p-6 bg-surface border border-borderLight hover:border-amberGold/20 transition-all duration-500 group rounded-xl">
-              <Mountain className="w-5 h-5 text-amberGold mb-4" />
+              <Ruler className="w-5 h-5 text-amberGold mb-4" />
               <h4 className="text-lg font-semibold text-textPrimary mb-2 group-hover:text-amberGold transition-colors">
-                风险嗅觉
+                尺寸判断
               </h4>
               <p className="text-textMuted text-sm">
-                滑雪/冲浪/越野跑，风险评估的直觉用在物流上
+                超长、超重、超高先看装载边界，不先报虚价
               </p>
             </div>
             <div className="p-6 bg-surface border border-borderLight hover:border-amberGold/20 transition-all duration-500 group rounded-xl">
-              <Brain className="w-5 h-5 text-amberGold mb-4" />
+              <Plane className="w-5 h-5 text-amberGold mb-4" />
               <h4 className="text-lg font-semibold text-textPrimary mb-2 group-hover:text-amberGold transition-colors">
-                AI工具
+                全货机方案
               </h4>
               <p className="text-textMuted text-sm">
-                报价自动化、数据分析，用技术为业务服务
+                B747F、B777F、重板、开鼻门和吊装资源匹配
               </p>
             </div>
             <div className="p-6 bg-surface border border-borderLight hover:border-amberGold/20 transition-all duration-500 group rounded-xl">
-              <Users className="w-5 h-5 text-amberGold mb-4" />
+              <Route className="w-5 h-5 text-amberGold mb-4" />
               <h4 className="text-lg font-semibold text-textPrimary mb-2 group-hover:text-amberGold transition-colors">
-                团队搭建
+                中转网络
               </h4>
               <p className="text-textMuted text-sm">
-                从0到1建团队经验，帮你少走弯路
+                中国到LGG/BRU，再接非洲Hub和内陆点
               </p>
             </div>
             <div className="p-6 bg-surface border border-borderLight hover:border-amberGold/20 transition-all duration-500 group rounded-xl">
-              <TrendingUp className="w-5 h-5 text-amberGold mb-4" />
+              <Wrench className="w-5 h-5 text-amberGold mb-4" />
               <h4 className="text-lg font-semibold text-textPrimary mb-2 group-hover:text-amberGold transition-colors">
-                销售实战
+                现场操作
               </h4>
               <p className="text-textMuted text-sm">
-                懂客户需求，优化报价策略和成交话术
+                文件、仓库、装卸、打板、二程衔接逐项确认
               </p>
             </div>
           </div>
@@ -147,7 +150,7 @@ export default function AboutSection({ onOpenContact }: AboutSectionProps) {
           className="p-8 bg-gradient-to-r from-amberGold/10 to-orange-500/10 border border-amberGold/30 rounded-2xl text-center"
         >
           <p className="text-textPrimary text-lg mb-6">
-            如果你正在为<span className="text-amberGold font-semibold">旺季仓位</span>、<span className="text-amberGold font-semibold">运费波动</span>或<span className="text-amberGold font-semibold">物流黑盒</span>而头疼——
+            如果你手上有<span className="text-amberGold font-semibold">国内没有直飞方案</span>、<span className="text-amberGold font-semibold">尺寸重量超限</span>或<span className="text-amberGold font-semibold">非洲目的地难落地</span>的货——
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.button
