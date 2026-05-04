@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import {
   ArrowRight,
   CheckCircle2,
-  ExternalLink,
   FileCheck2,
   MapPinned,
   PackageCheck,
@@ -407,32 +406,28 @@ const ownedCaseStudies = [
 
 const publicMarketSignals = [
   {
-    title: 'LUN 卢萨卡：工业设备和备件空运需求真实存在',
+    title: 'LUN 卢萨卡：工业设备和备件空运',
     summary:
-      '公开案例显示，欧洲到赞比亚卢萨卡的工业设备、化工泵和备件空运，重点不是普通运价，而是包装、防震、防潮、文件和时效稳定。',
-    source: 'M9 Logistics',
-    href: 'https://m9logistics.com/airfreight-of-industrial-equipment-to-zambia-and-zimbabwe/',
+      '适合工厂设备、化工泵、备件和矿业相关急件。重点不是普通运价，而是包装、防震、防潮、文件完整和中转时效稳定。',
+    point: '卢萨卡是赞比亚工业和矿业项目的重要入口，货物到港后的文件、清关和提货节奏要提前确认。',
   },
   {
     title: 'JNB 约堡：矿业急件和南部非洲项目货有强时效压力',
     summary:
-      '公开案例显示，约翰内斯堡相关矿业设备空运会围绕停产风险、技术装载、固定绑扎和跨办公室协同展开。',
-    source: 'Bertling Logistics',
-    href: 'https://www.bertling.com/case-studies/mining-and-construction/bertling-logistics-successfully-performed-an-air-charter-shipment-to-suriname/',
+      '适合矿山备件、工程设备、发电机、泵类和维修急件。项目方真正担心的是停产损失，所以装载方案、固定绑扎和到港衔接要一起看。',
+    point: 'JNB可以作为南部非洲主入口，再延伸到周边项目点，适合先做空运可行性判断。',
   },
   {
     title: 'FBM 卢本巴希：矿区逻辑决定大件需求长期存在',
     summary:
-      '卢本巴希背后是刚果金铜钴矿区。公开非洲项目货资料也能看到，矿山、工程设备、发电机、变压器等重货需要专门的项目物流设计。',
-    source: 'Africa Shipping Logistics',
-    href: 'https://www.africashippinglogistics.com/project-cargo/',
+      '适合铜钴矿区相关设备、重型备件、变压器、发电机和工程物资。难点通常不在中国段，而在非洲入口、内陆转运和目的地交付。',
+    point: 'FBM不是普通空运点，路线要从欧洲Hub、非洲Hub和卡车延伸一起设计。',
   },
   {
-    title: '非洲矿业项目：重货不一定都走空运，但路线判断方法相同',
+    title: '非洲矿业项目：重货不一定都走空运，但判断方法相同',
     summary:
-      '公开报道中，非洲矿业项目曾涉及数百吨重型设备的多式联运。对空运页面来说，重点是告诉客户：超限货必须先做可执行性判断。',
-    source: 'Air Freight News',
-    href: 'https://airfreight.news/articles/full/airland-logistics-manages-transport-of-heavy-equipment-for-african-mining-project',
+      '有些矿业设备最终会走海运、多式联运或包机组合，但第一步都一样：先看尺寸、重量、重心、吊点、机场能力和二程节点。',
+    point: '客户发来尺寸重量后，先判断能不能飞、从哪里中转、哪里会卡，再决定是否值得走空运。',
   },
 ]
 
@@ -586,8 +581,8 @@ export default function LggAfricaGatewayZhPage() {
               客户最想看的不是口号，是这种货到底有没有做过。
             </h2>
             <p className="mt-4 text-lg leading-8 text-textSecondary">
-              下面分两类：前面是我们实际操作过的非洲大件路线，后面是公开资料里的市场场景参考。
-              自有案例证明操作能力，公开案例说明JNB、FBM、LUN这类非洲工业和矿业目的地确实有长期大件需求。
+              下面分两类：前面是我们实际操作过的非洲大件路线，后面是根据公开市场资料整理后的项目场景。
+              页面不展示第三方外链，重点让客户看懂JNB、FBM、LUN这类非洲工业和矿业目的地为什么需要提前做路线判断。
             </p>
           </div>
 
@@ -620,24 +615,20 @@ export default function LggAfricaGatewayZhPage() {
           <div className="mt-8 rounded-lg bg-slate-950 p-6 text-white">
             <div className="mb-5 flex items-center gap-3">
               <PackageCheck className="h-6 w-6 text-amberGold" />
-              <h3 className="text-xl font-semibold">公开市场场景参考</h3>
+              <h3 className="text-xl font-semibold">非洲项目场景拆解</h3>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {publicMarketSignals.map((item) => (
-                <a
+                <div
                   key={item.title}
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-lg border border-white/10 bg-white/5 p-5 transition hover:border-amberGold/70"
+                  className="rounded-lg border border-white/10 bg-white/5 p-5"
                 >
-                  <div className="mb-2 flex items-start justify-between gap-3">
-                    <h4 className="font-semibold leading-6 text-white">{item.title}</h4>
-                    <ExternalLink className="mt-1 h-4 w-4 flex-shrink-0 text-amberGold" />
-                  </div>
+                  <h4 className="mb-2 font-semibold leading-6 text-white">{item.title}</h4>
                   <p className="text-sm leading-6 text-slate-300">{item.summary}</p>
-                  <div className="mt-4 text-sm font-semibold text-amberGold">{item.source}</div>
-                </a>
+                  <div className="mt-4 rounded-md bg-amberGold/10 p-3 text-sm leading-6 text-amberGold">
+                    {item.point}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
