@@ -407,6 +407,156 @@ const routeSteps = [
   },
 ]
 
+const deepDives = {
+  jnb: {
+    heading: 'Deep route note for JNB Johannesburg oversized cargo',
+    intro:
+      'JNB is the benchmark route for many Africa oversized cargo quotes because it has stronger airport handling, more freight options and better inland distribution than many secondary African points. The trap is assuming that JNB solves every South Africa shipment. For oversized project cargo, we still compare final delivery city, unloading equipment, customs broker readiness and whether CPT or DUR is actually closer to the job site.',
+    scenarios: [
+      'Mining or engineering spare parts for South Africa plants where downtime cost is higher than airfreight cost.',
+      'High-value automotive or industrial parts that can fly to JNB and move inland by controlled truck.',
+      'Oversized pieces rejected by China direct options, then rebuilt through LGG/BRU or a freighter-capable hub.',
+    ],
+    risks: [
+      'Quoting airport-to-airport only while the customer needs mine-site or factory-site delivery.',
+      'Ignoring package height, forklift pockets, lifting points and unloading responsibility.',
+      'Treating Johannesburg as the final answer when Cape Town or Durban may reduce inland cost.',
+    ],
+    salesAngle:
+      'For JNB inquiries, the professional position is not just "we have airfreight to South Africa". It is "send dimensions and final site first, then we judge whether JNB is the right entry point or only the cheapest looking airport".',
+  },
+  fbm: {
+    heading: 'Deep route note for FBM Lubumbashi mining cargo',
+    intro:
+      'FBM is a high-intent project cargo destination because Lubumbashi is tied to the Copperbelt mining supply chain. Buyers are often not shopping for ordinary freight; they are trying to rescue production, maintenance or a site deadline. For this route, customs broker capability, consignee readiness and final mine-site handover are as important as the air sector.',
+    scenarios: [
+      'Copperbelt mining spare parts, pumps, transformers, electrical cabinets and repair equipment.',
+      'Urgent plant maintenance cargo where a few days of delay can cost more than the freight bill.',
+      'Heavy pieces that need Europe transit and Africa hub extension because China direct acceptance is limited.',
+    ],
+    risks: [
+      'Customer only provides "airport FBM" but the real destination is a mine or remote industrial site.',
+      'French document description, HS Code and invoice value are inconsistent across documents.',
+      'Destination unloading conditions are not confirmed before the cargo leaves China.',
+    ],
+    salesAngle:
+      'For FBM, sell risk control, not cheap freight. The buyer needs someone to tell them early whether the route is executable, which documents can block clearance and where the final delivery responsibility starts.',
+  },
+  lun: {
+    heading: 'Deep route note for LUN Lusaka industrial and mining cargo',
+    intro:
+      'LUN is often used for Zambia industrial, mining and maintenance cargo. Compared with FBM, the business communication is usually easier in English, but the route still needs a strict pre-check for HS Code, permits, consignee readiness and whether the final delivery goes beyond Lusaka.',
+    scenarios: [
+      'Mining support equipment, pumps, motors, chemical plant spares and generators.',
+      'Factory maintenance cargo where stable arrival date matters more than the lowest rate.',
+      'Project cargo for Zambia where the consignee needs clear document guidance before shipment.',
+    ],
+    risks: [
+      'Assuming all Zambia cargo ends in Lusaka while the final site may be far from the airport.',
+      'Missing permit or license checks for regulated industrial or chemical-related cargo.',
+      'Underestimating packaging, moisture protection and handling requirements for valuable equipment.',
+    ],
+    salesAngle:
+      'For LUN, the strongest selling point is clarity: route, document checklist, customs notes and final delivery boundary in one answer before the customer commits.',
+  },
+  lbv: {
+    heading: 'Deep route note for LBV Libreville long cargo',
+    intro:
+      'LBV is a good page to prove expertise because long cargo cannot be sold with a normal airfreight mindset. An 8-meter piece may need B747F nose-door loading, main-deck checks, Europe transit and destination ground handling confirmation. This is exactly where factories and trading companies need someone to judge feasibility before price.',
+    scenarios: [
+      'Long engineering cargo around 6-8 meters where belly space is impossible.',
+      'Oil, energy, construction and Central Africa project cargo requiring controlled handover.',
+      'Cargo rejected by standard carriers but possible through B747F and LGG/BRU coordination.',
+    ],
+    risks: [
+      'Only checking weight while ignoring length, center of gravity and loading direction.',
+      'Destination airport cannot confirm unloading equipment or truck access in time.',
+      'French document communication is late and customs description does not match cargo photos.',
+    ],
+    salesAngle:
+      'For LBV, show the customer that the real product is feasibility judgment: can it load, where to transit, who handles it and what must be confirmed before money is spent.',
+  },
+  los: {
+    heading: 'Deep route note for LOS Lagos heavy cargo',
+    intro:
+      'LOS has large import demand, but Nigeria cargo is document-sensitive. The freight rate is only one part of the result. Importer documents, SONCAP or regulated goods checks, Form M where applicable, HS Code and local broker quality can change the real landed cost and timeline.',
+    scenarios: [
+      'Oil and gas spare parts, factory machinery, power equipment and high-value urgent cargo.',
+      'Industrial cargo where customs preparation affects the real delivery date more than flight time.',
+      'Heavy cargo that needs Europe transit or hub routing before entering Nigeria.',
+    ],
+    risks: [
+      'The customer compares only freight rate and ignores destination charges or clearance risk.',
+      'Regulated goods documents are missing before cargo departure.',
+      'Invoice value, HS Code and product description are not aligned with Nigerian import requirements.',
+    ],
+    salesAngle:
+      'For LOS, position the service as landed-risk control. Explain early that a cheap airfreight quote can become expensive if customs preparation is weak.',
+  },
+  abj: {
+    heading: 'Deep route note for ABJ Abidjan and francophone West Africa',
+    intro:
+      'ABJ is an important gateway for Cote dIvoire and nearby francophone West Africa. For Chinese factories and traders, the value is often bilingual coordination: English or Chinese on the origin side, French-compatible document logic on the destination side.',
+    scenarios: [
+      'Construction machinery parts, industrial equipment, energy project cargo and oversized spares.',
+      'West Africa project cargo that needs a practical alternative when direct options are limited.',
+      'Cargo for French-speaking consignees where document wording must be controlled.',
+    ],
+    risks: [
+      'Cargo description is translated casually and does not match HS Code or invoice.',
+      'Local broker and consignee are not aligned before the shipment leaves China.',
+      'Oversized pieces are quoted without destination handling confirmation.',
+    ],
+    salesAngle:
+      'For ABJ, the message should be "we reduce communication gaps". The customer is paying for route judgment plus Chinese-English-French coordination, not just kilograms.',
+  },
+  nbo: {
+    heading: 'Deep route note for NBO Nairobi and East Africa distribution',
+    intro:
+      'NBO is one of the strongest East Africa cargo hubs. It is useful for Kenya projects and sometimes regional distribution, but the right solution depends on whether the cargo ends in Nairobi, moves to another Kenyan city, or continues to nearby countries.',
+    scenarios: [
+      'Telecom, medical, infrastructure and factory spare parts for Kenya or East Africa projects.',
+      'Project cargo where NBO offers a better regional hub option than a smaller final airport.',
+      'Oversized pieces needing a balance of airport handling capability and inland delivery planning.',
+    ],
+    risks: [
+      'Assuming NBO is final destination while customer needs inland or cross-border delivery.',
+      'Medical or regulated cargo permits are not checked before booking.',
+      'Packaging and handling notes are too vague for fragile or high-value equipment.',
+    ],
+    salesAngle:
+      'For NBO, sell regional judgment. Help the buyer decide whether to clear in Kenya, transfer inland, or use another East Africa route.',
+  },
+  acc: {
+    heading: 'Deep route note for ACC Accra Ghana project cargo',
+    intro:
+      'ACC is a strong West Africa destination for Ghana mining, healthcare, construction and industrial cargo. The opportunity is not only moving cargo into Accra, but explaining destination charges, customs documents and delivery expectations clearly before the buyer approves.',
+    scenarios: [
+      'Mining spare parts, medical equipment, industrial machinery and construction project cargo.',
+      'High-value or fragile equipment that needs predictable handling and customs preparation.',
+      'Urgent cargo where airfreight is used to protect a project or maintenance schedule.',
+    ],
+    risks: [
+      'Destination cost items are not explained and the customer only sees the airfreight line.',
+      'Importer tax identity, permit requirements or product classification are not ready.',
+      'Fragile or heavy equipment arrives without clear unloading and delivery responsibility.',
+    ],
+    salesAngle:
+      'For ACC, win trust by being transparent about what is included, what is not included and what the consignee must prepare before cargo departure.',
+  },
+} satisfies Partial<
+  Record<
+    Slug,
+    {
+      heading: string
+      intro: string
+      scenarios: string[]
+      risks: string[]
+      salesAngle: string
+    }
+  >
+>
+
 function getFaq(item: (typeof pages)[Slug]) {
   return [
     {
@@ -464,6 +614,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
     .filter(([slug]) => slug !== currentSlug)
     .slice(0, 8)
   const faq = getFaq(item)
+  const deepDive = deepDives[currentSlug]
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -552,6 +703,46 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           ))}
         </div>
       </section>
+
+      {deepDive && (
+        <section className="border-y border-slate-200 bg-white py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="mb-10 max-w-4xl">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Priority route analysis</p>
+              <h2 className="text-3xl font-bold md:text-4xl">{deepDive.heading}</h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">{deepDive.intro}</p>
+            </div>
+            <div className="grid gap-6 lg:grid-cols-3">
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-4 text-xl font-semibold">Best-fit scenarios</h3>
+                <div className="space-y-3">
+                  {deepDive.scenarios.map((scenario) => (
+                    <div key={scenario} className="flex gap-3 text-slate-600">
+                      <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+                      <p className="leading-7">{scenario}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-4 text-xl font-semibold">Common risk points</h3>
+                <div className="space-y-3">
+                  {deepDive.risks.map((risk) => (
+                    <div key={risk} className="flex gap-3 text-slate-600">
+                      <FileCheck2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+                      <p className="leading-7">{risk}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-xl bg-slate-950 p-6 text-white">
+                <h3 className="mb-4 text-xl font-semibold text-amberGold">How we explain it to buyers</h3>
+                <p className="leading-8 text-slate-300">{deepDive.salesAngle}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="bg-slate-950 py-20 text-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr]">
