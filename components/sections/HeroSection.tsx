@@ -79,12 +79,12 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
 
             <div className="mb-8 flex flex-col gap-4 sm:flex-row">
               <motion.a
-                href="/zh/lgg-africa-gateway/"
+                href="#africa-network"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amberGold to-orange-500 px-7 py-4 text-base font-semibold text-white shadow-xl shadow-amberGold/25 transition hover:shadow-amberGold/40"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                进入非洲中转网络
+                查看非洲中转网络
                 <ArrowRight className="h-5 w-5" />
               </motion.a>
 

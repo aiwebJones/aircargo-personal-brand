@@ -7,6 +7,7 @@ import WechatModal from '@/components/WechatModal'
 import AIQuoteModal from '@/components/AIQuoteModal'
 import HeroSection from '@/components/sections/HeroSection'
 import HeroSectionEN from '@/components/sections/HeroSectionEN'
+import AfricaNetworkSection from '@/components/sections/AfricaNetworkSection'
 import AboutSection from '@/components/sections/AboutSection'
 import AboutSectionEN from '@/components/sections/AboutSectionEN'
 import CasesSection from '@/components/sections/CasesSection'
@@ -31,6 +32,7 @@ export default function Home() {
               onOpenWechat={() => setIsWechatOpen(true)}
               onOpenAIQuote={() => setIsAIQuoteOpen(true)}
             />
+            <AfricaNetworkSection />
             <AboutSection onOpenContact={() => setIsContactOpen(true)} />
             <CasesSection />
             <TestimonialsSection />
