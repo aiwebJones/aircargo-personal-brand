@@ -74,16 +74,30 @@ export default function AfricaNetworkSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12 max-w-3xl"
+          className="mb-12 grid gap-6 lg:grid-cols-[1fr_0.8fr] lg:items-end"
         >
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">非洲中转网络</p>
-          <h2 className="text-3xl font-bold text-slate-950 md:text-5xl">
-            首页直接看清：从中国到LGG/BRU，再进非洲主入口和内陆点。
-          </h2>
-          <p className="mt-5 text-lg leading-8 text-slate-600">
-            这个网站的核心不是展示机场代码，而是让工厂、贸易商和货代快速判断：
-            货能不能飞、走哪个入口、二程怎么接、清关资料哪里容易卡。
-          </p>
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">非洲中转网络</p>
+            <h2 className="text-3xl font-bold text-slate-950 md:text-5xl">
+              首页直接看清：从中国到LGG/BRU，再进非洲主入口和内陆点。
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              这个网站的核心不是展示机场代码，而是让工厂、贸易商和货代快速判断：
+              货能不能飞、走哪个入口、二程怎么接、清关资料哪里容易卡。
+            </p>
+          </div>
+          <div className="rounded-xl border border-amberGold/40 bg-amberGold/10 p-5">
+            <div className="mb-3 flex items-center gap-2 text-base font-semibold text-slate-950">
+              <CheckCircle2 className="h-5 w-5 text-amberGold" />
+              询价资料先准备这些
+            </div>
+            <p className="text-sm leading-7 text-slate-700">
+              品名、HS Code、尺寸、重量、包装照片、吊点、重心、起运地、目的城市、最晚到货时间。
+            </p>
+            <p className="mt-3 text-sm font-semibold text-slate-950">
+              先判断路线成立，再谈价格。
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -180,20 +194,6 @@ export default function AfricaNetworkSection() {
           </div>
         </div>
 
-        <div className="mt-10 rounded-xl border border-amberGold/30 bg-amberGold/10 p-6">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <h3 className="text-xl font-semibold text-slate-950">发资料前，先看是否满足大件空运判断条件。</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                品名、HS Code、尺寸、重量、包装照片、吊点、重心、起运地、目的城市、最晚到货时间。
-              </p>
-            </div>
-            <div className="flex items-center gap-2 text-sm font-semibold text-slate-800">
-              <CheckCircle2 className="h-5 w-5 text-amberGold" />
-              先判断路线成立，再谈价格
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
