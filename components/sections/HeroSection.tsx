@@ -13,11 +13,11 @@ const directHubs = [
   { code: 'LBV', name: '利伯维尔', note: '8米长货实操' },
   { code: 'JNB', name: '约翰内斯堡', note: '南部非洲Hub' },
   { code: 'LUN', name: '卢萨卡', note: '矿业项目入口' },
-  { code: 'NBO', name: '内罗毕', note: '东非Hub' },
+  { code: 'FBM', name: '卢本巴希', note: '铜钴矿区入口' },
 ]
 
 const inlandPoints = [
-  { code: 'FBM', name: '卢本巴希' },
+  { code: 'NBO', name: '内罗毕' },
   { code: 'KGL', name: '基加利' },
   { code: 'CPT', name: '开普敦' },
   { code: 'DUR', name: '德班' },
@@ -72,8 +72,8 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
                 <div className="text-sm leading-6">欧洲联运 + B747F开鼻门，成本比某全球货代方案节省接近20万人民币。</div>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="mb-1 font-semibold text-slate-950">单件14吨大件方案</div>
-                <div className="text-sm leading-6">先判断能不能飞、怎么装、哪里会卡，再谈报价和时效。</div>
+                <div className="mb-1 font-semibold text-slate-950">FBM 矿区备件路线</div>
+                <div className="text-sm leading-6">先判断欧洲Hub、非洲入口和矿区二程能否衔接。</div>
               </div>
             </div>
 
@@ -180,13 +180,6 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
               </div>
             </div>
 
-            <a
-              href="/zh/lgg-africa-gateway/#cases"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-950 px-5 py-4 font-semibold text-white transition hover:bg-amberGold hover:text-slate-950"
-            >
-              看LBV 8米长货和14吨案例
-              <ArrowRight className="h-4 w-4" />
-            </a>
           </motion.div>
         </div>
       </div>
