@@ -52,7 +52,7 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold"
             >
               <Route className="h-4 w-4" />
-              <span>中国 -> LGG/BRU -> 非洲大件中转网络</span>
+              <span>中国 → LGG/BRU → 非洲大件中转网络</span>
             </motion.div>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
