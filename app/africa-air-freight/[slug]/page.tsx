@@ -380,6 +380,54 @@ const pages = {
 
 type Slug = keyof typeof pages
 
+const quoteFields = [
+  'Commodity and clear cargo description',
+  'HS Code and declared customs value',
+  'Length x width x height for every package',
+  'Gross weight and chargeable weight check',
+  'Packing photos, crate material and forklift access',
+  'Lifting points, center of gravity and loading direction',
+  'Origin city in China and cargo ready date',
+  'Final city, site address or airport pickup plan',
+  'Latest required arrival date and urgency reason',
+]
+
+const routeSteps = [
+  {
+    title: '1. China origin feasibility',
+    body: 'Before quoting, we check whether the cargo can leave China by passenger widebody belly, scheduled freighter, B747F main deck, truck-to-Europe combination or another practical export route.',
+  },
+  {
+    title: '2. LGG/BRU Europe transit option',
+    body: 'When China direct flights cannot accept the size or weight, LGG/BRU can be used as a Europe cargo hub for rebuild, handover, charter connection or Africa second-leg planning.',
+  },
+  {
+    title: '3. Africa arrival and inland delivery',
+    body: 'Airport arrival is not the end. The real plan must include customs broker readiness, ground handling, unloading tools, truck access and final delivery boundary.',
+  },
+]
+
+function getFaq(item: (typeof pages)[Slug]) {
+  return [
+    {
+      question: `Can oversized cargo fly from China to ${item.code} ${item.city}?`,
+      answer: `It depends on package dimensions, gross weight, lifting points, aircraft availability and destination handling at ${item.code}. For large pieces, we first check loading feasibility before discussing the airfreight rate.`,
+    },
+    {
+      question: `When should LGG/BRU Europe transit be considered for ${item.code}?`,
+      answer: `LGG/BRU should be considered when China direct flights cannot accept the cargo size, weight or timing. Europe transit can create a workable second-leg option for Africa project cargo, but it must be checked case by case.`,
+    },
+    {
+      question: `What documents are needed before quoting China to ${item.code} air freight?`,
+      answer: `Send commodity, HS Code, invoice value, packing list, dimensions, gross weight, packing photos, lifting points, origin city, destination city and latest arrival requirement. Regulated goods may need extra permits.`,
+    },
+    {
+      question: `Is ${item.code} suitable for mining or engineering project cargo?`,
+      answer: `${item.business} The key is not only airport-to-airport freight, but whether customs, handling and inland delivery can support the project schedule.`,
+    },
+  ]
+}
+
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -411,6 +459,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
 export default function AfricaDestinationPage({ params }: { params: { slug: string } }) {
   const item = pages[params.slug as Slug] || pages.jnb
+  const currentSlug = params.slug as Slug
+  const relatedPages = Object.entries(pages)
+    .filter(([slug]) => slug !== currentSlug)
+    .slice(0, 8)
+  const faq = getFaq(item)
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -488,20 +541,71 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-5 md:grid-cols-3">
-          <div className="rounded-xl border border-slate-200 p-6">
-            <Plane className="mb-4 h-8 w-8 text-amberGold" />
-            <h3 className="mb-3 text-xl font-semibold">China origin feasibility</h3>
-            <p className="leading-7 text-slate-600">Check whether the cargo can leave China by standard widebody, freighter, charter or Europe transit.</p>
+          {routeSteps.map((step, index) => (
+            <div key={step.title} className="rounded-xl border border-slate-200 p-6">
+              {index === 0 && <Plane className="mb-4 h-8 w-8 text-amberGold" />}
+              {index === 1 && <Globe2 className="mb-4 h-8 w-8 text-amberGold" />}
+              {index === 2 && <Truck className="mb-4 h-8 w-8 text-amberGold" />}
+              <h3 className="mb-3 text-xl font-semibold">{step.title}</h3>
+              <p className="leading-7 text-slate-600">{step.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-slate-950 py-20 text-white">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Quote checklist</p>
+            <h2 className="text-3xl font-bold md:text-4xl">Send these details before asking for a {item.code} rate.</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-300">
+              For oversized air cargo, a low quote without these details is usually not a real solution.
+              This checklist helps us judge whether the cargo can be loaded, transferred, cleared and delivered.
+            </p>
           </div>
-          <div className="rounded-xl border border-slate-200 p-6">
-            <Truck className="mb-4 h-8 w-8 text-amberGold" />
-            <h3 className="mb-3 text-xl font-semibold">Africa inland leg</h3>
-            <p className="leading-7 text-slate-600">Confirm whether the final delivery is airport pickup, city delivery, mine-site or project-site handover.</p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {quoteFields.map((field) => (
+              <div key={field} className="rounded-lg border border-white/10 bg-white/5 p-4 text-sm font-semibold leading-6 text-slate-200">
+                {field}
+              </div>
+            ))}
           </div>
-          <div className="rounded-xl border border-slate-200 p-6">
-            <FileCheck2 className="mb-4 h-8 w-8 text-amberGold" />
-            <h3 className="mb-3 text-xl font-semibold">Documents before price</h3>
-            <p className="leading-7 text-slate-600">Commodity, HS Code, dimensions, weight, packing photos, origin city, destination and latest arrival time.</p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-10 max-w-3xl">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FAQ</p>
+          <h2 className="text-3xl font-bold md:text-4xl">Common questions about China to {item.code} air freight.</h2>
+        </div>
+        <div className="grid gap-5 md:grid-cols-2">
+          {faq.map((entry) => (
+            <div key={entry.question} className="rounded-xl border border-slate-200 p-6">
+              <h3 className="mb-3 text-lg font-semibold">{entry.question}</h3>
+              <p className="leading-7 text-slate-600">{entry.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-8 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Related destinations</p>
+            <h2 className="text-3xl font-bold md:text-4xl">Other Africa project cargo routes to compare.</h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {relatedPages.map(([slug, page]) => (
+              <a
+                key={slug}
+                href={`/africa-air-freight/${slug}/`}
+                className="rounded-xl border border-slate-200 bg-white p-5 transition hover:border-amberGold"
+              >
+                <div className="mb-2 text-2xl font-bold">{page.code}</div>
+                <div className="font-semibold text-amberGold">{page.city}</div>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{page.country}</p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -517,6 +621,23 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             areaServed: item.country,
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faq.map((entry) => ({
+              '@type': 'Question',
+              name: entry.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: entry.answer,
+              },
+            })),
           }),
         }}
       />
