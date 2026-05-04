@@ -18,13 +18,17 @@ export const metadata: Metadata = {
   description:
     '面向中国货代、工厂和外贸公司：国内没有直飞方案时，通过LGG欧洲中转，衔接B747F直飞非洲与非洲Hub卡车中转，覆盖JNB、FBM、LUN、EBB、NBO、LOS、ACC及30+内陆点。',
   alternates: {
-    canonical: 'https://www.eascargo.com/zh/lgg-africa-gateway/',
+    canonical: 'https://www.eascargo.com/',
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
   openGraph: {
     title: 'LGG欧洲中转非洲大件空运网络',
     description:
       '国内无法直飞非洲的大件项目货，先飞LGG，再通过B747F直飞或非洲Hub卡车中转覆盖主要非洲点。',
-    url: 'https://www.eascargo.com/zh/lgg-africa-gateway/',
+    url: 'https://www.eascargo.com/',
     type: 'website',
   },
 }

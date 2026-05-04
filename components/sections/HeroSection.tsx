@@ -78,28 +78,19 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
             </div>
 
             <div className="mb-8 flex flex-col gap-4 sm:flex-row">
-              <motion.a
-                href="#africa-network"
+              <motion.button
+                onClick={onOpenWechat}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amberGold to-orange-500 px-7 py-4 text-base font-semibold text-white shadow-xl shadow-amberGold/25 transition hover:shadow-amberGold/40"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                查看非洲中转网络
-                <ArrowRight className="h-5 w-5" />
-              </motion.a>
-
-              <motion.button
-                onClick={onOpenWechat}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
                 发尺寸重量，先判断路线
+                <ArrowRight className="h-5 w-5" />
               </motion.button>
 
               <motion.button
                 onClick={onOpenContact}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-7 py-4 text-base font-semibold text-slate-700 transition hover:border-amberGold hover:text-amberGold"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
