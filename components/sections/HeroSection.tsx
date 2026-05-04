@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles, Plane, Shield, Zap, Send, Bot, User } from 'lucide-react'
+import { ArrowRight, Sparkles, Plane, Shield, Zap, Send, Bot, User, Route } from 'lucide-react'
 
 interface Message {
   id: number
@@ -93,6 +93,10 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
 
             <p className="text-lg text-slate-500 mb-8">
               用AI实时监控仓位、预警风险、优化路线。旺季不慌，淡季不愁。
+              <br />
+              <span className="text-slate-700 font-semibold">
+                BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo.
+              </span>
             </p>
 
             {/* CTA Buttons */}
@@ -116,6 +120,16 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
                 <span className="font-medium">加微信深度交流</span>
                 <ArrowRight className="w-4 h-4" />
               </motion.button>
+
+              <motion.a
+                href="/china-africa-oversized-cargo-via-europe/"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-300 text-slate-700 hover:border-amberGold hover:text-amberGold hover:shadow-lg transition-all duration-300 rounded-xl"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Route className="w-4 h-4" />
+                <span className="font-medium">查看欧洲中转包机方案</span>
+              </motion.a>
             </div>
 
             {/* Value Props */}

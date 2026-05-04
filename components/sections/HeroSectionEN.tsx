@@ -56,6 +56,10 @@ export default function HeroSectionEN({ onOpenContact, onOpenWechat, onOpenAIQuo
 
           <p className="text-lg text-textMuted max-w-2xl mx-auto mb-12 leading-relaxed">
             AI monitors space availability in real-time, warns of risks, and optimizes routes. No more peak season panic.
+            <br />
+            <span className="text-textPrimary font-semibold">
+              BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo.
+            </span>
           </p>
 
           {/* CTA Buttons */}
