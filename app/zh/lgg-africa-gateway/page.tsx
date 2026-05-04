@@ -27,30 +27,323 @@ export const metadata: Metadata = {
   },
 }
 
-const directFlightDestinations = [
-  'ACC',
-  'BGF',
-  'BZV',
-  'PNR',
-  'LBV',
-  'POG',
-  'LOS',
-  'NBO',
-  'NIM',
-  'PHC',
-  'NBJ',
-  'JNB',
-  'LUN',
-  'EBB',
+type Destination = {
+  code: string
+  name: string
+  country: string
+  note: string
+}
+
+type Hub = {
+  code: string
+  name: string
+  country: string
+}
+
+const directFlightDestinations: Destination[] = [
+  {
+    code: 'ACC',
+    name: '阿克拉',
+    country: '加纳',
+    note: '西非英语区重要入口，可衔接加纳及周边市场。',
+  },
+  {
+    code: 'BGF',
+    name: '班吉',
+    country: '中非共和国',
+    note: '中非内陆点，适合项目物资和工程设备。',
+  },
+  {
+    code: 'BZV',
+    name: '布拉柴维尔',
+    country: '刚果共和国',
+    note: '刚果河流域入口，可衔接黑角、让蒂尔港等周边点。',
+  },
+  {
+    code: 'PNR',
+    name: '黑角',
+    country: '刚果共和国',
+    note: '港口城市，油气和工程项目相关货物常见。',
+  },
+  {
+    code: 'LBV',
+    name: '利伯维尔',
+    country: '加蓬',
+    note: '中非沿海入口，适合加蓬项目货。',
+  },
+  {
+    code: 'POG',
+    name: '让蒂尔港',
+    country: '加蓬',
+    note: '油气、能源类项目货目的地。',
+  },
+  {
+    code: 'LOS',
+    name: '拉各斯',
+    country: '尼日利亚',
+    note: '西非最大商业城市之一，可作为尼日利亚和周边中转Hub。',
+  },
+  {
+    code: 'NBO',
+    name: '内罗毕',
+    country: '肯尼亚',
+    note: '东非核心Hub，可衔接坦桑尼亚、乌干达、卢旺达、南苏丹等方向。',
+  },
+  {
+    code: 'NIM',
+    name: '尼亚美',
+    country: '尼日尔',
+    note: '萨赫勒内陆目的地，适合工程项目物资。',
+  },
+  {
+    code: 'PHC',
+    name: '哈科特港',
+    country: '尼日利亚',
+    note: '尼日利亚油气工业重镇。',
+  },
+  {
+    code: 'NBJ',
+    name: '尼日利亚内陆专线点',
+    country: '尼日利亚',
+    note: '需按承运人当前可操作站点确认。',
+  },
+  {
+    code: 'JNB',
+    name: '约翰内斯堡',
+    country: '南非',
+    note: '南部非洲核心空运Hub，可延伸开普敦、德班、温得和克等。',
+  },
+  {
+    code: 'LUN',
+    name: '卢萨卡',
+    country: '赞比亚',
+    note: '铜矿带和南部非洲内陆项目货入口。',
+  },
+  {
+    code: 'EBB',
+    name: '恩德培',
+    country: '乌干达',
+    note: '东非内陆入口，可衔接基加利等。',
+  },
 ]
 
-const truckTransferGroups = [
-  { hub: 'ACC', destinations: ['ABJ', 'LFW'] },
-  { hub: 'LOS', destinations: ['ABV', 'COO', 'DLA', 'FIH', 'NDJ', 'OUA', 'SSG'] },
-  { hub: 'NBO', destinations: ['DAR', 'FBM', 'HRE', 'JUB', 'LLW', 'LUN', 'MGQ', 'MPM', 'MWZ', 'EBB'] },
-  { hub: 'EBB', destinations: ['KGL'] },
-  { hub: 'JNB', destinations: ['CPT', 'DUR', 'PLZ', 'ELS', 'MTS', 'MSU', 'MPM', 'WDH', 'GBE'] },
-  { hub: 'WDH', destinations: ['WVB'] },
+const truckTransferGroups: Array<{ hub: Hub; viaText: string; destinations: Destination[] }> = [
+  {
+    hub: { code: 'ACC', name: '阿克拉', country: '加纳' },
+    viaText: '经阿克拉衔接西非法语区和沿海贸易节点',
+    destinations: [
+      {
+        code: 'ABJ',
+        name: '阿比让',
+        country: '科特迪瓦',
+        note: '西非法语区重要商业港口城市。',
+      },
+      {
+        code: 'LFW',
+        name: '洛美',
+        country: '多哥',
+        note: '西非沿海中转和贸易节点。',
+      },
+    ],
+  },
+  {
+    hub: { code: 'LOS', name: '拉各斯', country: '尼日利亚' },
+    viaText: '经拉各斯衔接尼日利亚内陆和中西非目的地',
+    destinations: [
+      {
+        code: 'ABV',
+        name: '阿布贾',
+        country: '尼日利亚',
+        note: '尼日利亚首都及政府项目货目的地。',
+      },
+      {
+        code: 'COO',
+        name: '科托努',
+        country: '贝宁',
+        note: '西非港口城市，常服务贝宁及周边贸易。',
+      },
+      {
+        code: 'DLA',
+        name: '杜阿拉',
+        country: '喀麦隆',
+        note: '中非重要港口和工业城市。',
+      },
+      {
+        code: 'FIH',
+        name: '金沙萨',
+        country: '刚果金',
+        note: '刚果金首都，内陆项目和矿业设备需求多。',
+      },
+      {
+        code: 'NDJ',
+        name: '恩贾梅纳',
+        country: '乍得',
+        note: '萨赫勒内陆点，工程和援助项目常见。',
+      },
+      {
+        code: 'OUA',
+        name: '瓦加杜古',
+        country: '布基纳法索',
+        note: '西非内陆目的地。',
+      },
+      {
+        code: 'SSG',
+        name: '马拉博',
+        country: '赤道几内亚',
+        note: '岛屿目的地，油气项目相关。',
+      },
+    ],
+  },
+  {
+    hub: { code: 'NBO', name: '内罗毕', country: '肯尼亚' },
+    viaText: '经内罗毕衔接东非、南苏丹和中南部非洲内陆点',
+    destinations: [
+      {
+        code: 'DAR',
+        name: '达累斯萨拉姆',
+        country: '坦桑尼亚',
+        note: '东非港口城市，可服务坦桑尼亚及周边。',
+      },
+      {
+        code: 'FBM',
+        name: '卢本巴希',
+        country: '刚果金',
+        note: '铜钴矿区核心点，矿山设备和备件需求强。',
+      },
+      {
+        code: 'HRE',
+        name: '哈拉雷',
+        country: '津巴布韦',
+        note: '南部非洲内陆市场。',
+      },
+      {
+        code: 'JUB',
+        name: '朱巴',
+        country: '南苏丹',
+        note: '项目和援助物资目的地。',
+      },
+      {
+        code: 'LLW',
+        name: '利隆圭',
+        country: '马拉维',
+        note: '马拉维内陆目的地。',
+      },
+      {
+        code: 'LUN',
+        name: '卢萨卡',
+        country: '赞比亚',
+        note: '赞比亚项目货和矿业供应链入口。',
+      },
+      {
+        code: 'MGQ',
+        name: '摩加迪沙',
+        country: '索马里',
+        note: '东非和非洲之角目的地。',
+      },
+      {
+        code: 'MPM',
+        name: '马普托',
+        country: '莫桑比克',
+        note: '南部非洲港口城市，可经内罗毕或约堡路径确认。',
+      },
+      {
+        code: 'MWZ',
+        name: '姆万扎',
+        country: '坦桑尼亚',
+        note: '坦桑尼亚内陆湖区和矿业相关点。',
+      },
+      {
+        code: 'EBB',
+        name: '恩德培',
+        country: '乌干达',
+        note: '乌干达及东非内陆入口。',
+      },
+    ],
+  },
+  {
+    hub: { code: 'EBB', name: '恩德培', country: '乌干达' },
+    viaText: '经恩德培延伸东非内陆市场',
+    destinations: [
+      {
+        code: 'KGL',
+        name: '基加利',
+        country: '卢旺达',
+        note: '东非内陆市场，可经恩德培衔接。',
+      },
+    ],
+  },
+  {
+    hub: { code: 'JNB', name: '约翰内斯堡', country: '南非' },
+    viaText: '经约堡衔接南非本土和南部非洲内陆市场',
+    destinations: [
+      {
+        code: 'CPT',
+        name: '开普敦',
+        country: '南非',
+        note: '南非西开普市场。',
+      },
+      {
+        code: 'DUR',
+        name: '德班',
+        country: '南非',
+        note: '南非港口城市和工业货目的地。',
+      },
+      {
+        code: 'PLZ',
+        name: '伊丽莎白港/格贝哈',
+        country: '南非',
+        note: '汽车和制造业相关城市。',
+      },
+      {
+        code: 'ELS',
+        name: '东伦敦',
+        country: '南非',
+        note: '南非东开普区域点。',
+      },
+      {
+        code: 'MTS',
+        name: '曼齐尼/马察帕',
+        country: '斯威士兰',
+        note: '南部非洲小市场，需按承运人确认落地安排。',
+      },
+      {
+        code: 'MSU',
+        name: '马塞卢',
+        country: '莱索托',
+        note: '南非周边内陆国家目的地。',
+      },
+      {
+        code: 'MPM',
+        name: '马普托',
+        country: '莫桑比克',
+        note: '南部非洲港口城市，需结合货物尺寸和二程安排确认路径。',
+      },
+      {
+        code: 'WDH',
+        name: '温得和克',
+        country: '纳米比亚',
+        note: '纳米比亚首都及矿业项目目的地。',
+      },
+      {
+        code: 'GBE',
+        name: '哈博罗内',
+        country: '博茨瓦纳',
+        note: '南部非洲内陆市场，矿业相关需求常见。',
+      },
+    ],
+  },
+  {
+    hub: { code: 'WDH', name: '温得和克', country: '纳米比亚' },
+    viaText: '经温得和克延伸纳米比亚港口城市',
+    destinations: [
+      {
+        code: 'WVB',
+        name: '沃尔维斯湾',
+        country: '纳米比亚',
+        note: '港口城市，经温得和克延伸，适合矿业和工程项目。',
+      },
+    ],
+  },
 ]
 
 const routeCards = [
@@ -146,13 +439,14 @@ export default function LggAfricaGatewayZhPage() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">为什么不是老外优先</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">为什么选择这条路线</p>
             <h2 className="mb-5 text-3xl font-bold text-slate-950 md:text-4xl">
-              这个产品更适合中文区客户。
+              不是和全球大公司抢品牌，而是把复杂路线讲清楚、做出来。
             </h2>
             <p className="text-lg leading-8 text-textSecondary">
-              欧美和法语区客户天然更信任CEVA、JAS、K&N、DHL这类全球公司。我们的机会不在于和巨头抢品牌信任，
-              而在于帮中文区客户把“国内没有直飞方案”的非洲大件货先做出可执行路线，再把成本、节点和风险解释清楚。
+              大型全球货代更适合标准化、规模化的常规货。真正卡住中文区客户的，往往是尺寸超限、国内无直飞、
+              二程衔接和目的地落地不确定。这个页面先解决“能不能飞、走哪个Hub、风险在哪里、资料怎么准备”，
+              让工厂、贸易商和中国货代先看懂路线，再判断成本和时效。
             </p>
           </div>
           <div className="grid gap-4">
@@ -174,33 +468,53 @@ export default function LggAfricaGatewayZhPage() {
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">覆盖网络</p>
             <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-              LGG直飞全货机点 + 非洲Hub卡车中转点。
+              不只看机场代码，要看这个点在非洲网络里的作用。
             </h2>
+            <p className="mt-4 text-lg leading-8 text-textSecondary">
+              下面把常见机场代码翻译成中文，并说明每个点更像“入口机场”“项目货目的地”还是“二程延伸节点”。
+              实际是否可操作，还要按货物尺寸、重量、承运人当期舱位和目的地清关条件确认。
+            </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="grid gap-6">
             <div className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
               <div className="mb-5 flex items-center gap-3">
                 <Plane className="h-6 w-6 text-amberGold" />
-                <h3 className="text-xl font-semibold text-slate-950">LGG B747F直飞点</h3>
+                <h3 className="text-xl font-semibold text-slate-950">LGG B747F直飞点：先把货送到非洲主入口</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {directFlightDestinations.map((code) => (
-                  <span key={code} className="rounded-full bg-amberGold/10 px-3 py-1 text-sm font-semibold text-slate-800">
-                    {code}
-                  </span>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {directFlightDestinations.map((destination) => (
+                  <div key={destination.code} className="rounded-lg bg-slate-50 p-4">
+                    <div className="mb-1 text-base font-semibold text-slate-950">
+                      {destination.code} - {destination.name}
+                    </div>
+                    <div className="mb-3 text-sm font-medium text-amberGold">{destination.country}</div>
+                    <p className="text-sm leading-6 text-textSecondary">{destination.note}</p>
+                  </div>
                 ))}
               </div>
             </div>
             <div className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
               <div className="mb-5 flex items-center gap-3">
                 <Waypoints className="h-6 w-6 text-amberGold" />
-                <h3 className="text-xl font-semibold text-slate-950">经非洲Hub卡车中转</h3>
+                <h3 className="text-xl font-semibold text-slate-950">经非洲Hub卡车中转：解决内陆点和非直达点</h3>
               </div>
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-5 lg:grid-cols-2">
                 {truckTransferGroups.map((group) => (
-                  <div key={group.hub} className="rounded-lg bg-slate-50 p-4">
-                    <div className="mb-2 text-sm font-semibold text-amberGold">经 {group.hub}</div>
-                    <div className="text-sm leading-7 text-textSecondary">{group.destinations.join(' / ')}</div>
+                  <div key={group.hub.code} className="rounded-lg bg-slate-50 p-5">
+                    <div className="mb-2 text-base font-semibold text-slate-950">
+                      经 {group.hub.name}（{group.hub.code}，{group.hub.country}）中转
+                    </div>
+                    <p className="mb-4 text-sm leading-6 text-textSecondary">{group.viaText}</p>
+                    <div className="space-y-3">
+                      {group.destinations.map((destination) => (
+                        <div key={`${group.hub.code}-${destination.code}`} className="border-t border-borderLight pt-3">
+                          <div className="text-sm font-semibold text-slate-950">
+                            {destination.code} - {destination.name}（{destination.country}）
+                          </div>
+                          <p className="mt-1 text-sm leading-6 text-textSecondary">{destination.note}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
