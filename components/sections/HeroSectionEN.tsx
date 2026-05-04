@@ -58,7 +58,7 @@ export default function HeroSectionEN({ onOpenContact, onOpenWechat, onOpenAIQuo
             AI monitors space availability in real-time, warns of risks, and optimizes routes. No more peak season panic.
             <br />
             <span className="text-textPrimary font-semibold">
-              BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo.
+              LGG Europe transit network for Africa oversized cargo: JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.
             </span>
           </p>
 

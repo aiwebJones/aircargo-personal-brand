@@ -9,32 +9,59 @@ import {
   Plane,
   ShieldCheck,
   Truck,
+  Waypoints,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'China to Africa Oversized Cargo via BRU/LGG | JNB & FBM Charter Solution',
+  title: 'LGG Africa Gateway | China to Africa Oversized Cargo Network',
   description:
-    'Oversized cargo from China to Africa when no direct flight works. EASCargo designs China to BRU/LGG transit and Europe freighter charter solutions to JNB and FBM.',
+    'China to Africa oversized cargo via LGG. B747F direct flights and Africa truck transfer network covering JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.',
   alternates: {
     canonical: 'https://www.eascargo.com/china-africa-oversized-cargo-via-europe/',
   },
   openGraph: {
-    title: 'China to Africa Oversized Cargo via BRU/LGG',
+    title: 'LGG Africa Gateway for Oversized Cargo',
     description:
-      'BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo when direct China-origin flights cannot work.',
+      'LGG Europe transit network for Africa oversized cargo: B747F direct flights plus hub truck transfer to inland Africa.',
     url: 'https://www.eascargo.com/china-africa-oversized-cargo-via-europe/',
     type: 'website',
   },
 }
 
-const routes = [
+const directFlightDestinations = [
+  'ACC',
+  'BGF',
+  'BZV',
+  'PNR',
+  'LBV',
+  'POG',
+  'LOS',
+  'NBO',
+  'NIM',
+  'PHC',
+  'NBJ',
+  'JNB',
+  'LUN',
+  'EBB',
+]
+
+const truckTransferGroups = [
+  { hub: 'ACC', destinations: ['ABJ', 'LFW'] },
+  { hub: 'LOS', destinations: ['ABV', 'COO', 'DLA', 'FIH', 'NDJ', 'OUA', 'SSG'] },
+  { hub: 'NBO', destinations: ['DAR', 'FBM', 'HRE', 'JUB', 'LLW', 'LUN', 'MGQ', 'MPM', 'MWZ', 'EBB'] },
+  { hub: 'EBB', destinations: ['KGL'] },
+  { hub: 'JNB', destinations: ['CPT', 'DUR', 'PLZ', 'ELS', 'MTS', 'MSU', 'MPM', 'WDH', 'GBE'] },
+  { hub: 'WDH', destinations: ['WVB'] },
+]
+
+const routeCards = [
   {
-    label: 'China origin -> BRU / LGG -> JNB',
-    detail: 'For South Africa project cargo, mining equipment, oversized machinery, and urgent industrial shipments.',
+    label: 'China origin -> LGG -> B747F direct Africa points',
+    detail: 'Use LGG as the Europe gateway, then connect to main-deck B747F capacity for key African airports.',
   },
   {
-    label: 'China origin -> BRU / LGG -> FBM',
-    detail: 'For DRC mining and industrial cargo where standard China-origin routing has no workable uplift option.',
+    label: 'China origin -> LGG -> Africa hub -> truck transfer',
+    detail: 'For inland points such as FBM, KGL, CPT, DUR, WDH, ABJ, FIH and others, route through a workable African hub instead of forcing a broken direct plan.',
   },
 ]
 
@@ -53,18 +80,18 @@ const process = [
   },
   {
     icon: Plane,
-    title: 'China to BRU/LGG uplift',
+    title: 'China to LGG uplift',
     text: 'Move the cargo out of China first using the most realistic available widebody or freighter option.',
   },
   {
     icon: FileCheck2,
     title: 'Europe transit handling',
-    text: 'Coordinate handover, documents, warehouse handling, build-up, and transfer readiness in BRU or LGG.',
+    text: 'Coordinate handover, documents, warehouse handling, build-up, and transfer readiness at LGG.',
   },
   {
     icon: Truck,
-    title: 'Full freighter charter to Africa',
-    text: 'Arrange the Europe to JNB or FBM leg by full freighter charter when direct China-origin options fail.',
+    title: 'Africa hub and inland delivery',
+    text: 'Connect by B747F direct service or hub truck transfer into JNB, FBM, LUN, EBB, NBO, LOS, ACC and inland points.',
   },
 ]
 
@@ -87,20 +114,20 @@ export default function EuropeTransitCargoPage() {
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-medium text-amberGold">
               <MapPinned className="h-4 w-4" />
-              BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo
+              LGG Europe transit network for Africa oversized cargo
             </div>
             <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
-              No direct freighter option from China to Africa?
-              <span className="block text-amberGold">We build the Europe transit route.</span>
+              LGG Africa Gateway
+              <span className="block text-amberGold">for oversized cargo from China.</span>
             </h1>
             <p className="max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
               For oversized, heavy, and project cargo that cannot move on standard China-origin flights,
-              EASCargo designs China to BRU/LGG transit plans, then connects to JNB or FBM by Europe-side
-              full freighter charter.
+              EASCargo designs China to LGG transit plans, then connects to Africa by B747F direct service
+              or hub truck transfer. Coverage includes JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="mailto:globegsa@Gmail.com?subject=JNB%20FBM%20oversized%20cargo%20via%20BRU%20LGG%20quote"
+                href="mailto:globegsa@Gmail.com?subject=LGG%20Africa%20Gateway%20oversized%20cargo%20quote"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950 transition hover:bg-amberGold/90"
               >
                 Send cargo details
@@ -122,16 +149,16 @@ export default function EuropeTransitCargoPage() {
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Route logic</p>
             <h2 className="mb-5 text-3xl font-bold text-slate-950 md:text-4xl">
-              The route is not simple. That is the opportunity.
+              The product is not one airport. It is a gateway network.
             </h2>
             <p className="text-lg leading-8 text-textSecondary">
               Many China to Africa oversized cargo enquiries fail at the first step: no direct aircraft,
               no door size, no main deck option, or no operator willing to accept the cargo. The solution is
-              not another cheap rate. The solution is a route that can physically work.
+              not another cheap rate. The solution is LGG as a Europe gateway, then the right African hub.
             </p>
           </div>
           <div className="grid gap-4">
-            {routes.map((route) => (
+            {routeCards.map((route) => (
               <div key={route.label} className="rounded-lg border border-borderLight bg-surface p-6">
                 <div className="mb-3 flex items-center gap-3 text-lg font-semibold text-slate-950">
                   <Plane className="h-5 w-5 text-amberGold" />
@@ -145,6 +172,46 @@ export default function EuropeTransitCargoPage() {
       </section>
 
       <section className="bg-slate-50 py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Network coverage</p>
+            <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+              LGG direct freighter points plus inland truck transfer.
+            </h2>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+            <div className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
+              <div className="mb-5 flex items-center gap-3">
+                <Plane className="h-6 w-6 text-amberGold" />
+                <h3 className="text-xl font-semibold text-slate-950">B747F direct ex LGG</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {directFlightDestinations.map((code) => (
+                  <span key={code} className="rounded-full bg-amberGold/10 px-3 py-1 text-sm font-semibold text-slate-800">
+                    {code}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-lg border border-borderLight bg-white p-6 shadow-sm">
+              <div className="mb-5 flex items-center gap-3">
+                <Waypoints className="h-6 w-6 text-amberGold" />
+                <h3 className="text-xl font-semibold text-slate-950">Truck transfer via Africa hubs</h3>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {truckTransferGroups.map((group) => (
+                  <div key={group.hub} className="rounded-lg bg-slate-50 p-4">
+                    <div className="mb-2 text-sm font-semibold text-amberGold">via {group.hub}</div>
+                    <div className="text-sm leading-7 text-textSecondary">{group.destinations.join(' / ')}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Best fit cargo</p>
@@ -192,7 +259,7 @@ export default function EuropeTransitCargoPage() {
             <p className="text-lg leading-8 text-slate-300">
               Send the cargo dimensions, gross weight, packing photos, origin city, required airport,
               ready date, and any special lifting or handling notes. We will first tell you whether
-              China direct is possible, or whether BRU/LGG transit is the realistic path.
+              China direct is possible, or whether LGG transit plus an African hub is the realistic path.
             </p>
           </div>
           <div className="rounded-lg border border-white/10 bg-white/5 p-6">
@@ -204,7 +271,7 @@ export default function EuropeTransitCargoPage() {
               <li>Commodity and HS code if available</li>
               <li>Dimensions, weight, and number of pieces</li>
               <li>Packing photos and lifting points</li>
-              <li>Origin city in China and destination airport JNB or FBM</li>
+              <li>Origin city in China and destination airport or inland city in Africa</li>
               <li>Ready date and latest acceptable arrival date</li>
             </ul>
             <a

@@ -95,7 +95,7 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
               用AI实时监控仓位、预警风险、优化路线。旺季不慌，淡季不愁。
               <br />
               <span className="text-slate-700 font-semibold">
-                BRU/LGG Europe charter transit solutions for JNB/FBM oversized cargo.
+                LGG Europe transit network for Africa oversized cargo: JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.
               </span>
             </p>
 
@@ -128,7 +128,7 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
                 whileTap={{ scale: 0.98 }}
               >
                 <Route className="w-4 h-4" />
-                <span className="font-medium">查看欧洲中转包机方案</span>
+                <span className="font-medium">查看 LGG 非洲中转网络</span>
               </motion.a>
             </div>
 
