@@ -1,14 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles, Plane, Shield, Zap, Send, Bot, User, Route } from 'lucide-react'
-
-interface Message {
-  id: number
-  role: 'user' | 'bot'
-  content: string
-}
+import { ArrowRight, Plane, Route, Shield, Sparkles, Zap } from 'lucide-react'
 
 interface HeroSectionProps {
   onOpenContact: () => void
@@ -16,41 +9,27 @@ interface HeroSectionProps {
   onOpenAIQuote: () => void
 }
 
-export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote }: HeroSectionProps) {
-  const [messages, setMessages] = useState<Message[]>([
-    { id: 1, role: 'bot', content: '你好！我是神仙的AI助理 🤖\n\n有什么空运问题尽管问？' }
-  ])
-  const [input, setInput] = useState('')
-  const [isTyping, setIsTyping] = useState(false)
+const directHubs = [
+  { code: 'LBV', name: '利伯维尔', note: '8米长货实操' },
+  { code: 'JNB', name: '约翰内斯堡', note: '南部非洲Hub' },
+  { code: 'LUN', name: '卢萨卡', note: '矿业项目入口' },
+  { code: 'NBO', name: '内罗毕', note: '东非Hub' },
+]
 
-  const handleSend = async () => {
-    if (!input.trim()) return
-    
-    const userMessage: Message = { id: Date.now(), role: 'user', content: input }
-    setMessages(prev => [...prev, userMessage])
-    setInput('')
-    setIsTyping(true)
-    
-    setTimeout(() => {
-      const botResponses: Record<string, string> = {
-        'AI怎么帮我优化空运方案？': '用AI分析你的货量、时效、目的港，帮你匹配最优航线，预警仓位风险，优化成本10-20%',
-        '旺季仓位紧张怎么办？': '我们有20-30吨/班包板仓位！提前申请，旺季也能快速响应，还可包机（最大98.8吨）',
-        '超重超大货物能运吗？': '可以！单件17吨、45吨单票都操作过。发具体尺寸帮你评估',
-        '运费能便宜多少？': '用AI分析可识别隐藏成本，优化路线省10-20%。发需求帮你分析',
-      }
-      
-      const response = botResponses[input] || `感谢问题！需要了解：起运港、目的港、货量、时效。加微信 jnb931 详细聊~`
-      
-      setMessages(prev => [...prev, { id: Date.now() + 1, role: 'bot', content: response }])
-      setIsTyping(false)
-    }, 1000)
-  }
+const inlandPoints = [
+  { code: 'FBM', name: '卢本巴希' },
+  { code: 'KGL', name: '基加利' },
+  { code: 'CPT', name: '开普敦' },
+  { code: 'DUR', name: '德班' },
+  { code: 'WDH', name: '温得和克' },
+  { code: 'ABJ', name: '阿比让' },
+]
 
+export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-      {/* Background */}
+    <section className="relative min-h-screen overflow-hidden bg-white">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.4]"
         style={{
           backgroundImage: `linear-gradient(rgba(245, 166, 35, 0.15) 1px, transparent 1px),
@@ -59,192 +38,155 @@ export default function HeroSection({ onOpenContact, onOpenWechat, onOpenAIQuote
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pb-16 pt-28 md:pt-32">
+        <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* AI Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-amberGold/10 border border-amberGold/30 text-amberGold text-sm font-medium rounded-full mb-6"
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold"
             >
-              <Sparkles className="w-4 h-4" />
-              <span>用AI帮您优化空运方案，降低20%成本</span>
+              <Route className="h-4 w-4" />
+              <span>中国 -> LGG/BRU -> 非洲大件中转网络</span>
             </motion.div>
 
-            {/* Main headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-6">
-              告别物流盲区
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+              国内没有直飞方案？
               <br />
-              <span className="text-amberGold">AI让货运更简单</span>
+              <span className="text-amberGold">把非洲大件路线做出来</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-xl text-slate-600 mb-4 max-w-xl">
-              16年空运经验 + <span className="text-amberGold font-semibold">AI智能分析</span>，为您的跨境货物提供
-              <span className="text-amberGold font-semibold">清晰</span>、<span className="text-amberGold font-semibold">可控</span>、<span className="text-amberGold font-semibold">高性价比</span>的空运方案
+            <p className="mb-5 max-w-2xl text-xl leading-9 text-slate-600">
+              面向中国货代、工厂和贸易商：超长、超重、超高货先飞欧洲LGG/BRU，
+              再衔接B747F全货机或非洲Hub卡车中转，覆盖JNB、FBM、LUN、LBV及30+内陆目的地。
             </p>
 
-            <p className="text-lg text-slate-500 mb-8">
-              用AI实时监控仓位、预警风险、优化路线。旺季不慌，淡季不愁。
-              <br />
-              <span className="text-slate-700 font-semibold">
-                LGG Europe transit network for Africa oversized cargo: JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.
-              </span>
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
-              <motion.button
-                onClick={onOpenWechat}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amberGold to-orange-500 text-white font-medium hover:shadow-xl hover:shadow-amberGold/30 transition-all duration-300 rounded-xl"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Sparkles className="w-4 h-4" />
-                <span>免费领《华东空运风险自查清单》</span>
-              </motion.button>
-              
-              <motion.button
-                onClick={onOpenContact}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-amberGold text-amberGold hover:bg-amberGold hover:text-white transition-all duration-300 rounded-xl"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className="font-medium">加微信深度交流</span>
-                <ArrowRight className="w-4 h-4" />
-              </motion.button>
-
-              <motion.a
-                href="/zh/lgg-africa-gateway/"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-300 text-slate-700 hover:border-amberGold hover:text-amberGold hover:shadow-lg transition-all duration-300 rounded-xl"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Route className="w-4 h-4" />
-                <span className="font-medium">查看 LGG 非洲中转网络</span>
-              </motion.a>
+            <div className="mb-8 grid gap-3 text-base text-slate-700 sm:grid-cols-2">
+              <div className="rounded-lg border border-amberGold/30 bg-amberGold/10 p-4">
+                <div className="mb-1 font-semibold text-slate-950">LBV 8米长货实操</div>
+                <div className="text-sm leading-6">欧洲联运 + B747F开鼻门，成本比某全球货代方案节省接近20万人民币。</div>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+                <div className="mb-1 font-semibold text-slate-950">单件14吨大件方案</div>
+                <div className="text-sm leading-6">先判断能不能飞、怎么装、哪里会卡，再谈报价和时效。</div>
+              </div>
             </div>
 
-            {/* Value Props */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-2 text-slate-600">
-                <Sparkles className="w-5 h-5 text-amberGold" />
-                <span className="text-sm">AI方案优化</span>
+            <div className="mb-8 flex flex-col gap-4 sm:flex-row">
+              <motion.a
+                href="/zh/lgg-africa-gateway/"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amberGold to-orange-500 px-7 py-4 text-base font-semibold text-white shadow-xl shadow-amberGold/25 transition hover:shadow-amberGold/40"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                进入非洲中转网络
+                <ArrowRight className="h-5 w-5" />
+              </motion.a>
+
+              <motion.button
+                onClick={onOpenWechat}
+                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                发尺寸重量，先判断路线
+              </motion.button>
+
+              <motion.button
+                onClick={onOpenContact}
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-7 py-4 text-base font-semibold text-slate-700 transition hover:border-amberGold hover:text-amberGold"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                加微信深度交流
+              </motion.button>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 text-sm text-slate-600 md:grid-cols-4">
+              <div className="flex items-center gap-2">
+                <Plane className="h-5 w-5 text-amberGold" />
+                <span>B747F全货机</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Plane className="w-5 h-5 text-amberGold" />
-                <span className="text-sm">仓位实时监控</span>
+              <div className="flex items-center gap-2">
+                <Route className="h-5 w-5 text-amberGold" />
+                <span>欧洲中转衔接</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Shield className="w-5 h-5 text-amberGold" />
-                <span className="text-sm">风险预警</span>
+              <div className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-amberGold" />
+                <span>尺寸风险预判</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Zap className="w-5 h-5 text-amberGold" />
-                <span className="text-sm">成本透明</span>
+              <div className="flex items-center gap-2">
+                <Zap className="h-5 w-5 text-amberGold" />
+                <span>成本路径对比</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Right - AI Chat */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
+            className="rounded-2xl border border-slate-200 bg-white p-5 shadow-2xl"
           >
-            {/* Chat Header */}
-            <div className="bg-gradient-to-r from-amberGold to-orange-500 px-4 py-3 flex items-center gap-2">
-              <Bot className="w-5 h-5 text-white" />
-              <span className="text-white font-medium text-sm">在线对话 - 秒级响应</span>
-              <span className="ml-auto w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <div className="mb-5 flex items-center justify-between gap-4">
+              <div>
+                <div className="text-sm font-semibold uppercase tracking-wider text-amberGold">Africa Transit Network</div>
+                <h2 className="mt-1 text-2xl font-bold text-slate-950">非洲中转网络一眼看懂</h2>
+              </div>
+              <Sparkles className="h-7 w-7 text-amberGold" />
             </div>
 
-            {/* Messages */}
-            <div className="h-72 overflow-y-auto p-4 bg-slate-50 space-y-3">
-              {messages.map((msg) => (
-                <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`flex gap-2 max-w-[85%] ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
-                    <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${
-                      msg.role === 'user' ? 'bg-amberGold' : 'bg-slate-200'
-                    }`}>
-                      {msg.role === 'user' ? (
-                        <User className="w-3 h-3 text-white" />
-                      ) : (
-                        <Bot className="w-3 h-3 text-slate-600" />
-                      )}
-                    </div>
-                    <div className={`rounded-2xl px-3 py-2 ${
-                      msg.role === 'user' 
-                        ? 'bg-amberGold text-white' 
-                        : 'bg-white border border-slate-200 text-slate-800 text-sm'
-                    }`}>
-                      {msg.content}
-                    </div>
-                  </div>
-                </div>
-              ))}
-              
-              {isTyping && (
-                <div className="flex justify-start">
-                  <div className="flex gap-2">
-                    <div className="w-6 h-6 bg-slate-200 rounded-full flex items-center justify-center">
-                      <Bot className="w-3 h-3 text-slate-600" />
-                    </div>
-                    <div className="bg-white border border-slate-200 rounded-2xl px-3 py-2">
-                      <div className="flex gap-1">
-                        <span className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                        <span className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                        <span className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+            <div className="rounded-xl bg-slate-950 p-5 text-white">
+              <div className="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-2 text-center text-sm font-semibold">
+                <div className="rounded-lg bg-white/10 px-3 py-3">中国起运</div>
+                <ArrowRight className="h-4 w-4 text-amberGold" />
+                <div className="rounded-lg bg-amberGold px-3 py-3 text-slate-950">LGG / BRU</div>
+                <ArrowRight className="h-4 w-4 text-amberGold" />
+                <div className="rounded-lg bg-white/10 px-3 py-3">非洲Hub</div>
+              </div>
+              <div className="mt-4 text-center text-sm leading-6 text-slate-300">
+                国内没有直飞大件方案时，先把欧洲中转和非洲二程拆清楚。
+              </div>
             </div>
 
-            {/* Quick Questions */}
-            <div className="px-4 py-2 bg-white border-t border-slate-100">
-              <div className="flex flex-wrap gap-1">
-                {['仓位？', '运费？', '超重件？'].map((q) => (
-                  <button
-                    key={q}
-                    onClick={() => setInput(q)}
-                    className="text-xs px-2 py-1 bg-slate-100 text-slate-600 rounded-full hover:bg-amberGold/10 hover:text-amberGold"
-                  >
-                    {q}
-                  </button>
+            <div className="mt-5">
+              <div className="mb-3 text-sm font-semibold text-slate-950">B747F直飞/主入口</div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {directHubs.map((hub) => (
+                  <div key={hub.code} className="rounded-lg border border-borderLight bg-slate-50 p-4">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <div className="text-lg font-bold text-slate-950">{hub.code}</div>
+                      <div className="text-sm font-semibold text-amberGold">{hub.name}</div>
+                    </div>
+                    <div className="mt-2 text-sm text-slate-600">{hub.note}</div>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Input */}
-            <div className="p-3 bg-white border-t border-slate-200">
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="问点什么..."
-                  className="flex-1 px-3 py-2 bg-slate-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-amberGold/50"
-                />
-                <button
-                  onClick={handleSend}
-                  disabled={!input.trim()}
-                  className="w-9 h-9 bg-amberGold rounded-full flex items-center justify-center text-white disabled:opacity-50"
-                >
-                  <Send className="w-4 h-4" />
-                </button>
+            <div className="mt-5">
+              <div className="mb-3 text-sm font-semibold text-slate-950">Hub卡车延伸/内陆点</div>
+              <div className="flex flex-wrap gap-2">
+                {inlandPoints.map((point) => (
+                  <span key={point.code} className="rounded-full bg-amberGold/10 px-3 py-2 text-sm font-semibold text-slate-800">
+                    {point.code} {point.name}
+                  </span>
+                ))}
               </div>
             </div>
+
+            <a
+              href="/zh/lgg-africa-gateway/#cases"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-950 px-5 py-4 font-semibold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              看LBV 8米长货和14吨案例
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </motion.div>
         </div>
       </div>
