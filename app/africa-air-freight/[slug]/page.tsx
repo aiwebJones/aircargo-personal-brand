@@ -379,6 +379,13 @@ const pages = {
 }
 
 type Slug = keyof typeof pages
+type DeepDive = {
+  heading: string
+  intro: string
+  scenarios: string[]
+  risks: string[]
+  salesAngle: string
+}
 
 const quoteFields = [
   'Commodity and clear cargo description',
@@ -407,7 +414,7 @@ const routeSteps = [
   },
 ]
 
-const deepDives = {
+const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
     heading: 'Deep route note for JNB Johannesburg oversized cargo',
     intro:
@@ -544,18 +551,7 @@ const deepDives = {
     salesAngle:
       'For ACC, win trust by being transparent about what is included, what is not included and what the consignee must prepare before cargo departure.',
   },
-} satisfies Partial<
-  Record<
-    Slug,
-    {
-      heading: string
-      intro: string
-      scenarios: string[]
-      risks: string[]
-      salesAngle: string
-    }
-  >
->
+}
 
 function getFaq(item: (typeof pages)[Slug]) {
   return [

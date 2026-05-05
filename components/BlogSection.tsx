@@ -14,9 +14,22 @@ interface BlogPost {
   category: string
   author: string
   image?: string
+  href?: string
 }
 
 const blogPosts: BlogPost[] = [
+  {
+    id: 'why-shippers-ignore-brokers',
+    title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入',
+    excerpt: '客户不缺普通货代，客户缺能判断复杂异常票的人。不要卖价格，先卖路线可执行性、资料缺口和风险清单。',
+    content: '非洲大件项目货的切入点不是泛泛报价，而是帮助客户判断这票货能不能走、怎么走、哪里会卡。',
+    date: '2026-05-06',
+    readTime: '10 分钟',
+    category: '获客方法',
+    author: '神仙货运Jones',
+    image: '/case-17t-4.jpg',
+    href: '/insights/why-shippers-ignore-freight-brokers/'
+  },
   {
     id: 'jnb-mining',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
@@ -144,7 +157,7 @@ export default function BlogSection() {
   const [selectedCategory, setSelectedCategory] = useState<string>('全部')
   const [expandedPost, setExpandedPost] = useState<string | null>(null)
 
-  const categories = ['全部', '非洲国家', '大件案例', '清关指南', '航线方案']
+  const categories = ['全部', '获客方法', '非洲国家', '大件案例', '清关指南', '航线方案']
 
   const filteredPosts = selectedCategory === '全部' 
     ? blogPosts 
@@ -235,13 +248,23 @@ export default function BlogSection() {
                 </p>
 
                 {/* Read More */}
-                <button
-                  onClick={() => setExpandedPost(expandedPost === post.id ? null : post.id)}
-                  className="flex items-center gap-2 text-amberGold hover:gap-3 transition-all group"
-                >
-                  {expandedPost === post.id ? '收起' : '阅读全文'}
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                {post.href ? (
+                  <a
+                    href={post.href}
+                    className="flex items-center gap-2 text-amberGold hover:gap-3 transition-all group"
+                  >
+                    阅读全文
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => setExpandedPost(expandedPost === post.id ? null : post.id)}
+                    className="flex items-center gap-2 text-amberGold hover:gap-3 transition-all group"
+                  >
+                    {expandedPost === post.id ? '收起' : '阅读全文'}
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                )}
               </div>
             </motion.article>
           ))}
