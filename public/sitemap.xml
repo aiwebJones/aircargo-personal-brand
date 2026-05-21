@@ -25,6 +25,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.eascargo.com/insights/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
     <loc>https://www.eascargo.com/insights/why-shippers-ignore-freight-brokers/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>

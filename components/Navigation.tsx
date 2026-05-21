@@ -12,14 +12,14 @@ interface NavigationProps {
 const navItemsZh = [
   { label: '关于', href: '#about' },
   { label: '案例', href: '/cases' },
-  { label: '博客', href: '#blog' },
+  { label: '情报', href: '/insights/' },
   { label: '联系', href: '#contact' },
 ]
 
 const navItemsEn = [
   { label: 'About', href: '#about' },
   { label: 'Cases', href: '/cases' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'Insights', href: '/insights/' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -39,6 +39,11 @@ export default function Navigation({ currentLang, onLangChange }: NavigationProp
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false)
+    if (!href.startsWith('#')) {
+      window.location.href = href
+      return
+    }
+
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })

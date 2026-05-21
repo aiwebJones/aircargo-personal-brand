@@ -19,6 +19,18 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'ethiopian-africa-special-rates',
+    title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选？',
+    excerpt: 'ET 经 ADD 中转覆盖多个非洲项目点，适合小批量急件、矿业备件、工程物资和贸易补货。关键不是只看价格，而是先看目的国清关和二程交付。',
+    content: 'ET 经 ADD 的非洲网络适合多点分拨，但每个国家的进口资料、收货人资质、目的港费用和最终交付方式都不同。',
+    date: '2026-05-21',
+    readTime: '9 分钟',
+    category: '航线情报',
+    author: '神仙货运Jones',
+    image: '/case-17t-2.jpg',
+    href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/'
+  },
+  {
     id: 'why-shippers-ignore-brokers',
     title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入',
     excerpt: '客户不缺普通货代，客户缺能判断复杂异常票的人。不要卖价格，先卖路线可执行性、资料缺口和风险清单。',
@@ -157,7 +169,7 @@ export default function BlogSection() {
   const [selectedCategory, setSelectedCategory] = useState<string>('全部')
   const [expandedPost, setExpandedPost] = useState<string | null>(null)
 
-  const categories = ['全部', '获客方法', '非洲国家', '大件案例', '清关指南', '航线方案']
+  const categories = ['全部', '航线情报', '获客方法', '非洲国家', '大件案例', '清关指南', '航线方案']
 
   const filteredPosts = selectedCategory === '全部' 
     ? blogPosts 
