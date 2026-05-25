@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { ArrowRight, Calendar, FileText, Plane, SearchCheck, ShieldCheck } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '非洲空运情报与项目货文章 | EASCargo Jones',
+  title: '非洲空运情报库 | 中国到非洲空运价格、清关与项目货路线 | EASCargo Jones',
   description:
-    'EASCargo Jones 非洲空运情报：覆盖中国到非洲空运、ET埃塞俄比亚航空、LGG/BRU欧洲中转、ACC/BKO/OUA/HRE/LUN/NIM/CKY等非洲目的地和项目货路线判断。',
+    'EASCargo Jones非洲空运情报库，覆盖中国到非洲空运价格、清关资料、ET埃塞俄比亚航空、LGG/BRU欧洲中转、ACC/BKO/OUA/HRE/LUN/NIM/CKY等项目货路线判断。',
   keywords: [
     '非洲空运情报',
     '中国到非洲空运',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.eascargo.com/insights/',
   },
   openGraph: {
-    title: '非洲空运情报与项目货文章 | EASCargo Jones',
+    title: '非洲空运情报库 | 中国到非洲空运价格、清关与项目货路线',
     description: '面向工厂、贸易商和项目客户的非洲空运路线判断、清关资料和市场情报。',
     url: 'https://www.eascargo.com/insights/',
     type: 'website',

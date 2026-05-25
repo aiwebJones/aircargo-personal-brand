@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '非洲大件项目空运 | LGG/BRU欧洲中转 | EASCargo Jones',
-  description: '专注中国到非洲大件项目空运：LGG/BRU欧洲中转、B747F全货机、JNB/FBM/LUN/LBV等非洲目的地、清关资料预判、矿业和工程设备空运方案。',
+  title: '中国到非洲大件空运专家 | JNB/FBM/LUN/LBV | LGG/BRU欧洲中转 | EASCargo Jones',
+  description: 'EASCargo Jones专注中国到非洲大件项目空运：JNB约翰内斯堡、FBM卢本巴希、LUN卢萨卡、LBV利伯维尔，提供LGG/BRU欧洲中转、B747F全货机、矿业设备和清关资料预判。',
   keywords: [
     '非洲大件项目空运',
     'LGG欧洲中转非洲',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   creator: '神仙货运Jones',
   metadataBase: new URL('https://www.eascargo.com'),
   alternates: {
-    canonical: 'https://www.eascargo.com',
+    canonical: 'https://www.eascargo.com/',
     languages: {
       zh: 'https://www.eascargo.com/',
       en: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'zh_CN',
     url: 'https://www.eascargo.com',
-    title: 'EASCargo Jones | 非洲大件项目空运专家',
-    description: '中国到非洲大件项目货，LGG/BRU欧洲中转，B747F全货机，JNB/FBM/LUN/LBV等非洲路线判断和清关资料预判。',
+    title: 'EASCargo Jones | 中国到非洲大件空运专家',
+    description: '面向工厂、贸易商和货代的非洲大件项目货路线判断：LGG/BRU欧洲中转、B747F全货机、JNB/FBM/LUN/LBV和矿业设备空运。',
     siteName: 'EASCargo Jones - Africa Project Cargo Air Freight',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EASCargo Jones | 非洲大件项目空运专家',
-    description: 'LGG/BRU欧洲中转非洲大件项目货，覆盖JNB、FBM、LUN、LBV等目的地。',
+    title: 'EASCargo Jones | 中国到非洲大件空运专家',
+    description: '中国到非洲大件项目货路线判断，覆盖JNB、FBM、LUN、LBV和LGG/BRU欧洲中转。',
   },
   robots: {
     index: true,

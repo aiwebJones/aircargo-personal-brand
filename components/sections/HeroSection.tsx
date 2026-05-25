@@ -56,9 +56,9 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
             </motion.div>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
-              国内没有直飞方案？
+              中国到非洲大件空运
               <br />
-              <span className="text-amberGold">把非洲大件路线做出来</span>
+              <span className="text-amberGold">国内直飞不了，也能经LGG/BRU做出来</span>
             </h1>
 
             <p className="mb-5 max-w-2xl text-xl leading-9 text-slate-600">

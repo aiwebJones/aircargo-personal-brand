@@ -387,6 +387,31 @@ type DeepDive = {
   salesAngle: string
 }
 
+const chineseDestinations: Record<Slug, { city: string; country: string; keywords: string[] }> = {
+  jnb: { city: '约翰内斯堡', country: '南非', keywords: ['JNB约翰内斯堡空运', '南非矿业设备空运', '南部非洲项目货'] },
+  fbm: { city: '卢本巴希', country: '刚果金', keywords: ['FBM卢本巴希空运', '刚果金矿业设备空运', '铜钴矿区备件空运'] },
+  lun: { city: '卢萨卡', country: '赞比亚', keywords: ['LUN卢萨卡空运', '赞比亚矿业备件空运', '中国到赞比亚空运'] },
+  lbv: { city: '利伯维尔', country: '加蓬', keywords: ['LBV利伯维尔空运', '加蓬超长货空运', 'B747F开鼻门装载'] },
+  nbo: { city: '内罗毕', country: '肯尼亚', keywords: ['NBO内罗毕空运', '肯尼亚项目货空运', '东非空运Hub'] },
+  ebb: { city: '恩德培', country: '乌干达', keywords: ['EBB恩德培空运', '乌干达项目货空运', '中国到乌干达空运'] },
+  los: { city: '拉各斯', country: '尼日利亚', keywords: ['LOS拉各斯空运', '尼日利亚空运清关', '中国到尼日利亚空运'] },
+  acc: { city: '阿克拉', country: '加纳', keywords: ['ACC阿克拉空运', '加纳项目货空运', '中国到加纳空运'] },
+  abj: { city: '阿比让', country: '科特迪瓦', keywords: ['ABJ阿比让空运', '科特迪瓦空运', '西非法语区空运'] },
+  bko: { city: '巴马科', country: '马里', keywords: ['BKO巴马科空运', '马里项目货空运', '西非内陆空运'] },
+  cky: { city: '科纳克里', country: '几内亚', keywords: ['CKY科纳克里空运', '几内亚矿业设备空运', '铝土矿项目货空运'] },
+  kgl: { city: '基加利', country: '卢旺达', keywords: ['KGL基加利空运', '卢旺达空运', '东非内陆空运'] },
+  dar: { city: '达累斯萨拉姆', country: '坦桑尼亚', keywords: ['DAR达累斯萨拉姆空运', '坦桑尼亚项目货空运', '东非工程设备空运'] },
+  cpt: { city: '开普敦', country: '南非', keywords: ['CPT开普敦空运', '南非开普敦空运', '海工设备空运'] },
+  dur: { city: '德班', country: '南非', keywords: ['DUR德班空运', '南非德班空运', '港口设备空运'] },
+  wdh: { city: '温得和克', country: '纳米比亚', keywords: ['WDH温得和克空运', '纳米比亚矿业设备空运', '中国到纳米比亚空运'] },
+  mpm: { city: '马普托', country: '莫桑比克', keywords: ['MPM马普托空运', '莫桑比克项目货空运', '能源设备空运'] },
+  fih: { city: '金沙萨', country: '刚果金', keywords: ['FIH金沙萨空运', '刚果金空运', '中非项目货空运'] },
+  add: { city: '亚的斯亚贝巴', country: '埃塞俄比亚', keywords: ['ADD亚的斯亚贝巴空运', '埃塞俄比亚空运', 'ET空运中转'] },
+  dss: { city: '达喀尔', country: '塞内加尔', keywords: ['DSS达喀尔空运', '塞内加尔空运', '西非法语区项目货'] },
+  cmn: { city: '卡萨布兰卡', country: '摩洛哥', keywords: ['CMN卡萨布兰卡空运', '摩洛哥空运', '北非空运'] },
+  cai: { city: '开罗', country: '埃及', keywords: ['CAI开罗空运', '埃及项目货空运', '北非工程设备空运'] },
+}
+
 const quoteFields = [
   'Commodity and clear cargo description',
   'HS Code and declared customs value',
@@ -582,21 +607,38 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const item = pages[params.slug as Slug]
+  const chinese = chineseDestinations[params.slug as Slug]
   if (!item) {
     return {
       title: 'Africa Air Freight from China | EASCargo Jones',
     }
   }
 
+  const title = chinese
+    ? `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
+    : `${item.title} | EASCargo Jones`
+  const description = chinese
+    ? `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
+    : item.description
+
   return {
-    title: `${item.title} | EASCargo Jones`,
-    description: item.description,
+    title,
+    description,
+    keywords: [
+      ...(chinese?.keywords || []),
+      `${item.code} air freight`,
+      `China to ${item.city} air freight`,
+      '中国到非洲空运',
+      '非洲大件项目货',
+      'LGG BRU欧洲中转',
+      '矿业设备空运',
+    ],
     alternates: {
       canonical: `https://www.eascargo.com/africa-air-freight/${params.slug}/`,
     },
     openGraph: {
-      title: item.title,
-      description: item.description,
+      title,
+      description,
       url: `https://www.eascargo.com/africa-air-freight/${params.slug}/`,
       type: 'website',
     },
@@ -606,6 +648,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function AfricaDestinationPage({ params }: { params: { slug: string } }) {
   const item = pages[params.slug as Slug] || pages.jnb
   const currentSlug = params.slug as Slug
+  const chinese = chineseDestinations[currentSlug]
   const relatedPages = Object.entries(pages)
     .filter(([slug]) => slug !== currentSlug)
     .slice(0, 8)
@@ -622,10 +665,17 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">
               <Plane className="h-4 w-4" />
-              {item.code} - {item.city}, {item.country}
+              {chinese ? `${item.code} - ${chinese.city} / ${item.city}, ${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
             </div>
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">{item.title}</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{item.description}</p>
+            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
+              {chinese ? `中国到 ${item.code} ${chinese.city} 空运` : item.title}
+              {chinese && <span className="block text-amberGold">China to {item.city} project cargo</span>}
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              {chinese
+                ? `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
+                : item.description}
+            </p>
             <a
               href={`mailto:globegsa@Gmail.com?subject=China%20to%20${item.code}%20oversized%20air%20freight%20quote`}
               className="mt-10 inline-flex items-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950"
