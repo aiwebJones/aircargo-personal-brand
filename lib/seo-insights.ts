@@ -3915,6 +3915,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance',
+    title: '中非共和国BGF空运清关：Bangui ASYCUDAWorld、PVoC/CoC和BIVAC/DIC怎么核？',
+    excerpt:
+      '中国到中非共和国BGF/Bangui空运，医疗援助、通信设备、工程备件、车辆零件和高价值急件不能只看航班。Bangui Airport ASYCUDAWorld、CAR PVoC/CoC、BIVAC/DIC历史要求、AWB、发票、箱单和当地broker责任要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['中非共和国BGF清关资料', 'Central African Republic ASYCUDAWorld', 'Bangui airport customs clearance', 'CAR PVoC Certificate of Conformity', 'BGF air freight customs', 'BIVAC DIC Central African Republic', '中国到中非共和国空运'],
+    template: 'generated',
+    audience: ['中非共和国进口商', '医疗援助和NGO供应商', '通信设备供应商', '工程项目和车辆备件客户'],
+    angle: '用BGF、Bangui airport customs clearance、Central African Republic ASYCUDAWorld、CAR PVoC/CoC和BIVAC/DIC承接中非共和国空运清关搜索。',
+    sections: [
+      {
+        heading: 'BGF先看机场清关和ASYCUDAWorld',
+        body: [
+          '中非共和国空运主要看BGF Bangui M’Poko International Airport。医疗援助、温控药品、通信设备、工程备件、车辆零件、安防设备、检测仪器和高价值急件，询价时不能只看中国到Bangui有没有航班，还要先确认进口商、当地清关代理、AWB、商业发票、装箱单、HS Code和机场清关责任。',
+          'ASYCUDA在2023年7月发布的更新中说明，Bangui Airport在2023年2月16日作为试点海关办公室成功上线ASYCUDAWorld；2023年5月8日，Bangui和Beloko的所有海关办公室迁移到ASYCUDAWorld；2023年6月12日，位于喀麦隆Douala的中非共和国转关办公室也迁移到ASYCUDAWorld，并和喀麦隆海关交换转关数据、跟踪货物到最终目的地。',
+        ],
+        bullets: ['BGF Bangui Airport', 'Central African Republic ASYCUDAWorld', 'airport customs clearance', 'Douala transit data exchange'],
+      },
+      {
+        heading: 'PVoC/CoC不要等货到Bangui',
+        body: [
+          'SGS的Central African Republic PVoC页面说明，自2021年3月1日起，SGS代表中非共和国商务部独家服务进口商品PVoC项目。符合相关法规和标准的货物会签发Certificate of Conformity（CoC），该证书需要在货物到达口岸后、放行给进口商/收货人之前向海关出示。',
+          'SGS列出的覆盖品类包括食品、化工、塑料橡胶、建材、金属、工业设备和机械、电子电器、通信产品、车辆及零件、实验室/科学/计量设备等。商业货物FOB低于USD 1,500、个人货物低于USD 3,000不在该项目覆盖范围内。对BGF空运来说，最危险的是到港后才发现需要CoC，导致仓租、查验、改单和客户投诉同时发生。',
+        ],
+        bullets: ['CAR PVoC', 'Certificate of Conformity', 'telecommunications products', 'industrial equipment and machinery'],
+      },
+      {
+        heading: 'BIVAC/DIC历史要求仍要问清',
+        body: [
+          'Bureau Veritas Verigates的2018年中非共和国PSI资料表显示，当时授权的PSI公司为Bureau Veritas/BIVAC，FOB金额达到XAF 500,000的货物需要打开Déclaration d’Importation Commerciale（DIC），DIC由BIVAC签发，有效期6个月；最终报告可包括Attestation de Vérification、Rapport d’Anomalies或认证最终发票。',
+          '这份资料不能简单当作今天每票空运的唯一规则，因为SGS 2021 PVoC/CoC项目已经是可核实的较新来源。但BIVAC、DIC、ADV这些词仍会出现在老合同、银行资料、进口商话术和当地broker清单里。销售动作不是争论谁对，而是在订舱前要求进口商和目的港代理明确：当前到底按PVoC/CoC、DIC/ADV，还是两套资料都要处理。',
+        ],
+        bullets: ['BIVAC DIC', 'XAF 500,000 FOB historical threshold', 'Attestation de Verification', 'broker pre-check'],
+      },
+      {
+        heading: '空运报价先拆清关责任',
+        body: [
+          'BGF空运的成交点不是“便宜几毛一公斤”，而是把货物属性和清关链条拆清楚：谁申请CoC，谁确认是否受PVoC覆盖，谁处理ASYCUDAWorld申报，谁承担税费，谁负责机场提货，谁做Bangui市内或外省交付。尤其是医疗援助、NGO物资、通信设备、二手设备、带电设备和车辆零件，资料缺口会直接变成放行风险。',
+          '可以给客户的判断方式很简单：先发产品英文/法文品名、HS Code、品牌型号、用途、货值、发票箱单、产品照片、是否二手、是否带电池或无线模块、是否需要温控、目的地收货人和当地broker。资料齐了再确认路线、价格和时效。',
+        ],
+        bullets: ['medical and NGO cargo', 'telecom equipment', 'used equipment screening', 'Bangui final delivery'],
+      },
+    ],
+    checklist: ['BGF目的机场', '最终交付城市/医院/仓库/项目现场', '进口商和收货人资料', '当地清关代理/broker资料', 'ASYCUDAWorld申报责任', 'PVoC/CoC适用性', 'CoC申请方和状态', 'BIVAC/DIC/ADV是否仍被当地要求', 'HS Code', '英文/法文品名', '品牌型号和用途', '商业发票', '装箱单', 'Air Waybill资料', '产品照片', '测试报告或产品证书如需', '进口许可证或豁免如需', '是否医疗/通信/二手/带电/无线模块', 'DG/MSDS如需', '货值和贸易条款', '目的地税费承担方', '每件尺寸重量', '包装照片', '是否可经ADD/NBO/CMN/DLA中转', '最晚到货时间', 'Bangui机场提货和末端交付责任'],
+    relatedRoutes: [
+      { label: 'ADD 亚的斯亚贝巴中转', href: '/africa-air-freight/add/' },
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: '布隆迪BJM清关资料', href: '/insights/burundi-bjm-asycuda-single-window-pvoc-air-freight-clearance/' },
+      { label: '索马里MGQ清关资料', href: '/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: Central African Rep. Customs migrates to ASYCUDAWorld', href: 'https://asycuda.org/en/central-african-rep-customs-migrates-to-asycudaworld/' },
+      { label: 'ASYCUDA User Countries: Central African Republic', href: 'https://asycuda.org/en/usercountries-centralafricanrepublic/' },
+      { label: 'SGS: Central African Republic PVoC of Imported Goods', href: 'https://www.sgs.com/en/services/central-african-republic-car-product-conformity-assessment-pca' },
+      { label: 'Bureau Veritas Verigates: Central African Republic PSI data sheet', href: 'https://verigates.bureauveritas.com/sites/verigates/files/2019-02/GSIT%2B-%2BCentral%2BAfrican%2BRepublic%2BRev%2B6.pdf' },
+      { label: 'Menzies Aviation: Bangui BGF services', href: 'https://menziesaviation.com/our-network/bangui-bgf-2/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:

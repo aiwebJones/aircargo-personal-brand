@@ -162,6 +162,7 @@ export default function Footer() {
               <a href="/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/" className="hover:text-amberGold">南苏丹JUB清关</a>
               <a href="/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/" className="hover:text-amberGold">索马里MGQ清关</a>
               <a href="/insights/burundi-bjm-asycuda-single-window-pvoc-air-freight-clearance/" className="hover:text-amberGold">布隆迪BJM清关</a>
+              <a href="/insights/central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance/" className="hover:text-amberGold">中非BGF清关</a>
             </div>
           </div>
         </div>
