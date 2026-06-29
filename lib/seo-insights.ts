@@ -274,6 +274,58 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'wood-packaging-ispm15-africa-air-freight',
+    title: '木包装/熏蒸空运到非洲：ISPM 15为什么会影响大件项目货？',
+    excerpt:
+      '泵、电机、矿业备件、电气柜和长件设备空运到非洲，经常会用木箱、托盘、木架或垫木。ISPM 15标识、热处理/熏蒸证明和包装照片不清楚，可能在清关、查验和二程交付前就卡住。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['木包装熏蒸非洲空运', 'ISPM 15空运', '木箱空运非洲', '非洲大件木包装'],
+    template: 'generated',
+    audience: ['设备工厂', '矿业备件供应商', '非洲工程采购', '项目货货代'],
+    angle: '把 ISPM 15 木包装要求转成非洲大件空运询价前的包装资料预审清单。',
+    sections: [
+      {
+        heading: '为什么木包装会影响非洲空运',
+        body: [
+          '中国到非洲项目货里，泵、电机、阀门、变压器、电气柜、矿业备件和长件设备经常会用木箱、木托盘、木框架或垫木。客户通常以为木包装只是保护货物，但在国际贸易里，木包装本身也会触发植物检疫和目的地查验问题。',
+          'IPPC 的 ISPM 15 针对国际贸易中的木质包装材料，核心是通过规定处理和标识降低有害生物传播风险。对空运销售来说，这不是一句“做了熏蒸”就结束，而是要在订舱前确认包装形式、标识、证明和目的地进口要求。',
+        ],
+        bullets: ['木箱', '木托盘', '木框架', '垫木和固定木方'],
+      },
+      {
+        heading: '客户说有熏蒸，不等于资料可用',
+        body: [
+          '很多询盘只写“木箱包装，已熏蒸”，但没有包装照片、IPPC 标识照片、处理方式、证书或目的国进口商确认。这类资料不完整时，价格和时效都只能算初步判断。',
+          '更稳的动作是让客户拍清楚木包装四周、IPPC mark、唛头、货物固定方式和是否有裸露原木垫木。USDA APHIS 对木包装材料的说明也强调按 ISPM 15 处理并认证，实际查验时标识是否清楚会影响判断。',
+        ],
+        bullets: ['IPPC mark 照片', '热处理或熏蒸证明', '包装全景照片', '木方/垫木是否遗漏'],
+      },
+      {
+        heading: '非洲项目货要把清关和二程一起问',
+        body: [
+          'JNB、FBM、LUN、LOS、ACC、LBV 等非洲目的地的执行差异很大。木包装是否被接受、进口商是否能配合、到港后是否查验、矿区或项目现场是否能处理包装问题，都需要目的地代理提前确认。',
+          '这类页面的成交价值不在解释法规，而在把客户的问题转成可执行清单：什么包装、什么标识、什么证书、谁负责目的地确认、如果木包装风险高能不能改成胶合板、金属架或其他非原木方案。',
+        ],
+        bullets: ['目的港代理确认', '进口商文件配合', '查验和仓储风险', '替代包装方案'],
+      },
+    ],
+    checklist: ['包装照片', 'IPPC mark近照', '木包装类型', '热处理或熏蒸证明', '品名和HS Code', '目的机场和最终城市', '收货人/进口商确认', '是否有裸露垫木', '是否可改非原木包装', '最晚到货时间'],
+    relatedRoutes: [
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+      { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+    ],
+    sources: [
+      { label: 'IPPC: ISPM 15 regulation of wood packaging material in international trade', href: 'https://www.ippc.int/en/publications/regulation-wood-packaging-material-international-trade-0/' },
+      { label: 'USDA APHIS: Wood Packaging Material', href: 'https://www.aphis.usda.gov/plant-imports/wood-packaging-material' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
