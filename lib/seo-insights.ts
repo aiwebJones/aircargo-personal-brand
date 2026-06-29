@@ -170,6 +170,57 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'lithium-battery-equipment-africa-air-freight-2026',
+    title: '带锂电池设备空运到非洲：2026 IATA 规则下询价前要准备什么？',
+    excerpt:
+      '无人机、电动工具、检测仪器、储能设备和带电矿业备件空运到非洲，不能只问价格。2026 IATA 锂电池规则要求更细，询价前要先确认 UN 编号、MSDS、电池配置、SOC、包装和目的地清关。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['锂电池空运非洲', 'UN3481空运', '带电设备空运', 'IATA锂电池2026'],
+    template: 'generated',
+    audience: ['带电设备工厂', '无人机和仪器出口商', '矿业设备供应商', '非洲项目采购'],
+    angle: '把 2026 IATA 锂电池空运要求转成中国到非洲带电设备询价前的资料清单。',
+    sections: [
+      {
+        heading: '带电设备不是普通空运',
+        body: [
+          '中国到非洲项目货里，越来越多货物自带锂电池或电池模块：无人机、检测仪器、电动工具、通信设备、矿业监测设备、医疗设备、储能组件。它们看起来像普通设备，实际订舱时可能被按危险品、受限货或需要额外资料处理。',
+          'IATA 2026 锂电池指南把规则变化写得很清楚：包括小型锂电池货物的分类调整、钠离子电池新增规则，以及锂离子电池按不超过 30% 荷电状态运输的要求延伸到部分设备包装场景。客户询价时如果没有资料，价格就不是真价格。',
+        ],
+        bullets: ['无人机', '检测仪器', '电动工具', '通信设备', '矿业监测设备'],
+      },
+      {
+        heading: '先判断 UN 编号和电池状态',
+        body: [
+          '带电设备询价的第一步不是问到 JNB、FBM、LUN 或 LBV 多少钱，而是先判断它到底是 UN3480、UN3481、UN3090、UN3091，还是 2026 规则里新增关注的钠离子电池相关条目。电池是单独出运、随设备包装、还是装在设备里，处理方式完全不同。',
+          '如果客户只说“设备带一点电池”，很容易在交仓或航司审核时被退回。专业做法是提前收集 MSDS、UN38.3、产品照片、电池参数、包装方式、件数重量和是否可拆电池。',
+        ],
+        bullets: ['UN3480/UN3481', 'UN3090/UN3091', '钠离子电池', 'MSDS 和 UN38.3'],
+      },
+      {
+        heading: '非洲目的地还要看清关和二程',
+        body: [
+          '带电设备到非洲不只卡在航司。JNB、NBO、LOS、ACC 这类成熟口岸和 FBM、LUN、LBV 等项目点，对文件、代理、清关、二程和现场交付的要求不同。电池类货物如果目的地代理没有提前确认，到了非洲再补资料会非常被动。',
+          '销售上要把问题拆清楚：电池能不能飞、哪家航司接、是否需要 DG 申报、目的地能不能清、矿区或项目现场是否能接收。只有这些成立，报价才有意义。',
+        ],
+        bullets: ['航司接受能力', 'DG 申报', '目的地代理确认', '矿区或现场交付'],
+      },
+    ],
+    checklist: ['MSDS', 'UN38.3', 'UN 编号', '电池类型和 Wh/Ah', '电池数量和是否内置', 'SOC 荷电状态', '包装照片', '品名和 HS Code', '目的机场和最终城市', '是否需要 DG 申报'],
+    relatedRoutes: [
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'IATA: Lithium Batteries', href: 'https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
