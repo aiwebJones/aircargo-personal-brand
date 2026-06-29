@@ -697,6 +697,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'senegal-dss-dpi-dipa-customs-air-freight-clearance',
+    title: '塞内加尔DSS空运清关：DPI、DIPA和海关申报资料要提前准备什么？',
+    excerpt:
+      '中国到塞内加尔DSS空运，机械设备、电子电器、食品相关货物、项目备件和贸易补货不能只看航班。DPI、DIPA、verification certificate、Air Waybill、商业发票、装箱单和原产地证要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['塞内加尔DPI空运', 'DSS清关资料', 'DIPA塞内加尔', '中国到塞内加尔空运清关'],
+    template: 'generated',
+    audience: ['塞内加尔进口商', '食品和日用品出口商', '机械设备工厂', '西非项目货代'],
+    angle: '把 Senegal Customs 的 DPI/PVI、DIPA 和空运单证要求转成 DSS 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'DSS空运先判断DPI和PVI',
+        body: [
+          'DSS 达喀尔是塞内加尔和西非项目货的重要入口，常见货物包括机械设备、电子电器、食品相关产品、日用品、工业耗材和项目备件。客户只问中国到 DSS 空运多少钱时，销售要先判断 DPI、verification certificate 和目的地清关资料是否能提前跑通。',
+          'Senegal Customs 的英文页面说明，进口相关资料可能包括 pre-import declaration、verification certificate 和 DIPA。官方贸易门户也说明，Import Verification Program（PVI）从 Pre-Arrival Declaration（DPI）开始，DPI 由进口商准备，并在部分货值条件下触发验货/核价链路。空运速度快，但 DPI 不是到港后才临时补的动作。',
+        ],
+        bullets: ['DPI预进口申报', 'PVI/verification certificate', '进口商配合', 'DSS到港清关节奏'],
+      },
+      {
+        heading: 'Air Waybill和发票箱单要一致',
+        body: [
+          'Senegal Customs 页面列出的随附资料包括 commercial invoice、shipping note 或 Air waybill、Certificate of Origin、insurance certificate、health 或 phytosanitary certificate、pre-import declaration、verification certificate、DIPA，以及 customs value 相关声明。法文页面也列出 facture、liste de colisage、LTA、assurance 等基础文件。',
+          '这意味着 DSS 空运询价不能只收重量和机场代码。AWB、商业发票、装箱单、HS Code、英文品名、货值、原产地、进口商资料、DPI 和目的地代理信息要互相对应。任何一项不一致，都可能把快速空运变成到港补料。',
+        ],
+        bullets: ['Air Waybill', '商业发票和装箱单', 'Certificate of Origin', '保险和货值资料'],
+      },
+      {
+        heading: '食品和监管货要提前问DIPA',
+        body: [
+          'DIPA 是塞内加尔进口食品相关货物必须提前关注的资料之一。除了食品，动物/植物来源产品、农产品、化工品、医疗相关货物、受控设备和特殊许可证货物，也不适合最后一刻才问清关。',
+          '专业做法是把 DSS 空运拆成两条线：一条判断航班、尺寸重量、是否需要主甲板或欧洲/中东中转；另一条判断 DPI、DIPA、verification certificate、原产地证、健康/植检证、保险和目的地清关代理。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['DIPA食品申报', 'Health certificate', 'Phytosanitary certificate', '特殊许可证货物'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Certificate of Origin', 'insurance certificate', 'DPI状态', 'verification certificate/PVI是否涉及', 'DIPA是否涉及食品', 'health/phytosanitary certificate如需', '进口商资料', 'DSS或最终城市', '每件尺寸重量', '是否需要二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DSS 达喀尔航线页', href: '/africa-air-freight/dss/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '加纳ACC与科特迪瓦ABJ', href: '/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/' },
+      { label: '危险品/化工品空运到非洲', href: '/insights/dangerous-goods-chemical-air-freight-africa-checklist/' },
+    ],
+    sources: [
+      { label: 'Senegal Customs: Customs clearance information', href: 'https://www.douanes.sn/ndn85/?lang=en' },
+      { label: 'Senegal Customs: Déclarer des marchandises en douane', href: 'https://www.douanes.sn/declarer-des-marchandises-en-douane/' },
+      { label: 'Senegal Trade Portal: Import Procedure', href: 'https://senegalcommerce.sec.gouv.sn/ProcedureImportAnglais.aspx' },
+      { label: 'International Trade Administration: Senegal Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/senegal-import-requirements-and-documentation' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
