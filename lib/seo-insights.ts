@@ -119,6 +119,57 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'eu-ics2-ens-lgg-bru-africa-transit-air-freight',
+    title: 'LGG/BRU中转非洲大件：欧盟ICS2/ENS资料为什么会卡住空运？',
+    excerpt:
+      '中国货经LGG/BRU欧洲中转再飞非洲时，欧盟ICS2/ENS资料质量会影响放行、补料和装载节奏。项目货询价不能只看运价，必须提前准备品名、HS Code、收发货人和路线资料。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['ICS2 ENS空运', 'LGG BRU欧洲中转', '欧盟空运资料', '中国到非洲大件空运'],
+    template: 'generated',
+    audience: ['中国货代', '项目货工厂', '非洲贸易商', '欧洲中转操作团队'],
+    angle: '把欧盟 ICS2/ENS 合规要求转化成中国到非洲经 LGG/BRU 中转的资料预审清单。',
+    sections: [
+      {
+        heading: '为什么非洲货也会被欧盟资料规则影响',
+        body: [
+          '很多中国到非洲大件项目货不是直接飞非洲，而是先进入 LGG/BRU 等欧洲货运节点，再衔接全货机、包机或非洲二程。只要货物进入或经由欧盟安全监管链路，就不能把它当成“只是去非洲”的普通询价。',
+          '欧盟 ICS2 是提前货物信息系统，要求相关经济运营方通过 Entry Summary Declaration（ENS）提交安全与安保数据。对经欧洲中转的空运项目货来说，资料质量会直接影响预审、补料、放行和中转节奏。',
+        ],
+        bullets: ['LGG/BRU 中转', 'ENS 预申报', '项目货资料预审', '非洲二程衔接'],
+      },
+      {
+        heading: 'ICS2/ENS 对空运项目货的实际影响',
+        body: [
+          '欧盟官方说明，空运需要在装载前提交最低信息集，并在到达前提交完整 ENS。ENS 不完整或数据不准确时，海关可能拒绝申报，或要求补充资料、筛查高风险货物，甚至在风险处理完成前不允许装载。',
+          '这对大件货的影响比普通小货更明显。大件项目货通常需要仓库交接、板位安排、地面设备、主甲板计划和二程窗口。如果 ENS 资料到最后一刻才补，延误的不是一份文件，而是整条 LGG/BRU 到非洲的衔接链。',
+        ],
+        bullets: ['预装载信息', '完整 ENS', '补料和风险 referral', '中转窗口延误'],
+      },
+      {
+        heading: '客户询价时必须提前给什么',
+        body: [
+          '走 LGG/BRU 中转非洲的询盘，不能只发目的港和重量。品名必须具体，不能写泛泛的 parts、equipment、tools；HS Code、用途、材质、发货人、收货人、件数、包装、尺寸重量和路线信息都要尽早确认。',
+          '销售动作上，应把 ICS2/ENS 变成资料清单，而不是拿来吓客户。客户越早给出完整资料，就越容易判断能不能接、在哪里中转、是否需要主甲板或 B747F、非洲到港后清关和二程有没有风险。',
+        ],
+        bullets: ['具体品名', 'HS Code 和用途', '收发货人资料', '尺寸重量和包装照片'],
+      },
+    ],
+    checklist: ['具体英文品名', 'HS Code', '货物用途和材质', '发货人和收货人信息', '每件尺寸重量', '包装照片', '起运机场和欧洲中转点', '非洲目的机场和最终城市', '是否需要主甲板或包机'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'LGG Africa Gateway', href: '/china-africa-oversized-cargo-via-europe/' },
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'European Commission: Import Control System 2 (ICS2)', href: 'https://taxation-customs.ec.europa.eu/customs/customs-security/import-control-system-2_en' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
