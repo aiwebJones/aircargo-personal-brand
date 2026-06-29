@@ -3354,6 +3354,62 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'cabo-verde-rai-dnre-customs-air-freight-clearance',
+    title: '佛得角RAI空运清关：DNRE海关、电子申报和岛屿项目货资料怎么准备？',
+    excerpt:
+      '中国到佛得角RAI/Praia空运，酒店项目补货、医疗物资、通信设备、电子电器、备件和小票急件不能只看航班。DNRE/DGA海关、商业发票、原产地证、健康/植检证、进口许可和电子海关申报要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['佛得角RAI清关资料', 'Cabo Verde airport customs clearance', 'Cape Verde import documents', 'RAI air cargo clearance', 'Cabo Verde customs declaration', '中国到佛得角空运清关'],
+    template: 'generated',
+    audience: ['佛得角进口商', '酒店与旅游项目供应商', '医疗通信设备工厂', '西非岛屿航线货代同行'],
+    angle: '用RAI/Praia airport、DNRE/DGA、Cape Verde import documents、customs declaration和岛屿补货场景承接佛得角空运清关搜索。',
+    sections: [
+      {
+        heading: 'RAI空运先判断DNRE/DGA海关资料',
+        body: [
+          'RAI Praia适合佛得角酒店项目补货、医疗物资、通信设备、电子电器、小批量备件、样品和高价值急件。客户只问中国到佛得角空运多少钱时，销售要先判断进口商、清关代理、商业发票、装箱单、Air Waybill、原产地和许可证资料是否能提前跑通。',
+          'Cabo Verde财政部DNRE页面列出Direção Geral das Alfândegas（DGA）作为海关部门；Trade.gov的Cabo Verde海关规则页面也说明，Cabo Verde海关隶属DNRE并负责税收和关税。对空运来说，RAI到港前不把资料链路梳清楚，货物落地后容易卡在申报、估价、查验或税费支付。',
+        ],
+        bullets: ['RAI Praia airport', 'DNRE/DGA customs', 'Air Waybill', '进口商/清关代理资料'],
+      },
+      {
+        heading: '电子申报不等于单一窗口已经覆盖全部流程',
+        body: [
+          'UN Global Survey on Digital and Sustainable Trade Facilitation的Cabo Verde页面显示，Automated Customs System和Electronic submission of Customs declarations为fully implemented，但Electronic Single Window System为not implemented。这个差异很关键：可以电子提交海关申报，不代表所有许可证、监管文件和货物属性都能靠一个入口自动解决。',
+          '所以RAI空运询价不能只收重量和机场代码。HS Code、英文/葡文品名、用途、规格型号、品牌、货值、收货人资料、商业发票、装箱单、AWB字段、原产地证和特殊证书，要在订舱前先核对。',
+        ],
+        bullets: ['Automated Customs System', 'Electronic customs declaration', 'No full electronic single window', 'HS Code和货值'],
+      },
+      {
+        heading: '证书、许可证和受限货要提前筛',
+        body: [
+          'Trade.gov的Cabo Verde进口文件页面列出，出口商通常需要商业发票，并在进口商要求时提供原产地证；根据产品，还可能需要health或phytosanitary certificates。受限进口页面也说明，药品、燃料、武器等受法律限制货物属于non-automatic licensing，需要相关主管机关事先授权。',
+          'Cabo Verde Airports的海关页面也提醒，携带货物进出境时可能需要申报，货物范围包括cash、merchandise和electronic equipment等。对空运货来说，医疗设备、通信设备、电子电器、食品/农业、化工品、带电池设备和酒店项目物资，都不适合等到RAI落地后再判断监管文件。',
+        ],
+        bullets: ['Commercial invoice', 'Certificate of Origin', 'Health/Phytosanitary certificates', 'Non-automatic licensing'],
+      },
+    ],
+    checklist: ['RAI/Praia目的机场', '最终岛屿/酒店/项目现场', '进口商DNRE资料', '清关代理资料', 'HS Code', '英文/葡文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', '电子海关申报字段', 'Certificate of Origin如需', 'health certificate如需', 'phytosanitary certificate如需', '进口许可证或受控货批文如需', '货值和估价资料', '每件尺寸重量', '包装照片', '是否经LIS/DSS/CMN/欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DSS 达喀尔西非入口', href: '/africa-air-freight/dss/' },
+      { label: 'CMN 卡萨布兰卡中转', href: '/africa-air-freight/cmn/' },
+      { label: '塞舌尔SEZ清关资料', href: '/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'DNRE Cabo Verde: Direção Geral das Alfândegas', href: 'https://www.mf.gov.cv/web/dnre/direca-geral-das-alfandegas' },
+      { label: 'Trade.gov: Cabo Verde - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/cabo-verde-import-requirements-and-documentations' },
+      { label: 'Trade.gov: Cabo Verde - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/cabo-verde-customs-regulations' },
+      { label: 'Trade.gov: Cabo Verde - Prohibited and Restricted Imports', href: 'https://www.trade.gov/country-commercial-guides/cabo-verde-prohibited-and-restricted-imports' },
+      { label: 'UN Global Survey: Trade Facilitation and Paperless Trade in Cabo Verde', href: 'https://www.untfsurvey.org/economy?id=CPV&year=2023' },
+      { label: 'Cabo Verde Airports: Customs', href: 'https://www.caboverde-airports.cv/en/passengers-guide/prepare-trip/customs/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
