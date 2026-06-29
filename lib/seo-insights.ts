@@ -4105,6 +4105,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'guinea-bissau-oxb-asycudaworld-cee-air-freight-clearance',
+    title: '几内亚比绍OXB空运清关：ASYCUDAWorld、Bissau机场和CEE资料怎么核？',
+    excerpt:
+      '中国到几内亚比绍OXB/Bissau空运，医疗物资、通信设备、项目备件、车辆零件和援助物资不能只看航班。Guinea-Bissau ASYCUDAWorld、Bissau International Airport、发票、箱单、AWB、原产地、进口商和CEE/装运文件要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['几内亚比绍OXB清关资料', 'Guinea-Bissau ASYCUDAWorld', 'Bissau airport customs clearance', 'OXB air freight customs', 'Guinea-Bissau CEE import document', 'Bissau air cargo clearance', '中国到几内亚比绍空运'],
+    template: 'generated',
+    audience: ['几内亚比绍进口商', '医疗和援助物资供应商', '通信设备供应商', '西非项目货客户'],
+    angle: '用OXB、Bissau airport customs clearance、Guinea-Bissau ASYCUDAWorld、CEE和import documents承接几内亚比绍空运清关搜索。',
+    sections: [
+      {
+        heading: 'OXB空运先看Bissau机场和收货人能力',
+        body: [
+          '几内亚比绍空运主要看OXB Osvaldo Vieira International Airport/Bissau。适合医疗物资、援助物资、通信设备、工程备件、车辆零件、检测仪器和小批量高价值急件。询价时不能只问中国到Bissau有没有航班，还要确认进口商、当地清关代理、AWB、商业发票、装箱单、HS Code、货值、原产地和最终交付责任。',
+          'ASYCUDA在2026年发布的Guinea-Bissau ASYCUDAWorld上线资料中说明，系统已在Bissau International Airport等多个关键海关站点上线，用于加强海关数字化、风险管理和贸易便利化。这意味着资料质量会更直接影响申报、查验、补料和放行节奏。',
+        ],
+        bullets: ['OXB Bissau airport', 'Guinea-Bissau ASYCUDAWorld', 'local broker capability', 'risk management'],
+      },
+      {
+        heading: 'ASYCUDAWorld上线后，资料要变成可申报数据',
+        body: [
+          'ASYCUDA资料说明，Guinea-Bissau ASYCUDAWorld由Guinea-Bissau Customs与UN Trade and Development/UNDP支持实施，首阶段部署包括Bissau International Airport、三个陆路边境站和一个邮政站点；系统通过提升数字化、透明度和风险管理来支持海关现代化。',
+          '实际动作是把报价前资料结构化：具体英文/葡文品名、HS Code、用途、品牌型号、货值、发票、箱单、AWB、原产地证、许可证或豁免如需、产品照片、是否二手、是否带电池/无线模块、进口商税号和当地broker联系人。资料不完整时，低价没有意义。',
+        ],
+        bullets: ['electronic customs declaration', 'HS Code accuracy', 'invoice packing list AWB', 'broker contact'],
+      },
+      {
+        heading: 'CEE和进口文件要让目的港代理确认',
+        body: [
+          'World Bank Doing Business Guinea-Bissau资料把Electronic Loading Certificate（CEE）、商业发票、装箱单、出口报关、原产地证、提单等列为边境合规相关文件。WTO贸易政策审议材料也提到几内亚比绍在海关估价、申报和贸易便利化方面仍依赖规范化文件流程。',
+          '这类资料不能机械套用到每一票空运，因为文件要求可能随货类、贸易方式和当地执行变化。销售要做的是在订舱前让进口商和目的港代理明确：当前是否需要CEE或类似装运文件，谁申请，是否覆盖空运，是否还需要原产地、进口许可、税务资料或主管部门放行。',
+        ],
+        bullets: ['Electronic Loading Certificate CEE', 'certificate of origin', 'import document pre-check', 'destination agent confirmation'],
+      },
+      {
+        heading: '医疗、通信和项目货先拆责任再报价',
+        body: [
+          'OXB票常见风险不是航班，而是到港后无人能把资料链跑通。医疗物资、通信设备、无线模块、车辆零件、二手设备、检测仪器和援助货，要先确认进口许可、最终用途、产品证书、MSDS/DG资料如需、清关代理和末端交付边界。',
+          '可执行报价应拆清楚：只做到Bissau机场，还是包含清关协助、税费垫付、Bissau市内交付或外省转运；谁承担仓租和查验风险；如果经DSS/CMN/LIS/ACC中转，二程衔接和文件责任由谁处理。',
+        ],
+        bullets: ['medical cargo', 'telecom equipment', 'used equipment screening', 'Bissau final delivery'],
+      },
+    ],
+    checklist: ['OXB目的机场/Bissau最终地址', '进口商资料', '当地清关代理/broker资料', 'Guinea-Bissau ASYCUDAWorld申报责任', 'HS Code', '英文/葡文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', '原产地证', 'CEE/Electronic Loading Certificate是否需要', '进口许可或豁免如需', '税号和收货人资料', '产品照片', '是否医疗/通信/二手/带电/无线模块', 'MSDS/DG资料如需', '货值和贸易条款', '目的地税费承担方', '每件尺寸重量', '包装照片', '是否经DSS/CMN/LIS/ACC中转', 'Bissau机场提货和末端交付责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DSS 达喀尔西非中转', href: '/africa-air-freight/dss/' },
+      { label: 'CMN 卡萨布兰卡中转', href: '/africa-air-freight/cmn/' },
+      { label: '佛得角RAI清关资料', href: '/insights/cabo-verde-rai-dnre-customs-air-freight-clearance/' },
+      { label: '中非BGF清关资料', href: '/insights/central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: Guinea-Bissau launches ASYCUDAWorld', href: 'https://asycuda.org/en/guinea-bissau-launches-asycudaworld-to-strengthen-customs-digitalization/' },
+      { label: 'WTO: Trade Policy Review - Guinea-Bissau', href: 'https://www.wto.org/english/tratop_e/tpr_e/s362-04_e.pdf' },
+      { label: 'World Bank Doing Business: Guinea-Bissau', href: 'https://archive.doingbusiness.org/content/dam/doingBusiness/country/g/guinea-bissau/GNB.pdf' },
+      { label: 'FIDI Customs Guide: Guinea-Bissau', href: 'https://www.fidi.org/sites/default/files/public/2022-02/GUINEA-BISSAU%20Import%20%E2%80%93%20FIDI%20Customs%20Guide.pdf' },
+      { label: 'Maersk Local Information: Guinea-Bissau', href: 'https://www.maersk.com/local-information/imea/guinea-bissau/export' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
