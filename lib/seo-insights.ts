@@ -535,6 +535,59 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'ghana-acc-easypass-icums-air-freight-clearance',
+    title: '加纳ACC空运清关：GSA EasyPASS/CoC和GRA ICUMS要提前准备什么？',
+    excerpt:
+      '中国到加纳ACC空运，电子电器、建材、矿业物资、机械设备和贸易补货不能只看航班。GSA EasyPASS/CoC、GRA ICUMS申报、发票箱单、Air Waybill、HS Code和进口商资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['加纳EasyPASS空运', 'ACC清关资料', 'GSA COC加纳', '中国到加纳空运清关'],
+    template: 'generated',
+    audience: ['加纳进口商', '电子电器和建材供应商', '矿业设备工厂', '西非项目货代'],
+    angle: '把 GSA EasyPASS/CoC 和 GRA ICUMS 进口申报转成 ACC 空运询价前的清关资料预审动作。',
+    sections: [
+      {
+        heading: 'ACC空运先判断GSA EasyPASS',
+        body: [
+          'ACC 阿克拉是加纳空运入口，也常承接西非贸易补货、工程物资、矿业备件和电子电器类货物。客户只问中国到 ACC 空运多少钱时，销售不能只看航班和每公斤价格，要先判断货物是否落入 Ghana Standards Authority 的 EasyPASS 符合性核验范围。',
+          'GSA 的 EasyPASS 页面说明，Bureau Veritas 和 Intertek 是该项目下官方批准的服务商，用于 EasyPASS 项目下产品的 verification of conformity。页面列出的覆盖品类包括玩具、电子电器、化工产品、机械材料和燃气器具、家具、纺织/皮革、玻璃、矿业设备及配件、部分二手产品等。不是每一票货都需要 CoC，但受管品类必须在订舱前问清楚。',
+        ],
+        bullets: ['EasyPASS适用性', 'Certificate of Conformity资料', '电子电器和建材', '矿业设备及配件'],
+      },
+      {
+        heading: 'ICUMS资料要跟空运单一致',
+        body: [
+          'Ghana Revenue Authority 的 Import Procedures 页面列出进口清关资料，包括 original waybill 或 Bill of Lading、attested invoice、packing list、Import Declaration Form、TIN 或 GhanaCard PIN，以及相关监管机构许可。对空运来说，Air Waybill、商业发票、装箱单、HS Code、英文品名和进口商资料必须提前统一。',
+          'GRA 页面还说明，清关代理在 Integrated Customs Management System（ICUMS）提交申报，系统会处理 classification、valuation、approval，随后缴纳税费，并按风险等级进入查验、扫描或放行。空运速度快，但 ICUMS 资料错一项，到 ACC 后就会变成补料、查验和仓储成本。',
+        ],
+        bullets: ['Air Waybill', '商业发票和装箱单', 'IDF和TIN资料', 'ICUMS申报'],
+      },
+      {
+        heading: '哪些货要提前问清楚',
+        body: [
+          '电子电器、照明设备、通讯设备、建材五金、机械设备、矿业物资、化工相关产品、二手设备、纺织皮革和项目备件，都不适合最后一刻才问 EasyPASS 或 ICUMS。尤其是客户只写 equipment、spare parts、tools、materials 这种泛品名时，无法判断是否需要 GSA 文件或目的地许可。',
+          '专业做法是把 ACC 空运拆成两条线：一条判断航班、尺寸重量、腹舱或主甲板、是否要经欧洲或中东中转；另一条判断 EasyPASS/CoC、ICUMS、IDF、进口商 TIN、监管许可和最终交付。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['电子电器', '建材五金', '矿业设备', '二手设备和项目备件'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'GSA EasyPASS/CoC是否需要', 'ICUMS申报资料', '进口商TIN或GhanaCard PIN', 'Import Declaration Form状态', '相关监管许可', 'Certificate of Origin如需', 'ACC或最终城市', '每件尺寸重量', '是否需要二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ACC 阿克拉航线页', href: '/africa-air-freight/acc/' },
+      { label: '加纳ACC与科特迪瓦ABJ', href: '/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/' },
+      { label: '尼日利亚SONCAP/Form M/PAAR', href: '/insights/nigeria-los-soncap-formm-paar-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Ghana Standards Authority: EasyPass', href: 'https://gsa.gov.gh/noeasy-pass/' },
+      { label: 'Ghana Revenue Authority: Import Procedures', href: 'https://gra.gov.gh/customs/import-procedures/' },
+      { label: 'Ghana Revenue Authority: ICUMS', href: 'https://gra.gov.gh/customs/icums/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
