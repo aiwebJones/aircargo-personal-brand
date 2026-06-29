@@ -160,6 +160,7 @@ export default function Footer() {
               <a href="/insights/equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance/" className="hover:text-amberGold">赤道几内亚SSG/BSG清关</a>
               <a href="/insights/libya-mji-ben-aci-asycuda-lc-air-freight-clearance/" className="hover:text-amberGold">利比亚MJI/BEN清关</a>
               <a href="/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/" className="hover:text-amberGold">南苏丹JUB清关</a>
+              <a href="/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/" className="hover:text-amberGold">索马里MGQ清关</a>
             </div>
           </div>
         </div>

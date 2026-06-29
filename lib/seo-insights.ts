@@ -3788,6 +3788,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'somalia-mgq-somcas-cbca-coc-air-freight-clearance',
+    title: '索马里MGQ空运清关：SOMCAS、CBCA/CoC和HS税则资料怎么准备？',
+    excerpt:
+      '中国到索马里MGQ摩加迪沙空运，NGO物资、通信设备、工程备件、医疗仪器和项目急件不能只看航班。SOMCAS申报、CBCA/CoC、HS Code、CIF计税、AWB、发票、箱单和进口商资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['索马里MGQ清关资料', 'Somalia SOMCAS customs', 'Somalia CBCA CoC', 'Mogadishu airport cargo clearance', 'MGQ NGO cargo air freight', 'Somalia telecom equipment import clearance', '中国到索马里空运清关'],
+    template: 'generated',
+    audience: ['索马里进口商', 'NGO和援助物资供应商', '通信工程与医疗设备工厂', '东非/红海航线货代同行'],
+    angle: '用MGQ、Somalia SOMCAS customs、CBCA/CoC、Mogadishu airport cargo clearance和NGO/telecom/project cargo承接索马里空运清关搜索。',
+    sections: [
+      {
+        heading: 'MGQ空运先判断SOMCAS申报链',
+        body: [
+          '索马里空运主要看MGQ摩加迪沙。适合NGO/援助物资、通信设备、医疗仪器、工程备件、发电设备、太阳能和电池设备、小批量高价值急件。客户只问中国到索马里空运多少钱时，销售要先确认进口商、清关代理、AWB、商业发票、装箱单、HS Code、CIF货值和SOMCAS申报责任。',
+          'Trade.gov的索马里海关规则页面说明，Somali Customs Automated System（SOMCAS）要求进口商通过系统申报货物并支付税款，Customs Department负责进口税、进口销售税、出口税、进口消费税和其他税费。对MGQ空运来说，航班只是第一步，SOMCAS字段、进口商资料和目的地broker才决定到港后能不能顺利放行。',
+        ],
+        bullets: ['MGQ Mogadishu airport', 'Somalia SOMCAS customs', 'Air Waybill资料', 'importer and broker data'],
+      },
+      {
+        heading: 'CBCA/CoC要在出口前处理',
+        body: [
+          'Somali Bureau of Standards（SOBS）的CBCA通知说明，SOBS已指定Bureau Veritas实施Conformity Based Conformity Assessment（CBCA）项目，在出口地区和发运前核验货物是否符合索马里标准，并签发索马里清关需要的Certificate of Conformity。该通知还写明，所有进入索马里的货物都应随附CoC。',
+          'Bureau Veritas的索马里CBCA页面也说明，受监管产品和相关货物应在出口前完成评估，并在到达索马里清关时随附CoC。其2024年11月通知进一步提示，自2025年1月1日起，到达索马里但没有CBCA项目下CoC的货物将面临处罚风险。MGQ急件不能到交仓后才问CoC。',
+        ],
+        bullets: ['Somalia CBCA CoC', 'Bureau Veritas', 'before export assessment', '2025 penalty risk'],
+      },
+      {
+        heading: 'HS税则和CIF价值会影响税费',
+        body: [
+          'Trade.gov的索马里进口税则页面说明，索马里使用Harmonized System（HS）Customs Code归类货物；除援助物资或获得事先税收豁免批准的货物外，进口货物按2022年索马里海关税则法附件税则表在入境时征收进口税。页面还说明，进口税按CIF价值计征，VAT及其他费用按CIF加关税基础计算。',
+          '所以MGQ询价不能只收重量体积。要先拿到HS Code、英文品名、用途、货值、币种、运保费、进口商是否有援助/豁免批准、是否属于CBCA受控产品、是否有CoC，再决定航班、报价和到港责任。',
+        ],
+        bullets: ['HS Customs Code', 'Customs Tariff Law 2022', 'CIF value', 'tax exemption approval'],
+      },
+      {
+        heading: 'NGO/通信/医疗货要先筛监管属性',
+        body: [
+          '索马里项目货经常混合出现：NGO援助物资、医疗设备、通信设备、太阳能和电池设备、发电机、安防设备、水处理设备、食品相关物资、二手设备和工程备件。公开来源能确认SOMCAS、CBCA/CoC和HS税则框架，具体许可证、豁免和监管属性要让进口商与当地broker逐票确认。',
+          '实际动作是先拆责任再订舱：谁申请CoC，谁做SOMCAS申报，谁确认HS和CIF，谁承担目的地税费，谁处理MGQ机场提货和最终现场交付。只有这些成立，MGQ空运报价才是可执行价格。',
+        ],
+        bullets: ['NGO cargo', 'telecom equipment', 'medical devices', 'local broker responsibility'],
+      },
+    ],
+    checklist: ['MGQ目的机场', '最终城市/营地/项目现场', '进口商资料', '清关代理/broker资料', 'SOMCAS申报责任', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'CIF货值和币种', '运保费资料', 'CBCA/CoC适用性', 'CoC申请责任和状态', '测试报告或产品证书如需', '援助/税收豁免批准如有', '进口许可或受控货批文如需', 'DG/MSDS如需', '医疗/通信/电池/二手设备属性筛查', '目的地税费和放行责任', '每件尺寸重量', '包装照片', '是否经ADD/NBO/DXB/IST/CAI中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ADD 亚的斯亚贝巴中转', href: '/africa-air-freight/add/' },
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: '吉布提JIB清关资料', href: '/insights/djibouti-jib-dpcs-air-waybill-air-freight-clearance/' },
+      { label: '南苏丹JUB清关资料', href: '/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Somalia - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/somalia-customs-regulations' },
+      { label: 'Trade.gov: Somalia - Trade Standards', href: 'https://www.trade.gov/country-commercial-guides/somalia-trade-standards' },
+      { label: 'Trade.gov: Somalia - Import Tariffs', href: 'https://www.trade.gov/country-commercial-guides/somalia-import-tariffs' },
+      { label: 'Somali Bureau of Standards: CBCA Notice', href: 'https://sobs.gov.so/cbca-notice/' },
+      { label: 'Bureau Veritas Verigates: Somalia CBCA', href: 'https://verigates.bureauveritas.com/programmes/somalia' },
+      { label: 'Bureau Veritas Verigates: Somalia CBCA enforcement notice', href: 'https://verigates.bureauveritas.com/news/enforcement-somalia-cbca-program-higher-penalty-fees' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
