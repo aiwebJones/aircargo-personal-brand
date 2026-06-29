@@ -913,6 +913,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'namibia-wdh-namra-sad500-asycuda-air-freight-clearance',
+    title: '纳米比亚WDH空运清关：NamRA、SAD500/501、ASYCUDA和进口许可怎么准备？',
+    excerpt:
+      '中国到纳米比亚WDH空运，矿业设备、能源项目货、工业备件、电子电器和贸易补货不能只看航班。NamRA货物申报、SAD500/501、ASYCUDA、Air Waybill、商业发票箱单、进口许可和检查证书要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['纳米比亚WDH清关资料', 'NamRA SAD500空运', 'Namibia ASYCUDA清关', '中国到纳米比亚空运清关'],
+    template: 'generated',
+    audience: ['纳米比亚进口商', '矿业和能源设备供应商', '工业备件工厂', '南部非洲项目货代'],
+    angle: '把 NamRA 进口申报、SAD500/501、ASYCUDA 和进口许可要求转成 WDH 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'WDH空运先判断NamRA申报资料',
+        body: [
+          'WDH 温得和克是纳米比亚项目货、矿业设备、能源设备、工业备件和贸易补货的重要入口。客户只问中国到 WDH 空运多少钱时，销售要先判断进口商、清关代理和 Namibia Revenue Agency（NamRA）申报资料是否能提前跑通。',
+          'NamRA 的进口说明写明，进口货清关的主要义务包括提交 goods declaration 和 supporting documents，例如 invoice、bill of lading、Airway Bill、import license、certificates of origin 等，并支付适用税费。空运快，但这些文件如果到港后才补，WDH 也会卡。',
+        ],
+        bullets: ['NamRA货物申报', 'Air Waybill', '商业发票和运输文件', '进口许可和原产地证'],
+      },
+      {
+        heading: 'SAD500/501和ASYCUDA要跟空运单一致',
+        body: [
+          'NamRA 页面说明，所有进口到纳米比亚的货物都要向 Customs and Excise 报告；用于销售、工业、商业、机构或类似用途的进口货，需要提交 SAD500/501 declaration form。Namibia Trade Portal 也说明 ASYCUDA World 用于全国海关站点，并支持清关申报通过 SAD500/501 电子处理。',
+          '所以 WDH 询价不能只收重量和机场代码。HS Code、英文品名、型号规格、品牌、货值、收货人资料、清关代理、SAD500/501、Air Waybill、commercial invoice cum packing list 和 bill of entry 要能互相对应。',
+        ],
+        bullets: ['SAD500/501', 'ASYCUDA World', 'Bill of Entry', 'commercial invoice cum packing list'],
+      },
+      {
+        heading: '受控货先问进口许可和检查证书',
+        body: [
+          'Namibia Trade Portal 的进口许可流程说明，受进口许可管制的货物需要先取得 import permit，并列出 summary of import documents：bill of lading or airway bill、commercial invoice cum packing list、bill of entry，额外可能需要 certificate of origin、inspection certificate 和 import license。',
+          '矿业、能源、化工、电子电器、二手设备、车辆相关、食品/农业和受技术标准影响的货物，不适合最后一刻才问监管资料。正确做法是把航班可行性、NamRA/SAD500资料、进口许可和最终交付城市分开确认。',
+        ],
+        bullets: ['Import permit', 'Inspection certificate', 'Certificate of origin', '受控产品预审'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Bill of Entry/SAD500资料', '进口商NamRA资料', '清关代理资料', '货值和保险/运费资料', 'Certificate of Origin如需', 'Import license/permit如需', 'Inspection certificate如需', 'WDH或最终城市', '每件尺寸重量', '是否需要经JNB或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'WDH 温得和克航线页', href: '/africa-air-freight/wdh/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '南非JNB清关资料', href: '/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'NamRA: Importation of Goods', href: 'https://www.namra.org.na/customs-excise/page/importation-of-goods/' },
+      { label: 'Namibia Trade Portal: General Export, Import and Transit Procedures', href: 'https://namibiatradeportal.gov.na/general-trade-information/general-export-import-and-transit-procedures' },
+      { label: 'Namibia Trade Portal: Procedures for applying import permit at MIT', href: 'https://namibiatradeportal.gov.na/trade-goods/procedure-details/view_express_entity/432' },
+      { label: 'NamRA: ASYCUDA Entry Processing System guide', href: 'https://www.namra.org.na/documents/cms/uploaded/asycuda-entry-processing-system-ad6b63734b.pdf' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
