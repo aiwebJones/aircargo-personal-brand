@@ -146,6 +146,7 @@ export default function Footer() {
               <a href="/insights/botswana-gbe-burs-single-window-sad500-air-freight-clearance/" className="hover:text-amberGold">博茨瓦纳GBE清关</a>
               <a href="/insights/malawi-blz-llw-mra-asycuda-form12-air-freight-clearance/" className="hover:text-amberGold">马拉维BLZ/LLW清关</a>
               <a href="/insights/sierra-leone-fna-nra-asycuda-idf-air-freight-clearance/" className="hover:text-amberGold">塞拉利昂FNA清关</a>
+              <a href="/insights/liberia-rob-lra-asycuda-bivac-air-freight-clearance/" className="hover:text-amberGold">利比里亚ROB清关</a>
             </div>
           </div>
         </div>

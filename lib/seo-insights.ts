@@ -2975,6 +2975,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'liberia-rob-lra-asycuda-bivac-air-freight-clearance',
+    title: '利比里亚ROB/RIA空运清关：LRA ASYCUDA、BIVAC和CTN资料怎么准备？',
+    excerpt:
+      '中国到利比里亚ROB/RIA蒙罗维亚空运，矿业备件、工程设备、医疗物资、通信设备和贸易补货不能只看航班。LRA ASYCUDA、BIVAC预检、CTN/ACD、Air Waybill、商业发票箱单和进口商资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['利比里亚ROB清关资料', 'Monrovia Roberts airport customs clearance', 'Liberia ASYCUDA air freight', 'LRA customs Liberia', 'Liberia BIVAC inspection', '中国到利比里亚空运清关'],
+    template: 'generated',
+    audience: ['利比里亚进口商', '矿业和工程设备供应商', '医疗与通信设备工厂', '西非货代同行'],
+    angle: '用ROB/RIA、LRA ASYCUDA、BIVAC预检和CTN/ACD承接利比里亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'ROB/RIA空运先判断LRA申报资料',
+        body: [
+          'ROB/RIA Roberts International Airport是蒙罗维亚主要国际空运入口，适合利比里亚矿业备件、工程设备、医疗物资、通信设备、电子电器和贸易补货。客户只问中国到利比里亚空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、商业发票箱单和LRA申报资料是否齐。',
+          'Trade.gov的利比里亚海关规则页面说明，Liberia Revenue Authority管理利比里亚海关，并在所有口岸处理贸易税费；同页也说明LRA使用ASYCUDA System等电子服务。空运报价前，ROB到港、进口商TIN/税务资料、清关代理和ASYCUDA申报字段要前置核对。',
+        ],
+        bullets: ['ROB/RIA Roberts airport', 'LRA customs', 'ASYCUDA System', 'Air Waybill资料'],
+      },
+      {
+        heading: 'CTN/ACD、BIVAC和AWB不能分开看',
+        body: [
+          'Trade.gov的利比里亚进口文件页面说明，NPA实施Cargo Tracking Note/Advanced Cargo Declaration（CTN/ACD），并提示缺少有效CTN的货物可能无法装载或卸货；同页还说明，货值达到门槛的货物需要Bureau Veritas/BIVAC预装运检验，未完成预检可能产生罚金。',
+          '虽然CTN/ACD更多出现在港口和多式联运语境，但利比里亚询价不能忽略这类进口端合规动作。空运到ROB/RIA时，AWB收货人、商业发票、装箱单、HS Code、货值币种、产品描述、检验状态和进口商资料必须互相一致，避免到港后才发现BIVAC、估价或监管资料缺口。',
+        ],
+        bullets: ['CTN/ACD', 'BIVAC预检', 'Commercial invoice', 'Packing list'],
+      },
+      {
+        heading: 'RIA清关窗口和受控货要提前拆',
+        body: [
+          'LRA的Customs Across Liberia页面把RIA列为海关点，并列出RIA 24小时运行、货物清关工作时段和航班处理安排。对ROB/RIA空运来说，航班到达不等于马上放行，清关窗口、代理上班时间、周末航班处理和货物查验都要提前问清。',
+          'ASYCUDA官方用户国家页面也列出Liberia项目平台为ASYCUDA World。矿业设备、二手设备、医疗物资、通信设备、化工品、食品/农业相关货和政府项目货，不适合只报机场到机场价格；正确动作是把航班、LRA/ASYCUDA、BIVAC/检验、受控货许可和最终交付城市拆成一张执行清单。',
+        ],
+        bullets: ['RIA cargo clearance', 'ASYCUDA World', 'Import permit场景', '最终交付城市'],
+      },
+    ],
+    checklist: ['ROB/RIA目的机场', '最终城市/矿区/项目现场', '进口商TIN/LRA资料', '清关代理资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'ASYCUDA申报资料', 'CTN/ACD场景', 'BIVAC预检状态', '进口许可或受控货批文如需', '检验证书或质量文件如需', '每件尺寸重量', '包装照片', '是否经ACC/ABJ/LOS或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ACC 阿克拉西非入口', href: '/africa-air-freight/acc/' },
+      { label: 'ABJ 阿比让西非入口', href: '/africa-air-freight/abj/' },
+      { label: '塞拉利昂FNA清关资料', href: '/insights/sierra-leone-fna-nra-asycuda-idf-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Liberia - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/liberia-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Liberia - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/liberia-customs-regulations' },
+      { label: 'Liberia Revenue Authority: Customs Across Liberia', href: 'https://revenue.lra.gov.lr/customs-across-liberia/' },
+      { label: 'ASYCUDA: Liberia', href: 'https://asycuda.org/en/usercountries-liberia/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
