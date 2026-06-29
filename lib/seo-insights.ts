@@ -2864,6 +2864,62 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'malawi-blz-llw-mra-asycuda-form12-air-freight-clearance',
+    title: '马拉维BLZ/LLW空运清关：MRA ASYCUDA、Form 12和进口许可怎么准备？',
+    excerpt:
+      '中国到马拉维BLZ布兰太尔或LLW利隆圭空运，矿业备件、农业设备、医疗物资、工程设备和贸易补货不能只看航班。MRA ASYCUDA、Form 12、Form 19、Air Waybill、商业发票箱单和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['马拉维BLZ清关资料', 'Lilongwe airport customs clearance', 'Malawi ASYCUDA air freight', 'MRA Form 12 customs declaration', 'Malawi import permit air cargo', '中国到马拉维空运清关'],
+    template: 'generated',
+    audience: ['马拉维进口商', '农业和矿业设备供应商', '医疗物资工厂', '南部非洲货代同行'],
+    angle: '用BLZ/LLW、MRA ASYCUDA、Form 12、Form 19和进口许可承接马拉维空运清关搜索。',
+    sections: [
+      {
+        heading: 'BLZ/LLW空运先判断MRA申报资料',
+        body: [
+          '马拉维空运常见入口包括BLZ布兰太尔和LLW利隆圭，适合农业设备、矿业备件、医疗物资、工程设备、电子电器和贸易补货。客户只问中国到马拉维空运多少钱时，销售要先判断进口商TPIN、清关代理、Air Waybill、发票箱单和MRA申报资料是否齐。',
+          'Trade.gov的马拉维海关规则页面说明，进口商需要向Malawi Revenue Authority登记取得Taxpayer Identification Number（TPIN），所有进出口货物都要用适当表格申报，例如Malawi Customs Declaration Form 12和Declaration of Value Form 19。',
+        ],
+        bullets: ['BLZ/LLW机场', '进口商TPIN', 'MRA Form 12', 'Declaration of Value Form 19'],
+      },
+      {
+        heading: 'Air Waybill和Form 12不能互相打架',
+        body: [
+          'Trade.gov的马拉维进口文件页面列出海关可能要求的资料，包括certificate of origin、commercial invoice、MRA Form 12、MRA Form 19、packing list、release order等。海关规则页进一步说明，支持文件包括commercial invoices、bills of lading or air waybills和certificates of origin。',
+          '空运场景下，Bill of Lading逻辑要转换成Air Waybill和航空舱单资料。BLZ/LLW询价前，HS Code、英文品名、用途、货值、币种、件数、毛重、AWB收货人、发票箱单和Form 12字段必须一致，否则到港后再补会拖慢放行。',
+        ],
+        bullets: ['Air Waybill', 'Commercial invoice', 'Packing list', 'Certificate of Origin'],
+      },
+      {
+        heading: '受限货和MBS/IQMS要提前筛',
+        body: [
+          'Trade.gov的马拉维受限进口页面列出部分需要进口许可的货物，例如动物及动物产品、肉类、家禽、鱼类等，并提示相关要求来自Control of Goods Act。马拉维标准相关页面和MBS IQMS入口也说明，受标准、检验或合格评定影响的产品不能等货到港后才确认。',
+          '农业投入品、食品、医疗相关货、化工、电子电器、二手设备、通信设备和受限制货物，不适合只按普通空运报价。正确动作是把航班可行性、MRA/ASYCUDA申报、Form 12/19、进口许可、MBS/IQMS和最终交付城市分开确认。',
+        ],
+        bullets: ['Import permit', 'Restricted goods', 'MBS/IQMS', 'MRA ASYCUDA'],
+      },
+    ],
+    checklist: ['BLZ或LLW目的机场', '最终城市/项目现场', '进口商TPIN/MRA资料', '清关代理资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'MRA Form 12资料', 'Form 19估价资料', 'Certificate of Origin如需', 'Import permit如需', 'MBS/IQMS场景', '受限货或检验资料如需', '每件尺寸重量', '包装照片', '是否经JNB/NBO或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 南部非洲入口', href: '/africa-air-freight/jnb/' },
+      { label: 'LUN 赞比亚矿业备件', href: '/africa-air-freight/lun/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '博茨瓦纳GBE清关资料', href: '/insights/botswana-gbe-burs-single-window-sad500-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Malawi - Import Requirements and Documentations', href: 'https://www.trade.gov/country-commercial-guides/malawi-import-requirements-and-documentations' },
+      { label: 'Trade.gov: Malawi - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/malawi-customs-regulations' },
+      { label: 'Trade.gov: Malawi - Prohibited and Restricted Imports', href: 'https://www.trade.gov/country-commercial-guides/malawi-prohibited-and-restricted-imports' },
+      { label: 'Trade.gov: Malawi - Standards for Trade', href: 'https://www.trade.gov/country-commercial-guides/malawi-standards-trade' },
+      { label: 'Malawi Trade Portal', href: 'https://portal.trade.gov.mw/' },
+      { label: 'Malawi Bureau of Standards: IQMS', href: 'https://mbsmw.org/iqms/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
