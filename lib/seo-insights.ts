@@ -2637,6 +2637,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'benin-coo-guce-avd-origin-air-freight-clearance',
+    title: '贝宁COO空运清关：GUCE/SEGUB、AVD估价分类、原产地和检验证书怎么准备？',
+    excerpt:
+      '中国到贝宁COO科托努空运，港口城市备件、西非贸易补货、工程设备和电子电器不能只看航班。GUCE/SEGUB单一窗口、AVD估价分类、发票、运输单证、原产地、检验证书和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['贝宁COO清关资料', 'Cotonou air freight clearance', 'Benin GUCE import documents', 'Benin AVD customs valuation', '中国到贝宁空运清关'],
+    template: 'generated',
+    audience: ['贝宁进口商', '西非贸易商', '工程设备工厂', '法语区货代同行'],
+    angle: '用COO/Cotonou、GUCE/SEGUB、AVD估价分类和原产地/检验证书承接贝宁空运清关搜索。',
+    sections: [
+      {
+        heading: 'COO空运不是只报科托努机场价',
+        body: [
+          'COO科托努适合贝宁本土进口、西非港口城市贸易补货、工程设备、电子电器、汽车配件、医疗相关货物和经贝宁延伸的周边货。客户只问中国到COO空运多少钱时，销售要先判断进口商、清关代理、GUCE/SEGUB资料和目的地交付是否能跑通。',
+          'Trade.gov的贝宁进口文件页面列出清关前需要的商业发票、运输单证、检验证书、进口商进口许可、货物原产地证明，以及动植物卫生检验证书等资料。空运场景下，运输单证要对应Air Waybill，不能只按海运B/L思路处理。',
+        ],
+        bullets: ['COO科托努', 'Air Waybill资料', '商业发票', '进口许可场景'],
+      },
+      {
+        heading: 'GUCE/SEGUB决定文件流转',
+        body: [
+          'SEGUB页面把GUCE定位为覆盖进口、出口和过境手续的外贸单一窗口。Trade.gov海关规则页也说明，贝宁用于清关的Societe d’Exploitation du Guichet Unique（SEGUB）自2011年运行，并向清关代理出具Bordereau de Frais Unique（BFU）费用单。',
+          'GUCE服务列表还包括Customs Declaration、Cargo Tracking、Management of Intentions、AVD Consultation、Licenses Management、Certificate of Origin、Phytosanitary certificate等模块。对空运急件来说，订舱前要先确认进口商和清关代理是否能在这些流程里配合。',
+        ],
+        bullets: ['GUCE单一窗口', 'SEGUB', 'BFU费用单', 'Customs Declaration'],
+      },
+      {
+        heading: 'AVD估价分类和证书要前置',
+        body: [
+          'GUCE公开的进口文件流程中有Procedure de verification和DV Declaration Valeur等PDF资料，服务列表也明确有AVD Consultation（Classification & Valuation）。这意味着HS Code、货值、品名、用途、品牌型号、数量和发票字段要提前一致。',
+          '如果货物涉及电子电器、医疗、食品/植物来源、通信设备、化工、二手设备或其他受控产品，还要提前判断检验证书、原产地证明、进口许可和卫生/植物检疫资料。能飞到COO不等于能快速放行，能把文件链讲清楚才是可成交报价。',
+        ],
+        bullets: ['AVD估价分类', 'Certificate of Origin', 'Inspection certificate', '受控货许可'],
+      },
+    ],
+    checklist: ['COO目的机场', '最终城市/项目现场', '进口商资料', '清关代理资料', 'GUCE/SEGUB账号或流程状态', '商业发票', 'Air Waybill资料', '装箱单', 'HS Code', '英文/法文品名', '货值币种', 'AVD估价分类资料', 'Certificate of Origin', 'inspection certificate场景', 'import license场景', 'phytosanitary/health certificate如需', 'Cargo Tracking状态', 'BFU费用单责任', '每件尺寸重量', '包装照片', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'LOS 拉各斯西非延伸', href: '/africa-air-freight/los/' },
+      { label: '多哥LFW清关资料', href: '/insights/togo-lfw-awb-certificate-origin-air-freight-clearance/' },
+      { label: '喀麦隆DLA清关资料', href: '/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Benin - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/benin-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Benin - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/benin-customs-regulations' },
+      { label: 'Benin GUCE: Services and procedures', href: 'https://guce.gouv.bj/evoyage/public/list?lang=en' },
+      { label: 'SEGUB: GUCE services', href: 'https://www.segub.bj/guce-services-offerts/?lang=en' },
+      { label: 'Benin GUCE: Procedure de verification', href: 'https://guce.gouv.bj/trade-server/wp-content/uploads/2022/06/Procedure_de_verification.pdf' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
