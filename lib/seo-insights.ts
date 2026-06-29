@@ -3474,6 +3474,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'tunisia-tun-sinda-ttn-air-waybill-customs-clearance',
+    title: '突尼斯TUN空运清关：SINDA、Tunisia TradeNet和AWB付款资料怎么准备？',
+    excerpt:
+      '中国到突尼斯TUN空运，汽车零部件、工业设备、航空地勤设备、医疗仪器和电子电器不能只看航班。SINDA、Tunisia TradeNet、DDM、Manifest、TCE、DCT、Air Waybill、进口许可证和银行付款文件要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['突尼斯TUN清关资料', 'Tunisia SINDA customs', 'Tunisia TradeNet air freight', 'TUN airport customs clearance', 'Air Waybill Tunisia import', '中国到突尼斯空运清关'],
+    template: 'generated',
+    audience: ['突尼斯进口商', '汽车零部件和工业设备供应商', '航空地勤与医疗设备工厂', '北非航线货代同行'],
+    angle: '用TUN airport、SINDA、Tunisia TradeNet、Air Waybill和银行付款文件承接突尼斯空运清关搜索。',
+    sections: [
+      {
+        heading: 'TUN空运先判断SINDA和TTN资料链',
+        body: [
+          'TUN突尼斯迦太基机场适合汽车零部件、工业设备、航空地勤设备、医疗仪器、通信设备、电子电器和高价值急件。客户只问中国到突尼斯空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、商业发票、装箱单和SINDA/TTN资料链是否能跑通。',
+          '突尼斯海关官方SINDA页面说明，SINDA用于管理货物从到达海关办公室、登记manifest到完成Déclaration en Détail des Marchandises（DDM）和放行的清关链路。页面还说明，SINDA 2000和Tunisie TradeNet（TTN）之间会处理DDM、manifest、Titre de Commerce Extérieur（TCE）和Document de Contrôle Technique（DCT）等电子信息。',
+        ],
+        bullets: ['TUN Tunis-Carthage airport', 'SINDA customs system', 'Tunisie TradeNet', 'DDM/Manifest/TCE/DCT'],
+      },
+      {
+        heading: 'AWB和海关文件会影响进口付款',
+        body: [
+          'Trade.gov 2026年突尼斯进口文件页面说明，突尼斯法律禁止在向银行提交货物已发运到突尼斯的证明前，用外汇支付进口货款；通常由货代文件或突尼斯海关文件满足这个要求。贸易融资页面也重复了同一逻辑，并提示过去交易中常使用不可撤销信用证或付款交单类信用证。',
+          '这对空运很具体：AWB、货代证明、海关manifest、发票和收货人资料不能互相矛盾。TUN急件如果先交仓、后补银行或TTN资料，可能不是运价问题，而是进口商付款、换单、申报和放行时间线被打乱。',
+        ],
+        bullets: ['Air Waybill', 'Freight forwarder documentation', 'Tunisian Customs documentation', 'payment against documents'],
+      },
+      {
+        heading: 'TTN连接的是海关、银行、承运人和报关行',
+        body: [
+          '突尼斯海关SINDA页面写明，Tunisie TradeNet负责管理liasse unique服务器，连接administrations、banques、commissionnaires en douane、transporteurs等参与方，并负责电子路由外贸文件。Trade.gov海关规则页也说明，在线税则数据可供包括freight companies在内的专业群体通过Tunisia Trade Net访问。',
+          '所以TUN询价不能只收目的机场和总重量。要把HS Code、英文/法文品名、用途、品牌型号、商业发票、装箱单、AWB、进口商银行、清关代理、TTN/SINDA申报字段、TCE/DCT适用性和许可证需求同时看。',
+        ],
+        bullets: ['banks', 'customs brokers', 'freight companies', 'electronic documents routing'],
+      },
+      {
+        heading: '许可证和受限货要在订舱前筛掉',
+        body: [
+          'Trade.gov 2026年突尼斯进口文件页面说明，除适用的进口许可证外，没有特别进口文件要求；但受限进口页面也说明，爆炸品和军用/安全相关设备受到严格控制，只能凭许可证进口，毒品和色情物品禁止进口。',
+          '实际询盘里，医疗设备、通信设备、安防设备、电子电器、带电池设备、化工品、二手设备、航空地勤设备和汽车零部件都要提前判断监管属性。正确动作是先把SINDA/TTN文件链、银行付款证明、许可证和TUN机场放行责任拆清，再给可执行价格。',
+        ],
+        bullets: ['import license', 'military/security equipment', 'restricted goods', 'airport release responsibility'],
+      },
+    ],
+    checklist: ['TUN目的机场', '最终城市/工厂/项目现场', '进口商银行资料', '清关代理/commissionnaire en douane', 'TTN/SINDA连接能力', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Manifest资料', 'DDM申报字段', 'TCE如需', 'DCT如需', '进口许可证如需', '受限货或安防/军用属性筛查', '货代发运证明或海关文件', '付款交单/信用证要求', '每件尺寸重量', '包装照片', '是否经IST/CDG/FRA/MAD/CMN中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ALG 阿尔及利亚清关资料', href: '/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/' },
+      { label: 'CMN 卡萨布兰卡北非中转', href: '/africa-air-freight/cmn/' },
+      { label: 'CAI 开罗北非入口', href: '/africa-air-freight/cai/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Douane Tunisienne: Système SINDA', href: 'https://www.douane.gov.tn/sinda/' },
+      { label: 'Trade.gov: Tunisia - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/tunisia-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Tunisia - Trade Financing', href: 'https://www.trade.gov/country-commercial-guides/tunisia-trade-financing' },
+      { label: 'Trade.gov: Tunisia - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/tunisia-customs-regulations' },
+      { label: 'Trade.gov: Tunisia - Prohibited and Restricted Imports', href: 'https://www.trade.gov/country-commercial-guides/tunisia-prohibited-and-restricted-imports' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
