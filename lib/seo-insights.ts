@@ -3139,6 +3139,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'madagascar-tnr-bsc-gasynet-air-freight-clearance',
+    title: '马达加斯加TNR空运清关：BSC/GasyNet、Airway Bill和进口申报怎么准备？',
+    excerpt:
+      '中国到马达加斯加TNR塔那那利佛空运，工业设备、医疗物资、电子电器、项目货和贸易补货不能只看航班。BSC/GasyNet、Airway Bill、Packing List、Import Declaration、Certificate of Origin和受限货许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['马达加斯加TNR清关资料', 'Antananarivo airport customs clearance', 'Madagascar BSC air freight', 'Bordereau de Suivi des Cargaisons', 'GasyNet BSC Madagascar', '中国到马达加斯加空运清关'],
+    template: 'generated',
+    audience: ['马达加斯加进口商', '工业设备供应商', '医疗与电子电器工厂', '印度洋航线货代同行'],
+    angle: '用TNR/Antananarivo、BSC、GasyNet、Airway Bill和Import Declaration承接马达加斯加空运清关搜索。',
+    sections: [
+      {
+        heading: 'TNR空运先判断BSC/GasyNet资料',
+        body: [
+          'TNR塔那那利佛适合马达加斯加工厂设备、医疗物资、电子电器、通信设备、项目货和贸易补货。客户只问中国到马达加斯加空运多少钱时，销售要先判断进口商、清关代理、Airway Bill、商业发票、装箱单、BSC和进口申报资料是否能提前跑通。',
+          'Trade.gov的马达加斯加进口文件页面明确列出，进口商强制需要BSC（Bordereau de Suivi des Cargaisons，cargo tracking document），并说明BSC需要在线填写；同页还列出Bill of Lading或Airway Bill、Packing List、Import Declaration和Certificate of Origin。空运场景下，BSC不是海运才关心的附属项，而是进口端资料一致性的前置动作。',
+        ],
+        bullets: ['TNR Antananarivo', 'BSC cargo tracking document', 'GasyNet/SGS portal', 'Airway Bill资料'],
+      },
+      {
+        heading: 'Airway Bill、BSC和进口申报必须一致',
+        body: [
+          'BSC MG/SGS入口是马达加斯加BSC线上办理入口；Trade.gov进口文件页也把BSC、Airway Bill、Packing List、Import Declaration和Certificate of Origin放在强制资料组合里。对TNR空运来说，AWB收货人、发货人、件数毛重、品名、货值、币种和发票箱单必须和BSC/进口申报互相对应。',
+          '如果客户只给中文品名、总重量和目的机场，报价只能算运费，不能算可执行方案。正确动作是把HS Code、英文/法文品名、用途、规格型号、商业发票、装箱单、Airway Bill资料、BSC状态、进口申报字段和原产地证一起前置核对。',
+        ],
+        bullets: ['Airway Bill', 'Packing List', 'Import Declaration', 'Certificate of Origin'],
+      },
+      {
+        heading: '受限货和CIF估价要提前筛',
+        body: [
+          'Trade.gov的马达加斯加海关规则页面说明，马达加斯加采用WCO交易价值定义，进口关税按CIF估价。受限进口页面也说明，大多数进口不需要许可证，但战略性货物受特别监管，武器、爆炸品、药品、宝石、贵金属珠宝、香草、烟叶、润滑油等场景涉及授权或许可证。',
+          '医疗设备、通信设备、化工品、二手设备、带电设备、食品/农业相关货、项目货和高货值设备，不适合只按普通空运报价处理。TNR询价要把航班、TNR地面处理、BSC/GasyNet、CIF估价、进口许可证、原产地证和最终交付城市拆成一张可执行清单。',
+        ],
+        bullets: ['CIF customs value', 'Import license场景', 'Restricted goods', '最终交付城市'],
+      },
+    ],
+    checklist: ['TNR目的机场', '最终城市/项目现场', '进口商资料', '清关代理资料', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Airway Bill资料', '航空舱单资料', 'BSC/GasyNet状态', 'Import Declaration字段', 'Certificate of Origin如需', 'CIF估价资料', '进口许可证或受控货批文如需', '检验证书或标准文件如需', '每件尺寸重量', '包装照片', '是否经MRU/JNB/NBO或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕东非入口', href: '/africa-air-freight/nbo/' },
+      { label: 'JNB 约翰内斯堡入口', href: '/africa-air-freight/jnb/' },
+      { label: '毛里塔尼亚NKC清关资料', href: '/insights/mauritania-nkc-douanes-sydonia-sgs-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Madagascar - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/madagascar-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Madagascar - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/madagascar-customs-regulations' },
+      { label: 'Trade.gov: Madagascar - Prohibited and Restricted Imports', href: 'https://www.trade.gov/country-commercial-guides/madagascar-prohibited-and-restricted-imports' },
+      { label: 'BSC MG / SGS: Bordereau de Suivi des Cargaisons', href: 'https://bscmg.sgs.com/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
