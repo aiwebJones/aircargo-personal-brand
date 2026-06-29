@@ -2692,6 +2692,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'chad-ndj-air-waybill-asycuda-import-documents-clearance',
+    title: '乍得NDJ空运清关：Air Waybill、ASYCUDA、发票编号和原产地资料怎么准备？',
+    excerpt:
+      '中国到乍得NDJ恩贾梅纳空运，萨赫勒项目货、矿业备件、工程设备、通信电力物资和贸易补货不能只看航班。Air Waybill、商业发票、原产地证、装箱单、进口商资料和ASYCUDA申报字段要提前一致。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['乍得NDJ清关资料', 'Chad air waybill customs', "N'Djamena air freight clearance", 'Chad ASYCUDA import declaration', '中国到乍得空运清关'],
+    template: 'generated',
+    audience: ['乍得进口商', '萨赫勒项目客户', '工程设备工厂', '法语区货代同行'],
+    angle: '用NDJ/N’Djamena、Air Waybill、发票编号、原产地资料和ASYCUDA承接乍得空运清关搜索。',
+    sections: [
+      {
+        heading: 'NDJ空运先判断文件能不能过',
+        body: [
+          'NDJ恩贾梅纳是乍得项目货和贸易补货的核心空运入口，常见货物包括工程机械备件、通信电力设备、矿业物资、医疗急件、车辆配件和萨赫勒区域项目物资。客户只问中国到NDJ空运多少钱时，销售要先确认进口商、清关代理、Air Waybill、商业发票、原产地证和装箱单能不能一致。',
+          'Trade.gov的乍得进口文件页面列出商业发票、原产地证、装箱单和Air Waybill等资料，并强调运输单证和发票上的识别编号要完整准确。空运询价阶段就要把AWB收货人、发票号、货值、HS Code、品名、数量、毛重和包装信息对齐。',
+        ],
+        bullets: ['NDJ恩贾梅纳', 'Air Waybill', '商业发票', '原产地证'],
+      },
+      {
+        heading: 'ASYCUDA不是到港后才处理',
+        body: [
+          'ASYCUDA官方说明该系统覆盖外贸流程中的舱单、海关申报、会计程序和仓储相关手续；ASYCUDA也把Chad列为用户国家。对NDJ空运来说，舱单、AWB、发票、装箱单、HS Code、货值和进口商资料越早一致，目的地清关代理越容易提前判断申报风险。',
+          '这不是单纯合规话术，而是项目货的成交动作。乍得目的地信息相对不透明，客户如果没有进口商资料、发票编号、原产地证和法文/英文品名，报价只能是粗价，不能保证到港后的放行节奏。',
+        ],
+        bullets: ['ASYCUDA申报', '舱单资料', 'HS Code和货值', '进口商资料'],
+      },
+      {
+        heading: '萨赫勒项目货要把交付边界说清楚',
+        body: [
+          'NDJ后续经常还要面对最终城市、项目现场、边境区域、吊装卸货、收货时间和安保安排。能飞到NDJ不等于能顺利交到项目现场，空运报价必须把机场到最终地点的责任边界拆开。',
+          '专业回复应分三层：第一层确认航班和装载，第二层确认AWB/发票/原产地/ASYCUDA资料，第三层确认NDJ到最终城市或项目现场的交付能力。三层都能落地，客户才会把你当成解决问题的人，而不是只会报公斤价的货代。',
+        ],
+        bullets: ['NDJ到最终城市', '项目现场交付', '卸货条件', '责任边界'],
+      },
+    ],
+    checklist: ['NDJ目的机场', '最终城市/项目现场', '进口商资料', '清关代理资料', 'Air Waybill收货人信息', '商业发票', '发票编号', '装箱单', 'HS Code', '英文/法文品名', '货值币种', 'Certificate of Origin', '数量和毛重', '包装照片', 'ASYCUDA申报字段', '舱单资料', '是否需要进口许可或受控货文件', '每件尺寸重量', '是否需要主甲板或中转', '最晚到货时间', 'NDJ后段交付边界'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'LOS 拉各斯萨赫勒延伸', href: '/africa-air-freight/los/' },
+      { label: '尼日尔NIM清关资料', href: '/insights/niger-nim-guce-asycuda-air-freight-clearance/' },
+      { label: '喀麦隆DLA清关资料', href: '/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Chad - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/chad-import-requirements-and-documentations' },
+      { label: 'Legacy Export.gov: Chad - Import Requirements and Documentation', href: 'https://legacy.export.gov/article?id=Chad-Import-Requirements-and-Documentation' },
+      { label: 'ASYCUDA: Chad', href: 'https://asycuda.org/en/usercountries-chad/' },
+      { label: 'ASYCUDA: Programme overview', href: 'https://asycuda.org/en/programme/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
