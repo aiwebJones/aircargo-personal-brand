@@ -2808,6 +2808,62 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'botswana-gbe-burs-single-window-sad500-air-freight-clearance',
+    title: '博茨瓦纳GBE空运清关：BURS Single Window、SAD 500和进口许可怎么准备？',
+    excerpt:
+      '中国到博茨瓦纳GBE哈博罗内空运，矿业备件、钻石设备、工程物资、医疗设备和贸易补货不能只看航班。Botswana Single Window、BURS/ASYCUDA、SAD 500、Air Waybill、商业发票箱单和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['博茨瓦纳GBE清关资料', 'Gaborone airport customs clearance', 'Botswana Single Window', 'SAD 500 Botswana customs', 'BURS ASYCUDA air freight', '中国到博茨瓦纳空运清关'],
+    template: 'generated',
+    audience: ['博茨瓦纳进口商', '矿业和钻石设备供应商', '医疗和工程设备工厂', '南部非洲货代同行'],
+    angle: '用GBE/Gaborone、Botswana Single Window、SAD 500和BURS ASYCUDA承接博茨瓦纳空运清关搜索。',
+    sections: [
+      {
+        heading: 'GBE空运先判断BURS电子申报',
+        body: [
+          'GBE哈博罗内适合博茨瓦纳矿业备件、钻石加工设备、工程物资、医疗设备、电子电器和贸易补货。客户只问中国到GBE空运多少钱时，销售要先判断进口商、清关代理和BURS电子申报资料是否能提前跑通。',
+          'Botswana Single Window给贸易商的说明写明，货物进口到博茨瓦纳时，需要立即向BURS Customs & Excise Division申报，并提交适当海关表格和支持文件，例如进口许可、发票和原产地证等。商业进口货还应电子申报，并放在对应的海关程序下。',
+        ],
+        bullets: ['Botswana Single Window', 'BURS Customs & Excise', '电子海关申报', '进口许可/发票/原产地证'],
+      },
+      {
+        heading: 'SAD 500和Manifest要跟AWB一致',
+        body: [
+          'Botswana Trade Portal的SAD 500海关申报流程列出支持文件：Commercial Invoice、Bill of Lading or Consignment Note、Manifest、Packing List和Certificate of Origin。空运场景下，Bill of Lading逻辑要转换成Air Waybill和航空舱单资料。',
+          '该流程还提示，要任命获得BURS认证、可访问ASYCUDA海关系统的清关代理；ASYCUDA系统会生成SAD 500 Declaration、税费和Customs Clearance Reference Number。GBE询价前，发票、AWB、舱单、箱单、HS Code、货值、件数和重量不能互相打架。',
+        ],
+        bullets: ['SAD 500 Declaration', 'Air Waybill/Manifest', 'BURS认证清关代理', 'Customs Clearance Reference Number'],
+      },
+      {
+        heading: '进口许可和受控货要先筛',
+        body: [
+          'Trade.gov的博茨瓦纳进口文件页面说明，从SACU之外直接进入博茨瓦纳的货物需要Department of International Trade签发的进口许可，许可不可转让，并且必须在装运前取得。MTI eServices也有Issue of Import Permit和Import Permit for Restricted Goods入口。',
+          '矿业设备、医疗设备、食品/农业、化工、通信设备、电子电器、二手设备和受限制货物，不适合到GBE后才问许可。正确报价动作是把航班可行性、BURS/ASYCUDA申报、SAD 500、进口许可和GBE后段交付分开确认。',
+        ],
+        bullets: ['Import Permit', 'Restricted Goods', 'MTI eServices', 'GBE后段交付'],
+      },
+    ],
+    checklist: ['GBE目的机场', '最终城市/项目现场', '进口商TIN/BURS资料', 'BURS认证清关代理', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Manifest资料', 'SAD 500申报资料', 'Certificate of Origin如需', 'Import Permit如需', 'Restricted Goods许可如需', 'ASYCUDA申报字段', '税费和清关参考号责任', '每件尺寸重量', '包装照片', '是否经JNB或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 南部非洲入口', href: '/africa-air-freight/jnb/' },
+      { label: 'LUN 赞比亚矿业备件', href: '/africa-air-freight/lun/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '南非JNB清关资料', href: '/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Botswana Single Window: Information for Traders and Business', href: 'https://ecustoms.burs.org.bw/TFBSEW/cusLogin/traderAndBusiness.jsp' },
+      { label: 'Botswana Trade Portal: Customs Declaration utilising SAD 500 Form', href: 'https://www.botswanatradeportal.org.bw/index.php?id=5&r=searchProcedure%2Fview1' },
+      { label: 'BURS: Customs and Excise Forms', href: 'https://www.burs.org.bw/index.php/forms/category/16-customs-and-excise-forms' },
+      { label: 'MTI eServices: Import Permits and Rebate Certificates', href: 'https://trade.gov.bw/' },
+      { label: 'Trade.gov: Botswana - Import Requirements & Documentation', href: 'https://www.trade.gov/country-commercial-guides/botswana-import-requirements-documentation' },
+      { label: 'Trade.gov: Botswana - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/botswana-customs-regulations' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
