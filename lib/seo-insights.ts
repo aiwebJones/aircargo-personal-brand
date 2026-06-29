@@ -967,6 +967,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'mozambique-mpm-mcnet-jue-air-freight-clearance',
+    title: '莫桑比克MPM空运清关：MCNet/JUE、进口许可和Documento Unico怎么准备？',
+    excerpt:
+      '中国到莫桑比克MPM空运，能源项目货、矿业备件、工业设备、电子电器和贸易补货不能只看航班。MCNet/JUE电子申报、到货通知、电子舱单、Documento Unico、Air Waybill、商业发票箱单和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['莫桑比克MPM清关资料', 'MCNet JUE清关', '莫桑比克进口许可', '中国到莫桑比克空运清关'],
+    template: 'generated',
+    audience: ['莫桑比克进口商', '能源项目设备供应商', '矿业备件工厂', '东南非项目货代'],
+    angle: '把 MCNet/JUE 电子申报、Documento Unico 和产品许可核验转成 MPM 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'MPM空运先判断JUE资料',
+        body: [
+          'MPM 马普托是莫桑比克项目货、能源设备、矿业备件、工业设备和贸易补货的核心入口。客户只问中国到 MPM 空运多少钱时，销售要先判断进口商、清关代理和 MCNet/JUE 资料是否能提前跑通。',
+          'MCNet TradeNet 说明，它是 Janela Unica Electronica（JUE）的一部分，用于让国际贸易和运输参与方办理进出口、过境相关流程。页面列出的功能包括到货通知、电子货物舱单、电子申报、支付、许可证/授权和货物追踪。对空运来说，AWB 和舱单资料不能等货落地后才整理。',
+        ],
+        bullets: ['MCNet/JUE', '到货通知', '电子货物舱单', '电子申报和支付'],
+      },
+      {
+        heading: 'Documento Unico要跟商业资料一致',
+        body: [
+          'Autoridade Tributaria de Mocambique 的海关申报页面把申报动作指向 JUE 里的 Documento Unico 和相应支持文件。MCNet 的流程说明也反复出现 BL、invoice、document、item 等申报字段，说明监管系统看的是货物、单证和申报数据的一致性。',
+          '所以 MPM 询价不能只收重量和机场代码。HS Code、英文/葡文品名、型号规格、品牌、货值、收货人 NUIT、清关代理、商业发票、装箱单、Air Waybill、合同/付款资料和最终交付城市，都要在订舱前对齐。',
+        ],
+        bullets: ['Documento Unico', 'Air Waybill', '商业发票和箱单', '进口商NUIT/清关代理'],
+      },
+      {
+        heading: '进口许可和产品管制要提前问',
+        body: [
+          'Mozambique Foreign Trade Portal 的进口指南提示，进口流程会随商业属性、产品、原产地和具体要求变化，实操上要按产品数据库和进口商资料核验。也就是说，莫桑比克清关风险经常不是航班问题，而是货物属性和许可/授权问题。',
+          '能源、矿业、化工、电气设备、电子电器、二手设备、车辆相关、食品/农业和受技术标准影响的货物，不适合最后一刻才问监管资料。正确动作是把航班可行性、JUE申报、进口许可/授权、目的港费用和马普托外二程交付分开确认。',
+        ],
+        bullets: ['许可证/授权', '产品数据库核验', '受控货预审', 'MPM外二程交付'],
+      },
+    ],
+    checklist: ['HS Code', '英文/葡文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '电子货物舱单资料', 'Documento Unico/JUE资料', '进口商NUIT', '清关代理资料', '合同和货值资料', '许可证或授权如需', 'Certificate of Origin如需', '产品数据库/技术标准核验', 'MPM或最终城市', '每件尺寸重量', '是否需要经JNB/NBO/欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'MPM 马普托航线页', href: '/africa-air-freight/mpm/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: 'JNB 南部非洲入口', href: '/insights/jnb-mining-spares-air-freight/' },
+    ],
+    sources: [
+      { label: 'MCNet TradeNet: Mozambique Single Electronic Window', href: 'https://tradenet.mcnet.co.mz/' },
+      { label: 'AT Mozambique: Submissao da Declaracao Aduaneira', href: 'https://www.at.gov.mz/por/Procedimentos-Aduaneiros/Procedimentos/Declaracao-Aduaneira/Submissao-da-Declaracao-Aduaneira' },
+      { label: 'Mozambique Foreign Trade Portal: Commerce Guides', href: 'https://portalcomercioexterno.gov.mz/en/commerce-guides/' },
+      { label: 'JUE Portal', href: 'https://jue.mcnet.co.mz/mcnet/portal/homepage' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
