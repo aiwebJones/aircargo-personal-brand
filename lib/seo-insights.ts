@@ -21,6 +21,10 @@ export type SeoInsight = {
     label: string
     href: string
   }>
+  sources?: Array<{
+    label: string
+    href: string
+  }>
 }
 
 const defaultAuthor = '神仙货运Jones'
@@ -61,6 +65,58 @@ export const seoInsights: SeoInsight[] = [
     sections: [],
     checklist: [],
     relatedRoutes: [],
+  },
+  {
+    slug: 'africa-air-cargo-demand-2026-route-risk',
+    title: '2026非洲空运需求增长但运力收紧：项目货询价该怎么判断？',
+    excerpt:
+      'IATA数据显示2026年非洲航司货运需求增长，但运力同比下降。对中国到非洲项目货来说，真正要提前判断的是舱位、主甲板、清关资料和二程交付。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '市场情报',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['2026非洲空运', '非洲空运需求', '非洲空运运力', 'Africa air cargo 2026'],
+    template: 'generated',
+    audience: ['中国工厂', '非洲项目采购', '货代同行', '矿业设备供应商'],
+    angle: '把非洲空运增长和运力收紧，翻译成项目货询价前的路线判断动作。',
+    sections: [
+      {
+        heading: '为什么 2026 年非洲空运更值得盯',
+        body: [
+          'IATA 2026 年 4 月航空货运数据里，非洲航司货运需求同比增长，但可用货运运力同比下降。这个组合对普通小货是价格波动，对项目货就是路线可执行性风险：舱位有，但不一定适合你的尺寸；需求在涨，但主甲板和目的地操作不一定同步增加。',
+          '对中国到非洲的大件、矿业备件、能源设备和紧急维修件来说，市场热度不是直接利好。真正的利好，是客户更愿意为“能不能走、什么时候能到、哪里会卡”付费，而不是只压低每公斤价格。',
+        ],
+        bullets: ['需求增长', '运力收缩', '非洲目的地分化', '项目货更依赖预判'],
+      },
+      {
+        heading: '不要把市场增长误读成每票货都好走',
+        body: [
+          '非洲空运增长说明货量和需求在上升，但项目货的瓶颈通常不在总市场，而在某一个具体环节：国内段能不能接、LGG/BRU 能不能中转、二程全货机能不能排上、JNB/FBM/LUN/LBV 到港后能不能清关和卸货。',
+          '如果客户只问“现在非洲空运多少钱一公斤”，回答应该先转成判断问题：什么货、每件多大、去哪个机场、最终城市在哪里、最晚什么时候必须到、收货人能不能清。',
+        ],
+        bullets: ['客机腹舱限制', '全货机主甲板', '欧洲中转窗口', '目的地清关和卸货'],
+      },
+      {
+        heading: '2026 年更适合做哪些内容和询盘承接',
+        body: [
+          'SEO 上，2026 年的非洲空运内容不能只写“价格上涨”“市场增长”。更应该写买家会搜索的具体问题：JNB 矿业急件怎么走，FBM 铜钴矿区备件需要什么资料，LUN 赞比亚工业设备怎么清关，LBV 长货为什么要经 LGG/BRU。',
+          '成交上，销售回复也要从报价切到诊断。把市场变化变成客户能执行的清单：尺寸重量、HS Code、包装照片、吊点重心、进口商资料、最终交付城市、最晚到货时间。',
+        ],
+        bullets: ['机场代码专题', '矿业/能源/工业货专题', '清关资料清单', '超大件询价模板'],
+      },
+    ],
+    checklist: ['目的机场和最终城市', '每件尺寸重量', '包装照片', 'HS Code和货值', '进口商资料', '是否需要主甲板', '是否可接受LGG/BRU中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
+      { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
+    ],
+    sources: [
+      { label: 'IATA: Air Cargo Demand Up 4.0% in April 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/05-28-air-cargo-demand-up-april-middle-east-disruption/' },
+      { label: 'IATA: Air Cargo Market Analysis February 2026', href: 'https://www.iata.org/en/publications/economics/reports/air-cargo-market-analysis-february-2026/' },
+    ],
   },
   {
     slug: 'jnb-mining-spares-air-freight',

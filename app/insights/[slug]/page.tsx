@@ -72,6 +72,7 @@ export default function InsightDetailPage({ params }: Params) {
     datePublished: insight.date,
     dateModified: insight.date,
     about: insight.keywords,
+    citation: insight.sources?.map((source) => source.href),
   }
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -189,6 +190,25 @@ export default function InsightDetailPage({ params }: Params) {
                 ))}
               </div>
             </section>
+
+            {insight.sources && (
+              <section className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <h2 className="text-2xl font-black">参考来源</h2>
+                <div className="mt-5 space-y-3 text-sm leading-7">
+                  {insight.sources.map((source) => (
+                    <a
+                      key={source.href}
+                      href={source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-amberGold"
+                    >
+                      {source.label}
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
 
             <section className="rounded-lg bg-amberGold p-7 text-[#08111f] shadow-sm">
               <h2 className="text-2xl font-black">EASCargo 怎么处理这类询盘</h2>
