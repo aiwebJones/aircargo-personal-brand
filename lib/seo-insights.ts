@@ -3726,6 +3726,68 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance',
+    title: '南苏丹JUB空运清关：ACD、PVoC/CoC和eCustoms资料怎么准备？',
+    excerpt:
+      '中国到南苏丹JUB朱巴空运，NGO物资、油田备件、工程设备、医疗和通信设备不能只看航班。South Sudan ACD、PVoC/CoC、eCustoms申报、AWB、发票、箱单、HS Code和进口商资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['南苏丹JUB清关资料', 'South Sudan ACD', 'South Sudan PVoC CoC', 'South Sudan eCustoms', 'Juba airport cargo clearance', 'JUB oilfield spare parts air freight', '中国到南苏丹空运清关'],
+    template: 'generated',
+    audience: ['南苏丹进口商', 'NGO和援助物资供应商', '油田工程与通信设备工厂', '东非航线货代同行'],
+    angle: '用JUB、South Sudan ACD、PVoC/CoC、eCustoms、Juba airport cargo clearance和oilfield spare parts承接南苏丹空运清关搜索。',
+    sections: [
+      {
+        heading: 'JUB空运先判断ACD和eCustoms链路',
+        body: [
+          '南苏丹空运主要看JUB朱巴。适合NGO/援助物资、医疗设备、通信设备、油田备件、工程急件、发电设备和高价值小批量货。客户只问中国到南苏丹空运多少钱时，销售要先确认进口商、清关代理、AWB、发票、箱单、HS Code、ACD和eCustoms责任。',
+          'South Sudan ACD门户说明，ACD是南苏丹进口商、出口商、货代和清关代理在货物发运前要完成的强制装运文件，用于向南苏丹海关提交货物资料并预先识别风险。空运场景下，不能把它简单理解成海运提单动作，而要让进口商或当地代理确认ACD号码、Air Waybill和航空舱单字段怎么对应。',
+        ],
+        bullets: ['JUB Juba airport', 'South Sudan ACD', 'Air Waybill资料', 'pre-arrival cargo data'],
+      },
+      {
+        heading: 'PVoC/CoC要在发货前确认',
+        body: [
+          'South Sudan National Bureau of Standards的PVoC页面说明，受PVoC管制的货物必须在发货前取得Certificate of Conformity，缺失CoC的货物可能被拒收或处罚。SGS南苏丹PVoC说明也写到，进入南苏丹的货物需要CoC，CoC是南苏丹清关的强制文件。',
+          '这对JUB急件很现实。医疗设备、通信设备、电子电器、建材、机械设备、消费品、食品相关物资、化工品和带电设备，不能到交仓后才问要不要CoC。报价前要把HS Code、产品用途、规格型号、品牌、照片、测试报告、发票、装箱单和进口商资料先给目的地确认。',
+        ],
+        bullets: ['South Sudan PVoC CoC', 'before shipment', 'regulated goods', 'testing and product documents'],
+      },
+      {
+        heading: 'eCustoms不是后台小事，是放行入口',
+        body: [
+          'South Sudan eCustoms门户说明，进口商、出口商和清关代理可以通过系统申报货物，申请货物目的地证书，查询税则，完成付款、查验和放行等流程。系统还列出清关代理需要TIN和agent code后才能提交海关申报。',
+          '所以JUB空运询价不能只收重量体积。要确认进口商TIN、目的地broker、eCustoms申报人、HS Code、货值、品名、用途、件数重量、监管属性和税费责任。如果进口商没有可操作的broker，低价航班无法解决到港后的资料缺口。',
+        ],
+        bullets: ['South Sudan eCustoms', 'TIN and agent code', 'tariff calculation', 'inspection and clearance'],
+      },
+      {
+        heading: '油田/援助/医疗货要先筛许可证和豁免',
+        body: [
+          '南苏丹项目货经常混合出现：NGO援助物资、医疗仪器、通信设备、太阳能和电池设备、发电机、油田备件、泵阀、检测仪器、化工品、食品或水处理物资。公开来源能确认ACD、PVoC/CoC和eCustoms框架，具体许可证、豁免和税费处理要让进口商与当地broker逐票确认。',
+          '实际动作是先拆责任再订舱：谁申请ACD，谁确认CoC，谁做eCustoms申报，谁承担目的地税费，谁处理JUB机场提货和最终现场交付。只有这些成立，JUB报价才是可执行价格。',
+        ],
+        bullets: ['NGO relief cargo', 'oilfield spare parts', 'medical and telecom equipment', 'broker responsibility'],
+      },
+    ],
+    checklist: ['JUB目的机场', '最终城市/营地/油田/项目现场', '进口商资料', '进口商TIN如有', '清关代理/broker资料', 'ACD申请责任', 'ACD号码或申请状态', 'eCustoms申报责任', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'PVoC/CoC适用性', '测试报告或产品证书如需', '进口许可证或豁免如需', 'DG/MSDS如需', '医疗/通信/电池/二手设备属性筛查', '税费和放行责任', '每件尺寸重量', '包装照片', '是否经NBO/EBB/ADD/CAI/IST中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: 'EBB 乌干达入口', href: '/africa-air-freight/ebb/' },
+      { label: '肯尼亚NBO PVoC/IDF清关资料', href: '/insights/kenya-nbo-pvoc-coc-idf-air-freight-clearance/' },
+      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-ura-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'South Sudan ACD: General information', href: 'https://acdsouthsudan.com/general-information/' },
+      { label: 'South Sudan eCustoms: Customs services portal', href: 'https://customs.eservices.gov.ss/' },
+      { label: 'South Sudan National Bureau of Standards: PVoC', href: 'https://ssnbs.gov.ss/pvoc/' },
+      { label: 'SGS: South Sudan Product Conformity Assessment Programme', href: 'https://www.sgs.com/en/services/south-sudan-product-conformity-assessment-programme' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
