@@ -326,6 +326,58 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'kenya-nbo-pvoc-idf-air-freight-documents',
+    title: '肯尼亚NBO空运清关：PVoC/CoC和IDF为什么要提前确认？',
+    excerpt:
+      '中国到肯尼亚NBO空运，设备、备件、电子电器、太阳能组件和工业品不能只看航班。PVoC/CoC、IDF、HS Code、进口商资料和监管许可要在出运前判断，否则到JKIA后补资料会拖慢清关。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['肯尼亚PVOC空运', 'NBO清关资料', '肯尼亚IDF进口', '中国到肯尼亚空运清关'],
+    template: 'generated',
+    audience: ['肯尼亚进口商', '设备工厂', '太阳能和电气产品供应商', '东非项目货代'],
+    angle: '把肯尼亚 PVoC/CoC 和 IDF 要求转成 NBO 空运询价前的资料预审清单。',
+    sections: [
+      {
+        heading: 'NBO空运不是只看航班',
+        body: [
+          'NBO/JKIA 是东非项目货的重要入口，常见货物包括设备备件、电子电器、太阳能组件、医疗物资、工业耗材和紧急维修件。很多客户只问中国到内罗毕空运多少钱，但真正影响交付的是货物能不能顺利清关。',
+          '肯尼亚 Bureau of Standards 的 PVoC 是针对发往肯尼亚货物在供应国/原产国进行的符合性评估程序，用来判断是否符合肯尼亚标准或认可规范。对销售来说，第一步不是承诺时效，而是先判断这票货是否可能需要 CoC、是否有进口商配合以及资料是否足够。',
+        ],
+        bullets: ['NBO/JKIA 到港清关', 'PVoC/CoC 判断', '进口商配合', '货物品类监管'],
+      },
+      {
+        heading: 'IDF要在货物离港前处理',
+        body: [
+          'Kenya InfoTrade 的 IDF 程序页说明，进口商需要完成 Import Declaration Form，并声明进口货物真实准确的价值。页面还把 IDF、CoC、ISM 或其他许可按不同品类列入每票货可能涉及的文件。',
+          '这意味着中国发货人不能只准备发票箱单就交仓。HS Code、货值、品名、用途、规格、产品照片、技术资料和收货人资料，都会影响进口商能不能及时完成 IDF 和相关许可。',
+        ],
+        bullets: ['Import Declaration Form', '真实货值申报', 'HS Code 和品名一致', '收货人进口资料'],
+      },
+      {
+        heading: '哪些货要特别提前问',
+        body: [
+          '电子电器、太阳能组件、化工品、食品相关产品、医疗产品、二手设备、备件和带监管属性的工业货，都不适合最后一刻才问清关资料。不同品类可能涉及 KEBS、KRA、EPRA、药监、植检或其他主管部门。',
+          '专业做法是把 NBO 空运询价拆成两条线：一条判断航班、重量、尺寸、是否需要主甲板；另一条判断 PVoC/CoC、IDF、进口许可、目的港费用和最终交付。两条线都成立，报价才有意义。',
+        ],
+        bullets: ['电子电器', '太阳能组件', '医疗/化工品', '二手设备和备件'],
+      },
+    ],
+    checklist: ['商业发票', '装箱单', 'HS Code', '英文品名和用途', '产品照片和规格书', 'PVoC/CoC是否需要', 'IDF是否已申请', '进口商KRA/PIN资料', '是否涉及EPRA/药监/植检等许可', 'NBO或最终城市', '每件尺寸重量', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕航线页', href: '/africa-air-freight/nbo/' },
+      { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'Kenya Bureau of Standards: Pre-Export Verification of Conformity', href: 'https://www.kebs.org/pre-export-verification-of-conformity/' },
+      { label: 'InfoTradeKenya: Import Declaration Form (IDF)', href: 'https://infotradekenya.go.ke/procedure/322?includeSearch=true&l=en' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
