@@ -1990,6 +1990,113 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight',
+    title: 'IATA DGR第67版锂电池空运：PI966/PI967 3米堆码测试和非洲带电设备怎么准备？',
+    excerpt:
+      'IATA DGR每年更新，2026年第67版和锂电池包装要求会影响带电设备、工具、仪器和项目备件空运到非洲。询价前要确认UN编号、PI966/PI967场景、包装测试、MSDS和UN38.3。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['IATA DGR第67版', 'PI966 PI967空运', '锂电池3米堆码测试', 'UN3481非洲空运', '带电设备空运非洲'],
+    template: 'generated',
+    audience: ['带电设备工厂', '电动工具出口商', '检测仪器供应商', '矿业备件客户'],
+    angle: '用 IATA DGR 2026 和锂电池包装要求，承接带电设备空运到非洲的合规搜索。',
+    sections: [
+      {
+        heading: '为什么要单独看 DGR 第67版',
+        body: [
+          'IATA Dangerous Goods Regulations 每年发布新版本。IATA 页面说明，DGR 每年更新，客户使用最新规则能减少延误、罚款和合同损失；第67版相关更新在 2026 年 1 月 1 日起进入数字手册更新节奏。',
+          '对中国到非洲带电设备来说，客户常见说法是“机器里有一点电池”。但航司和地面代理看的不是一句口头描述，而是 UN 编号、包装说明、MSDS、UN38.3、电池配置和包装是否符合要求。',
+        ],
+        bullets: ['DGR第67版', 'UN编号', 'MSDS', 'UN38.3'],
+      },
+      {
+        heading: 'PI966/PI967为什么会影响普通设备',
+        body: [
+          '很多设备不是单独发电池，而是“电池与设备包装在一起”或“电池安装在设备中”。这就会落到 PI966、PI967 等具体包装说明场景，而不是普通机械设备空运。',
+          'IATA 锂电池页面提到，从 2025 年 1 月起，PI966-II、PI967-I/II、PI969-II、PI970-I/II 等非 UN 规格包装场景引入了额外包装要求，也就是业内会讨论的 3 米堆码测试相关要求。',
+        ],
+        bullets: ['电池随设备包装', '电池安装在设备中', '非UN规格包装', '3米堆码测试'],
+      },
+      {
+        heading: '非洲询价应该怎么收资料',
+        body: [
+          'JNB、NBO、LOS、ACC 等成熟口岸和 FBM、LUN、LBV、CKY 等项目点，对带电设备的处理不一样。能不能订舱只是第一步，目的地代理能不能清关、二程能不能接、现场是否接受带电设备，也要同步确认。',
+          '销售回复应该直接给客户清单：请提供 MSDS、UN38.3、UN 编号、电池 Wh/Ah、电池数量、是否可拆、设备照片、包装照片、每件尺寸重量、HS Code、目的机场和最终城市。',
+        ],
+        bullets: ['航司接受能力', '目的港清关', '二程交付', '项目现场接收'],
+      },
+    ],
+    checklist: ['MSDS', 'UN38.3', 'UN编号', 'PI966/PI967场景', '电池Wh/Ah', '电池数量', '是否可拆电池', '包装照片', '设备照片', '每件尺寸重量', 'HS Code', '目的机场和最终城市'],
+    relatedRoutes: [
+      { label: '带锂电池设备空运总入口', href: '/insights/lithium-battery-equipment-africa-air-freight-2026/' },
+      { label: '危险品/化工品空运', href: '/insights/dangerous-goods-chemical-air-freight-africa-checklist/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
+    ],
+    sources: [
+      { label: 'IATA: Dangerous Goods Regulations', href: 'https://www.iata.org/en/publications/dgr/' },
+      { label: 'IATA: Lithium Batteries', href: 'https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/' },
+      { label: 'IATA: DG Shipper’s Declaration and e-DGD', href: 'https://www.iata.org/en/programs/cargo/dgr/shippers-declaration/' },
+    ],
+  },
+  {
+    slug: 'air-cargo-data-loggers-tracking-devices-africa-cold-chain',
+    title: '空运数据记录仪/货物追踪器到非洲：电池、设备批准和温控货怎么准备？',
+    excerpt:
+      '药品、冷链、电子产品和高价值货空运到非洲，经常会放数据记录仪或货物追踪器。它们本身可能带电池和无线发射功能，询价前要确认设备批准、TCR/PCR、温控标签和目的地冷链能力。',
+    date: '2026-06-30',
+    readTime: '10 分钟',
+    category: '温控冷链',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['空运数据记录仪', '货物追踪器空运', '温控货空运非洲', 'IATA TCR非洲空运', '冷链空运数据记录器'],
+    template: 'generated',
+    audience: ['医药出口商', '冷链货主', '电子产品工厂', '非洲项目采购'],
+    angle: '把数据记录仪和货物追踪器从“小配件”变成温控/电池合规的询价前置清单。',
+    sections: [
+      {
+        heading: '数据记录仪不是无关小配件',
+        body: [
+          '药品、试剂、疫苗、电子产品、高价值设备和温控货空运到非洲时，客户经常会在箱内或托盘上放数据记录仪、温度记录器、GPS 追踪器或 IoT 设备。',
+          'IATA 锂电池页面明确把 battery-powered cargo tracking devices and data loggers 放进电池指导材料。IATA 也推出了 Air Cargo Device Assessment，用于验证货物追踪器、数据记录仪和带传感器设备是否符合行业安全标准。',
+        ],
+        bullets: ['温度记录仪', 'GPS追踪器', 'IoT设备', '传感器设备'],
+      },
+      {
+        heading: '温控货还要看TCR/PCR',
+        body: [
+          '如果货物是药品、试剂、疫苗或其他温控产品，问题不只是设备有没有电池。IATA Temperature Control Regulations 涵盖温控产品运输和处理要求，IATA Pharma 页面还提到 time and temperature sensitive label 和验收清单。',
+          '对非洲目的地，冷链风险通常出现在三个地方：起运机场交接、转运机场等待、目的地清关和提货。数据记录仪能证明温度，但不能替代包装验证、标签、冷库预约和本地代理确认。',
+        ],
+        bullets: ['TCR', 'PCR', '温控标签', '冷库预约'],
+      },
+      {
+        heading: '询价前要问清楚哪些问题',
+        body: [
+          '客户发温控货或高价值货时，销售不能只问重量和目的港。必须问清楚数据记录仪是否开启无线发射、是否含锂电池、电池型号和数量、是否有航空设备批准或厂家资料、货物温控范围、包装验证、是否需要 dry ice 或主动温控箱。',
+          '如果目的地是 JNB、NBO、LOS、ACC 这类大口岸，先确认机场冷链和清关能力；如果是 FBM、LUN、LBV 等项目点，还要确认二程交付过程中温控是否能保持。',
+        ],
+        bullets: ['设备是否发射', '电池参数', '温控范围', '目的地冷链'],
+      },
+    ],
+    checklist: ['数据记录仪型号', '是否无线发射', '电池类型和数量', '设备批准资料', '货物温控范围', '包装验证资料', '是否需要干冰', 'TCR/PCR场景', '目的机场冷链能力', '清关后提货时限', '最终交付城市'],
+    relatedRoutes: [
+      { label: '带锂电池设备空运总入口', href: '/insights/lithium-battery-equipment-africa-air-freight-2026/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: 'NBO 内罗毕', href: '/africa-air-freight/nbo/' },
+      { label: 'LOS 拉各斯', href: '/africa-air-freight/los/' },
+    ],
+    sources: [
+      { label: 'IATA: Lithium Batteries', href: 'https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/' },
+      { label: 'IATA: Air Cargo Device Assessment Program', href: 'https://www.iata.org/en/pressroom/2024-releases/2024-12-11-01/' },
+      { label: 'IATA: Pharma & Healthcare Cargo', href: 'https://www.iata.org/en/programs/cargo/pharma/' },
+      { label: 'IATA: Temperature Control Regulations', href: 'https://www.iata.org/en/publications/manuals/temperature-control-regulations/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
