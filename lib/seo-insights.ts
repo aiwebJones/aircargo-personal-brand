@@ -1129,6 +1129,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'egypt-cai-nafeza-aci-cargox-goeic-air-freight-clearance',
+    title: '埃及CAI空运清关：NAFEZA/ACI、ACID、CargoX和GOEIC资料怎么准备？',
+    excerpt:
+      '中国到埃及CAI开罗空运，工业设备、汽车零部件、电子电器、样品和贸易补货不能只看航班。NAFEZA ACI预申报、ACID、CargoX文件上传、商业发票箱单、Air Waybill和GOEIC产品检验要提前对齐。',
+    date: '2026-06-30',
+    readTime: '15 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['埃及CAI清关资料', 'NAFEZA ACI空运', 'CargoX ACID埃及', '中国到埃及空运清关'],
+    template: 'generated',
+    audience: ['埃及进口商', '汽车零部件供应商', '工业设备工厂', '北非中东贸易货代'],
+    angle: '把 NAFEZA ACI、ACID、CargoX 文件包和 GOEIC 产品检验转成 CAI 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'CAI空运先判断ACI和ACID',
+        body: [
+          'CAI 开罗是埃及工业设备、汽车零部件、电子电器、样品和贸易补货的重要入口。埃及的清关风险不是单纯“目的港代理能不能清”，而是 ACI/ACID、进口商资料、文件上传和产品监管是否能在起飞前对齐。',
+          'NAFEZA 的 Advance Cargo Information 页面说明，ACI 是埃及海关程序，要求货物数据或文件在出口国发运前至少 48 小时提交，以便通过风险管理系统监控风险；受影响方包括进口商、海外出口商/供应商、清关公司以及海运/空运公司。对 CAI 空运来说，订舱前就要问 ACID 是否已经申请、资料是否可以锁定。',
+        ],
+        bullets: ['NAFEZA ACI', 'ACID预申报', '48小时前资料', '空运公司/清关公司协同'],
+      },
+      {
+        heading: 'CargoX文件包不能等航班起飞后补',
+        body: [
+          'NAFEZA 页面把 CargoX 列为认证的区块链服务提供方，并说明海外出口商需要通过供应链网络把装运文件发送到 NAFEZA。另一页文件清单列出多数 ACI filing 需要 commercial invoice、packing list、bill of lading copy、certificate of origin，并提醒单个文件上传大小不要超过 5 MB；根据货物，还可能需要 certificate of inspection、certificate of insurance、MSDS、phytosanitary certificate、health certificate、veterinary certificate 等。',
+          '空运场景下，提单逻辑要转换成 Air Waybill/AWB 资料和航空舱单资料。发票、箱单、品名、HS Code、件数、重量、货值、原产地和 ACID 信息必须互相一致；否则即使航班能飞，CAI 到港后也会被文件差异拖慢。',
+        ],
+        bullets: ['CargoX上传', '商业发票和箱单', 'AWB资料', 'Certificate of Origin/MSDS如需'],
+      },
+      {
+        heading: 'GOEIC检验和受控产品要提前筛',
+        body: [
+          'GOEIC 的工业进口说明显示，其职责包括防止不符合技术标准的进口商品通过合法渠道进入本地市场，并覆盖工程、建筑材料、化工、纺织皮革、金属机械、电器和杂项商品等品类。GOEIC 预装运检验证书服务还说明，特定清单商品可凭符合条件的检验证书和生产商注册信息办理进口批次清关。',
+          '所以中国到埃及 CAI 空运，不能只问价格和航班。汽车配件、电器、灯具、机械设备、化工品、食品/健康相关、带电池或 MSDS 的货物，要先判断 GOEIC、进口许可证、检验证书、原产地证和 NAFEZA/CargoX 文件是否齐。正确动作是把航班可行性、ACI/ACID、CargoX文件、GOEIC检验和最终交付城市分开确认。',
+        ],
+        bullets: ['GOEIC工业进口', '预装运检验证书', '电器/机械/化工预审', '进口许可证和原产地证'],
+      },
+    ],
+    checklist: ['HS Code', '英文/阿拉伯文或英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'ACID号码', 'NAFEZA账号/进口商资料', 'CargoX账号和文件上传状态', '进口商税务/注册资料', '清关代理资料', 'Certificate of Origin如需', 'Certificate of Inspection如需', 'GOEIC产品检验是否涉及', 'MSDS/电池资料如需', '保险证书如需', 'CAI或最终城市', '每件尺寸重量', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CAI 开罗航线页', href: '/africa-air-freight/cai/' },
+      { label: 'CMN 北非清关资料', href: '/insights/morocco-cmn-adii-badr-portnet-air-freight-clearance/' },
+      { label: 'EU ICS2/ENS经欧洲中转资料', href: '/insights/eu-ics2-ens-lgg-bru-africa-transit-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'NAFEZA: Advance Cargo Information System', href: 'https://www.nafeza.gov.eg/en/pages/15' },
+      { label: 'NAFEZA: Documents required to create an ACI file', href: 'https://www.nafeza.gov.eg/en/pages/32' },
+      { label: 'GOEIC: Industrial Imports', href: 'https://www.goeic.gov.eg/en/services-and-activities/industrial-and-non-industrial-imports/industrial-imports' },
+      { label: 'GOEIC: Goods Requiring Pre-shipment Inspection Certificates', href: 'https://www.goeic.gov.eg/en/electronic-services/show/1220' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
