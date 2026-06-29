@@ -123,6 +123,7 @@ export default function Footer() {
               <a href="/insights/africa-mining-equipment-air-freight-rfq-template/" className="hover:text-amberGold">矿业设备空运询价模板</a>
               <a href="/insights/oversized-air-cargo-booking-documents-main-deck-africa/" className="hover:text-amberGold">超大件主甲板订舱资料</a>
               <a href="/insights/eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight/" className="hover:text-amberGold">欧盟ICS2/NCTS政策更新</a>
+              <a href="/insights/ghana-acc-easypass-icums-air-freight-clearance/" className="hover:text-amberGold">加纳EasyPASS 2026</a>
               <a href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/" className="hover:text-amberGold">尼日利亚B’Odogwu清关</a>
               <a href="/insights/iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight/" className="hover:text-amberGold">IATA锂电池DGR第67版</a>
               <a href="/insights/air-cargo-data-loggers-tracking-devices-africa-cold-chain/" className="hover:text-amberGold">温控货数据记录仪</a>
