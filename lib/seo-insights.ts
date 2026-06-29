@@ -2920,6 +2920,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'sierra-leone-fna-nra-asycuda-idf-air-freight-clearance',
+    title: '塞拉利昂FNA空运清关：NRA ASYCUDA、IDF和进口许可怎么准备？',
+    excerpt:
+      '中国到塞拉利昂FNA弗里敦空运，矿业备件、工程设备、医疗物资、化工品和贸易补货不能只看航班。NRA ASYCUDA World、Import Declaration Form、Air Waybill、商业发票箱单、原产地证和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['塞拉利昂FNA清关资料', 'Freetown airport customs clearance', 'Sierra Leone ASYCUDA air freight', 'NRA customs declaration Sierra Leone', 'Import Declaration Form Sierra Leone', '中国到塞拉利昂空运清关'],
+    template: 'generated',
+    audience: ['塞拉利昂进口商', '矿业和工程设备供应商', '医疗与化工品工厂', '西非货代同行'],
+    angle: '用FNA/Freetown、NRA ASYCUDA World、Import Declaration Form和进口许可承接塞拉利昂空运清关搜索。',
+    sections: [
+      {
+        heading: 'FNA空运先判断NRA/ASYCUDA资料',
+        body: [
+          'FNA弗里敦适合塞拉利昂矿业备件、工程物资、医疗物资、化工品、通信设备和贸易补货。客户只问中国到FNA空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、发票箱单和NRA/ASYCUDA资料是否能提前跑通。',
+          'Trade.gov的塞拉利昂进口文件页面说明，基础文件包括Commercial Invoice、Bill of Lading or Air Waybill、Packing List、Certificate of Origin和Import Declaration Form（IDF），并通过ASYCUDA World系统提交。空运场景下，Air Waybill和IDF字段不能等货到FNA后才补。',
+        ],
+        bullets: ['FNA Freetown airport', 'NRA customs', 'ASYCUDA World', 'Import Declaration Form'],
+      },
+      {
+        heading: 'IDF、AWB和发票箱单必须一致',
+        body: [
+          'NRA的进口和出口流程说明，ASYCUDA是用于海关数据的电子系统，清关代理可以代表贸易商连接海关服务器并提交电子申报。NRA的清关流程也写明，代理会在ASYCUDA系统中注册SCD申报，生成assessment notice，并附上进口商提供的运输、交易和其他资料。',
+          '所以FNA询价不能只收目的港和重量。HS Code、英文品名、用途、货值、币种、件数、毛重、AWB收货人、商业发票、装箱单、Certificate of Origin和IDF字段必须互相对应；否则申报、付款、风险管理、查验和放行都会被拖慢。',
+        ],
+        bullets: ['SCD电子申报', 'Assessment notice', 'Commercial invoice', 'Packing List'],
+      },
+      {
+        heading: '受控货许可和检验证书要前置',
+        body: [
+          'Trade.gov的海关规则页面说明，塞拉利昂进口受Customs Act和NRA海关部门管理，受限制品类可能需要许可证或许可文件，例如药品、化工品、武器和农业产品等。进口文件页面也提示，某些货物可能需要Pre-shipment Inspection Certificate或Sanitary/Phytosanitary Certificate。',
+          'MOTI页面也说明，受控货进口许可由相关政府部门签发，农业产品可能涉及phytosanitary certificate，部分货物可能涉及Sierra Leone Standards Bureau质量证书。矿业、医疗、化工、食品/农业、通信设备和二手设备，不适合只按普通空运报价处理。',
+        ],
+        bullets: ['Import permit', 'Pre-shipment Inspection', 'Sanitary/Phytosanitary Certificate', 'SLSB质量证书场景'],
+      },
+    ],
+    checklist: ['FNA目的机场', '最终城市/矿区/项目现场', '进口商NRA资料', '清关代理资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'Import Declaration Form/IDF资料', 'Certificate of Origin如需', 'Pre-shipment Inspection如需', 'Sanitary/Phytosanitary Certificate如需', '进口许可或受控货批文如需', 'SLSB质量证书场景', '每件尺寸重量', '包装照片', '是否经ACC/LOS/欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ACC 阿克拉西非入口', href: '/africa-air-freight/acc/' },
+      { label: 'LOS 拉各斯西非入口', href: '/africa-air-freight/los/' },
+      { label: '几内亚CKY清关资料', href: '/insights/guinea-cky-guceg-import-declaration-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Sierra Leone - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/sierra-leone-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Sierra Leone - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/sierra-leone-customs-regulations' },
+      { label: 'NRA Sierra Leone: Import and Export Procedure', href: 'https://mail.nra.gov.sl/import-and-export/import-and-export-procedure' },
+      { label: 'NRA Sierra Leone: Customs Import Procedure', href: 'https://mail.nra.gov.sl/import-and-export/customs-import-procedure' },
+      { label: 'Sierra Leone Ministry of Trade and Industry', href: 'https://moti.gov.sl/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
