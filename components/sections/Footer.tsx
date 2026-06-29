@@ -87,6 +87,36 @@ export default function Footer() {
           </motion.div>
         </div>
 
+        <div className="mt-10 grid gap-6 border-t border-borderLight pt-8 md:grid-cols-3">
+          <div>
+            <h4 className="mb-3 text-sm font-semibold text-textPrimary">非洲航线</h4>
+            <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/africa-air-freight/" className="hover:text-amberGold">非洲空运航线 Hub</a>
+              <a href="/africa-air-freight/jnb/" className="hover:text-amberGold">JNB 约翰内斯堡空运</a>
+              <a href="/africa-air-freight/fbm/" className="hover:text-amberGold">FBM 卢本巴希空运</a>
+              <a href="/africa-air-freight/lun/" className="hover:text-amberGold">LUN 卢萨卡空运</a>
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-semibold text-textPrimary">大件专题</h4>
+            <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/zh/lgg-africa-gateway/" className="hover:text-amberGold">LGG/BRU 非洲中转网络</a>
+              <a href="/china-africa-oversized-cargo-via-europe/" className="hover:text-amberGold">LGG Africa Gateway</a>
+              <a href="/insights/oversized-air-freight-quote-checklist/" className="hover:text-amberGold">超大件空运询价清单</a>
+              <a href="/insights/africa-customs-documents-checklist-air-freight/" className="hover:text-amberGold">非洲清关资料清单</a>
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-semibold text-textPrimary">西非与东非</h4>
+            <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/africa-air-freight/acc/" className="hover:text-amberGold">ACC 阿克拉空运</a>
+              <a href="/africa-air-freight/abj/" className="hover:text-amberGold">ABJ 阿比让空运</a>
+              <a href="/africa-air-freight/nbo/" className="hover:text-amberGold">NBO 内罗毕空运</a>
+              <a href="/insights/east-africa-nbo-ebb-dar-project-cargo/" className="hover:text-amberGold">东非项目货入口</a>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Quote */}
         <motion.div
           initial={{ opacity: 0 }}

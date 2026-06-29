@@ -1,21 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Calendar, FileText, Plane, SearchCheck, ShieldCheck } from 'lucide-react'
+import { seoInsights } from '@/lib/seo-insights'
 
 export const metadata: Metadata = {
   title: '非洲空运情报库 | 中国到非洲空运价格、清关与项目货路线 | EASCargo Jones',
   description:
-    'EASCargo Jones非洲空运情报库，覆盖中国到非洲空运价格、清关资料、ET埃塞俄比亚航空、LGG/BRU欧洲中转、ACC/BKO/OUA/HRE/LUN/NIM/CKY等项目货路线判断。',
+    'EASCargo Jones非洲空运情报库，覆盖中国到非洲空运价格、清关资料、ET埃塞俄比亚航空、LGG/BRU欧洲中转、JNB/FBM/LUN/LBV/ACC/BKO/CKY等项目货路线判断。',
   keywords: [
     '非洲空运情报',
     '中国到非洲空运',
-    '埃塞俄比亚航空空运',
-    'ET空运',
     '非洲大件项目货',
     'LGG BRU欧洲中转',
-    'ACC阿克拉空运',
-    'BKO巴马科空运',
+    'JNB约翰内斯堡空运',
+    'FBM卢本巴希空运',
     'LUN卢萨卡空运',
+    '非洲清关资料',
   ],
   alternates: {
     canonical: 'https://www.eascargo.com/insights/',
@@ -28,26 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const insights = [
-  {
-    href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/',
-    category: '航线情报',
-    date: '2026-05-21',
-    title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选？',
-    excerpt:
-      'ET 经 ADD 中转覆盖多个非洲项目点。本文把加纳、马里、布基纳法索、津巴布韦、赞比亚、尼日尔、几内亚的空运场景和询价资料讲清楚。',
-    keywords: ['ET空运', 'ADD中转', '西非空运', '矿业备件'],
-  },
-  {
-    href: '/insights/why-shippers-ignore-freight-brokers/',
-    category: '获客方法',
-    date: '2026-05-06',
-    title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入',
-    excerpt:
-      '客户不缺普通货代，客户缺能判断复杂异常票的人。项目货销售要卖路线可执行性、资料缺口和风险清单。',
-    keywords: ['非洲大件空运', '项目货路线诊断', '资料缺口清单', 'LGG/BRU'],
-  },
-]
+const categories = Array.from(new Set(seoInsights.map((item) => item.category)))
 
 export default function InsightsPage() {
   return (
@@ -106,11 +87,19 @@ export default function InsightsPage() {
           </div>
         </div>
 
+        <div className="mt-10 flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <span key={category} className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+              {category}
+            </span>
+          ))}
+        </div>
+
         <div className="mt-10 space-y-5">
-          {insights.map((item) => (
+          {seoInsights.map((item) => (
             <Link
-              key={item.href}
-              href={item.href}
+              key={item.slug}
+              href={`/insights/${item.slug}/`}
               className="group block rounded-lg bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:ring-amberGold/60"
             >
               <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">

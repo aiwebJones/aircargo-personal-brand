@@ -189,6 +189,57 @@ const pages = {
     culture:
       'French is common in documentation. Many shipments involve Chinese-backed mining supply chains, so bilingual coordination can reduce mistakes.',
   },
+  oua: {
+    code: 'OUA',
+    city: 'Ouagadougou',
+    country: 'Burkina Faso',
+    title: 'OUA Ouagadougou Air Freight from China for Burkina Faso Projects',
+    description:
+      'China to Ouagadougou OUA air freight for Burkina Faso mining, infrastructure, energy and urgent project cargo via ADD, Europe or West Africa hub routing.',
+    cargo: ['Mining spare parts', 'Infrastructure project cargo', 'Power equipment', 'Urgent industrial spares'],
+    market:
+      'Ouagadougou is an inland West Africa destination. Route planning must account for limited uplift, destination handling and importer readiness before shipment.',
+    customs:
+      'Prepare French cargo descriptions, HS Code, invoice, packing list, importer documents, permits and destination agent confirmation before booking.',
+    business:
+      'Best for Burkina Faso mining, energy, infrastructure and emergency spare parts where air freight protects the project schedule.',
+    culture:
+      'French is the practical documentation language. Because routing choices can be limited, cargo dimensions and final delivery deadline should be confirmed early.',
+  },
+  hre: {
+    code: 'HRE',
+    city: 'Harare',
+    country: 'Zimbabwe',
+    title: 'HRE Harare Air Freight from China for Zimbabwe Cargo',
+    description:
+      'China to Harare HRE air freight for Zimbabwe mining, agriculture, factory equipment, medical and industrial cargo via Africa hub or Europe transit.',
+    cargo: ['Agricultural machinery parts', 'Mining spare parts', 'Factory equipment', 'Medical and telecom equipment'],
+    market:
+      'Harare serves Zimbabwe industrial, mining and agricultural import demand. Landed cost and consignee readiness matter as much as the air sector.',
+    customs:
+      'Confirm importer documentation, HS Code, invoice, packing list, permits, cargo value and destination pickup or delivery responsibility before departure.',
+    business:
+      'Best for Zimbabwe mining, agriculture, factory maintenance and urgent equipment replacement cargo.',
+    culture:
+      'English is commonly used in trade. Customers often care about total landed cost, so destination charges and clearance requirements should be explained before booking.',
+  },
+  nim: {
+    code: 'NIM',
+    city: 'Niamey',
+    country: 'Niger',
+    title: 'NIM Niamey Air Freight from China for Niger Projects',
+    description:
+      'China to Niamey NIM air freight for Niger energy, construction, humanitarian, mining and urgent industrial cargo via ADD, Europe or West Africa routing.',
+    cargo: ['Energy project cargo', 'Construction equipment parts', 'Humanitarian supplies', 'Urgent industrial spares'],
+    market:
+      'Niamey is an inland Sahel destination where route options, documents and local agent response must be checked before committing to a delivery promise.',
+    customs:
+      'Confirm French descriptions, HS Code, invoice, packing list, consignee documents, permits and final delivery handover before shipment.',
+    business:
+      'Best for energy, infrastructure, mining support and emergency cargo where airfreight speed is needed but routing options are limited.',
+    culture:
+      'French communication is useful. For inland Sahel cargo, the professional task is to verify route feasibility and consignee readiness before rate negotiation.',
+  },
   kgl: {
     code: 'KGL',
     city: 'Kigali',
@@ -399,6 +450,9 @@ const chineseDestinations: Record<Slug, { city: string; country: string; keyword
   abj: { city: '阿比让', country: '科特迪瓦', keywords: ['ABJ阿比让空运', '科特迪瓦空运', '西非法语区空运'] },
   bko: { city: '巴马科', country: '马里', keywords: ['BKO巴马科空运', '马里项目货空运', '西非内陆空运'] },
   cky: { city: '科纳克里', country: '几内亚', keywords: ['CKY科纳克里空运', '几内亚矿业设备空运', '铝土矿项目货空运'] },
+  oua: { city: '瓦加杜古', country: '布基纳法索', keywords: ['OUA瓦加杜古空运', '布基纳法索空运', '萨赫勒项目货空运'] },
+  hre: { city: '哈拉雷', country: '津巴布韦', keywords: ['HRE哈拉雷空运', '津巴布韦空运', '南部非洲工业设备空运'] },
+  nim: { city: '尼亚美', country: '尼日尔', keywords: ['NIM尼亚美空运', '尼日尔空运', '萨赫勒紧急空运'] },
   kgl: { city: '基加利', country: '卢旺达', keywords: ['KGL基加利空运', '卢旺达空运', '东非内陆空运'] },
   dar: { city: '达累斯萨拉姆', country: '坦桑尼亚', keywords: ['DAR达累斯萨拉姆空运', '坦桑尼亚项目货空运', '东非工程设备空运'] },
   cpt: { city: '开普敦', country: '南非', keywords: ['CPT开普敦空运', '南非开普敦空运', '海工设备空运'] },
