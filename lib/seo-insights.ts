@@ -859,6 +859,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'zambia-lun-zra-asycuda-zcsa-air-freight-clearance',
+    title: '赞比亚LUN空运清关：ZRA/ASYCUDA、ZCSA进口检查和资料怎么准备？',
+    excerpt:
+      '中国到赞比亚LUN空运，矿业备件、工业设备、电子电器、化工和项目急件不能只看航班。ZRA电子海关申报、ASYCUDA空运资料、商业发票、Air Waybill、许可证和ZCSA强制标准检查要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['赞比亚LUN清关资料', 'ZRA ASYCUDA空运', 'ZCSA进口检查', '中国到赞比亚空运清关'],
+    template: 'generated',
+    audience: ['赞比亚进口商', '矿业设备供应商', '工业备件工厂', '非洲内陆项目货代'],
+    angle: '把 ZRA 电子海关、ASYCUDA 空运申报和 ZCSA 强制标准检查转成 LUN 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'LUN空运先判断ZRA电子申报',
+        body: [
+          'LUN 卢萨卡是赞比亚项目货、矿业备件、工业设备和贸易补货常用入口。客户只问中国到 LUN 空运多少钱时，销售要先判断进口商、清关代理和 Zambia Revenue Authority（ZRA）电子申报资料是否能提前跑通。',
+          'ZRA 的进口说明把进口货分为随身行李、货运 cargo 和邮包，并说明商业/工业用途且价值超过 USD 2,000 的货物，需要通过海关电子处理系统清关。对空运来说，Air Waybill、商业发票、货物舱单、合同、证书、许可证和受控货文件要跟申报一致。',
+        ],
+        bullets: ['ZRA电子海关', 'ASYCUDA资料', 'Air Waybill', '商业发票和货物舱单'],
+      },
+      {
+        heading: 'ZRA/ASYCUDA资料不只是到港动作',
+        body: [
+          'Trade.gov 赞比亚进口文件页也说明，清关需要 bills of lading、airway bills、commercial invoices 等商业单证，并指出 ZRA 已实施 ASYCUDA 平台支持海关清关和国内税务流程。换句话说，空运快不代表资料可以慢。',
+          '赞比亚 LUN 询价时，不能只收重量和机场代码。HS Code、具体英文品名、型号规格、品牌、货值、收货人 TIN/清关代理、商业发票、装箱单、AWB 资料、许可证和最终交付城市，都要在订舱前对齐。',
+        ],
+        bullets: ['HS Code', '进口商TIN', '清关代理', '许可证和证书'],
+      },
+      {
+        heading: '强制标准货要提前问ZCSA',
+        body: [
+          'Zambia Trade Portal 的 compulsory standards inspection 流程显示，相关货物可能涉及 Zambia Compulsory Standards Agency（ZCSA）的 consignment inspection、import inspection request、annual import quality certificate、pre-import quality certificate 和 certificate of conformance。',
+          '不是每一票 LUN 空运都需要 ZCSA 文件，但电池、化工、食品、建材、汽车相关、肥料、燃油、电子电器、二手设备和其他强制标准货物，不能等货到卢萨卡后才问。正确动作是把航班装载和监管资料分开验证：能飞是一件事，能清是另一件事。',
+        ],
+        bullets: ['ZCSA进口检查', 'Certificate of Conformance', 'Pre-Import Quality Certificate', '受控产品预审'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'cargo/road manifest如需', '进口商TIN/ZRA资料', '清关代理资料', '合同和货值资料', '受控货许可证或证书如需', 'ZCSA强制标准检查是否涉及', 'Certificate of Conformance如需', 'LUN或最终城市', '每件尺寸重量', '是否需要主甲板或二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LUN 卢萨卡航线页', href: '/africa-air-freight/lun/' },
+      { label: 'LUN工业设备空运指南', href: '/insights/lun-zambia-industrial-air-freight-guide/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+    ],
+    sources: [
+      { label: 'Zambia Revenue Authority: Importation of Goods', href: 'https://www.zra.org.zm/importation-of-goods/' },
+      { label: 'ZRA: ASYCUDA IATA Cargo XML Filing Guidance', href: 'https://www.zra.org.zm/wp-content/uploads/2024/02/ASYCUDA_IATA_Cargo_XML_Filing_Guidance_Version_Zambia.pdf' },
+      { label: 'Zambia Trade Portal: Procedure for Inspection of Compulsory Standards', href: 'https://www.zambiatradeportal.gov.zm/index.php?id=56&r=searchProcedure%2Fview1' },
+      { label: 'International Trade Administration: Zambia Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/zambia-import-requirements-documentation' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
