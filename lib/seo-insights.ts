@@ -3852,6 +3852,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'burundi-bjm-asycuda-single-window-pvoc-air-freight-clearance',
+    title: '布隆迪BJM空运清关：ASYCUDA Single Window、PVoC/CoC和ARCT资料怎么准备？',
+    excerpt:
+      '中国到布隆迪BJM布琼布拉空运，医疗物资、通信设备、工程备件、NGO物资和高价值急件不能只看航班。ASYCUDA Single Window、Bujumbura airport customs declaration、PVoC/CoC、ARCT通信设备授权、发票、箱单和AWB要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['布隆迪BJM清关资料', 'Burundi ASYCUDA Single Window', 'Burundi PVoC CoC', 'Bujumbura airport customs declaration', 'BJM medical cargo air freight', 'Burundi telecom equipment import authorization', '中国到布隆迪空运清关'],
+    template: 'generated',
+    audience: ['布隆迪进口商', '医疗和通信设备供应商', 'NGO与工程物资供应商', '东非航线货代同行'],
+    angle: '用BJM、Burundi ASYCUDA Single Window、PVoC/CoC、Bujumbura airport customs declaration和telecom/medical/project cargo承接布隆迪空运清关搜索。',
+    sections: [
+      {
+        heading: 'BJM空运先看机场申报和Single Window',
+        body: [
+          '布隆迪空运主要看BJM布琼布拉Melchior Ndadaye International Airport。适合医疗物资、通信设备、NGO物资、工程备件、检测仪器、发电设备、小批量高价值急件。客户只问中国到布隆迪空运多少钱时，销售要先确认进口商、清关代理、AWB、商业发票、装箱单、HS Code和Bujumbura airport customs declaration责任。',
+          'Burundi Trade Information Portal列出“Obtain the Customs declaration via Bujumbura airport”等机场清关步骤，并说明该门户是布隆迪政府官方站点，由Office Burundais des Recettes（OBR）管理。ASYCUDA 2022 Burundi Compendium则说明，ASYCUDA Programme和Burundi Revenue Authority开发了Single Window模块，用于医疗进口申请的自动化处理。',
+        ],
+        bullets: ['BJM Bujumbura airport', 'Burundi ASYCUDA Single Window', 'airport customs declaration', 'OBR customs process'],
+      },
+      {
+        heading: '医疗货不能把授权留到到港后',
+        body: [
+          'ASYCUDA Compendium写明，布隆迪医疗产品进口授权过去是纸面、复杂流程，进口商向ABREMA提交纸质申请，审批曾需要两周到一个月；2021年7月上线的ASYCUDA-based Single Window模块数字化了医疗进口审批流程。2021年7月至2022年5月，该模块处理了3,249份申请，其中2,864份获批，71%的申请在24小时内处理。',
+          '所以BJM医疗、实验室、诊断、耗材和相关备件询价，不能只看航班。要先确认ABREMA/进口商授权、产品用途、规格型号、HS Code、发票、箱单、AWB、是否温控、是否含电池或危险属性，以及当地broker是否能把Single Window资料链跑通。',
+        ],
+        bullets: ['ABREMA medical import authorization', '24小时处理比例', 'medical cargo', 'single window data chain'],
+      },
+      {
+        heading: 'PVoC/CoC要在发货前判断',
+        body: [
+          'SGS的Burundi PVoC页面说明，Burundi Bureau of Standards and Quality Control（BBN）引入了Pre-Shipment Verification of Conformity（PVoC）项目，用来确认进口到布隆迪的货物符合适用的本地、区域或国际标准。SGS列出的评估动作包括装运前实物查验、抽样测试、制造过程审核和文件符合性审查。',
+          'SGS Burundi PVoC PDF还说明，受监管产品进口到布隆迪需要评估，Certificate of Conformity（CoC）是货物通过海关清关的强制文件。对电子电器、建材、机械、医疗设备、通信设备、消费品和带电设备，报价前要先判断是否属于PVoC范围，谁申请CoC，是否需要测试报告或产品证书。',
+        ],
+        bullets: ['Burundi PVoC CoC', 'BBN standards', 'pre-shipment inspection', 'testing and document review'],
+      },
+      {
+        heading: '通信设备要先看ARCT授权',
+        body: [
+          'Burundi Trade Information Portal在手机及零部件等流程里列出Telecommunications Regulation and Control Agency（ARCT），并包含“Obtain the import authorization for electronic communications equipment”“Obtain validation for the declaration of intent to import”等步骤。这对通信设备、路由器、基站备件、无线模块和网络设备非常关键。',
+          '实际动作是先拆责任再订舱：谁确认ARCT授权，谁申请PVoC/CoC，谁做机场海关申报，谁承担税费，谁处理BJM机场提货和最终交付。只有这些成立，BJM空运报价才是可执行价格。',
+        ],
+        bullets: ['ARCT import authorization', 'telecom equipment', 'declaration of intent to import', 'local broker responsibility'],
+      },
+    ],
+    checklist: ['BJM目的机场', '最终城市/医院/营地/项目现场', '进口商资料', '清关代理/broker资料', 'OBR/机场申报责任', 'ASYCUDA Single Window适用性', 'ABREMA医疗授权如需', 'ARCT通信设备授权如需', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'Declaration of Intent to import如需', 'PVoC/CoC适用性', 'CoC申请责任和状态', '测试报告或产品证书如需', '进口许可证或豁免如需', 'DG/MSDS如需', '医疗/通信/电池/二手设备属性筛查', '目的地税费和放行责任', '每件尺寸重量', '包装照片', '是否经NBO/EBB/ADD/IST/DXB中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: 'EBB 乌干达入口', href: '/africa-air-freight/ebb/' },
+      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-ura-air-freight-clearance/' },
+      { label: '南苏丹JUB清关资料', href: '/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA Compendium 2022: Burundi', href: 'https://asycuda.org/wp-content/uploads/ASYCUDA-Compendium-2022-Burundi.pdf' },
+      { label: 'Burundi Trade Information Portal: Import procedures', href: 'https://info.commerce.bi/objective/61?l=en' },
+      { label: 'Burundi Trade Information Portal: Telecommunications import procedure', href: 'https://info.commerce.bi/procedure/770?includeSearch=true&l=en' },
+      { label: 'SGS: Burundi PVoC Program', href: 'https://www.sgs.com/en/services/burundi-product-conformity-assessment-pca' },
+      { label: 'SGS: Burundi pre-shipment verification of conformity program PDF', href: 'https://www.sgs.com/-/media/sgscorp/documents/corporate/brochures/sgs-tfs-burundi-pre-shipment-verification-of-conformity-program-en.cdn.en.pdf' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
