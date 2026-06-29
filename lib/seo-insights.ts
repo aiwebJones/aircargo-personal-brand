@@ -2419,6 +2419,115 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance',
+    title: '南非CPT/DUR空运清关：SARS发票数据、ITAC进口许可和NRCS LOA怎么准备？',
+    excerpt:
+      '中国到开普敦CPT和德班DUR空运，港口设备、海工备件、汽车零部件、电子电器和项目物资不能只看航班。SARS发票细节、进口商资料、ITAC许可、NRCS LOA和Air Waybill要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['南非CPT清关资料', 'DUR德班空运清关', 'SARS invoice details customs declaration', 'ITAC import permit South Africa', 'NRCS LOA air freight'],
+    template: 'generated',
+    audience: ['南非进口商', '港口设备供应商', '海工备件工厂', 'CPT/DUR目的地货代'],
+    angle: '用CPT/DUR、SARS发票细节、ITAC进口许可和NRCS LOA承接南非沿海城市清关搜索。',
+    sections: [
+      {
+        heading: 'CPT/DUR不要套用JNB报价逻辑',
+        body: [
+          'CPT开普敦和DUR德班常见需求不是普通内陆贸易货，而是港口设备、船用备件、海工项目物资、汽车零部件、食品/冷链相关设备和沿海工厂维修急件。客户只问中国到南非空运多少钱时，要先判断最终城市是不是开普敦、德班、港区、船厂或沿海项目现场。',
+          'Trade.gov的南非进口文件页面提示，进口可能涉及permit、certificate和其他资料。对CPT/DUR空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商和目的地清关代理资料要先一致，再判断航班和二程。',
+        ],
+        bullets: ['CPT开普敦', 'DUR德班', '港口/海工备件', '进口文件一致'],
+      },
+      {
+        heading: 'SARS发票细节会影响申报',
+        body: [
+          'SARS的Goods Declaration和Imports页面把进口申报放在海关流程中处理；SARS关于customs declarations发票细节的公告也强调，申报里的invoice details需要更完整的商品描述和资料匹配。',
+          '空运销售不能只收一张模糊发票。要把英文品名、型号、品牌、材质、用途、数量、单价、总价、币种、Incoterms、原产地、进口商税务资料、清关代理和AWB资料提前核对。港口设备和维修备件尤其要避免只写spare parts、equipment、tools这种泛品名。',
+        ],
+        bullets: ['SARS Goods Declaration', 'Invoice details', '英文品名', 'AWB/发票一致'],
+      },
+      {
+        heading: 'ITAC和NRCS先按货物属性筛',
+        body: [
+          'ITAC的Import Control页面说明，进口控制用于执行健康、环境、安全、安保和技术标准等要求；Gov.za的进口许可页面也提示，某些货物需要进口许可。NRCS则负责强制规范相关产品，电子电器、照明、电源、插头插座和部分受控产品可能需要LOA或合规资料。',
+          '所以CPT/DUR询价要拆成两条线：一条判断航班、舱位、尺寸、温控或主甲板；另一条判断SARS申报、ITAC许可、NRCS LOA、进口商和最终交付。两条线都成立，报价才是能执行的价格。',
+        ],
+        bullets: ['ITAC进口许可', 'NRCS LOA', '受控产品', '可执行报价'],
+      },
+    ],
+    checklist: ['CPT或DUR目的机场', '最终城市/港区/船厂地址', '进口商税号/VAT资料', '清关代理资料', '商业发票', '装箱单', 'Air Waybill资料', 'HS Code', '英文品名和具体用途', '品牌/型号/材质', '货值币种和Incoterms', '原产地', 'ITAC进口许可场景', 'NRCS LOA场景', '产品照片和规格书', '每件尺寸重量', '是否需要主甲板或温控', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CPT 开普敦航线页', href: '/africa-air-freight/cpt/' },
+      { label: 'DUR 德班航线页', href: '/africa-air-freight/dur/' },
+      { label: '南非JNB清关资料', href: '/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: South Africa - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/south-africa-import-requirements-and-documentation' },
+      { label: 'South African Revenue Service: Goods Declaration', href: 'https://www.sars.gov.za/customs-and-excise/goods-declaration/' },
+      { label: 'South African Revenue Service: Invoice details on customs declarations', href: 'https://www.sars.gov.za/latest-news/invoice-details-on-customs-declarations/' },
+      { label: 'International Trade Administration Commission: Import Control', href: 'https://itac.org.za/import-control/' },
+      { label: 'South African Government: Import permit for general goods', href: 'https://www.gov.za/services/import/import-permit-general-goods' },
+    ],
+  },
+  {
+    slug: 'south-africa-cpt-dur-port-marine-equipment-air-freight',
+    title: '南非CPT/DUR港口设备和海工备件空运：什么时候走开普敦/德班而不是JNB？',
+    excerpt:
+      '南非港口设备、船用备件、海工维修件、冷链设备和沿海工厂急件，不一定都应该先报JNB。CPT/DUR要按最终交付、清关资料、航班舱位和目的地费用一起判断。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '航线方案',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['CPT开普敦空运', 'DUR德班港口设备空运', '南非海工备件空运', 'South Africa port equipment air freight', 'Cape Town Durban spare parts air freight'],
+    template: 'generated',
+    audience: ['港口设备厂家', '船用备件供应商', '海工维修客户', '南非沿海项目采购'],
+    angle: '用CPT/DUR沿海交付场景承接港口设备、海工备件和南非空运路线判断搜索。',
+    sections: [
+      {
+        heading: '最终地址决定入口机场',
+        body: [
+          '如果收货地在Cape Town、Durban、港口码头、船厂、冷链仓、沿海工厂或海工项目现场，直接判断CPT/DUR往往比先默认JNB更实际。JNB适合南非内陆和南部非洲中转，CPT/DUR更适合沿海交付和部分港口设备场景。',
+          '路线不是只比机场三字码价格。要同时比较可用航班、单件尺寸、目的地地面操作、清关代理响应、二程距离、港区预约、卸货设备和最终签收窗口。客户买的是到货确定性，不是一个看起来低的机场价。',
+        ],
+        bullets: ['Cape Town', 'Durban', '港区交付', '沿海工厂维修'],
+      },
+      {
+        heading: '这些货更适合先问CPT/DUR',
+        body: [
+          '港口机械备件、船用泵阀、电机、传感器、冷链设备、制冷压缩机、海工工具、维修耗材、汽车零部件和食品加工设备，都可能因为最终地址和时效要求而选择CPT或DUR。',
+          '如果货物是长件、重件、带电设备、温控货、化工相关货或需要快速维修的停产件，询价时要先收单件尺寸重量、包装照片、产品用途、HS Code、是否带电/带液/带磁、最终地址和最晚到货时间，再决定是否走腹舱、主甲板或欧洲/中东中转。',
+        ],
+        bullets: ['港口机械备件', '船用泵阀', '冷链设备', '维修停产急件'],
+      },
+      {
+        heading: '清关资料仍然是成交门槛',
+        body: [
+          'CPT/DUR不是绕开南非清关要求的捷径。SARS进口申报、发票箱单、AWB、HS Code、进口商资料、清关代理、ITAC许可和NRCS LOA场景仍然要提前判断。',
+          '能成交的页面不应该只写“南非空运优势”。更有效的动作是把客户要补的资料列清楚：最终地址、货物用途、英文品名、发票数据、受控产品判断、交付边界和最晚到货窗口。这样页面既能吃关键词，也能把询盘筛成可报价需求。',
+        ],
+        bullets: ['SARS申报', 'ITAC/NRCS预审', '目的地费用边界', '可报价询盘'],
+      },
+    ],
+    checklist: ['CPT/DUR/最终交付城市', '港区/船厂/工厂地址', '收货人和清关代理', '货物用途', 'HS Code', '英文品名', '品牌型号', '每件尺寸重量', '包装照片', '是否带电/液体/磁性/化工', '是否需温控', '商业发票', '装箱单', 'AWB资料', 'ITAC/NRCS场景', '卸货设备', '最晚到货时间', '报价责任边界'],
+    relatedRoutes: [
+      { label: 'CPT 开普敦航线页', href: '/africa-air-freight/cpt/' },
+      { label: 'DUR 德班航线页', href: '/africa-air-freight/dur/' },
+      { label: 'CPT/DUR清关资料', href: '/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/' },
+      { label: 'JNB矿业急件路线判断', href: '/insights/jnb-mining-spares-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: South Africa - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/south-africa-import-requirements-and-documentation' },
+      { label: 'South African Revenue Service: Imports', href: 'https://www.sars.gov.za/customs-and-excise/import-export-and-transit/imports/' },
+      { label: 'South African Revenue Service: Goods Declaration', href: 'https://www.sars.gov.za/customs-and-excise/goods-declaration/' },
+      { label: 'International Trade Administration Commission: Import Control', href: 'https://itac.org.za/import-control/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
