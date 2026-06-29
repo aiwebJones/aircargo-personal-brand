@@ -152,6 +152,7 @@ export default function Footer() {
               <a href="/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/" className="hover:text-amberGold">马达加斯加TNR清关</a>
               <a href="/insights/mauritius-mru-mra-tradenet-boe-air-freight-clearance/" className="hover:text-amberGold">毛里求斯MRU清关</a>
               <a href="/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/" className="hover:text-amberGold">塞舌尔SEZ清关</a>
+              <a href="/insights/djibouti-jib-dpcs-air-waybill-air-freight-clearance/" className="hover:text-amberGold">吉布提JIB清关</a>
             </div>
           </div>
         </div>

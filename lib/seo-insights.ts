@@ -3300,6 +3300,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'djibouti-jib-dpcs-air-waybill-air-freight-clearance',
+    title: '吉布提JIB空运清关：DPCS单一窗口、Air Waybill和机场货站资料怎么准备？',
+    excerpt:
+      '中国到吉布提JIB空运，红海项目货、埃塞走廊急件、港区备件、医疗物资和贸易补货不能只看航班。DPCS、Air Waybill、进口商TIN、清关代理、机场地服、转运/保税仓和最终交付城市要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['吉布提JIB清关资料', 'Djibouti airport customs clearance', 'Djibouti DPCS air freight', 'Djibouti Port Community System', 'JIB air cargo clearance', '中国到吉布提空运清关'],
+    template: 'generated',
+    audience: ['吉布提进口商', '埃塞走廊项目供应商', '港区与红海项目设备工厂', '东非/红海航线货代同行'],
+    angle: '用JIB/Djibouti airport、DPCS、Air Waybill、clearing agent和multimodal corridor承接吉布提空运清关搜索。',
+    sections: [
+      {
+        heading: 'JIB空运先判断DPCS和走廊属性',
+        body: [
+          'JIB吉布提适合红海项目货、港区备件、埃塞走廊急件、医疗物资、通信设备、电子电器和贸易补货。客户只问中国到吉布提空运多少钱时，销售要先判断这票货是吉布提本地进口、自由区/保税仓、转运到埃塞或其他走廊目的地，而不是只看机场代码。',
+          'DPFZA官方页面说明，Djibouti Port Community System（DPCS）于2018年7月推出，为港口和贸易社群提供线上服务，是协调空运、海运、陆运和铁路贸易的电子单一入口，并强化吉布提作为多式联运枢纽的角色。DPCS登录页也写明，它是一站式Import/Export信息交换入口，覆盖ports、airports、rail和corridor。',
+        ],
+        bullets: ['JIB airport', 'DPCS single point of entry', 'air/sea/land/rail trade', 'corridor cargo'],
+      },
+      {
+        heading: 'AWB、进口商TIN和清关代理要先对齐',
+        body: [
+          'DPCS的Explore Trade页面说明，进行贸易交易时，clearing agents必须注册，公司必须取得Tax Identification Number（TIN）。同页还把Import、Export、Transit、Warehousing和Free Trade Zone作为不同流程入口列出。对JIB空运来说，AWB收货人、进口商TIN、清关代理、最终用途和货物属性要先定清楚。',
+          'DPCS注册页面列出的参与方包括Exporters and Importers、Ground Handling Agency（Airlines）、Clearing Agents（Brokers）和Freight Forwarders。也就是说，JIB询价不能只收重量体积；Air Waybill、商业发票、装箱单、HS Code、英文/法文品名、货值、进口商TIN、地服/清关代理和货代责任边界必须互相对应。',
+        ],
+        bullets: ['Air Waybill', 'Tax Identification Number', 'Clearing agent', 'Ground handling agency'],
+      },
+      {
+        heading: '转运、保税仓和自由区不能混成一个报价',
+        body: [
+          '吉布提的难点常常不是有没有航班，而是货物到JIB后属于本地清关、transit import/export、bonded warehouse还是free trade zone。DPCS流程页把Transit、Warehousing和Free Trade Zone分开列出，说明不同业务属性会走不同资料链路。',
+          '如果货物最终去埃塞、索马里、港区项目、自由区仓库或内陆走廊，报价要拆成两条线：一条判断航班、件重、是否适合腹舱或主甲板；另一条判断DPCS流程、进口商/清关代理、转运或仓储状态、许可证、目的地责任和最终交付城市。两条线都成立，价格才可执行。',
+        ],
+        bullets: ['Transit procedure', 'Bonded warehouse', 'Free Trade Zone', '最终交付城市'],
+      },
+    ],
+    checklist: ['JIB目的机场', '最终城市/港区/项目现场', '本地进口或转运属性', '是否进自由区或保税仓', '进口商TIN', '清关代理资料', 'Ground handling agency资料', 'Freight forwarder责任边界', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'DPCS流程状态', '进口许可证或受控货批文如需', 'Certificate of Origin如需', 'MSDS/技术文件如需', '每件尺寸重量', '包装照片', '是否经ADD/NBO/DXB/IST中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ADD 亚的斯亚贝巴入口', href: '/africa-air-freight/add/' },
+      { label: '埃塞ADD清关资料', href: '/insights/ethiopia-add-customs-ecms-esw-air-freight-clearance/' },
+      { label: 'NBO 内罗毕东非入口', href: '/africa-air-freight/nbo/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'DPFZA: Djibouti Port Community System', href: 'https://dpfza.gov.dj/facilities/Djibouti-port-community-system' },
+      { label: 'DPCS: Djibouti Port Community Systems login/about', href: 'https://www.dpcs.dj/TFBPCS/cusLogin/login.cl' },
+      { label: 'DPCS: Explore PCS Procedures', href: 'https://www.dpcs.dj/TFBPCS/login/explore-trade.jsp' },
+      { label: 'DPCS: Registration page', href: 'https://www.dpcs.dj/TFBPCS/registration/registrationPage.jsp' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
