@@ -221,6 +221,59 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'dangerous-goods-chemical-air-freight-africa-checklist',
+    title: '危险品/化工品空运到非洲：MSDS、UN编号和DGD资料怎么准备？',
+    excerpt:
+      '油漆、胶水、试剂、气雾剂、化工样品和带危险属性设备空运到非洲，先不要只问价格。询价前要确认 UN 编号、Proper Shipping Name、危险类别、包装等级、MSDS、DGD、标签和目的地清关能力。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['危险品空运非洲', '化工品空运非洲', 'MSDS空运', 'DGD危险品申报'],
+    template: 'generated',
+    audience: ['化工品出口商', '项目货工厂', '实验室试剂供应商', '非洲工程采购'],
+    angle: '把 IATA DGR/DGD 要求转成非洲危险品空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: '危险品询价不能先报价格',
+        body: [
+          '中国到非洲空运里，危险品不只是不明液体或化工品。油漆、胶水、固化剂、清洗剂、气雾剂、实验室试剂、磁性材料、带压力容器或带危险属性的设备，都可能触发危险品审核。',
+          'IATA Dangerous Goods Regulations 用于危险品航空运输的分类、包装、标记、标签和文件要求。对销售来说，真正的第一步不是找最低价，而是判断这票货是否能按航空危险品要求被承运人接受。',
+        ],
+        bullets: ['油漆和胶水', '化工试剂', '气雾剂', '磁性材料', '压力容器'],
+      },
+      {
+        heading: 'MSDS 不是唯一资料',
+        body: [
+          '很多客户只发一份 MSDS 就要求报价，但危险品空运通常还要核对 UN 编号、Proper Shipping Name、危险类别、包装等级、数量限制、包装说明、标签和是否需要 Shipper’s Declaration for Dangerous Goods（DGD）。',
+          'IATA 对 DGD 的说明很直接：托运人需要准备表格，证明货物已经按 IATA DGR 进行包装、标签和申报。换句话说，如果客户连 UN 编号和危险类别都说不清，报价很容易在订舱后失效。',
+        ],
+        bullets: ['UN 编号', 'Proper Shipping Name', '危险类别', '包装等级', 'DGD'],
+      },
+      {
+        heading: '非洲目的地还要提前确认接货能力',
+        body: [
+          '危险品到非洲的风险不只在起运机场。JNB、NBO、LOS、ACC 这类大口岸和 FBM、LUN、LBV、CKY 等项目点，目的港代理、清关资质、仓库接收、二程卡车和现场交付能力不同。',
+          '对非洲项目货，专业回复应先拆四件事：货物分类是否清楚，航司是否接受，目的地能否清关，最后一公里能否合法安全交付。四件事成立后，再谈价格和时效。',
+        ],
+        bullets: ['航司接受能力', '目的地 DG 代理', '清关文件', '二程交付限制'],
+      },
+    ],
+    checklist: ['MSDS', 'UN 编号', 'Proper Shipping Name', '危险类别', 'Packing Group', '包装规格和净重', 'DGD 是否可提供', '标签和唛头照片', 'HS Code', '目的机场和最终城市', '收货人清关资质'],
+    relatedRoutes: [
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: 'LOS 拉各斯', href: '/africa-air-freight/los/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: '带锂电池设备空运到非洲', href: '/insights/lithium-battery-equipment-africa-air-freight-2026/' },
+    ],
+    sources: [
+      { label: 'IATA: Dangerous Goods Regulations', href: 'https://www.iata.org/en/publications/dgr/' },
+      { label: 'IATA: DG Shipper’s Declaration and e-DGD', href: 'https://www.iata.org/en/programs/cargo/dgr/shippers-declaration/' },
+      { label: 'ICAO: Doc 9284 Technical Instructions', href: 'https://www.icao.int/publications/doc-series/doc-9284' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
