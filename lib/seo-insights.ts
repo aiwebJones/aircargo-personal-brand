@@ -1075,6 +1075,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'morocco-cmn-adii-badr-portnet-air-freight-clearance',
+    title: '摩洛哥CMN空运清关：ADII/BADR、PortNet、DUM和产品许可怎么准备？',
+    excerpt:
+      '中国到摩洛哥CMN卡萨布兰卡空运，汽车零部件、工业设备、电子通信产品、样品和贸易补货不能只看航班。ADII/BADR电子清关、DUM、PortNet进口手续、法语发票、Air Waybill和产品许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['摩洛哥CMN清关资料', 'ADII BADR DUM清关', 'PortNet摩洛哥进口', '中国到摩洛哥空运清关'],
+    template: 'generated',
+    audience: ['摩洛哥进口商', '汽车零部件供应商', '工业设备工厂', '北非贸易货代'],
+    angle: '把 ADII/BADR 电子清关、PortNet 外贸门户和产品许可核验转成 CMN 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'CMN空运先判断ADII/BADR和DUM',
+        body: [
+          'CMN 卡萨布兰卡是摩洛哥汽车零部件、工业设备、电子产品、样品和北非贸易补货的重要入口。摩洛哥物流环境比许多非洲目的地成熟，但成熟不等于资料可以晚补；清关数字化程度高，反而要求发票、申报和产品属性更一致。',
+          'Trade.gov 的摩洛哥进口文件说明列出所有进出口所需文件：进口/出口许可证、商业发票、import commitment 和海关申报；商业或形式发票应完整描述货物，并在可用时标明 HS code。WCO 对摩洛哥海关数字化的介绍也说明，Déclaration Unique de Marchandises（DUM）和附件文件通过 BADR 在线提交和登记。',
+        ],
+        bullets: ['ADII/BADR', 'DUM海关申报', '法语货描', 'HS Code和货值'],
+      },
+      {
+        heading: 'PortNet把进口手续前置',
+        body: [
+          'PortNet Commerce Extérieur 把自己定位为摩洛哥外贸程序的国家参考平台，用于进口和出口手续的编排、无纸化和系统集成。它覆盖进口手续、licences、autorisations、titres d importation、进口产品工业文件、产品符合性证书、计量器具预申报、ONSSA食品进口附件等服务。',
+          'PortNet 首页还明确区分 Commerce Extérieur 和 PortNet Cargo；其中 Cargo Community System 面向航空货运、MEAD、机场操作和清关区域管理。对 CMN 空运来说，销售不能只问“到卡萨布兰卡几天”，还要问 importer、transitaire、PortNet/ADII 资料能否提前走。',
+        ],
+        bullets: ['PortNet Commerce Extérieur', 'titres d importation', 'licences/autorisations', 'PortNet Cargo/MEAD'],
+      },
+      {
+        heading: '电子通信、食品和工业品要先筛许可',
+        body: [
+          'PortNet 的 ANRT 服务页说明，进口商可通过 PortNet 与 Agence Nationale des Réglementation des télécommunications 交换电信产品的 agrément、dispense 和 autorisation d importation 申请。PortNet Commerce Extérieur 也列出 ONSSA 食品进口附件、MIC 工业品文件、Certificate of Conformity、AMSSNuR 和 NARSA 等产品监管服务。',
+          '所以中国到摩洛哥 CMN 空运报价前，要把普通工业货、汽车零部件、带无线/通信功能设备、食品/农产品、计量器具、核安全/辐射相关产品分开筛。能订舱不代表能快速放行；正确动作是把航班、ADII/BADR申报、PortNet许可、产品监管和最终交付城市分开确认。',
+        ],
+        bullets: ['ANRT电信产品', 'ONSSA食品进口', 'COC工业品符合性', '产品许可预审'],
+      },
+    ],
+    checklist: ['HS Code', '法语/英文品名', '规格型号和品牌', '产品照片', '商业发票或形式发票', '装箱单', 'Air Waybill资料', '进口许可证如需', 'import commitment资料', 'DUM/BADR申报资料', '进口商ICE/税务资料', '清关代理/transitaire资料', 'PortNet账号和手续状态', 'ANRT许可或豁免如需', 'ONSSA文件如需', 'COC或MIC文件如需', '原产地证如需', 'CMN或最终城市', '每件尺寸重量', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CMN 卡萨布兰卡航线页', href: '/africa-air-freight/cmn/' },
+      { label: 'EU ICS2/ENS经欧洲中转资料', href: '/insights/eu-ics2-ens-lgg-bru-africa-transit-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Morocco Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/morocco-import-requirements-and-documentation' },
+      { label: 'PortNet: Commerce Extérieur', href: 'https://www.portnet.ma/portnet-commerce-exterieur' },
+      { label: 'PortNet: Demandes d agrément ANRT', href: 'https://www.portnet.ma/demandes-agrement-anrt' },
+      { label: 'WCO: Dématérialisation des procédures douanières au Maroc', href: 'https://mag.wcoomd.org/fr/magazine/omd-actu-94/dematerialisation-douane-maroc/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
