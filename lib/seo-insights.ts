@@ -3537,6 +3537,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'congo-brazzaville-bzv-pnr-guot-cemac-air-freight-clearance',
+    title: '刚果共和国BZV/PNR空运清关：GUOT、CEMAC和油气项目货资料怎么准备？',
+    excerpt:
+      '中国到刚果共和国BZV布拉柴维尔或PNR黑角空运，油气设备、港口备件、电力设备、通信设备和工程急件不能只看航班。GUOT、CEMAC海关规则、Air Waybill、商业发票、进口许可、卫生证书和危险品许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['刚果共和国BZV清关资料', 'Pointe-Noire air freight clearance', 'Congo Brazzaville GUOT', 'Republic of Congo CEMAC customs', 'PNR oil gas spare parts air freight', '中国到刚果布空运清关'],
+    template: 'generated',
+    audience: ['刚果共和国进口商', '油气和港口设备供应商', '电力通信工程工厂', '中非/CEMAC航线货代同行'],
+    angle: '用BZV/PNR、Congo Brazzaville GUOT、CEMAC customs、oil gas spare parts和Air Waybill承接刚果共和国空运清关搜索。',
+    sections: [
+      {
+        heading: 'BZV/PNR空运先判断进口链路',
+        body: [
+          '刚果共和国空运常见入口包括BZV布拉柴维尔和PNR黑角。PNR更贴近黑角港、油气、海工、港口备件和能源项目，BZV更适合首都项目、通信、电力、医疗和政府/工程物资。客户只问中国到刚果布空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、发票、许可证和最终交付城市。',
+          'Trade.gov的刚果共和国进口文件页面说明，进入刚果共和国的所有货物都需要随附bill of lading和invoice；农产品包括肉类和禽类需要进口许可和卫生证书，危险产品如武器、爆炸品和化工品也需要许可。空运场景下，bill of lading的资料逻辑要转换成Air Waybill和航空舱单一致性。',
+        ],
+        bullets: ['BZV Brazzaville', 'PNR Pointe-Noire', 'Air Waybill资料', 'invoice和许可'],
+      },
+      {
+        heading: 'GUOT不是装饰词，是流程入口',
+        body: [
+          'GUOT官网说明，Guichet Unique des Opérations Transfrontalières提供外贸相关文件和程序的数字化服务，核心是贸易便利化和简化行政、商业及海关程序。官网联系人也显示总部在Pointe-Noire港区，并设有Brazzaville等分支。',
+          '这对PNR/BZV项目货很实际。油气备件、港口设备、工程急件和通信设备到港后，不只是机场地服问题，还要看GUOT/进口端流程、清关代理、许可证、税费、最终收货人和交付城市是否提前对齐。',
+        ],
+        bullets: ['GUOT digitalization', 'Pointe-Noire港区', 'Brazzaville分支', '跨境操作窗口'],
+      },
+      {
+        heading: 'CEMAC规则会影响中非多国项目判断',
+        body: [
+          'Trade.gov的刚果共和国海关规则页面说明，刚果共和国属于CEMAC，CEMAC成员国适用共同海关规则，成员包括喀麦隆、中非、乍得、刚果共和国、赤道几内亚和加蓬。对做中非项目货的客户来说，BZV/PNR不是孤立口岸，常常和DLA、LBV、NDJ、SSG等区域节点一起比较。',
+          '所以报价不能只说到PNR多少钱。要把航班、中转、CEMAC规则、GUOT流程、进口许可、税费责任、最终现场接货能力和是否需要经DLA/LBV/FIH转运拆开判断。',
+        ],
+        bullets: ['CEMAC customs', 'DLA/LBV/NDJ区域比较', '税费责任', '最终现场交付'],
+      },
+      {
+        heading: '受控货和危险属性要先筛',
+        body: [
+          'Trade.gov的受限进口页面说明，刚果共和国除糖和鸡蛋外，产品类别一般可进口；但私人进口枪支和弹药由内政部监管。结合进口文件页面，化工品、爆炸品、武器等危险产品也需要许可。',
+          '实际空运询盘里，油气化工备件、压力容器、检测仪器、电池设备、通信设备、安防设备、医疗物资、食品/农业相关货和二手设备都要先筛HS Code、产品监管、MSDS、许可证和进口商资质。低价航班不解决清关资料缺口。',
+        ],
+        bullets: ['hazardous products permit', 'sanitary certificates', 'firearms/munitions control', 'MSDS和产品监管'],
+      },
+    ],
+    checklist: ['BZV或PNR目的机场', '最终城市/港区/油气现场', '进口商资料', '清关代理资料', 'GUOT流程责任', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', '进口许可证如需', '卫生证书如需', '危险品/化工品许可如需', 'MSDS或技术文件如需', 'CEMAC税则和税费责任', '每件尺寸重量', '包装照片', '是否经DLA/LBV/FIH/CDG/IST中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LBV 加蓬/CEMAC入口', href: '/africa-air-freight/lbv/' },
+      { label: 'FIH 刚果金入口', href: '/africa-air-freight/fih/' },
+      { label: '喀麦隆DLA清关资料', href: '/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/' },
+      { label: '加蓬LBV清关资料', href: '/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'GUOT: Guichet Unique des Opérations Transfrontalières', href: 'https://guot.cg/' },
+      { label: 'GUOT: Contacts and branches', href: 'https://guot.cg/contact/' },
+      { label: 'Trade.gov: Congo, Republic of the - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/congo-republic-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Congo, Republic of the - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/congo-republic-customs-regulations' },
+      { label: 'Trade.gov: Congo, Republic of the - Prohibited and Restricted Imports', href: 'https://www.trade.gov/country-commercial-guides/congo-republic-prohibited-and-restricted-imports' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
