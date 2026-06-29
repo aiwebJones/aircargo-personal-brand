@@ -378,6 +378,58 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'nigeria-los-soncap-formm-paar-air-freight',
+    title: '尼日利亚LOS空运清关：SONCAP、Form M和PAAR要提前准备什么？',
+    excerpt:
+      '中国到尼日利亚LOS空运，电子电器、机械设备、工业品和项目备件不能只问航班价格。SONCAP、Form M、PAAR、发票箱单、英文标签和产品规格资料要在出运前对齐，否则到港后很容易补料、查验和产生仓储。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['尼日利亚SONCAP空运', 'LOS清关资料', 'Form M尼日利亚进口', 'PAAR尼日利亚清关'],
+    template: 'generated',
+    audience: ['尼日利亚进口商', '电子电器出口商', '机械设备工厂', '西非项目货代'],
+    angle: '把 SONCAP、Form M 和 PAAR 转成 LOS 空运询价前的清关资料预审动作。',
+    sections: [
+      {
+        heading: 'LOS空运先判断监管文件',
+        body: [
+          'LOS 拉各斯是西非大市场入口，但它不是只看航班和每公斤价格的目的地。电子电器、机械设备、建筑材料、工业耗材、汽车配件和项目备件，往往先要判断监管文件是否成立，再谈空运路线。',
+          'Standards Organisation of Nigeria 的 SONCAP 页面把 SONCAP/IMPORT 作为进口合规服务入口。对销售来说，客户问“到 Lagos 多少钱”时，第一步要问这票货是否属于 SONCAP 管控范围、是否已经有产品证书/符合性文件、进口商是否能配合 Form M 和 PAAR。',
+        ],
+        bullets: ['SONCAP 适用性', '产品证书/符合性文件', '进口商银行配合', 'LOS 到港清关节奏'],
+      },
+      {
+        heading: 'Form M不是到港后再补',
+        body: [
+          'SONCAP FAQ 把流程拆得很清楚：进口商需要取得 TIN，通过 trade.gov.ng 处理 Form M，随后提交 Product Certificate（PC）、Form M 和其他资料来申请 SONCAP Certificate（SC）。这些动作如果拖到货物到港后再处理，清关节奏会非常被动。',
+          '这对空运很关键。空运快，但 Form M、PAAR、SONCAP 和最终文件如果没有提前对齐，飞机再快也会卡在清关资料。客户只给“spare parts”或“machine parts”这种模糊品名，风险会直接转成补料和查验。',
+        ],
+        bullets: ['e-Form M 注册', '清楚品名和规格', '型号/品牌/数量包装', '发票箱单一致'],
+      },
+      {
+        heading: 'PAAR和最终文件要跟空运单一致',
+        body: [
+          'SONCAP FAQ 还把 PAAR 列在清关链路里，说明进口商拿到 SONCAP Certificate 后，需要通过银行把 SC 和 PAAR 资料提供给 Nigeria Customs Service 用于清关。',
+          '所以 LOS 空运询价不能只收重量尺寸。AWB、商业发票、装箱单、CCVO、SONCAP 文件、Form M、PAAR、英文标签和实际货物照片要能相互对应。任何一个字段不一致，都可能把快速空运变成到港等待。',
+        ],
+        bullets: ['AWB 与发票箱单一致', 'PAAR 信息对应', '英文标签', '产品照片和规格书'],
+      },
+    ],
+    checklist: ['商业发票', '装箱单', 'AWB资料', 'HS Code', '具体英文品名', '品牌/型号/规格', '数量和包装', 'SONCAP是否需要', 'Form M状态', 'PAAR状态', 'CCVO或原产地资料', '英文标签照片', '进口商TIN/银行资料', 'LOS或最终城市', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LOS 拉各斯航线页', href: '/africa-air-freight/los/' },
+      { label: '尼日利亚LOS/ABV/PHC风险', href: '/insights/nigeria-los-air-freight-customs-risk/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '危险品/化工品空运到非洲', href: '/insights/dangerous-goods-chemical-air-freight-africa-checklist/' },
+    ],
+    sources: [
+      { label: 'Standards Organisation of Nigeria: SONCAP', href: 'https://son.gov.ng/soncapservice/' },
+      { label: 'Standards Organisation of Nigeria: SONCAP scheme FAQ', href: 'https://son.gov.ng/helpie_faq/what-next-now-that-i-have-agreed-to-conform-to-the-soncap-scheme/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
