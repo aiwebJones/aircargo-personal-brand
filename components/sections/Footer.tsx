@@ -126,6 +126,8 @@ export default function Footer() {
               <a href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/" className="hover:text-amberGold">尼日利亚B’Odogwu清关</a>
               <a href="/insights/iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight/" className="hover:text-amberGold">IATA锂电池DGR第67版</a>
               <a href="/insights/air-cargo-data-loggers-tracking-devices-africa-cold-chain/" className="hover:text-amberGold">温控货数据记录仪</a>
+              <a href="/insights/mali-bko-sydonia-import-intention-air-freight-clearance/" className="hover:text-amberGold">马里BKO清关资料</a>
+              <a href="/insights/guinea-cky-guceg-import-declaration-air-freight-clearance/" className="hover:text-amberGold">几内亚CKY清关资料</a>
             </div>
           </div>
         </div>

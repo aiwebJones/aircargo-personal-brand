@@ -2097,6 +2097,114 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'mali-bko-sydonia-import-intention-air-freight-clearance',
+    title: '马里BKO空运清关：SYDONIA World、进口意向和发票原产地怎么准备？',
+    excerpt:
+      '中国到马里BKO的矿业设备、工程备件和项目货，不能只看空运价格。SYDONIA World、进口意向、发票、装箱单、原产地和HS Code要在订舱前和收货人确认。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['马里BKO清关资料', 'Mali SYDONIA World', 'Intention d’Importation Mali', '中国到马里空运清关', 'BKO巴马科空运'],
+    template: 'generated',
+    audience: ['马里进口商', '矿业设备供应商', '中国工程项目客户', '西非货代同行'],
+    angle: '用马里进口资料和SYDONIA相关搜索词，承接BKO矿业/项目货高意图询盘。',
+    sections: [
+      {
+        heading: 'BKO不是只要有航班就能交付',
+        body: [
+          '马里Bamako BKO常见货型包括矿业设备、工程备件、检测仪器、发电设备和项目急件。客户问“中国到马里空运多少钱”时，真正影响交付的经常不是头程舱位，而是进口商资料、申报系统、税费和目的地清关准备。',
+          '马里海关公开资料把清关、申报、税费和进口资料放在正式流程里；官方页面也能看到SYDONIAWorld迁移相关信息，ASYCUDA国家页显示马里使用ASYCUDA World平台。销售端要把这些变成询价前置清单。',
+        ],
+        bullets: ['BKO巴马科', '矿业项目货', 'SYDONIA World', '清关前置'],
+      },
+      {
+        heading: '进口意向和基础单证要先确认',
+        body: [
+          'Trade.gov在马里进口要求页面列出商业发票、装箱单、提单或空运单、原产地证、检验证书等常见文件，并提醒进口文件会随商品类别变化。空运场景下，AWB、商业发票、装箱单、HS Code和货值必须和进口商申报口径一致。',
+          '如果客户只给中文品名和毛重，不要直接报全包价。先确认进口商是否已准备进口意向或相关进口手续，是否能提供税号/进口资质，是否接受发票货值、原产地和HS Code的申报责任。',
+        ],
+        bullets: ['Commercial invoice', 'Packing list', 'AWB', 'Certificate of origin'],
+      },
+      {
+        heading: '马里空运报价要把责任边界写清',
+        body: [
+          'BKO项目货常见风险是资料晚、货值和HS Code不一致、收货人清关能力不足、目的地费用没有提前讲清。中国起运端能做的是把航班、尺寸重量、包装、危品/带电场景和出口文件做稳；马里进口申报和税费仍要由进口商或当地代理确认。',
+          '报价话术不要写“包清关”这种容易留下风险的承诺。更好的写法是：空运到BKO，目的地清关资料请收货人按马里海关/进口商要求提前确认；我们可以协助核对发票、装箱单、AWB资料和目的地代理衔接。',
+        ],
+        bullets: ['进口商责任', '税费边界', '当地代理', '资料一致性'],
+      },
+    ],
+    checklist: ['BKO目的机场', '最终城市/矿区', '进口商名称和税号', '进口意向/进口手续状态', '商业发票', '装箱单', 'AWB收发货人资料', 'HS Code', '原产地证场景', '检验证书场景', '每件尺寸重量', '包装照片', '目的地清关责任'],
+    relatedRoutes: [
+      { label: 'BKO 巴马科航线页', href: '/africa-air-freight/bko/' },
+      { label: '埃塞俄比亚航空非洲特价', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '矿业设备空运询价模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Mali - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/mali-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Mali - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/mali-custom-regulations' },
+      { label: 'Direction Generale des Douanes du Mali: Dedouanement', href: 'https://douanes.gouv.ml/dedouanement/' },
+      { label: 'Direction Generale des Douanes du Mali: Migration SYDONIAWorld', href: 'https://douanes.gouv.ml/migration-sydoniaworld' },
+      { label: 'ASYCUDA: Mali', href: 'https://asycuda.org/fr/usercountries-mali-fr/' },
+    ],
+  },
+  {
+    slug: 'guinea-cky-guceg-import-declaration-air-freight-clearance',
+    title: '几内亚CKY空运清关：GUCEG、进口申报和矿业项目货资料怎么准备？',
+    excerpt:
+      '中国到几内亚CKY的铝土矿、矿业设备和工程备件，询价时要提前确认GUCEG/进口申报、发票、装箱单、AWB、HS Code和收货人清关能力。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['几内亚CKY清关资料', 'GUCEG Guinea import declaration', '中国到几内亚空运清关', 'CKY科纳克里空运', 'Guinea mining equipment air freight'],
+    template: 'generated',
+    audience: ['几内亚进口商', '矿业设备供应商', '铝土矿项目采购', '西非空运同行'],
+    angle: '用GUCEG和CKY矿业项目货长尾词，承接几内亚目的地清关型询盘。',
+    sections: [
+      {
+        heading: 'CKY询价不能只问公斤价',
+        body: [
+          'Conakry CKY常见项目货包括矿山备件、工程车辆零件、实验室设备、发电机配件和急用耗材。几内亚目的地的关键不是“有没有航班”，而是进口商是否能按当地系统和文件要求完成申报。',
+          'GUCEG官方门户把几内亚外贸单一窗口定位为贸易便利化入口，覆盖进口、出口、运输、物流和付款相关流程。对空运项目货来说，起运前确认进口申报路径比到港后补资料更重要。',
+        ],
+        bullets: ['CKY科纳克里', 'GUCEG', '单一窗口', '矿业项目货'],
+      },
+      {
+        heading: '进口申报资料要和AWB同步',
+        body: [
+          'Trade.gov几内亚进口要求页面提醒，进口商通常要准备商业发票、提单或空运单、装箱单、原产地证等文件，并说明不同商品可能涉及额外要求。空运到CKY时，AWB收发货人、发票抬头、品名、件数、重量和HS Code要提前对齐。',
+          '如果货物是电池设备、化工品、医疗/实验室设备、通信设备或高货值矿业备件，还要在订舱前确认是否需要额外许可、检验证书或进口商预审，不能等货落地后再问。',
+        ],
+        bullets: ['Commercial invoice', 'AWB', 'Packing list', 'HS Code'],
+      },
+      {
+        heading: '把几内亚风险变成销售筛选问题',
+        body: [
+          '客户只给“设备到几内亚”时，先筛三件事：最终收货地点是不是矿区，进口商是否能办理GUCEG/当地进口手续，目的地是否已有清关代理和提货安排。没有这三项，低价报价很容易变成到港滞留。',
+          '销售回复应该明确：我们报价中国到CKY空运段和可协助目的地代理沟通；几内亚进口申报、税费、许可证和收货人资质需要进口商或当地代理确认。这样既能成交，也不把不可控风险吞进报价。',
+        ],
+        bullets: ['最终矿区', '进口手续', '清关代理', '费用边界'],
+      },
+    ],
+    checklist: ['CKY目的机场', '最终矿区/城市', '进口商名称和税号', 'GUCEG/进口手续状态', '商业发票', '装箱单', 'AWB资料', 'HS Code', '原产地证场景', '许可证/检验证书场景', '是否带电池/危品', '每件尺寸重量', '目的地提货安排'],
+    relatedRoutes: [
+      { label: 'CKY 科纳克里航线页', href: '/africa-air-freight/cky/' },
+      { label: '埃塞俄比亚航空非洲特价', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '矿业设备空运询价模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+    ],
+    sources: [
+      { label: 'GUCEG: Guichet Unique du Commerce Exterieur de Guinee', href: 'https://guceg.gov.gn/' },
+      { label: 'Trade.gov: Guinea - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/guinea-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Guinea - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/guinea-customs-regulations' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
