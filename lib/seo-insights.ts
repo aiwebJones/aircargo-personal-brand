@@ -483,6 +483,58 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'uganda-ebb-unbs-pvoc-air-freight-clearance',
+    title: '乌干达EBB空运清关：UNBS PVoC/CoC和URA进口资料怎么准备？',
+    excerpt:
+      '中国到乌干达EBB空运，电子电器、建材、机械设备、工业品和项目备件不能只看航班。UNBS PVoC/CoC、URA IDF、商业发票、装箱单、Air Waybill和原产地资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['乌干达PVOC空运', 'EBB清关资料', 'UNBS COC乌干达', '中国到乌干达空运清关'],
+    template: 'generated',
+    audience: ['乌干达进口商', '设备工厂', '电子电器和建材供应商', '东非项目货代'],
+    angle: '把 UNBS PVoC/CoC 和 URA 进口文件转成 EBB 空运询价前的清关资料预审动作。',
+    sections: [
+      {
+        heading: 'EBB空运要先判断PVoC',
+        body: [
+          'EBB 恩德培是乌干达空运入口，常见货物包括电子电器、建材、机械设备、工业耗材、通讯设备、医疗相关货物和项目备件。客户只问中国到 EBB 空运多少钱时，销售必须先判断这票货是否触发 UNBS/URA 的进口合规资料。',
+          'URA 的官方资料把 Pre-Export Verification of Conformity（PVoC）Certificate 列为部分货物需要的文件，并举例包括电子产品、建材等类别。对空运来说，这类文件不能等货到 EBB 后再补。',
+        ],
+        bullets: ['UNBS PVoC判断', 'Certificate of Conformity', '电子电器和建材', 'EBB到港清关'],
+      },
+      {
+        heading: 'URA文件要跟空运单一致',
+        body: [
+          'URA 页面列出的进口清关文件包括 Import Declaration Form、Commercial Invoice、Packing List、Bill of Lading 或 Air Waybill、Certificate of Origin，以及部分货物需要的 PVoC Certificate。它还提到可通过 Uganda Electronic Single Window 或 ASYCUDA 等电子系统处理文件。',
+          '这意味着 EBB 空运询价不能只收重量和机场代码。AWB、发票、箱单、HS Code、英文品名、规格型号、原产地、PVoC/CoC 和进口商资料要能互相对应，否则很容易触发补料、文件查询或到港等待。',
+        ],
+        bullets: ['Import Declaration Form', 'Commercial Invoice', 'Packing List', 'Air Waybill'],
+      },
+      {
+        heading: '哪些货要提前问清楚',
+        body: [
+          '电子产品、照明设备、线缆、建材、五金、机械设备、医疗相关货物、化工品、二手设备和项目备件，都不适合最后一刻才问清关。不同品类可能涉及 UNBS、URA 或其他监管部门。',
+          '专业做法是把 EBB 空运拆成两条线：一条判断航班、尺寸重量、是否适合腹舱或主甲板；另一条判断 PVoC/CoC、IDF、发票箱单、进口许可、目的地代理和最终交付。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['电子产品', '建材五金', '机械设备', '二手设备和项目备件'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'PVoC/CoC是否需要', 'Import Declaration Form状态', 'Certificate of Origin', '进口商资料', 'EBB或最终城市', '每件尺寸重量', '是否需要二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'EBB 恩德培航线页', href: '/africa-air-freight/ebb/' },
+      { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
+      { label: '坦桑尼亚DAR PVoC/CoC', href: '/insights/tanzania-dar-pvoc-coc-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Uganda National Bureau of Standards: PVoC Key Documents', href: 'https://www.unbs.go.ug/content.php?src=pvoc-key-documents&pg=content' },
+      { label: 'Uganda Revenue Authority: One Stop Border Post', href: 'https://ura.go.ug/en/import-export/one-stop-border-post/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
