@@ -2205,6 +2205,112 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'burkina-faso-oua-sydonia-waemu-air-freight-clearance',
+    title: '布基纳法索OUA空运清关：SYDONIA World、WAEMU规则和法语单证怎么准备？',
+    excerpt:
+      '中国到布基纳法索OUA的矿业、能源和工程急件，不能只看瓦加杜古空运价格。SYDONIA World、WAEMU海关框架、法语发票装箱单、AWB和原产地资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['布基纳法索OUA清关资料', 'Burkina Faso SYDONIA World', 'WAEMU customs Burkina Faso', 'OUA瓦加杜古空运', '中国到布基纳法索空运清关'],
+    template: 'generated',
+    audience: ['布基纳法索进口商', '矿业设备供应商', '能源项目客户', '西非法语区货代同行'],
+    angle: '用OUA目的港、SYDONIA World和WAEMU海关规则承接萨赫勒项目货清关搜索。',
+    sections: [
+      {
+        heading: 'OUA空运的风险在文件语言和申报口径',
+        body: [
+          '瓦加杜古OUA常见货型包括矿业备件、能源项目设备、工程耗材、通信设备和紧急维修件。客户问“中国到布基纳法索空运”时，销售不能只报公斤价，还要判断进口商是否能按当地清关系统和法语文件要求完成申报。',
+          'Trade.gov 2025年11月13日更新的布基纳法索进口要求页面提到，常见进口文件包括商业发票、装箱单、提单或空运单、原产地证，部分货物还可能需要技术、卫生或检验证书；文件使用法语能减少延误风险。',
+        ],
+        bullets: ['OUA瓦加杜古', '法语单证', 'AWB', '原产地证'],
+      },
+      {
+        heading: 'WAEMU和DGD决定税则与估价边界',
+        body: [
+          'Trade.gov海关规则页面说明，布基纳法索海关法规受WAEMU框架影响，主管机构是General Directorate of Customs；关税和税费计算依赖HS Code、分类和估价。',
+          '官方海关站点当前也暴露SYDONIA World入口和关税/模拟等在线服务信号。对空运项目货来说，HS Code、货值、用途、材质和收货人资料要在起运前一致，不能到港后再让进口商临时重做口径。',
+        ],
+        bullets: ['WAEMU框架', 'DGD海关', 'HS Code', '估价资料'],
+      },
+      {
+        heading: '报价前要把进口责任讲成动作',
+        body: [
+          '布基纳法索是内陆西非目的地，OUA到港后的清关、提货和内陆交付窗口会影响客户实际拿货时间。如果客户是矿区或能源项目现场，还要确认最终城市、卸货条件、当地代理和是否有项目进口许可或免税文件。',
+          '正确的询价回复不是“OUA可以走”。应该先要：英文或法文具体品名、HS Code、发票货值、装箱单、AWB收发货人、原产地资料、证书场景、最终交付地、每件尺寸重量和包装照片。',
+        ],
+        bullets: ['最终交付地', '项目许可', '当地代理', '责任边界'],
+      },
+    ],
+    checklist: ['OUA目的机场', '最终城市/项目现场', '进口商税号/资料', '商业发票法语/英文版本', '装箱单', 'AWB收发货人资料', 'HS Code', '原产地证场景', '技术/卫生/检验证书场景', '货值币种', '每件尺寸重量', '包装照片', '目的地清关责任'],
+    relatedRoutes: [
+      { label: 'OUA 瓦加杜古航线页', href: '/africa-air-freight/oua/' },
+      { label: '埃塞俄比亚航空非洲特价', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '矿业设备空运询价模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Burkina Faso - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/burkina-faso-import-requirements-documentation' },
+      { label: 'Trade.gov: Burkina Faso - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/burkina-faso-customs-regulations' },
+      { label: 'Direction Generale des Douanes du Burkina Faso', href: 'http://www.douanes.bf/' },
+    ],
+  },
+  {
+    slug: 'niger-nim-guce-asycuda-air-freight-clearance',
+    title: '尼日尔NIM空运清关：GUCE、ASYCUDA申报和进口资料怎么准备？',
+    excerpt:
+      '中国到尼日尔NIM的能源、矿业和工程项目货，要提前确认GUCE单一窗口、ASYCUDA申报、预到港资料、许可证和空运单证，不能只按公斤价报价。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['尼日尔NIM清关资料', 'Niger GUCE import documentation', 'Niger ASYCUDA declarations', 'NIM尼亚美空运', '中国到尼日尔空运清关'],
+    template: 'generated',
+    audience: ['尼日尔进口商', '能源项目供应商', '矿业设备客户', '萨赫勒项目货同行'],
+    angle: '用尼日尔GUCE、ASYCUDA和NIM目的港词，承接内陆萨赫勒项目货清关型搜索。',
+    sections: [
+      {
+        heading: 'NIM空运要先确认进口商系统能力',
+        body: [
+          '尼亚美NIM常见空运需求包括能源项目备件、通信设备、矿业耗材、工程急件和政府/援助类项目货。对内陆萨赫勒目的地来说，航班只是第一段，清关系统、进口文件和最终交付安排会决定客户能不能按时拿到货。',
+          '尼日尔GUCE官方门户把National Single Window for Foreign Trade定位为外贸信息和交易入口，并列出预到港申报、进口/出口文件、许可证/许可/证书、电子支付、ASYCUDA申报和关税工具等功能。',
+        ],
+        bullets: ['NIM尼亚美', 'GUCE单一窗口', '预到港申报', 'ASYCUDA申报'],
+      },
+      {
+        heading: '许可证和证书不能到港后才问',
+        body: [
+          'GUCE页面上的License Management覆盖import and export Licenses, Permits, Certificates and Others。空运项目货如果涉及通信、电池、化工、医疗、检测仪器或高价值工程设备，销售要在订舱前让进口商确认是否需要LPCO类文件或其他主管部门许可。',
+          'NIM空运的单证要围绕AWB、商业发票、装箱单、HS Code、货值、收发货人资料和最终交付地点建立一致口径。只凭“设备配件到尼日尔”报价，容易在申报、税费和提货阶段失控。',
+        ],
+        bullets: ['LPCO', '许可证', '证书', '单证一致'],
+      },
+      {
+        heading: '把内陆目的地风险前置到询价阶段',
+        body: [
+          '尼日尔项目货常常不是送到机场就结束。客户可能要转运到能源项目、矿区或边境城市，目的地清关代理、提货车辆、安全窗口和收货人付款/税费安排都需要提前确认。',
+          '销售动作很简单：先把资料收齐，再分清空运段、清关段和内陆交付段。报价里明确不含或另计的目的地费用，反而更容易让真实客户信任，因为你把不可控风险讲在前面。',
+        ],
+        bullets: ['内陆交付', '清关代理', '税费安排', '费用边界'],
+      },
+    ],
+    checklist: ['NIM目的机场', '最终城市/项目现场', '进口商注册资料', 'GUCE/进口手续状态', '商业发票', '装箱单', 'AWB资料', 'HS Code', 'LPCO/许可证场景', '证书/检验场景', '货值币种', '每件尺寸重量', '包装照片', '内陆交付安排'],
+    relatedRoutes: [
+      { label: 'NIM 尼亚美航线页', href: '/africa-air-freight/nim/' },
+      { label: '埃塞俄比亚航空非洲特价', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '超大件空运询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'Niger GUCE: National Single Window for Foreign Trade', href: 'https://guce.gouv.ne/' },
+      { label: 'CCINIGER: Chambre de Commerce et d’Industrie du Niger', href: 'https://cciniger.org/' },
+      { label: 'Export.gov legacy: Niger - Import Requirements and Documentation', href: 'https://legacy.export.gov/article?id=Niger-Import-Requirements-and-Documentation' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
