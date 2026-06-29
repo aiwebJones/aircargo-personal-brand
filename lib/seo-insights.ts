@@ -3247,6 +3247,59 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'seychelles-sez-asycuda-bill-of-entry-air-freight-clearance',
+    title: '塞舌尔SEZ空运清关：ASYCUDA、Bill of Entry和机场货站资料怎么准备？',
+    excerpt:
+      '中国到塞舌尔SEZ马埃岛空运，酒店项目补货、医疗物资、电子电器、备件、样品和高价值急件不能只看航班。SRC Customs、ASYCUDA World、Bill of Entry、Air Waybill、发票箱单、进口许可和e-Payment要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['塞舌尔SEZ清关资料', 'Seychelles airport customs clearance', 'Seychelles ASYCUDA air freight', 'Bill of Entry Seychelles', 'SEZ air cargo clearance', '中国到塞舌尔空运清关'],
+    template: 'generated',
+    audience: ['塞舌尔进口商', '酒店与旅游项目供应商', '医疗电子设备工厂', '印度洋航线货代同行'],
+    angle: '用SEZ/Seychelles airport、SRC Customs、ASYCUDA World、Bill of Entry和e-Payment承接塞舌尔空运清关搜索。',
+    sections: [
+      {
+        heading: 'SEZ空运先判断SRC/ASYCUDA资料',
+        body: [
+          'SEZ塞舌尔马埃岛适合酒店项目补货、医疗物资、电子电器、样品、小批量备件、快周转贸易补货和高价值急件。客户只问中国到塞舌尔空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、商业发票、装箱单和Bill of Entry资料是否能提前跑通。',
+          'Seychelles Revenue Commission（SRC）的Customs and Excises页面说明，Airport Cargo负责检查和查验通过空运进出的货物，办理允许进入塞舌尔货物的清关手续，并按法规确定和征收海关价值、关税和相关费用。对SEZ空运来说，货物到了机场以后再补资料，会直接影响放行和费用。',
+        ],
+        bullets: ['SEZ airport cargo', 'SRC Customs', 'ASYCUDA World', 'Bill of Entry'],
+      },
+      {
+        heading: 'Bill of Entry、AWB和支持文件必须一致',
+        body: [
+          'SRC页面还说明，Entry Processing会核验所有提交到ASYCUDA World系统的申报是否符合海关法规和程序；查验环节会确认申报货物、收入、相关许可和必要文件是否随Bill of Entry一并提供。对空运来说，AWB、发票、箱单、HS Code、品名、件数、重量、货值和收货人资料要先对齐。',
+          '塞舌尔不是大货量市场，小票急件反而更怕文件不一致。医疗设备、带电设备、通信设备、冷链货、酒店用品、食品/农业相关货、二手设备和受控产品，都要提前判断进口许可、技术文件、原产地、发票货值和机场货站放行责任。',
+        ],
+        bullets: ['Air Waybill', 'Commercial invoice', 'Packing List', 'Import permit如需'],
+      },
+      {
+        heading: '2026 ASYCUDA升级让纸面补救空间更小',
+        body: [
+          'SRC在2026年3月14日发布的通知中说明，ASYCUDA World升级到4.4.1后，交易方可扫描并上传支持文件、注册时自评Bill of Entry；同一通知还说，升级引入paperless流程后，交易方不再需要向entry processing and query unit提供Bill of Entry实体复印件。',
+          'SRC此前也发布Customs e-Payment服务，说明该服务用于简化进出口申报付款、提高效率并便利清关；涉及Customs Declaration（Bill of Entry）付款的贸易商、企业和报关人可注册线上付款。对SEZ急件来说，正确动作是把航班、ASYCUDA申报、支持文件上传、e-Payment、风险通道和最终交付城市拆成一张清单。',
+        ],
+        bullets: ['ASYCUDA World 4.4.1', 'Supporting documents upload', 'Paperless process', 'Customs e-Payment'],
+      },
+    ],
+    checklist: ['SEZ目的机场', '最终城市/酒店/项目现场', '进口商SRC资料', '清关代理资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'Bill of Entry字段', 'ASYCUDA支持文件上传状态', 'e-Payment或付款安排', 'Certificate of Origin如需', '进口许可证或受控货批文如需', '技术资料/MSDS如需', '每件尺寸重量', '包装照片', '是否经MRU/JNB/NBO/DXB中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: '毛里求斯MRU清关资料', href: '/insights/mauritius-mru-mra-tradenet-boe-air-freight-clearance/' },
+      { label: '马达加斯加TNR清关资料', href: '/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/' },
+      { label: 'NBO 内罗毕东非入口', href: '/africa-air-freight/nbo/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Seychelles Revenue Commission: Customs and Excises', href: 'https://src.gov.sc/customs-and-excises/' },
+      { label: 'SRC: ASYCUDA World upgrade to version 4.4.1', href: 'https://src.gov.sc/the-seychelles-revenue-commission-prepares-to-upgrade-asycuda-world-to-version-4-4-1/' },
+      { label: 'SRC: Online payment for customs services', href: 'https://src.gov.sc/seychelles-revenue-commission-launches-online-payment-for-customs-services/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
