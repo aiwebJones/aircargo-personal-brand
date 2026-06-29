@@ -157,6 +157,7 @@ export default function Footer() {
               <a href="/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/" className="hover:text-amberGold">阿尔及利亚ALG清关</a>
               <a href="/insights/tunisia-tun-sinda-ttn-air-waybill-customs-clearance/" className="hover:text-amberGold">突尼斯TUN清关</a>
               <a href="/insights/congo-brazzaville-bzv-pnr-guot-cemac-air-freight-clearance/" className="hover:text-amberGold">刚果布BZV/PNR清关</a>
+              <a href="/insights/equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance/" className="hover:text-amberGold">赤道几内亚SSG/BSG清关</a>
             </div>
           </div>
         </div>

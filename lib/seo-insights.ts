@@ -3600,6 +3600,68 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance',
+    title: '赤道几内亚SSG/BSG空运清关：ASYCUDAWorld、CEMAC和油气备件资料怎么准备？',
+    excerpt:
+      '中国到赤道几内亚SSG马拉博或BSG巴塔空运，油气备件、港口设备、通信设备和项目急件不能只看航班。ASYCUDAWorld全国上线、CEMAC海关规则、航空舱单、Air Waybill、发票、HS Code和受控货筛查要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['赤道几内亚SSG清关资料', 'Equatorial Guinea ASYCUDAWorld', 'Malabo airport customs clearance', 'Bata oil gas spare parts air freight', 'SSG air cargo clearance', '中国到赤道几内亚空运清关'],
+    template: 'generated',
+    audience: ['赤道几内亚进口商', '油气和港口设备供应商', '通信工程与工业备件工厂', '中非/CEMAC航线货代同行'],
+    angle: '用SSG/BSG、Equatorial Guinea ASYCUDAWorld、Malabo airport customs clearance、Bata oil gas spare parts和CEMAC customs承接赤道几内亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'SSG/BSG空运先看ASYCUDAWorld链路',
+        body: [
+          '赤道几内亚空运常见入口包括SSG马拉博和BSG巴塔。SSG更适合首都、政府、通信、医疗和岛上项目，BSG更贴近大陆端、港口、油气和工程现场。客户只问中国到赤道几内亚空运多少钱时，销售要先确认进口商、清关代理、目的机场、最终现场、Air Waybill、发票、HS Code和ASYCUDAWorld申报责任。',
+          'ASYCUDA 2025年发布的信息说明，赤道几内亚已经完成ASYCUDAWorld全国上线，系统覆盖陆运、海运和空运边境点；马拉博机场自2020年已经使用ASYCUDAWorld，巴塔系统在2024年11月投入运行。这意味着SSG/BSG询价不能只看航班，还要看进口端电子申报、资料一致性和放行时间线。',
+        ],
+        bullets: ['SSG Malabo airport', 'BSG Bata airport', 'ASYCUDAWorld nationwide rollout', 'air border points'],
+      },
+      {
+        heading: '航空舱单时间线不能最后补',
+        body: [
+          'ASYCUDA 2022年赤道几内亚Compendium说明，海运和航空舱单需分别在到达前48小时和12小时提交。对空运来说，12小时节点很实际：AWB、航空舱单、发票、装箱单、收货人、品名、件数、重量和HS Code如果临近到港才改，会直接压缩清关代理修正空间。',
+          '所以SSG/BSG急件报价前要先收齐申报字段，而不是只报每公斤价格。油气备件、通信设备、医疗仪器、电子电器、带电池产品、化工样品、二手设备和项目返修件，尤其要提前确认英文/西文/法文品名、用途、型号、品牌、照片、MSDS或技术文件。',
+        ],
+        bullets: ['air manifest 12 hours before arrival', 'Air Waybill一致性', 'commercial invoice', 'HS Code和品名'],
+      },
+      {
+        heading: 'CEMAC规则让SSG/BSG要和LBV/DLA/PNR一起判断',
+        body: [
+          'Trade.gov的加蓬和刚果共和国海关规则页面都说明，CEMAC成员包括喀麦隆、中非、乍得、刚果共和国、赤道几内亚和加蓬，并适用共同海关规则。对中国到中非区域项目货来说，SSG/BSG往往不是孤立目的地，而是要和LBV、DLA、PNR、NDJ等节点一起比较。',
+          '如果客户最终现场在大陆端、油气基地、港区或跨境项目，报价要拆开判断：直飞/中转可行性、经LBV/DLA/CMN/CDG/IST/MAD的中转选择、CEMAC税费责任、进口商清关能力、目的地代理、最终提送和卸货条件。',
+        ],
+        bullets: ['CEMAC customs', 'LBV/DLA/PNR区域比较', '税费责任', '最终现场交付'],
+      },
+      {
+        heading: '油气备件和受控货要先筛',
+        body: [
+          '赤道几内亚项目货里，油气备件、港口设备、发电设备、通信设备、医疗设备、检测仪器、阀门泵类、压力件、电池设备、化工相关货和二手设备经常混在一个询盘里。公开来源能确认的是ASYCUDAWorld和CEMAC流程框架，具体许可证和监管属性要由进口商、清关代理和产品HS Code逐票确认。',
+          '实际动作是先筛风险，再订舱。把DG/MSDS、带电池、无线通信、医疗用途、旧设备、压力容器、木包装、品牌型号、产品照片、进口商税号和代理责任提前问清，避免货到SSG/BSG后才发现申报口径、许可证或技术文件缺口。',
+        ],
+        bullets: ['oil gas spare parts', 'controlled goods screening', 'DG/MSDS', 'importer and broker responsibility'],
+      },
+    ],
+    checklist: ['SSG或BSG目的机场', '最终城市/岛上或大陆端现场', '进口商资料', '清关代理资料', 'ASYCUDAWorld申报责任', 'HS Code', '英文/西文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', '收货人税号或进口资质如有', '进口许可或受控货批文如需', 'DG/MSDS如需', '医疗/通信/电池/二手设备属性筛查', 'CEMAC税则和税费责任', '每件尺寸重量', '包装照片', '是否经LBV/DLA/CDG/IST/MAD/CMN中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LBV 加蓬/CEMAC入口', href: '/africa-air-freight/lbv/' },
+      { label: '加蓬LBV清关资料', href: '/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/' },
+      { label: '刚果布BZV/PNR清关', href: '/insights/congo-brazzaville-bzv-pnr-guot-cemac-air-freight-clearance/' },
+      { label: '喀麦隆DLA清关资料', href: '/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: Equatorial Guinea Completes Nationwide Rollout of ASYCUDAWorld', href: 'https://asycuda.org/en/equatorial-guinea-completes-nationwide-rollout-of-asycudaworld/' },
+      { label: 'ASYCUDA Compendium 2022: Equatorial Guinea', href: 'https://asycuda.org/wp-content/uploads/ASYCUDA-Compendium-2022-Guinea-Equatorial.pdf' },
+      { label: 'Trade.gov: Gabon - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/gabon-customs-regulations' },
+      { label: 'Trade.gov: Congo, Republic of the - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/congo-republic-customs-regulations' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
