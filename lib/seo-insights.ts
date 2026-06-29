@@ -4041,6 +4041,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'lesotho-msu-asycuda-world-import-permit-air-freight-clearance',
+    title: '莱索托MSU空运清关：ASYCUDA World、进口许可证和Maseru资料怎么准备？',
+    excerpt:
+      '中国到莱索托MSU/Maseru空运，纺织设备、医疗物资、通信设备、工程备件和高价值急件不能只看航班。Lesotho ASYCUDA World、import permit、SAD500、发票、箱单、AWB、原产地证和JNB过境责任要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['莱索托MSU清关资料', 'Lesotho ASYCUDA World', 'Maseru import permit', 'MSU air freight customs', 'Lesotho SAD500 customs declaration', 'Lesotho import licence', '中国到莱索托空运'],
+    template: 'generated',
+    audience: ['莱索托进口商', '纺织和服装设备供应商', '医疗和通信设备供应商', '南部非洲项目客户'],
+    angle: '用MSU、Maseru customs clearance、Lesotho ASYCUDA World、import permit、SAD500和JNB过境承接莱索托空运清关搜索。',
+    sections: [
+      {
+        heading: 'MSU空运先判断入口是否真实可用',
+        body: [
+          '莱索托空运目的机场通常看MSU Moshoeshoe I International Airport/Maseru，但现实操作不能只看三字代码。莱索托被南非包围，部分项目货、设备和急件会先到JNB，再处理南非过境、陆运进境和Maseru本地清关。因此客户问“中国到莱索托空运多少钱”时，第一步不是报价，而是判断MSU直达/联运是否可执行，还是应该做JNB+莱索托清关交付。',
+          'Trade.gov的Lesotho Customs Regulations页面说明，清关所需文件包括商业发票、海运/空运提单、SACU格式的invoice、原产地证、import permits、SAD 500、MCC 12和同意书等。对空运来说，AWB、发票、箱单、HS Code、原产地和进口许可证状态要在订舱前对齐。',
+        ],
+        bullets: ['MSU Maseru airport', 'JNB transit option', 'SAD500 customs declaration', 'import permit pre-check'],
+      },
+      {
+        heading: '进口许可证不是到港后再补',
+        body: [
+          'Lesotho National Development Corporation的进口许可证页面列出申请步骤：通过贸易部网站获取申请表，提交公司登记证、贸易许可、买卖发票、税务清关证、原产地证等文件，并等待许可证。页面说明，进口许可证处理时效为2-3个工作日，建议进口商在希望进口日期至少一周前申请。',
+          '这对MSU空运询价很关键。医疗设备、通信设备、纺织设备、工业备件、食品相关设备、二手设备和带电设备，不能只发重量和体积。要先问进口商是否已有permit，许可证是否覆盖当前货物、数量、价值、HS Code和进口商名称。',
+        ],
+        bullets: ['Maseru import permit', '2-3 working days', 'one week before import date', 'certificate of origin'],
+      },
+      {
+        heading: 'ASYCUDA World让资料质量更直接影响放行',
+        body: [
+          'ASYCUDA 2022 Lesotho资料说明，系统与Lesotho National Single Window集成，进口商可以申请进口许可证和清关证书，清关代理可以准备清关申报并监控流程，LRA可以通过系统进行风险管理、收税和事后稽核。RSL eCustoms也提供在线海关入口。',
+          '实际含义是：资料越早结构化，目的地越容易判断。发货前要把英文品名、HS Code、用途、品牌型号、货值、原产地、许可证、AWB、发票箱单、包装照片和收货人资料整理成可申报数据，而不是把关键信息散落在聊天记录里。',
+        ],
+        bullets: ['Lesotho ASYCUDA World', 'electronic customs declaration', 'online import permit', 'data chain accuracy'],
+      },
+      {
+        heading: '报价边界要写清JNB、MSU和Maseru谁负责',
+        body: [
+          '莱索托票最容易误解的是边界：报价是到MSU机场、到JNB机场、JNB转关到莱索托，还是包含Maseru清关和末端交付？不同边界对应完全不同的责任、时效和风险。尤其是大件、重货、纺织机器、医疗设备和通信设备，JNB过境、南非段文件、莱索托进口许可和最终交付都要拆开。',
+          '可执行回复应该要求客户一次给齐：目的地城市、每件尺寸重量、货物照片、HS Code、货值、进口商、permit状态、是否可走JNB、是否需要门到门、是否有卸货条件。资料齐，再判断MSU/JNB路线、价格和时效。',
+        ],
+        bullets: ['JNB transit responsibility', 'Maseru final delivery', 'door-to-door boundary', 'project cargo screening'],
+      },
+    ],
+    checklist: ['MSU目的机场或JNB过境方案', '最终城市/Maseru地址/项目现场', '进口商资料', '当地清关代理/broker资料', '进口许可证状态', '贸易许可/公司资料如需', '税务清关证如需', 'Certificate of Origin', 'SAD500资料', 'HS Code', '英文品名和用途', '品牌型号', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'SACU格式invoice如需', 'MCC 12或同意书如需', '是否医疗/通信/纺织设备/二手/带电', 'MSDS/DG资料如需', '每件尺寸重量', '包装照片', 'JNB过境和南非段责任', 'Maseru清关和税费责任', '末端交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 约翰内斯堡南部非洲中转', href: '/africa-air-freight/jnb/' },
+      { label: 'LUN 赞比亚项目货入口', href: '/africa-air-freight/lun/' },
+      { label: '南非CPT/DUR清关资料', href: '/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/' },
+      { label: '厄立特里亚ASM清关资料', href: '/insights/eritrea-asm-asycuda-world-import-permit-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Lesotho Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/lesotho-customs-regulations' },
+      { label: 'LNDC: Getting Import Permits', href: 'https://lndc.org.ls/knowledge-base/getting-import-permits/' },
+      { label: 'RSL eCustoms', href: 'https://eservices.rsl.org.ls/ecustoms/' },
+      { label: 'ASYCUDA Compendium 2022: Lesotho', href: 'https://asycuda.org/wp-content/uploads/ASYCUDA-Compendium-2022-Lesotho.pdf' },
+      { label: 'LNDC: Customs Duties', href: 'https://lndc.org.ls/knowledge-base/customs-duties/' },
+      { label: 'Lesotho Trade Portal', href: 'https://www.lesothotradeportal.com/index.php?id=70&r=searchProcedure%2Fview1' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
