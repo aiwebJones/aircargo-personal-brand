@@ -3084,6 +3084,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'mauritania-nkc-douanes-sydonia-sgs-air-freight-clearance',
+    title: '毛里塔尼亚NKC空运清关：Douanes、ASYCUDA++和SGS检验资料怎么准备？',
+    excerpt:
+      '中国到毛里塔尼亚NKC努瓦克肖特空运，矿业备件、工程设备、能源物资、医疗设备和贸易补货不能只看航班。Douanes/ASYCUDA++、SGS装运前检验、进口许可证、Air Waybill、商业发票箱单和法文品名要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['毛里塔尼亚NKC清关资料', 'Nouakchott airport customs clearance', 'Mauritania ASYCUDA air freight', 'Mauritania SGS inspection import', 'Douanes Mauritanie declaration import', '中国到毛里塔尼亚空运清关'],
+    template: 'generated',
+    audience: ['毛里塔尼亚进口商', '矿业和能源设备供应商', '工程项目客户', '西非货代同行'],
+    angle: '用NKC/Nouakchott、Douanes Mauritaniennes、ASYCUDA++和SGS检验承接毛里塔尼亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'NKC空运先判断Douanes/ASYCUDA资料',
+        body: [
+          'NKC努瓦克肖特适合毛里塔尼亚矿业备件、能源设备、工程物资、医疗设备、通信设备和贸易补货。客户只问中国到毛里塔尼亚空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、商业发票箱单、法文品名和Douanes/ASYCUDA资料是否能提前跑通。',
+          'Trade.gov的毛里塔尼亚海关规则页面说明，毛里塔尼亚已在27个海关办公室采用ASYCUDA++自动化海关系统，并要求进口商注册；毛里塔尼亚政务流程站也把进口商、报关员、仓库和货运代理代码归在Douanes流程下。空运场景下，货到NKC之前就要把进口商识别、代理授权、货值、HS Code和运输单证准备好。',
+        ],
+        bullets: ['NKC Nouakchott', 'Douanes Mauritaniennes', 'ASYCUDA++', 'Air Waybill资料'],
+      },
+      {
+        heading: 'SGS检验、AWB和发票箱单不能互相打架',
+        body: [
+          'Trade.gov的毛里塔尼亚进口文件页面说明，毛里塔尼亚要求装运前检验，SGS负责该项目；文档还列出商业发票、提单或Air Waybill、原产地证、检验证书、运输方式、数量、描述、价格和付款条款等资料。财政部海关法和政务流程站则说明，清关动作必须落到Douanes规则和被授权的报关流程里。',
+          '所以NKC询价不能只收重量体积。HS Code、法文/英文品名、用途、规格型号、货值币种、件数毛重、AWB收货人、商业发票、装箱单、SGS检验状态和进口许可证必须互相对应；否则到港后容易卡在估价、风险控制、查验或补证。',
+        ],
+        bullets: ['SGS pre-shipment inspection', 'Commercial invoice', 'Packing list', 'Certificate of Origin'],
+      },
+      {
+        heading: '受控货和法文单证要提前拆',
+        body: [
+          'Trade.gov的毛里塔尼亚海关规则页面提示，海关使用较现代化系统处理申报，但进口流程仍可能涉及许可、检验、估价和税费；同时提到不同海关代理对单证解释仍可能不一致。毛里塔尼亚政务流程站的清关页面也提示，货物清关通常要通过获批报关行办理。',
+          '矿业备件、油气项目物资、二手设备、医疗设备、通信设备、化工品、食品/农业相关货和政府项目货，不适合只按普通空运报价处理。正确动作是把航班、NKC地面处理、Sydonia申报、SGS检验、进口许可证、法文单证和最终交付城市拆开确认。',
+        ],
+        bullets: ['Import permit', '法文品名', '价值和估价资料', '最终交付城市'],
+      },
+    ],
+    checklist: ['NKC目的机场', '最终城市/矿区/项目现场', '进口商注册/NIF资料', '清关代理资料', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'ASYCUDA申报字段', 'SGS检验状态', 'Certificate of Origin如需', '保险证书如需', '进口许可证或受控货批文如需', '检验证书或标准文件如需', '每件尺寸重量', '包装照片', '是否经CMN/DSS/欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DSS 达喀尔西非入口', href: '/africa-air-freight/dss/' },
+      { label: 'CMN 卡萨布兰卡中转', href: '/africa-air-freight/cmn/' },
+      { label: '冈比亚BJL清关资料', href: '/insights/gambia-bjl-gra-asycuda-sad-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Mauritania - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/mauritania-import-requirements-and-documentations' },
+      { label: 'Trade.gov: Mauritania - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/mauritania-customs-regulations' },
+      { label: 'Mauritania Procedures Portal: Attribution de code importateur', href: 'https://www.procedures.gov.mr/fr/procedure/245' },
+      { label: 'Mauritania Procedures Portal: Dedouanement d’une marchandise', href: 'https://www.procedures.gov.mr/fr/procedure/281' },
+      { label: 'Ministere des Finances Mauritanie: Code des Douanes', href: 'https://www.finances.gov.mr/sites/default/files/2022-11/CODE_DES_DOUANES.pdf' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
