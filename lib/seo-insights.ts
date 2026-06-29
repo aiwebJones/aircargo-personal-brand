@@ -3029,6 +3029,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'gambia-bjl-gra-asycuda-sad-air-freight-clearance',
+    title: '冈比亚BJL空运清关：GRA ASYCUDA World、SAD和IDF资料怎么准备？',
+    excerpt:
+      '中国到冈比亚BJL班珠尔空运，工程设备、医疗物资、电子电器、农产品相关货和贸易补货不能只看航班。GRA ASYCUDA World、SAD申报、IDF、Air Waybill、商业发票箱单、原产地和进口许可证要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['冈比亚BJL清关资料', 'Banjul airport customs clearance', 'Gambia ASYCUDA air freight', 'GRA customs declaration Gambia', 'Single Administrative Document Gambia', '中国到冈比亚空运清关'],
+    template: 'generated',
+    audience: ['冈比亚进口商', '工程设备供应商', '医疗与电子电器工厂', '西非货代同行'],
+    angle: '用BJL/Banjul、GRA ASYCUDA World、SAD和IDF承接冈比亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'BJL空运先判断GRA/ASYCUDA资料',
+        body: [
+          'BJL班珠尔适合冈比亚工程设备、医疗物资、电子电器、通信设备、农业相关货和贸易补货。客户只问中国到冈比亚空运多少钱时，销售要先判断进口商TIN、清关代理、Air Waybill、商业发票箱单和GRA申报资料是否能提前跑通。',
+          'GRA的Customs & Excise页面说明，海关岗位包括Airport和Seaport，并承担禁止/限制品管理、通关便利化和关税征收等职责。GRA的ASYCUDA World认证SOP也说明，ASYCUDA World用于电子申报、电子缴费和清关处理，进口商TIN和清关代理资料要在BJL到港前确认。',
+        ],
+        bullets: ['BJL Banjul airport', 'GRA Customs', 'ASYCUDA World', '进口商TIN'],
+      },
+      {
+        heading: 'SAD、AWB和发票箱单必须一致',
+        body: [
+          'Trade.gov的冈比亚进口文件页面说明，进口商或代理需要用Single Administrative Document（SAD）向GRA申报，货物在清关完成前处于海关监管下。GRA清关FAQ也列出常见进口资料，包括invoice、Bill of Lading或Air Waybill、certificate of origin、packing list、TIN、许可证或证书等。',
+          '所以BJL询价不能只收重量体积。HS Code、英文品名、用途、货值币种、件数毛重、AWB收货人、商业发票、装箱单、原产地、SAD字段和IDF资料必须互相对应；否则到港后会卡在申报、查验、付款或放行环节。',
+        ],
+        bullets: ['Single Administrative Document', 'Air Waybill', 'Commercial invoice', 'Packing list'],
+      },
+      {
+        heading: 'IDF和受控货许可要前置筛',
+        body: [
+          'GRA清关FAQ写明，清关过程还可能涉及Import Declaration Form（IDF）和清关代理通过ASYCUDA电子处理报关。Trade.gov的冈比亚海关规则页面也提示，部分货物需要进口许可证或额外监管文件，尤其是受限制货、食品/农业、医药、化工、通信和二手设备等场景。',
+          '对冈比亚空运来说，正确动作不是只报机场到机场价格，而是把航班可行性、BJL地面处理、GRA/ASYCUDA、SAD、IDF、进口许可、检验证书和最终交付城市拆成一张资料清单。小市场的风险往往不在航班，而在到港后资料补救慢。',
+        ],
+        bullets: ['Import Declaration Form', 'Import permit', '受控货资料', '最终交付城市'],
+      },
+    ],
+    checklist: ['BJL目的机场', '最终城市/项目现场', '进口商TIN/GRA资料', '清关代理资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'SAD申报字段', 'IDF资料', 'Certificate of Origin如需', '进口许可证或受控货批文如需', '检验证书或标准文件如需', '每件尺寸重量', '包装照片', '是否经ACC/LOS/ABJ或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ACC 阿克拉西非入口', href: '/africa-air-freight/acc/' },
+      { label: 'LOS 拉各斯西非入口', href: '/africa-air-freight/los/' },
+      { label: '利比里亚ROB清关资料', href: '/insights/liberia-rob-lra-asycuda-bivac-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: The Gambia - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/gambia-import-requirements-and-documentation' },
+      { label: 'Trade.gov: The Gambia - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/gambia-customs-regulations' },
+      { label: 'Gambia Revenue Authority: Customs & Excise', href: 'https://gra.gm/units/customs-excise' },
+      { label: 'Gambia Revenue Authority: Clearance Processes FAQ', href: 'https://gra.gm/faqs/details/clearance-processes/26' },
+      { label: 'Gambia Revenue Authority: ASYCUDA World Training and Certification SOP 2026', href: 'https://gra.gm/downloads/file/asycuda-world-training-and-certification-standard-operating-procedures-effective-15-march-2026' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
