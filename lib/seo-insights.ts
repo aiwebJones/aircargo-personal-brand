@@ -805,6 +805,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'rwanda-kgl-rra-rsb-air-freight-clearance-documents',
+    title: '卢旺达KGL空运清关：RRA电子单一窗口、RSB认证和到港资料怎么准备？',
+    excerpt:
+      '中国到卢旺达KGL空运，电子设备、医疗物资、工业备件、食品相关产品和项目货不能只看航班。RRA电子单一窗口、MAGERWA到货通知、RSB产品认证/质量检查、Air Waybill、商业发票、装箱单和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['KGL清关资料', '卢旺达RRA进口清关', 'RSB认证卢旺达', '中国到卢旺达空运清关'],
+    template: 'generated',
+    audience: ['卢旺达进口商', '电子设备出口商', '医疗和食品供应商', '东非内陆项目货代'],
+    angle: '把 RRA 电子单一窗口、RSB 产品认证和 KGL 到港清关资料转成空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'KGL空运先判断RRA电子单一窗口',
+        body: [
+          'KGL 基加利是卢旺达空运入口，也常承接东非内陆项目货、医疗设备、电子设备、工业备件和贸易补货。客户只问中国到 KGL 空运多少钱时，销售要先判断进口商、清关代理和 Rwanda Revenue Authority（RRA）电子单一窗口资料是否能提前跑通。',
+          'RRA 的 Rwanda Electronic Single Window 页面说明，系统覆盖进口许可、到货通知、货物舱单、质量检查、海关申报、付款、查验和放行等流程。对空运来说，Air Waybill、商业发票、装箱单、HS Code、货值、原产地、进口商资料和目的地代理资料必须提前一致。',
+        ],
+        bullets: ['RRA电子单一窗口', '到货通知和舱单', '海关申报', 'KGL到港放行'],
+      },
+      {
+        heading: '质量检查和RSB资料要提前问',
+        body: [
+          'RRA 电子单一窗口流程里包含 Quality Inspection，涉及 Customs Services Department 和 Rwanda Bureau of Standards/RSB 的选择性规则、查验通道和放行逻辑。不是每一票货都需要同样的证书，但电子设备、医疗相关货物、食品、化工品、建材和受控产品，都不能等货到 KGL 后才问监管资料。',
+          'Rwanda Standards Board 的 Product Certification 页面说明，产品认证包括在线申请、费用支付、工厂审核、抽样、产品测试、纠正措施关闭、认证决定和 Certificate of Conformity 等步骤。对出口商来说，重点是提前准备型号规格、测试报告、产品照片、HS Code、用途和进口商资料。',
+        ],
+        bullets: ['RSB产品认证', '质量检查', 'Certificate of Conformity', '测试报告和产品资料'],
+      },
+      {
+        heading: '不同货类要拆开判断',
+        body: [
+          'Rwanda Trade Portal 列出了 KGL 国际机场普通货物清关、电子产品清关、食品清关、进口许可、Airway bill、原产地证等多个流程入口。这说明 KGL 空运不能用一个模板覆盖所有货。',
+          '专业做法是把 KGL 空运拆成两条线：一条判断航班、尺寸重量、是否适合腹舱或主甲板；另一条判断 RRA/eSW、MAGERWA 到货通知、RSB/质量检查、进口许可、发票箱单、Air Waybill 和目的地代理。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['电子设备', '医疗和食品货物', '进口许可', 'Airway bill和原产地证'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Certificate of Origin', '进口商TIN/RRA资料', '清关代理资料', 'MAGERWA到货通知', 'RRA电子单一窗口资料', 'RSB/质量检查是否涉及', '进口许可或监管许可如需', '测试报告/产品证书如需', 'KGL或最终城市', '每件尺寸重量', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'KGL 基加利航线页', href: '/africa-air-freight/kgl/' },
+      { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
+      { label: '乌干达EBB PVoC/CoC', href: '/insights/uganda-ebb-unbs-pvoc-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Rwanda Revenue Authority: Rwanda Electronic Single Window procedures', href: 'https://www.rra.gov.rw/en/customs-services/electronic-single-window/process-and-procedures-for-rwand-electronic-single-window' },
+      { label: 'Rwanda Standards Board: Product Certification', href: 'https://www.rsb.gov.rw/certifications/product-certification' },
+      { label: 'Rwanda Trade Portal: Kigali International Airport procedures', href: 'https://rwandatrade.rw/procedure/223?l=en' },
+      { label: 'Rwanda Revenue Authority: Importation and Goods Clearance guide', href: 'https://www.rra.gov.rw/fileadmin/user_upload/Importation_and_Goods__Clearance_2024.pdf' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
