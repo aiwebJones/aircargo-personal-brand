@@ -751,6 +751,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'cote-divoire-abj-guce-fdi-sydam-air-freight-clearance',
+    title: '科特迪瓦ABJ空运清关：GUCE/FDI、SYDAM和海关放行资料要提前准备什么？',
+    excerpt:
+      '中国到科特迪瓦ABJ空运，机械设备、电子电器、医疗物资、工程备件和贸易补货不能只看航班。GUCE账号、FDI、e-Certificate of Conformity、SYDAM/e-DAU、Air Waybill、发票箱单和海关放行资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['科特迪瓦FDI空运', 'ABJ清关资料', 'GUCE科特迪瓦', '中国到阿比让空运清关'],
+    template: 'generated',
+    audience: ['科特迪瓦进口商', '机械设备工厂', '医疗和电子电器出口商', '西非法语区项目货代'],
+    angle: '把 GUCE/FDI、SYDAM/e-DAU 和 ABJ 空运海关放行流程转成询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'ABJ空运先判断GUCE和FDI',
+        body: [
+          'ABJ 阿比让是科特迪瓦和西非法语区项目货的重要入口，常见货物包括机械设备、电子电器、医疗相关货物、工程备件、日用品和贸易补货。客户只问中国到 ABJ 空运多少钱时，销售要先判断进口商是否能在 GUCE 平台配合完成进口资料和前置申报。',
+          'GUCE 官方说明，它是科特迪瓦外贸单一窗口，经济运营方可通过平台办理进口、出口和过境相关的无纸化手续。GUCE 模块介绍页写明，Trade Transaction 流程会产生 FDI（Fiche de Déclaration à l’Importation / Prior Import Declaration Form），这个资料不能等货到 ABJ 后再临时补。',
+        ],
+        bullets: ['GUCE账号', 'FDI预进口申报', '进口商配合', 'ABJ到港清关节奏'],
+      },
+      {
+        heading: 'SYDAM和e-DAU资料要跟空运单一致',
+        body: [
+          '科特迪瓦海关的空运进口流程页面说明，ABJ 空运货物由机场海关流程处理，涉及 SYDAM WORLD、DPOD、BAE、ACD、RVIS、PVS 等节点。GUCE 模块页也说明 e-DAU 可用于录入和提交海关详细申报，并与海关 SYDAM 系统衔接。',
+          '所以 ABJ 空运询价不能只收重量和机场代码。Air Waybill、商业发票、装箱单、HS Code、英文/法文品名、货值、原产地、进口商资料、FDI 和目的地清关代理信息要能互相对应。任何一项不一致，都可能把快速空运变成到港补料或查验。',
+        ],
+        bullets: ['SYDAM WORLD', 'e-DAU/海关详细申报', 'Air Waybill', '商业发票和装箱单'],
+      },
+      {
+        heading: '受控货要提前问符合性和许可证',
+        body: [
+          'GUCE 页面列出 e-Certificate of Conformity、e-Phyto、Certificate of Origin、e-Licence、e-BSC 等前置或配套模块。不是每一票空运货都需要全部文件，但电子电器、医疗相关货物、食品/植物来源产品、化工品、二手设备和特殊许可证货物，必须在出运前问清楚。',
+          '科特迪瓦海关的禁止/限制货物页面也说明，如果进口只允许在授权、许可证、证书或其他正规文件下进行，货物缺少相应文件就会被视为不合规。专业做法是把 ABJ 空运拆成两条线：航班和装载可行性一条线，GUCE/FDI/SYDAM/许可证资料另一条线。',
+        ],
+        bullets: ['e-Certificate of Conformity', 'e-Phyto如需', 'Certificate of Origin', 'e-Licence如需'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文/法文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'GUCE账号/进口商资料', 'FDI状态', 'SYDAM/e-DAU申报资料', 'Certificate of Origin', 'e-Certificate of Conformity是否涉及', 'e-Phyto/health certificate如需', 'e-Licence或特殊授权如需', 'ABJ或最终城市', '每件尺寸重量', '是否需要二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ABJ 阿比让航线页', href: '/africa-air-freight/abj/' },
+      { label: '加纳ACC与科特迪瓦ABJ', href: '/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '塞内加尔DSS DPI/DIPA', href: '/insights/senegal-dss-dpi-dipa-customs-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'GUCE Côte d’Ivoire: General Terms and Modules', href: 'https://guce.gouv.ci/cgu?lang=en' },
+      { label: 'GUCE Support: Présentation des modules GUCE', href: 'https://support.guce.gouv.ci/portal/fr/kb/articles/presentation-des-modules-guce' },
+      { label: 'Douanes Ivoiriennes: Procédures et Bureau de dédouanement des marchandises', href: 'https://www.douanes.ci/professionnel/procedures-et-bureau-de-dedouanements' },
+      { label: 'Douanes Ivoiriennes: Marchandises prohibées/interdites', href: 'https://www.douanes.ci/professionnel/marchandises-prohibeesinterdites' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
