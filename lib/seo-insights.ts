@@ -588,6 +588,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'south-africa-jnb-sars-nrcs-loa-air-freight-clearance',
+    title: '南非JNB空运清关：SARS进口申报、NRCS LOA和ITAC许可要提前准备什么？',
+    excerpt:
+      '中国到南非JNB空运，电子电器、机械设备、汽车配件、二手设备和项目备件不能只看航班。SARS进口申报、Goods Declaration、NRCS Letter of Authority、ITAC进口许可、发票箱单和Air Waybill要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['南非JNB清关资料', 'NRCS LOA南非空运', 'SARS进口申报', '中国到南非空运清关'],
+    template: 'generated',
+    audience: ['南非进口商', '电子电器出口商', '机械设备工厂', '南部非洲项目货代'],
+    angle: '把 SARS 进口申报、NRCS LOA 和 ITAC 进口许可转成 JNB 空运询价前的清关资料预审动作。',
+    sections: [
+      {
+        heading: 'JNB空运先判断SARS申报资料',
+        body: [
+          'JNB 约翰内斯堡是南非本土和南部非洲内陆项目货的重要入口，常见货物包括电子电器、机械设备、汽车配件、矿业备件、工厂维修件和高价值急件。客户只问中国到 JNB 空运多少钱时，销售要先判断进口商、清关代理、税号、发票箱单和 Air Waybill 是否能跑通 SARS 进口申报。',
+          'SARS 的 Imports 和 Goods Declaration 页面把进口清关放在 Customs 流程里处理。对空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商资料和目的地代理信息必须一致；否则航班再快，也会在 JNB 到港后变成补料、估价、查验或仓储。',
+        ],
+        bullets: ['SARS进口申报', 'Goods Declaration', 'Air Waybill', '发票箱单一致'],
+      },
+      {
+        heading: '电子电器和受控产品要问NRCS LOA',
+        body: [
+          '南非不是所有货都只按普通清关处理。电子电器、照明设备、插头插座、电源类产品、部分机械和受强制规范管理的产品，可能涉及 National Regulator for Compulsory Specifications（NRCS）的 Letter of Authority（LOA）或相关合规文件。',
+          'NRCS 的电工类 LOA 管理流程文件说明，相关产品需要按强制规范和申请流程提交资料。对出口商和货代来说，重点不是背法规，而是提前把产品规格、型号、测试报告、照片、HS Code、进口商/申请主体和是否已有 LOA 问清楚。LOA 不是货到机场后临时补一张纸。',
+        ],
+        bullets: ['NRCS Letter of Authority', '电子电器', '照明和电源类产品', '测试报告和型号资料'],
+      },
+      {
+        heading: '二手设备和特殊货要查ITAC许可',
+        body: [
+          '南非对部分进口货物还有 import control 要求。ITAC 的 Import Control 页面是进口许可和受控货物的重要入口，二手设备、旧机械、受管制产品或敏感货物不能默认按普通货走。',
+          '实际询价时，要把 JNB 空运拆成两条线：一条判断航班、尺寸重量、是否需要主甲板或欧洲中转；另一条判断 SARS 申报、NRCS LOA、ITAC 许可、目的地代理和最终城市交付。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['ITAC进口许可', '二手设备', '受控产品', '最终城市交付'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '货值和原产地', '进口商税号/VAT资料', 'SARS清关代理', 'NRCS LOA是否需要', '测试报告或产品证书', 'ITAC进口许可是否涉及', 'JNB或最终城市', '每件尺寸重量', '是否需要主甲板或二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 约翰内斯堡航线页', href: '/africa-air-freight/jnb/' },
+      { label: 'JNB矿业急件路线判断', href: '/insights/jnb-mining-spares-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'South African Revenue Service: Imports', href: 'https://www.sars.gov.za/customs-and-excise/import-export-and-transit/imports/' },
+      { label: 'South African Revenue Service: Goods Declaration', href: 'https://www.sars.gov.za/customs-and-excise/goods-declaration/' },
+      { label: 'NRCS: Electrotechnical LOA Admin Procedure', href: 'https://www.nrcs.org.za/Documents/Electrotech/LOA%20Admin%20Procedure/LOA%20ADMIN%20Revised%2012_06%20May%202019.pdf' },
+      { label: 'International Trade Administration Commission: Import Control', href: 'https://itac.org.za/import-control/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
