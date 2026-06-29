@@ -3978,6 +3978,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'eritrea-asm-asycuda-world-import-permit-air-freight-clearance',
+    title: '厄立特里亚ASM空运清关：ASYCUDA World、进口许可证和Asmara资料怎么准备？',
+    excerpt:
+      '中国到厄立特里亚ASM/Asmara空运，医疗物资、通信设备、项目备件、车辆零件和援助物资不能只问航班。Eritrea ASYCUDA World、每票进口许可证、Certificate of Origin、AWB、发票、箱单和当地broker责任要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['厄立特里亚ASM清关资料', 'Eritrea ASYCUDA World', 'Asmara import permit', 'ASM air freight customs', 'Eritrea import licence', 'Asmara customs clearance', '中国到厄立特里亚空运'],
+    template: 'generated',
+    audience: ['厄立特里亚进口商', '医疗和援助物资供应商', '通信设备供应商', '工程项目和车辆备件客户'],
+    angle: '用ASM、Asmara customs clearance、Eritrea ASYCUDA World、import permit和Certificate of Origin承接厄立特里亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'ASM空运先核进口许可证',
+        body: [
+          '厄立特里亚空运主要看ASM Asmara International Airport。适合医疗物资、援助物资、通信设备、项目备件、检测仪器、车辆零件、小批量高价值急件和文件类货物。询价时不能只确认中国到Asmara有没有航班，还要先确认进口商、当地清关代理、进口许可证、AWB、商业发票、装箱单、HS Code、货值和最终交付责任。',
+          '50 Million African Women Speak的Eritrea import licences页面说明，Ministry of Trade and Industry下的Department of Foreign Trade监管进出口和外贸许可证；每一票进口货物都需要进口许可，National Bank of Eritrea监管进出口相关外汇事项。页面还列出Certificate of Origin要求，以及进口许可证申请需要的申请表、税务清关、城市管理清关、办公室/仓库产权或租赁资料等。',
+        ],
+        bullets: ['ASM Asmara airport', 'Eritrea import permit', 'Certificate of Origin', 'local broker pre-check'],
+      },
+      {
+        heading: 'ASYCUDA World会改变资料节奏',
+        body: [
+          'UNDP Eritrea发布的信息显示，厄立特里亚已启用新的数字海关管理系统ASYCUDA World，用来替换2007年以来使用的旧系统。该项目把系统源代码转交给厄立特里亚政府，方便本地专家按本国贸易生态定制；海关站点通过安全内部网络互联，在互联网不稳定时仍可进行数据交换和处理。',
+          '这对空运清关的实际含义是：资料不能散在聊天记录里，必须变成可申报的数据链。进口商、清关代理、发货人和货代要提前对齐品名、HS Code、用途、发票金额、原产地、许可证状态、AWB和货物属性，否则数字化系统不会替你修正错误，只会更快暴露资料缺口。',
+        ],
+        bullets: ['Eritrea ASYCUDA World', 'digital customs management', 'clearing agents trained', 'data chain accuracy'],
+      },
+      {
+        heading: '医疗、通信和项目货不要只报重量',
+        body: [
+          'ASM询价如果只是“多少公斤、几方、多少钱”，大概率会漏掉真正的风险。医疗耗材、药品、检测设备、通信设备、无线模块、服务器、车辆零件、二手设备和援助物资，通常要先确认进口许可、最终用途、是否涉及其他主管部门、是否需要原产地证、是否有品牌型号和技术资料。',
+          '销售动作应该是先收资料再报价：英文品名、法文/当地可用描述如有、HS Code、货值、品牌型号、产品照片、是否二手、是否带电池或无线通信模块、MSDS/DG资料如需、进口商许可证状态、当地broker联系人和最晚到货时间。',
+        ],
+        bullets: ['medical cargo', 'telecom equipment', 'project spares', 'used equipment screening'],
+      },
+      {
+        heading: 'ASM报价要把外汇和末端交付问出来',
+        body: [
+          'Womenconnect页面明确提到National Bank of Eritrea监管进口出口相关外汇事项。对商业货来说，客户能不能完成付款、进口商外汇安排是否匹配、贸易条款和发票金额是否一致，都会影响清关和交付节奏。不要把这些问题留到货到ASM之后。',
+          '可执行的报价边界是：只承诺空运段，还是包含ASM机场提货、清关协助、税费垫付、Asmara市内交付或外省转运。厄立特里亚票要把责任写清，尤其是援助、项目和高价值设备，避免“运到机场”和“客户拿到货”之间出现无人负责的空档。',
+        ],
+        bullets: ['foreign currency regulation', 'airport pickup', 'final delivery responsibility', 'quote boundary'],
+      },
+    ],
+    checklist: ['ASM目的机场', '最终城市/医院/项目现场', '进口商资料', '当地清关代理/broker资料', '进口许可证状态', 'Department of Foreign Trade相关许可如需', 'National Bank外汇安排如需', 'Certificate of Origin', 'HS Code', '英文品名和用途', '品牌型号', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '货值和贸易条款', '是否医疗/通信/二手/带电/无线模块', 'MSDS/DG资料如需', '进口许可证申请资料缺口', 'ASYCUDA World申报资料责任', '税费和放行责任', '每件尺寸重量', '包装照片', '是否可经CAI/DXB/IST/JED中转', 'ASM机场提货和末端交付责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CAI 开罗东北非中转', href: '/africa-air-freight/cai/' },
+      { label: 'ADD 亚的斯亚贝巴中转', href: '/africa-air-freight/add/' },
+      { label: '中非BGF清关资料', href: '/insights/central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance/' },
+      { label: '索马里MGQ清关资料', href: '/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'UNDP Eritrea: Eritrea Launches Landmark Digital Customs System', href: 'https://www.undp.org/eritrea/news/eritrea-launches-landmark-digital-customs-system-modernizing-trade' },
+      { label: '50 Million African Women Speak: Import Licences - Eritrea', href: 'https://www.womenconnect.org/web/eritrea/import-licences' },
+      { label: 'UNCTAD: ASYCUDA Report 2025', href: 'https://unctad.org/publication/asycuda-report-2025' },
+      { label: 'Flydubai: Asmara Airport ASM', href: 'https://www.flydubai.com/en-us/destinations/airports/asmara-airport/' },
+      { label: 'Freightnet: Freight Forwarders in Eritrea', href: 'https://www.freightnet.com/directory/p1/cER/s30.htm' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
