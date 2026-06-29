@@ -430,6 +430,59 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'tanzania-dar-pvoc-coc-air-freight-clearance',
+    title: '坦桑尼亚DAR空运清关：TBS PVoC/CoC和TRA预申报怎么准备？',
+    excerpt:
+      '中国到坦桑尼亚DAR空运，电子电器、机械设备、建材、汽配和项目备件不能只看航班。TBS PVoC/CoC、TRA预到港申报、TANCIS、发票箱单、AWB和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['坦桑尼亚PVOC空运', 'DAR清关资料', 'TBS COC坦桑尼亚', '中国到坦桑尼亚空运清关'],
+    template: 'generated',
+    audience: ['坦桑尼亚进口商', '设备工厂', '建材和电子电器供应商', '东非项目货代'],
+    angle: '把 TBS PVoC/CoC 和 TRA 预到港申报转成 DAR 空运询价前的清关资料预审动作。',
+    sections: [
+      {
+        heading: 'DAR空运不能只看舱位',
+        body: [
+          'DAR 达累斯萨拉姆是坦桑尼亚和东非项目货的重要入口，电子电器、机械设备、建材、汽配、工业耗材和项目备件都常见。很多客户只问中国到 DAR 空运多少钱，但真正影响交付的是 TBS 和 TRA 的资料是否能提前跑通。',
+          'Tanzania Bureau of Standards 说明，PVoC 是针对进口到坦桑尼亚的特定货物，在出口国装运前核验其是否符合适用国家标准的符合性评估程序。对销售来说，询价阶段就要判断是否属于 PVoC 管控、是否需要 CoC、谁负责申请和检测。',
+        ],
+        bullets: ['TBS PVoC适用性', 'Certificate of Conformity', '出口国装运前核验', 'DAR到港清关'],
+      },
+      {
+        heading: 'CoC缺失会变成到港成本',
+        body: [
+          'TBS 页面写得很直接：受 PVoC 管制的货物在发往坦桑尼亚前必须取得清关文件和 Certificate of Conformity（CoC），否则到达坦桑尼亚口岸后可能被拒收或罚款。这个风险不能等到货到机场再处理。',
+          '实际询价时，客户需要给出 HS Code、产品用途、规格型号、品牌、照片、检测/认证资料和进口商信息。只写“spare parts”“equipment”“building materials”，不够判断是否需要 PVoC 或目的地许可。',
+        ],
+        bullets: ['HS Code', '规格型号和品牌', '产品照片', '测试/认证资料'],
+      },
+      {
+        heading: 'TRA预申报和TANCIS要提前跑',
+        body: [
+          'Tanzania Revenue Authority 的 Pre-Arrival Declaration 页面说明，进口商或代理可以在货物到达入境点前开始清关手续，从而减少到货后的清关时间。TRA 的进口程序页面还说明，进口文件通过 TANCIS 在线提交，进口文件包括 Final Invoice、Packing List、Airway Bill、授权书和相关进口许可。',
+          '所以 DAR 空运询价必须拆成两条线：一条判断航班、尺寸、重量和是否需要主甲板；另一条判断 PVoC/CoC、TANCIS、AWB、发票箱单、进口许可和目的地代理。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['Pre-Arrival Declaration', 'TANCIS', 'Final Invoice和Packing List', 'Airway Bill'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Airway Bill资料', 'TBS PVoC是否适用', 'CoC是否已申请', '进口许可是否涉及TBS/TMDA等', '进口商授权书', '目的机场DAR或最终城市', '每件尺寸重量', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DAR 达累斯萨拉姆航线页', href: '/africa-air-freight/dar/' },
+      { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
+      { label: '肯尼亚NBO PVoC/IDF', href: '/insights/kenya-nbo-pvoc-idf-air-freight-documents/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Tanzania Bureau of Standards: Imports and Export Control', href: 'https://www.tbs.go.tz/pages/inspection' },
+      { label: 'Tanzania Revenue Authority: Pre-Arrival Declaration', href: 'https://www.tra.go.tz/page/pre-arrival-declaration' },
+      { label: 'Tanzania Revenue Authority: Import Procedures', href: 'https://www.tra.go.tz/page/import-procedures' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
