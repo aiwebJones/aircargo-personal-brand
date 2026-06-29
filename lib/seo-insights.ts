@@ -1021,6 +1021,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'drc-fih-dgda-guice-occ-air-freight-clearance',
+    title: '刚果金FIH空运清关：DGDA、GUICE、OCC/BIVAC和DAU资料怎么准备？',
+    excerpt:
+      '中国到刚果金FIH金沙萨空运，通讯设备、政府项目货、工业备件、矿业物资和高价值急件不能只看航班。DGDA海关申报、GUICE单一窗口、DAU电子申报、航空舱单、法语文件和OCC/BIVAC检验要提前对齐。',
+    date: '2026-06-30',
+    readTime: '15 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['刚果金FIH清关资料', 'DGDA GUICE清关', 'OCC BIVAC刚果金', '中国到刚果金空运清关'],
+    template: 'generated',
+    audience: ['刚果金进口商', '通讯和政府项目供应商', '矿业设备工厂', '中非项目货代'],
+    angle: '把 DGDA 进口清关、GUICE 单一窗口、DAU 电子申报和 OCC/BIVAC 预装运检验转成 FIH 询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'FIH空运先判断DGDA和航空舱单',
+        body: [
+          'FIH 金沙萨是刚果金首都区、通讯项目、政府项目、工业备件和西部刚果金需求的重要入口。它和 FBM 卢本巴希矿区逻辑不同：FIH 更容易遇到行政资料、进口商资质、目的港文件和法语单证协同问题。',
+          'DGDA 的进口清关说明写明，进入刚果金的国际货物不论海运、陆运还是空运，都要由承运人向海关提交运输工具载货申报。空运场景下，air cargo manifest 是航空货物的载货申报，AWB 是运输合同资料，二者要和发票箱单、品名、件数和重量一致。',
+        ],
+        bullets: ['DGDA海关', 'Air cargo manifest', 'AWB/LTA', 'FIH金沙萨入口'],
+      },
+      {
+        heading: 'DAU电子申报和5天临时仓不能忽略',
+        body: [
+          'DGDA 进口流程还说明，进口货物进入海关监管后需要作海关申报，刚果金的海关申报以电子方式办理，使用 Document Administratif Unique（DAU）。页面同时提示，空运和陆运货物临时仓停留期限通常按 5 天计算，文件慢会直接挤压清关窗口。',
+          '所以 FIH 询价不能只收重量和机场代码。HS Code、法语/英文品名、型号规格、品牌、货值、原产地、进口商 NIF、清关代理、商业发票、装箱单、AWB、保险/运费、合同和最终交付城市，都要在订舱前对齐。',
+        ],
+        bullets: ['DAU电子申报', '5天临时仓窗口', '进口商NIF', '法语文件'],
+      },
+      {
+        heading: 'GUICE和OCC/BIVAC决定是否能顺利放行',
+        body: [
+          'SEGUCE 把 GUICE 定位为刚果金外贸单一窗口，用于进口、出口和过境文件的电子化流转；其预清关模块覆盖进口、出口和过境所需监管文件。Trade.gov 也说明，Kinshasa、Lubumbashi 等试点点位的预清关要在 GUICE 电子平台办理。',
+          '刚果金还要提前判断 OCC/BIVAC 预装运检验。DGDA 页面提示进口货物装船前检验仍是法定义务并由 OCC 处理；Trade.gov 进一步列出 BIVAC、OCC、进口许可证、商业发票、装箱单、提单/AWB、保险证书和原产地证等文件。对中国发刚果金空运来说，能飞只是第一关，能通过 OCC/BIVAC、DAU 和 GUICE 才是交付风险的关键。',
+        ],
+        bullets: ['GUICE单一窗口', 'OCC/BIVAC预装运检验', '进口许可证', 'Certificate of Origin'],
+      },
+    ],
+    checklist: ['HS Code', '法语/英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill/LTA资料', 'air cargo manifest资料', '进口商NIF', '清关代理资料', 'DAU电子申报资料', 'GUICE预清关资料', '进口许可证如需', 'OCC/BIVAC检验资料如需', 'Certificate of Origin如需', '保险证书如需', 'FIH或最终城市', '每件尺寸重量', '是否需要经JNB/NBO/欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'FIH 金沙萨航线页', href: '/africa-air-freight/fih/' },
+      { label: 'FBM 卢本巴希矿区货', href: '/insights/fbm-copperbelt-mining-equipment-air-freight/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'DGDA: Procedures de dedouanement a l importation en RDC', href: 'https://douane.gouv.cd/les-procedures-douanieres/les-procedures-de-dedouanement-a-limportation-en-rdc%EF%BF%BC/' },
+      { label: 'SEGUCE RDC: Guichet Unique Integral pour le Commerce Exterieur', href: 'https://segucerdc.cd/' },
+      { label: 'International Trade Administration: DRC Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/democratic-republic-congo-import-requirements-and-documentation' },
+      { label: 'OCC: Office Congolais de Controle', href: 'https://www.occ.cd/' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
