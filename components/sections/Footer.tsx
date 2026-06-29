@@ -130,6 +130,8 @@ export default function Footer() {
               <a href="/insights/guinea-cky-guceg-import-declaration-air-freight-clearance/" className="hover:text-amberGold">几内亚CKY清关资料</a>
               <a href="/insights/burkina-faso-oua-sydonia-waemu-air-freight-clearance/" className="hover:text-amberGold">布基纳法索OUA清关</a>
               <a href="/insights/niger-nim-guce-asycuda-air-freight-clearance/" className="hover:text-amberGold">尼日尔NIM清关资料</a>
+              <a href="/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/" className="hover:text-amberGold">加蓬LBV清关资料</a>
+              <a href="/insights/drc-fbm-guice-bivac-mining-spares-air-freight-clearance/" className="hover:text-amberGold">刚果金FBM矿业清关</a>
             </div>
           </div>
         </div>

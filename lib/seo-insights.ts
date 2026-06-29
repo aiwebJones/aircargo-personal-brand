@@ -2311,6 +2311,114 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'gabon-lbv-asycuda-cemac-air-freight-clearance',
+    title: '加蓬LBV空运清关：ASYCUDA World、CEMAC和符合性证书怎么准备？',
+    excerpt:
+      '中国到加蓬LBV的油气、能源、木材设备和长货项目，不能只看航班。ASYCUDA World、CEMAC海关框架、发票/AWB、危险品许可和 regulated goods 符合性证书要提前确认。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['加蓬LBV清关资料', 'Gabon ASYCUDA World customs', 'Gabon CEMAC customs', 'LBV利伯维尔空运清关', '中国到加蓬空运'],
+    template: 'generated',
+    audience: ['加蓬进口商', '油气能源项目客户', '工程设备供应商', '中非法语区货代同行'],
+    angle: '用LBV、ASYCUDA World、CEMAC和符合性证书承接加蓬油气/能源项目货清关搜索。',
+    sections: [
+      {
+        heading: 'LBV长货能飞，不等于能顺利放行',
+        body: [
+          '利伯维尔LBV适合加蓬油气、能源、木材加工、工程设备和中非项目货。前面已经有长货经LGG/BRU进LBV的路线页，但实际成交时，客户更关心到港后能不能按时清关、提货和转运到项目现场。',
+          'Trade.gov 2024年3月7日更新的加蓬进口要求页面提示，进入加蓬的货物需要随附运输单证和发票；空运场景下，运输单证要对应AWB，而不是海运提单。发票、装箱单、AWB、HS Code、货值、收货人和法语品名要提前一致。',
+        ],
+        bullets: ['LBV利伯维尔', 'AWB资料', '法语品名', '项目现场交付'],
+      },
+      {
+        heading: 'ASYCUDA World和CEMAC决定申报口径',
+        body: [
+          'ASYCUDA国家页显示加蓬使用ASYCUDA World平台，Trade.gov海关规则页面也说明加蓬属于CEMAC自由贸易区，主管海关为Direction Generale des Douanes et Droits Indirects。',
+          '这意味着销售不能把加蓬清关说成一句“目的港处理”。要提前让进口商或当地代理确认HS Code、货值、CEMAC税费口径、系统申报、当地代理资质和最终交付边界。',
+        ],
+        bullets: ['ASYCUDA World', 'CEMAC', 'DGDDI', 'HS Code和货值'],
+      },
+      {
+        heading: '许可证和符合性证书要按货物属性筛',
+        body: [
+          'Trade.gov页面提到，农产品等货物可能涉及进口许可和卫生证书，危险产品如武器、爆炸品、化学品也需要许可；受监管货物自2016年2月起需要符合性证书。',
+          '对空运项目货来说，化工品、带电设备、检测仪器、油气备件、电气设备和长货包装，都要先问清楚是否触发证书、危险品、符合性或特殊处理要求。询价和报价里把清关责任、目的地额外费用和进口商责任写清，比事后解释更能保护成交。',
+        ],
+        bullets: ['Certificate of conformity', '危险产品许可', '油气设备', '费用边界'],
+      },
+    ],
+    checklist: ['LBV目的机场', '最终城市/项目现场', '进口商资料', '商业发票', '装箱单', 'AWB资料', 'HS Code', '法语/英文品名', '货值币种', 'ASYCUDA申报代理', 'CEMAC税费口径', '符合性证书场景', '危险品/化工许可场景', '每件尺寸重量', '长货包装照片', '目的地卸货和转运安排'],
+    relatedRoutes: [
+      { label: 'LBV 利伯维尔航线页', href: '/africa-air-freight/lbv/' },
+      { label: 'LBV 8米长货经LGG/BRU', href: '/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Gabon - Import Requirements and Documentations', href: 'https://www.trade.gov/country-commercial-guides/gabon-import-requirements-and-documentations' },
+      { label: 'Trade.gov: Gabon - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/gabon-customs-regulations' },
+      { label: 'ASYCUDA: Gabon', href: 'https://asycuda.org/fr/usercountries-gabon-fr/' },
+      { label: 'Direction Generale des Douanes et Droits Indirects du Gabon', href: 'https://douanes.ga/' },
+    ],
+  },
+  {
+    slug: 'drc-fbm-guice-bivac-mining-spares-air-freight-clearance',
+    title: '刚果金FBM矿业备件清关：GUICE、DGDA、OCC/BIVAC和Lubumbashi资料怎么准备？',
+    excerpt:
+      '中国到FBM卢本巴希的铜钴矿区备件，报价前要确认GUICE电子平台、DGDA海关、OCC/BIVAC预装运检验、法语文件、进口许可证和矿区最终交付。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['FBM卢本巴希清关资料', 'Lubumbashi GUICE import clearance', 'OCC BIVAC刚果金矿业备件', 'DGDA FBM空运清关', '中国到刚果金矿区空运'],
+    template: 'generated',
+    audience: ['刚果金矿业进口商', '铜钴矿区设备供应商', '矿山维修采购', '中非项目货代'],
+    angle: '把刚果金GUICE/BIVAC规则从FIH首都货延伸到FBM铜钴矿区高价值备件询价。',
+    sections: [
+      {
+        heading: 'FBM不是FIH的复制版',
+        body: [
+          'FBM卢本巴希服务的是刚果金铜钴矿区、工厂维修、泵阀电机、电气柜、破碎筛分设备和停产急件。FIH更偏首都区和政府/通讯项目，FBM更需要把清关、矿区转运、收货人代理和现场交付窗口放在一起判断。',
+          'Trade.gov 2026年2月20日更新的刚果金进口要求页面明确提到，Kinshasa、Lubumbashi、Matadi、Goma、Boma、Kisangani 等试点点位的进口、出口和过境预清关要在GUICE电子平台办理。Lubumbashi被点名，这就是FBM页面单独存在的理由。',
+        ],
+        bullets: ['FBM卢本巴希', 'Lubumbashi试点', 'GUICE电子平台', '矿区备件'],
+      },
+      {
+        heading: 'OCC/BIVAC会影响高货值备件',
+        body: [
+          'Trade.gov同一页面说明，BIVAC是刚果金授权的进口预装运检验机构，面向一定货值以上进口货物，并与DGDA和OCC相关。页面还列出商业发票、装箱单、提单或空运单、进口许可证、形式发票、保险证书和原产地证等文件。',
+          '矿业备件常常价值高、型号具体、用途明确，一旦发票品名、型号、数量、货值、HS Code或许可证资料不一致，会直接影响BIVAC/OCC、GUICE和DGDA申报。销售报价前必须把文件一致性当作询价条件。',
+        ],
+        bullets: ['OCC/BIVAC', '进口许可证', 'Commercial invoice', 'AWB'],
+      },
+      {
+        heading: '矿区最终交付要和清关一起谈',
+        body: [
+          '刚果金海关规则页面提示，DGDA管理海关，流程可能变化且进口商应使用持牌清关代理处理申报、付款和放行。对FBM矿区货来说，放行后还要看矿区位置、提货车辆、卸货设备、安保窗口和现场签收。',
+          '正确报价不是只写“到FBM机场”。要把空运段、清关段、矿区转运段拆开：哪些费用包含，哪些由进口商或当地代理负责，哪些资料不齐会导致延误。真实客户更愿意买这种判断，而不是一个没有边界的低价。',
+        ],
+        bullets: ['持牌清关代理', '矿区转运', '卸货条件', '费用边界'],
+      },
+    ],
+    checklist: ['FBM目的机场', '最终矿区/城市', '进口商NIF/注册资料', 'GUICE预清关状态', 'DGDA清关代理', '商业发票', '形式发票', '装箱单', 'AWB资料', 'HS Code', 'OCC/BIVAC检验场景', '进口许可证场景', '保险证书场景', '原产地证场景', '设备型号和用途', '每件尺寸重量', '包装照片', '矿区提货/卸货安排'],
+    relatedRoutes: [
+      { label: 'FBM 卢本巴希航线页', href: '/africa-air-freight/fbm/' },
+      { label: 'FBM 铜钴矿区备件空运', href: '/insights/fbm-copperbelt-mining-equipment-air-freight/' },
+      { label: 'FIH 刚果金首都区清关', href: '/insights/drc-fih-dgda-guice-occ-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: DRC - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/democratic-republic-congo-import-requirements-and-documentation' },
+      { label: 'Trade.gov: DRC - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/democratic-republic-congo-customs-regulations' },
+      { label: 'SEGUCE RDC: Guichet Unique Integral pour le Commerce Exterieur', href: 'https://segucerdc.cd/' },
+      { label: 'Office Congolais de Controle', href: 'https://www.occ.cd/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
