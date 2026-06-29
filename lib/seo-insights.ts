@@ -809,18 +809,18 @@ export const seoInsights: SeoInsight[] = [
   },
   {
     slug: 'rwanda-kgl-rra-rsb-air-freight-clearance-documents',
-    title: '卢旺达KGL空运清关：RRA电子单一窗口、RSB认证和到港资料怎么准备？',
+    title: '卢旺达KGL空运清关：RRA ReSW、RICA进口检验和RSB认证资料怎么准备？',
     excerpt:
-      '中国到卢旺达KGL空运，电子设备、医疗物资、工业备件、食品相关产品和项目货不能只看航班。RRA电子单一窗口、MAGERWA到货通知、RSB产品认证/质量检查、Air Waybill、商业发票、装箱单和进口许可要提前对齐。',
+      '中国到卢旺达KGL空运，电子设备、医疗物资、工业备件、食品相关产品和东非内陆项目货不能只看航班。RRA Rwanda Electronic Single Window、RICA机场进口检验、RSB产品认证、Air Waybill、商业发票、装箱单和进口许可要提前对齐。',
     date: '2026-06-30',
     readTime: '13 分钟',
     category: '政策合规',
     author: defaultAuthor,
     image: '/case-17t-2.jpg',
-    keywords: ['KGL清关资料', '卢旺达RRA进口清关', 'RSB认证卢旺达', '中国到卢旺达空运清关'],
+    keywords: ['KGL清关资料', 'Rwanda Electronic Single Window', 'RICA import inspection Rwanda', 'Kigali airport customs clearance', 'RSB认证卢旺达', '中国到卢旺达空运清关'],
     template: 'generated',
     audience: ['卢旺达进口商', '电子设备出口商', '医疗和食品供应商', '东非内陆项目货代'],
-    angle: '把 RRA 电子单一窗口、RSB 产品认证和 KGL 到港清关资料转成空运询价前的资料预审动作。',
+    angle: '把 RRA ReSW、RICA进口检验、RSB产品认证和KGL到港清关资料转成空运询价前的资料预审动作。',
     sections: [
       {
         heading: 'KGL空运先判断RRA电子单一窗口',
@@ -831,12 +831,12 @@ export const seoInsights: SeoInsight[] = [
         bullets: ['RRA电子单一窗口', '到货通知和舱单', '海关申报', 'KGL到港放行'],
       },
       {
-        heading: '质量检查和RSB资料要提前问',
+        heading: 'RICA进口检验和RSB资料要提前问',
         body: [
-          'RRA 电子单一窗口流程里包含 Quality Inspection，涉及 Customs Services Department 和 Rwanda Bureau of Standards/RSB 的选择性规则、查验通道和放行逻辑。不是每一票货都需要同样的证书，但电子设备、医疗相关货物、食品、化工品、建材和受控产品，都不能等货到 KGL 后才问监管资料。',
-          'Rwanda Standards Board 的 Product Certification 页面说明，产品认证包括在线申请、费用支付、工厂审核、抽样、产品测试、纠正措施关闭、认证决定和 Certificate of Conformity 等步骤。对出口商来说，重点是提前准备型号规格、测试报告、产品照片、HS Code、用途和进口商资料。',
+          'RICA 的 Import Inspection Unit 页面说明，该部门会在边境、内陆货站和机场货物入口检查进口货物是否符合标准或技术法规；不符合要求的货物可能被拒收、退运、返工或按规定处理，相关成本由进口商承担。KGL空运急件如果到港后才发现标签、标准或监管资料不成立，会直接变成清关和仓储成本。',
+          'Rwanda Standards Board 的 Product Certification 页面说明，产品认证包括在线申请、费用支付、工厂审核、抽样、产品测试、纠正措施关闭、认证决定和 Certificate of Conformity 等步骤。对出口商来说，重点是提前准备型号规格、测试报告、产品照片、HS Code、用途、标签资料和进口商资料。',
         ],
-        bullets: ['RSB产品认证', '质量检查', 'Certificate of Conformity', '测试报告和产品资料'],
+        bullets: ['RICA进口检验', '机场货物入口', 'RSB产品认证', 'Certificate of Conformity'],
       },
       {
         heading: '不同货类要拆开判断',
@@ -847,7 +847,7 @@ export const seoInsights: SeoInsight[] = [
         bullets: ['电子设备', '医疗和食品货物', '进口许可', 'Airway bill和原产地证'],
       },
     ],
-    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Certificate of Origin', '进口商TIN/RRA资料', '清关代理资料', 'MAGERWA到货通知', 'RRA电子单一窗口资料', 'RSB/质量检查是否涉及', '进口许可或监管许可如需', '测试报告/产品证书如需', 'KGL或最终城市', '每件尺寸重量', '最晚到货时间'],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'Certificate of Origin', '进口商TIN/RRA资料', '清关代理资料', 'MAGERWA到货通知', 'RRA ReSW电子单一窗口资料', 'RICA进口检验是否涉及', 'RSB/质量检查是否涉及', '进口许可或监管许可如需', '测试报告/产品证书如需', '标签和标准资料如需', 'KGL或最终城市', '每件尺寸重量', '最晚到货时间'],
     relatedRoutes: [
       { label: 'KGL 基加利航线页', href: '/africa-air-freight/kgl/' },
       { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
@@ -855,10 +855,12 @@ export const seoInsights: SeoInsight[] = [
       { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
     ],
     sources: [
+      { label: 'Rwanda Revenue Authority: Rwanda Electronic Single Window', href: 'https://www.rra.gov.rw/en/customs-services/rwanda-electronic-single-window' },
       { label: 'Rwanda Revenue Authority: Rwanda Electronic Single Window procedures', href: 'https://www.rra.gov.rw/en/customs-services/electronic-single-window/process-and-procedures-for-rwand-electronic-single-window' },
+      { label: 'RICA: Import Inspection Unit', href: 'https://www.rica.gov.rw/import-inspection-unit' },
       { label: 'Rwanda Standards Board: Product Certification', href: 'https://www.rsb.gov.rw/certifications/product-certification' },
       { label: 'Rwanda Trade Portal: Kigali International Airport procedures', href: 'https://rwandatrade.rw/procedure/223?l=en' },
-      { label: 'Rwanda Revenue Authority: Importation and Goods Clearance guide', href: 'https://www.rra.gov.rw/fileadmin/user_upload/Importation_and_Goods__Clearance_2024.pdf' },
+      { label: 'Trade.gov: Rwanda - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/rwanda-customs-regulations' },
     ],
   },
   {
