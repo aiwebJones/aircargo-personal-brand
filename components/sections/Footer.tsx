@@ -142,6 +142,7 @@ export default function Footer() {
               <a href="/insights/togo-lfw-awb-certificate-origin-air-freight-clearance/" className="hover:text-amberGold">多哥LFW清关资料</a>
               <a href="/insights/benin-coo-guce-avd-origin-air-freight-clearance/" className="hover:text-amberGold">贝宁COO清关资料</a>
               <a href="/insights/chad-ndj-air-waybill-asycuda-import-documents-clearance/" className="hover:text-amberGold">乍得NDJ清关资料</a>
+              <a href="/insights/angola-lad-asycuda-aduaneiro-air-freight-clearance/" className="hover:text-amberGold">安哥拉LAD清关资料</a>
             </div>
           </div>
         </div>

@@ -2753,6 +2753,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'angola-lad-asycuda-aduaneiro-air-freight-clearance',
+    title: '安哥拉LAD空运清关：ASYCUDA/ASY5、Documento Unico和ADV资料怎么准备？',
+    excerpt:
+      '中国到安哥拉LAD罗安达空运，油气项目货、矿业设备、能源备件、医疗设备和贸易补货不能只看航班。Angola ASYCUDA/ASY5、Documento Unico、ADV、Air Waybill、商业发票箱单和进口许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['安哥拉LAD清关资料', 'Luanda airport customs clearance', 'Angola ASYCUDA air cargo', 'Documento Unico Angola air freight', 'ADV Angola customs', '中国到安哥拉空运清关'],
+    template: 'generated',
+    audience: ['安哥拉进口商', '油气和能源设备供应商', '矿业备件工厂', '南部非洲项目货代'],
+    angle: '用2026年Angola ASY5上线、ASYCUDA空运舱单、Documento Unico和ADV承接LAD罗安达空运清关搜索。',
+    sections: [
+      {
+        heading: 'LAD空运先判断ASYCUDA资料链',
+        body: [
+          'LAD罗安达是安哥拉油气项目货、矿业备件、能源设备、医疗设备和高价值贸易补货的核心空运入口。客户只问中国到LAD空运多少钱时，销售要先判断进口商、清关代理、Air Waybill、发票箱单和ASYCUDA资料链能不能提前跑通。',
+          'ASYCUDA在2026年1月发布的消息显示，安哥拉已经上线第五代ASYCUDA海关管理软件ASY5，并由AGT、海关经纪人和私营部门参与，系统强调数字化申报、数据交换、货物跟踪和端到端海关流程。对LAD空运来说，价格不是第一风险，资料是否能进入系统才是第一风险。',
+        ],
+        bullets: ['LAD Luanda airport', 'Angola ASYCUDA air cargo', 'ASY5 customs digitalization', 'Air Waybill资料'],
+      },
+      {
+        heading: 'Documento Unico和ADV要跟发票一致',
+        body: [
+          'Trade.gov的安哥拉进口文件说明列出商业发票、Customs import declaration（Documento Unico）、Declaration of Customs Value（ADV）、packing list、进口许可证和其他文件。页面同时提醒，安哥拉进口手续耗时且监管变化会影响清关，所以要提前确认进口商资质和清关代理能力。',
+          '因此LAD询价不能只收重量和机场代码。HS Code、英文/葡文品名、型号规格、品牌、货值、币种、收货人税号、进口商注册状态、商业发票、装箱单、Air Waybill、ADV估价资料和Documento Unico申报字段要能互相对应。',
+        ],
+        bullets: ['Documento Unico', 'ADV customs value', 'Commercial invoice', '进口商注册和清关代理'],
+      },
+      {
+        heading: '空运舱单和受控货许可要前置',
+        body: [
+          'Angola IATA Cargo XML filing guidance说明，ASYCUDAWorld可接收IATA Cargo XML消息，包括Flight Manifest、Air Waybill和House Air Waybill；空运货物应在实际到达安哥拉前电子报送给海关，货物申报需在飞机起飞后尽快提交。',
+          'Trade.gov还提示，敏感产品如食品、医疗设备、药品和农业投入品可能需要MINCO进口许可；食品和药品也可能在清关期间涉及实验室检测。能源、医疗、化工、电子电器、二手设备、带电设备和油气项目备件，不适合到LAD后才问许可和产品监管。',
+        ],
+        bullets: ['Flight Manifest', 'MAWB/HAWB', 'MINCO import license', '受控货许可预审'],
+      },
+    ],
+    checklist: ['LAD目的机场', '最终城市/项目现场', '进口商税号/注册状态', '清关代理资料', 'HS Code', '英文/葡文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'MAWB/HAWB资料', 'Flight Manifest字段', 'Documento Unico资料', 'ADV估价资料', '进口许可证如需', 'MINCO license如需', '实验室检测或产品监管如需', '每件尺寸重量', '包装照片', '是否需要经JNB或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'JNB 南部非洲入口', href: '/africa-air-freight/jnb/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '纳米比亚WDH清关资料', href: '/insights/namibia-wdh-namra-sad500-asycuda-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: Angola operational launch of ASY5', href: 'https://asycuda.org/en/angola-marks-the-operational-launch-of-asy5-the-5th-generation-of-asycuda-customs-management-software/' },
+      { label: 'CHAMP/ASYCUDA: IATA Cargo XML Filing Guidance Version Angola', href: 'https://www.champ.aero/hubfs/CHAMP_November2021/Pdf/asycuda_iata_cargo_xml_filing_guidance_version_angola.pdf' },
+      { label: 'Trade.gov: Angola - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/angola-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Angola - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/angola-customs-regulations' },
+      { label: 'Trade.gov: Angola - Standards for Trade', href: 'https://www.trade.gov/country-commercial-guides/angola-standards-trade' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
