@@ -2582,6 +2582,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'togo-lfw-awb-certificate-origin-air-freight-clearance',
+    title: '多哥LFW空运清关：Air Waybill、原产地证、GUCE/OTR和受控货许可怎么准备？',
+    excerpt:
+      '中国到多哥LFW洛美空运，西非项目货、港口备件、电子电器、工程设备和贸易补货不能只看航班。Air Waybill、商业发票、原产地证、Packing List、GUCE/OTR手续和受控货许可要提前对齐。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['多哥LFW清关资料', 'Togo air waybill customs', 'Togo certificate of origin', 'Lome air freight clearance', '中国到多哥空运清关'],
+    template: 'generated',
+    audience: ['多哥进口商', '西非法语区货代', '工程设备工厂', '港口备件供应商'],
+    angle: '用LFW、Air Waybill、原产地证、GUCE/OTR和受控货许可承接多哥空运清关搜索。',
+    sections: [
+      {
+        heading: 'LFW空运先把文件链跑通',
+        body: [
+          'LFW洛美适合多哥本土贸易、港口城市备件、西非项目物资和经洛美延伸的区域货。客户只问中国到LFW空运多少钱时，要先判断进口商、清关代理、OTR申报资料、Air Waybill、商业发票和装箱单是否能一致。',
+          'Trade.gov 2026年6月16日更新的多哥进口文件页面列出Bill of lading / air waybill、certificate of origin、commercial invoice、export declaration、licenses or permits for regulated goods、packing list、sanitary and phytosanitary certificates等资料。空运场景下，核心运输文件就是AWB。',
+        ],
+        bullets: ['LFW洛美', 'Air Waybill', 'Commercial invoice', 'Packing list'],
+      },
+      {
+        heading: '原产地证已经是申报重点',
+        body: [
+          '同一Trade.gov页面还说明，2025年3月多哥启动Togo Customs 2025项目，Office Togolais des Recettes（OTR）要求证明货物原产地，申报必须包含有效原产地证及其编号。',
+          '这意味着中国出口商不能把Certificate of Origin当成可有可无的补充文件。询价时就要确认出口商、生产商、HS Code、发票品名、原产地证类型、编号、收货人和清关代理要求，避免到港后因为证书和申报字段不一致而补料。',
+        ],
+        bullets: ['Certificate of Origin', 'OTR', 'Togo Customs 2025', '证书编号一致'],
+      },
+      {
+        heading: 'GUCE流程和受控货许可提前筛',
+        body: [
+          'Togo Trade Portal的空运进口手续页面列出Air Waybill、prior import and marketing declaration、certificate of origin、Special Import Authorization等流程入口。不是每票货都需要全部文件，但受控货、食品/植物来源产品、医疗相关货、通信设备、电子电器和特殊货物要提前问清楚。',
+          'Bureau Veritas的Togo VOC页面也显示多哥有符合性验证项目。实际报价时，把航班装载、AWB文件链、原产地证、受控货许可、GUCE/OTR流程和最终交付边界分开确认，才是能成交的报价。',
+        ],
+        bullets: ['GUCE流程', 'Special Import Authorization', 'VOC/CoC场景', '最终交付边界'],
+      },
+    ],
+    checklist: ['LFW目的机场', '最终城市/项目现场', '进口商资料', '清关代理资料', 'Air Waybill资料', '商业发票', '装箱单', 'HS Code', '英文/法文品名', '货值币种', 'Certificate of Origin', '原产地证编号', 'export declaration如需', 'prior import declaration场景', 'Special Import Authorization场景', 'regulated goods许可场景', 'sanitary/phytosanitary证书如需', 'VOC/CoC场景', '每件尺寸重量', '包装照片', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'ACC 阿克拉航线页', href: '/africa-air-freight/acc/' },
+      { label: 'ABJ 阿比让清关资料', href: '/insights/cote-divoire-abj-guce-fdi-sydam-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Togo - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/togo-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Togo - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/togo-customs-regulations' },
+      { label: 'Trade.gov: Togo - Standards for Trade', href: 'https://www.trade.gov/country-commercial-guides/togo-standards-trade' },
+      { label: 'Togo Trade Portal: Air Import Formalities', href: 'https://togotrade.gouv.tg/procedure/91?embed=false&includeSearch=true&l=en' },
+      { label: 'Bureau Veritas Verigates: Togo VOC Programme', href: 'https://verigates.bureauveritas.com/programmes/togo' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
