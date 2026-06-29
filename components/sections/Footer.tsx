@@ -134,6 +134,7 @@ export default function Footer() {
               <a href="/insights/drc-fbm-guice-bivac-mining-spares-air-freight-clearance/" className="hover:text-amberGold">刚果金FBM矿业清关</a>
               <a href="/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/" className="hover:text-amberGold">南非CPT/DUR清关</a>
               <a href="/insights/south-africa-cpt-dur-port-marine-equipment-air-freight/" className="hover:text-amberGold">南非港口设备空运</a>
+              <a href="/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/" className="hover:text-amberGold">喀麦隆DLA清关资料</a>
             </div>
           </div>
         </div>

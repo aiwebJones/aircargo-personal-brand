@@ -2528,6 +2528,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'cameroon-dla-avi-pecae-coc-air-freight-clearance',
+    title: '喀麦隆DLA空运清关：AVI、PECAE/CoC、GUCE和Air Waybill资料怎么准备？',
+    excerpt:
+      '中国到喀麦隆DLA杜阿拉空运，工业设备、电子电器、港口备件、油气物资和中非项目货不能只看航班。AVI申请、PECAE/CoC、GUCE单一窗口、Air Waybill、发票箱单和进口商资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['喀麦隆DLA清关资料', 'Cameroon AVI SGS customs', 'PECAE CoC Cameroon', 'Douala air freight clearance', '中国到喀麦隆空运清关'],
+    template: 'generated',
+    audience: ['喀麦隆进口商', '中非法语区货代', '电子电器出口商', '油气港口设备供应商'],
+    angle: '用DLA、AVI、PECAE/CoC、GUCE和Air Waybill承接喀麦隆清关资料搜索，并把询盘前置成文件预审。',
+    sections: [
+      {
+        heading: 'DLA空运不能只问机场价',
+        body: [
+          'DLA杜阿拉服务的是喀麦隆商业和中非项目货入口，常见需求包括工业设备、港口机械备件、油气物资、电子电器、通讯设备、医疗和工程急件。客户只问中国到DLA空运多少钱时，销售要先判断进口商、清关代理、AVI、PECAE/CoC和GUCE资料是否能跑通。',
+          'Trade.gov的喀麦隆进口文件页面说明，进口商要向负责检验的SGS提交AVI申请；同时列出airway bill、final invoice、packing list、local insurance certificate、customs clearance number、cargo manifest number等资料。空运单、发票、箱单、货值和HS Code必须提前一致。',
+        ],
+        bullets: ['DLA杜阿拉', 'AVI申请', 'Air Waybill', '发票箱单一致'],
+      },
+      {
+        heading: 'PECAE/CoC要在装运前判断',
+        body: [
+          'Trade.gov的喀麦隆标准页说明，PECAE项目自2021年11月15日起覆盖所有进口产品，要求在出口国装运前进行符合性评估；合格后由ANOR基于CAB签发的AoC出具Certificate of Conformity（CoC）。',
+          '这对中国出口商很关键。电子电器、机械设备、建材、照明、电源、检测仪器、食品接触材料和其他受标准影响的货物，不能等货到DLA才问CoC。询价阶段就要收型号、规格、品牌、照片、测试报告、HS Code、用途和进口商资料。',
+        ],
+        bullets: ['PECAE', 'Certificate of Conformity', 'ANOR', '装运前符合性评估'],
+      },
+      {
+        heading: 'GUCE和目的地代理要提前对接',
+        body: [
+          '喀麦隆Guichet Unique des Operations du Commerce Exterieur（GUCE）是外贸单一窗口入口，清关资料、申报流程和目的地代理协同都不应该等航班起飞后才处理。',
+          '实际报价要分三条线：航班和装载是否成立，AVI/PECAE/GUCE资料是否成立，DLA到最终城市或项目现场的交付边界是否成立。三条线都能说明白，价格才有成交意义。',
+        ],
+        bullets: ['GUCE单一窗口', '目的地清关代理', 'DLA最终交付', '报价责任边界'],
+      },
+    ],
+    checklist: ['DLA目的机场', '最终城市/项目现场', '进口商资料', '清关代理资料', 'AVI申请状态', 'GUCE手续状态', 'Air Waybill资料', 'final invoice', 'packing list', 'HS Code', '英文/法文品名', '货值币种', 'local insurance certificate如需', 'customs clearance number如需', 'cargo manifest number如需', 'PECAE/CoC场景', 'AoC/测试报告如需', '产品照片和规格书', '每件尺寸重量', '是否需要主甲板或中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: 'LOS 拉各斯中非延伸', href: '/africa-air-freight/los/' },
+      { label: 'LBV 中非项目货清关', href: '/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Cameroon - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/cameroon-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Cameroon - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/cameroon-customs-regulations' },
+      { label: 'Trade.gov: Cameroon - Standards for Trade', href: 'https://www.trade.gov/country-commercial-guides/cameroon-standards-trade' },
+      { label: 'GUCE Cameroon: Guichet Unique des Operations du Commerce Exterieur', href: 'https://www.guichetunique.cm/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
