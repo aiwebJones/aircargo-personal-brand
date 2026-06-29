@@ -1681,6 +1681,208 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'china-africa-air-freight-cost-chargeable-weight',
+    title: '中国到非洲空运多少钱一公斤？先算计费重和真实附加费',
+    excerpt:
+      '客户搜索“非洲空运多少钱一公斤”时，真正要回答的是计费重、泡货、目的港、清关资料、燃油和项目货操作边界。',
+    date: '2026-06-30',
+    readTime: '10 分钟',
+    category: '询价转化',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['非洲空运多少钱一公斤', '中国到非洲空运价格', '空运计费重', '非洲空运报价'],
+    template: 'generated',
+    audience: ['中国工厂', '贸易商', '跨境项目采购', '货代同行'],
+    angle: '把“多少钱一公斤”的泛搜索，转成可报价的计费重和资料清单。',
+    sections: [
+      {
+        heading: '先别只问每公斤价格',
+        body: [
+          '中国到非洲空运报价不是把总重量乘一个单价。客户搜索“多少钱一公斤”时，通常还没有把货物尺寸、体积重、目的机场、最终城市、清关责任和时效要求讲清。',
+          '同样是 300kg，实重货、泡货、超长件、带电设备和需要主甲板的项目货，价格逻辑完全不同。真正能成交的回复，应该先把计费重和操作边界讲出来。',
+        ],
+        bullets: ['实重和体积重', '目的机场', '货物属性', '清关责任'],
+      },
+      {
+        heading: '计费重决定报价基础',
+        body: [
+          '空运通常按实重和体积重两者取高来计费。常见体积重口径是长 x 宽 x 高厘米数除以 6000，再乘件数；具体还要看航司、代理和产品规则。',
+          '这就是为什么一个看起来很轻的机器外壳，可能按很高的计费重收费；一个很重但体积小的备件，反而更接近实重报价。',
+        ],
+        bullets: ['长宽高厘米', '件数', '实重', '体积重'],
+      },
+      {
+        heading: '非洲报价要拆到落地风险',
+        body: [
+          '非洲空运不能只给机场到机场价格。客户真正关心的是能不能按时到、资料会不会卡、目的港费用谁承担、是否需要当地代理协助清关和二程。',
+          '报价页面应该把价格问题变成询价表：起运城市、目的机场、最终城市、货物照片、HS Code、发票货值、进口商资料和最晚到货时间。',
+        ],
+        bullets: ['机场到机场', '目的港费用', '清关资料', '二程交付'],
+      },
+    ],
+    checklist: ['起运城市', '目的机场', '最终城市', '品名用途', 'HS Code', '件数', '每件尺寸', '每件毛重', '包装照片', '货值', '是否带电/带液', '最晚到货时间'],
+    relatedRoutes: [
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+      { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
+      { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
+    ],
+    sources: [
+      { label: 'Maersk: Air cargo chargeable weight calculation explained', href: 'https://www.maersk.com/logistics-explained/transportation-and-freight/2025/03/10/air-cargo-chargeable-weight' },
+      { label: 'DHL: Calculating Chargeable Weight by Air, Ocean, Road and Rail', href: 'https://www.dhl.com/gb-en/home/global-forwarding/freight-forwarding-education-center/calculating-chargeable-weights.html' },
+      { label: 'UPS: Chargeable Weight Definition', href: 'https://www.ups.com/us/en/supplychain/resources/glossary-term/chargeable-weight' },
+    ],
+  },
+  {
+    slug: 'china-africa-air-freight-forwarder-for-factories',
+    title: '中国工厂找非洲空运货代：不要只找低价，要找能判断异常票的人',
+    excerpt:
+      '工厂发非洲空运，最容易在尺寸、资料、目的港清关和二程交付上出问题。选货代要看路线判断能力，不是只看报价表。',
+    date: '2026-06-30',
+    readTime: '9 分钟',
+    category: '获客方法',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['非洲空运货代', '中国到非洲货代', '工厂出口非洲空运', '非洲项目货货代'],
+    template: 'generated',
+    audience: ['出口工厂', '外贸业务员', '设备供应商', '项目采购'],
+    angle: '承接“找货代”搜索，把选择标准转成 EASCargo 的路线判断能力。',
+    sections: [
+      {
+        heading: '工厂最怕的不是运价高',
+        body: [
+          '工厂发非洲空运，真正贵的是货到机场才发现清不了、装不了、交不了、客户现场收不了。低价报价如果没有判断这些边界，风险会被推迟到出运后。',
+          '尤其是矿业备件、机械设备、电气柜、医疗设备和工程急件，货代不能只转发价格，必须先判断货物能不能装、目的地能不能接。',
+        ],
+        bullets: ['装机限制', '清关资料', '目的港费用', '现场交付'],
+      },
+      {
+        heading: '选货代先问三个问题',
+        body: [
+          '第一，他能不能看懂每件尺寸重量和包装照片；第二，他能不能说清楚目的机场和最终城市的区别；第三，他是否会主动追问进口商资料、HS Code、货值和最晚到货时间。',
+          '如果对方只回答“多少钱一公斤”，但不问货物属性和目的地责任，这类报价对项目货没有保护价值。',
+        ],
+        bullets: ['是否看尺寸照片', '是否问最终城市', '是否问清关责任', '是否讲时效边界'],
+      },
+      {
+        heading: 'EASCargo 适合哪类工厂询盘',
+        body: [
+          '更适合有真实货物、真实项目节点、真实非洲收货人的询盘。普通小包裹、纯比价和没有资料的套价，不是最好的匹配。',
+          '如果你有非洲设备、备件、急件、大件或异常票，先把资料发完整，再判断直飞、ADD中转、LGG/BRU欧洲中转、主甲板或包机。',
+        ],
+        bullets: ['矿业设备', '工程备件', '大件异常票', '时效敏感急件'],
+      },
+    ],
+    checklist: ['品名用途', 'HS Code', '件数', '每件尺寸重量', '包装照片', '起运地', '目的机场', '最终城市', '进口商资料', '最晚到货时间'],
+    relatedRoutes: [
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+  },
+  {
+    slug: 'africa-mining-equipment-air-freight-rfq-template',
+    title: '非洲矿业设备空运询价模板：泵、电机、备件和停产急件怎么发资料？',
+    excerpt:
+      '矿业备件空运到 JNB/FBM/LUN/CKY/BKO，不能只发品名重量。询价资料要能支持路线、装机、清关和现场交付判断。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '询价转化',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['非洲矿业设备空运', '矿业备件空运询价', 'FBM矿区空运', 'JNB矿业急件'],
+    template: 'generated',
+    audience: ['矿山供应商', '工业设备工厂', '非洲项目采购', '货代销售'],
+    angle: '用可复制询价模板拦截矿业设备和停产急件搜索。',
+    sections: [
+      {
+        heading: '矿业急件先判断停产成本',
+        body: [
+          '矿业备件不是普通补货。泵、电机、减速机、传感器、电气柜、阀门和破碎机配件，一旦影响现场停产，客户买的是确定性和速度。',
+          '这类询价要先问最晚到货时间、现场位置、是否可以拆箱、是否有吊装条件和进口商清关能力，再判断走 JNB、FBM、LUN、CKY、BKO 或其他入口。',
+        ],
+        bullets: ['停产时间', '现场位置', '吊装条件', '清关能力'],
+      },
+      {
+        heading: '模板要一次性收齐',
+        body: [
+          '低质量询价会浪费一整天：只发“300kg到非洲多少钱”，然后再补尺寸、再补照片、再补目的地。矿业急件应该一开始就用模板收资料。',
+          '模板的目标不是让客户填表，而是让报价员能马上判断可行路线、计费重、舱位类型、目的地风险和需要谁确认。',
+        ],
+        bullets: ['品名用途', '型号照片', '尺寸重量', '最终矿区'],
+      },
+      {
+        heading: '可以直接发给客户的资料要求',
+        body: [
+          '请提供品名、用途、品牌型号、HS Code、件数、每件尺寸重量、包装照片、货值、起运城市、目的机场、最终矿区或工厂地址、收货人/进口商信息、是否需要上门提货、最晚到货时间。',
+          '如果货物超长、超重、不可倒置、含油、含电池、带液体或需要木包装，也要提前说明。否则报价成立不等于出运成立。',
+        ],
+        bullets: ['可复制给客户', '减少反复追问', '过滤套价询盘', '保护项目节点'],
+      },
+    ],
+    checklist: ['品名用途', '品牌型号', 'HS Code', '件数', '每件尺寸重量', '包装照片', '货值', '起运城市', '目的机场', '最终矿区地址', '进口商资料', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 矿业急件', href: '/insights/jnb-mining-spares-air-freight/' },
+      { label: 'FBM 铜钴矿区', href: '/insights/fbm-copperbelt-mining-equipment-air-freight/' },
+      { label: 'LUN 工业设备', href: '/insights/lun-zambia-industrial-air-freight-guide/' },
+      { label: 'CKY 几内亚', href: '/africa-air-freight/cky/' },
+    ],
+  },
+  {
+    slug: 'oversized-air-cargo-booking-documents-main-deck-africa',
+    title: '非洲超大件空运订舱资料：主甲板、重心、吊点和包装照片怎么准备？',
+    excerpt:
+      '超长、超高、超重货去非洲，能不能订到舱取决于尺寸重量、重心、吊点、包装和飞机/ULD限制，不是只看总公斤数。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '航线方案',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['非洲超大件空运', '主甲板空运订舱资料', '大件空运包装照片', 'LGG BRU非洲大件'],
+    template: 'generated',
+    audience: ['项目采购', '设备工厂', '工程物流团队', '货代同行'],
+    angle: '把“超大件能不能飞”的搜索，落到主甲板订舱资料和装机判断。',
+    sections: [
+      {
+        heading: '超大件不是总重量问题',
+        body: [
+          '一票货 2 吨不一定难，一件 8 米长、1.9 米高、重心偏、不能倒置的货才难。非洲超大件空运要先看单件尺寸、地板承载、货舱门、ULD/板位、重心和装卸方式。',
+          '如果资料不完整，航司或包机方无法判断能否装机。越晚补资料，越容易错过舱位窗口。',
+        ],
+        bullets: ['单件尺寸', '货舱门', '板位限制', '重心和吊点'],
+      },
+      {
+        heading: '主甲板订舱要准备什么',
+        body: [
+          '主甲板或全货机方案，至少需要每件长宽高、毛重、包装底座、是否可叉、是否有吊点、重心位置、照片或图纸、是否可叠放、是否可倾斜、是否危险品或带电带液。',
+          '去 JNB、FBM、LUN、LBV、ACC、ABJ 等非洲点，还要同步确认目的地卸货设备和最终交付城市。',
+        ],
+        bullets: ['包装底座', '叉车孔', '吊点图', '不可倒置标识'],
+      },
+      {
+        heading: '什么时候走 LGG/BRU',
+        body: [
+          '当国内直飞不接、目的地舱位弱、货物尺寸需要主甲板或需要欧洲重新组合方案时，可以评估 LGG/BRU 中转非洲。',
+          '欧洲中转不是为了把流程变复杂，而是为了把标准航线接不了的异常票做出来。前提是客户接受中转时间、交接责任和资料要求。',
+        ],
+        bullets: ['直飞不接', '主甲板窗口', '欧洲中转组合', '非洲二程能力'],
+      },
+    ],
+    checklist: ['每件长宽高', '每件毛重', '包装照片', '重心位置', '吊点/叉车孔', '是否可叠放', '是否可倾斜', '是否不可倒置', '货物图纸', '目的机场', '最终城市', '卸货条件'],
+    relatedRoutes: [
+      { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
+      { label: 'LBV 8米长货', href: '/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/' },
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'IATA: What is Aircraft ULD in Air Transport?', href: 'https://www.iata.org/en/publications/newsletters/iata-knowledge-hub/what-is-aircraft-uld-in-air-transport/' },
+      { label: 'IATA: Unit Load Devices', href: 'https://www.iata.org/en/programs/cargo/cargo-operations/unit-load-devices/' },
+      { label: 'IATA: What Types of Cargo are Transported by Air?', href: 'https://www.iata.org/en/publications/newsletters/iata-knowledge-hub/what-types-of-cargo-are-transported-by-air/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:

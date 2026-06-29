@@ -87,7 +87,7 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        <div className="mt-10 grid gap-6 border-t border-borderLight pt-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 border-t border-borderLight pt-8 md:grid-cols-4">
           <div>
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">非洲航线</h4>
             <div className="grid gap-2 text-sm text-textMuted">
@@ -113,6 +113,15 @@ export default function Footer() {
               <a href="/africa-air-freight/abj/" className="hover:text-amberGold">ABJ 阿比让空运</a>
               <a href="/africa-air-freight/nbo/" className="hover:text-amberGold">NBO 内罗毕空运</a>
               <a href="/insights/east-africa-nbo-ebb-dar-project-cargo/" className="hover:text-amberGold">东非项目货入口</a>
+            </div>
+          </div>
+          <div>
+            <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
+            <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/insights/china-africa-air-freight-cost-chargeable-weight/" className="hover:text-amberGold">非洲空运多少钱一公斤</a>
+              <a href="/insights/china-africa-air-freight-forwarder-for-factories/" className="hover:text-amberGold">工厂找非洲空运货代</a>
+              <a href="/insights/africa-mining-equipment-air-freight-rfq-template/" className="hover:text-amberGold">矿业设备空运询价模板</a>
+              <a href="/insights/oversized-air-cargo-booking-documents-main-deck-africa/" className="hover:text-amberGold">超大件主甲板订舱资料</a>
             </div>
           </div>
         </div>
