@@ -122,6 +122,8 @@ export default function Footer() {
               <a href="/insights/china-africa-air-freight-forwarder-for-factories/" className="hover:text-amberGold">工厂找非洲空运货代</a>
               <a href="/insights/africa-mining-equipment-air-freight-rfq-template/" className="hover:text-amberGold">矿业设备空运询价模板</a>
               <a href="/insights/oversized-air-cargo-booking-documents-main-deck-africa/" className="hover:text-amberGold">超大件主甲板订舱资料</a>
+              <a href="/insights/eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight/" className="hover:text-amberGold">欧盟ICS2/NCTS政策更新</a>
+              <a href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/" className="hover:text-amberGold">尼日利亚B’Odogwu清关</a>
             </div>
           </div>
         </div>

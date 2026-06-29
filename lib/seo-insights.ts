@@ -1883,6 +1883,113 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight',
+    title: '欧盟ICS2/NCTS Phase 6 2026：经LGG/BRU中转非洲为什么要提前补ENS资料？',
+    excerpt:
+      '欧盟ICS2和NCTS Phase 6让经欧洲中转的货物更依赖有效ENS资料。中国到非洲项目货经LGG/BRU时，不能等交仓后再补品名、HS Code和收发货人信息。',
+    date: '2026-06-30',
+    readTime: '11 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-3.jpg',
+    keywords: ['ICS2 NCTS Phase 6', '欧盟ENS申报', 'valid ENS 2026', 'LGG BRU中转非洲', '欧洲中转空运资料'],
+    template: 'generated',
+    audience: ['中国货代', '项目货工厂', '欧洲中转操作', '非洲收货人'],
+    angle: '用 2026 年欧盟 valid ENS 变化，承接经 LGG/BRU 中转非洲的合规搜索。',
+    sections: [
+      {
+        heading: '为什么 2026 年还要继续盯 ICS2',
+        body: [
+          '很多客户以为 ICS2 只是欧盟进口货规则，和非洲项目货无关。实际操作里，中国到非洲的大件、矿业备件和工程设备，经常会先到 LGG/BRU 等欧洲节点，再衔接非洲航班、包机或地面交接。',
+          '欧盟官方把 ICS2 定位为入境安全与安保预申报系统，要求相关经济运营方提交 ENS 数据。2026 年和 NCTS Phase 6 相关的 valid ENS 逻辑，会让数据完整性对欧洲中转链路更敏感。',
+        ],
+        bullets: ['入境安全申报', 'valid ENS', 'LGG/BRU 中转', '非洲二程衔接'],
+      },
+      {
+        heading: '经欧洲中转时，问题通常不是系统名',
+        body: [
+          '真正造成延误的不是客户是否知道 ICS2 或 NCTS，而是资料质量：品名写得太泛、HS Code 不确定、收发货人信息不完整、路线和中转责任没讲清、包装和尺寸重量最后才补。',
+          '对超大件和主甲板货来说，ENS 补料会影响的不只是报关动作。仓库交接、板位计划、航班窗口、欧洲到非洲二程和目的地清关，都可能被同一份资料拖住。',
+        ],
+        bullets: ['具体英文品名', 'HS Code', '收发货人信息', '中转责任'],
+      },
+      {
+        heading: '销售应该怎样把规则变成询价动作',
+        body: [
+          '不要把欧盟政策讲成抽象新闻。对客户最有用的动作，是在询价阶段就把 ENS 需要的核心资料收齐：具体品名、用途材质、HS Code、发票货值、发货人、收货人、EORI/税号场景、起运机场、欧洲中转点、非洲目的机场和最终城市。',
+          '如果客户只发“设备配件到非洲多少钱”，先不要报价。先让客户补资料，否则低价报价可能在欧洲中转时变成补料、查验或错过二程窗口。',
+        ],
+        bullets: ['询价前置', '资料预审', '欧洲节点确认', '非洲目的地确认'],
+      },
+    ],
+    checklist: ['具体英文品名', '用途和材质', 'HS Code', '发票货值', '发货人信息', '收货人信息', '起运机场', 'LGG/BRU中转点', '非洲目的机场', '最终城市', '每件尺寸重量', '包装照片'],
+    relatedRoutes: [
+      { label: 'ICS2/ENS 通用说明', href: '/insights/eu-ics2-ens-lgg-bru-africa-transit-air-freight/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '超大件主甲板订舱资料', href: '/insights/oversized-air-cargo-booking-documents-main-deck-africa/' },
+      { label: '非洲航线 Hub', href: '/africa-air-freight/' },
+    ],
+    sources: [
+      { label: 'European Commission: Import Control System 2 (ICS2)', href: 'https://taxation-customs.ec.europa.eu/customs/customs-security/import-control-system-2_en' },
+      { label: 'European Commission: ICS2 Release 3 - Maritime and Inland Waterways, Road and Rail', href: 'https://taxation-customs.ec.europa.eu/news/import-control-system-2-release-3-maritime-and-inland-waterways-road-and-rail-2025-02-27_en' },
+      { label: 'European Commission: Union Customs Code Work Programme', href: 'https://taxation-customs.ec.europa.eu/customs-4/union-customs-code/ucc-work-programme_en' },
+    ],
+  },
+  {
+    slug: 'nigeria-los-bodogwu-form-m-paar-air-freight-clearance',
+    title: '尼日利亚LOS空运清关新重点：B’Odogwu、Form M、PAAR和机场30天窗口怎么配合？',
+    excerpt:
+      '尼日利亚LOS空运不能只看运价。B’Odogwu、Form M、PAAR、运输单证、产品证书和机场到港后30天清关窗口，都要在订舱前讲清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['B’Odogwu尼日利亚清关', 'Form M PAAR LOS空运', '尼日利亚空运清关资料', 'Nigeria B’Odogwu', 'LOS机场清关'],
+    template: 'generated',
+    audience: ['尼日利亚进口商', '中国设备工厂', '油气设备供应商', '货代同行'],
+    angle: '把尼日利亚 B’Odogwu 和 Form M/PAAR 变化转成 LOS 空运询价前的资料清单。',
+    sections: [
+      {
+        heading: 'B’Odogwu 不是一个可以忽略的后台名词',
+        body: [
+          '尼日利亚海关正在推进 B’Odogwu 相关系统和门户，官方材料把它放在电子服务和通关流程里。对中国到 LOS 的空运货来说，这类系统变化会影响 Form M、舱单、申报和放行资料的衔接。',
+          '销售不能只告诉客户“尼日利亚可以走”。更应该问：进口商是否能处理 Form M，PAAR 是否匹配，产品证书是否需要，空运单证和发票箱单是否能对应。',
+        ],
+        bullets: ['B’Odogwu系统', 'Form M', 'PAAR', '空运单证一致'],
+      },
+      {
+        heading: 'LOS空运报价前要把资料边界讲清',
+        body: [
+          '尼日利亚空运常见风险不是没有航班，而是清关资料不完整、申报信息不一致、监管证书缺失、目的港费用边界不清。官方 FAQ 中反复出现 Form M、PAAR、SGD、发票、装箱单、运输单证和产品证书这些核心材料。',
+          '空运场景下，运输单证要对应 AWB。品名、HS Code、货值、件数、重量、收发货人和进口商资料必须和清关系统里的资料一致，否则到港后再改会拖慢放行。',
+        ],
+        bullets: ['AWB', 'Commercial invoice', 'Packing list', 'Product certificate'],
+      },
+      {
+        heading: '机场30天窗口要提前提醒客户',
+        body: [
+          '尼日利亚海关公开提示里提到，机场货物到达后有30天清关窗口，超过期限会进入超期货物处理流程。对高价值设备、油气备件和工厂急件来说，到港后才发现文件不全，会把空运时效优势吃掉。',
+          '正确做法是在订舱前给客户发资料清单，并把“不含目的地清关、不含目的港额外费用、进口商责任”写清楚。价格要服务交付，不是把风险藏起来。',
+        ],
+        bullets: ['30天清关窗口', '超期货物风险', '目的港费用边界', '进口商责任'],
+      },
+    ],
+    checklist: ['Form M状态', 'PAAR状态', 'HS Code', '具体品名用途', 'Commercial invoice', 'Packing list', 'AWB资料', '产品证书/SONCAP场景', '进口商TIN/资料', '货值币种', '目的港费用边界', '最终城市'],
+    relatedRoutes: [
+      { label: '尼日利亚SONCAP/Form M/PAAR', href: '/insights/nigeria-los-soncap-formm-paar-air-freight/' },
+      { label: 'LOS 拉各斯航线页', href: '/africa-air-freight/los/' },
+      { label: '尼日利亚LOS风险说明', href: '/insights/nigeria-los-air-freight-customs-risk/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Nigeria Customs Service: B’Odogwu Portal', href: 'https://bodogwu.customs.gov.ng/' },
+      { label: 'Nigeria Customs Service: Frequently Asked Questions', href: 'https://customs.gov.ng/?page_id=2819' },
+      { label: 'Nigeria Customs Service: Things You Must Know', href: 'https://customs.gov.ng/?page_id=3078' },
+      { label: 'Federal Ministry of Information: NCS to commence pilot of Form M on B’Odogwu platform', href: 'https://fmino.gov.ng/ncs-to-commence-pilot-of-form-m-on-bodogwu-platform/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
