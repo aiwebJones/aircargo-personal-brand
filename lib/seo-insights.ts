@@ -1183,6 +1183,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'ethiopia-add-customs-ecms-esw-air-freight-clearance',
+    title: '埃塞俄比亚ADD空运清关：Ethiopian Customs、eCMS、eSW和ECAE资料怎么准备？',
+    excerpt:
+      '中国到埃塞俄比亚ADD亚的斯亚贝巴空运，工业设备、医疗设备、电子电器、项目备件和贸易补货不能只看ET航班。Ethiopian Customs eCMS/e-SAD、Electronic Single Window、进口许可证、Air Waybill、商业发票箱单和ECAE产品认证要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['埃塞俄比亚ADD清关资料', 'Ethiopian Customs eCMS', '埃塞eSW进口许可', '中国到埃塞俄比亚空运清关'],
+    template: 'generated',
+    audience: ['埃塞俄比亚进口商', '工业设备供应商', '医疗和电子设备工厂', '东非项目货代'],
+    angle: '把 Ethiopian Customs eCMS/e-SAD、Electronic Single Window、进口许可证和 ECAE 认证转成 ADD 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'ADD空运不能只看ET航班',
+        body: [
+          'ADD 亚的斯亚贝巴既是埃塞本地进口入口，也是 ET 航空非洲网络的核心中转点。客户只问中国到 ADD 空运多少钱时，销售要先判断是本地进口、区域中转，还是经 ADD 转往其他非洲点；这三种情况的文件风险完全不同。',
+          'Ethiopian Customs 的 eCMS/Trade Transactions Portal 手册显示，进口申报会涉及 declarant、consignee、bank permit、manifest、country of consignment、transport mode、place of loading/unloading 等字段，并可在 ADDIS ABABA BOLE INTERNATIONAL AIRPORT 等关区处理。也就是说，AWB、舱单、进口商和银行/许可证资料要在订舱前对齐。',
+        ],
+        bullets: ['Ethiopian Customs', 'eCMS/e-SAD', 'ADD Bole Airport', 'bank permit和manifest'],
+      },
+      {
+        heading: 'eSW和进口许可证要提前跑通',
+        body: [
+          'Trade.gov 的埃塞海关规则说明，埃塞已经建立 electronic single-window 服务用于国际贸易，并允许授权进口商用较少文件电子化完成行政程序。对空运急件来说，这不是到港后才开始做的流程，而是询价阶段就要核验进口商和清关代理是否具备线上提交能力。',
+          '埃塞是内陆国，Trade.gov 同时提示其外贸高度依赖吉布提口岸；但 ADD 空运仍然要面对本地海关、进口许可证、税费、产品监管和最终交付责任。正确报价动作不是只报 ET 航班，而是先拿到 HS Code、英文品名、货值、进口商资料、许可证状态、AWB/舱单字段和最终城市。',
+        ],
+        bullets: ['Electronic Single Window', '进口许可证', '授权进口商', '本地交付责任'],
+      },
+      {
+        heading: 'ECAE和受控产品要单独筛',
+        body: [
+          'Trade.gov 的埃塞进口文件说明列出 commercial invoice、certificate of origin、packing list、bill of lading、insurance certificate、import permit、foreign exchange permit 和 cargo transit document 等常见文件，并提示食品、医药、农业和通信等产品可能要走额外主管部门要求。',
+          'Trade.gov 的埃塞标准页还说明，Ethiopian Conformity Assessment Enterprise（ECAE）涉及测试、检验和认证服务。工业设备、电器、医疗设备、通信设备、食品/农业相关、带电池或需要 MSDS 的货物，不能最后一刻才问产品认证。能飞到 ADD 是航段问题，能清关放行是监管资料问题。',
+        ],
+        bullets: ['ECAE认证', 'Certificate of Origin', 'Import permit', '受控产品预审'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', '进口商TIN/资料', '清关代理/declarant资料', 'bank permit如需', 'import permit如需', 'eCMS/e-SAD字段预审', 'eSW提交状态', 'Certificate of Origin如需', 'ECAE认证或检验如需', 'MSDS/电池资料如需', 'ADD或最终城市', '每件尺寸重量', '是否为本地进口或ADD中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ADD 亚的斯亚贝巴航线页', href: '/africa-air-freight/add/' },
+      { label: 'ET/ADD非洲中转选择', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: 'CAI 北非ACI清关资料', href: '/insights/egypt-cai-nafeza-aci-cargox-goeic-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Ethiopian Customs: eCMS Trade Transactions Portal Introduction', href: 'https://customs.erca.gov.et/files/downloads/WFET-CMS-MAN-0002%20ERCA%20Trade%20Transactions%20Portal%20Introduction_V1.7.pdf' },
+      { label: 'Trade.gov: Ethiopia Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/ethiopia-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Ethiopia Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/ethiopia-customs-regulations' },
+      { label: 'Trade.gov: Ethiopia Trade Standards', href: 'https://www.trade.gov/country-commercial-guides/ethiopia-trade-standards' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
