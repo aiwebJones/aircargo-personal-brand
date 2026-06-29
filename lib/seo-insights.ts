@@ -3662,6 +3662,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'libya-mji-ben-aci-asycuda-lc-air-freight-clearance',
+    title: '利比亚MJI/BEN空运清关：ACI、ASYCUDA/SABQ和银行付款资料怎么准备？',
+    excerpt:
+      '中国到利比亚MJI米提加或BEN班加西空运，油气备件、港口设备、通信设备和项目急件不能只看航班。ACI预申报、ASYCUDA/SABQ、2022税则、银行付款/信用证、AWB、发票、装箱单和原产地资料要提前对齐。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['利比亚MJI清关资料', 'Libya ACI customs clearance', 'Libya ASYCUDA SABQ', 'Libya letter of credit import documents', 'Mitiga airport air cargo clearance', 'Benghazi oil gas spare parts air freight', '中国到利比亚空运清关'],
+    template: 'generated',
+    audience: ['利比亚进口商', '油气和港口设备供应商', '通信工程与工业备件工厂', '北非航线货代同行'],
+    angle: '用MJI/BEN、Libya ACI customs clearance、Libya ASYCUDA SABQ、letter of credit import documents和oil gas spare parts承接利比亚空运清关搜索。',
+    sections: [
+      {
+        heading: 'MJI/BEN空运先判断ACI预申报',
+        body: [
+          '利比亚空运常见入口包括MJI米提加和BEN班加西。MJI更贴近的黎波里、政府项目、通信设备、医疗仪器和首都圈急件，BEN更贴近东部油气、港口、能源和工业项目。客户只问中国到利比亚空运多少钱时，销售要先问进口商和清关代理能不能完成ACI预申报。',
+          '利比亚海关ACI页面说明，Advance Cargo Information用于在货物发运或到达前获取货物资料、识别高风险货物，并监控商业发票、提单和原产地证等文件。该页面还写明2024年7月30日开始试运行，强制适用后，没有ACI文件不得发运。空运场景下，要把页面里的提单逻辑转换成Air Waybill和航空舱单字段一致性。',
+        ],
+        bullets: ['MJI Mitiga airport', 'BEN Benghazi airport', 'Libya ACI customs clearance', 'Air Waybill资料'],
+      },
+      {
+        heading: 'ASYCUDA/SABQ决定清关数据怎么走',
+        body: [
+          '利比亚海关ASYCUDA页面把SABQ 1描述为覆盖多数外贸手续的海关系统，用于处理货物、海关数据和不同海关制度。对MJI/BEN空运来说，这意味着品名、HS Code、货值、收发货人、件数、重量和监管属性不能靠到港后临时补。',
+          '同一组资料还要和清关经纪人的工作衔接。利比亚海关清关页面说明，清关经纪人代表进出口商准备单证、按海关法计算税费，并处理进出口程序。换句话说，销售报价前要确认目的地broker是否能接MJI/BEN、是否有ACI/ASYCUDA操作能力、谁负责录入和修正申报字段。',
+        ],
+        bullets: ['Libya ASYCUDA SABQ', 'customs broker', 'HS Code', 'cargo and customs data'],
+      },
+      {
+        heading: '银行付款和信用证会影响发运节奏',
+        body: [
+          '利比亚央行2025年10月的公开信息提到，央行与商贸、工业和企业代表讨论便利银行程序，包括接受不超过50万美元信用证申请、启动直接汇款、恢复托收单据并通过直接汇款向受益公司支付等安排。这说明进口端银行链路会直接影响货物能不能按计划发运和清关。',
+          '如果客户用信用证或银行付款，不能只看运价。Intertek关于利比亚的说明写到，通过信用证进口到利比亚的货物需要Certificate of Inspection（CoI），通常由银行在开证条件中要求。实际操作要以进口商银行、信用证条款和目的地代理确认为准，先问清再订舱。',
+        ],
+        bullets: ['letter of credit', 'direct transfer', 'documents for collection', 'Certificate of Inspection'],
+      },
+      {
+        heading: '油气备件和受控货要先筛HS与许可证',
+        body: [
+          '利比亚海关2022税则页面说明，税则基于商品协调制度HS，并包含一般解释规则、章节和具体税率。对油气备件、港口设备、发电设备、通信设备、医疗设备、检测仪器、阀门泵类、电池设备、化工相关货和二手设备来说，HS归类不是报关行最后一刻才做的动作。',
+          '正确动作是先筛风险，再报价：DG/MSDS、带电池、无线通信、医疗用途、旧设备、压力容器、木包装、品牌型号、产品照片、进口商资质、银行付款方式、CoI/原产地证和ACI责任都要提前问清。低价航班不能替代目的港资料链。',
+        ],
+        bullets: ['2022 customs tariff', 'oil gas spare parts', 'controlled goods screening', 'CoI和原产地资料'],
+      },
+    ],
+    checklist: ['MJI或BEN目的机场', '最终城市/油气或港口现场', '进口商资料', '清关代理/broker资料', 'ACI预申报责任', 'ASYCUDA/SABQ录入责任', 'HS Code', '英文/阿文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', '原产地证如需', 'CoI或装运前检验证书如需', '信用证/银行付款方式', '进口许可或受控货批文如需', 'DG/MSDS如需', '医疗/通信/电池/二手设备属性筛查', '2022税则和税费责任', '每件尺寸重量', '包装照片', '是否经CAI/IST/TUN/CMN/CDG/MAD中转', '最终交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CAI 开罗北非入口', href: '/africa-air-freight/cai/' },
+      { label: 'CMN 卡萨布兰卡北非中转', href: '/africa-air-freight/cmn/' },
+      { label: '突尼斯TUN清关资料', href: '/insights/tunisia-tun-sinda-ttn-air-waybill-customs-clearance/' },
+      { label: '阿尔及利亚ALG清关资料', href: '/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Libyan Customs: Advance Cargo Information (ACI)', href: 'https://customs.gov.ly/services/aci/' },
+      { label: 'Libyan Customs: ASYCUDA / SABQ 1', href: 'https://customs.gov.ly/services/asycuda-libya/' },
+      { label: 'Libyan Customs: 2022 Customs Tariff', href: 'https://customs.gov.ly/services/tariff/' },
+      { label: 'Libyan Customs: Customs Clearance', href: 'https://customs.gov.ly/services/customs-clearance/' },
+      { label: 'Central Bank of Libya: Banking procedures for traders', href: 'https://cbl.gov.ly/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D9%85%D8%B5%D8%B1%D9%81-%D9%84%D9%8A%D8%A8%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%8A%D9%84%D8%AA%D9%82%D9%8A-%D9%85%D9%85%D8%AB%D9%84%D9%8A-%D8%B5/' },
+      { label: 'Intertek: Certificate of Inspection for Letters of Credit for Libya', href: 'https://www.intertek.com/government/commercial-government-services/libya/' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
