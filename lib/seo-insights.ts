@@ -642,6 +642,61 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'egypt-cai-nafeza-aci-cargox-air-freight-clearance',
+    title: '埃及CAI空运清关：NAFEZA ACI、CargoX和ACID号要提前准备什么？',
+    excerpt:
+      '中国到埃及CAI空运，机械设备、电子电器、医疗物资、项目备件和贸易补货不能只看航班。NAFEZA ACI空运申报、CargoX、ACID号、Air Waybill、商业发票模板和装箱单要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['埃及ACI空运', 'CAI清关资料', 'NAFEZA CargoX', 'ACID号埃及空运'],
+    template: 'generated',
+    audience: ['埃及进口商', '机械设备工厂', '电子电器出口商', '北非项目货代'],
+    angle: '把 NAFEZA ACI、CargoX 和 ACID 号要求转成 CAI 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'CAI空运已经进入ACI空运规则',
+        body: [
+          'CAI 开罗是埃及和北非项目货的重要空运入口，常见货物包括机械设备、电子电器、医疗相关货物、工业备件、工程物资和贸易补货。客户只问中国到 CAI 空运多少钱时，销售不能只看航班，要先判断 NAFEZA ACI、CargoX 和 ACID 号是否能提前跑通。',
+          'NAFEZA 的 Advance Cargo Information System (Aviation) 页面说明，空运 ACI 试运行阶段持续到 31/12/2025，强制运行阶段从 01/01/2026 开始；埃及进口商需要更新 NAFEZA 平台资料，并通知境外出口商在区块链平台登记。现在做埃及空运，不能把 ACI 当成海运才有的事情。',
+        ],
+        bullets: ['NAFEZA ACI空运', 'CargoX登记', 'ACID号', 'CAI到港清关'],
+      },
+      {
+        heading: 'ACID号要进入空运文件链',
+        body: [
+          'NAFEZA 的 ACI 页面把流程写得很清楚：埃及进口商在 NAFEZA 注册，提前列明货物资料并取得 ACID；货物资料和单证要在装运前提交，境外出口商通过 CargoX 把相关发票和装运文件发送到 NAFEZA 平台。',
+          '对空运来说，关键动作是把 ACID、Air Waybill、商业发票、装箱单、HS Code、货值、进口商税号、出口商资料和 CargoX 账号状态提前对齐。NAFEZA 的 ACI Validate Lock 页面还提供空运 bulk validate，并提示在完成 booking order、开始 shipping procedures 后尽快验证并锁定 ACI shipment data。',
+        ],
+        bullets: ['ACID提前取得', 'Air Waybill资料', 'CargoX上传', 'ACI Validate Lock'],
+      },
+      {
+        heading: '文件格式和特殊货资料不能最后补',
+        body: [
+          'NAFEZA 的 ACI 文件页面列出常见资料：commercial invoice、Packing List、transport document copy、Certificate of origin，并提示上传到 NAFEZA 和 CargoX 的单个文件不要超过 5 MB。按货物属性，还可能需要 inspection certificate、insurance、Halal certificate、Health certificate、MSDS、Phytosanitary certificate、Veterinary certificate 等资料。',
+          '实际询价时，要把 CAI 空运拆成两条线：一条判断航班、尺寸重量、是否适合腹舱或主甲板；另一条判断 ACI/ACID、CargoX、发票模板、AWB、原产地和特殊许可证。两条线都成立，报价才是可执行价格。',
+        ],
+        bullets: ['商业发票模板', 'Packing List', 'Certificate of Origin', 'MSDS/Health/Halal/Phyto如需'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票/NAFEZA模板', '装箱单', 'Air Waybill资料', 'ACID号', '进口商NAFEZA资料', '进口商税号', '出口商CargoX账号和验证状态', 'Certificate of Origin', 'MSDS如需', 'Halal/Health/Phytosanitary/Veterinary证书如需', 'CAI或最终城市', '每件尺寸重量', '是否需要主甲板或二程卡车', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CAI 开罗航线页', href: '/africa-air-freight/cai/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+      { label: '危险品/化工品空运到非洲', href: '/insights/dangerous-goods-chemical-air-freight-africa-checklist/' },
+      { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
+    ],
+    sources: [
+      { label: 'NAFEZA: Advance Cargo Information System (Aviation)', href: 'https://www.nafeza.gov.eg/en/pages/39' },
+      { label: 'NAFEZA: Advance Cargo Information System', href: 'https://www.nafeza.gov.eg/en/pages/15' },
+      { label: 'NAFEZA: Documents required to create an ACI file', href: 'https://www.nafeza.gov.eg/en/pages/32' },
+      { label: 'NAFEZA: ACI Lock Request validator', href: 'https://www.nafeza.gov.eg/en/aci/validate-lock' },
+      { label: 'Egypt Ministry of Finance: Mandatory Air Cargo ACI Rollout', href: 'https://mof.gov.eg/en/posts/media/6954f7ae65be890008918a70/Finance-Minister%3A-With-Mandatory-Air-Cargo-ACI-Rollout-Starting-Tomorrow' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
