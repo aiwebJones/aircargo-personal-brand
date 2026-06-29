@@ -154,6 +154,7 @@ export default function Footer() {
               <a href="/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/" className="hover:text-amberGold">塞舌尔SEZ清关</a>
               <a href="/insights/djibouti-jib-dpcs-air-waybill-air-freight-clearance/" className="hover:text-amberGold">吉布提JIB清关</a>
               <a href="/insights/cabo-verde-rai-dnre-customs-air-freight-clearance/" className="hover:text-amberGold">佛得角RAI清关</a>
+              <a href="/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/" className="hover:text-amberGold">阿尔及利亚ALG清关</a>
             </div>
           </div>
         </div>

@@ -3410,6 +3410,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'algeria-alg-alces-bank-domiciliation-air-freight-clearance',
+    title: '阿尔及利亚ALG空运清关：ALCES、银行domiciliation和AWB日期怎么配合？',
+    excerpt:
+      '中国到阿尔及利亚ALG空运，油气设备、工程备件、医疗仪器、电子电器和项目货不能只看航班。2026年央行通知要求进口货物发运前先完成银行domiciliation，AWB/运输文件日期要晚于domiciliation日期；同时还要对齐ALCES、DGD海关、发票、原产地、符合性证书和清关代理资料。',
+    date: '2026-06-30',
+    readTime: '13 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['阿尔及利亚ALG清关资料', 'Algeria bank domiciliation import', 'ALCES Algeria customs', 'ALG airport customs clearance', 'Airway Bill Algeria import', '中国到阿尔及利亚空运清关'],
+    template: 'generated',
+    audience: ['阿尔及利亚进口商', '油气和工程设备供应商', '医疗仪器与电子电器工厂', '北非航线货代同行'],
+    angle: '用ALG airport、ALCES、Bank of Algeria 2026 domiciliation、Airway Bill日期和清关文件承接阿尔及利亚空运搜索。',
+    sections: [
+      {
+        heading: 'ALG空运先判断银行domiciliation日期',
+        body: [
+          'ALG阿尔及尔适合油气设备、工程备件、工业仪器、医疗设备、电子电器、通信设备和高价值项目货。客户只问中国到阿尔及利亚空运多少钱时，销售要先问进口商银行domiciliation是否已经办好，而不是先报一个公斤价。',
+          'Bank of Algeria在2026年5月14日发布的Note aux banques N°01/DGC/2026说明，货物进口现在以预先银行domiciliation为前提，并且要在外国供应商发运货物之前完成。银行还要核对运输/发运文件日期是否晚于银行domiciliation日期，文件范围包括Bill of Lading、Airway Bill、CMR等。',
+        ],
+        bullets: ['ALG Algiers airport', 'Bank domiciliation before shipment', 'Airway Bill日期', '2026外汇合规'],
+      },
+      {
+        heading: 'AWB日期早于domiciliation会变成清关风险',
+        body: [
+          '同一份央行通知还说明，如果实际发运发生在domiciliation日期之前，银行domiciliation原则上不能被接受，除非有正式授权的特殊情况。这对空运尤其关键：AWB一旦签发，发运时间线就很清楚，后面再补银行文件的空间很小。',
+          '所以ALG询价不能只收重量体积。进口商银行状态、发票日期、Airway Bill日期、发运证明、HS Code、品名、货值、币种、收发货人和付款安排要先对齐。对急件来说，最快的动作不是马上交仓，而是先确认进口端domiciliation能不能覆盖发运节奏。',
+        ],
+        bullets: ['Commercial invoice日期', 'Airway Bill日期', 'Shipment certificate', '进口商银行状态'],
+      },
+      {
+        heading: 'ALCES正在逐步替代旧系统，空运也会被覆盖',
+        body: [
+          '阿尔及利亚海关DGD官网面向企业、报关行、承运人和其他经济运营方发布的ALCES通知说明，ALgerian Customs Electronic System账号注册已经开放；该系统用于完成海关手续并使用海关服务。',
+          'DGD同一通知还说明，从现行SIGAD系统向ALCES切换会逐步进行，并将在全国海运、空运和陆运海关办公室推广。对ALG空运来说，清关代理是否能使用ALCES、申报字段是否完整、AWB和发票箱单是否一致，会越来越影响放行节奏。',
+        ],
+        bullets: ['ALCES registration', 'DGD customs', 'SIGAD to ALCES', 'air customs offices'],
+      },
+      {
+        heading: '进口文件必须跟银行和海关两条线一致',
+        body: [
+          'Trade.gov的阿尔及利亚进口文件页面列出，清关文件通常包括带银行domiciliation的发票、商业登记、税卡、边境检查文件、原产地证明、明细清单、第三方符合性和质量证书，以及报关代理授权。海关规则页也提示，阿尔及利亚清关常见延误可能持续数周到数月，文件要求多是主要原因之一。',
+          '这意味着ALG项目货报价要同时看两条线：一条是银行domiciliation和外汇合规时间线，另一条是DGD/ALCES海关申报资料线。医疗、通信、电子电器、油气、化工、二手设备、带电设备和受监管产品，要在订舱前确认许可证、符合性证书、质量证书和进口商资质。',
+        ],
+        bullets: ['Invoice with bank domiciliation', 'Certificate of Origin', 'Conformity and quality certificates', 'Customs broker mandate'],
+      },
+    ],
+    checklist: ['ALG目的机场', '最终城市/油气或工程现场', '进口商银行domiciliation状态', 'domiciliation日期', '预计AWB签发/发运日期', '商业发票日期和币种', '进口商商业登记', '税卡/税号资料', '清关代理授权', 'ALCES账号或申报能力', 'HS Code', '英文/法文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '发运证明如需', '原产地证明如需', '符合性/质量证书如需', '许可证或受控货批文如需', '每件尺寸重量', '包装照片', '是否经IST/CDG/MAD/CMN或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'CMN 卡萨布兰卡北非中转', href: '/africa-air-freight/cmn/' },
+      { label: 'CAI 开罗北非入口', href: '/africa-air-freight/cai/' },
+      { label: '欧盟ICS2/NCTS政策更新', href: '/insights/eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Bank of Algeria: Note aux banques N°01/DGC/2026 du 14 mai 2026', href: 'https://www.bank-of-algeria.dz/stoodroa/2026/05/note-01-DGC-2026.pdf' },
+      { label: 'Bank of Algeria: Importation regulations', href: 'https://www.bank-of-algeria.dz/importation/' },
+      { label: 'Direction Générale des Douanes: ALCES notice for economic operators', href: 'https://www.douane.gov.dz/spip.php?article526' },
+      { label: 'ALCES: Algerian Customs Electronic System portal', href: 'https://alces.douane.gov.dz/main' },
+      { label: 'Trade.gov: Algeria - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/algeria-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Algeria - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/algeria-customs-regulations' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
