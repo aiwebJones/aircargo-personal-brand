@@ -1237,6 +1237,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'zimbabwe-hre-zimra-asycuda-cbca-air-freight-clearance',
+    title: '津巴布韦HRE空运清关：ZIMRA、ASYCUDA、Bill of Entry和CBCA怎么准备？',
+    excerpt:
+      '中国到津巴布韦HRE哈拉雷空运，矿业设备、农业机械、工厂备件、医疗设备和工业货不能只看航班。ZIMRA商业进口、ASYCUDA World、Bill of Entry/Form 21、商业发票箱单、Air Waybill和CBCA/PVoC证书要提前对齐。',
+    date: '2026-06-30',
+    readTime: '14 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['津巴布韦HRE清关资料', 'ZIMRA ASYCUDA清关', 'CBCA PVoC津巴布韦', '中国到津巴布韦空运清关'],
+    template: 'generated',
+    audience: ['津巴布韦进口商', '矿业设备供应商', '农业机械工厂', '南部非洲项目货代'],
+    angle: '把 ZIMRA 商业进口、ASYCUDA World、Bill of Entry/Form 21 和 CBCA/PVoC 证书转成 HRE 空运询价前的资料预审动作。',
+    sections: [
+      {
+        heading: 'HRE空运先判断ZIMRA商业进口',
+        body: [
+          'HRE 哈拉雷适合津巴布韦矿业、农业机械、工厂维修、医疗设备和工业项目货。客户只问中国到 HRE 空运多少钱时，销售要先判断进口商、注册清关代理和 ZIMRA 商业进口资料是否能跑通。',
+          'ZIMRA 的商业进口指南说明，商业进口清关需要 Bill of Entry（Form 21）、supplier invoices、packing lists、freight statements、export/transit bill of entry 等文件；税费按进口货物的 CIF value 计算。空运场景下，Air Waybill、运费、保险、发票、箱单和货值要能互相对应。',
+        ],
+        bullets: ['ZIMRA商业进口', 'Bill of Entry/Form 21', 'CIF value', '商业发票和运费资料'],
+      },
+      {
+        heading: 'ASYCUDA和清关代理不是到港才找',
+        body: [
+          'ZIMRA 的清关流程页说明，商业进口用 ASYCUDA World 处理 Bill of Entry，清关代理和注册公司通过这个互联网系统电子提交清关文件，所有支持文件要扫描后作为附件在线提交。页面还提示进口商应有用于海关目的的 Business Partner Number。',
+          '所以 HRE 询价不能只收重量和机场代码。HS Code、英文品名、型号规格、品牌、货值、进口商 Business Partner Number、清关代理、AWB、发票箱单、保险/运费和最终交付城市都要在订舱前核验。',
+        ],
+        bullets: ['ASYCUDA World', '注册清关代理', 'Business Partner Number', '电子附件提交'],
+      },
+      {
+        heading: 'CBCA/PVoC证书决定受控产品能否放行',
+        body: [
+          'Zimbabwe Ministry of Industry and Commerce 的 CBCA 页面说明，CBCA 是 Pre-Export Verification of Conformity（PVoC）项目，用于防止不合格产品进口；受管制产品进入津巴布韦前要做符合性评估并出具 Certificate of Conformity，以证明符合本地或认可国际标准。',
+          '矿业设备、农业机械、汽车配件、电气设备、建材、化工、医疗和其他受标准影响的货物，不能等货到哈拉雷后才问 CBCA。正确动作是把航班装载、ZIMRA/ASYCUDA资料、CBCA/PVoC证书、进口许可证和最终交付责任分开确认。',
+        ],
+        bullets: ['CBCA Programme', 'PVoC', 'Certificate of Conformity', '受控产品预审'],
+      },
+    ],
+    checklist: ['HS Code', '具体英文品名', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', 'freight statement', 'insurance资料如需', 'Bill of Entry/Form 21资料', '进口商Business Partner Number', '注册清关代理资料', 'ASYCUDA附件扫描资料', 'export/transit bill of entry如需', 'CBCA/PVoC证书如需', 'Certificate of Conformity如需', '进口许可证如需', 'HRE或最终城市', '每件尺寸重量', '是否需RIB或内陆清关', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'HRE 哈拉雷航线页', href: '/africa-air-freight/hre/' },
+      { label: 'ET/ADD非洲中转选择', href: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/' },
+      { label: 'JNB 南部非洲入口', href: '/insights/jnb-mining-spares-air-freight/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'ZIMRA: Commercial guidelines on imports and exports', href: 'https://www.zimra.co.zw/customs/commercial-guidelines-on-imports-exports' },
+      { label: 'ZIMRA: Customs clearance procedures', href: 'https://www.zimra.co.zw/customs/customs-clearance-procedures' },
+      { label: 'ZIMRA: List of clearing agents', href: 'https://www.zimra.co.zw/13-tax/customs/350-list-of-clearing-agents' },
+      { label: 'Zimbabwe Ministry of Industry and Commerce: CBCA Programme', href: 'https://www.mic.gov.zw/?service=programmes' },
+    ],
+  },
+  {
     slug: 'jnb-mining-spares-air-freight',
     title: 'JNB约翰内斯堡空运：南部非洲矿业急件怎么判断路线？',
     excerpt:
