@@ -150,6 +150,7 @@ export default function Footer() {
               <a href="/insights/gambia-bjl-gra-asycuda-sad-air-freight-clearance/" className="hover:text-amberGold">冈比亚BJL清关</a>
               <a href="/insights/mauritania-nkc-douanes-sydonia-sgs-air-freight-clearance/" className="hover:text-amberGold">毛里塔尼亚NKC清关</a>
               <a href="/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/" className="hover:text-amberGold">马达加斯加TNR清关</a>
+              <a href="/insights/mauritius-mru-mra-tradenet-boe-air-freight-clearance/" className="hover:text-amberGold">毛里求斯MRU清关</a>
             </div>
           </div>
         </div>

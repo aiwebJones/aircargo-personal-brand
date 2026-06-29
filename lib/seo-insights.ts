@@ -3193,6 +3193,60 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'mauritius-mru-mra-tradenet-boe-air-freight-clearance',
+    title: '毛里求斯MRU空运清关：MRA TradeNet、Bill of Entry和机场放行资料怎么准备？',
+    excerpt:
+      '中国到毛里求斯MRU空运，工业设备、医疗物资、电子电器、样品、备件和贸易补货不能只看航班。MRA Customs、TradeNet、Bill of Entry、Air Waybill、发票箱单、原产地证和进口许可证要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['毛里求斯MRU清关资料', 'Mauritius airport customs clearance', 'Mauritius TradeNet air freight', 'MRA customs Bill of Entry', 'MRU air cargo clearance', '中国到毛里求斯空运清关'],
+    template: 'generated',
+    audience: ['毛里求斯进口商', '工业设备供应商', '医疗与电子电器工厂', '印度洋航线货代同行'],
+    angle: '用MRU/Mauritius airport、MRA Customs、TradeNet、Bill of Entry和机场清关承接毛里求斯空运清关搜索。',
+    sections: [
+      {
+        heading: 'MRU空运先判断MRA/TradeNet资料',
+        body: [
+          'MRU毛里求斯适合工业设备、医疗物资、电子电器、样品、小批量备件、快周转贸易补货和印度洋项目货。客户只问中国到毛里求斯空运多少钱时，销售要先判断进口商、清关代理、TradeNet账号、Air Waybill、商业发票、装箱单和Bill of Entry资料是否能提前跑通。',
+          'MRA Customs的进口页面说明，进口任何货物都需要完成海关手续，包括通过TradeNet电子提交Customs Declaration，也就是Bill of Entry（BOE），并填写数量、价值、精确品名、型号、品牌、原产国、税费等资料。空运报价前，MRU到港资料不能只停留在重量体积。',
+        ],
+        bullets: ['MRU airport', 'MRA Customs', 'TradeNet', 'Bill of Entry'],
+      },
+      {
+        heading: 'BOE、AWB和扫描单证必须一致',
+        body: [
+          'MRA进口页面还说明，除了BOE，invoice、Bill of Lading、Packing List、Certificate of Origin、permits或其他随货文件也要扫描并电子提交。空运场景下，Bill of Lading逻辑要换成Air Waybill和航空舱单资料。',
+          '所以MRU询价不能只收中文品名和总重量。HS Code、英文品名、用途、型号、品牌、货值币种、AWB收货人、商业发票、装箱单、原产地、进口许可证和BOE字段必须互相对应；否则会拖慢TradeNet受理、税费支付和海关放行。',
+        ],
+        bullets: ['Air Waybill', 'Commercial invoice', 'Packing List', 'Certificate of Origin'],
+      },
+      {
+        heading: '机场一小时放行目标不等于资料可以晚给',
+        body: [
+          'MRA面向贸易和商业社群的服务页面说明，所有Bills of Entry通过Mauritius TradeNet电子处理，清关代理、货代和注册进口商通过TradeNet提交申报和扫描文件；页面也说明海关目标是在海港和机场站点整体一小时内完成清关手续并发送货物放行信息。',
+          '这正说明资料前置的重要性。医疗设备、通信设备、带电设备、化工品、食品/农业相关货、高货值电子电器和项目备件，不适合只按普通空运报价处理。MRU询价要把航班、TradeNet申报、BOE、许可证、税费、仓库放行和最终交付城市拆成一张执行清单。',
+        ],
+        bullets: ['Electronic Bills of Entry', 'Airport cargo release', 'Import permit场景', '最终交付城市'],
+      },
+    ],
+    checklist: ['MRU目的机场', '最终城市/项目现场', '进口商MRA/TradeNet资料', '清关代理或货代资料', 'HS Code', '英文品名和用途', '规格型号和品牌', '产品照片', '商业发票', '装箱单', 'Air Waybill资料', '航空舱单资料', 'Bill of Entry字段', 'Certificate of Origin如需', '进口许可证或受控货批文如需', '税费/货值资料', '扫描附件准备状态', '每件尺寸重量', '包装照片', '是否经JNB/NBO/DXB或欧洲中转', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 约翰内斯堡入口', href: '/africa-air-freight/jnb/' },
+      { label: 'NBO 内罗毕东非入口', href: '/africa-air-freight/nbo/' },
+      { label: '马达加斯加TNR清关资料', href: '/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/' },
+      { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
+    ],
+    sources: [
+      { label: 'Mauritius Revenue Authority: Import', href: 'https://www.mra.mu/customs1/import' },
+      { label: 'Mauritius Revenue Authority: Service to the Trading and Business Community', href: 'https://www.mra.mu/index.php/customs1/more-topics/service-trading-business-community' },
+      { label: 'Mauritius Revenue Authority: Customs', href: 'https://www.mra.mu/index.php/customs' },
+      { label: 'Mauritius Revenue Authority: Guide to Cargo Clearance', href: 'https://www.mra.mu/download/GuideCargo.pdf' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
