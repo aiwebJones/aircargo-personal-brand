@@ -28,11 +28,36 @@ export const metadata: Metadata = {
   },
 }
 
-const categories = Array.from(new Set(seoInsights.map((item) => item.category)))
+const sortedSeoInsights = [...seoInsights].sort((a, b) => b.date.localeCompare(a.date))
+const categories = Array.from(new Set(sortedSeoInsights.map((item) => item.category)))
 
 export default function InsightsPage() {
+  const insightsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'EASCargo Jones 非洲空运情报库',
+    url: 'https://www.eascargo.com/insights/',
+    description: metadata.description,
+    mainEntity: {
+      '@type': 'ItemList',
+      name: 'China to Africa air freight insights',
+      numberOfItems: sortedSeoInsights.length,
+      itemListElement: sortedSeoInsights.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.title,
+        url: `https://www.eascargo.com/insights/${item.slug}/`,
+      })),
+    },
+  }
+
   return (
     <main className="min-h-screen bg-[#f6f7f9] text-[#101828]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(insightsSchema) }}
+      />
+
       <section className="bg-[#08111f] text-white">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 lg:px-8">
           <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
@@ -96,7 +121,7 @@ export default function InsightsPage() {
         </div>
 
         <div className="mt-10 space-y-5">
-          {seoInsights.map((item) => (
+          {sortedSeoInsights.map((item) => (
             <Link
               key={item.slug}
               href={`/insights/${item.slug}/`}
