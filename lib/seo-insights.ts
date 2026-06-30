@@ -4294,6 +4294,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'eswatini-sho-asycudaworld-sacu-first-port-import-permit-air-freight-clearance',
+    title: '埃斯瓦蒂尼SHO空运清关：ASYCUDAWorld、SACU首入口和进口许可怎么判断？',
+    excerpt:
+      '中国到埃斯瓦蒂尼SHO/King Mswati III空运，医疗物资、通信设备、纺织机器、汽车零件、二手设备和项目备件不能只看目的机场。SACU首入口清关、ASYCUDAWorld、bill of entry、进口许可、发票、箱单、AWB和JNB转运责任要提前拆清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['埃斯瓦蒂尼SHO清关资料', 'Eswatini ASYCUDAWorld', 'SHO air freight customs', 'King Mswati III airport cargo', 'Eswatini import permit', 'SACU first port customs clearance', '中国到埃斯瓦蒂尼空运'],
+    template: 'generated',
+    audience: ['埃斯瓦蒂尼进口商', '纺织和工业设备供应商', '南非转运项目货客户', '汽车零件和医疗设备客户'],
+    angle: '用SHO、King Mswati III airport cargo、Eswatini ASYCUDAWorld、SACU first port和import permit承接埃斯瓦蒂尼空运清关搜索。',
+    sections: [
+      {
+        heading: 'SHO空运不能脱离JNB和SACU首入口',
+        body: [
+          '埃斯瓦蒂尼空运看SHO King Mswati III International Airport，但实际询价不能只问中国到SHO多少钱。很多项目货、设备件、纺织机器、医疗设备、汽车零件和急件会先经JNB/南非入口，再判断是否转飞、陆运或做清关交付。',
+          'Trade.gov的Eswatini进口文件页明确说明，从SACU外部发往Eswatini的货物，必须在进入SACU的首个口岸完成海关清关；还需要向海关提交bill of entry、供应商发票副本和Eswatini进口许可。对中国发货人来说，JNB不是简单中转点，而可能是清关责任的关键节点。',
+        ],
+        bullets: ['SHO King Mswati III airport', 'JNB transit', 'SACU first port customs clearance', 'bill of entry'],
+      },
+      {
+        heading: 'ASYCUDAWorld和SARS数据联动决定资料口径',
+        body: [
+          'ASYCUDA的Eswatini资料说明，Eswatini Revenue Service与SARS之间的信息交换通过SARS电子文件导入ASYCUDAWorld，用于衔接南非入口和埃斯瓦蒂尼进口申报。也就是说，发票、箱单、AWB、HS Code、货值和收货人信息不能在南非段、埃斯瓦蒂尼段各写各的。',
+          '报价前要把资料变成可申报数据：英文品名、HS Code、用途、品牌型号、货值、商业发票、装箱单、AWB、进口商资料、税号/注册信息、进口许可状态、产品照片、是否二手/带电/医疗/通信/食品接触、以及JNB到SHO或Mbabane/Manzini的交付责任。',
+        ],
+        bullets: ['Eswatini ASYCUDAWorld', 'SARS data import', 'invoice packing list AWB', 'data consistency'],
+      },
+      {
+        heading: '进口许可不是所有货都要，但受控货要先筛',
+        body: [
+          'Trade.gov页面列举了需要进口许可或受控判断的典型货类，包括农产品、矿物燃料、旧衣服、矿物油、汽车零部件、二手车、药品和电器等。Eswatini政府进口许可页面也把进口许可作为受管货物进入市场前的行政要求之一。',
+          '这类页面的成交价值在于先帮客户排雷：医疗设备、药品、试剂、通信设备、电气设备、汽车零件、二手设备、带电池设备、纺织机器和食品相关货，必须让进口商或当地broker确认许可、标准、税费和清关节点。资料不完整时，不要用低价催客户订舱。',
+        ],
+        bullets: ['Eswatini import permit', 'controlled goods screening', 'electrical appliances', 'medicinal drugs'],
+      },
+      {
+        heading: 'SHO机场、Mbabane和Manzini交付要写清边界',
+        body: [
+          'ESWACAA的KMIII机场页面显示，King Mswati III International Airport服务埃斯瓦蒂尼，并具备货运相关设施。Fluent Cargo也将SHO标识为King Mswati III International Airport。对销售而言，SHO页面要解决的不是机场代码，而是到港后谁提货、谁清关、谁把货交到Mbabane、Manzini、工厂或项目现场。',
+          '报价边界要拆成可执行条款：到JNB、到SHO机场、JNB清关后转运到Eswatini、还是包含目的地清关协助和末端交付。每一种边界对应不同的时效、税费、仓租、查验、许可证和风险责任。',
+        ],
+        bullets: ['King Mswati III cargo', 'Mbabane delivery', 'Manzini delivery', 'quote boundary'],
+      },
+    ],
+    checklist: ['SHO/JNB/最终交付城市', '是否经南非首入口清关', '进口商资料', '当地清关代理/broker资料', 'ASYCUDAWorld申报责任', 'SARS/SACU资料衔接责任', 'bill of entry责任', 'HS Code', '英文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', 'Eswatini进口许可适用性', '是否农业/药品/电器/汽车零件/二手设备/矿物油/旧衣服', '产品照片', 'MSDS/DG资料如需', '是否带电池或无线模块', '货值和币种', '贸易条款', '税费承担方', '每件尺寸重量', 'JNB到SHO或内陆交付方式', '仓租和查验风险责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'JNB 南非入口', href: '/africa-air-freight/jnb/' },
+      { label: 'DUR 德班南部非洲入口', href: '/africa-air-freight/dur/' },
+      { label: '莱索托MSU清关资料', href: '/insights/lesotho-msu-asycuda-world-import-permit-air-freight-clearance/' },
+      { label: '博茨瓦纳GBE清关资料', href: '/insights/botswana-gbe-burs-single-window-sad500-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Eswatini Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/eswatini-import-requirements-and-documentation' },
+      { label: 'Government of Eswatini: Import Permits', href: 'https://www.gov.sz/index.php/component/content/article/327-import-permits?Itemid=31' },
+      { label: 'ASYCUDA Compendium 2022: Eswatini', href: 'https://asycuda.org/wp-content/uploads/ASYCUDA-Compendium-2022-Eswatini.pdf' },
+      { label: 'ESWACAA: King Mswati III International Airport', href: 'https://www.eswacaa.co.sz/kmiii-airport/' },
+      { label: 'Fluent Cargo: SHO King Mswati III International Airport', href: 'https://www.fluentcargo.com/ports/iata/SHO' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
