@@ -4357,6 +4357,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'zanzibar-znz-tancis-mainland-zanzibar-air-freight-clearance',
+    title: '桑给巴尔ZNZ空运清关：TANCIS、7天前申报和Abeid Amani Karume机场资料怎么准备？',
+    excerpt:
+      '中国到桑给巴尔ZNZ/Abeid Amani Karume空运，酒店项目物资、医疗设备、冷链小货、通信设备、食品相关货和工程备件不能只看航班。TANCIS、Mainland and Zanzibar申报、7天前提交资料、AWB、发票、箱单、进口商和清关代理责任要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-1.jpg',
+    keywords: ['桑给巴尔ZNZ清关资料', 'Zanzibar ZNZ customs clearance', 'TANCIS Mainland and Zanzibar', 'Abeid Amani Karume airport cargo', 'Tanzania air freight import documents', 'Zanzibar air cargo clearance', '中国到桑给巴尔空运'],
+    template: 'generated',
+    audience: ['桑给巴尔进口商', '酒店和旅游项目供应商', '医疗冷链和通信设备客户', '东非岛屿项目货客户'],
+    angle: '用ZNZ、Zanzibar customs clearance、TANCIS Mainland and Zanzibar、7 days before arrival和Abeid Amani Karume airport cargo承接桑给巴尔空运清关搜索。',
+    sections: [
+      {
+        heading: 'ZNZ空运先看机场、进口商和清关代理',
+        body: [
+          '桑给巴尔空运主要看ZNZ Abeid Amani Karume International Airport。适合酒店项目物资、医疗设备、冷链小货、通信设备、检测仪器、食品相关货、工程备件和高价值急件。询价时不能只问中国到Zanzibar有没有航班，还要确认进口商、清关代理、AWB、商业发票、箱单、HS Code、货值和最终交付地址。',
+          'Fluent Cargo把ZNZ标为Abeid Amani Karume International Airport，服务Zanzibar。Zanzibar Airports Authority官网也显示其负责桑给巴尔机场体系。对货代销售来说，ZNZ页面要解决的是机场到Stone Town、酒店项目现场、仓库或外岛交付之间的资料和责任边界。',
+        ],
+        bullets: ['ZNZ Abeid Amani Karume airport', 'Zanzibar airport cargo', 'local clearing agent', 'final delivery boundary'],
+      },
+      {
+        heading: 'TANCIS资料至少7天前就要开始准备',
+        body: [
+          'Trade.gov的Tanzania进口文件页面说明，进口商必须指定持牌清关代理清关，处理通过Tanzania Customs Integrated System（TANCIS）在线进行；清关代理在TANCIS中为Mainland and Zanzibar提交文件，并被要求至少在货物到达前7天提交资料。',
+          '这对ZNZ空运很关键：客户临近起飞才补发票、箱单、HS Code、收货人或许可状态，会直接影响申报节奏。正确动作是订舱前把英文品名、用途、品牌型号、货值、商业发票、装箱单、AWB资料、进口商TIN/资料、目的地清关代理和货物属性先锁定。',
+        ],
+        bullets: ['TANCIS Mainland and Zanzibar', '7 days before arrival', 'licensed clearing agent', 'document pre-check'],
+      },
+      {
+        heading: '清关申报责任不能只压给目的港',
+        body: [
+          'Tanzania Trade Portal的进口流程页面说明，Customs Declaration由进口商指定的清关代理登记和评估，清关代理和/或贸易商对申报资料承担责任。也就是说，起运地销售如果只收重量体积就报价，等于把最大风险留给目的港。',
+          'ZNZ询价要把资料责任写清：谁确认HS Code，谁提供发票和箱单，谁在TANCIS提交，谁承担税费，谁处理查验和补料，谁负责机场提货和末端交付。对酒店、医疗、食品、通信和项目件，这些问题比单公斤价格更影响成交。',
+        ],
+        bullets: ['customs declaration liability', 'importer appointed agent', 'HS Code accuracy', 'tax and inspection responsibility'],
+      },
+      {
+        heading: '酒店项目、食品和冷链货要先做受控货筛查',
+        body: [
+          'Zanzibar项目货常见于酒店、旅游设施、医疗、食品饮料、冷链、通信设备和工程维修。Trade.gov的Tanzania进口文件页面把TANCIS、清关代理和到货前提交资料作为基础动作；实际执行时，食品、药品、医疗、无线通信、带电池设备、二手设备和化工品还要让进口商或broker确认许可证、检验、标准和特殊单证。',
+          '报价边界要拆清楚：只做到ZNZ机场，还是包含清关协助、税费垫付、Stone Town/酒店现场交付、冷链交接、外岛转运或项目现场签收。资料越早前置，越容易把低质量询价筛成能成交的真实需求。',
+        ],
+        bullets: ['hotel project cargo', 'food and cold chain', 'medical cargo', 'telecom equipment screening'],
+      },
+    ],
+    checklist: ['ZNZ目的机场/Zanzibar最终地址', 'Stone Town/酒店/仓库/外岛交付点', '进口商资料', '当地清关代理/CFA资料', 'TANCIS申报责任', '是否至少到港前7天提交资料', 'HS Code', '英文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', '进口商TIN/注册资料', '许可证或检验要求确认', '是否食品/医疗/通信/二手/带电/化工/冷链', 'MSDS/DG资料如需', '温控要求如需', '产品照片', '货值和币种', '贸易条款', '税费承担方', '每件尺寸重量', '是否经DAR/NBO/ADD中转', 'ZNZ机场提货责任', '末端交付和签收责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'DAR 达累斯萨拉姆入口', href: '/africa-air-freight/dar/' },
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: '坦桑尼亚DAR清关资料', href: '/insights/tanzania-dar-pvoc-coc-air-freight-clearance/' },
+      { label: '科摩罗HAH清关资料', href: '/insights/comoros-hah-asycuda-world-electronic-manifest-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Tanzania Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/tanzania-import-requirements-and-documentation' },
+      { label: 'Trade.gov: Tanzania Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/tanzania-customs-regulations' },
+      { label: 'Tanzania National Business Portal: Import Procedure', href: 'https://business.go.tz/import-procedure' },
+      { label: 'Tanzania Trade Portal: Import procedures', href: 'https://trade.tanzania.go.tz/objective/27?includeSearch=true&l=en' },
+      { label: 'Zanzibar Airports Authority', href: 'https://zaa.go.tz/' },
+      { label: 'Fluent Cargo: ZNZ Abeid Amani Karume International Airport', href: 'https://www.fluentcargo.com/ports/iata/ZNZ' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:

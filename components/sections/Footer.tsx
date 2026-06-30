@@ -169,6 +169,7 @@ export default function Footer() {
               <a href="/insights/sao-tome-principe-tms-asycudaworld-import-permit-air-freight-clearance/" className="hover:text-amberGold">圣多美TMS清关</a>
               <a href="/insights/comoros-hah-asycuda-world-electronic-manifest-air-freight-clearance/" className="hover:text-amberGold">科摩罗HAH清关</a>
               <a href="/insights/eswatini-sho-asycudaworld-sacu-first-port-import-permit-air-freight-clearance/" className="hover:text-amberGold">埃斯瓦蒂尼SHO清关</a>
+              <a href="/insights/zanzibar-znz-tancis-mainland-zanzibar-air-freight-clearance/" className="hover:text-amberGold">桑给巴尔ZNZ清关</a>
             </div>
           </div>
         </div>
