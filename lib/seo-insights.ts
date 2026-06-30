@@ -3777,8 +3777,8 @@ export const seoInsights: SeoInsight[] = [
     relatedRoutes: [
       { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
       { label: 'EBB 乌干达入口', href: '/africa-air-freight/ebb/' },
-      { label: '肯尼亚NBO PVoC/IDF清关资料', href: '/insights/kenya-nbo-pvoc-coc-idf-air-freight-clearance/' },
-      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-ura-air-freight-clearance/' },
+      { label: '肯尼亚NBO PVoC/IDF清关资料', href: '/insights/kenya-nbo-pvoc-idf-air-freight-documents/' },
+      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-air-freight-clearance/' },
     ],
     sources: [
       { label: 'South Sudan ACD: General information', href: 'https://acdsouthsudan.com/general-information/' },
@@ -3903,7 +3903,7 @@ export const seoInsights: SeoInsight[] = [
     relatedRoutes: [
       { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
       { label: 'EBB 乌干达入口', href: '/africa-air-freight/ebb/' },
-      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-ura-air-freight-clearance/' },
+      { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-air-freight-clearance/' },
       { label: '南苏丹JUB清关资料', href: '/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/' },
     ],
     sources: [
@@ -4228,6 +4228,69 @@ export const seoInsights: SeoInsight[] = [
       { label: 'Export.gov legacy: São Tomé and Príncipe Import Requirements', href: 'https://legacy.export.gov/article?id=Sao-Tome-and-Principe-Import-Requirements-and-Documentation' },
       { label: 'Export-U: São Tomé and Príncipe Country Commercial Guide PDF', href: 'https://www.export-u.com/CCGs/2020/Sao-Tome-%26-Principe-2020-CCG.pdf' },
       { label: 'Fluent Cargo: TMS São Tomé International Airport', href: 'https://www.fluentcargo.com/ports/iata/TMS' },
+    ],
+  },
+  {
+    slug: 'comoros-hah-asycuda-world-electronic-manifest-air-freight-clearance',
+    title: '科摩罗HAH空运清关：ASYCUDA World、24小时电子舱单和Moroni机场资料怎么准备？',
+    excerpt:
+      '中国到科摩罗HAH/Moroni空运，医疗物资、通信设备、工程备件、食品相关货、岛屿项目货和高价值急件不能只看航班。ASYCUDA World、航空电子舱单、AWB、发票、箱单、HS Code、进口许可/限制、Moroni-Aéroport电子申报和岛间交付要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-5.jpg',
+    keywords: ['科摩罗HAH清关资料', 'Comoros ASYCUDA World', 'HAH air freight customs', 'Moroni airport customs clearance', 'Comoros electronic manifest air cargo', 'Comoros import documents', '中国到科摩罗空运'],
+    template: 'generated',
+    audience: ['科摩罗进口商', '医疗和通信设备供应商', '印度洋岛屿项目货客户', '东非中转空运客户'],
+    angle: '用HAH、Moroni airport customs clearance、Comoros ASYCUDA World、electronic manifest和24 hours before landing承接科摩罗空运清关搜索。',
+    sections: [
+      {
+        heading: 'HAH空运先看Moroni机场和收货人能力',
+        body: [
+          '科摩罗空运主要看HAH Prince Said Ibrahim International Airport/Moroni。适合医疗物资、实验室设备、通信设备、工程备件、食品相关货、检测仪器、岛屿项目货和高价值急件。询价时不能只问中国到Moroni有没有航班，还要确认进口商、当地清关代理、AWB、商业发票、箱单、HS Code、货值、许可状态和最终交付责任。',
+          'Fluent Cargo和World Airport Codes都把Prince Said Ibrahim International Airport标为HAH/FMCH，服务Moroni。对货代销售来说，HAH不是一个普通目的港代码，而是清关、机场提货、Moroni市内交付和岛间转运责任的分界点。',
+        ],
+        bullets: ['HAH Prince Said Ibrahim International Airport', 'Moroni airport customs clearance', 'local broker capability', 'island delivery boundary'],
+      },
+      {
+        heading: 'ASYCUDA World和单一窗口会放大资料质量差异',
+        body: [
+          'ASYCUDA的Comoros用户国家页面显示，科摩罗的最新项目是电子单一窗口建设和ASYCUDA World改进，平台为ASYCUDA World。2024版科摩罗海关法典也把Moroni-Aéroport列为电子申报相关海关办公室之一。',
+          '这意味着HAH空运资料要尽早从聊天记录变成可申报数据：英文/法文品名、HS Code、用途、品牌型号、货值、发票、装箱单、AWB、原产地、进口商资料、当地broker联系人、产品照片、是否带电池/无线模块/医疗用途/食品接触/二手设备，都要在订舱前整理。',
+        ],
+        bullets: ['Comoros ASYCUDA World', 'electronic single window', 'Moroni-Aeroport declaration', 'invoice packing list AWB'],
+      },
+      {
+        heading: '航空电子舱单是24小时前，不是货到后再补',
+        body: [
+          '科摩罗2024版海关法典中的Arrêté N°24-014/MFBSB/CAB规定，航空器运输到科摩罗境内的货物舱单，应由航空公司在着陆前不迟于24小时通过电子方式传输。若无法电子传输，需在海关要求时提交，且作为简要申报在着陆后三小时内提交。',
+          '空运报价因此要提前锁住主单/分单信息、件重尺、品名、收发货人、航班信息和资料版本。客户临近起飞才改品名、件数、货值或收货人，可能不是简单改单，而是影响舱单、申报和到港放行。',
+        ],
+        bullets: ['electronic cargo manifest', '24 hours before landing', 'summary declaration', 'AWB data consistency'],
+      },
+      {
+        heading: '医疗、通信、食品和二手设备先做许可筛查',
+        body: [
+          'HAH票常见风险不是航班少，而是资料链和许可责任不清。医疗设备、药品、试剂、通信设备、无线模块、食品相关货、化工品、电池设备、二手设备和援助货，要让进口商和目的港broker确认是否涉及主管部门许可、检验、限制或额外证书。',
+          '可执行报价应拆清楚：只做到Moroni机场，还是包含清关协助、税费垫付、Moroni市内交付、Anjouan/Mohéli岛间转运；谁承担仓租、查验、系统异常、资料补正和税费变化风险。资料不齐时，低价只会把风险延后。',
+        ],
+        bullets: ['medical cargo screening', 'telecom equipment', 'food related cargo', 'Anjouan Moheli delivery'],
+      },
+    ],
+    checklist: ['HAH目的机场/Moroni最终地址', '是否继续转运Anjouan或Moheli', '进口商资料', '当地清关代理/broker资料', 'Comoros ASYCUDA World申报责任', '电子舱单资料版本', 'AWB主单/分单信息', 'HS Code', '英文/法文品名和用途', '品牌型号', '商业发票', '装箱单', '原产地证如需', '进口许可或限制确认', '医疗/食品/通信/二手/带电属性', 'MSDS/DG资料如需', '产品照片', '货值和币种', '贸易条款', '税费承担方', '每件尺寸重量', '航班和中转节点', 'Moroni机场提货责任', '岛间转运和末端交付责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕东非中转', href: '/africa-air-freight/nbo/' },
+      { label: 'DAR 达累斯萨拉姆中转', href: '/africa-air-freight/dar/' },
+      { label: '马达加斯加TNR清关资料', href: '/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/' },
+      { label: '塞舌尔SEZ清关资料', href: '/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: User Countries - Comoros', href: 'https://asycuda.org/en/usercountries-comoros/' },
+      { label: 'Comoros Ministry of Justice: Code des douanes version 2024', href: 'https://justice.gouv.km/texte/code-des-douanes-version-2024/' },
+      { label: 'Comoros Customs Code 2024 PDF', href: 'https://justice.gouv.km/wp-content/uploads/2025/03/code_des_douanes_union_des_comores_2024.pdf' },
+      { label: 'Fluent Cargo: HAH Prince Said Ibrahim International Airport', href: 'https://www.fluentcargo.com/ports/iata/HAH' },
+      { label: 'World Airport Codes: Prince Said Ibrahim International Airport', href: 'https://www.world-airport-codes.com/comoros/prince-said-ibrahim-in-4904.html' },
     ],
   },
   {
