@@ -30,6 +30,33 @@ export const metadata: Metadata = {
 
 const sortedSeoInsights = [...seoInsights].sort((a, b) => b.date.localeCompare(a.date))
 const categories = Array.from(new Set(sortedSeoInsights.map((item) => item.category)))
+const miningProjectLinks = [
+  {
+    title: 'JNB 矿业急件怎么走',
+    href: '/insights/jnb-mining-spares-air-freight/',
+    note: '南部非洲矿业、工厂维修件和高价值备件入口。',
+  },
+  {
+    title: 'FBM 铜钴矿区备件空运',
+    href: '/insights/fbm-copperbelt-mining-equipment-air-freight/',
+    note: '卢本巴希/铜带项目货，先判断主甲板和目的地清关。',
+  },
+  {
+    title: 'LUN 赞比亚工业设备空运',
+    href: '/insights/lun-zambia-industrial-air-freight-guide/',
+    note: '卢萨卡、铜带和内陆项目现场的文件与二程判断。',
+  },
+  {
+    title: 'LBV 8米长货经LGG/BRU',
+    href: '/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/',
+    note: '长件、能源和油气项目货先看欧洲中转窗口。',
+  },
+  {
+    title: '非洲矿业设备RFQ模板',
+    href: '/insights/africa-mining-equipment-air-freight-rfq-template/',
+    note: '把询价变成尺寸、资料、清关和交付责任清单。',
+  },
+]
 
 export default function InsightsPage() {
   const insightsSchema = {
@@ -119,6 +146,34 @@ export default function InsightsPage() {
             </span>
           ))}
         </div>
+
+        <section className="mt-10 rounded-lg bg-[#08111f] p-6 text-white shadow-sm">
+          <div className="grid gap-6 lg:grid-cols-[320px_1fr] lg:items-start">
+            <div>
+              <p className="text-sm font-semibold text-amberGold">Mining project cargo cluster</p>
+              <h2 className="mt-3 text-2xl font-black">矿业/能源备件优先看这些页面</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                中国到非洲项目货搜索通常不是泛泛找货代，而是在问 JNB、FBM、LUN、LBV 这类目的点能不能飞、
+                怎么清关、二程怎么接。这里按买家会搜索的问题集中入口。
+              </p>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              {miningProjectLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-amberGold hover:bg-white/10"
+                >
+                  <span className="flex items-center justify-between gap-3 font-semibold text-white transition group-hover:text-amberGold">
+                    {item.title}
+                    <ArrowRight className="h-4 w-4 shrink-0" />
+                  </span>
+                  <span className="mt-2 block text-sm leading-6 text-slate-300">{item.note}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <div className="mt-10 space-y-5">
           {sortedSeoInsights.map((item) => (
