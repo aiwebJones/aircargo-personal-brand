@@ -4421,6 +4421,71 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'victoria-falls-vfa-zimra-asycuda-cbca-air-freight-clearance',
+    title: '维多利亚瀑布VFA空运清关：ZIMRA、ASYCUDA、Form 21和CBCA资料怎么准备？',
+    excerpt:
+      '中国到津巴布韦Victoria Falls VFA空运，酒店项目物资、旅游设施设备、医疗设备、展会活动货、汽车零件和工程备件不能只看HRE。ZIMRA、ASYCUDA、Bill of Entry/Form 21、AWB、发票、箱单、进口许可和CBCA/PVoC资料要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['维多利亚瀑布VFA清关资料', 'Victoria Falls VFA customs clearance', 'ZIMRA ASYCUDA VFA', 'Zimbabwe Form 21 Bill of Entry', 'VFA air freight customs', 'Zimbabwe CBCA PVoC', '中国到维多利亚瀑布空运'],
+    template: 'generated',
+    audience: ['津巴布韦进口商', '酒店和旅游项目供应商', '展会活动物流客户', '医疗和工程设备客户'],
+    angle: '用VFA、Victoria Falls customs clearance、ZIMRA ASYCUDA、Bill of Entry Form 21和CBCA/PVoC承接津巴布韦旅游项目货空运清关搜索。',
+    sections: [
+      {
+        heading: 'VFA不是HRE的简单替代，要先判断清关节点',
+        body: [
+          'Victoria Falls/VFA适合酒店项目物资、旅游设施设备、展会活动货、医疗设备、工程备件、汽车零件、冷链小货和高价值急件。客户问中国到Victoria Falls空运时，第一步不是套HRE价格，而是确认货到VFA机场清关，还是经HRE/JNB等节点衔接后再转运到Victoria Falls。',
+          'CAAZ联系页列出Victoria Falls International Airport，并在相关政府/机构链接中列出Zimbabwe Revenue Authority（ZIMRA-Customs）。这说明VFA询价不能只看机场代码，还要把ZIMRA清关、机场提货、酒店/项目现场交付和收货人责任提前拆清。',
+        ],
+        bullets: ['Victoria Falls International Airport', 'VFA airport customs', 'ZIMRA-Customs', 'hotel project delivery'],
+      },
+      {
+        heading: '商业进口要围绕ASYCUDA和Form 21准备资料',
+        body: [
+          'ZIMRA的Customs Clearance Procedures页面说明，商业进口通过Bill of Entry在ASYCUDA系统中处理；进口商需要有用于海关目的的Business Partner Number，并建议使用专业清关代理。页面列出的资料包括Bill of Entry（Form 21）、供应商发票、出口或过境Bill of Entry如适用、Value Declaration Forms、Air Way Bill或Bill of Lading、货运声明、舱单、保险资料和原产地证如需。',
+          '对VFA空运来说，报价前资料要先变成可申报数据：英文品名、HS Code、用途、品牌型号、货值、商业发票、装箱单、AWB、进口商Business Partner Number、清关代理、许可/证书状态、产品照片和最终交付地址。资料不齐时，低价只会把风险推迟到到港后。',
+        ],
+        bullets: ['ZIMRA ASYCUDA', 'Bill of Entry Form 21', 'Business Partner Number', 'Air Way Bill'],
+      },
+      {
+        heading: '酒店、医疗、汽车零件和电器要先筛CBCA/PVoC',
+        body: [
+          'Zimbabwe Ministry of Industry and Commerce的CBCA项目页面说明，CBCA是Pre-Export Verification of Conformity（PVoC）项目，用于防止不合格产品进口，受管制产品进入津巴布韦前需要符合性评估并取得Certificate of Conformity。VFA项目货常见的电器、设备、建筑/酒店用品、医疗相关货和汽车零件，都不能等货到机场才问是否受控。',
+          'ZIMRA的商业进出口指南也把Original Permits、Licences列入受控货资料；受限和禁止货页面用于提醒进口商提前确认限制。销售动作是先让进口商或目的港broker确认CBCA/PVoC、许可证、检验、原产地和税费，再决定是否直做VFA、经HRE，还是改用JNB/陆运衔接。',
+        ],
+        bullets: ['Zimbabwe CBCA PVoC', 'Certificate of Conformity', 'controlled goods permits', 'restricted goods screening'],
+      },
+      {
+        heading: '报价边界要写清机场、清关和旅游区交付',
+        body: [
+          'VFA目的地的实际风险往往不是航班，而是末端边界：机场提货、ZIMRA申报、仓租、查验、税费、酒店工地交付、展会活动时间窗和现场签收。旅游区项目货如果延误，成本通常不只是一点仓租，而是现场安装、开业或活动节点被打乱。',
+          '可执行报价应拆成：只到VFA机场、含目的地清关协助、含Victoria Falls市区或酒店项目交付、经HRE中转、经JNB转运，还是包含冷链/展会时效安排。每一种边界都要对应不同资料、责任和风险价格。',
+        ],
+        bullets: ['Victoria Falls delivery', 'airport pickup responsibility', 'hotel project cargo', 'event cargo deadline'],
+      },
+    ],
+    checklist: ['VFA目的机场/Victoria Falls最终地址', '是否经HRE或JNB中转', '进口商Business Partner Number', '当地清关代理/broker资料', 'ZIMRA/ASYCUDA申报责任', 'Bill of Entry/Form 21责任', 'HS Code', '英文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', 'Value Declaration资料如需', '出口/过境Bill of Entry如需', '原产地证如需', 'CBCA/PVoC适用性', 'Certificate of Conformity如需', '进口许可证或受限货确认', '是否酒店/医疗/电器/汽车零件/二手/带电/冷链/展会货', 'MSDS/DG资料如需', '产品照片', '货值和币种', '税费承担方', '每件尺寸重量', 'VFA机场提货责任', '酒店/项目/活动现场交付责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'HRE 哈拉雷航线页', href: '/africa-air-freight/hre/' },
+      { label: 'JNB 约翰内斯堡中转', href: '/africa-air-freight/jnb/' },
+      { label: '津巴布韦HRE清关资料', href: '/insights/zimbabwe-hre-zimra-asycuda-cbca-air-freight-clearance/' },
+      { label: '赞比亚LUN清关资料', href: '/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ZIMRA: Customs Clearance Procedures', href: 'https://www.zimra.co.zw/customs/customs-clearance-procedures' },
+      { label: 'ZIMRA: Commercial Guidelines on Imports & Exports', href: 'https://www.zimra.co.zw/customs/commercial-guidelines-on-imports-exports' },
+      { label: 'ZIMRA: Restricted and Prohibited Goods', href: 'https://www.zimra.co.zw/customs/restricted-and-prohibited-goods' },
+      { label: 'Trade.gov: Zimbabwe Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/zimbabwe-customs-regulations' },
+      { label: 'Zimbabwe Ministry of Industry and Commerce: CBCA Programme', href: 'https://www.mic.gov.zw/?service=programmes' },
+      { label: 'CAAZ: Contact - Victoria Falls International Airport and ZIMRA-Customs links', href: 'https://www.caaz.co.zw/contact/' },
+      { label: 'Fluent Cargo: VFA Victoria Falls International Airport', href: 'https://www.fluentcargo.com/ports/iata/VFA' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
