@@ -1997,6 +1997,70 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance',
+    title: '尼日利亚PHC油气备件空运清关：SONCAP/NSW、Form M、PAAR和Port Harcourt资料怎么准备？',
+    excerpt:
+      '中国到尼日利亚Port Harcourt PHC空运，油气备件、阀门、泵、电机、仪表、MRO急件和项目设备不能只套LOS价格。2026年SONCAP和Import Permit迁移到National Single Window，Form M、PAAR、B’Odogwu、AWB、发票箱单和目的港清关责任要提前对齐。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-5.jpg',
+    keywords: ['Port Harcourt PHC air freight', 'Nigeria oil and gas spares air cargo', 'PHC customs clearance', 'Nigeria SONCAP National Single Window', 'Form M PAAR oil gas spares', '尼日利亚PHC清关资料', '中国到Port Harcourt空运'],
+    template: 'generated',
+    audience: ['尼日利亚油气项目客户', '油服备件供应商', '阀门泵电机仪表工厂', 'Port Harcourt进口商'],
+    angle: '用PHC、Port Harcourt oil and gas spares、SONCAP National Single Window、Form M/PAAR和B’Odogwu承接尼日利亚油气备件空运清关搜索。',
+    sections: [
+      {
+        heading: 'PHC不是LOS的简单延伸，它服务油气项目',
+        body: [
+          'Port Harcourt/PHC适合油气备件、阀门、泵、电机、仪表、控制柜、MRO急件、海工设备、发电机配件和工厂维修件。客户问中国到Port Harcourt空运时，不能机械套LOS拉各斯价格；第一步要判断货到PHC机场清关，还是经LOS/ABV/JNB/欧洲节点中转后再转运。',
+          'FAAN的Port Harcourt International Airport页面明确把机场定位为服务Port Harcourt的油气行业及邻近区域。Fluent Cargo也将PHC标识为Port Harcourt International Airport。页面要承接的是“油气现场急件能不能快到、能不能清、谁负责机场提货和现场交付”。',
+        ],
+        bullets: ['Port Harcourt PHC', 'oil and gas spares', 'MRO urgent cargo', 'airport pickup and final delivery'],
+      },
+      {
+        heading: '2026年SONCAP和Import Permit要看NSW迁移',
+        body: [
+          'Standards Organisation of Nigeria在2026年3月31日发布通知，要求SONCAP和Import Permit流程迁移到National Single Window平台，目标是统一并数字化进出口合规流程。对中国发PHC的设备件来说，产品认证不是到港后才问的附属动作，而是订舱前就要让进口商和目的港broker确认。',
+          '油气备件里常见的电气设备、压力件、泵阀、仪表、带电池设备、通信模块、二手设备和化工相关物资，都可能触发SONCAP、进口许可、测试报告、MSDS或其他主管部门资料。资料不齐时，空运速度会被目的港补料和查验吃掉。',
+        ],
+        bullets: ['SONCAP National Single Window', 'Import Permit migration', 'product certificate', 'controlled goods screening'],
+      },
+      {
+        heading: 'Form M、PAAR和B’Odogwu要和AWB口径一致',
+        body: [
+          'Trade.gov的尼日利亚进口文件页面列出商业发票、装箱单、提单或空运单、原产地证、Form M、产品证书等基础资料，并说明尼日利亚进口由多部门系统和文件共同影响。尼日利亚海关FAQ也反复出现Form M、PAAR、SGD、运输单证、发票、装箱单和产品证书这些关键材料。',
+          'PHC空运报价前要把申报口径锁住：品名、HS Code、货值、件数重量、主单/分单、收发货人、进口商TIN、Form M、PAAR、产品证书和最终交付地址不能各写各的。B’Odogwu或其他电子流程再新，也救不了错误数据。',
+        ],
+        bullets: ['Form M', 'PAAR', 'Air Waybill', 'B’Odogwu data consistency'],
+      },
+      {
+        heading: '油气急件报价要拆清机场、清关和现场责任',
+        body: [
+          '油气备件的成交价值不是每公斤便宜几毛，而是减少停机时间。PHC急件要先问清最终地点：Port Harcourt市区、Onne、Bonny、Warri、Aba、油服仓库、码头、工厂还是现场营地。不同交付点对应不同清关、提货、安保、卡车、吊装和签收责任。',
+          '可执行报价应拆成：只到PHC机场、含目的地清关协助、含机场提货、含Port Harcourt/Onne/项目现场交付、或经LOS再转运。每个边界都要写清税费、仓租、查验、证书、进口商责任和最晚到货节点。',
+        ],
+        bullets: ['Port Harcourt delivery', 'Onne oilfield logistics', 'downtime risk', 'quote boundary'],
+      },
+    ],
+    checklist: ['PHC目的机场/Port Harcourt最终地址', 'Onne/Bonny/Warri/油服仓库或现场交付点', '是否经LOS/ABV/JNB/欧洲中转', '进口商TIN/资料', '目的港清关代理/broker资料', 'B’Odogwu或海关电子流程责任', 'Form M状态', 'PAAR状态', 'SONCAP或Import Permit适用性', 'National Single Window提交责任', 'HS Code', '英文品名和用途', '品牌型号和序列号如需', '商业发票', '装箱单', 'Air Waybill资料', '产品证书或测试报告如需', 'MSDS/DG资料如需', '是否油气备件/压力件/电气设备/二手设备/带电/通信模块/化工相关', '产品照片', '货值和币种', '贸易条款', '税费承担方', '每件尺寸重量', 'PHC机场提货责任', '现场交付和卸货条件', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LOS 拉各斯航线页', href: '/africa-air-freight/los/' },
+      { label: '尼日利亚B’Odogwu清关', href: '/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/' },
+      { label: '尼日利亚SONCAP/Form M/PAAR', href: '/insights/nigeria-los-soncap-formm-paar-air-freight/' },
+      { label: '非洲矿业设备询价模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+    ],
+    sources: [
+      { label: 'Standards Organisation of Nigeria: SONCAP and Import Permit migration to National Single Window', href: 'https://son.gov.ng/2026/03/31/mandatory-migration-of-soncap-and-import-permit-processes-to-the-national-single-window-nsw-platform/' },
+      { label: 'FAAN: Port Harcourt International Airport', href: 'https://faan.gov.ng/ph-international-airport/' },
+      { label: 'Nigeria Customs Service: B’Odogwu Portal', href: 'https://bodogwu.customs.gov.ng/' },
+      { label: 'Nigeria Customs Service: Frequently Asked Questions', href: 'https://customs.gov.ng/?p=2819' },
+      { label: 'Trade.gov: Nigeria Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/nigeria-import-requirements-and-documentation' },
+      { label: 'Fluent Cargo: PHC Port Harcourt International Airport', href: 'https://www.fluentcargo.com/ports/iata/PHC' },
+    ],
+  },
+  {
     slug: 'iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight',
     title: 'IATA DGR第67版锂电池空运：PI966/PI967 3米堆码测试和非洲带电设备怎么准备？',
     excerpt:
