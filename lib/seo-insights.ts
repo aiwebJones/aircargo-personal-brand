@@ -4168,6 +4168,69 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'sao-tome-principe-tms-asycudaworld-import-permit-air-freight-clearance',
+    title: '圣多美和普林西比TMS空运清关：ASYCUDAWorld 4.4、进口许可和单证怎么准备？',
+    excerpt:
+      '中国到圣多美和普林西比TMS/São Tomé空运，医疗物资、通信设备、工程备件、食品相关货和高价值急件不能只看航班。ASYCUDAWorld 4.4、AWB、发票、进口许可、卫生/植物检疫证、危险品许可和Príncipe转运文件要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-4.jpg',
+    keywords: ['圣多美TMS清关资料', 'Sao Tome ASYCUDAWorld 4.4', 'TMS air freight customs', 'Sao Tome import permit', 'Sao Tome airport customs clearance', 'Principe waybill transfer', '中国到圣多美空运'],
+    template: 'generated',
+    audience: ['圣多美进口商', '医疗和食品相关供应商', '通信设备供应商', '岛屿项目货客户'],
+    angle: '用TMS、São Tomé airport customs clearance、ASYCUDAWorld 4.4、import permit和Príncipe waybill transfer承接圣多美和普林西比空运清关搜索。',
+    sections: [
+      {
+        heading: 'TMS空运先看机场、进口商和岛内交付',
+        body: [
+          '圣多美和普林西比空运主要看TMS São Tomé International Airport。适合医疗物资、实验室设备、通信设备、工程备件、食品相关货、冷链小货、检测仪器和高价值急件。询价时不能只问中国到São Tomé有没有航班，还要确认进口商、当地清关代理、AWB、商业发票、箱单、HS Code、货值、许可证和最终交付责任。',
+          'Trade.gov的São Tomé and Príncipe进口文件页面说明，所有进入STP的货物需要随附提单和发票；农产品包括肉类和禽类需要进口许可和卫生/植物检疫证，危险产品如武器、爆炸品和化工产品也需要许可，其他货物不要求进口许可证。空运对应动作就是把AWB、发票、箱单、许可和证书责任提前拆清。',
+        ],
+        bullets: ['TMS São Tomé airport', 'bill of lading or AWB', 'invoice', 'import permit scope'],
+      },
+      {
+        heading: 'ASYCUDAWorld 4.4会让资料错误更快暴露',
+        body: [
+          'ASYCUDA在2025年6月发布的资料说明，São Tomé and Príncipe Customs Directorate已完成向ASYCUDAWorld 4.4迁移，系统在2025年5月1日上线，并在2025年5月23日正式启用。升级目标包括提升税务合规、缩短清关时间、提高收入征收，并引入电子支付相关方向。',
+          '这对TMS空运的含义很直接：目的港不再只靠口头协调，资料要变成可申报数据。英文/葡文品名、HS Code、货值、发票、箱单、AWB、原产地、许可状态、产品照片、是否食品/医疗/危险品/带电设备，都要在订舱前整理好。',
+        ],
+        bullets: ['ASYCUDAWorld 4.4', 'went live on 1 May 2025', 'clearance time reduction', 'data accuracy'],
+      },
+      {
+        heading: 'Príncipe相关货要提前问转运文件',
+        body: [
+          'ASYCUDA资料还提到，ASYCUDAWorld 4.4新增了用于管理从São Tomé到Príncipe运单转移的新文件，用来帮助海关和港口运营方区分岛间路线中的已国有化货物和进口货物。对目的地在Príncipe的货，不能只把TMS当作最终交付点。',
+          '实际报价时要问：货物是否只到São Tomé市区，还是要继续去Príncipe；谁负责岛间转运、二程文件、收货人交接和额外费用；AWB目的地、到港通知、清关后转运单证和最终交付证明由谁处理。',
+        ],
+        bullets: ['Principe waybill transfer', 'inter-island delivery', 'final consignee handover', 'extra document responsibility'],
+      },
+      {
+        heading: '医疗、食品和危险品先拆许可责任',
+        body: [
+          'TMS询价里，医疗设备、药品、试剂、食品相关货、冷链货、化工品、电池设备、通信设备和二手设备要特别早筛。Trade.gov明确把农产品、肉类、禽类、危险产品列为需要许可或卫生/植物检疫证的场景，销售不能等货到港后再问客户有没有证。',
+          '可执行动作是先收资料再报价：HS Code、产品用途、品牌型号、货值、发票箱单、产品照片、MSDS/DG资料如需、温控要求、进口商许可状态、当地broker联系人、最终地址和最晚到货时间。资料齐，再判断TMS路线、价格和是否能做门到门。',
+        ],
+        bullets: ['medical cargo', 'food and SPS documents', 'dangerous products permit', 'door-to-door boundary'],
+      },
+    ],
+    checklist: ['TMS目的机场/São Tomé最终地址', '是否继续转运Príncipe', '进口商资料', '当地清关代理/broker资料', 'ASYCUDAWorld 4.4申报资料责任', 'HS Code', '英文/葡文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', '原产地证如需', '进口许可适用性', '卫生/植物检疫证如需', '危险品/化工许可如需', 'MSDS/DG资料如需', '是否医疗/食品/通信/二手/带电', '温控要求如需', '货值和贸易条款', '税费和放行责任', '每件尺寸重量', '包装照片', 'Príncipe转运文件责任', '机场提货和末端交付责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'ACC 阿克拉西非中转', href: '/africa-air-freight/acc/' },
+      { label: 'LBV 利伯维尔中非入口', href: '/africa-air-freight/lbv/' },
+      { label: '几内亚比绍OXB清关资料', href: '/insights/guinea-bissau-oxb-asycudaworld-cee-air-freight-clearance/' },
+      { label: '赤道几内亚SSG/BSG清关资料', href: '/insights/equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'ASYCUDA: São Tomé and Príncipe ASYCUDAWorld 4.4', href: 'https://asycuda.org/en/sao-tome-and-principe-leverages-asycuda-to-enhance-customs-efficiency-and-compliance/' },
+      { label: 'Trade.gov: São Tomé and Príncipe Import Requirements', href: 'https://www.trade.gov/country-commercial-guides/sao-tome-and-principe-import-requirements-and-documentation' },
+      { label: 'Export.gov legacy: São Tomé and Príncipe Import Requirements', href: 'https://legacy.export.gov/article?id=Sao-Tome-and-Principe-Import-Requirements-and-Documentation' },
+      { label: 'Export-U: São Tomé and Príncipe Country Commercial Guide PDF', href: 'https://www.export-u.com/CCGs/2020/Sao-Tome-%26-Principe-2020-CCG.pdf' },
+      { label: 'Fluent Cargo: TMS São Tomé International Airport', href: 'https://www.fluentcargo.com/ports/iata/TMS' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
