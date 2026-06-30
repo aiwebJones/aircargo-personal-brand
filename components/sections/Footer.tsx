@@ -171,6 +171,7 @@ export default function Footer() {
               <a href="/insights/eswatini-sho-asycudaworld-sacu-first-port-import-permit-air-freight-clearance/" className="hover:text-amberGold">埃斯瓦蒂尼SHO清关</a>
               <a href="/insights/zanzibar-znz-tancis-mainland-zanzibar-air-freight-clearance/" className="hover:text-amberGold">桑给巴尔ZNZ清关</a>
               <a href="/insights/victoria-falls-vfa-zimra-asycuda-cbca-air-freight-clearance/" className="hover:text-amberGold">维多利亚瀑布VFA清关</a>
+              <a href="/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/" className="hover:text-amberGold">恩多拉NLA清关</a>
             </div>
           </div>
         </div>

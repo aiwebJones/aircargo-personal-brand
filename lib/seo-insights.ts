@@ -4486,6 +4486,71 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance',
+    title: '恩多拉NLA空运清关：ZRA、ASYCUDA ACI和铜带矿区备件资料怎么准备？',
+    excerpt:
+      '中国到赞比亚Ndola NLA/Simon Mwansa Kapwepwe空运，铜带矿区备件、工程设备、矿山维修件、检测仪器、医疗设备和高价值急件不能只看LUN。ZRA、ASYCUDAWorld、Advanced Cargo Information、Air Waybill、商业发票、Import Declaration、CE 20和NLA到Kitwe/铜带交付责任要提前核清。',
+    date: '2026-06-30',
+    readTime: '12 分钟',
+    category: '政策合规',
+    author: defaultAuthor,
+    image: '/case-17t-5.jpg',
+    keywords: ['恩多拉NLA清关资料', 'Ndola NLA customs clearance', 'Zambia Copperbelt air freight', 'ZRA ASYCUDA air cargo', 'Zambia Advanced Cargo Information', 'Simon Mwansa Kapwepwe airport cargo', '中国到赞比亚铜带空运'],
+    template: 'generated',
+    audience: ['赞比亚铜带矿区客户', '矿业备件供应商', '工程设备和维修件客户', 'Ndola/Kitwe进口商'],
+    angle: '用NLA、Ndola customs clearance、ZRA ASYCUDA air cargo、Advanced Cargo Information和Copperbelt mining spares承接赞比亚铜带矿区空运清关搜索。',
+    sections: [
+      {
+        heading: 'NLA页面服务的是铜带，不是LUN首都货',
+        body: [
+          'Ndola/NLA对应Simon Mwansa Kapwepwe International Airport，是赞比亚铜带、Luapula和Northwestern Provinces的重要入口。ZACL的SMKIA页面说明，该机场替代旧Ndola International Airport，服务Copperbelt、Luapula和Northwestern Provinces，并为这些区域提供更均衡的国际航空交通接入。',
+          '因此NLA空运页的商业目标很清楚：矿山备件、工程设备、维修件、检测仪器、医疗设备、通信设备和高价值急件。如果客户最终在Ndola、Kitwe、Mufulira、Chingola或矿区现场，不能机械套LUN方案，要先判断NLA到最终现场的清关和交付边界。',
+        ],
+        bullets: ['NLA Ndola', 'Simon Mwansa Kapwepwe airport', 'Copperbelt mining spares', 'Kitwe delivery'],
+      },
+      {
+        heading: 'ZRA清关资料要围绕ASYCUDA和CE 20准备',
+        body: [
+          'Trade.gov的Zambia进口文件页面在2026年3月23日更新，说明清关需要商业文件，例如bill of lading、airway bills和commercial invoices；Import Declaration Form用于统计且不收费；ZRA已经实施ASYCUDA平台，用于支持海关清关和国内税务流程；ZRA CE 20是边境进出口清关的标准表格。',
+          '对NLA空运来说，报价前要把资料先变成可申报数据：英文品名、HS Code、用途、品牌型号、货值、商业发票、装箱单、AWB、进口商资料、税号、Import Declaration、CE 20适用性、原产地、许可证/证书状态、产品照片和目的地broker。资料不完整时，矿区急件很容易在到港后变成查验、补料或仓租。',
+        ],
+        bullets: ['ZRA ASYCUDA', 'Import Declaration Form', 'CE 20', 'Air Waybill and invoice'],
+      },
+      {
+        heading: 'Advanced Cargo Information会让AWB数据更重要',
+        body: [
+          'ASYCUDA发布的Zambia ACI资料说明，ZRA已经开始在国际机场试点Advanced Cargo Information模块，航空公司和货运快递需要在货物到达赞比亚机场前提交空运电子舱单；该模块基于IATA Cargo XML filing，并使用ASYCUDAWorld、ASYExpress和ASYRisk来提升小件快件放行和风险管理能力。',
+          '这对NLA急件的含义很直接：主单/分单、收发货人、品名、件数、毛重、航班、中转节点、货值和进口商资料不能临近起飞才大改。报价阶段就要锁AWB字段和申报口径，尤其是高货值备件、维修返修件、检测仪器和带电/通信设备。',
+        ],
+        bullets: ['Advanced Cargo Information', 'IATA Cargo XML', 'electronic manifest', 'ASYRisk'],
+      },
+      {
+        heading: '矿业备件要先筛许可证、ZCSA和末端责任',
+        body: [
+          'Trade.gov进口文件页还提示，部分产品需要提前取得相关机构或部委认证，例如肉类、植物种子水果、食品药品、武器弹药和宝石等。矿业设备、带电设备、通信设备、压力容器、二手设备、化工品和医疗设备也要让进口商或目的港broker确认ZCSA、许可、检验、税费和清关责任。',
+          '可执行报价应拆成：只到NLA机场、含清关协助、含Ndola/Kitwe工厂或矿区交付、经LUN转运、还是经JNB/ADD/NBO中转。不同边界对应不同税费、仓租、查验、许可证和末端卸货风险。NLA页面要把这些问题在询价前问出来。',
+        ],
+        bullets: ['ZCSA screening', 'mining equipment documents', 'Copperbelt final delivery', 'quote boundary'],
+      },
+    ],
+    checklist: ['NLA目的机场/Ndola最终地址', 'Kitwe/Mufulira/Chingola/矿区现场地址', '是否经LUN/JNB/ADD/NBO中转', '进口商资料', '目的地清关代理/broker资料', 'ZRA ASYCUDA申报责任', 'Advanced Cargo Information/AWB字段责任', 'Import Declaration Form', 'CE 20适用性', 'HS Code', '英文品名和用途', '品牌型号', '商业发票', '装箱单', 'Air Waybill资料', '原产地证如需', '许可证/认证/ZCSA确认', '是否矿业备件/二手/带电/通信/医疗/化工/压力容器', 'MSDS/DG资料如需', '产品照片', '货值和币种', '贸易条款', '税费承担方', '每件尺寸重量', 'NLA机场提货责任', '铜带矿区末端交付和卸货责任', '最晚到货时间'],
+    relatedRoutes: [
+      { label: 'LUN 卢萨卡项目货入口', href: '/africa-air-freight/lun/' },
+      { label: 'FBM 卢本巴希铜钴矿区', href: '/africa-air-freight/fbm/' },
+      { label: '赞比亚LUN清关资料', href: '/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/' },
+      { label: '刚果金FBM矿业清关', href: '/insights/drc-fbm-guice-bivac-mining-spares-air-freight-clearance/' },
+    ],
+    sources: [
+      { label: 'Trade.gov: Zambia Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/zambia-import-requirements-documentation' },
+      { label: 'Trade.gov: Zambia Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/zambia-customs-regulations' },
+      { label: 'ASYCUDA: Advanced Cargo Information Solution Launched in Zambia', href: 'https://asycuda.org/en/advanced-cargo-information-solution-launched-in-zambia/' },
+      { label: 'ASYCUDA: Zambia pilots Advanced Cargo Information at international airports', href: 'https://asycuda.org/en/zambia-pilots-advanced-cargo-information-module-at-international-airports/' },
+      { label: 'ZACL: Simon Mwansa Kapwepwe International Airport', href: 'https://www.zacl.co.zm/airport-section/airports/smkia' },
+      { label: 'ZACL: SMKIA general aerodrome information', href: 'https://www.zacl.co.zm/airport-section/airports/smkia/general-aerodrome-info' },
+      { label: 'Fluent Cargo: NLA Simon Mwansa Kapwepwe International Airport', href: 'https://www.fluentcargo.com/ports/iata/NLA' },
+    ],
+  },
+  {
     slug: 'freight-network-value-wca-iata-jctrans-africa',
     title: 'WCA/IATA/JCtrans等网络对非洲空运有什么实际价值？',
     excerpt:
