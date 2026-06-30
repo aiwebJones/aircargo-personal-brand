@@ -86,6 +86,12 @@ export default function RootLayout({
         <link rel="preload" href="/case-17t-2.jpg" as="image" />
         <link rel="preload" href="/case-17t-3.jpg" as="image" />
         <link rel="preload" href="/case-17t-4.jpg" as="image" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="EASCargo Jones Africa Air Freight Insights"
+          href="https://www.eascargo.com/rss.xml"
+        />
         
         {/* Organization Schema */}
         <script

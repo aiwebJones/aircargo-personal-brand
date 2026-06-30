@@ -3,3 +3,4 @@ Allow: /
 
 Host: www.eascargo.com
 Sitemap: https://www.eascargo.com/sitemap.xml
+Sitemap: https://www.eascargo.com/rss.xml

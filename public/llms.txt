@@ -5,6 +5,7 @@
 Canonical site: https://www.eascargo.com/
 Preferred domain: https://www.eascargo.com/
 Sitemap: https://www.eascargo.com/sitemap.xml
+RSS feed: https://www.eascargo.com/rss.xml
 Robots: https://www.eascargo.com/robots.txt
 Contact email: globegsa@Gmail.com
 WeChat: jnb931
