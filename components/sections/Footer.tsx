@@ -119,6 +119,7 @@ export default function Footer() {
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
             <div className="grid gap-2 text-sm text-textMuted">
               <a href="/tools/air-freight-chargeable-weight-calculator/" className="hover:text-amberGold">空运计费重计算器</a>
+              <a href="/tools/africa-air-freight-customs-document-checklist/" className="hover:text-amberGold">非洲清关资料生成器</a>
               <a href="/insights/china-africa-air-freight-cost-chargeable-weight/" className="hover:text-amberGold">非洲空运多少钱一公斤</a>
               <a href="/insights/china-africa-air-freight-forwarder-for-factories/" className="hover:text-amberGold">工厂找非洲空运货代</a>
               <a href="/insights/africa-mining-equipment-air-freight-rfq-template/" className="hover:text-amberGold">矿业设备空运询价模板</a>

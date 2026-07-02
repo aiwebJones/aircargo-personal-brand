@@ -34,6 +34,7 @@ WeChat: jnb931
 - Cases: https://www.eascargo.com/cases/
 - Insights library: https://www.eascargo.com/insights/
 - Air freight chargeable weight calculator: https://www.eascargo.com/tools/air-freight-chargeable-weight-calculator/
+- Africa air freight customs document checklist tool: https://www.eascargo.com/tools/africa-air-freight-customs-document-checklist/
 
 ## High-Intent Search Topics
 
