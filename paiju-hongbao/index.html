@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>牌局红包 · 打牌输了发红包，一键全抢</title>
+<style>
+  :root{
+    --red:#e5322d; --red-deep:#c81f1a; --gold:#ffd66b; --gold-deep:#f0b429;
+    --ink:#2b2018; --paper:#fff8f0; --muted:#9a8b7d; --ok:#2e9e5b; --line:#f0e2d2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    background:linear-gradient(160deg,#7a1712,#a52019 60%,#7a1712);
+    color:var(--ink);min-height:100vh;padding:16px;
+  }
+  .wrap{max-width:560px;margin:0 auto}
+  header{text-align:center;color:var(--gold);padding:14px 0 18px}
+  header h1{font-size:26px;letter-spacing:2px}
+  header p{font-size:13px;color:#ffe9c2;opacity:.85;margin-top:6px}
+  .card{background:var(--paper);border-radius:18px;padding:16px;margin-bottom:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,.22)}
+  .card h2{font-size:15px;color:var(--red-deep);margin-bottom:12px;display:flex;
+    align-items:center;gap:6px}
+  .card h2 .tag{font-size:11px;background:var(--gold);color:#7a4a00;padding:1px 7px;
+    border-radius:8px;font-weight:600}
+  label{font-size:12px;color:var(--muted);display:block;margin:8px 0 4px}
+  input,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+    font-size:15px;background:#fff;color:var(--ink)}
+  input:focus,select:focus{outline:none;border-color:var(--gold-deep)}
+  .row{display:flex;gap:10px}
+  .row>*{flex:1}
+  .btn{border:none;border-radius:12px;padding:12px 14px;font-size:15px;font-weight:600;
+    cursor:pointer;transition:transform .06s ease,filter .15s ease;width:100%}
+  .btn:active{transform:scale(.97)}
+  .btn-red{background:linear-gradient(180deg,#f2564f,var(--red));color:#fff}
+  .btn-gold{background:linear-gradient(180deg,var(--gold),var(--gold-deep));color:#7a4a00}
+  .btn-ghost{background:#fff;border:1px solid var(--line);color:var(--muted);font-weight:500}
+  .btn-sm{padding:7px 10px;font-size:13px;width:auto}
+  .players{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:20px;padding:5px 10px 5px 12px;
+    font-size:14px;display:flex;align-items:center;gap:6px}
+  .chip b{color:var(--red-deep)}
+  .chip .x{color:var(--muted);cursor:pointer;font-size:16px;line-height:1}
+  .who-bar{display:flex;align-items:center;gap:8px;background:#fff3e0;border:1px dashed var(--gold-deep);
+    border-radius:12px;padding:10px 12px;margin-bottom:12px;font-size:14px}
+  .who-bar select{flex:1;background:transparent;border:none;font-weight:700;color:var(--red-deep);font-size:15px}
+  .hb{background:linear-gradient(160deg,#f2564f,var(--red-deep));border-radius:14px;padding:14px;
+    color:#fff;margin-bottom:10px;position:relative;overflow:hidden}
+  .hb .coin{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#fff2c4,var(--gold-deep));display:flex;
+    align-items:center;justify-content:center;color:#7a4a00;font-weight:800;font-size:18px;
+    box-shadow:0 2px 6px rgba(0,0,0,.25)}
+  .hb .from{font-size:13px;opacity:.9}
+  .hb .amt{font-size:20px;font-weight:800;margin:4px 0}
+  .hb .meta{font-size:12px;opacity:.85}
+  .hb-actions{display:flex;gap:8px;margin-top:10px}
+  .hb.done{background:#efe6d8;color:var(--muted)}
+  .hb.done .coin{background:#d8cbb8;color:#fff}
+  .empty{text-align:center;color:var(--muted);font-size:14px;padding:18px 0}
+  .stat-row{display:flex;justify-content:space-between;padding:9px 4px;border-bottom:1px solid var(--line);
+    font-size:14px;align-items:center}
+  .stat-row:last-child{border-bottom:none}
+  .stat-row .name{font-weight:600}
+  .pos{color:var(--ok);font-weight:700}
+  .neg{color:var(--red);font-weight:700}
+  .king{font-size:11px;background:var(--gold);color:#7a4a00;padding:1px 6px;border-radius:6px;margin-left:6px}
+  .foot{text-align:center;color:#ffd9b0;font-size:11px;opacity:.7;padding:8px 0 20px;line-height:1.7}
+  .toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);background:rgba(0,0,0,.82);
+    color:#fff;padding:10px 18px;border-radius:22px;font-size:14px;opacity:0;pointer-events:none;
+    transition:opacity .2s;z-index:50}
+  .toast.show{opacity:1}
+  .mini{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧧 牌局红包</h1>
+    <p>打牌输了发红包 · 手气全靠天 · 一键全抢不手软</p>
+  </header>
+
+  <!-- 我是谁 -->
+  <div class="who-bar">
+    <span>🙋 当前身份</span>
+    <select id="meSelect" onchange="setMe(this.value)"></select>
+  </div>
+
+  <!-- 玩家管理 -->
+  <div class="card">
+    <h2>👥 牌友 <span class="tag">先把人凑齐</span></h2>
+    <div class="row">
+      <input id="playerName" placeholder="输入牌友昵称" maxlength="8"
+             onkeydown="if(event.key==='Enter')addPlayer()" />
+      <button class="btn btn-gold btn-sm" style="flex:0 0 auto" onclick="addPlayer()">＋ 添加</button>
+    </div>
+    <div class="players" id="playerList"></div>
+  </div>
+
+  <!-- 发红包 -->
+  <div class="card">
+    <h2>💸 发红包 <span class="tag">输家买单</span></h2>
+    <label>谁发（这局输了的人）</label>
+    <select id="fromSelect"></select>
+    <div class="row">
+      <div>
+        <label>总金额（元）</label>
+        <input id="amount" type="number" min="0.01" step="0.01" placeholder="8.88" />
+      </div>
+      <div>
+        <label>红包个数</label>
+        <input id="count" type="number" min="1" step="1" placeholder="3" />
+      </div>
+    </div>
+    <label>类型</label>
+    <select id="type">
+      <option value="random">拼手气（随机，看天意）</option>
+      <option value="equal">普通（均分，讲和气）</option>
+    </select>
+    <div style="height:12px"></div>
+    <button class="btn btn-red" onclick="sendPacket()">塞钱进红包 🧧</button>
+    <div class="mini">发出去的红包会进下面的「红包广场」，等人来抢。</div>
+  </div>
+
+  <!-- 红包广场 -->
+  <div class="card">
+    <h2>🏮 红包广场
+      <span class="tag" id="pendingCount">0 个待抢</span>
+    </h2>
+    <button class="btn btn-gold" onclick="grabAll()" style="margin-bottom:12px">
+      ⚡ 一键全抢（把还有剩的红包全抢一遍）
+    </button>
+    <div id="packetList"></div>
+  </div>
+
+  <!-- 战绩 -->
+  <div class="card">
+    <h2>📊 牌局战绩 <span class="tag">净收支</span></h2>
+    <div id="stats"></div>
+    <div style="height:14px"></div>
+    <button class="btn btn-ghost" onclick="resetRound()">🧹 清空本局（重新开牌）</button>
+  </div>
+
+  <div class="foot">
+    纯本地工具 · 数据只存在你自己的浏览器里 · 不联网、不涉真钱、不碰任何平台<br/>
+    图个牌桌上的乐子，红包大小请量力而行 🀄
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const KEY = 'paiju-hongbao-v1';
+let state = load();
+
+function load(){
+  try{
+    const s = JSON.parse(localStorage.getItem(KEY));
+    if(s && s.players) return s;
+  }catch(e){}
+  return { players:[], me:null, packets:[] };
+  // packet: {id, from, type, total, count, splits:[{amount,taker|null}]}
+}
+function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
+
+/* ---------- 玩家 ---------- */
+function addPlayer(){
+  const el = document.getElementById('playerName');
+  const name = el.value.trim();
+  if(!name){ return; }
+  if(state.players.includes(name)){ toast('这个昵称已经有了'); return; }
+  state.players.push(name);
+  if(!state.me) state.me = name;
+  el.value='';
+  save(); render();
+}
+function removePlayer(name){
+  state.players = state.players.filter(p=>p!==name);
+  if(state.me===name) state.me = state.players[0]||null;
+  save(); render();
+}
+function setMe(v){ state.me = v; save(); render(); }
+
+/* ---------- 发红包 ---------- */
+function splitRandom(total, count){
+  // 微信同款「二倍均值」随机算法，保证每份 >= 0.01，总和精确
+  let cents = Math.round(total*100);
+  const res = [];
+  for(let i=0;i<count;i++){
+    const left = count - i;
+    if(left===1){ res.push(cents); break; }
+    const max = Math.floor(cents / left * 2); // 二倍均值上限
+    // 每份至少 1 分，且要给后面每人留至少 1 分
+    const maxPick = Math.min(max, cents - (left-1));
+    const pick = Math.max(1, Math.floor(Math.random()*(maxPick))+1);
+    res.push(pick);
+    cents -= pick;
+  }
+  return res.map(c=>c/100);
+}
+function splitEqual(total, count){
+  let cents = Math.round(total*100);
+  const base = Math.floor(cents/count);
+  const res = new Array(count).fill(base);
+  let rem = cents - base*count;
+  for(let i=0;i<rem;i++) res[i]+=1; // 零头分给前几个
+  return res.map(c=>c/100);
+}
+function sendPacket(){
+  const from = document.getElementById('fromSelect').value;
+  const total = parseFloat(document.getElementById('amount').value);
+  const count = parseInt(document.getElementById('count').value,10);
+  const type = document.getElementById('type').value;
+  if(!from){ toast('先选谁发红包'); return; }
+  if(!(total>0)){ toast('金额得大于 0'); return; }
+  if(!(count>=1)){ toast('个数至少 1 个'); return; }
+  if(Math.round(total*100) < count){ toast('金额太小，分不了这么多个'); return; }
+  const amounts = type==='random' ? splitRandom(total,count) : splitEqual(total,count);
+  state.packets.unshift({
+    id: nextId(), from, type, total, count,
+    splits: amounts.map(a=>({amount:a, taker:null}))
+  });
+  document.getElementById('amount').value='';
+  document.getElementById('count').value='';
+  save(); render();
+  toast('🧧 红包已发出，等人来抢');
+}
+let _idc = 0;
+function nextId(){ _idc = (_idc+1); return Date.now().toString(36)+'-'+_idc; }
+
+/* ---------- 抢红包 ---------- */
+function grabOne(packetId){
+  if(!state.me){ toast('先在顶部选「当前身份」'); return; }
+  const p = state.packets.find(x=>x.id===packetId);
+  if(!p) return;
+  const already = p.splits.find(s=>s.taker===state.me);
+  if(already){ toast('这个红包你已经抢过啦'); return; }
+  const slot = p.splits.find(s=>s.taker===null);
+  if(!slot){ toast('手慢了，抢完了'); return; }
+  slot.taker = state.me;
+  save(); render();
+  toast('🎉 抢到 '+slot.amount.toFixed(2)+' 元');
+}
+function grabAll(){
+  if(!state.me){ toast('先在顶部选「当前身份」'); return; }
+  let got = 0, sum = 0;
+  state.packets.forEach(p=>{
+    if(p.splits.some(s=>s.taker===state.me)) return; // 每个红包只抢一份
+    const slot = p.splits.find(s=>s.taker===null);
+    if(slot){ slot.taker = state.me; got++; sum += slot.amount; }
+  });
+  save(); render();
+  if(got===0){ toast('没有能抢的红包了'); }
+  else{ toast('⚡ 一键抢了 '+got+' 个，共 '+sum.toFixed(2)+' 元'); }
+}
+
+/* ---------- 战绩 ---------- */
+function computeStats(){
+  const m = {};
+  state.players.forEach(p=> m[p]={name:p, sent:0, got:0, gotCount:0});
+  state.packets.forEach(p=>{
+    if(m[p.from]) m[p.from].sent += p.total;
+    p.splits.forEach(s=>{
+      if(s.taker && m[s.taker]){ m[s.taker].got += s.amount; m[s.taker].gotCount++; }
+    });
+  });
+  const arr = Object.values(m);
+  arr.forEach(x=> x.net = x.got - x.sent);
+  return arr;
+}
+
+function resetRound(){
+  if(!confirm('清空本局所有红包和战绩？牌友名单会保留。')) return;
+  state.packets = [];
+  save(); render();
+  toast('已清空，重新开牌 🀄');
+}
+
+/* ---------- 渲染 ---------- */
+function render(){
+  // 身份 & 发红包下拉
+  const opts = state.players.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
+  const meSel = document.getElementById('meSelect');
+  meSel.innerHTML = opts || '<option value="">先添加牌友</option>';
+  if(state.me) meSel.value = state.me;
+  const fromSel = document.getElementById('fromSelect');
+  const prevFrom = fromSel.value;
+  fromSel.innerHTML = opts || '<option value="">先添加牌友</option>';
+  if(state.players.includes(prevFrom)) fromSel.value = prevFrom;
+
+  // 牌友 chips
+  document.getElementById('playerList').innerHTML = state.players.length
+    ? state.players.map(p=>`<span class="chip"><b>${esc(p)}</b>
+        <span class="x" onclick="removePlayer('${esc(p)}')">×</span></span>`).join('')
+    : '<span class="empty" style="padding:6px 0">还没有牌友，先在上面添加</span>';
+
+  // 红包广场
+  const pendingCnt = state.packets.filter(p=>p.splits.some(s=>s.taker===null)).length;
+  document.getElementById('pendingCount').textContent = pendingCnt+' 个待抢';
+  const list = document.getElementById('packetList');
+  if(!state.packets.length){
+    list.innerHTML = '<div class="empty">还没有红包，去上面发一个 🧧</div>';
+  } else {
+    list.innerHTML = state.packets.map(p=>{
+      const taken = p.splits.filter(s=>s.taker).length;
+      const remain = p.count - taken;
+      const done = remain===0;
+      const mineSlot = state.me ? p.splits.find(s=>s.taker===state.me) : null;
+      const takenList = p.splits.filter(s=>s.taker)
+        .map(s=>`${esc(s.taker)} ${s.amount.toFixed(2)}`).join(' · ');
+      return `<div class="hb ${done?'done':''}">
+        <div class="coin">${done?'空':'福'}</div>
+        <div class="from">${esc(p.from)} 发的 · ${p.type==='random'?'拼手气':'均分'}</div>
+        <div class="amt">${p.total.toFixed(2)} 元 / ${p.count} 个</div>
+        <div class="meta">已抢 ${taken}/${p.count}${remain?`　剩 ${remain} 个`:'　已抢光'}</div>
+        ${takenList?`<div class="meta" style="margin-top:4px">🧾 ${takenList}</div>`:''}
+        <div class="hb-actions">
+          ${mineSlot
+            ? `<button class="btn btn-ghost btn-sm" disabled>你抢到 ${mineSlot.amount.toFixed(2)} 元 ✓</button>`
+            : (remain
+                ? `<button class="btn btn-gold btn-sm" onclick="grabOne('${p.id}')">抢一个</button>`
+                : `<button class="btn btn-ghost btn-sm" disabled>已抢光</button>`)}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // 战绩
+  const stats = computeStats().sort((a,b)=>b.net-a.net);
+  const maxGot = Math.max(0,...stats.map(s=>s.got));
+  const statsEl = document.getElementById('stats');
+  statsEl.innerHTML = stats.length
+    ? stats.map(s=>{
+        const king = (s.got>0 && s.got===maxGot) ? '<span class="king">👑 手气王</span>':'';
+        const cls = s.net>0?'pos':(s.net<0?'neg':'');
+        const sign = s.net>0?'+':'';
+        return `<div class="stat-row">
+          <span class="name">${esc(s.name)}${king}</span>
+          <span>
+            <span style="color:var(--muted);font-size:12px">发 ${s.sent.toFixed(2)} · 抢 ${s.got.toFixed(2)}(${s.gotCount})</span>
+            &nbsp;<span class="${cls}">${sign}${s.net.toFixed(2)}</span>
+          </span>
+        </div>`;
+      }).join('')
+    : '<div class="empty">还没有战绩</div>';
+}
+
+/* ---------- 小工具 ---------- */
+let _t;
+function toast(msg){
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(_t); _t = setTimeout(()=>el.classList.remove('show'), 1600);
+}
+function esc(s){ return String(s).replace(/[&<>"']/g,c=>(
+  {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+render();
+</script>
+</body>
+</html>
