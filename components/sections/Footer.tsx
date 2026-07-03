@@ -118,6 +118,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
             <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/tools/" className="hover:text-amberGold">非洲空运工具箱</a>
               <a href="/tools/air-freight-chargeable-weight-calculator/" className="hover:text-amberGold">空运计费重计算器</a>
               <a href="/tools/africa-air-freight-customs-document-checklist/" className="hover:text-amberGold">非洲清关资料生成器</a>
               <a href="/insights/china-africa-air-freight-cost-chargeable-weight/" className="hover:text-amberGold">非洲空运多少钱一公斤</a>
