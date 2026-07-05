@@ -68,31 +68,31 @@ export const seoInsights: SeoInsight[] = [
   },
   {
     slug: 'africa-air-cargo-demand-2026-route-risk',
-    title: '2026非洲空运需求增长但运力收紧：项目货询价该怎么判断？',
+    title: '2026年5月非洲空运需求继续增长：项目货询价该怎么判断？',
     excerpt:
-      'IATA数据显示2026年非洲航司货运需求增长，但运力同比下降。对中国到非洲项目货来说，真正要提前判断的是舱位、主甲板、清关资料和二程交付。',
-    date: '2026-06-30',
+      'IATA 2026年5月数据显示，非洲航司货运需求同比增长13.3%，Africa-Asia航线连续11个月增长。对中国到非洲项目货来说，真正要提前判断的是舱位、主甲板、清关资料和二程交付。',
+    date: '2026-07-05',
     readTime: '11 分钟',
     category: '市场情报',
     author: defaultAuthor,
     image: '/case-17t-2.jpg',
-    keywords: ['2026非洲空运', '非洲空运需求', '非洲空运运力', 'Africa air cargo 2026'],
+    keywords: ['2026非洲空运', '非洲空运需求', 'Africa Asia air cargo', 'Africa air cargo 2026'],
     template: 'generated',
     audience: ['中国工厂', '非洲项目采购', '货代同行', '矿业设备供应商'],
     angle: '把非洲空运增长和运力收紧，翻译成项目货询价前的路线判断动作。',
     sections: [
       {
-        heading: '为什么 2026 年非洲空运更值得盯',
+        heading: '为什么 2026 年下半年非洲空运更值得盯',
         body: [
-          'IATA 2026 年 4 月航空货运数据里，非洲航司货运需求同比增长，但可用货运运力同比下降。这个组合对普通小货是价格波动，对项目货就是路线可执行性风险：舱位有，但不一定适合你的尺寸；需求在涨，但主甲板和目的地操作不一定同步增加。',
+          'IATA 2026 年 5 月航空货运数据里，全球航空货运需求同比增长 6.0%，非洲航司货运需求同比增长 13.3%，是所有区域里表现最强的一组；Africa-Asia 航线同比增长 14.1%，并且已经连续 11 个月增长。这个信号对普通小货是市场热度，对项目货则是路线可执行性问题：舱位需求在涨，但合适的主甲板、欧洲中转窗口和目的地操作能力不一定同步增加。',
           '对中国到非洲的大件、矿业备件、能源设备和紧急维修件来说，市场热度不是直接利好。真正的利好，是客户更愿意为“能不能走、什么时候能到、哪里会卡”付费，而不是只压低每公斤价格。',
         ],
-        bullets: ['需求增长', '运力收缩', '非洲目的地分化', '项目货更依赖预判'],
+        bullets: ['非洲需求增长', 'Africa-Asia航线增长', '非洲目的地分化', '项目货更依赖预判'],
       },
       {
         heading: '不要把市场增长误读成每票货都好走',
         body: [
-          '非洲空运增长说明货量和需求在上升，但项目货的瓶颈通常不在总市场，而在某一个具体环节：国内段能不能接、LGG/BRU 能不能中转、二程全货机能不能排上、JNB/FBM/LUN/LBV 到港后能不能清关和卸货。',
+          '非洲空运增长说明货量和需求在上升，但项目货的瓶颈通常不在总市场，而在某一个具体环节：国内段能不能接、LGG/BRU 能不能中转、二程全货机能不能排上、JNB/FBM/LUN/LBV 到港后能不能清关和卸货。同期中国公开信息显示，2026 年前 5 个月新增 80 条国际货运航线，其中欧洲和亚洲新增最多，直达非洲的新增航线仍然很少，所以中国到非洲异常货仍要认真评估中转和目的港能力。',
           '如果客户只问“现在非洲空运多少钱一公斤”，回答应该先转成判断问题：什么货、每件多大、去哪个机场、最终城市在哪里、最晚什么时候必须到、收货人能不能清。',
         ],
         bullets: ['客机腹舱限制', '全货机主甲板', '欧洲中转窗口', '目的地清关和卸货'],
@@ -112,10 +112,12 @@ export const seoInsights: SeoInsight[] = [
       { label: 'JNB 约翰内斯堡', href: '/africa-air-freight/jnb/' },
       { label: 'FBM 卢本巴希', href: '/africa-air-freight/fbm/' },
       { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲矿业设备 RFQ 模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+      { label: '非洲清关资料生成器', href: '/tools/africa-air-freight-customs-document-checklist/' },
     ],
     sources: [
-      { label: 'IATA: Air Cargo Demand Up 4.0% in April 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/05-28-air-cargo-demand-up-april-middle-east-disruption/' },
-      { label: 'IATA: Air Cargo Market Analysis February 2026', href: 'https://www.iata.org/en/publications/economics/reports/air-cargo-market-analysis-february-2026/' },
+      { label: 'IATA: Air Cargo Demand Up 6.0% in May 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/06-29-air-cargo-demand-up-may/' },
+      { label: 'CGTN: China opens 80 new international air cargo routes in first 5 months of 2026', href: 'https://news.cgtn.com/news/2026-06-03/China-opens-80-new-intl-air-cargo-routes-in-first-5-months-of-2026-1NGirtm88ne/p.html' },
     ],
   },
   {
