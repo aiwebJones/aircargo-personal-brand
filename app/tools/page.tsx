@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calculator, ClipboardCheck, FileSearch, Plane, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Calculator, ClipboardCheck, Clock3, FileSearch, Plane, ShieldCheck } from 'lucide-react'
 
 const pageUrl = 'https://www.eascargo.com/tools/'
 
@@ -51,6 +51,16 @@ const tools = [
     searchIntent: ['Africa air freight customs document checklist', 'China to Africa air freight documents', '非洲空运清关资料'],
     nextStep: '生成清单后，把缺的文件标出来，再发给进口商、清关代理或 Jones 做路线判断。',
   },
+  {
+    title: '非洲急件备件路线风险清单',
+    englishTitle: 'Africa Urgent Spare Parts Route Risk Checklist',
+    href: '/tools/africa-urgent-spare-parts-route-risk-checklist/',
+    icon: Clock3,
+    description:
+      '停产急件、矿业备件、油气维修件和工厂设备空运前，先检查机场代码、主甲板、中转、清关和最终现场交付风险。',
+    searchIntent: ['Africa urgent spare parts air freight', 'Africa air freight route risk checklist', '非洲急件备件空运'],
+    nextStep: '判断风险后，再进入 JNB/FBM/LUN/LOS/PHC 或 LGG/BRU 页面补路线细节。',
+  },
 ]
 
 const workflows = [
@@ -73,6 +83,7 @@ const relatedLinks = [
   { label: '非洲空运情报库', href: '/insights/' },
   { label: '非洲清关资料总清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
   { label: '非洲矿业设备 RFQ 模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
+  { label: '非洲急件备件路线风险清单', href: '/tools/africa-urgent-spare-parts-route-risk-checklist/' },
   { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
   { label: '超大件主甲板订舱资料', href: '/insights/oversized-air-cargo-booking-documents-main-deck-africa/' },
 ]
