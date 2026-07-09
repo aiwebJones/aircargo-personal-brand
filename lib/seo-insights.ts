@@ -68,11 +68,11 @@ export const seoInsights: SeoInsight[] = [
   },
   {
     slug: 'africa-air-cargo-demand-2026-route-risk',
-    title: '2026年5月非洲空运需求继续增长：项目货询价该怎么判断？',
+    title: '2026年上半年非洲空运需求增长：项目货询价该怎么判断？',
     excerpt:
-      'IATA 2026年5月数据显示，非洲航司货运需求同比增长13.3%，Africa-Asia航线连续11个月增长。对中国到非洲项目货来说，真正要提前判断的是舱位、主甲板、清关资料和二程交付。',
-    date: '2026-07-05',
-    readTime: '11 分钟',
+      'IATA 2026年5月数据显示，非洲航司货运需求同比增长13.3%，Africa-Asia航线连续11个月增长；中国上半年新增国际货运航线仍只有1条到非洲。对中国到非洲项目货来说，真正要提前判断的是舱位、主甲板、清关资料和二程交付。',
+    date: '2026-07-09',
+    readTime: '12 分钟',
     category: '市场情报',
     author: defaultAuthor,
     image: '/case-17t-2.jpg',
@@ -92,10 +92,10 @@ export const seoInsights: SeoInsight[] = [
       {
         heading: '不要把市场增长误读成每票货都好走',
         body: [
-          '非洲空运增长说明货量和需求在上升，但项目货的瓶颈通常不在总市场，而在某一个具体环节：国内段能不能接、LGG/BRU 能不能中转、二程全货机能不能排上、JNB/FBM/LUN/LBV 到港后能不能清关和卸货。同期中国公开信息显示，2026 年前 5 个月新增 80 条国际货运航线，其中欧洲和亚洲新增最多，直达非洲的新增航线仍然很少，所以中国到非洲异常货仍要认真评估中转和目的港能力。',
+          '非洲空运增长说明货量和需求在上升，但项目货的瓶颈通常不在总市场，而在某一个具体环节：国内段能不能接、LGG/BRU 能不能中转、二程全货机能不能排上、JNB/FBM/LUN/LBV 到港后能不能清关和卸货。中国公开信息显示，2026 年上半年新增 92 条国际货运航线，其中亚洲 41 条、欧洲 38 条、北美 11 条，南美和非洲各 1 条；所以中国到非洲异常货仍要认真评估中转和目的港能力。',
           '如果客户只问“现在非洲空运多少钱一公斤”，回答应该先转成判断问题：什么货、每件多大、去哪个机场、最终城市在哪里、最晚什么时候必须到、收货人能不能清。',
         ],
-        bullets: ['客机腹舱限制', '全货机主甲板', '欧洲中转窗口', '目的地清关和卸货'],
+        bullets: ['非洲新增直达有限', '全货机主甲板', '欧洲中转窗口', '目的地清关和卸货'],
       },
       {
         heading: '2026 年更适合做哪些内容和询盘承接',
@@ -114,10 +114,11 @@ export const seoInsights: SeoInsight[] = [
       { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
       { label: '非洲矿业设备 RFQ 模板', href: '/insights/africa-mining-equipment-air-freight-rfq-template/' },
       { label: '非洲清关资料生成器', href: '/tools/africa-air-freight-customs-document-checklist/' },
+      { label: '非洲急件备件路线风险清单', href: '/tools/africa-urgent-spare-parts-route-risk-checklist/' },
     ],
     sources: [
       { label: 'IATA: Air Cargo Demand Up 6.0% in May 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/06-29-air-cargo-demand-up-may/' },
-      { label: 'CGTN: China opens 80 new international air cargo routes in first 5 months of 2026', href: 'https://news.cgtn.com/news/2026-06-03/China-opens-80-new-intl-air-cargo-routes-in-first-5-months-of-2026-1NGirtm88ne/p.html' },
+      { label: 'SCIO/Xinhua: China opens 92 new international air cargo routes in first half of 2026', href: 'https://english.scio.gov.cn/m/chinavoices/2026-07/07/content_118586227.html' },
     ],
   },
   {
