@@ -8,9 +8,21 @@
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/route-programs/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/route-programs/et-asia-africa-via-add/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/en/africa-oversized-air-freight/</loc>
@@ -68,7 +80,7 @@
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>

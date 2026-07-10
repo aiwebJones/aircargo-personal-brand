@@ -104,6 +104,25 @@ export default function AfricaAirFreightHubPage() {
         </div>
       </section>
 
+      <section className="border-b border-emerald-900 bg-emerald-950 py-12 text-white">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-sm font-bold uppercase text-amberGold">Current route program</p>
+            <h2 className="mt-3 text-3xl font-black">MLE / SIN / MNL 经 ADD 至非洲</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-emerald-50">
+              比较马尔代夫、新加坡、菲律宾起运与中国直出的全程成本，覆盖 CMN、ALG、TUN、ADD、CKY、OUA、EBB、HAH、NBJ、BKO。
+            </p>
+          </div>
+          <Link
+            href="/route-programs/et-asia-africa-via-add/"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-5 font-black text-slate-950 transition hover:bg-white"
+          >
+            查看航线项目
+            <ArrowRight className="h-5 w-5" />
+          </Link>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>

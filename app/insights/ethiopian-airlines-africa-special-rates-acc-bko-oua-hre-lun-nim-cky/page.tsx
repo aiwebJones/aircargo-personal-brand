@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, CheckCircle2, ClipboardCheck, MapPinned, Plane, ShieldAlert } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, MapPinned, Plane, ShieldAlert } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选 | EASCargo Jones',
@@ -176,6 +176,25 @@ export default function EthiopianAirlinesAfricaSpecialRatesPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-emerald-900 bg-emerald-950 py-10 text-white">
+        <div className="mx-auto grid max-w-6xl gap-6 px-5 sm:px-6 lg:grid-cols-[1fr_auto] lg:items-center lg:px-8">
+          <div>
+            <p className="text-sm font-bold text-amberGold">当前可操作航线项目</p>
+            <h2 className="mt-2 text-2xl font-black">MLE / SIN / MNL 经 ADD 至 10 个非洲点</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-emerald-50">
+              查看马尔代夫、新加坡、菲律宾起运与中国直出的总成本比较、目的港风险和逐票确认条件。
+            </p>
+          </div>
+          <Link
+            href="/route-programs/et-asia-africa-via-add/"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-5 font-black text-slate-950 transition hover:bg-white"
+          >
+            查看项目方案
+            <ArrowRight className="h-5 w-5" />
+          </Link>
         </div>
       </section>
 

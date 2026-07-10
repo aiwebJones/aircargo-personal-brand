@@ -35,6 +35,17 @@ Core positioning:
 - Case studies: https://www.eascargo.com/cases/
 - Insights: https://www.eascargo.com/insights/
 - Tools: https://www.eascargo.com/tools/
+- Current route programs: https://www.eascargo.com/route-programs/
+
+## Current Multi-Origin Africa Route Program
+
+Program page: https://www.eascargo.com/route-programs/et-asia-africa-via-add/
+
+EASCargo can compare shipment-specific air freight options from Malé MLE, Singapore SIN and Manila MNL through Addis Ababa ADD to selected African markets. Current quotation targets include CMN Casablanca, ALG Algiers, TUN Tunis, ADD Addis Ababa, CKY Conakry, OUA Ouagadougou, EBB Entebbe, HAH Moroni, NBJ Luanda and BKO Bamako.
+
+This is a route-comparison service, not a published fixed-rate tariff. EASCargo compares the alternative origin rate with China-direct total cost, including origin handling, export documentation, transfer or repositioning cost, ADD transit, second-sector aircraft acceptance, destination charges, customs readiness and final delivery. Capacity, operating carrier, aircraft type, transit time, airport code and rate validity require shipment-specific confirmation.
+
+The program page includes a browser-side total-cost comparison calculator. User-entered values remain in the browser and are not presented as verified airline rates.
 
 ## Supporting EASCargo Tool Domains
 

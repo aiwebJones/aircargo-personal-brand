@@ -91,6 +91,8 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">非洲航线</h4>
             <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/route-programs/" className="hover:text-amberGold">当前航线项目</a>
+              <a href="/route-programs/et-asia-africa-via-add/" className="hover:text-amberGold">MLE/SIN/MNL 经ADD至非洲</a>
               <a href="/africa-air-freight/" className="hover:text-amberGold">非洲空运航线 Hub</a>
               <a href="/africa-air-freight/jnb/" className="hover:text-amberGold">JNB 约翰内斯堡空运</a>
               <a href="/africa-air-freight/fbm/" className="hover:text-amberGold">FBM 卢本巴希空运</a>
