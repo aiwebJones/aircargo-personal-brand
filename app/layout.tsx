@@ -40,6 +40,10 @@ export const metadata: Metadata = {
   authors: [{ name: '神仙货运Jones' }],
   creator: '神仙货运Jones',
   metadataBase: new URL('https://www.eascargo.com'),
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+  },
   alternates: {
     canonical: 'https://www.eascargo.com/',
     languages: {
@@ -227,58 +231,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* FAQ Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              'mainEntity': [
-                {
-                  '@type': 'Question',
-                  'name': '什么是747全货机开鼻门装载？',
-                  'acceptedAnswer': {
-                    '@type': 'Answer',
-                    'text': '747全货机开鼻门装载是一种特殊装载方式，当货物长度超过货舱长度时，可以从飞机鼻门进行装载。这种方式需要精确的配重计算和专业的装载方案。'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  'name': '大件空运怎么收费？',
-                  'acceptedAnswer': {
-                    '@type': 'Answer',
-                    'text': '大件空运收费根据货物的重量、体积、目的地、特殊要求（温控、防震等）计算。包机和散货价格不同，超长超重货物需要额外处理费。建议提供详细货物信息获取准确报价。'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  'name': '中国到非洲空运需要多长时间？',
-                  'acceptedAnswer': {
-                    '@type': 'Answer',
-                    'text': '中国到非洲主要城市（ABJ/BKO/LUN/CKY）通常需要7-14天。如果选择包机或紧急服务，最快3-5天可到达。具体时间取决于航线、清关速度和货物类型。'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  'name': '温控货物空运需要注意什么？',
-                  'acceptedAnswer': {
-                    '@type': 'Answer',
-                    'text': '温控货物空运需要注意：1）选择有温控能力的航班；2）使用专业的温控包装（干冰、相变材料）；3）全程温度监控；4）准备完整的文件（卫生证书、温度记录）；5）选择有经验的货代。'
-                  }
-                },
-                {
-                  '@type': 'Question',
-                  'name': '紧急空运要多少钱？',
-                  'acceptedAnswer': {
-                    '@type': 'Answer',
-                    'text': '紧急空运价格取决于目的地、重量、紧急程度。商业航班加急通常比正常价格高30-50%，包机价格更高但速度最快。建议提供详细信息获取准确报价，我们可以对比多个方案给出最优选择。'
-                  }
-                }
-              ]
-            }),
-          }}
-        />
       </head>
       <body className={`${inter.className} bg-deepBlue`}>
         {children}

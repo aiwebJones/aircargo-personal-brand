@@ -47,13 +47,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
       if (response.ok) {
         setIsSubmitted(true)
-        
-        // Reset after showing success
+
         setTimeout(() => {
-          setIsSubmitted(false)
-          setFormData({ name: '', company: '', email: '', phone: '', message: '' })
-          onClose()
-        }, 2000)
+          window.location.assign('/thank-you/')
+        }, 900)
       } else {
         // Formspree returned an error
         setError(data.error || '发送失败，请稍后重试')

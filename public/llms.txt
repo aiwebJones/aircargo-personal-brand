@@ -7,7 +7,8 @@ Preferred domain: https://www.eascargo.com/
 Sitemap: https://www.eascargo.com/sitemap.xml
 RSS feed: https://www.eascargo.com/rss.xml
 Robots: https://www.eascargo.com/robots.txt
-Contact email: globegsa@Gmail.com
+Full AI reference: https://www.eascargo.com/llms-full.txt
+Contact email: globegsa@gmail.com
 WeChat: jnb931
 
 ## What EASCargo Helps With
@@ -32,6 +33,7 @@ WeChat: jnb931
 - LGG/BRU Africa gateway: https://www.eascargo.com/zh/lgg-africa-gateway/
 - China-Africa oversized cargo via Europe: https://www.eascargo.com/china-africa-oversized-cargo-via-europe/
 - Cases: https://www.eascargo.com/cases/
+- Bilingual 8-meter oversized cargo case: https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/
 - Insights library: https://www.eascargo.com/insights/
 - Air freight tools hub: https://www.eascargo.com/tools/
 - Air freight chargeable weight calculator: https://www.eascargo.com/tools/air-freight-chargeable-weight-calculator/

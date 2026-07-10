@@ -14,11 +14,22 @@ function canonicalRedirect(request) {
   return null
 }
 
+function assetRequest(request) {
+  const url = new URL(request.url)
+
+  if (url.pathname === '/favicon.ico') {
+    url.pathname = '/favicon.svg'
+    return new Request(url.toString(), request)
+  }
+
+  return request
+}
+
 export default {
   async fetch(request, env) {
     const redirect = canonicalRedirect(request)
     if (redirect) return redirect
 
-    return env.ASSETS.fetch(request)
+    return env.ASSETS.fetch(assetRequest(request))
   },
 }

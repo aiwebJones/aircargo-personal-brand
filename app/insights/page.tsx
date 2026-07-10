@@ -32,6 +32,11 @@ const sortedSeoInsights = [...seoInsights].sort((a, b) => b.date.localeCompare(a
 const categories = Array.from(new Set(sortedSeoInsights.map((item) => item.category)))
 const miningProjectLinks = [
   {
+    title: '中国到非洲8米长货案例（中英双语）',
+    href: '/insights/china-africa-8-meter-oversized-air-freight-case/',
+    note: '从装载、LGG/BRU中转、B747F主甲板到非洲项目现场交付的完整复盘。',
+  },
+  {
     title: 'JNB 矿业急件怎么走',
     href: '/insights/jnb-mining-spares-air-freight/',
     note: '南部非洲矿业、工厂维修件和高价值备件入口。',
