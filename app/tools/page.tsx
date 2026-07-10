@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calculator, ClipboardCheck, Clock3, FileSearch, Plane, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Calculator, ClipboardCheck, Clock3, ExternalLink, FileSearch, Plane, ShieldCheck } from 'lucide-react'
 
 const pageUrl = 'https://www.eascargo.com/tools/'
 
@@ -63,6 +63,27 @@ const tools = [
   },
 ]
 
+const specialistTools = [
+  {
+    title: '空运单异常预判',
+    englishTitle: 'AiCargoTrack AWB Exception Triage',
+    href: 'https://aicargotrack.com/',
+    domain: 'aicargotrack.com',
+    icon: FileSearch,
+    description:
+      '输入起运港、非洲目的港、单件尺寸、重量和中转状态，先识别超长、超高、重货及二程衔接风险，再把完整资料交给 EASCargo 判断。',
+  },
+  {
+    title: '非洲项目货计费重与询价准备',
+    englishTitle: 'SkyRate Project Cargo Calculator',
+    href: 'https://skyrate.info/',
+    domain: 'skyrate.info',
+    icon: Calculator,
+    description:
+      '计算项目货体积重与初步计费重，并按尺寸和单件重量提示主舱、装卸及人工报价审核条件。工具不展示未经核实的实时运价。',
+  },
+]
+
 const workflows = [
   {
     title: '先算计费重',
@@ -98,13 +119,18 @@ export default function ToolsPage() {
     mainEntity: {
       '@type': 'ItemList',
       name: 'China to Africa air freight tools',
-      numberOfItems: tools.length,
-      itemListElement: tools.map((tool, index) => ({
+      numberOfItems: tools.length + specialistTools.length,
+      itemListElement: [...tools, ...specialistTools].map((tool, index) => ({
         '@type': 'ListItem',
         position: index + 1,
         name: tool.englishTitle,
-        url: `https://www.eascargo.com${tool.href}`,
+        url: tool.href.startsWith('https://') ? tool.href : `https://www.eascargo.com${tool.href}`,
       })),
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'EASCargo Jones',
+      url: 'https://www.eascargo.com/',
     },
   }
 
@@ -216,6 +242,47 @@ export default function ToolsPage() {
               </Link>
             )
           })}
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white py-12">
+        <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-amberGold">EASCargo specialist tools</p>
+            <h2 className="mt-3 text-3xl font-black">独立工具域名，同一个 EASCargo 服务主体。</h2>
+            <p className="mt-4 text-sm leading-7 text-slate-600">
+              下面两个公开工具由 EASCargo 提供，用于超大件询价前的异常预判和计费重整理。
+              计算结果是初步判断，最终路线与报价以人工复核为准。
+            </p>
+          </div>
+          <div className="mt-8 grid gap-5 lg:grid-cols-2">
+            {specialistTools.map((tool) => {
+              const Icon = tool.icon
+
+              return (
+                <a
+                  key={tool.href}
+                  href={tool.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-lg border border-slate-200 bg-slate-50 p-6 transition hover:border-amberGold"
+                >
+                  <div className="flex items-start justify-between gap-5">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-slate-950 text-amberGold">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <ExternalLink className="mt-2 h-5 w-5 text-slate-400 transition group-hover:text-amberGold" />
+                  </div>
+                  <h3 className="mt-6 text-xl font-black text-slate-950 group-hover:text-amberGold">
+                    {tool.title}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold text-slate-500">{tool.englishTitle}</p>
+                  <p className="mt-4 text-sm leading-7 text-slate-600">{tool.description}</p>
+                  <p className="mt-5 text-xs font-bold text-slate-500">{tool.domain}</p>
+                </a>
+              )
+            })}
+          </div>
         </div>
       </section>
 

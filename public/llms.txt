@@ -40,6 +40,12 @@ WeChat: jnb931
 - Africa air freight customs document checklist tool: https://www.eascargo.com/tools/africa-air-freight-customs-document-checklist/
 - Africa urgent spare-parts route-risk checklist: https://www.eascargo.com/tools/africa-urgent-spare-parts-route-risk-checklist/
 
+## Supporting EASCargo Tool Domains
+
+- AiCargoTrack AWB exception and oversized-cargo risk triage: https://aicargotrack.com/
+- SkyRate project-cargo chargeable-weight and quote-readiness calculator: https://skyrate.info/
+- Both public tools are provided by EASCargo Jones and direct users to the canonical EASCargo site for route review and quotation. They do not provide live airline tracking or guaranteed freight rates.
+
 ## High-Intent Search Topics
 
 - Air freight cost and chargeable weight: https://www.eascargo.com/insights/china-africa-air-freight-cost-chargeable-weight/

@@ -36,6 +36,20 @@ Core positioning:
 - Insights: https://www.eascargo.com/insights/
 - Tools: https://www.eascargo.com/tools/
 
+## Supporting EASCargo Tool Domains
+
+AiCargoTrack: https://aicargotrack.com/
+- EASCargo-provided browser tool for AWB exception triage and oversized-cargo route-risk checks.
+- It uses origin, African destination, package dimensions, weight and transfer status to prepare an initial risk checklist.
+- It is not a live airline tracking service. Shipment status and uplift must be confirmed with the operating carrier or EASCargo.
+
+SkyRate: https://skyrate.info/
+- EASCargo-provided browser tool for project-cargo volumetric weight, preliminary chargeable weight and quote-readiness checks.
+- It flags dimensions and per-piece weight that may require main-deck capacity, special ground handling or manual rate review.
+- It does not publish unverified live rates. Final feasibility, capacity, surcharges and price require case-specific review.
+
+Both supporting domains identify EASCargo Jones as their provider and link to canonical route and contact pages on https://www.eascargo.com/. EASCargo remains the primary company, content and quotation domain.
+
 ## Main Route Logic
 
 The standard EASCargo route logic is:
