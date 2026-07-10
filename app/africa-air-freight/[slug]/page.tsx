@@ -493,6 +493,13 @@ const routeSteps = [
   },
 ]
 
+const urgentSparePartChecks = [
+  'Downtime deadline and latest acceptable site arrival',
+  'Longest piece, heaviest piece and main-deck loading need',
+  'Importer documents, regulated-goods permits and customs broker readiness',
+  'Airport pickup, inland truck, unloading tools and final-site handover',
+]
+
 const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
     heading: 'Deep route note for JNB Johannesburg oversized cargo',
@@ -801,6 +808,37 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               <p className="leading-7 text-slate-600">{step.body}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Urgent spares decision</p>
+            <h2 className="text-3xl font-bold md:text-4xl">
+              If this {item.code} shipment is stopping a site, check route risk before rate.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              For mining, oil and gas, factory maintenance or energy-project spares, the first question is not the cheapest
+              airport-to-airport price. Confirm the deadline, aircraft fit, customs documents and final-site handover before
+              promising a {item.code} arrival plan.
+            </p>
+            <a
+              href="/tools/africa-urgent-spare-parts-route-risk-checklist/"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              Check {item.code} urgent spare-parts route risk
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {urgentSparePartChecks.map((check) => (
+              <div key={check} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                <CheckCircle2 className="mb-4 h-5 w-5 text-amberGold" />
+                <p className="text-sm font-semibold leading-7 text-slate-700">{check}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
