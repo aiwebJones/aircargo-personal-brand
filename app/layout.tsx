@@ -85,11 +85,6 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className={inter.variable}>
       <head>
-        {/* Preload critical images */}
-        <link rel="preload" href="/case-17t-1.jpg" as="image" />
-        <link rel="preload" href="/case-17t-2.jpg" as="image" />
-        <link rel="preload" href="/case-17t-3.jpg" as="image" />
-        <link rel="preload" href="/case-17t-4.jpg" as="image" />
         <link
           rel="alternate"
           type="application/rss+xml"
