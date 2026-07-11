@@ -122,6 +122,59 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'haikou-johannesburg-freighter-china-africa-project-cargo',
+    title: '海口到约堡全货机恢复：华南到南部非洲项目货怎么重新判断？',
+    excerpt:
+      'Astral Aviation 2026年7月恢复海口-约翰内斯堡定期全货机，经Nairobi网络衔接非洲。对中国到南部非洲的电子、汽车配件、药品、矿业和工业备件来说，重点不是简单说有直飞，而是重新判断HAK/JNB入口、主甲板、清关和二程交付。',
+    date: '2026-07-11',
+    readTime: '11 分钟',
+    category: '航线情报',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['海口约堡全货机', 'Haikou Johannesburg freighter', '中国到南非空运', 'JNB项目货空运'],
+    template: 'generated',
+    audience: ['华南工厂', '南非进口商', '矿业和工业备件供应商', '非洲项目货货代'],
+    angle: '把HAK-JNB全货机恢复信号转成华南到南部非洲项目货的路线、资料和交付判断。',
+    sections: [
+      {
+        heading: '这条线的价值不只是多一个航班',
+        body: [
+          'STAT Times 2026年7月8日报道，Astral Aviation恢复海口到约翰内斯堡的定期全货机服务，与Fly Noor Aviation Services合作，每周两班，使用Boeing 767-300F，单班载量最高约50吨，经Astral的Nairobi hub连接中国和非洲。',
+          '对EASCargo关心的货，不应该把这个信号写成普通新闻。真正的商业价值是：华南、海南自贸港、珠三角和周边工厂如果有电子、汽车配件、药品、工业备件、矿业维修件或高价值急件，可以多一个HAK/JNB方向的容量判断入口。',
+        ],
+        bullets: ['HAK海口出口入口', 'JNB南部非洲网关', 'B767-300F全货机', 'Nairobi网络衔接'],
+      },
+      {
+        heading: '不要把恢复航线误读成所有项目货都好走',
+        body: [
+          '全货机恢复提升的是可选容量，不等于每票超限件都自动成立。B767-300F有全货机主甲板优势，但每件尺寸、重量、装载方向、叉车/吊装条件、危险品或带电属性，仍然决定能不能接、能不能排舱、能不能在JNB顺利卸货。',
+          'JNB只是南部非洲入口。货到约堡后，如果最终目的地是矿区、工厂、港口、博茨瓦纳、纳米比亚、赞比亚、莫桑比克或津巴布韦，还要重新确认清关代理、二程卡车、现场卸货、进口许可和仓储边界。只问海口到约堡几天，没有办法判断整票货能不能按项目窗口交付。',
+        ],
+        bullets: ['单件尺寸重量', 'JNB卸货能力', '南部非洲二程', '进口商清关资料'],
+      },
+      {
+        heading: '销售承接应该问哪些问题',
+        body: [
+          '询盘进入时，不要先承诺“海口直飞约堡”。先问客户货在哪里、是否能送HAK、目的地是否只到JNB机场、最终城市或项目现场在哪里、每件尺寸重量、是否带电/药品/化工/温控、收货人是否具备南非清关资料。',
+          '如果货物来自深圳、广州、东莞、佛山、厦门或华南周边，HAK可能是一个可比较入口；如果货物超长、超重或最终去铜带/矿区，还要同时比较LGG/BRU欧洲中转、JNB hub延伸、NBO/ADD等网络路径。路线判断要服务成交，不要把新闻流量变成泛泛市场评论。',
+        ],
+        bullets: ['起运城市到HAK衔接', 'JNB机场或最终现场', '货物属性筛查', 'HAK/JNB与LGG/BRU比较'],
+      },
+    ],
+    checklist: ['起运城市和是否可送HAK', 'JNB机场还是南部非洲最终现场', '每件尺寸重量和包装照片', '货物英文品名、用途和HS Code', '是否带电、药品、化工、温控或危险品', '进口商和南非清关代理资料', '是否需要主甲板装载', 'JNB到最终现场的二程责任', '最晚到货时间和停产损失'],
+    relatedRoutes: [
+      { label: 'JNB 约翰内斯堡航线页', href: '/africa-air-freight/jnb/' },
+      { label: 'JNB矿业急件路线判断', href: '/insights/jnb-mining-spares-air-freight/' },
+      { label: '南非JNB清关资料', href: '/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+      { label: '非洲急件备件路线风险清单', href: '/tools/africa-urgent-spare-parts-route-risk-checklist/' },
+    ],
+    sources: [
+      { label: 'STAT Times: Astral Aviation resumes China-Africa freighter flights', href: 'https://www.stattimes.com/air-cargo/astral-aviation-resumes-chinaafrica-freighter-flights-1359764' },
+      { label: 'IATA: Air Cargo Demand Up 6.0% in May 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/06-29-air-cargo-demand-up-may/' },
+    ],
+  },
+  {
     slug: 'eu-ics2-ens-lgg-bru-africa-transit-air-freight',
     title: 'LGG/BRU中转非洲大件：欧盟ICS2/ENS资料为什么会卡住空运？',
     excerpt:
