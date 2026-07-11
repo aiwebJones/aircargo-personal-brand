@@ -217,7 +217,7 @@ export default function InsightDetailPage({ params }: Params) {
                 否则低价只会把风险推迟到订舱和到港之后。
               </p>
               <Link
-                href={`/quote/?source=insight&topic=${encodeURIComponent(insight.slug)}`}
+                href={`/tools/africa-project-cargo-rfq/?source=insight&topic=${encodeURIComponent(insight.slug)}`}
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#08111f] px-6 py-3 font-bold text-white transition hover:bg-white hover:text-[#08111f]"
               >
                 在线提交逐票询价

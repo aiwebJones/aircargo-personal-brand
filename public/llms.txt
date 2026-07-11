@@ -8,7 +8,7 @@ Sitemap: https://www.eascargo.com/sitemap.xml
 RSS feed: https://www.eascargo.com/rss.xml
 Robots: https://www.eascargo.com/robots.txt
 Full AI reference: https://www.eascargo.com/llms-full.txt
-Shipment-specific quote form: https://www.eascargo.com/quote/
+Shipment-specific quote form: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 Contact email: globegsa@gmail.com
 WeChat: jnb931
 
@@ -29,7 +29,7 @@ WeChat: jnb931
 ## Core Pages
 
 - Home: https://www.eascargo.com/
-- Shipment-specific oversized/project cargo quote: https://www.eascargo.com/quote/
+- Shipment-specific oversized/project cargo quote: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 - Africa air freight hub: https://www.eascargo.com/africa-air-freight/
 - English oversized cargo page: https://www.eascargo.com/en/africa-oversized-air-freight/
 - LGG/BRU Africa gateway: https://www.eascargo.com/zh/lgg-africa-gateway/

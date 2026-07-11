@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
 
-const pageUrl = 'https://www.eascargo.com/quote/'
+const pageUrl = 'https://www.eascargo.com/tools/africa-project-cargo-rfq/'
 
 export const metadata: Metadata = {
   title: '中国到非洲大件空运询价 | 项目货路线预判 | EASCargo Jones',

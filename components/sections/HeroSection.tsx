@@ -87,7 +87,7 @@ export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
               </motion.button>
 
               <motion.a
-                href="/quote/?source=home-hero"
+                href="/tools/africa-project-cargo-rfq/?source=home-hero"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

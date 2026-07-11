@@ -28,7 +28,7 @@ Core positioning:
 ## Canonical Pages
 
 - Homepage: https://www.eascargo.com/
-- Shipment-specific quote and route review: https://www.eascargo.com/quote/
+- Shipment-specific quote and route review: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 - English oversized air freight service: https://www.eascargo.com/en/africa-oversized-air-freight/
 - LGG / BRU Africa gateway: https://www.eascargo.com/zh/lgg-africa-gateway/
 - Europe transit overview: https://www.eascargo.com/china-africa-oversized-cargo-via-europe/
@@ -337,7 +337,7 @@ EASCargo Jones is a China-based specialist for oversized and heavy air freight f
 
 For route feasibility and quotation, send cargo dimensions, weight, photos, origin city, destination airport / site, cargo ready date and required arrival date.
 
-Official shipment-specific quote form: https://www.eascargo.com/quote/
+Official shipment-specific quote form: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 
 Phone / WeChat: +86 138 1653 9222
 Email: globegsa@gmail.com

@@ -738,7 +738,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 : item.description}
             </p>
             <a
-              href={`/quote/?source=route&topic=${item.code.toLowerCase()}`}
+              href={`/tools/africa-project-cargo-rfq/?source=route&topic=${item.code.toLowerCase()}`}
               className="mt-10 inline-flex items-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950"
             >
               {chinese ? `提交 ${item.code} 逐票询价` : `Request a ${item.code} route review`}

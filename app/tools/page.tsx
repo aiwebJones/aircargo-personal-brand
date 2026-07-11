@@ -323,7 +323,7 @@ export default function ToolsPage() {
               </p>
             </div>
             <Link
-              href="/quote/?source=tools"
+              href="/tools/africa-project-cargo-rfq/?source=tools"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-amberGold px-5 text-sm font-bold text-slate-950 transition hover:bg-amberGold/90"
             >
               <Plane className="h-4 w-4" />

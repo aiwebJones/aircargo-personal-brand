@@ -174,7 +174,7 @@ export default function RouteProgramsPage() {
             <div className="flex items-center gap-2 text-amberGold"><ShieldCheck className="h-5 w-5" /><span className="text-sm font-bold">EASCargo route review</span></div>
             <h2 className="mt-4 text-3xl font-black">拿到低价之后，先验证它能不能执行。</h2>
           </div>
-          <Link href="/quote/?source=route-programs" className="inline-flex min-h-12 items-center justify-center rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">提交项目资料</Link>
+          <Link href="/tools/africa-project-cargo-rfq/?source=route-programs" className="inline-flex min-h-12 items-center justify-center rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">提交项目资料</Link>
         </div>
       </section>
     </main>

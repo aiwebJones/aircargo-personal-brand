@@ -37,7 +37,7 @@ export default function FooterEN() {
               <li><a href="#capabilities" className="text-textMuted hover:text-amberGold transition-colors">Services</a></li>
               <li><a href="#routes" className="text-textMuted hover:text-amberGold transition-colors">Route Network</a></li>
               <li><a href="#about" className="text-textMuted hover:text-amberGold transition-colors">About</a></li>
-              <li><a href="/quote/?source=home-footer-en" className="text-textMuted hover:text-amberGold transition-colors">Request a quote</a></li>
+              <li><a href="/tools/africa-project-cargo-rfq/?source=home-footer-en" className="text-textMuted hover:text-amberGold transition-colors">Request a quote</a></li>
             </ul>
           </div>
 

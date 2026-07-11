@@ -249,7 +249,7 @@ export default function EtAsiaAfricaRouteProgramPage() {
               发送货物所在地、目的机场、品名、HS Code、尺寸、重量、包装照片、备货时间和最晚到货时间，由 EASCargo 逐票比较中国直出与 MLE/SIN/MNL 起运。
             </p>
           </div>
-          <Link href="/quote/?source=route-program&topic=et-asia-africa-via-add" className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">
+          <Link href="/tools/africa-project-cargo-rfq/?source=route-program&topic=et-asia-africa-via-add" className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">
             <Plane className="h-5 w-5" />
             提交路线资料
           </Link>

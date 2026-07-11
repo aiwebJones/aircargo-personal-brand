@@ -55,7 +55,7 @@ export default function HeroSectionEN({ onOpenContact }: HeroSectionENProps) {
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <motion.a
-              href="/quote/?source=home-hero-en"
+              href="/tools/africa-project-cargo-rfq/?source=home-hero-en"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-amberGold px-7 font-bold text-slate-950 transition hover:bg-amber-400"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

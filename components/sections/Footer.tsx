@@ -49,7 +49,7 @@ export default function Footer() {
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="/quote/?source=home-footer"
+              href="/tools/africa-project-cargo-rfq/?source=home-footer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-amberGold text-textPrimary font-medium rounded-lg hover:bg-amberGold/90 transition-colors"
             >
               <ClipboardCheck className="w-5 h-5" />
@@ -157,7 +157,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
             <div className="grid gap-2 text-sm text-textMuted">
-              <a href="/quote/?source=home-footer-links" className="font-semibold text-amber-700 hover:text-amberGold">中国到非洲逐票询价</a>
+              <a href="/tools/africa-project-cargo-rfq/?source=home-footer-links" className="font-semibold text-amber-700 hover:text-amberGold">中国到非洲逐票询价</a>
               <a href="/tools/" className="hover:text-amberGold">非洲空运工具箱</a>
               <a href="/tools/air-freight-chargeable-weight-calculator/" className="hover:text-amberGold">空运计费重计算器</a>
               <a href="/tools/africa-air-freight-customs-document-checklist/" className="hover:text-amberGold">非洲清关资料生成器</a>
