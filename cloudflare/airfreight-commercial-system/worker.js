@@ -1,7 +1,7 @@
 const PRIMARY_SITE = "https://www.eascargo.com";
 const CONTACT_EMAIL = "globegsa@gmail.com";
 const WECHAT_ID = "jnb931";
-const LAST_MODIFIED = "2026-07-10";
+const LAST_MODIFIED = "2026-07-11";
 const CARGO_IMAGE = `${PRIMARY_SITE}/case-17t-1.jpg`;
 
 const BASE_HEADERS = {
@@ -965,6 +965,10 @@ async function handleRequest(request) {
       noindex: true,
       headers: { "content-type": "text/plain; charset=utf-8" },
     });
+  }
+
+  if (url.protocol !== "https:") {
+    return canonicalHostRedirect(url, domain);
   }
 
   if (hostname.startsWith("www.")) {
