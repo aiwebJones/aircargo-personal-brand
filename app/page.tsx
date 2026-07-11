@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Navigation from '@/components/Navigation'
 import ContactModal from '@/components/ContactModal'
 import WechatModal from '@/components/WechatModal'
-import AIQuoteModal from '@/components/AIQuoteModal'
 import HeroSection from '@/components/sections/HeroSection'
 import HeroSectionEN from '@/components/sections/HeroSectionEN'
 import AfricaNetworkSection from '@/components/sections/AfricaNetworkSection'
@@ -61,7 +60,6 @@ const homeFaqSchema = {
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
   const [isWechatOpen, setIsWechatOpen] = useState(false)
-  const [isAIQuoteOpen, setIsAIQuoteOpen] = useState(false)
   const [currentLang, setCurrentLang] = useState<'zh' | 'en'>('zh')
 
   return (
@@ -75,9 +73,7 @@ export default function Home() {
         {currentLang === 'zh' ? (
           <>
             <HeroSection 
-              onOpenContact={() => setIsContactOpen(true)} 
               onOpenWechat={() => setIsWechatOpen(true)}
-              onOpenAIQuote={() => setIsAIQuoteOpen(true)}
             />
             <AfricaNetworkSection />
             <RouteProgramsSection />
@@ -99,7 +95,6 @@ export default function Home() {
       </main>
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       <WechatModal isOpen={isWechatOpen} onClose={() => setIsWechatOpen(false)} />
-      <AIQuoteModal isOpen={isAIQuoteOpen} onClose={() => setIsAIQuoteOpen(false)} />
     </>
   )
 }

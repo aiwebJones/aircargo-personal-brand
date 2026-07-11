@@ -15,7 +15,7 @@ const navItemsZh = [
   { label: '航线项目', href: '/route-programs/' },
   { label: '案例', href: '/cases' },
   { label: '情报', href: '/insights/' },
-  { label: '联系', href: '#contact' },
+  { label: '询价', href: '/quote/?source=home-nav' },
 ]
 
 const navItemsEn = [
@@ -24,7 +24,7 @@ const navItemsEn = [
   { label: 'Programs', href: '/route-programs/' },
   { label: 'Cases', href: '/cases' },
   { label: 'Insights', href: '/insights/' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Request quote', href: '/quote/?source=home-nav-en' },
 ]
 
 export default function Navigation({ currentLang, onLangChange }: NavigationProps) {

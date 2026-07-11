@@ -26,14 +26,9 @@ export const metadata: Metadata = {
     '大件空运价格',
     '中国到非洲空运',
     'ABJ/BKO/LUN/CKY专线',
-    '紧急空运42小时',
-    '温控货物空运',
-    '疫苗冷链运输',
-    '精密设备空运',
     '项目货空运',
     '超长设备空运',
     '超重货物空运',
-    '包机服务',
     '航空货运代理',
     '国际空运专家'
   ],
@@ -99,6 +94,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
+              '@id': 'https://www.eascargo.com/#organization',
               'name': '神仙货运Jones',
               'alternateName': ['Shenxian Jones', 'EASCargo Jones', '神仙货运'],
               'url': 'https://www.eascargo.com',
@@ -205,23 +201,6 @@ export default function RootLayout({
                 'name': 'EASCargo Jones'
               },
               'areaServed': ['ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI']
-            }),
-          }}
-        />
-
-        {/* Service Schema: 紧急空运 */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              'name': '紧急空运服务',
-              'description': '42小时紧急响应，生产救援，加急货运',
-              'provider': {
-                '@type': 'Organization',
-                'name': '神仙货运Jones'
-              }
             }),
           }}
         />

@@ -738,10 +738,10 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 : item.description}
             </p>
             <a
-              href={`mailto:globegsa@Gmail.com?subject=China%20to%20${item.code}%20oversized%20air%20freight%20quote`}
+              href={`/quote/?source=route&topic=${item.code.toLowerCase()}`}
               className="mt-10 inline-flex items-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950"
             >
-              Send cargo details
+              {chinese ? `提交 ${item.code} 逐票询价` : `Request a ${item.code} route review`}
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

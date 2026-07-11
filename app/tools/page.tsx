@@ -322,13 +322,13 @@ export default function ToolsPage() {
                 这样报价更快，也更容易提前发现装不上、清不了、交不到现场的问题。
               </p>
             </div>
-            <a
-              href="mailto:globegsa@Gmail.com?subject=China%20to%20Africa%20air%20freight%20tools%20RFQ"
+            <Link
+              href="/quote/?source=tools"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-amberGold px-5 text-sm font-bold text-slate-950 transition hover:bg-amberGold/90"
             >
               <Plane className="h-4 w-4" />
-              发资料给 Jones
-            </a>
+              提交逐票询价
+            </Link>
           </div>
         </div>
       </section>

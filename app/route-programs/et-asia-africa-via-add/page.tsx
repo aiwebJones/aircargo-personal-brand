@@ -104,7 +104,7 @@ export default function EtAsiaAfricaRouteProgramPage() {
       name: 'Ethiopian Airlines',
       url: 'https://cargo.ethiopianairlines.com/',
     },
-    dateModified: '2026-07-10',
+    dateModified: '2026-07-11',
     termsOfService: 'Capacity, aircraft acceptance, operating carrier, transit time and rates require shipment-specific confirmation.',
   }
 
@@ -249,10 +249,10 @@ export default function EtAsiaAfricaRouteProgramPage() {
               发送货物所在地、目的机场、品名、HS Code、尺寸、重量、包装照片、备货时间和最晚到货时间，由 EASCargo 逐票比较中国直出与 MLE/SIN/MNL 起运。
             </p>
           </div>
-          <a href="mailto:globegsa@gmail.com?subject=MLE%20SIN%20MNL%20to%20Africa%20route%20review" className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">
+          <Link href="/quote/?source=route-program&topic=et-asia-africa-via-add" className="inline-flex min-h-12 items-center justify-center gap-2 rounded bg-amberGold px-6 font-black text-slate-950 hover:bg-white">
             <Plane className="h-5 w-5" />
-            发送路线资料
-          </a>
+            提交路线资料
+          </Link>
         </div>
       </section>
 

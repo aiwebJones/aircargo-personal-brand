@@ -218,7 +218,7 @@ export default function WhyShippersIgnoreFreightBrokersPage() {
                 只有路线可执行，报价才有意义。
               </p>
               <Link
-                href="/#contact"
+                href="/quote/?source=insight&topic=why-shippers-ignore-freight-brokers"
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#08111f] px-5 py-3 font-semibold text-white hover:bg-[#14233a] transition-colors"
               >
                 发送大件资料做路线预判

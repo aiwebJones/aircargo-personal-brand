@@ -216,13 +216,13 @@ export default function InsightDetailPage({ params }: Params) {
                 先判断货物能不能装、路线能不能接、目的港能不能清、最终现场能不能交付。路线成立后再谈价格，
                 否则低价只会把风险推迟到订舱和到港之后。
               </p>
-              <a
-                href={`mailto:globegsa@Gmail.com?subject=${encodeURIComponent(insight.title)}`}
+              <Link
+                href={`/quote/?source=insight&topic=${encodeURIComponent(insight.slug)}`}
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#08111f] px-6 py-3 font-bold text-white transition hover:bg-white hover:text-[#08111f]"
               >
-                发送资料做路线预判
+                在线提交逐票询价
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </Link>
             </section>
           </div>
 

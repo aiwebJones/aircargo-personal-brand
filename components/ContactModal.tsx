@@ -40,6 +40,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           phone: formData.phone,
           message: formData.message,
           _subject: `网站联系表单 - ${formData.name}`,
+          _source: window.location.href,
         })
       })
 
@@ -248,9 +249,8 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     </button>
                   </form>
 
-                  {/* Privacy Note */}
                   <p className="text-xs text-industrialGray/40 text-center mt-6">
-                    提交表单即表示你同意我们的隐私政策
+                    请不要提交密码、支付信息或与本次运输无关的敏感资料。
                   </p>
                 </>
               )}

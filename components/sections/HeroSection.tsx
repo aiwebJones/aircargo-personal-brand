@@ -4,9 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Plane, Route, Shield, Sparkles, Zap } from 'lucide-react'
 
 interface HeroSectionProps {
-  onOpenContact: () => void
   onOpenWechat: () => void
-  onOpenAIQuote: () => void
 }
 
 const directHubs = [
@@ -25,7 +23,7 @@ const inlandPoints = [
   { code: 'ABJ', name: '阿比让' },
 ]
 
-export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSectionProps) {
+export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen overflow-hidden bg-white">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
@@ -88,14 +86,14 @@ export default function HeroSection({ onOpenContact, onOpenWechat }: HeroSection
                 <ArrowRight className="h-5 w-5" />
               </motion.button>
 
-              <motion.button
-                onClick={onOpenContact}
+              <motion.a
+                href="/quote/?source=home-hero"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                加微信深度交流
-              </motion.button>
+                提交逐票询价
+              </motion.a>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-sm text-slate-600 md:grid-cols-4">

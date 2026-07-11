@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MessageCircle, Mail, Phone, ArrowUp } from 'lucide-react'
+import { ArrowUp, ClipboardCheck, Mail, MessageCircle, Phone } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -48,12 +48,19 @@ export default function Footer() {
             直接与主理人郑坚交流
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
+            <a
+              href="/quote/?source=home-footer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-amberGold text-textPrimary font-medium rounded-lg hover:bg-amberGold/90 transition-colors"
+            >
+              <ClipboardCheck className="w-5 h-5" />
+              <span>提交逐票询价</span>
+            </a>
             <button
               type="button"
               onClick={copyWechat}
               aria-live="polite"
               title="复制微信号 jnb931"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-amberGold text-textPrimary font-medium rounded-lg hover:bg-amberGold/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               <span>
@@ -150,6 +157,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
             <div className="grid gap-2 text-sm text-textMuted">
+              <a href="/quote/?source=home-footer-links" className="font-semibold text-amber-700 hover:text-amberGold">中国到非洲逐票询价</a>
               <a href="/tools/" className="hover:text-amberGold">非洲空运工具箱</a>
               <a href="/tools/air-freight-chargeable-weight-calculator/" className="hover:text-amberGold">空运计费重计算器</a>
               <a href="/tools/africa-air-freight-customs-document-checklist/" className="hover:text-amberGold">非洲清关资料生成器</a>
