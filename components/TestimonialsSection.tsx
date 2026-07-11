@@ -191,7 +191,7 @@ export default function TestimonialsSection() {
             想了解更多案例细节？
           </p>
           <a
-            href="/cases"
+            href="/cases/"
             className="inline-block px-8 py-4 bg-amberGold text-deepBlue font-semibold rounded-lg hover:bg-amberGold/90 transition-colors"
           >
             查看所有案例
