@@ -1,13 +1,36 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MessageCircle, Mail, Phone, ArrowUp } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const [wechatCopyState, setWechatCopyState] = useState<'idle' | 'copied' | 'manual'>('idle')
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const copyWechat = async () => {
+    let copied = false
+
+    try {
+      await navigator.clipboard.writeText('jnb931')
+      copied = true
+    } catch {
+      const input = document.createElement('textarea')
+      input.value = 'jnb931'
+      input.style.position = 'fixed'
+      input.style.opacity = '0'
+      document.body.appendChild(input)
+      input.select()
+      copied = document.execCommand('copy')
+      input.remove()
+    }
+
+    setWechatCopyState(copied ? 'copied' : 'manual')
+    window.setTimeout(() => setWechatCopyState('idle'), 2500)
   }
 
   return (
@@ -25,15 +48,22 @@ export default function Footer() {
             直接与主理人郑坚交流
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="https://weixin.qq.com/cgi-bin/bin/checkopcode?operator=jnb931"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={copyWechat}
+              aria-live="polite"
+              title="复制微信号 jnb931"
               className="inline-flex items-center gap-2 px-6 py-3 bg-amberGold text-textPrimary font-medium rounded-lg hover:bg-amberGold/90 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
-              <span>微信：jnb931</span>
-            </a>
+              <span>
+                {wechatCopyState === 'copied'
+                  ? '已复制微信号：jnb931'
+                  : wechatCopyState === 'manual'
+                    ? '请手动复制微信号：jnb931'
+                    : '微信：jnb931（点击复制）'}
+              </span>
+            </button>
             <a
               href="mailto:globegsa@Gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"

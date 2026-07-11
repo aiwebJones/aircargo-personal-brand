@@ -25,6 +25,25 @@ const decisionSteps = [
   { icon: FileCheck2, title: '最后核对交付', body: '进口商、清关文件、地服、提货、内陆运输和现场卸货必须同时成立。' },
 ]
 
+const comparisonInputs = [
+  {
+    term: '起运条件',
+    detail: '货物现在所在城市、出口资料是否齐全、最早交仓日，以及转运到 MLE、SIN 或 MNL 的前段成本和操作责任。',
+  },
+  {
+    term: '货物边界',
+    detail: '逐件长宽高、毛重、包装形式、最长边、重心、能否叠放，以及带电、危险品、温控或受控属性。',
+  },
+  {
+    term: '同口径成本',
+    detail: '起运地操作、前段调拨、航空运费、ADD 中转、仓储、目的港地服、清关和最后一公里必须放在同一张成本表里。',
+  },
+  {
+    term: '交付约束',
+    detail: '目的机场和最终城市、进口商与当地代理、最晚到货日、现场卸货条件，以及延误或改道时可接受的备选方案。',
+  },
+]
+
 export default function RouteProgramsPage() {
   const collectionSchema = {
     '@context': 'https://schema.org',
@@ -32,6 +51,7 @@ export default function RouteProgramsPage() {
     name: 'EASCargo Africa Air Freight Route Programs',
     url: pageUrl,
     description: metadata.description,
+    dateModified: '2026-07-11',
     provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCargo Jones' },
     mainEntity: {
       '@type': 'ItemList',
@@ -114,6 +134,37 @@ export default function RouteProgramsPage() {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-slate-50 py-16">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
+          <div>
+            <p className="text-sm font-bold uppercase text-emerald-700">Comparable quote inputs</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">逐票比较前，先把四组事实放进同一口径。</h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              第三地低价只有在前段调拨、出口操作、ADD 二程和目的地交付全部成立时才有价值。
+              EASCargo 不把未经确认的固定运价、舱位或时效写成承诺，而是根据货物准备日和实际尺寸逐票复核。
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link href="/tools/air-freight-chargeable-weight-calculator/" className="inline-flex min-h-11 items-center gap-2 rounded border border-slate-300 bg-white px-4 font-bold text-slate-800 hover:border-emerald-700 hover:text-emerald-700">
+                计算计费重
+                <Calculator className="h-4 w-4" />
+              </Link>
+              <Link href="/insights/oversized-air-freight-quote-checklist/" className="inline-flex min-h-11 items-center gap-2 rounded border border-slate-300 bg-white px-4 font-bold text-slate-800 hover:border-emerald-700 hover:text-emerald-700">
+                查看询价清单
+                <FileCheck2 className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+          <dl className="divide-y divide-slate-200 border-y border-slate-200">
+            {comparisonInputs.map((input) => (
+              <div key={input.term} className="grid gap-2 py-5 sm:grid-cols-[8rem_1fr] sm:gap-6">
+                <dt className="font-black text-slate-950">{input.term}</dt>
+                <dd className="text-sm leading-7 text-slate-600">{input.detail}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

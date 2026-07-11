@@ -750,8 +750,6 @@ export const seoInsights: SeoInsight[] = [
       { label: '危险品/化工品空运到非洲', href: '/insights/dangerous-goods-chemical-air-freight-africa-checklist/' },
     ],
     sources: [
-      { label: 'Senegal Customs: Customs clearance information', href: 'https://www.douanes.sn/ndn85/?lang=en' },
-      { label: 'Senegal Customs: Déclarer des marchandises en douane', href: 'https://www.douanes.sn/declarer-des-marchandises-en-douane/' },
       { label: 'Senegal Trade Portal: Import Procedure', href: 'https://senegalcommerce.sec.gouv.sn/ProcedureImportAnglais.aspx' },
       { label: 'International Trade Administration: Senegal Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/senegal-import-requirements-and-documentation' },
     ],
@@ -1941,8 +1939,8 @@ export const seoInsights: SeoInsight[] = [
     ],
     sources: [
       { label: 'European Commission: Import Control System 2 (ICS2)', href: 'https://taxation-customs.ec.europa.eu/customs/customs-security/import-control-system-2_en' },
-      { label: 'European Commission: ICS2 Release 3 - Maritime and Inland Waterways, Road and Rail', href: 'https://taxation-customs.ec.europa.eu/news/import-control-system-2-release-3-maritime-and-inland-waterways-road-and-rail-2025-02-27_en' },
-      { label: 'European Commission: Union Customs Code Work Programme', href: 'https://taxation-customs.ec.europa.eu/customs-4/union-customs-code/ucc-work-programme_en' },
+      { label: 'European Commission: ICS2 and NCTS Phase 6 deployment guidance', href: 'https://taxation-customs.ec.europa.eu/document/download/5b67b4ab-ece6-4dc6-a3be-8b938d603abc_en?filename=Guidance-on-the-start-of-the-ICS2-and-NCTS-P6-deployment-windows_0.pdf' },
+      { label: 'European Commission: Union Customs Code Work Programme', href: 'https://taxation-customs.ec.europa.eu/customs/union-customs-code/union-customs-code-work-programme_en' },
     ],
   },
   {
@@ -1996,7 +1994,7 @@ export const seoInsights: SeoInsight[] = [
       { label: 'Nigeria Customs Service: B’Odogwu Portal', href: 'https://bodogwu.customs.gov.ng/' },
       { label: 'Nigeria Customs Service: Frequently Asked Questions', href: 'https://customs.gov.ng/?page_id=2819' },
       { label: 'Nigeria Customs Service: Things You Must Know', href: 'https://customs.gov.ng/?page_id=3078' },
-      { label: 'Federal Ministry of Information: NCS to commence pilot of Form M on B’Odogwu platform', href: 'https://fmino.gov.ng/ncs-to-commence-pilot-of-form-m-on-bodogwu-platform/' },
+      { label: 'Federal Ministry of Information: NCS pilots Form M on B’Odogwu', href: 'https://fmino.gov.ng/nigeria-customs-service-pilots-form-m-process-on-bodogwu-trade-portal/' },
     ],
   },
   {
@@ -3114,14 +3112,14 @@ export const seoInsights: SeoInsight[] = [
         heading: 'BJL空运先判断GRA/ASYCUDA资料',
         body: [
           'BJL班珠尔适合冈比亚工程设备、医疗物资、电子电器、通信设备、农业相关货和贸易补货。客户只问中国到冈比亚空运多少钱时，销售要先判断进口商TIN、清关代理、Air Waybill、商业发票箱单和GRA申报资料是否能提前跑通。',
-          'GRA的Customs & Excise页面说明，海关岗位包括Airport和Seaport，并承担禁止/限制品管理、通关便利化和关税征收等职责。GRA的ASYCUDA World认证SOP也说明，ASYCUDA World用于电子申报、电子缴费和清关处理，进口商TIN和清关代理资料要在BJL到港前确认。',
+          'GRA的Customs FAQ说明，海关岗位包括Airport和Seaport，并承担禁止/限制品管理、通关便利化和关税征收等职责。GRA的ASYCUDA World认证SOP也说明，ASYCUDA World用于电子申报、电子缴费和清关处理，进口商TIN和清关代理资料要在BJL到港前确认。',
         ],
         bullets: ['BJL Banjul airport', 'GRA Customs', 'ASYCUDA World', '进口商TIN'],
       },
       {
         heading: 'SAD、AWB和发票箱单必须一致',
         body: [
-          'Trade.gov的冈比亚进口文件页面说明，进口商或代理需要用Single Administrative Document（SAD）向GRA申报，货物在清关完成前处于海关监管下。GRA清关FAQ也列出常见进口资料，包括invoice、Bill of Lading或Air Waybill、certificate of origin、packing list、TIN、许可证或证书等。',
+          'Trade.gov的冈比亚进口文件页面说明，进口商或代理需要用Single Administrative Document（SAD）向GRA申报，货物在清关完成前处于海关监管下。GRA当前Customs FAQ也列出常见进口资料，包括invoice、Bill of Lading或Air Waybill、certificate of origin、packing list、TIN、许可证或证书等。',
           '所以BJL询价不能只收重量体积。HS Code、英文品名、用途、货值币种、件数毛重、AWB收货人、商业发票、装箱单、原产地、SAD字段和IDF资料必须互相对应；否则到港后会卡在申报、查验、付款或放行环节。',
         ],
         bullets: ['Single Administrative Document', 'Air Waybill', 'Commercial invoice', 'Packing list'],
@@ -3129,7 +3127,7 @@ export const seoInsights: SeoInsight[] = [
       {
         heading: 'IDF和受控货许可要前置筛',
         body: [
-          'GRA清关FAQ写明，清关过程还可能涉及Import Declaration Form（IDF）和清关代理通过ASYCUDA电子处理报关。Trade.gov的冈比亚海关规则页面也提示，部分货物需要进口许可证或额外监管文件，尤其是受限制货、食品/农业、医药、化工、通信和二手设备等场景。',
+          'GRA当前Customs FAQ写明，清关过程还可能涉及Import Declaration Form（IDF）和清关代理通过ASYCUDA电子处理报关。Trade.gov的冈比亚进口要求页面也提示，部分货物需要进口许可证或额外监管文件，尤其是受限制货、食品/农业、医药、化工、通信和二手设备等场景。',
           '对冈比亚空运来说，正确动作不是只报机场到机场价格，而是把航班可行性、BJL地面处理、GRA/ASYCUDA、SAD、IDF、进口许可、检验证书和最终交付城市拆成一张资料清单。小市场的风险往往不在航班，而在到港后资料补救慢。',
         ],
         bullets: ['Import Declaration Form', 'Import permit', '受控货资料', '最终交付城市'],
@@ -3144,10 +3142,9 @@ export const seoInsights: SeoInsight[] = [
     ],
     sources: [
       { label: 'Trade.gov: The Gambia - Import Requirements and Documentation', href: 'https://www.trade.gov/country-commercial-guides/gambia-import-requirements-and-documentation' },
-      { label: 'Trade.gov: The Gambia - Customs Regulations', href: 'https://www.trade.gov/country-commercial-guides/gambia-customs-regulations' },
-      { label: 'Gambia Revenue Authority: Customs & Excise', href: 'https://gra.gm/units/customs-excise' },
-      { label: 'Gambia Revenue Authority: Clearance Processes FAQ', href: 'https://gra.gm/faqs/details/clearance-processes/26' },
-      { label: 'Gambia Revenue Authority: ASYCUDA World Training and Certification SOP 2026', href: 'https://gra.gm/downloads/file/asycuda-world-training-and-certification-standard-operating-procedures-effective-15-march-2026' },
+      { label: 'Gambia Revenue Authority: Customs FAQs', href: 'https://www.gra.gm/custom-faqs' },
+      { label: 'Gambia Revenue Authority: ASYCUDA World', href: 'https://asycuda.gra.gm/asyworld/' },
+      { label: 'Gambia Revenue Authority: ASYCUDA World Training and Certification SOP 2026', href: 'https://www.gra.gm/download-file/f1319dea-3e38-11f1-b086-029254d29bb1' },
     ],
   },
   {
@@ -3848,10 +3845,9 @@ export const seoInsights: SeoInsight[] = [
       { label: '乌干达EBB UNBS/URA清关资料', href: '/insights/uganda-ebb-unbs-pvoc-air-freight-clearance/' },
     ],
     sources: [
-      { label: 'South Sudan ACD: General information', href: 'https://acdsouthsudan.com/general-information/' },
+      { label: 'South Sudan ACD: Official portal', href: 'https://acdsouthsudan.com/' },
       { label: 'South Sudan eCustoms: Customs services portal', href: 'https://customs.eservices.gov.ss/' },
-      { label: 'South Sudan National Bureau of Standards: PVoC', href: 'https://ssnbs.gov.ss/pvoc/' },
-      { label: 'SGS: South Sudan Product Conformity Assessment Programme', href: 'https://www.sgs.com/en/services/south-sudan-product-conformity-assessment-programme' },
+      { label: 'South Sudan National Bureau of Standards: PVoC', href: 'https://ssnbs.gov.ss/pvoc-2/' },
     ],
   },
   {
