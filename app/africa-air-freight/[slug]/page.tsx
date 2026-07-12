@@ -500,6 +500,12 @@ const urgentSparePartChecks = [
   'Airport pickup, inland truck, unloading tools and final-site handover',
 ]
 
+const jnbCapacityChecks = [
+  'Can the cargo move through HAK/JNB, or does it still need LGG/BRU main-deck planning?',
+  'Is JNB the true handover point, or only the first airport before a mine, plant or cross-border truck leg?',
+  'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
+]
+
 const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
     heading: 'Deep route note for JNB Johannesburg oversized cargo',
@@ -841,6 +847,39 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           </div>
         </div>
       </section>
+
+      {currentSlug === 'jnb' && (
+        <section className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid gap-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-[0.9fr_1.1fr] lg:p-8">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">HAK/JNB capacity signal</p>
+              <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+                Compare Haikou-Johannesburg capacity before locking a South Africa project-cargo route.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                For South Africa mining, automotive, electronics, pharma or industrial spares, the useful question is not
+                only whether JNB has a flight. Check whether the cargo can use the HAK/JNB freighter signal, whether
+                LGG/BRU remains safer for oversized pieces, and who owns the JNB customs and final-site handover.
+              </p>
+              <a
+                href="/insights/haikou-johannesburg-freighter-china-africa-project-cargo/"
+                className="mt-8 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+              >
+                Read the HAK-JNB project-cargo route check
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+            <div className="grid gap-3">
+              {jnbCapacityChecks.map((check) => (
+                <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+                  <p className="leading-7 text-slate-700">{check}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {deepDive && (
         <section className="border-y border-slate-200 bg-white py-20">
