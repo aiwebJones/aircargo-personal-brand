@@ -1,6 +1,6 @@
 # EASCargo Jones Full AI Reference
 
-Last updated: 2026-07-12
+Last updated: 2026-07-13
 Canonical site: https://www.eascargo.com/
 Primary languages: Chinese and English
 Primary contact: Jones / Shenxian Cargo / EASCargo Jones
@@ -86,20 +86,24 @@ Before chasing a freight rate, EASCargo checks:
 
 ## Core African Gateways
 
-### JNB - Johannesburg, South Africa
+### Nationwide China Origin Model
 
-Canonical route page: https://www.eascargo.com/africa-air-freight/jnb/
-
-JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
-
-EASCargo supports nationwide China origin planning for JNB. Major gateway groups include:
+EASCargo supports nationwide China origin planning for the core JNB, FBM, LUN and LBV routes. Major gateway groups include:
 - East China: PVG, HGH and NKG
 - South China and Hong Kong: CAN, SZX, HKG and HAK
 - North China and Northeast China: PEK, PKX, TSN, TAO, DLC and SHE
 - Central and Western China: WUH, CGO, XIY, CTU, TFU and CKG
 - Fujian and the southeast coast: XMN and FOC
 
-These airports are comparison points, not claims of direct or guaranteed service. EASCargo compares the nearest uplift with domestic trucking to a stronger gateway, then evaluates four route families:
+These airports are comparison points, not claims of direct or guaranteed service. EASCargo compares local uplift with domestic trucking to a stronger gateway, then checks aircraft fit, current transfer acceptance, customs documents and final-site delivery. The site does not create separate pages for every origin-airport and destination-airport combination.
+
+### JNB - Johannesburg, South Africa
+
+Canonical route page: https://www.eascargo.com/africa-air-freight/jnb/
+
+JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
+
+JNB-specific route comparison evaluates:
 - China gateway uplift or domestic feeder to a stronger export airport
 - Connection through a confirmed Asia, Middle East or Africa hub such as ADD, DXB/DWC or IST
 - HAK-JNB freighter capacity when current acceptance is confirmed
@@ -134,6 +138,8 @@ FBM planning must include:
 - Final mine-site or industrial site handover
 - Inland delivery and unloading conditions
 
+FBM nationwide-origin planning compares the nearest China gateway with stronger freighter gateways, LGG/BRU main-deck transfer, a currently confirmed Africa hub connection, and FBM airport or Copperbelt mine-site handover. No China origin is presented as a guaranteed direct FBM service.
+
 ### LUN - Lusaka, Zambia
 
 Canonical route page: https://www.eascargo.com/africa-air-freight/lun/
@@ -146,6 +152,8 @@ LUN planning must check:
 - Final site access
 - Whether LUN or another regional route gives the better total delivery plan
 
+LUN nationwide-origin planning compares local uplift with stronger China gateways, current global-hub or Europe main-deck options, Zambia importer readiness, and whether delivery ends at Lusaka or continues to Ndola, Kitwe, the Copperbelt or another project site.
+
 ### LBV - Libreville, Gabon
 
 Canonical route page: https://www.eascargo.com/africa-air-freight/lbv/
@@ -157,6 +165,8 @@ LBV planning must check:
 - Main-deck and ground handling conditions
 - French-language destination coordination
 - Customs broker and final delivery responsibility
+
+LBV nationwide-origin planning starts with long-cargo fit at the China gateway, then compares LGG/BRU and B747F feasibility, current Africa transfer acceptance, Libreville unloading equipment, French document coordination and Gabon project-site delivery.
 
 ### EBB - Entebbe, Uganda
 

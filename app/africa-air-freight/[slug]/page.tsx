@@ -506,7 +506,7 @@ const jnbCapacityChecks = [
   'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
 ]
 
-const chinaJnbOriginClusters = [
+const chinaOriginClusters = [
   {
     region: '华东出口口岸',
     airports: 'PVG / HGH / NKG',
@@ -517,7 +517,7 @@ const chinaJnbOriginClusters = [
     region: '华南及香港口岸',
     airports: 'CAN / SZX / HKG / HAK',
     coverage: '广东、广西、海南和珠三角工厂货源',
-    decision: '比较广州、深圳、香港成熟国际网络与HAK-JNB全货机容量信号，逐票核实主甲板和跨境交接。',
+    decision: '比较广州、深圳、香港国际网络与海南可用资源，逐票核实主甲板、跨境交接和目的港接受条件。',
   },
   {
     region: '华北及东北口岸',
@@ -539,24 +539,106 @@ const chinaJnbOriginClusters = [
   },
 ]
 
-const jnbRouteOptions = [
-  {
-    title: 'China gateway and domestic feeder',
-    body: 'Compare uplift from the nearest major airport with domestic trucking to a stronger gateway. The correct origin depends on total landed route cost, longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
+type OriginStrategy = {
+  heading: string
+  intro: string
+  routeOptions: Array<{ title: string; body: string }>
+}
+
+const originStrategies: Partial<Record<Slug, OriginStrategy>> = {
+  jnb: {
+    heading: '全国主要航空口岸到 JNB：先选起运区域，再比较逐票路线。',
+    intro:
+      'EASCargo不把JNB限定为某一个中国起运机场。根据货物所在地、单件尺寸重量和时效，比较全国主要口岸，再判断全球中转网络、HAK全货机容量信号和LGG/BRU主甲板方案。',
+    routeOptions: [
+      {
+        title: 'China gateway and domestic feeder',
+        body: 'Compare uplift from the nearest major airport with domestic trucking to a stronger gateway. The correct origin depends on total landed route cost, longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
+      },
+      {
+        title: 'Global hub connection',
+        body: 'ADD, DXB/DWC and IST are route families to screen for JNB, while other hubs may be available by shipment. Published connectivity does not prove acceptance: every booking still needs current capacity, aircraft, interline and transfer checks.',
+      },
+      {
+        title: 'HAK-JNB freighter capacity signal',
+        body: 'Astral Aviation has publicly documented a Haikou-Johannesburg Boeing 767-300 freighter launch. Treat HAK as a capacity option to verify for each shipment, not a permanent schedule or guaranteed allocation.',
+      },
+      {
+        title: 'LGG / BRU main-deck alternative',
+        body: 'When a piece cannot fit passenger belly or a connecting freighter, compare Europe transit and main-deck loading. Confirm door size, contour, floor loading, build-up, transfer handling and JNB unloading before quoting.',
+      },
+    ],
   },
-  {
-    title: 'Global hub connection',
-    body: 'ADD, DXB/DWC and IST are practical network families to screen for JNB, while other hubs may be available by shipment. Published networks prove connectivity, not acceptance: every booking still needs current capacity, aircraft, interline and transfer checks.',
+  fbm: {
+    heading: '全国主要航空口岸到 FBM：路线必须落到铜钴矿区交付。',
+    intro:
+      'FBM不是换一个机场代码的普通非洲报价。全国集货后，要把可装载机型、欧洲或非洲Hub衔接、刚果金进口资料、Lubumbashi卸货和最终矿区交付放在同一票方案里。',
+    routeOptions: [
+      {
+        title: 'Nearest gateway vs stronger freighter gateway',
+        body: 'Compare local uplift with trucking to PVG, CAN, SZX, HKG or another stronger export gateway. Pumps, transformers and electrical cabinets must be checked by single-piece dimensions, floor loading, lifting points and transfer acceptance.',
+      },
+      {
+        title: 'LGG / BRU and Africa second-leg planning',
+        body: 'For pieces rejected by normal belly routes, Europe transit can create a main-deck option. The second leg into FBM, transfer warehouse, build-up and destination unloading must all be confirmed before the Europe sector is booked.',
+      },
+      {
+        title: 'Africa hub comparison',
+        body: 'ADD, NBO, JNB or another African hub may be screened when current interline or truck options support the shipment. Do not assume a hub connection is valid until transit customs, piece acceptance and handover responsibility are confirmed.',
+      },
+      {
+        title: 'FBM clearance and mine-site handover',
+        body: 'The quote boundary must state whether it ends at FBM airport, includes customs coordination, or continues to a Copperbelt mine or plant. French cargo descriptions, consignee documents, unloading tools and final truck access are shipment-critical.',
+      },
+    ],
   },
-  {
-    title: 'HAK-JNB freighter capacity signal',
-    body: 'Astral Aviation has publicly documented a Haikou-Johannesburg Boeing 767-300 freighter launch. Treat HAK as a capacity option to verify for each shipment, not a permanent schedule or guaranteed allocation.',
+  lun: {
+    heading: '全国主要航空口岸到 LUN：不能把Lusaka机场价当作最终交付价。',
+    intro:
+      'LUN可承接赞比亚工业、能源、矿业和工厂急件，但全国起运后仍要区分只到Lusaka、继续到Copperbelt，还是交付Ndola、Kitwe或具体项目现场。',
+    routeOptions: [
+      {
+        title: 'China origin and global hub screening',
+        body: 'Compare the nearest China uplift with stronger gateways and current hub connections. Passenger belly, freighter and interline acceptance must be checked against the longest and heaviest piece before selecting the origin airport.',
+      },
+      {
+        title: 'Europe main-deck option for oversized pieces',
+        body: 'LGG/BRU can be compared when standard connections cannot accept package height, length or weight. Confirm the Africa second leg, transfer build-up and LUN ground handling before promising a route.',
+      },
+      {
+        title: 'LUN arrival vs regional extension',
+        body: 'A route ending at LUN is different from a plan continuing to Ndola, Kitwe, a mine or an industrial site. Compare airport clearance, in-country trucking and any alternative regional gateway on total delivery responsibility.',
+      },
+      {
+        title: 'Zambia documents and final-site readiness',
+        body: 'Importer information, HS Code, invoice, packing list, permits, packing photos, truck access and unloading equipment must be aligned before departure. A fast flight does not solve an unprepared consignee or project site.',
+      },
+    ],
   },
-  {
-    title: 'LGG / BRU main-deck alternative',
-    body: 'When a piece cannot fit passenger belly or a connecting freighter, compare Europe transit and main-deck loading. Confirm door size, contour, floor loading, build-up, transfer handling and JNB unloading before quoting.',
+  lbv: {
+    heading: '全国主要航空口岸到 LBV：长货先判断能不能装，再讨论价格。',
+    intro:
+      'LBV的核心不是从哪个中国机场报出最低公斤价，而是长货、油气设备和工程件能否完成国内集运、主甲板装载、欧洲或非洲中转、Libreville卸货和项目现场交接。',
+    routeOptions: [
+      {
+        title: 'China gateway fit for long cargo',
+        body: 'Compare nationwide pickup and export gateways by aircraft door, contour, floor loading and warehouse handling. The nearest airport may be unsuitable for a six-to-eight-metre piece even when ordinary cargo capacity exists.',
+      },
+      {
+        title: 'LGG / BRU and B747F feasibility',
+        body: 'Europe transit and B747F main-deck or nose-door planning may unlock long cargo, but only after loading direction, center of gravity, crate strength, transfer build-up and second-leg acceptance are checked.',
+      },
+      {
+        title: 'Africa connection and LBV handling',
+        body: 'Any Africa hub or direct second leg must be screened against the actual piece. Confirm LBV unloading equipment, forklift or crane access, storage constraints and truck collection before cargo leaves China.',
+      },
+      {
+        title: 'Gabon documents and project-site delivery',
+        body: 'French-compatible cargo descriptions, consignee readiness, customs broker responsibility and final oil, energy or construction site access must be clear. Airport arrival is only one milestone in the project plan.',
+      },
+    ],
   },
-]
+}
 
 const jnbOfficialFacts = [
   {
@@ -745,13 +827,19 @@ function getFaq(item: (typeof pages)[Slug]) {
     },
   ]
 
-  if (item.code !== 'JNB') return commonFaq
+  const nationwideOriginFaq = ['JNB', 'FBM', 'LUN', 'LBV'].includes(item.code)
+    ? {
+        question: `Which China airports can be used for ${item.code} ${item.city} air freight?`,
+        answer: `EASCargo compares PVG, HGH, NKG, CAN, SZX, HKG, PEK, PKX, TSN, TAO, XMN, FOC, WUH, CGO, CTU, TFU, CKG, XIY and HAK according to cargo location and current acceptance. These are origin options, not claims of direct service. Heavy or oversized pieces may need domestic trucking to a stronger gateway, global hub transit or LGG/BRU main-deck planning.`,
+      }
+    : null
+
+  if (item.code !== 'JNB') return nationwideOriginFaq ? [nationwideOriginFaq, ...commonFaq] : commonFaq
 
   return [
     {
       question: 'Which China airports can be used for JNB Johannesburg air freight?',
-      answer:
-        'EASCargo can compare PVG, HGH, NKG, CAN, SZX, HKG, PEK, PKX, TSN, TAO, XMN, FOC, WUH, CGO, CTU, TFU, CKG, XIY and HAK according to cargo location and current acceptance. The nearest airport is not always the best route: heavy or oversized pieces may need trucking to a stronger gateway, global hub transit or LGG/BRU main-deck planning.',
+      answer: nationwideOriginFaq!.answer,
     },
     {
       question: 'What must a South African importer prepare before JNB arrival?',
@@ -786,9 +874,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     ? currentMetadataTitle(params.slug as Slug, item, chinese)
     : `${item.title} | EASCargo Jones`
   const description = chinese
-    ? params.slug === 'jnb'
-      ? '中国各大机场到JNB约翰内斯堡空运：比较PVG、CAN、SZX、PEK、XMN、FOC、CTU、CKG、HAK起运，全球Hub中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
-      : `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
+    ? currentMetadataDescription(params.slug as Slug, item, chinese)
     : item.description
 
   return {
@@ -798,6 +884,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       ...(chinese?.keywords || []),
       ...(params.slug === 'jnb'
         ? ['中国各大机场到JNB空运', '华东到南非空运', '华南到JNB空运', '华北到JNB空运', 'FOC JNB空运']
+        : ['fbm', 'lun', 'lbv'].includes(params.slug)
+          ? [`中国各大机场到${item.code}空运`, `${item.code}全国集货空运`, `${item.code}项目货路线`]
         : []),
       `${item.code} air freight`,
       `China to ${item.city} air freight`,
@@ -824,7 +912,30 @@ function currentMetadataTitle(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') return 'JNB约翰内斯堡空运 | 中国各大机场到南非项目货 | EASCargo Jones'
+  if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
+  if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
+  if (slug === 'lbv') return 'LBV利伯维尔空运 | 中国各大机场到加蓬长货项目 | EASCargo Jones'
   return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
+}
+
+function currentMetadataDescription(
+  slug: Slug,
+  item: (typeof pages)[Slug],
+  chinese: (typeof chineseDestinations)[Slug],
+) {
+  if (slug === 'jnb') {
+    return '中国各大机场到JNB约翰内斯堡空运：比较PVG、CAN、SZX、PEK、XMN、FOC、CTU、CKG、HAK起运，全球Hub中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
+  }
+  if (slug === 'fbm') {
+    return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
+  }
+  if (slug === 'lun') {
+    return '中国各大机场到LUN卢萨卡空运：全国集货、全球Hub或欧洲中转、赞比亚进口资料及Lusaka/Copperbelt项目现场交付判断。'
+  }
+  if (slug === 'lbv') {
+    return '中国各大机场到LBV利伯维尔空运：全国集货、长货主甲板、LGG/BRU与B747F方案、加蓬清关及油气能源项目现场交付。'
+  }
+  return `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
 }
 
 export default function AfricaDestinationPage({ params }: { params: { slug: string } }) {
@@ -836,6 +947,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
     .slice(0, 8)
   const faq = getFaq(item)
   const deepDive = deepDives[currentSlug]
+  const originStrategy = originStrategies[currentSlug]
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -963,22 +1075,19 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
       </section>
 
-      {currentSlug === 'jnb' && (
+      {originStrategy && (
         <>
           <section className="border-y border-slate-200 bg-slate-50 py-20">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">China origins to JNB</p>
-                <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-                  全国主要航空口岸到 JNB：先选起运区域，再比较逐票路线。
-                </h2>
-                <p className="mt-5 text-lg leading-8 text-slate-600">
-                  EASCargo不把JNB限定为某一个中国起运机场。根据货物所在地、单件尺寸重量和时效，比较华东、华南、
-                  华北、华中西部及福建沿海主要口岸，再判断全球中转网络、HAK全货机容量信号和LGG/BRU主甲板方案。
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">
+                  China origins to {item.code}
                 </p>
+                <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">{originStrategy.heading}</h2>
+                <p className="mt-5 text-lg leading-8 text-slate-600">{originStrategy.intro}</p>
               </div>
               <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {chinaJnbOriginClusters.map((cluster) => (
+                {chinaOriginClusters.map((cluster) => (
                   <article key={cluster.region} className="rounded-lg border border-slate-200 bg-white p-6">
                     <h3 className="text-xl font-semibold text-slate-950">{cluster.region}</h3>
                     <p className="mt-2 font-bold text-amberGold">{cluster.airports}</p>
@@ -994,7 +1103,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 </p>
               </div>
               <div className="mt-10 grid gap-5 md:grid-cols-2">
-                {jnbRouteOptions.map((option) => (
+                {originStrategy.routeOptions.map((option) => (
                   <article key={option.title} className="rounded-lg border border-slate-200 bg-white p-6">
                     <h3 className="text-xl font-semibold text-slate-950">{option.title}</h3>
                     <p className="mt-3 leading-7 text-slate-600">{option.body}</p>
@@ -1004,7 +1113,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </div>
           </section>
 
-          <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+          {currentSlug === 'jnb' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">HAK/JNB capacity signal</p>
               <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
@@ -1031,9 +1140,9 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 </div>
               ))}
             </div>
-          </section>
+          </section>}
 
-          <section className="bg-slate-950 py-20 text-white">
+          {currentSlug === 'jnb' && <section className="bg-slate-950 py-20 text-white">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Primary-source research</p>
@@ -1059,7 +1168,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 ))}
               </div>
             </div>
-          </section>
+          </section>}
         </>
       )}
 
@@ -1172,12 +1281,12 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
             url: `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
-            ...(currentSlug === 'jnb'
+            ...(['jnb', 'fbm', 'lun', 'lbv'].includes(currentSlug)
               ? {
                   mainEntityOfPage: {
                     '@type': 'WebPage',
                     '@id': `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
-                    dateModified: '2026-07-12',
+                    dateModified: '2026-07-13',
                   },
                 }
               : {}),
