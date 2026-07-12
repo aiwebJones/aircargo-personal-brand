@@ -6,9 +6,9 @@ const pages = {
     code: 'JNB',
     city: 'Johannesburg',
     country: 'South Africa',
-    title: 'JNB Johannesburg Oversized Air Freight from Fuzhou and China',
+    title: 'JNB Johannesburg Oversized Air Freight from China',
     description:
-      'FOC Fuzhou and China to Johannesburg JNB oversized air freight for mining, engineering and urgent project cargo. Compare China gateways, HAK capacity, ADD/DXB/IST transit, LGG/BRU main-deck planning, SARS customs and Southern Africa delivery.',
+      'China major air cargo gateways to Johannesburg JNB for mining, engineering and urgent project cargo. Compare PVG, CAN, SZX, PEK, XMN, FOC, CTU, CKG and HAK origin options with global transit, main-deck planning, SARS customs and Southern Africa delivery.',
     cargo: ['Mining spare parts', 'Engineering equipment', 'Automotive parts', 'High-value urgent project cargo'],
     market:
       'O.R. Tambo International Airport is South Africa\'s principal international cargo gateway. Airports Company South Africa states that the airport has annual cargo facilitation capacity of 650,000 tonnes and direct road access to the national network.',
@@ -506,10 +506,43 @@ const jnbCapacityChecks = [
   'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
 ]
 
+const chinaJnbOriginClusters = [
+  {
+    region: '华东出口口岸',
+    airports: 'PVG / HGH / NKG',
+    coverage: '上海、江苏、浙江、安徽及周边制造业货源',
+    decision: '优先比较宽体腹舱、全货机衔接、欧洲或全球Hub中转，以及超限件国内集卡成本。',
+  },
+  {
+    region: '华南及香港口岸',
+    airports: 'CAN / SZX / HKG / HAK',
+    coverage: '广东、广西、海南和珠三角工厂货源',
+    decision: '比较广州、深圳、香港成熟国际网络与HAK-JNB全货机容量信号，逐票核实主甲板和跨境交接。',
+  },
+  {
+    region: '华北及东北口岸',
+    airports: 'PEK / PKX / TSN / TAO / DLC / SHE',
+    coverage: '北京、天津、山东、河北及东北工业货源',
+    decision: '根据货物位置、国内运输、航司收货限制和中转窗口选择北京、天津、青岛或东北集货方案。',
+  },
+  {
+    region: '华中及西部口岸',
+    airports: 'WUH / CGO / XIY / CTU / TFU / CKG',
+    coverage: '湖北、河南、陕西、四川、重庆及西部项目货源',
+    decision: '比较本地起运与卡车转PVG/CAN/SZX等枢纽的总成本、装载可行性和最晚到货时间。',
+  },
+  {
+    region: '福建及东南沿海口岸',
+    airports: 'XMN / FOC',
+    coverage: '厦门、福州、泉州及福建周边工厂货源',
+    decision: 'FOC和XMN都是全国网络中的起运选项；本地舱位不适合时，再比较华东或华南枢纽集运。',
+  },
+]
+
 const jnbRouteOptions = [
   {
-    title: 'FOC / Fujian origin consolidation',
-    body: 'For cargo in Fuzhou, Xiamen, Quanzhou or wider Fujian, compare uplift from FOC/XMN with a bonded or domestic truck to a stronger China gateway. The correct gateway depends on the longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
+    title: 'China gateway and domestic feeder',
+    body: 'Compare uplift from the nearest major airport with domestic trucking to a stronger gateway. The correct origin depends on total landed route cost, longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
   },
   {
     title: 'Global hub connection',
@@ -716,9 +749,9 @@ function getFaq(item: (typeof pages)[Slug]) {
 
   return [
     {
-      question: 'How should FOC Fuzhou to JNB Johannesburg air freight be routed?',
+      question: 'Which China airports can be used for JNB Johannesburg air freight?',
       answer:
-        'Start by comparing FOC or XMN uplift with a truck or feeder to a stronger China gateway, then verify current connections through hubs such as ADD, DXB/DWC or IST. For freighter-suitable cargo, HAK-JNB may be screened; for pieces that still do not fit, compare LGG/BRU main-deck transit. No route is confirmed until dimensions, weight, aircraft acceptance and transfer handling are checked.',
+        'EASCargo can compare PVG, HGH, NKG, CAN, SZX, HKG, PEK, PKX, TSN, TAO, XMN, FOC, WUH, CGO, CTU, TFU, CKG, XIY and HAK according to cargo location and current acceptance. The nearest airport is not always the best route: heavy or oversized pieces may need trucking to a stronger gateway, global hub transit or LGG/BRU main-deck planning.',
     },
     {
       question: 'What must a South African importer prepare before JNB arrival?',
@@ -754,7 +787,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     : `${item.title} | EASCargo Jones`
   const description = chinese
     ? params.slug === 'jnb'
-      ? 'FOC福州及中国各地到JNB约翰内斯堡空运：比较FOC/XMN起运、HAK全货机容量、ADD/DXB/IST中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
+      ? '中国各大机场到JNB约翰内斯堡空运：比较PVG、CAN、SZX、PEK、XMN、FOC、CTU、CKG、HAK起运，全球Hub中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
       : `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
     : item.description
 
@@ -763,7 +796,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     description,
     keywords: [
       ...(chinese?.keywords || []),
-      ...(params.slug === 'jnb' ? ['FOC JNB空运', '福州到约翰内斯堡空运', 'China to Johannesburg cargo'] : []),
+      ...(params.slug === 'jnb'
+        ? ['中国各大机场到JNB空运', '华东到南非空运', '华南到JNB空运', '华北到JNB空运', 'FOC JNB空运']
+        : []),
       `${item.code} air freight`,
       `China to ${item.city} air freight`,
       '中国到非洲空运',
@@ -788,7 +823,7 @@ function currentMetadataTitle(
   item: (typeof pages)[Slug],
   chinese: (typeof chineseDestinations)[Slug],
 ) {
-  if (slug === 'jnb') return 'JNB约翰内斯堡空运 | FOC福州/中国到南非项目货 | EASCargo Jones'
+  if (slug === 'jnb') return 'JNB约翰内斯堡空运 | 中国各大机场到南非项目货 | EASCargo Jones'
   return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
 }
 
@@ -933,13 +968,29 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           <section className="border-y border-slate-200 bg-slate-50 py-20">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FOC / China to JNB route map</p>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">China origins to JNB</p>
                 <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-                  福州及中国各地到 JNB：先比较四类路径，再确认逐票舱位。
+                  全国主要航空口岸到 JNB：先选起运区域，再比较逐票路线。
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">
-                  对搜索 <strong>FOC JNB 空运</strong> 的福建工厂、货代和南非进口商，专业判断不是承诺一条固定航班，
-                  而是比较起运机场、全球中转网络、HAK 全货机容量信号，以及 LGG/BRU 主甲板方案。
+                  EASCargo不把JNB限定为某一个中国起运机场。根据货物所在地、单件尺寸重量和时效，比较华东、华南、
+                  华北、华中西部及福建沿海主要口岸，再判断全球中转网络、HAK全货机容量信号和LGG/BRU主甲板方案。
+                </p>
+              </div>
+              <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {chinaJnbOriginClusters.map((cluster) => (
+                  <article key={cluster.region} className="rounded-lg border border-slate-200 bg-white p-6">
+                    <h3 className="text-xl font-semibold text-slate-950">{cluster.region}</h3>
+                    <p className="mt-2 font-bold text-amberGold">{cluster.airports}</p>
+                    <p className="mt-3 text-sm leading-7 text-slate-500">{cluster.coverage}</p>
+                    <p className="mt-3 leading-7 text-slate-700">{cluster.decision}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="mt-14 max-w-4xl">
+                <h3 className="text-2xl font-bold text-slate-950">四类路线框架</h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  起运机场只是第一步。舱位、机型、中转接受、主甲板尺寸、清关和最终交付必须按票组合判断。
                 </p>
               </div>
               <div className="mt-10 grid gap-5 md:grid-cols-2">

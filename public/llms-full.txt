@@ -92,8 +92,15 @@ Canonical route page: https://www.eascargo.com/africa-air-freight/jnb/
 
 JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
 
-For FOC Fuzhou, Fujian and other China origins, EASCargo compares four route families instead of promising a fixed flight:
-- FOC/XMN uplift or trucking to a stronger China gateway
+EASCargo supports nationwide China origin planning for JNB. Major gateway groups include:
+- East China: PVG, HGH and NKG
+- South China and Hong Kong: CAN, SZX, HKG and HAK
+- North China and Northeast China: PEK, PKX, TSN, TAO, DLC and SHE
+- Central and Western China: WUH, CGO, XIY, CTU, TFU and CKG
+- Fujian and the southeast coast: XMN and FOC
+
+These airports are comparison points, not claims of direct or guaranteed service. EASCargo compares the nearest uplift with domestic trucking to a stronger gateway, then evaluates four route families:
+- China gateway uplift or domestic feeder to a stronger export airport
 - Connection through a confirmed Asia, Middle East or Africa hub such as ADD, DXB/DWC or IST
 - HAK-JNB freighter capacity when current acceptance is confirmed
 - LGG/BRU Europe transit for pieces that need main-deck planning
