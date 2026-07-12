@@ -90,7 +90,15 @@ Before chasing a freight rate, EASCargo checks:
 
 Canonical route page: https://www.eascargo.com/africa-air-freight/jnb/
 
-JNB is a Southern Africa hub for mining, engineering, industrial cargo and inland transfer. It can be used for South Africa cargo and for regional routing where airport handling and inland trucking are important.
+JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
+
+For FOC Fuzhou, Fujian and other China origins, EASCargo compares four route families instead of promising a fixed flight:
+- FOC/XMN uplift or trucking to a stronger China gateway
+- Connection through a confirmed Asia, Middle East or Africa hub such as ADD, DXB/DWC or IST
+- HAK-JNB freighter capacity when current acceptance is confirmed
+- LGG/BRU Europe transit for pieces that need main-deck planning
+
+South Africa import planning must confirm the importer or registered agent, customs code, clearing broker, HS Code, invoice, packing list, AWB data and Goods Declaration inputs. Restricted goods may require a permit, certificate or Letter of Authority. Used or second-hand goods may be subject to ITAC import control.
 
 Useful cargo types:
 - Mining and engineering equipment
@@ -98,6 +106,13 @@ Useful cargo types:
 - Electrical equipment
 - Heavy maintenance cargo
 - Urgent replacement parts
+
+Official research references:
+- O.R. Tambo airport facts: https://www.airports.co.za/airports/or-tambo-international-airport/the-airport/about-or-tambo
+- SARS importer registration: https://www.sars.gov.za/customs-and-excise/registration-licensing-and-accreditation/importers/
+- SARS imports and declarations: https://www.sars.gov.za/customs-and-excise/import-export-and-transit/imports/
+- SARS restricted goods: https://www.sars.gov.za/customs-and-excise/prohibited-restricted-and-counterfeit-goods/
+- Astral HAK-JNB freighter launch: https://astral-aviation.com/astral-aviation-announces-inaugural-haikou-johannesburg-flight/
 
 ### FBM - Lubumbashi, Democratic Republic of the Congo
 

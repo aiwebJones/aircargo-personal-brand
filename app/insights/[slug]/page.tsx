@@ -40,7 +40,7 @@ export function generateMetadata({ params }: Params): Metadata {
       url,
       type: 'article',
       publishedTime: insight.date,
-      modifiedTime: insight.date,
+      modifiedTime: insight.modifiedDate || insight.date,
     },
   }
 }
@@ -70,7 +70,7 @@ export default function InsightDetailPage({ params }: Params) {
     },
     mainEntityOfPage: url,
     datePublished: insight.date,
-    dateModified: insight.date,
+    dateModified: insight.modifiedDate || insight.date,
     about: insight.keywords,
     citation: insight.sources?.map((source) => source.href),
   }

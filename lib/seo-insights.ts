@@ -3,6 +3,7 @@ export type SeoInsight = {
   title: string
   excerpt: string
   date: string
+  modifiedDate?: string
   readTime: string
   category: string
   author: string
@@ -123,10 +124,11 @@ export const seoInsights: SeoInsight[] = [
   },
   {
     slug: 'haikou-johannesburg-freighter-china-africa-project-cargo',
-    title: '海口到约堡全货机恢复：华南到南部非洲项目货怎么重新判断？',
+    title: '海口到约堡全货机信号：华南到南部非洲项目货怎么判断？',
     excerpt:
-      'Astral Aviation 2026年7月恢复海口-约翰内斯堡定期全货机，经Nairobi网络衔接非洲。对中国到南部非洲的电子、汽车配件、药品、矿业和工业备件来说，重点不是简单说有直飞，而是重新判断HAK/JNB入口、主甲板、清关和二程交付。',
+      'Astral Aviation官方记录了海口-约翰内斯堡Boeing 767-300全货机首航。对中国到南部非洲的电子、汽车配件、药品、矿业和工业备件来说，重点不是把一次航线信号写成固定班期，而是逐票判断HAK/JNB入口、主甲板、清关和二程交付。',
     date: '2026-07-11',
+    modifiedDate: '2026-07-12',
     readTime: '11 分钟',
     category: '航线情报',
     author: defaultAuthor,
@@ -134,12 +136,12 @@ export const seoInsights: SeoInsight[] = [
     keywords: ['海口约堡全货机', 'Haikou Johannesburg freighter', '中国到南非空运', 'JNB项目货空运'],
     template: 'generated',
     audience: ['华南工厂', '南非进口商', '矿业和工业备件供应商', '非洲项目货货代'],
-    angle: '把HAK-JNB全货机恢复信号转成华南到南部非洲项目货的路线、资料和交付判断。',
+    angle: '把HAK-JNB全货机公开信号转成华南到南部非洲项目货的路线、资料和交付判断。',
     sections: [
       {
         heading: '这条线的价值不只是多一个航班',
         body: [
-          'STAT Times 2026年7月8日报道，Astral Aviation恢复海口到约翰内斯堡的定期全货机服务，与Fly Noor Aviation Services合作，每周两班，使用Boeing 767-300F，单班载量最高约50吨，经Astral的Nairobi hub连接中国和非洲。',
+          'Astral Aviation官方页面记录了海口到约翰内斯堡首航，执飞机型为Boeing 767-300 Freighter。该页面证明HAK/JNB全货机航线曾被实际执行，但没有在页面上承诺长期固定班期、舱位或项目货接受条件，因此每票仍需重新核实。',
           '对EASCargo关心的货，不应该把这个信号写成普通新闻。真正的商业价值是：华南、海南自贸港、珠三角和周边工厂如果有电子、汽车配件、药品、工业备件、矿业维修件或高价值急件，可以多一个HAK/JNB方向的容量判断入口。',
         ],
         bullets: ['HAK海口出口入口', 'JNB南部非洲网关', 'B767-300F全货机', 'Nairobi网络衔接'],
@@ -147,7 +149,7 @@ export const seoInsights: SeoInsight[] = [
       {
         heading: '不要把恢复航线误读成所有项目货都好走',
         body: [
-          '全货机恢复提升的是可选容量，不等于每票超限件都自动成立。B767-300F有全货机主甲板优势，但每件尺寸、重量、装载方向、叉车/吊装条件、危险品或带电属性，仍然决定能不能接、能不能排舱、能不能在JNB顺利卸货。',
+          '全货机公开信号增加了一个值得询价的容量方向，不等于每票超限件都自动成立。B767-300F有全货机主甲板优势，但每件尺寸、重量、装载方向、叉车/吊装条件、危险品或带电属性，仍然决定能不能接、能不能排舱、能不能在JNB顺利卸货。',
           'JNB只是南部非洲入口。货到约堡后，如果最终目的地是矿区、工厂、港口、博茨瓦纳、纳米比亚、赞比亚、莫桑比克或津巴布韦，还要重新确认清关代理、二程卡车、现场卸货、进口许可和仓储边界。只问海口到约堡几天，没有办法判断整票货能不能按项目窗口交付。',
         ],
         bullets: ['单件尺寸重量', 'JNB卸货能力', '南部非洲二程', '进口商清关资料'],
@@ -170,8 +172,9 @@ export const seoInsights: SeoInsight[] = [
       { label: '非洲急件备件路线风险清单', href: '/tools/africa-urgent-spare-parts-route-risk-checklist/' },
     ],
     sources: [
+      { label: 'Astral Aviation: Inaugural Haikou-Johannesburg Flight', href: 'https://astral-aviation.com/astral-aviation-announces-inaugural-haikou-johannesburg-flight/' },
       { label: 'STAT Times: Astral Aviation resumes China-Africa freighter flights', href: 'https://www.stattimes.com/air-cargo/astral-aviation-resumes-chinaafrica-freighter-flights-1359764' },
-      { label: 'IATA: Air Cargo Demand Up 6.0% in May 2026', href: 'https://www.iata.org/en/pressroom/2026-releases/06-29-air-cargo-demand-up-may/' },
+      { label: 'Airports Company South Africa: About O.R. Tambo', href: 'https://www.airports.co.za/airports/or-tambo-international-airport/the-airport/about-or-tambo' },
     ],
   },
   {

@@ -6,18 +6,18 @@ const pages = {
     code: 'JNB',
     city: 'Johannesburg',
     country: 'South Africa',
-    title: 'JNB Johannesburg Oversized Air Freight from China',
+    title: 'JNB Johannesburg Oversized Air Freight from Fuzhou and China',
     description:
-      'Oversized and heavy air freight from China to Johannesburg JNB for mining, engineering, automotive and Southern Africa project cargo. LGG/BRU Europe transit and B747F planning.',
+      'FOC Fuzhou and China to Johannesburg JNB oversized air freight for mining, engineering and urgent project cargo. Compare China gateways, HAK capacity, ADD/DXB/IST transit, LGG/BRU main-deck planning, SARS customs and Southern Africa delivery.',
     cargo: ['Mining spare parts', 'Engineering equipment', 'Automotive parts', 'High-value urgent project cargo'],
     market:
-      'Johannesburg is the main Southern Africa air cargo hub. It can serve South Africa directly and may support onward delivery to nearby countries and cities.',
+      'O.R. Tambo International Airport is South Africa\'s principal international cargo gateway. Airports Company South Africa states that the airport has annual cargo facilitation capacity of 650,000 tonnes and direct road access to the national network.',
     customs:
-      'Check importer tax details, HS Code, commercial invoice, packing list, declared cargo description and any onward transit documents before booking.',
+      'Check the South African importer or registered agent, customs code, HS Code, commercial invoice, packing list, AWB data and Goods Declaration before booking. Restricted goods may need a permit, certificate or Letter of Authority; used goods can require ITAC import control.',
     business:
-      'Best for urgent mining spares, industrial maintenance cargo and high-value equipment serving South Africa and Southern Africa projects.',
+      'Best for urgent mining spares, industrial maintenance cargo, automotive parts and high-value equipment serving Gauteng, South Africa and selected Southern Africa projects after route-specific customs and trucking checks.',
     culture:
-      'South Africa has a mature logistics market and English business communication is common, but consignee readiness and local delivery appointment control still decide the final timeline.',
+      'English business communication is common, but the importer, customs broker, airline handler and final-site receiver must agree on documents, release responsibility, truck appointment and unloading before departure.',
   },
   fbm: {
     code: 'FBM',
@@ -506,6 +506,53 @@ const jnbCapacityChecks = [
   'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
 ]
 
+const jnbRouteOptions = [
+  {
+    title: 'FOC / Fujian origin consolidation',
+    body: 'For cargo in Fuzhou, Xiamen, Quanzhou or wider Fujian, compare uplift from FOC/XMN with a bonded or domestic truck to a stronger China gateway. The correct gateway depends on the longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
+  },
+  {
+    title: 'Global hub connection',
+    body: 'ADD, DXB/DWC and IST are practical network families to screen for JNB, while other hubs may be available by shipment. Published networks prove connectivity, not acceptance: every booking still needs current capacity, aircraft, interline and transfer checks.',
+  },
+  {
+    title: 'HAK-JNB freighter capacity signal',
+    body: 'Astral Aviation has publicly documented a Haikou-Johannesburg Boeing 767-300 freighter launch. Treat HAK as a capacity option to verify for each shipment, not a permanent schedule or guaranteed allocation.',
+  },
+  {
+    title: 'LGG / BRU main-deck alternative',
+    body: 'When a piece cannot fit passenger belly or a connecting freighter, compare Europe transit and main-deck loading. Confirm door size, contour, floor loading, build-up, transfer handling and JNB unloading before quoting.',
+  },
+]
+
+const jnbOfficialFacts = [
+  {
+    label: 'O.R. Tambo airport and cargo capacity',
+    detail: 'ACSA describes JNB as its flagship airport, connected to South Africa\'s national road network, with annual cargo facilitation capacity of 650,000 tonnes.',
+    href: 'https://www.airports.co.za/airports/or-tambo-international-airport/the-airport/about-or-tambo',
+  },
+  {
+    label: 'South African importer and Goods Declaration',
+    detail: 'SARS requires importers or their agents to declare imported goods; foreign importers must nominate a registered agent in South Africa.',
+    href: 'https://www.sars.gov.za/customs-and-excise/registration-licensing-and-accreditation/importers/',
+  },
+  {
+    label: 'Restricted and controlled goods',
+    detail: 'SARS states that restricted goods may enter only under specified conditions, such as a permit, certificate or Letter of Authority from the responsible authority.',
+    href: 'https://www.sars.gov.za/customs-and-excise/prohibited-restricted-and-counterfeit-goods/',
+  },
+  {
+    label: 'Used and second-hand goods import control',
+    detail: 'South African government guidance says used goods, second-hand goods, waste and scrap are subject to import control and should be checked with ITAC before shipment.',
+    href: 'https://www.gov.za/services/import/import-permit-general-goods',
+  },
+  {
+    label: 'JNB road-feeder reach',
+    detail: 'Carrier-published road networks show JNB links into South African cities and selected Southern Africa points; availability and cargo acceptance must be reconfirmed per shipment.',
+    href: 'https://www.turkishcargo.com/documents/karayolu_tasimaciligi/EN/africa_truck_service2.pdf',
+  },
+]
+
 const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
     heading: 'Deep route note for JNB Johannesburg oversized cargo',
@@ -646,7 +693,7 @@ const deepDives: Partial<Record<Slug, DeepDive>> = {
 }
 
 function getFaq(item: (typeof pages)[Slug]) {
-  return [
+  const commonFaq = [
     {
       question: `Can oversized cargo fly from China to ${item.code} ${item.city}?`,
       answer: `It depends on package dimensions, gross weight, lifting points, aircraft availability and destination handling at ${item.code}. For large pieces, we first check loading feasibility before discussing the airfreight rate.`,
@@ -663,6 +710,27 @@ function getFaq(item: (typeof pages)[Slug]) {
       question: `Is ${item.code} suitable for mining or engineering project cargo?`,
       answer: `${item.business} The key is not only airport-to-airport freight, but whether customs, handling and inland delivery can support the project schedule.`,
     },
+  ]
+
+  if (item.code !== 'JNB') return commonFaq
+
+  return [
+    {
+      question: 'How should FOC Fuzhou to JNB Johannesburg air freight be routed?',
+      answer:
+        'Start by comparing FOC or XMN uplift with a truck or feeder to a stronger China gateway, then verify current connections through hubs such as ADD, DXB/DWC or IST. For freighter-suitable cargo, HAK-JNB may be screened; for pieces that still do not fit, compare LGG/BRU main-deck transit. No route is confirmed until dimensions, weight, aircraft acceptance and transfer handling are checked.',
+    },
+    {
+      question: 'What must a South African importer prepare before JNB arrival?',
+      answer:
+        'Confirm the importer or registered agent, customs code, clearing broker, HS Code, invoice, packing list, AWB data and Goods Declaration inputs. Restricted products may require a permit, certificate or Letter of Authority, and used goods may require ITAC import control before shipment.',
+    },
+    {
+      question: 'Can JNB be used for delivery beyond Johannesburg?',
+      answer:
+        'JNB can support inland and selected cross-border planning, but it is not automatic. Confirm whether cargo clears in South Africa, moves in bond or in transit, which carrier or trucker accepts the piece, and who controls permits, proof of export, unloading and final-site delivery.',
+    },
+    ...commonFaq,
   ]
 }
 
@@ -682,10 +750,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 
   const title = chinese
-    ? `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
+    ? currentMetadataTitle(params.slug as Slug, item, chinese)
     : `${item.title} | EASCargo Jones`
   const description = chinese
-    ? `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
+    ? params.slug === 'jnb'
+      ? 'FOC福州及中国各地到JNB约翰内斯堡空运：比较FOC/XMN起运、HAK全货机容量、ADD/DXB/IST中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
+      : `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
     : item.description
 
   return {
@@ -693,6 +763,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     description,
     keywords: [
       ...(chinese?.keywords || []),
+      ...(params.slug === 'jnb' ? ['FOC JNB空运', '福州到约翰内斯堡空运', 'China to Johannesburg cargo'] : []),
       `${item.code} air freight`,
       `China to ${item.city} air freight`,
       '中国到非洲空运',
@@ -710,6 +781,15 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       type: 'website',
     },
   }
+}
+
+function currentMetadataTitle(
+  slug: Slug,
+  item: (typeof pages)[Slug],
+  chinese: (typeof chineseDestinations)[Slug],
+) {
+  if (slug === 'jnb') return 'JNB约翰内斯堡空运 | FOC福州/中国到南非项目货 | EASCargo Jones'
+  return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
 }
 
 export default function AfricaDestinationPage({ params }: { params: { slug: string } }) {
@@ -849,8 +929,31 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       </section>
 
       {currentSlug === 'jnb' && (
-        <section className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid gap-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-[0.9fr_1.1fr] lg:p-8">
+        <>
+          <section className="border-y border-slate-200 bg-slate-50 py-20">
+            <div className="mx-auto max-w-6xl px-6">
+              <div className="max-w-4xl">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FOC / China to JNB route map</p>
+                <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+                  福州及中国各地到 JNB：先比较四类路径，再确认逐票舱位。
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-slate-600">
+                  对搜索 <strong>FOC JNB 空运</strong> 的福建工厂、货代和南非进口商，专业判断不是承诺一条固定航班，
+                  而是比较起运机场、全球中转网络、HAK 全货机容量信号，以及 LGG/BRU 主甲板方案。
+                </p>
+              </div>
+              <div className="mt-10 grid gap-5 md:grid-cols-2">
+                {jnbRouteOptions.map((option) => (
+                  <article key={option.title} className="rounded-lg border border-slate-200 bg-white p-6">
+                    <h3 className="text-xl font-semibold text-slate-950">{option.title}</h3>
+                    <p className="mt-3 leading-7 text-slate-600">{option.body}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">HAK/JNB capacity signal</p>
               <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
@@ -877,8 +980,36 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 </div>
               ))}
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section className="bg-slate-950 py-20 text-white">
+            <div className="mx-auto max-w-6xl px-6">
+              <div className="max-w-4xl">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Primary-source research</p>
+                <h2 className="text-3xl font-bold md:text-4xl">JNB facts used in this route assessment.</h2>
+                <p className="mt-5 text-lg leading-8 text-slate-300">
+                  These sources support airport, customs and network facts. They do not guarantee today&apos;s flight,
+                  allocation, rate, clearance time or truck acceptance; EASCargo reconfirms those items shipment by shipment.
+                </p>
+              </div>
+              <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
+                {jnbOfficialFacts.map((fact) => (
+                  <div key={fact.label} className="grid gap-3 py-6 md:grid-cols-[0.8fr_1.2fr] md:gap-8">
+                    <a
+                      href={fact.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-semibold text-amberGold hover:text-white"
+                    >
+                      {fact.label}
+                    </a>
+                    <p className="leading-7 text-slate-300">{fact.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
       )}
 
       {deepDive && (
@@ -989,6 +1120,35 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             areaServed: item.country,
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
+            url: `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
+            ...(currentSlug === 'jnb'
+              ? {
+                  mainEntityOfPage: {
+                    '@type': 'WebPage',
+                    '@id': `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
+                    dateModified: '2026-07-12',
+                  },
+                }
+              : {}),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'EASCargo', item: 'https://www.eascargo.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Africa air freight', item: 'https://www.eascargo.com/africa-air-freight/' },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: `${item.code} ${item.city}`,
+                item: `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
+              },
+            ],
           }),
         }}
       />
