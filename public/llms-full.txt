@@ -1,6 +1,6 @@
 # EASCargo Jones Full AI Reference
 
-Last updated: 2026-07-11
+Last updated: 2026-07-12
 Canonical site: https://www.eascargo.com/
 Primary languages: Chinese and English
 Primary contact: Jones / Shenxian Cargo / EASCargo Jones
@@ -232,46 +232,33 @@ EASCargo Jones can help with:
    - Critical spare parts timing logic
    - Route risk explanation for factory, trader or forwarder teams
 
-## Case Summaries
+## Public Project And Loading Records
 
-### Case 1: 12-meter industrial equipment by B747F nose-door loading
+Completed Africa projects and historical loading records are labeled separately. Historical records demonstrate handling experience; they are not current capacity, schedule, rate or transit-time promises.
 
-Route: CAN -> CDG
-Cargo: 12-meter industrial equipment, approximately 25 tons
-Challenge: The cargo length exceeded normal cargo door and loading limits. It required B747F nose-door loading, center-of-gravity calculation and careful load planning.
-Solution: B747-400F nose-door loading plan, 3D loading simulation, distributed securing points and ground operation coordination.
-Result: Loading completed in about 12 hours, with balanced center of gravity and more efficient space use.
-
-### Case 2: 3.5-meter-high precision machinery
-
-Route: China -> FRA
-Cargo: Precision machine tool, approximately 3.5 meters high and 18 tons
-Challenge: The height exceeded common B747F cargo hold limits.
-Solution: Disassembly review, aircraft-type replacement analysis, alternative aircraft planning and loading monitoring.
-Result: A workable aircraft plan was selected and delivery time was protected while avoiding an unsuitable standard route.
-
-### Case 3: Heavy excavator components
-
-Cargo: Heavy construction / excavator components
-Challenge: High gross weight, heavy-lift handling and aircraft acceptance needed to be checked before quoting.
-Solution: Main-deck loading review, ground handling confirmation and cost / timing comparison.
-Result: Cargo was routed through an executable heavy-cargo air solution rather than an unrealistic low-rate quote.
-
-### Case 4: LBV 8-meter long cargo via Europe and B747F
+### Record 1: LBV 8-meter long cargo via Europe and B747F
 
 Route: China -> LGG / BRU -> LBV Libreville
 Cargo: 8-meter long Africa project cargo
 Challenge: Direct China-to-Africa routing could not provide an executable plan. The cargo length exceeded ordinary belly-hold capability, and Europe transit plus LBV destination documents had to be confirmed in advance.
 Solution: China leg to LGG / BRU, Europe hub handover, build-up and second-leg preparation, then B747F freighter to LBV.
-Result: A cargo that originally had no practical route became executable. The site describes this route as saving close to RMB 200,000 compared with another global forwarder solution.
+Result: A cargo that originally had no practical direct route moved through an executable Europe-transit plan. Final carrier, price and transit time were shipment-specific.
 
-### Case 5: FBM mining spare parts with second-leg planning
+### Record 2: 16,730 kg single-piece special loading
 
-Route: China -> Europe / Africa hub -> FBM Lubumbashi
-Cargo: Copperbelt mining spare parts
-Challenge: The destination was not simply the airport. Customs, inland truck, unloading equipment and mine-site downtime window were more important than the air freight rate alone.
-Solution: Compare JNB / NBO / EBB and other hub extension options, confirm importer documents, HS Code, destination agent and final handover responsibility.
-Result: The quotation logic moved from airport-to-airport freight to project delivery planning, making the solution more useful for mining, energy and engineering customers.
+Route: PVG -> Middle East
+Cargo record: One piece at 16,730 kg and 735 x 135 x 150 cm; approximately 45 tons for the shipment record.
+Challenge: Standard pallet and forklift handling could not accept the piece.
+Solution: Special extended heavy-pallet review, load-spreading timber, crane coordination, security screening and airline documentation.
+Result: Special loading and uplift were completed after airline and ground-handler confirmation. This does not represent current-flight acceptance.
+
+### Record 3: 98.8-ton B777F single-flight operation
+
+Route: PVG -> AMS
+Cargo record: 98.8 tons loaded on one B777F flight.
+Challenge: Delivery, build-up, ground handling, pallet allocation and loading sequence had to be coordinated as one operation.
+Solution: A single execution plan aligned the total volume with the recorded B777F operation.
+Result: The existing record shows 98.8 tons loaded on the same flight. It is not a current capacity, schedule or price promise.
 
 Detailed bilingual case article: https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/
 

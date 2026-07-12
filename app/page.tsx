@@ -16,7 +16,6 @@ import Footer from '@/components/sections/Footer'
 import FooterEN from '@/components/sections/FooterEN'
 import BlogSection from '@/components/BlogSection'
 import BlogSectionEN from '@/components/BlogSectionEN'
-import TestimonialsSection from '@/components/TestimonialsSection'
 
 const homeFaqSchema = {
   '@context': 'https://schema.org',
@@ -79,7 +78,6 @@ export default function Home() {
             <RouteProgramsSection />
             <AboutSection onOpenContact={() => setIsContactOpen(true)} />
             <CasesSection />
-            <TestimonialsSection />
             <BlogSection />
             <Footer />
           </>

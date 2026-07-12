@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '中国到非洲大件空运案例 | B747F、超长重货与项目交付',
+  title: '大件空运公开项目记录 | LBV 8米长货、16.73吨单件与B777F',
   description:
-    'EASCargo中国到非洲大件与项目货空运案例，覆盖B747F主甲板、超长超重设备、LGG/BRU欧洲中转、LBV/FBM/LUN等非洲入口及清关和二程交付。',
+    'EASCargo公开项目与装载记录：LBV 8米长货经LGG/BRU衔接B747F、单件16,730kg特殊装载、B777F单航班98.8吨历史记录。',
   alternates: {
     canonical: 'https://www.eascargo.com/cases/',
   },
   openGraph: {
-    title: '中国到非洲大件空运案例 | EASCargo Jones',
+    title: '大件空运公开项目记录 | EASCargo Jones',
     description:
-      '查看超长设备、矿业备件、B747F主甲板和非洲项目交付的路线难点、方案与结果。',
+      '查看LBV超长件、16.73吨单件和B777F 98.8吨历史记录的公开事实、判断逻辑与执行边界。',
     url: 'https://www.eascargo.com/cases/',
     type: 'website',
   },

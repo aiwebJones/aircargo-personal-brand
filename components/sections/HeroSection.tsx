@@ -67,7 +67,7 @@ export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
             <div className="mb-8 grid gap-3 text-base text-slate-700 sm:grid-cols-2">
               <div className="rounded-lg border border-amberGold/30 bg-amberGold/10 p-4">
                 <div className="mb-1 font-semibold text-slate-950">LBV 8米长货实操</div>
-                <div className="text-sm leading-6">欧洲联运 + B747F开鼻门，成本比某全球货代方案节省接近20万人民币。</div>
+                <div className="text-sm leading-6">国内无直飞方案时，经LGG/BRU交接并衔接B747F，把超长件路线做成可执行方案。</div>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
                 <div className="mb-1 font-semibold text-slate-950">FBM 矿区备件路线</div>
