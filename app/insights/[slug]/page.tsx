@@ -26,6 +26,7 @@ export function generateMetadata({ params }: Params): Metadata {
   }
 
   const url = `https://www.eascargo.com/insights/${insight.slug}/`
+  const modifiedTime = insight.modifiedDate ?? insight.date
 
   return {
     title: `${insight.title} | EASCargo Jones`,
@@ -40,7 +41,7 @@ export function generateMetadata({ params }: Params): Metadata {
       url,
       type: 'article',
       publishedTime: insight.date,
-      modifiedTime: insight.modifiedDate || insight.date,
+      modifiedTime,
     },
   }
 }
@@ -53,6 +54,7 @@ export default function InsightDetailPage({ params }: Params) {
   }
 
   const url = `https://www.eascargo.com/insights/${insight.slug}/`
+  const modifiedTime = insight.modifiedDate ?? insight.date
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -70,7 +72,7 @@ export default function InsightDetailPage({ params }: Params) {
     },
     mainEntityOfPage: url,
     datePublished: insight.date,
-    dateModified: insight.modifiedDate || insight.date,
+    dateModified: modifiedTime,
     about: insight.keywords,
     citation: insight.sources?.map((source) => source.href),
   }
