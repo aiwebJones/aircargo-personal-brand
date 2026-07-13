@@ -210,7 +210,7 @@ export default function CustomsDocumentChecklistTool() {
     return { destination, selectedAttributes, documents, risks, rfqText }
   }, [attributes, destinationCode])
 
-  const mailtoHref = `mailto:globegsa@Gmail.com?subject=${encodeURIComponent(`Africa air freight document checklist ${result.destination.code}`)}&body=${encodeURIComponent(result.rfqText)}`
+  const mailtoHref = `mailto:globegsa@gmail.com?subject=${encodeURIComponent(`Africa air freight document checklist ${result.destination.code}`)}&body=${encodeURIComponent(result.rfqText)}`
 
   const copyText = async () => {
     await navigator.clipboard?.writeText(result.rfqText)

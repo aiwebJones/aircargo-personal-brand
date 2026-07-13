@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import {
   ArrowRight,
-  Award,
   CheckCircle2,
   FileCheck2,
   Globe2,
@@ -393,8 +392,6 @@ const process = [
   },
 ]
 
-const memberships = ['WCA', 'IATA', 'JCtrans', 'OLO', 'GLA', 'WIFFA']
-
 const ownedCaseStudies = [
   {
     route: '中国 -> LGG/BRU -> LBV 利伯维尔',
@@ -579,7 +576,7 @@ export default function LggAfricaGatewayZhPage() {
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="mailto:globegsa@Gmail.com?subject=LGG%E9%9D%9E%E6%B4%B2%E4%B8%AD%E8%BD%AC%E5%A4%A7%E4%BB%B6%E8%AF%A2%E4%BB%B7"
+                href="mailto:globegsa@gmail.com?subject=LGG%E9%9D%9E%E6%B4%B2%E4%B8%AD%E8%BD%AC%E5%A4%A7%E4%BB%B6%E8%AF%A2%E4%BB%B7"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950 transition hover:bg-amberGold/90"
               >
                 发送货物资料
@@ -633,27 +630,31 @@ export default function LggAfricaGatewayZhPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">行业网络与资质</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">目的港协作核对</p>
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                大件项目货靠的不是单点报价，而是全球代理网络和航司资源。
+                大件项目货不能只看单点报价，要把每段责任逐票核实。
               </h2>
               <p className="text-lg leading-8 text-slate-300">
-                我们长期参与国际货运代理网络和航空货运体系，能把中国段、欧洲中转段、非洲目的港代理、
-                清关和二程配送放在同一张操作表里确认。
+                中国起运、欧洲中转、非洲目的港代理、清关和二程配送都放在同一张操作表里确认，
+                最终方案以当票货物、承运人和目的地反馈为准。
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {memberships.map((name) => (
+              {[
+                ['代理身份', '核对公司主体、联系人、操作机场和实际接货能力。'],
+                ['清关边界', '确认进口商资料、文件责任、税费与目的地操作边界。'],
+                ['二程交付', '确认车辆、卸货条件、最终地址和异常处理联系人。'],
+              ].map(([name, detail]) => (
                 <div key={name} className="rounded-lg border border-white/10 bg-white/5 p-5">
-                  <Award className="mb-4 h-7 w-7 text-amberGold" />
+                  <ShieldCheck className="mb-4 h-7 w-7 text-amberGold" />
                   <div className="text-xl font-semibold">{name}</div>
-                  <div className="mt-2 text-sm leading-6 text-slate-400">国际空运/货代网络会员资源</div>
+                  <div className="mt-2 text-sm leading-6 text-slate-400">{detail}</div>
                 </div>
               ))}
             </div>
           </div>
           <p className="mt-6 text-sm leading-6 text-slate-500">
-            注：会员身份和可用资源以公司当前有效资料为准；具体项目仍按航司、代理和目的国当期要求逐票确认。
+            注：合作资源、可操作性和费用边界均按航司、代理和目的国当期要求逐票确认。
           </p>
         </div>
       </section>
@@ -885,7 +886,7 @@ export default function LggAfricaGatewayZhPage() {
               <li>备货时间和最晚到货时间</li>
             </ul>
             <a
-              href="mailto:globegsa@Gmail.com?subject=LGG%E9%9D%9E%E6%B4%B2%E4%B8%AD%E8%BD%AC%E5%A4%A7%E4%BB%B6%E8%AF%A2%E4%BB%B7"
+              href="mailto:globegsa@gmail.com?subject=LGG%E9%9D%9E%E6%B4%B2%E4%B8%AD%E8%BD%AC%E5%A4%A7%E4%BB%B6%E8%AF%A2%E4%BB%B7"
               className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950 transition hover:bg-amberGold/90"
             >
               发送询价资料

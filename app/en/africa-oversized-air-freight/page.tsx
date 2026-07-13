@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { ArrowRight, Award, CheckCircle2, FileCheck2, Globe2, PackageCheck, Plane, Route, Truck } from 'lucide-react'
+import { ArrowRight, CheckCircle2, FileCheck2, Globe2, PackageCheck, Plane, Route, ShieldCheck, Truck } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'China to Africa Oversized Air Freight Expert | EASCargo Jones',
@@ -41,8 +41,6 @@ const gateways = [
 ]
 
 const inland = ['NBO Nairobi', 'KGL Kigali', 'CPT Cape Town', 'DUR Durban', 'WDH Windhoek', 'ABJ Abidjan', 'ACC Accra', 'LOS Lagos', 'EBB Entebbe', 'DAR Dar es Salaam', 'MPM Maputo', 'FIH Kinshasa']
-const memberships = ['WCA', 'IATA', 'JCtrans', 'OLO', 'GLA', 'WIFFA']
-
 export default function AfricaOversizedAirFreightPage() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -65,7 +63,7 @@ export default function AfricaOversizedAirFreightPage() {
               and how the African inland leg is handled.
             </p>
             <a
-              href="mailto:globegsa@Gmail.com?subject=China%20to%20Africa%20oversized%20air%20freight%20quote"
+              href="mailto:globegsa@gmail.com?subject=China%20to%20Africa%20oversized%20air%20freight%20quote"
               className="mt-10 inline-flex items-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950"
             >
               Send cargo dimensions
@@ -150,16 +148,16 @@ export default function AfricaOversizedAirFreightPage() {
         </div>
         <div className="mt-10 rounded-xl bg-slate-950 p-6 text-white">
           <div className="mb-5 flex items-center gap-3">
-            <Award className="h-6 w-6 text-amberGold" />
-            <h3 className="text-xl font-semibold">Professional networks and memberships</h3>
+            <ShieldCheck className="h-6 w-6 text-amberGold" />
+            <h3 className="text-xl font-semibold">Destination partner verification</h3>
           </div>
-          <div className="flex flex-wrap gap-3">
-            {memberships.map((name) => (
-              <span key={name} className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 font-semibold">{name}</span>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {['Agent identity and handling scope', 'Customs responsibility and charges', 'Inland delivery and unloading'].map((item) => (
+              <span key={item} className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 font-semibold">{item}</span>
             ))}
           </div>
           <p className="mt-5 text-sm leading-6 text-slate-400">
-            Network resources help verify destination agents, customs capability and inland delivery options. Every shipment still needs case-by-case confirmation.
+            The operating party, customs boundary, local charges and final delivery conditions are confirmed shipment by shipment before a route is released.
           </p>
         </div>
       </section>

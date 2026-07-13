@@ -81,7 +81,7 @@ export default function ChargeableWeightCalculator() {
     'Required arrival date:',
   ].join('\n')
 
-  const mailtoHref = `mailto:globegsa@Gmail.com?subject=${encodeURIComponent('Air freight chargeable weight RFQ')}&body=${encodeURIComponent(rfqText)}`
+  const mailtoHref = `mailto:globegsa@gmail.com?subject=${encodeURIComponent('Air freight chargeable weight RFQ')}&body=${encodeURIComponent(rfqText)}`
 
   const inputClass =
     'mt-2 h-11 w-full rounded-md border border-slate-300 bg-white px-3 text-base font-semibold text-slate-950 outline-none transition focus:border-amberGold focus:ring-2 focus:ring-amberGold/20'

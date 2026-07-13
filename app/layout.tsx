@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     'LBV利伯维尔空运',
     '非洲清关资料',
     '矿业设备空运',
-    'WCA IATA货代',
     '747全货机开鼻门装载',
     '大件空运价格',
     '中国到非洲空运',
@@ -95,8 +94,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               '@id': 'https://www.eascargo.com/#organization',
-              'name': '神仙货运Jones',
-              'alternateName': ['Shenxian Jones', 'EASCargo Jones', '神仙货运'],
+              'name': 'EASCargo Jones',
+              'alternateName': ['神仙货运Jones', 'Shenxian Jones', '神仙货运'],
               'url': 'https://www.eascargo.com',
               'description': 'China to Africa oversized air freight specialist. LGG/BRU Europe transit, B747F freighters, JNB/FBM/LUN/LBV Africa project cargo routing, customs document checks and inland delivery planning.',
               'slogan': 'China to Africa oversized air freight expert',
@@ -108,22 +107,10 @@ export default function RootLayout({
                 '@type': 'ContactPoint',
                 'telephone': '+86-138-1653-9222',
                 'contactType': 'sales',
-                'email': 'globegsa@Gmail.com',
+                'email': 'globegsa@gmail.com',
                 'availableLanguage': ['zh', 'en']
               },
-              'sameAs': [
-                'https://www.linkedin.com/in/shenxian-jones',
-                'https://twitter.com/shenxianjones'
-              ],
               'areaServed': ['CN', 'ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI', 'FR', 'BE'],
-              'memberOf': [
-                { '@type': 'Organization', 'name': 'WCA' },
-                { '@type': 'Organization', 'name': 'IATA' },
-                { '@type': 'Organization', 'name': 'JCtrans' },
-                { '@type': 'Organization', 'name': 'OLO' },
-                { '@type': 'Organization', 'name': 'GLA' },
-                { '@type': 'Organization', 'name': 'WIFFA' }
-              ],
               'knowsAbout': [
                 'China to Africa oversized air freight',
                 'Africa project cargo',

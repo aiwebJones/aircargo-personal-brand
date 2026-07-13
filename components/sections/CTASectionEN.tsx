@@ -45,12 +45,12 @@ export default function CTASectionEN({ onOpenContact }: CTASectionENProps) {
           </a>
           
           <a
-            href="tel:13816539222"
+            href="tel:+8613816539222"
             className="p-6 bg-white border border-borderLight rounded-xl hover:border-amberGold/30 transition-all group"
           >
             <Phone className="w-8 h-8 text-amberGold mx-auto mb-4" />
             <h3 className="font-semibold text-textPrimary mb-2">Phone</h3>
-            <p className="text-textMuted text-sm">138-1653-9222</p>
+            <p className="text-textMuted text-sm">+86 138 1653 9222</p>
           </a>
           
           <div className="p-6 bg-white border border-borderLight rounded-xl">

@@ -107,7 +107,7 @@ export default function AfricaAirFreightCustomsDocumentChecklistPage() {
       '@type': 'Organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com/',
-      email: 'globegsa@Gmail.com',
+      email: 'globegsa@gmail.com',
     },
   }
 
@@ -288,7 +288,7 @@ export default function AfricaAirFreightCustomsDocumentChecklistPage() {
               </p>
             </div>
             <a
-              href="mailto:globegsa@Gmail.com?subject=Africa%20air%20freight%20customs%20document%20checklist"
+              href="mailto:globegsa@gmail.com?subject=Africa%20air%20freight%20customs%20document%20checklist"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-amberGold px-5 text-sm font-bold text-slate-950 transition hover:bg-amberGold/90"
             >
               <Plane className="h-4 w-4" />

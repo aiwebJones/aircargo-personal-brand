@@ -24,7 +24,7 @@ export default function FooterEN() {
               <a href="mailto:globegsa@gmail.com" className="text-textMuted hover:text-amberGold transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
-              <a href="tel:13816539222" className="text-textMuted hover:text-amberGold transition-colors">
+              <a href="tel:+8613816539222" className="text-textMuted hover:text-amberGold transition-colors">
                 <Phone className="w-5 h-5" />
               </a>
             </div>
@@ -51,7 +51,7 @@ export default function FooterEN() {
               </li>
               <li className="flex items-start gap-2 text-textMuted">
                 <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>138-1653-9222</span>
+                <span>+86 138 1653 9222</span>
               </li>
               <li className="flex items-start gap-2 text-textMuted">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />

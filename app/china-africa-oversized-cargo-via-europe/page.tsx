@@ -127,7 +127,7 @@ export default function EuropeTransitCargoPage() {
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="mailto:globegsa@Gmail.com?subject=LGG%20Africa%20Gateway%20oversized%20cargo%20quote"
+                href="mailto:globegsa@gmail.com?subject=LGG%20Africa%20Gateway%20oversized%20cargo%20quote"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950 transition hover:bg-amberGold/90"
               >
                 Send cargo details
@@ -275,7 +275,7 @@ export default function EuropeTransitCargoPage() {
               <li>Ready date and latest acceptable arrival date</li>
             </ul>
             <a
-              href="mailto:globegsa@Gmail.com?subject=Oversized%20cargo%20via%20Europe%20quote%20request"
+              href="mailto:globegsa@gmail.com?subject=Oversized%20cargo%20via%20Europe%20quote%20request"
               className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950 transition hover:bg-amberGold/90"
             >
               Email the cargo file

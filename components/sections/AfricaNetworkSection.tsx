@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Award, CheckCircle2, Globe2, Plane, Route, Truck } from 'lucide-react'
+import { CheckCircle2, Globe2, Plane, Route, ShieldCheck, Truck } from 'lucide-react'
 
 const mainGateways = [
   { code: 'LBV', city: '利伯维尔', country: '加蓬', role: '中非沿海项目入口，适合超长件、油气和工程备件。' },
@@ -24,8 +24,6 @@ const inlandPoints = [
   'MPM 马普托',
   'FIH 金沙萨',
 ]
-
-const memberships = ['WCA', 'IATA', 'JCtrans', 'OLO', 'GLA', 'WIFFA']
 
 const countryCards = [
   {
@@ -157,18 +155,18 @@ export default function AfricaNetworkSection() {
         <div className="mt-10 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="rounded-xl bg-slate-950 p-6 text-white">
             <div className="mb-5 flex items-center gap-3">
-              <Award className="h-6 w-6 text-amberGold" />
-              <h3 className="text-xl font-semibold">行业网络与资质</h3>
+              <ShieldCheck className="h-6 w-6 text-amberGold" />
+              <h3 className="text-xl font-semibold">目的港协作核对</h3>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {memberships.map((name) => (
-                <div key={name} className="rounded-lg border border-white/10 bg-white/5 p-4 font-semibold">
-                  {name}
+            <div className="grid gap-3">
+              {['代理主体与接货能力', '清关责任与当地费用', '二程车辆与卸货条件'].map((item) => (
+                <div key={item} className="rounded-lg border border-white/10 bg-white/5 p-4 font-semibold">
+                  {item}
                 </div>
               ))}
             </div>
             <p className="mt-5 text-sm leading-6 text-slate-400">
-              会员资源用于快速验证目的港代理、清关能力和二程交付，具体仍按每票货实际要求确认。
+              每票货均核对实际操作方、费用边界和异常联系人，再确认路线是否成立。
             </p>
           </div>
 

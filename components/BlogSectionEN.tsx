@@ -95,10 +95,10 @@ const blogPosts: BlogPost[] = [
     image: '/case-17t-3.jpg'
   },
   {
-    id: 'network-memberships',
-    title: 'WCA, IATA, JCtrans, OLO, GLA and WIFFA: what network membership means in Africa cargo',
-    excerpt: 'Membership logos are not decoration. The real value is faster agent verification, destination feedback and risk control for difficult Africa shipments.',
-    content: 'For Africa project cargo, destination information is often the hardest part. Networks such as WCA, IATA, JCtrans, OLO, GLA and WIFFA help us verify agents, customs capability, inland delivery options and local cost boundaries faster. Every shipment still needs shipment-by-shipment confirmation before a final solution is released.',
+    id: 'destination-partner-verification',
+    title: 'How to verify a destination partner for Africa project cargo',
+    excerpt: 'A partner name is not enough. Verify the legal entity, airport handling scope, customs responsibility, local charges and inland delivery conditions.',
+    content: 'For Africa project cargo, destination information is often the hardest part. We verify the operating company, named contact, airport handling scope, importer and customs responsibility, local charge boundary, inland delivery equipment and exception contact. Every shipment still needs shipment-by-shipment confirmation before a final solution is released.',
     date: '2026-05-04',
     readTime: '8 min',
     category: 'Route Planning',

@@ -132,7 +132,7 @@ export default function AfricaUrgentSparePartsRouteRiskChecklistPage() {
       '@type': 'Organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com/',
-      email: 'globegsa@Gmail.com',
+      email: 'globegsa@gmail.com',
     },
   }
 
@@ -302,7 +302,7 @@ export default function AfricaUrgentSparePartsRouteRiskChecklistPage() {
               如果主甲板或中转窗口不成立，价格再低也不能保证到现场时间。”
             </p>
             <a
-              href="mailto:globegsa@Gmail.com?subject=Africa%20urgent%20spare%20parts%20route%20risk%20checklist"
+              href="mailto:globegsa@gmail.com?subject=Africa%20urgent%20spare%20parts%20route%20risk%20checklist"
               className="mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-amberGold px-5 text-sm font-bold text-slate-950 transition hover:bg-amberGold/90"
             >
               <Plane className="h-4 w-4" />

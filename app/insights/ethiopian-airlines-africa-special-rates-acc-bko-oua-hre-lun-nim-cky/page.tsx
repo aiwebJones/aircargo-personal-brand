@@ -295,7 +295,7 @@ export default function EthiopianAirlinesAfricaSpecialRatesPage() {
                 工程物资和非洲项目货，我们重点判断三件事：能不能装、能不能清、能不能按项目节点交付。
               </p>
               <Link
-                href="mailto:globegsa@Gmail.com?subject=ET%20Africa%20air%20freight%20quote%20ACC%20BKO%20OUA%20HRE%20LUN%20NIM%20CKY"
+                href="mailto:globegsa@gmail.com?subject=ET%20Africa%20air%20freight%20quote%20ACC%20BKO%20OUA%20HRE%20LUN%20NIM%20CKY"
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#08111f] px-6 py-3 font-bold text-white transition hover:bg-white hover:text-[#08111f]"
               >
                 发送资料，测算 ET 非洲空运方案

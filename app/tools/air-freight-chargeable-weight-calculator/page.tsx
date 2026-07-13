@@ -93,7 +93,7 @@ export default function AirFreightChargeableWeightCalculatorPage() {
       '@type': 'Organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com/',
-      email: 'globegsa@Gmail.com',
+      email: 'globegsa@gmail.com',
     },
   }
 
@@ -249,7 +249,7 @@ export default function AirFreightChargeableWeightCalculatorPage() {
               </p>
             </div>
             <a
-              href="mailto:globegsa@Gmail.com?subject=China%20to%20Africa%20air%20freight%20RFQ"
+              href="mailto:globegsa@gmail.com?subject=China%20to%20Africa%20air%20freight%20RFQ"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-amberGold px-5 text-sm font-bold text-slate-950 transition hover:bg-amberGold/90"
             >
               <Plane className="h-4 w-4" />

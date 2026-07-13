@@ -72,18 +72,18 @@ export default function Footer() {
               </span>
             </button>
             <a
-              href="mailto:globegsa@Gmail.com"
+              href="mailto:globegsa@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
             >
               <Mail className="w-5 h-5" />
-              <span>globegsa@Gmail.com</span>
+              <span>globegsa@gmail.com</span>
             </a>
             <a
-              href="tel:13816539222"
+              href="tel:+8613816539222"
               className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span>13816539222</span>
+              <span>+86 138 1653 9222</span>
             </a>
           </div>
         </motion.div>
