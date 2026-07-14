@@ -654,7 +654,6 @@ export const seoInsights: SeoInsight[] = [
     excerpt:
       '中国到南非JNB空运，电子电器、机械设备、汽车配件、二手设备和项目备件不能只看航班。SARS进口申报、Goods Declaration、NRCS Letter of Authority、ITAC进口许可、发票箱单和Air Waybill要提前对齐。',
     date: '2026-06-30',
-    modifiedDate: '2026-07-13',
     readTime: '14 分钟',
     category: '政策合规',
     author: defaultAuthor,
@@ -668,9 +667,9 @@ export const seoInsights: SeoInsight[] = [
         heading: 'JNB空运先判断SARS申报资料',
         body: [
           'JNB 约翰内斯堡是南非本土和南部非洲内陆项目货的重要入口，常见货物包括电子电器、机械设备、汽车配件、矿业备件、工厂维修件和高价值急件。客户只问中国到 JNB 空运多少钱时，销售要先判断进口商、清关代理、税号、发票箱单和 Air Waybill 是否能跑通 SARS 进口申报。',
-          'SARS 的 Imports 和 Goods Declaration 页面把进口清关放在 Customs 流程里处理。对空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商资料和目的地代理信息必须一致；否则航班再快，也会在 JNB 到港后变成补料、估价、查验或仓储。2026年7月HAK-JNB全货机恢复后，JNB询价还要多问一步：这票货是适合海口-约堡容量入口，还是仍然需要LGG/BRU主甲板和二程方案。',
+          'SARS 的 Imports 和 Goods Declaration 页面把进口清关放在 Customs 流程里处理。对空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商资料和目的地代理信息必须一致；否则航班再快，也会在 JNB 到港后变成补料、估价、查验或仓储。',
         ],
-        bullets: ['SARS进口申报', 'Goods Declaration', 'Air Waybill', 'HAK/JNB入口比较'],
+        bullets: ['SARS进口申报', 'Goods Declaration', 'Air Waybill', '发票箱单一致'],
       },
       {
         heading: '电子电器和受控产品要问NRCS LOA',
@@ -693,7 +692,6 @@ export const seoInsights: SeoInsight[] = [
     relatedRoutes: [
       { label: 'JNB 约翰内斯堡航线页', href: '/africa-air-freight/jnb/' },
       { label: 'JNB矿业急件路线判断', href: '/insights/jnb-mining-spares-air-freight/' },
-      { label: 'HAK-JNB全货机项目货判断', href: '/insights/haikou-johannesburg-freighter-china-africa-project-cargo/' },
       { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
       { label: '超大件询价清单', href: '/insights/oversized-air-freight-quote-checklist/' },
     ],
@@ -702,7 +700,6 @@ export const seoInsights: SeoInsight[] = [
       { label: 'South African Revenue Service: Goods Declaration', href: 'https://www.sars.gov.za/customs-and-excise/goods-declaration/' },
       { label: 'NRCS: Electrotechnical LOA Admin Procedure', href: 'https://www.nrcs.org.za/Documents/Electrotech/LOA%20Admin%20Procedure/LOA%20ADMIN%20Revised%2012_06%20May%202019.pdf' },
       { label: 'International Trade Administration Commission: Import Control', href: 'https://itac.org.za/import-control/' },
-      { label: 'STAT Times: Astral Aviation resumes China-Africa freighter flights', href: 'https://www.stattimes.com/air-cargo/astral-aviation-resumes-chinaafrica-freighter-flights-1359764' },
     ],
   },
   {
@@ -2555,7 +2552,6 @@ export const seoInsights: SeoInsight[] = [
     excerpt:
       '中国到开普敦CPT和德班DUR空运，港口设备、海工备件、汽车零部件、电子电器和项目物资不能只看航班。SARS发票细节、进口商资料、ITAC许可、NRCS LOA和Air Waybill要提前对齐。',
     date: '2026-06-30',
-    modifiedDate: '2026-07-13',
     readTime: '13 分钟',
     category: '政策合规',
     author: defaultAuthor,
@@ -2569,9 +2565,9 @@ export const seoInsights: SeoInsight[] = [
         heading: 'CPT/DUR不要套用JNB报价逻辑',
         body: [
           'CPT开普敦和DUR德班常见需求不是普通内陆贸易货，而是港口设备、船用备件、海工项目物资、汽车零部件、食品/冷链相关设备和沿海工厂维修急件。客户只问中国到南非空运多少钱时，要先判断最终城市是不是开普敦、德班、港区、船厂或沿海项目现场。',
-          'Trade.gov的南非进口文件页面提示，进口可能涉及permit、certificate和其他资料。对CPT/DUR空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商和目的地清关代理资料要先一致，再判断航班和二程。HAK-JNB容量恢复后，南非项目货还要比较入口机场：最终在内陆或跨境项目现场时先看JNB和二程；最终在CPT/DUR沿海港区时，不要为了新航线信号误套JNB。',
+          'Trade.gov的南非进口文件页面提示，进口可能涉及permit、certificate和其他资料。对CPT/DUR空运来说，AWB、commercial invoice、packing list、HS Code、货值、原产地、进口商和目的地清关代理资料要先一致，再判断航班和二程。',
         ],
-        bullets: ['CPT开普敦', 'DUR德班', '港口/海工备件', 'JNB入口比较'],
+        bullets: ['CPT开普敦', 'DUR德班', '港口/海工备件', '进口文件一致'],
       },
       {
         heading: 'SARS发票细节会影响申报',
@@ -2595,7 +2591,6 @@ export const seoInsights: SeoInsight[] = [
       { label: 'CPT 开普敦航线页', href: '/africa-air-freight/cpt/' },
       { label: 'DUR 德班航线页', href: '/africa-air-freight/dur/' },
       { label: '南非JNB清关资料', href: '/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/' },
-      { label: 'HAK-JNB全货机项目货判断', href: '/insights/haikou-johannesburg-freighter-china-africa-project-cargo/' },
       { label: '非洲清关资料清单', href: '/insights/africa-customs-documents-checklist-air-freight/' },
     ],
     sources: [
@@ -2604,7 +2599,6 @@ export const seoInsights: SeoInsight[] = [
       { label: 'South African Revenue Service: Invoice details on customs declarations', href: 'https://www.sars.gov.za/latest-news/invoice-details-on-customs-declarations/' },
       { label: 'International Trade Administration Commission: Import Control', href: 'https://itac.org.za/import-control/' },
       { label: 'South African Government: Import permit for general goods', href: 'https://www.gov.za/services/import/import-permit-general-goods' },
-      { label: 'STAT Times: Astral Aviation resumes China-Africa freighter flights', href: 'https://www.stattimes.com/air-cargo/astral-aviation-resumes-chinaafrica-freighter-flights-1359764' },
     ],
   },
   {
