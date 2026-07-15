@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { AlertCircle, Send } from 'lucide-react'
+import { buildThankYouUrl, captureAttribution } from '@/lib/attribution'
 
 type QuoteFormData = {
   name: string
@@ -57,9 +58,7 @@ export default function QuoteForm() {
     setIsSubmitting(true)
     setError('')
 
-    const query = new URLSearchParams(window.location.search)
-    const source = (query.get('source') || 'direct').slice(0, 100)
-    const topic = (query.get('topic') || '').slice(0, 140)
+    const attribution = captureAttribution()
 
     try {
       const response = await fetch('https://formspree.io/f/mqegzyby', {
@@ -71,9 +70,18 @@ export default function QuoteForm() {
         body: JSON.stringify({
           ...formData,
           _subject: `[EASCargo RFQ] ${formData.origin} -> ${formData.destination} | ${formData.cargoName}`,
-          _source: source,
-          _topic: topic,
-          _page: window.location.pathname,
+          formType: 'detailed-rfq',
+          ctaSource: attribution.ctaSource,
+          firstSource: attribution.firstSource,
+          topic: attribution.topic,
+          utmMedium: attribution.medium,
+          utmCampaign: attribution.campaign,
+          utmTerm: attribution.term,
+          utmContent: attribution.content,
+          landingPage: attribution.landingPage,
+          submissionPage: `${window.location.pathname}${window.location.search}`,
+          externalReferrer: attribution.referrer,
+          _source: attribution.ctaSource,
           _gotcha: '',
         }),
       })
@@ -83,7 +91,7 @@ export default function QuoteForm() {
         throw new Error(data?.error || '提交失败，请稍后重试或改用邮件、微信联系。')
       }
 
-      window.location.assign('/thank-you/')
+      window.location.assign(buildThankYouUrl(attribution, 'detailed-rfq'))
     } catch (submissionError) {
       setError(
         submissionError instanceof Error

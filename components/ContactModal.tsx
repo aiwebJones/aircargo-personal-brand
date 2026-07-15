@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { buildThankYouUrl, captureAttribution } from '@/lib/attribution'
 
 interface ContactModalProps {
   isOpen: boolean
@@ -25,6 +26,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     e.preventDefault()
     setIsSubmitting(true)
     setError('')
+    const attribution = captureAttribution()
 
     try {
       const response = await fetch('https://formspree.io/f/mqegzyby', {
@@ -40,7 +42,18 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           phone: formData.phone,
           message: formData.message,
           _subject: `网站联系表单 - ${formData.name}`,
-          _source: window.location.href,
+          formType: 'contact-modal',
+          ctaSource: attribution.ctaSource,
+          firstSource: attribution.firstSource,
+          topic: attribution.topic,
+          utmMedium: attribution.medium,
+          utmCampaign: attribution.campaign,
+          utmTerm: attribution.term,
+          utmContent: attribution.content,
+          landingPage: attribution.landingPage,
+          submissionPage: `${window.location.pathname}${window.location.search}`,
+          externalReferrer: attribution.referrer,
+          _source: attribution.ctaSource,
         })
       })
 
@@ -50,7 +63,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
         setIsSubmitted(true)
 
         setTimeout(() => {
-          window.location.assign('/thank-you/')
+          window.location.assign(buildThankYouUrl(attribution, 'contact-modal'))
         }, 900)
       } else {
         // Formspree returned an error

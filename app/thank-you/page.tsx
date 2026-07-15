@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, CheckCircle2, Mail } from 'lucide-react'
+import ConversionReceipt from '@/components/ConversionReceipt'
 
 export const metadata: Metadata = {
   title: '询盘已收到 | EASCargo Jones',
@@ -23,6 +24,7 @@ export default function ThankYouPage() {
         <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
           我们会根据货物尺寸、重量、目的地和时效要求判断可执行路线，并尽快回复。
         </p>
+        <ConversionReceipt />
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href="/"
