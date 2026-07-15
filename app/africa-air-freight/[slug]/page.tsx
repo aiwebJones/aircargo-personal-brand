@@ -512,6 +512,12 @@ const southAfricaCoastalChecks = [
   'Does the cargo need marine, port, factory or cold-chain handling instead of a normal airport pickup?',
 ]
 
+const nigeriaOilGasChecks = [
+  'Is LOS the right clearance airport, or is PHC needed for Port Harcourt, Onne, Bonny, Warri or oil-service delivery?',
+  'Do Form M, PAAR, SONCAP or National Single Window responsibilities match the AWB, invoice and product certificate data?',
+  'Is the quote boundary airport-only, customs-assisted, airport pickup, or final-site delivery for a shutdown spare?',
+]
+
 const chinaOriginClusters = [
   {
     region: '华东出口口岸',
@@ -955,6 +961,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const deepDive = deepDives[currentSlug]
   const originStrategy = originStrategies[currentSlug]
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
+  const isNigeriaRoute = currentSlug === 'los'
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -1112,6 +1119,44 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
         <div className="grid gap-3">
           {southAfricaCoastalChecks.map((check) => (
+            <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+              <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+              <p className="leading-7 text-slate-700">{check}</p>
+            </div>
+          ))}
+        </div>
+      </section>}
+
+      {isNigeriaRoute && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Nigeria route decision</p>
+          <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+            Separate Lagos import demand from PHC oil-and-gas final-site risk.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            Nigeria heavy cargo can look like a simple LOS rate request, but oil and gas spares often need a PHC or
+            Port Harcourt delivery decision, importer document discipline, and a clear handover boundary before booking.
+            Treat Form M, PAAR, SONCAP, B&apos;Odogwu data and final-site urgency as part of the route plan.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="/insights/nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance/"
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              Check PHC oil and gas spares documents
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+            >
+              Review B&apos;Odogwu, Form M and PAAR risk
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="grid gap-3">
+          {nigeriaOilGasChecks.map((check) => (
             <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
               <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
               <p className="leading-7 text-slate-700">{check}</p>
