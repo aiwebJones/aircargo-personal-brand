@@ -42,12 +42,12 @@ const pages = {
     country: 'Zambia',
     title: 'LUN Lusaka Air Freight for Industrial and Mining Cargo',
     description:
-      'China to Lusaka LUN oversized air freight for Zambia industrial equipment, mining spare parts, pumps and urgent project cargo via LGG/BRU transit.',
+      'China major air cargo gateways to Lusaka LUN for Zambia industrial equipment, mining spares and urgent project cargo. Compare nationwide pickup, LGG/BRU main-deck transit, LUN versus NLA entry, ZRA/ASYCUDA data and Copperbelt delivery.',
     cargo: ['Mining spare parts', 'Chemical pumps', 'Generators', 'Factory equipment', 'Industrial maintenance parts'],
     market:
       'Lusaka is an important entry point for Zambia industrial and mining supply chains. Project cargo often needs stable documents and clear delivery timing.',
     customs:
-      'Prepare importer information, invoice, packing list, HS Code, cargo value, packing photos and any license requirements before shipment.',
+      'Align the importer and appointed clearing agent, HS Code, commercial invoice, packing list, AWB data, cargo value, permits and any ZCSA checks before shipment. Zambia air-cargo manifest data may be filed electronically through the ZRA ASYCUDA ACI process before arrival.',
     business:
       'Best for Zambia mining support cargo, industrial spare parts, pumps, motors, chemical plant equipment and urgent factory maintenance cargo.',
     culture:
@@ -680,6 +680,48 @@ const jnbOfficialFacts = [
   },
 ]
 
+const lunOfficialFacts = [
+  {
+    label: 'LUN and NLA are different Zambia gateways',
+    detail: 'Zambia Airports Corporation identifies Kenneth Kaunda International Airport in Lusaka and Simon Mwansa Kapwepwe International Airport in Ndola among the international airports it manages. Final-site geography should therefore be checked before choosing a Zambia entry point.',
+    href: 'https://www.zacl.co.zm/corporate',
+  },
+  {
+    label: 'Zambia import documents and ASYCUDA',
+    detail: 'Trade.gov lists airway bills and commercial invoices among customs-clearance documents and states that ZRA uses ASYCUDA. It also notes the Import Declaration Form and product-specific advance certification requirements.',
+    href: 'https://www.trade.gov/country-commercial-guides/zambia-import-requirements-documentation',
+  },
+  {
+    label: 'Advanced Cargo Information for air cargo',
+    detail: 'ASYCUDA reports that Zambia introduced an ACI module at international airports so airlines and cargo couriers can submit electronic manifests before arrival using ASYCUDAWorld and IATA Cargo XML standards.',
+    href: 'https://asycuda.org/en/zambia-pilots-advanced-cargo-information-module-at-international-airports/',
+  },
+  {
+    label: 'ZRA air-cargo filing responsibility',
+    detail: 'ZRA guidance says air cargo is reported electronically before arrival and distinguishes carrier manifest and AWB filing from freight-forwarder house-waybill filing. Shipment data should be aligned before uplift rather than corrected after arrival.',
+    href: 'https://www.zra.org.zm/wp-content/uploads/2024/02/ASYCUDA_IATA_Cargo_XML_Filing_Guidance_Version_Zambia.pdf',
+  },
+  {
+    label: 'Appointment of a Zambia clearing agent',
+    detail: 'ZRA states that importers and exporters appoint licensed clearing agents through a module linked to ASYCUDAWorld. The appointed broker and importer identity should be confirmed before the cargo departs China.',
+    href: 'https://www.zra.org.zm/appointment-of-clearing-agents-2/',
+  },
+]
+
+const lunGatewayChecks = [
+  'Is the final site in Lusaka, Ndola, Kitwe, Mufulira, Chingola or another Copperbelt or project location?',
+  'Can the longest and heaviest piece be accepted through LUN, or should NLA or another currently confirmed regional route be compared?',
+  'Are the importer, appointed broker, AWB data, invoice, packing list, HS Code and permit or ZCSA checks aligned before uplift?',
+  'Does the quote stop at the airport, include customs coordination, or continue to the factory, mine or project site with unloading?',
+]
+
+const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
+  jnb: '2026-07-13',
+  fbm: '2026-07-13',
+  lun: '2026-07-16',
+  lbv: '2026-07-13',
+}
+
 const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
     heading: 'Deep route note for JNB Johannesburg oversized cargo',
@@ -846,6 +888,23 @@ function getFaq(item: (typeof pages)[Slug]) {
       }
     : null
 
+  if (item.code === 'LUN') {
+    return [
+      nationwideOriginFaq!,
+      {
+        question: 'Should Zambia project cargo arrive at LUN Lusaka or NLA Ndola?',
+        answer:
+          'Choose only after checking the final site, cargo acceptance and total delivery responsibility. LUN can suit Lusaka and national project demand, while NLA may be worth screening for Ndola, Kitwe and Copperbelt sites. Neither airport code proves current capacity or oversized-piece acceptance.',
+      },
+      {
+        question: 'What Zambia customs data should be ready before LUN uplift?',
+        answer:
+          'Align the importer and appointed clearing agent, HS Code, commercial invoice, packing list, AWB and house-waybill data, value, origin and any permits or ZCSA checks. ZRA air-cargo electronic manifest requirements make consistent pre-arrival data important.',
+      },
+      ...commonFaq.slice(0, 2),
+    ]
+  }
+
   if (item.code !== 'JNB') return nationwideOriginFaq ? [nationwideOriginFaq, ...commonFaq] : commonFaq
 
   return [
@@ -896,7 +955,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       ...(chinese?.keywords || []),
       ...(params.slug === 'jnb'
         ? ['中国各大机场到JNB空运', '华东到南非空运', '华南到JNB空运', '华北到JNB空运', 'FOC JNB空运']
-        : ['fbm', 'lun', 'lbv'].includes(params.slug)
+        : params.slug === 'lun'
+          ? ['中国各大机场到LUN空运', 'LUN全国集货空运', 'LUN还是NLA', '赞比亚ZRA ASYCUDA空运', '铜带矿区备件空运']
+        : ['fbm', 'lbv'].includes(params.slug)
           ? [`中国各大机场到${item.code}空运`, `${item.code}全国集货空运`, `${item.code}项目货路线`]
         : []),
       `${item.code} air freight`,
@@ -942,7 +1003,7 @@ function currentMetadataDescription(
     return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
   }
   if (slug === 'lun') {
-    return '中国各大机场到LUN卢萨卡空运：全国集货、全球Hub或欧洲中转、赞比亚进口资料及Lusaka/Copperbelt项目现场交付判断。'
+    return '中国各大机场到LUN卢萨卡空运：全国集货、LUN或NLA入口、ZRA/ASYCUDA资料、LGG/BRU主甲板及Lusaka/Copperbelt项目现场交付判断。'
   }
   if (slug === 'lbv') {
     return '中国各大机场到LBV利伯维尔空运：全国集货、长货主甲板、LGG/BRU与B747F方案、加蓬清关及油气能源项目现场交付。'
@@ -962,6 +1023,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const originStrategy = originStrategies[currentSlug]
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
   const isNigeriaRoute = currentSlug === 'los'
+  const officialFacts = currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : null
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -1232,18 +1294,56 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </div>
           </section>}
 
-          {currentSlug === 'jnb' && <section className="bg-slate-950 py-20 text-white">
+          {currentSlug === 'lun' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">LUN or NLA gateway decision</p>
+              <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+                Match the Zambia entry airport to the final site, not the cheapest airport rate.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                LUN and NLA serve different project geographies. A nationwide China-origin quote should compare cargo fit,
+                current connection acceptance, ZRA data readiness, airport handover and the truck or site-delivery boundary
+                before choosing Lusaka or Ndola.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/"
+                  className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+                >
+                  Review LUN customs documents
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/"
+                  className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+                >
+                  Compare NLA Copperbelt entry
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-3">
+              {lunGatewayChecks.map((check) => (
+                <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+                  <p className="leading-7 text-slate-700">{check}</p>
+                </div>
+              ))}
+            </div>
+          </section>}
+
+          {officialFacts && <section className="bg-slate-950 py-20 text-white">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Primary-source research</p>
-                <h2 className="text-3xl font-bold md:text-4xl">JNB facts used in this route assessment.</h2>
+                <h2 className="text-3xl font-bold md:text-4xl">{item.code} facts used in this route assessment.</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
                   These sources support airport, customs and network facts. They do not guarantee today&apos;s flight,
                   allocation, rate, clearance time or truck acceptance; EASCargo reconfirms those items shipment by shipment.
                 </p>
               </div>
               <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
-                {jnbOfficialFacts.map((fact) => (
+                {officialFacts.map((fact) => (
                   <div key={fact.label} className="grid gap-3 py-6 md:grid-cols-[0.8fr_1.2fr] md:gap-8">
                     <a
                       href={fact.href}
@@ -1371,12 +1471,12 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
             url: `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
-            ...(['jnb', 'fbm', 'lun', 'lbv'].includes(currentSlug)
+            ...(coreRouteModifiedDates[currentSlug]
               ? {
                   mainEntityOfPage: {
                     '@type': 'WebPage',
                     '@id': `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
-                    dateModified: '2026-07-13',
+                    dateModified: coreRouteModifiedDates[currentSlug],
                   },
                 }
               : {}),

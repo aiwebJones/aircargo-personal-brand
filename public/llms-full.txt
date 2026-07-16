@@ -154,6 +154,14 @@ LUN planning must check:
 
 LUN nationwide-origin planning compares local uplift with stronger China gateways, current global-hub or Europe main-deck options, Zambia importer readiness, and whether delivery ends at Lusaka or continues to Ndola, Kitwe, the Copperbelt or another project site.
 
+LUN and NLA are separate Zambia gateway decisions. Zambia Airports Corporation identifies Kenneth Kaunda International Airport in Lusaka and Simon Mwansa Kapwepwe International Airport in Ndola among Zambia's international airports. EASCargo compares final-site geography, actual cargo acceptance, customs responsibility and inland delivery before selecting an entry point.
+
+Zambia air-cargo document planning includes the importer and appointed clearing agent, HS Code, commercial invoice, packing list, AWB and house-waybill data, permits and any ZCSA checks. Public ZRA and ASYCUDA guidance describes pre-arrival electronic manifest filing through ASYCUDAWorld using IATA Cargo XML standards. These requirements do not prove current flight capacity, clearance time or a fixed rate.
+
+Detailed LUN customs source guide: https://www.eascargo.com/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/
+
+Detailed NLA Copperbelt source guide: https://www.eascargo.com/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/
+
 ### LBV - Libreville, Gabon
 
 Canonical route page: https://www.eascargo.com/africa-air-freight/lbv/
