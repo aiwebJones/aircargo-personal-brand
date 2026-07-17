@@ -62,6 +62,29 @@ const clusterLinks = [
   { label: '非洲大件空运案例', href: '/cases/' },
 ]
 
+const decisionTools = [
+  {
+    label: '提交非洲项目货资料',
+    href: '/tools/africa-project-cargo-rfq/?source=africa-route-hub',
+    note: '把尺寸重量、照片、HS Code、目的地和到货窗口一次整理清楚，避免只拿公斤价做错误判断。',
+  },
+  {
+    label: '非洲清关资料预审',
+    href: '/tools/africa-air-freight-customs-document-checklist/',
+    note: '先检查发票箱单、进口商、许可证、SONCAP/PVoC/ACI等资料责任，再决定能不能订舱。',
+  },
+  {
+    label: '急件备件路线风险清单',
+    href: '/tools/africa-urgent-spare-parts-route-risk-checklist/',
+    note: '适合矿业、能源、工厂停产急件，先判断主甲板、二程、清关和现场卸货风险。',
+  },
+  {
+    label: 'HAK-JNB全货机容量判断',
+    href: '/insights/haikou-johannesburg-freighter-china-africa-project-cargo/',
+    note: '把海口到约堡公开运力信号和LGG/BRU、JNB二程交付一起比较，而不是直接承诺航班。',
+  },
+]
+
 export default function AfricaAirFreightHubPage() {
   const routeSchema = {
     '@context': 'https://schema.org',
@@ -173,6 +196,35 @@ export default function AfricaAirFreightHubPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-8 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Decision tools</p>
+            <h2 className="text-3xl font-black md:text-4xl">把询盘先变成可判断资料。</h2>
+          </div>
+          <p className="text-lg leading-8 text-slate-600">
+            如果客户只问中国到非洲空运多少钱，先把问题拆成路线、资料、时效和交付边界。
+            下面这些工具适合矿业备件、能源设备、工厂急件、长货和清关敏感货。
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {decisionTools.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-amberGold"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <h2 className="text-xl font-black text-slate-950">{item.label}</h2>
+                <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-amberGold transition group-hover:translate-x-1" />
+              </div>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{item.note}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
