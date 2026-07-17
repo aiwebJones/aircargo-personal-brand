@@ -8,6 +8,7 @@ const relatedRoutes = [
   { label: 'LBV 利伯维尔大件空运', href: '/africa-air-freight/lbv/' },
   { label: 'FBM 卢本巴希矿业备件', href: '/africa-air-freight/fbm/' },
   { label: 'JNB 约翰内斯堡项目货', href: '/africa-air-freight/jnb/' },
+  { label: 'LUN/NLA 赞比亚项目货判断', href: '/africa-air-freight/lun/' },
   { label: 'LGG/BRU 非洲中转', href: '/zh/lgg-africa-gateway/' },
 ]
 
@@ -21,7 +22,7 @@ export default function CasesPage() {
     url: pageUrl,
     description:
       'Public EASCargo records covering an 8-meter LBV project, a 16,730 kg single-piece loading operation and a 98.8-ton B777F single-flight operation.',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-17',
     publisher: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
@@ -85,7 +86,7 @@ export default function CasesPage() {
           </div>
           <div>
             <p className="text-sm font-black text-amber-700">航线判断内容</p>
-            <p className="mt-3 text-sm leading-7 text-slate-600">FBM、JNB 等目的地的路线比较属于服务知识，不冒充已经完成的客户案例。</p>
+            <p className="mt-3 text-sm leading-7 text-slate-600">FBM、JNB、LUN/NLA 等目的地的路线比较属于服务知识，不冒充已经完成的客户案例。</p>
           </div>
         </div>
       </section>
