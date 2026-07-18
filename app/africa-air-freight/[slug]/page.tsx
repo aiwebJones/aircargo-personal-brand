@@ -76,10 +76,10 @@ const pages = {
     country: 'Kenya',
     title: 'NBO Nairobi Air Freight for East Africa Project Cargo',
     description:
-      'China to Nairobi NBO air freight for East Africa project cargo, machinery, telecom equipment, industrial spare parts and oversized cargo via Europe or regional hub routing.',
+      'China to Nairobi NBO air freight for East Africa project cargo, machinery, telecom equipment, industrial spare parts and oversized cargo via Europe, JKIA or regional hub routing.',
     cargo: ['Telecom equipment', 'Factory spare parts', 'Project machinery', 'Medical and industrial equipment'],
     market:
-      'Nairobi is one of the strongest East Africa cargo hubs and can support Kenya projects plus onward distribution to nearby countries.',
+      'Nairobi is one of the strongest East Africa cargo hubs and can support Kenya projects plus onward distribution to nearby countries. Current JKIA modernisation planning reinforces why NBO should be treated as a route-decision gateway, not only an airport code.',
     customs:
       'Check importer PIN, HS Code, invoice value, packing list, permits for regulated goods and whether the consignee can clear at Jomo Kenyatta airport.',
     business:
@@ -518,6 +518,12 @@ const nigeriaOilGasChecks = [
   'Is the quote boundary airport-only, customs-assisted, airport pickup, or final-site delivery for a shutdown spare?',
 ]
 
+const nboGatewayChecks = [
+  'Is NBO the final airport, a Kenya clearance point, or the first hub before Uganda, Tanzania, South Sudan, Rwanda or an inland project site?',
+  'Do PVoC/CoC, IDF, importer KRA PIN, HS Code, invoice value and regulated-goods permits match before uplift?',
+  'Does the cargo need JKIA airport pickup, bonded movement, cross-border trucking, cold-chain handling or final-site unloading support?',
+]
+
 const chinaOriginClusters = [
   {
     region: '华东出口口岸',
@@ -708,6 +714,29 @@ const lunOfficialFacts = [
   },
 ]
 
+const nboOfficialFacts = [
+  {
+    label: 'JKIA modernisation and cargo hub signal',
+    detail: 'STAT Times reported Kenya appointed Dar Al-Handasah as engineer-consultant for the KSh154.2 billion JKIA modernisation project, with the master plan targeting cargo throughput growth from about 390,000 tonnes to 860,000 tonnes by 2045.',
+    href: 'https://www.stattimes.com/cargo-airports/kenya-signs-engineer-consultant-deal-for-jkia-modernisation-1359919',
+  },
+  {
+    label: 'JKIA master planning and cargo support',
+    detail: 'Dar describes JKIA planning work that includes airside, terminal, landside, transport and urban development, with support facilities for ground operations, maintenance, cargo and utilities.',
+    href: 'https://www.dar.com/work/project/jomo-kenyatta-international-airport-%28jkia%29-and-wilson-airport-%28wap%29-',
+  },
+  {
+    label: 'Kenya PVoC / CoC conformity check',
+    detail: 'KEBS explains that PVoC is used to verify conformity of regulated exports to Kenya before shipment, so product scope and certificate responsibility should be checked before an NBO booking.',
+    href: 'https://www.kebs.org/pre-export-verification-of-conformity/',
+  },
+  {
+    label: 'Kenya Import Declaration Form',
+    detail: 'InfoTradeKenya lists IDF among the import steps and document requirements. Importer data, HS Code, value, invoice and permit fit should be aligned before cargo leaves China.',
+    href: 'https://infotradekenya.go.ke/procedure/322?includeSearch=true&l=en',
+  },
+]
+
 const lunGatewayChecks = [
   'Is the final site in Lusaka, Ndola, Kitwe, Mufulira, Chingola or another Copperbelt or project location?',
   'Can the longest and heaviest piece be accepted through LUN, or should NLA or another currently confirmed regional route be compared?',
@@ -720,6 +749,7 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   fbm: '2026-07-13',
   lun: '2026-07-16',
   lbv: '2026-07-13',
+  nbo: '2026-07-18',
 }
 
 const deepDives: Partial<Record<Slug, DeepDive>> = {
@@ -988,6 +1018,7 @@ function currentMetadataTitle(
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return 'LBV利伯维尔空运 | 中国各大机场到加蓬长货项目 | EASCargo Jones'
+  if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCargo Jones'
   return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
 }
 
@@ -1008,6 +1039,9 @@ function currentMetadataDescription(
   if (slug === 'lbv') {
     return '中国各大机场到LBV利伯维尔空运：全国集货、长货主甲板、LGG/BRU与B747F方案、加蓬清关及油气能源项目现场交付。'
   }
+  if (slug === 'nbo') {
+    return '中国到NBO内罗毕空运：结合肯尼亚JKIA项目货、PVoC/CoC、IDF、进口商KRA PIN、东非二程和最终现场交付边界做逐票判断。'
+  }
   return `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
 }
 
@@ -1023,7 +1057,9 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const originStrategy = originStrategies[currentSlug]
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
   const isNigeriaRoute = currentSlug === 'los'
-  const officialFacts = currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : null
+  const isNboRoute = currentSlug === 'nbo'
+  const officialFacts =
+    currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : isNboRoute ? nboOfficialFacts : null
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -1227,6 +1263,44 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
       </section>}
 
+      {isNboRoute && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">NBO gateway decision</p>
+          <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+            Treat Nairobi as an East Africa route decision, not only a Kenya airport rate.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            JKIA modernisation keeps NBO visible as a regional air-cargo hub, but each China-origin project shipment
+            still needs a document and handover check. Separate Kenya clearance from East Africa onward delivery, and
+            confirm PVoC, IDF, importer readiness and final-site responsibility before booking.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="/insights/kenya-nbo-pvoc-idf-air-freight-documents/"
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              Check NBO PVoC and IDF documents
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/insights/east-africa-nbo-ebb-dar-project-cargo/"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+            >
+              Compare NBO, EBB and DAR project cargo
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="grid gap-3">
+          {nboGatewayChecks.map((check) => (
+            <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+              <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+              <p className="leading-7 text-slate-700">{check}</p>
+            </div>
+          ))}
+        </div>
+      </section>}
+
       {originStrategy && (
         <>
           <section className="border-y border-slate-200 bg-slate-50 py-20">
@@ -1335,7 +1409,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           {officialFacts && <section className="bg-slate-950 py-20 text-white">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Primary-source research</p>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Source research</p>
                 <h2 className="text-3xl font-bold md:text-4xl">{item.code} facts used in this route assessment.</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
                   These sources support airport, customs and network facts. They do not guarantee today&apos;s flight,
