@@ -13,6 +13,7 @@ import {
   Truck,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
+import QuoteOrchestrationAgent from '@/components/QuoteOrchestrationAgent'
 
 const pageUrl = 'https://www.eascargo.com/tools/africa-project-cargo-rfq/'
 
@@ -86,7 +87,7 @@ export default function QuotePage() {
     alternateName: '中国到非洲大件项目货逐票询价',
     url: pageUrl,
     description: metadata.description,
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-19',
     mainEntity: {
       '@type': 'Service',
       '@id': `${pageUrl}#service`,
@@ -161,7 +162,7 @@ export default function QuotePage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-6 lg:grid-cols-[0.78fr_1.22fr] lg:px-8 lg:py-16">
+      <section className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-6 lg:grid-cols-[0.68fr_1.32fr] lg:px-8 lg:py-16">
         <aside className="space-y-9 lg:sticky lg:top-6 lg:self-start">
           <div>
             <p className="text-sm font-bold text-amber-700">报价判断顺序</p>
@@ -208,7 +209,18 @@ export default function QuotePage() {
           </div>
         </aside>
 
-        <QuoteForm />
+        <div className="min-w-0">
+          <QuoteOrchestrationAgent />
+          <details className="mt-6 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+            <summary className="cursor-pointer font-black text-slate-950">使用原来的详细询价表单</summary>
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              Agent 无法使用或你希望逐项填写时，可以继续使用原表单。两个入口都会发送到同一 EASCargo 联系邮箱。
+            </p>
+            <div className="mt-5">
+              <QuoteForm />
+            </div>
+          </details>
+        </div>
       </section>
 
       <section className="border-y border-slate-200 bg-white py-14">
