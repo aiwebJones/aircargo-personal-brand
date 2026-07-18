@@ -125,7 +125,7 @@ export default function InsightDetailPage({ params }: Params) {
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_330px] lg:items-end">
             <div className="max-w-4xl">
               <p className="text-sm font-semibold text-amberGold">{insight.category}</p>
-              <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl">
+              <h1 className="mt-4 text-4xl font-black leading-tight tracking-normal sm:text-5xl">
                 {insight.title}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{insight.excerpt}</p>
@@ -144,7 +144,10 @@ export default function InsightDetailPage({ params }: Params) {
               </div>
               <p className="mt-4 text-sm leading-7 text-slate-300">{insight.angle}</p>
               <div className="mt-5 text-sm text-slate-400">
-                {insight.date} · {insight.readTime}
+                {insight.modifiedDate
+                  ? `发布 ${insight.date} · 更新 ${insight.modifiedDate}`
+                  : insight.date}{' '}
+                · {insight.readTime}
               </div>
             </div>
           </div>

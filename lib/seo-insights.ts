@@ -1555,6 +1555,7 @@ export const seoInsights: SeoInsight[] = [
     excerpt:
       '国内没有直飞方案时，欧洲不是绕路，而是把主甲板、全货机、开鼻门和非洲二程重新组合。',
     date: '2026-06-30',
+    modifiedDate: '2026-07-18',
     readTime: '15 分钟',
     category: '航线方案',
     author: defaultAuthor,
@@ -1580,12 +1581,70 @@ export const seoInsights: SeoInsight[] = [
         ],
         bullets: ['单件超长', '需要主甲板', '目的地承接弱', '项目节点紧'],
       },
+      {
+        heading: '先判断货物能不能进入主甲板方案',
+        body: [
+          '总重量不能代替单件数据。最长、最宽、最高和最重的一件，连同包装外形、不可倒置要求、吊点、叉孔和重心，才决定货物能否通过机门、能否在主甲板形成可接受轮廓，以及是否需要专门的装载和系留方案。',
+          'IATA 对 ULD 的说明强调，航空托盘、集装器及其约束系统属于飞机装载系统的一部分。因此，大件询价不能只问“能不能上 B747F”，还要核对托盘或散装方案、最大毛重、重心、轮廓、地板承载和货站操作条件。',
+        ],
+        bullets: ['逐件尺寸重量', '包装与重心', '机门和轮廓', '托盘系留与地板承载'],
+      },
+      {
+        heading: 'LGG 和 BRU 不是固定答案，要按当票资源选择',
+        body: [
+          'LGG 官方将超大件列为其货运类型之一，说明当地具备相关货运生态；BRU 官方历史资料也记录了超大件、大型机器和机器零部件的货运场景。但机场具备或曾经处理相关货物，不等于某票货已经获得航司、货站、仓库和非洲二程接受。',
+          '逐票比较时要看中国段落地机场、欧洲交接仓库、转运海关责任、可用装卸设备、仓储窗口、二程机型与目的港接受。没有书面或可核实的操作确认，就不把 LGG、BRU、固定航班或固定时效写进承诺。',
+        ],
+        bullets: ['中国段落点', '欧洲货站接受', '仓储与转运责任', '非洲二程确认'],
+      },
+      {
+        heading: '欧洲中转报价要拆成六段成本',
+        body: [
+          '可执行报价至少拆分为：中国境内集货与出口、第一程空运、欧洲卸机和仓库交接、重新打板或特殊装载、非洲第二程、目的港操作和最终交付。任何一段没有边界，低公斤价都可能在仓储、吊装、二程或目的港产生额外成本。',
+          '比较方案时同时看总成本和失败成本。普通腹舱方案价格低，但如果最长件无法接受、转运仓库不能处理或非洲目的港没有卸货设备，报价本身没有商业价值。',
+        ],
+        bullets: ['中国集货与出口', '第一程和欧洲操作', '重新打板与第二程', '目的港与项目现场'],
+      },
+      {
+        heading: '经欧盟中转要提前准备 ENS 数据',
+        body: [
+          '欧盟委员会说明，进入或经欧盟转运的货物需要通过 ICS2 提交安全与安保数据，并以 Entry Summary Declaration（ENS）接受风险分析。对空运货物，部分资料还涉及装机前申报。',
+          '因此，LGG/BRU 方案在订舱前就要对齐品名、用途、HS Code、发货人、收货人、件数重量、路线和分单数据。含糊品名、不同单据之间的数据冲突，可能让欧洲中转在货物起飞前或到达后停下来。实际申报责任应由承运人、申报方和欧洲操作方按业务安排确认。',
+        ],
+        bullets: ['准确品名与 HS Code', '收发货人数据', '主分单一致', 'ENS 申报责任'],
+      },
+      {
+        heading: 'JNB、FBM、LUN、LBV 的二程判断不同',
+        body: [
+          'JNB 可以作为南部非洲项目货入口候选，但要继续核对南非清关和最终工地；FBM 要把刚果金进口资料、Lubumbashi 卸货和 Copperbelt 矿区交付放进方案；LUN 需要区分 Lusaka 到港、NLA 备选和赞比亚铜带二程；LBV 长货则要提前确认 Libreville 货站、吊装和项目现场条件。',
+          '这些机场代码只代表候选入口，不代表当前有固定欧洲二程、固定舱位或固定时效。EASCargo 先用货物尺寸和最终地址筛掉错误入口，再对仍可执行的路线逐票询价。',
+        ],
+        bullets: ['JNB 南部非洲交付', 'FBM 铜钴矿区', 'LUN/NLA 赞比亚入口', 'LBV 长货卸装'],
+      },
+      {
+        heading: '时效结果要用里程碑表达',
+        body: [
+          '欧洲中转时效不应只写一个总天数。更可靠的表达是分别确认中国提货、出口交仓、第一程起飞、欧洲到仓、二程货好、非洲到港、清关和最终交付窗口，并为重新打板、查验和大件装卸保留缓冲。',
+          '报价时可以比较直达候选与 LGG/BRU 方案的预计窗口，但只有当票承运人、货站和目的港接受确认后，才能给出可执行的计划。文章不发布未经确认的实时运价、舱位、班期或承运人承诺。',
+        ],
+        bullets: ['第一程里程碑', '欧洲交接窗口', '二程接受时间', '清关与现场交付'],
+      },
     ],
-    checklist: ['尺寸重量', '包装方式', '是否可倒置', '起运机场', '目的地机场', '欧洲交接窗口', '非洲二程需求'],
+    checklist: ['每件尺寸和毛重', '包装照片、吊点和重心', '是否可倒置或叠放', '中国起运城市和货好日期', '非洲目的机场和最终地址', '品名、用途和 HS Code', '发货人与收货人资料', '欧洲交接和 ENS 责任', '非洲二程与卸货条件', '最晚到货窗口'],
     relatedRoutes: [
       { label: 'LGG Africa Gateway', href: '/china-africa-oversized-cargo-via-europe/' },
       { label: '中文 LGG/BRU 网络', href: '/zh/lgg-africa-gateway/' },
       { label: 'LBV 长货', href: '/africa-air-freight/lbv/' },
+      { label: 'JNB 南部非洲入口', href: '/africa-air-freight/jnb/' },
+      { label: 'FBM 铜钴矿区', href: '/africa-air-freight/fbm/' },
+      { label: 'LUN/NLA 赞比亚入口', href: '/africa-air-freight/lun/' },
+    ],
+    sources: [
+      { label: 'Liege Airport: Cargo', href: 'https://www.liegeairport.com/en/cargo' },
+      { label: 'Liege Airport: Types of cargo', href: 'https://www.liegeairport.com/en/cargo/freight-types' },
+      { label: 'Brussels Airport: 35 years of Singapore Airlines Cargo', href: 'https://pressroom.brusselsairport.be/en-35-years-singapore' },
+      { label: 'IATA: What is Aircraft ULD in Air Transport?', href: 'https://www.iata.org/en/publications/newsletters/iata-knowledge-hub/what-is-aircraft-uld-in-air-transport/' },
+      { label: 'European Commission: Import Control System 2', href: 'https://taxation-customs.ec.europa.eu/customs/customs-security/import-control-system-2_en' },
     ],
   },
   {

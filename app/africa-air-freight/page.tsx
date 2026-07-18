@@ -58,6 +58,7 @@ const quoteChecks = [
 const clusterLinks = [
   { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
   { label: 'LGG Africa Gateway 英文页', href: '/china-africa-oversized-cargo-via-europe/' },
+  { label: 'LGG/BRU 大件中转判断', href: '/insights/china-africa-via-europe-lgg-bru-transit/' },
   { label: '非洲空运情报库', href: '/insights/' },
   { label: '非洲大件空运案例', href: '/cases/' },
 ]

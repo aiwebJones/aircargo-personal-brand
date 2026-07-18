@@ -32,6 +32,11 @@ const sortedSeoInsights = [...seoInsights].sort((a, b) => b.date.localeCompare(a
 const categories = Array.from(new Set(sortedSeoInsights.map((item) => item.category)))
 const miningProjectLinks = [
   {
+    title: 'LGG/BRU欧洲中转怎么判断',
+    href: '/insights/china-africa-via-europe-lgg-bru-transit/',
+    note: '从主甲板装载、欧洲货站、ENS资料到JNB/FBM/LUN/LBV二程逐票判断。',
+  },
+  {
     title: '中国到非洲8米长货案例（中英双语）',
     href: '/insights/china-africa-8-meter-oversized-air-freight-case/',
     note: '从装载、LGG/BRU中转、B747F主甲板到非洲项目现场交付的完整复盘。',
