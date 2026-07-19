@@ -524,6 +524,14 @@ const nboGatewayChecks = [
   'Does the cargo need JKIA airport pickup, bonded movement, cross-border trucking, cold-chain handling or final-site unloading support?',
 ]
 
+const addRouteProgramDestinationSlugs: Slug[] = ['cmn', 'add', 'cky', 'oua', 'bko', 'ebb']
+
+const addRouteProgramChecks = [
+  'Is the cargo already in MLE, SIN or MNL, or would rerouting China-origin cargo add more cost and delay than it saves?',
+  'Can ADD transit accept the actual piece size, weight, cargo attribute and onward flight window for this destination?',
+  'Are destination documents, consignee readiness and final delivery boundary confirmed before chasing a lower airport rate?',
+]
+
 const chinaOriginClusters = [
   {
     region: '华东出口口岸',
@@ -750,6 +758,12 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   lun: '2026-07-16',
   lbv: '2026-07-13',
   nbo: '2026-07-18',
+  bko: '2026-07-19',
+  cky: '2026-07-19',
+  oua: '2026-07-19',
+  ebb: '2026-07-19',
+  add: '2026-07-19',
+  cmn: '2026-07-19',
 }
 
 const deepDives: Partial<Record<Slug, DeepDive>> = {
@@ -1058,6 +1072,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
   const isNigeriaRoute = currentSlug === 'los'
   const isNboRoute = currentSlug === 'nbo'
+  const isAddRouteProgramDestination = addRouteProgramDestinationSlugs.includes(currentSlug)
   const officialFacts =
     currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : isNboRoute ? nboOfficialFacts : null
 
@@ -1293,6 +1308,44 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
         <div className="grid gap-3">
           {nboGatewayChecks.map((check) => (
+            <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+              <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+              <p className="leading-7 text-slate-700">{check}</p>
+            </div>
+          ))}
+        </div>
+      </section>}
+
+      {isAddRouteProgramDestination && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">ADD route program decision</p>
+          <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+            Compare ET/ADD transit only when the full route beats a normal {item.code} quote.
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            Ethiopian&apos;s China-Africa cargo focus makes ADD worth screening for some Africa shipments, but a lower
+            transit price is not enough. Check origin repositioning, ADD second-leg acceptance, destination documents and
+            the {item.code} final handover before choosing the program route.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="/route-programs/et-asia-africa-via-add/"
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              Compare ET/ADD route program for {item.code}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+            >
+              Read the ET/ADD Africa air freight guide
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="grid gap-3">
+          {addRouteProgramChecks.map((check) => (
             <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
               <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
               <p className="leading-7 text-slate-700">{check}</p>
