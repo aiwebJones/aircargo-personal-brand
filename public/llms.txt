@@ -10,6 +10,7 @@ Robots: https://www.eascargo.com/robots.txt
 Full AI reference: https://www.eascargo.com/llms-full.txt
 Shipment-specific quote form: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 Contact email: globegsa@gmail.com
+Phone: +86 138 1653 9222
 WeChat: jnb931
 
 ## What EASCargo Helps With
