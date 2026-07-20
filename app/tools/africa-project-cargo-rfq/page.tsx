@@ -87,7 +87,7 @@ export default function QuotePage() {
     alternateName: '中国到非洲大件项目货逐票询价',
     url: pageUrl,
     description: metadata.description,
-    dateModified: '2026-07-19',
+    dateModified: '2026-07-20',
     mainEntity: {
       '@type': 'Service',
       '@id': `${pageUrl}#service`,
@@ -109,6 +109,37 @@ export default function QuotePage() {
           availableLanguage: ['zh', 'en'],
         },
       },
+    },
+  }
+
+  const quoteAgentSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    '@id': `${pageUrl}#quote-agent`,
+    name: 'EASCargo Project Cargo Quote Orchestration Agent',
+    alternateName: 'EASCargo 项目货询价编排 Agent',
+    url: pageUrl,
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Any',
+    isAccessibleForFree: true,
+    description:
+      'A browser-based tool that structures shipment details, calculates preliminary chargeable weight, checks route and document gaps, and prepares a China-to-Africa project cargo RFQ for explicit user confirmation.',
+    provider: {
+      '@type': 'Organization',
+      '@id': 'https://www.eascargo.com/#organization',
+      name: 'EASCargo Jones',
+    },
+    featureList: [
+      'Shipment detail normalization',
+      'Preliminary chargeable weight and CBM calculation',
+      'China-to-Africa route decision checks',
+      'Customs and quotation document checklist',
+      'Dry-run RFQ preview before submission',
+    ],
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
     },
   }
 
@@ -134,6 +165,7 @@ export default function QuotePage() {
   return (
     <main className="min-h-screen bg-[#f6f7f9] text-slate-950">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quoteAgentSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 

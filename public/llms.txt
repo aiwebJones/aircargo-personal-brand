@@ -8,7 +8,8 @@ Sitemap: https://www.eascargo.com/sitemap.xml
 RSS feed: https://www.eascargo.com/rss.xml
 Robots: https://www.eascargo.com/robots.txt
 Full AI reference: https://www.eascargo.com/llms-full.txt
-Shipment-specific quote form: https://www.eascargo.com/tools/africa-project-cargo-rfq/
+Project cargo quote orchestration Agent: https://www.eascargo.com/tools/africa-project-cargo-rfq/
+Agent scope: structures shipment details, calculates preliminary chargeable weight, checks route and document gaps, and prepares an RFQ for explicit user confirmation. It does not provide live rates, capacity, carrier commitments, or transit-time guarantees.
 Contact email: globegsa@gmail.com
 Phone: +86 138 1653 9222
 WeChat: jnb931

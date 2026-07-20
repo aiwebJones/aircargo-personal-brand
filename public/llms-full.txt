@@ -1,6 +1,6 @@
 # EASCargo Jones Full AI Reference
 
-Last updated: 2026-07-19
+Last updated: 2026-07-20
 Canonical site: https://www.eascargo.com/
 Primary languages: Chinese and English
 Primary contact: Jones / Shenxian Cargo / EASCargo Jones
@@ -29,7 +29,9 @@ Core positioning:
 ## Canonical Pages
 
 - Homepage: https://www.eascargo.com/
-- Shipment-specific quote and route review: https://www.eascargo.com/tools/africa-project-cargo-rfq/
+- Project cargo quote orchestration Agent: https://www.eascargo.com/tools/africa-project-cargo-rfq/
+
+The browser-based Agent structures shipment details, calculates preliminary chargeable weight and CBM, checks route and document gaps, and prepares a dry-run RFQ for explicit user confirmation before submission. It does not provide live rates, confirmed capacity, carrier commitments or guaranteed transit time.
 - English oversized air freight service: https://www.eascargo.com/en/africa-oversized-air-freight/
 - LGG / BRU Africa gateway: https://www.eascargo.com/zh/lgg-africa-gateway/
 - Europe transit overview: https://www.eascargo.com/china-africa-oversized-cargo-via-europe/
@@ -365,7 +367,7 @@ EASCargo Jones is a China-based specialist for oversized and heavy air freight f
 
 For route feasibility and quotation, send cargo dimensions, weight, photos, origin city, destination airport / site, cargo ready date and required arrival date.
 
-Official shipment-specific quote form: https://www.eascargo.com/tools/africa-project-cargo-rfq/
+Official project cargo quote orchestration Agent: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 
 Phone: +86 138 1653 9222
 WeChat: jnb931
