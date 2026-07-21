@@ -1,0 +1,1254 @@
+{
+  "generated_at": "2026-07-22",
+  "positioning": "Freight intelligence + tool ecosystem + RFQ operating system for China export air freight, oversized cargo, project logistics and air charter.",
+  "principle": "Build demand capture around high-friction logistics decisions, not duplicate brochure pages.",
+  "vertical_sites": [
+    {
+      "id": "brand",
+      "name": "EASCargo Global",
+      "role": "Brand authority and lead conversion hub",
+      "domain_candidates": [
+        "eascargo.com"
+      ],
+      "primary_keywords": [
+        "china air freight forwarder",
+        "international air freight from china",
+        "project cargo air freight"
+      ],
+      "persona": "overseas importers, project shippers, procurement teams",
+      "page_structure": [
+        "Home",
+        "Air freight",
+        "Oversized cargo",
+        "Project cargo",
+        "Air charter",
+        "Routes",
+        "Industries",
+        "Tools",
+        "Case studies",
+        "Insights",
+        "RFQ"
+      ],
+      "monetization": "qualified RFQ and retained freight accounts"
+    },
+    {
+      "id": "china-air-freight-hub",
+      "name": "China Air Freight Hub",
+      "role": "Topical authority site for China export air freight",
+      "domain_candidates": [
+        "chinaairfreighthub.com",
+        "chinaairfreight.net"
+      ],
+      "primary_keywords": [
+        "air freight from china",
+        "china air freight rates",
+        "china freight forwarder"
+      ],
+      "persona": "importers comparing suppliers",
+      "page_structure": [
+        "rate guides",
+        "origin airport guides",
+        "destination guides",
+        "carrier guides",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "China export RFQs"
+    },
+    {
+      "id": "africa-air-cargo",
+      "name": "Africa Air Cargo Desk",
+      "role": "Africa lane authority",
+      "domain_candidates": [
+        "africaaircargo.com",
+        "chinaafricaairfreight.com"
+      ],
+      "primary_keywords": [
+        "air freight from china to africa",
+        "china to nigeria air cargo",
+        "africa project cargo"
+      ],
+      "persona": "Africa importers and contractors",
+      "page_structure": [
+        "country lanes",
+        "customs docs",
+        "airport guides",
+        "cargo risk guides",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "Africa lane shipments"
+    },
+    {
+      "id": "middle-east-air-cargo",
+      "name": "Middle East Air Cargo Desk",
+      "role": "Middle East lane authority",
+      "domain_candidates": [
+        "middleeastaircargo.com",
+        "china-middleeastcargo.com"
+      ],
+      "primary_keywords": [
+        "air freight from china to dubai",
+        "china to saudi air cargo",
+        "middle east air freight"
+      ],
+      "persona": "GCC importers and industrial buyers",
+      "page_structure": [
+        "UAE/Saudi/Qatar/Oman lanes",
+        "charter guides",
+        "customs docs",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "GCC air freight and project cargo"
+    },
+    {
+      "id": "project-cargo-air",
+      "name": "Project Cargo Air",
+      "role": "Oversized and industrial project logistics authority",
+      "domain_candidates": [
+        "projectcargoair.com",
+        "oversizeairfreight.com"
+      ],
+      "primary_keywords": [
+        "project cargo air freight",
+        "oversized air cargo",
+        "heavy lift air freight"
+      ],
+      "persona": "EPC, energy, mining, machinery buyers",
+      "page_structure": [
+        "cargo type pages",
+        "aircraft fit guides",
+        "lashing/packing",
+        "case studies",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "high-margin complex cargo leads"
+    },
+    {
+      "id": "air-charter-freight",
+      "name": "Air Charter Freight Desk",
+      "role": "Charter and urgent cargo capture",
+      "domain_candidates": [
+        "aircharterfreight.com",
+        "cargocharterdesk.com"
+      ],
+      "primary_keywords": [
+        "cargo charter quote",
+        "air freight charter",
+        "urgent air cargo charter"
+      ],
+      "persona": "urgent project shippers and brokers",
+      "page_structure": [
+        "aircraft guides",
+        "charter process",
+        "route examples",
+        "cost explainers",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "charter inquiries"
+    },
+    {
+      "id": "air-cargo-docs",
+      "name": "Air Cargo Docs",
+      "role": "Documentation and customs search capture",
+      "domain_candidates": [
+        "aircargodocs.com",
+        "freightdocuments.com"
+      ],
+      "primary_keywords": [
+        "air freight documents",
+        "customs clearance documents",
+        "air waybill guide"
+      ],
+      "persona": "first-time importers, forwarders, procurement assistants",
+      "page_structure": [
+        "document library",
+        "country customs pages",
+        "checklists",
+        "templates",
+        "tools"
+      ],
+      "monetization": "lead capture through checklist/RFQ handoff"
+    },
+    {
+      "id": "air-freight-tools",
+      "name": "Air Freight Tools",
+      "role": "Calculator and workflow tool moat",
+      "domain_candidates": [
+        "airfreighttools.com",
+        "freightcalculators.com"
+      ],
+      "primary_keywords": [
+        "air freight calculator",
+        "chargeable weight calculator",
+        "air freight cost estimator"
+      ],
+      "persona": "buyers needing quick operational answers",
+      "page_structure": [
+        "calculators",
+        "converters",
+        "checklists",
+        "validators",
+        "embeddable widgets"
+      ],
+      "monetization": "tool-driven RFQ conversion and backlinks"
+    },
+    {
+      "id": "europe-us-air-cargo",
+      "name": "Europe & US Air Cargo from China",
+      "role": "Europe/US route clusters",
+      "domain_candidates": [
+        "chinaeuropeairfreight.com",
+        "chinausaircargo.com"
+      ],
+      "primary_keywords": [
+        "air freight from china to usa",
+        "air freight from china to europe",
+        "china to germany air cargo"
+      ],
+      "persona": "Western importers and sourcing teams",
+      "page_structure": [
+        "country/city lanes",
+        "incoterms",
+        "transit time",
+        "cost pages",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "standard and oversized route leads"
+    },
+    {
+      "id": "dangerous-special-cargo",
+      "name": "Special Cargo Air Freight",
+      "role": "DG, battery, pharma, perishables, fragile cargo authority",
+      "domain_candidates": [
+        "specialcargoair.com",
+        "dangerousgoodsair.com"
+      ],
+      "primary_keywords": [
+        "dangerous goods air freight",
+        "lithium battery air freight",
+        "special cargo air freight"
+      ],
+      "persona": "shippers with regulated cargo",
+      "page_structure": [
+        "cargo-class guides",
+        "packing rules",
+        "documentation",
+        "airline acceptance",
+        "tools",
+        "RFQ"
+      ],
+      "monetization": "qualified compliance-heavy leads"
+    },
+    {
+      "id": "freight-intelligence",
+      "name": "Freight Intelligence Lab",
+      "role": "Data/report/media asset for recurring traffic and links",
+      "domain_candidates": [
+        "freightintelligencelab.com",
+        "aircargointelligence.com"
+      ],
+      "primary_keywords": [
+        "air freight market update",
+        "air cargo rate index",
+        "freight market intelligence"
+      ],
+      "persona": "logistics managers, media, procurement, competitors",
+      "page_structure": [
+        "weekly market updates",
+        "rate trends",
+        "capacity notes",
+        "reports",
+        "API/data pages"
+      ],
+      "monetization": "authority links, newsletter, enterprise RFQs"
+    }
+  ],
+  "tool_pages": [
+    {
+      "id": "pricing-weight-1",
+      "category": "Pricing & Weight",
+      "name": "Chargeable Weight Calculator",
+      "slug": "/tools/chargeable-weight-calculator/",
+      "primary_keyword": "chargeable weight calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-2",
+      "category": "Pricing & Weight",
+      "name": "Air Freight Cost Estimator",
+      "slug": "/tools/air-freight-cost-estimator/",
+      "primary_keyword": "air freight cost estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-3",
+      "category": "Pricing & Weight",
+      "name": "Volumetric Weight Converter",
+      "slug": "/tools/volumetric-weight-converter/",
+      "primary_keyword": "volumetric weight converter",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-4",
+      "category": "Pricing & Weight",
+      "name": "Dimensional Weight Calculator",
+      "slug": "/tools/dimensional-weight-calculator/",
+      "primary_keyword": "dimensional weight calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-5",
+      "category": "Pricing & Weight",
+      "name": "Cargo Density Calculator",
+      "slug": "/tools/cargo-density-calculator/",
+      "primary_keyword": "cargo density calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-6",
+      "category": "Pricing & Weight",
+      "name": "Fuel Surcharge Estimator",
+      "slug": "/tools/fuel-surcharge-estimator/",
+      "primary_keyword": "fuel surcharge estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-7",
+      "category": "Pricing & Weight",
+      "name": "Security Surcharge Estimator",
+      "slug": "/tools/security-surcharge-estimator/",
+      "primary_keyword": "security surcharge estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-8",
+      "category": "Pricing & Weight",
+      "name": "Airline Minimum Charge Checker",
+      "slug": "/tools/airline-minimum-charge-checker/",
+      "primary_keyword": "airline minimum charge checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-9",
+      "category": "Pricing & Weight",
+      "name": "Rate Comparison Worksheet",
+      "slug": "/tools/rate-comparison-worksheet/",
+      "primary_keyword": "rate comparison worksheet",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "pricing-weight-10",
+      "category": "Pricing & Weight",
+      "name": "Spot Quote Request Builder",
+      "slug": "/tools/spot-quote-request-builder/",
+      "primary_keyword": "spot quote request builder",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-1",
+      "category": "Route & Transit",
+      "name": "China Airport Transit Time Estimator",
+      "slug": "/tools/china-airport-transit-time-estimator/",
+      "primary_keyword": "china airport transit time estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-2",
+      "category": "Route & Transit",
+      "name": "Air Cargo Route Planner",
+      "slug": "/tools/air-cargo-route-planner/",
+      "primary_keyword": "air cargo route planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-3",
+      "category": "Route & Transit",
+      "name": "Airport Code Lookup",
+      "slug": "/tools/airport-code-lookup/",
+      "primary_keyword": "airport code lookup",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-4",
+      "category": "Route & Transit",
+      "name": "Direct Vs Transit Route Comparator",
+      "slug": "/tools/direct-vs-transit-route-comparator/",
+      "primary_keyword": "direct vs transit route comparator",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-5",
+      "category": "Route & Transit",
+      "name": "Cutoff Time Planner",
+      "slug": "/tools/cutoff-time-planner/",
+      "primary_keyword": "cutoff time planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-6",
+      "category": "Route & Transit",
+      "name": "Airport Handling Checklist",
+      "slug": "/tools/airport-handling-checklist/",
+      "primary_keyword": "airport handling checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-7",
+      "category": "Route & Transit",
+      "name": "Carrier Hub Finder",
+      "slug": "/tools/carrier-hub-finder/",
+      "primary_keyword": "carrier hub finder",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-8",
+      "category": "Route & Transit",
+      "name": "Weekend Transit Risk Checker",
+      "slug": "/tools/weekend-transit-risk-checker/",
+      "primary_keyword": "weekend transit risk checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-9",
+      "category": "Route & Transit",
+      "name": "Holiday Delay Checker",
+      "slug": "/tools/holiday-delay-checker/",
+      "primary_keyword": "holiday delay checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "route-transit-10",
+      "category": "Route & Transit",
+      "name": "Last-Mile Airport Distance Estimator",
+      "slug": "/tools/last-mile-airport-distance-estimator/",
+      "primary_keyword": "last-mile airport distance estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-1",
+      "category": "Project Cargo",
+      "name": "Oversized Cargo Aircraft Fit Checker",
+      "slug": "/tools/oversized-cargo-aircraft-fit-checker/",
+      "primary_keyword": "oversized cargo aircraft fit checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "project-cargo-2",
+      "category": "Project Cargo",
+      "name": "Cargo Door Dimension Checker",
+      "slug": "/tools/cargo-door-dimension-checker/",
+      "primary_keyword": "cargo door dimension checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-3",
+      "category": "Project Cargo",
+      "name": "Heavy Lift Packing Checklist",
+      "slug": "/tools/heavy-lift-packing-checklist/",
+      "primary_keyword": "heavy lift packing checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-4",
+      "category": "Project Cargo",
+      "name": "ULD Suitability Estimator",
+      "slug": "/tools/uld-suitability-estimator/",
+      "primary_keyword": "ULD suitability estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-5",
+      "category": "Project Cargo",
+      "name": "Lashing Requirement Checklist",
+      "slug": "/tools/lashing-requirement-checklist/",
+      "primary_keyword": "lashing requirement checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-6",
+      "category": "Project Cargo",
+      "name": "Crane And Forklift Requirement Planner",
+      "slug": "/tools/crane-and-forklift-requirement-planner/",
+      "primary_keyword": "crane and forklift requirement planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-7",
+      "category": "Project Cargo",
+      "name": "Project Cargo RFQ Builder",
+      "slug": "/tools/project-cargo-rfq-builder/",
+      "primary_keyword": "project cargo RFQ builder",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "project-cargo-8",
+      "category": "Project Cargo",
+      "name": "Breakbulk Vs Air Charter Comparator",
+      "slug": "/tools/breakbulk-vs-air-charter-comparator/",
+      "primary_keyword": "breakbulk vs air charter comparator",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "project-cargo-9",
+      "category": "Project Cargo",
+      "name": "Out-Of-Gauge Risk Checklist",
+      "slug": "/tools/out-of-gauge-risk-checklist/",
+      "primary_keyword": "out-of-gauge risk checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "project-cargo-10",
+      "category": "Project Cargo",
+      "name": "Site Survey Checklist Generator",
+      "slug": "/tools/site-survey-checklist-generator/",
+      "primary_keyword": "site survey checklist generator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "air-charter-1",
+      "category": "Air Charter",
+      "name": "Cargo Charter Aircraft Selector",
+      "slug": "/tools/cargo-charter-aircraft-selector/",
+      "primary_keyword": "cargo charter aircraft selector",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-2",
+      "category": "Air Charter",
+      "name": "Charter Cost Estimator",
+      "slug": "/tools/charter-cost-estimator/",
+      "primary_keyword": "charter cost estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-3",
+      "category": "Air Charter",
+      "name": "AN-124 Vs B747F Comparator",
+      "slug": "/tools/an-124-vs-b747f-comparator/",
+      "primary_keyword": "AN-124 vs B747F comparator",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "air-charter-4",
+      "category": "Air Charter",
+      "name": "Urgent Cargo Charter RFQ",
+      "slug": "/tools/urgent-cargo-charter-rfq/",
+      "primary_keyword": "urgent cargo charter RFQ",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-5",
+      "category": "Air Charter",
+      "name": "Charter Timeline Planner",
+      "slug": "/tools/charter-timeline-planner/",
+      "primary_keyword": "charter timeline planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-6",
+      "category": "Air Charter",
+      "name": "Aircraft Payload Range Checker",
+      "slug": "/tools/aircraft-payload-range-checker/",
+      "primary_keyword": "aircraft payload range checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "air-charter-7",
+      "category": "Air Charter",
+      "name": "Charter Document Checklist",
+      "slug": "/tools/charter-document-checklist/",
+      "primary_keyword": "charter document checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-8",
+      "category": "Air Charter",
+      "name": "Dangerous Goods Charter Screen",
+      "slug": "/tools/dangerous-goods-charter-screen/",
+      "primary_keyword": "dangerous goods charter screen",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "air-charter-9",
+      "category": "Air Charter",
+      "name": "Empty-Leg Opportunity Monitor",
+      "slug": "/tools/empty-leg-opportunity-monitor/",
+      "primary_keyword": "empty-leg opportunity monitor",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "air-charter-10",
+      "category": "Air Charter",
+      "name": "Charter Readiness Score",
+      "slug": "/tools/charter-readiness-score/",
+      "primary_keyword": "charter readiness score",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "customs-docs-1",
+      "category": "Customs & Docs",
+      "name": "Air Waybill Generator Checklist",
+      "slug": "/tools/air-waybill-generator-checklist/",
+      "primary_keyword": "air waybill generator checklist",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-2",
+      "category": "Customs & Docs",
+      "name": "Commercial Invoice Checker",
+      "slug": "/tools/commercial-invoice-checker/",
+      "primary_keyword": "commercial invoice checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-3",
+      "category": "Customs & Docs",
+      "name": "Packing List Validator",
+      "slug": "/tools/packing-list-validator/",
+      "primary_keyword": "packing list validator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-4",
+      "category": "Customs & Docs",
+      "name": "HS Code Prep Checklist",
+      "slug": "/tools/hs-code-prep-checklist/",
+      "primary_keyword": "HS code prep checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-5",
+      "category": "Customs & Docs",
+      "name": "Export License Screen",
+      "slug": "/tools/export-license-screen/",
+      "primary_keyword": "export license screen",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-6",
+      "category": "Customs & Docs",
+      "name": "Certificate Of Origin Checklist",
+      "slug": "/tools/certificate-of-origin-checklist/",
+      "primary_keyword": "certificate of origin checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-7",
+      "category": "Customs & Docs",
+      "name": "MSDS Document Checker",
+      "slug": "/tools/msds-document-checker/",
+      "primary_keyword": "MSDS document checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-8",
+      "category": "Customs & Docs",
+      "name": "Africa Customs Document Checklist",
+      "slug": "/tools/africa-customs-document-checklist/",
+      "primary_keyword": "Africa customs document checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-9",
+      "category": "Customs & Docs",
+      "name": "Middle East Customs Document Checklist",
+      "slug": "/tools/middle-east-customs-document-checklist/",
+      "primary_keyword": "Middle East customs document checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "customs-docs-10",
+      "category": "Customs & Docs",
+      "name": "EU Import Document Checklist",
+      "slug": "/tools/eu-import-document-checklist/",
+      "primary_keyword": "EU import document checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-1",
+      "category": "Dangerous Goods",
+      "name": "Lithium Battery Air Freight Checklist",
+      "slug": "/tools/lithium-battery-air-freight-checklist/",
+      "primary_keyword": "lithium battery air freight checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-2",
+      "category": "Dangerous Goods",
+      "name": "DG Class Quick Lookup",
+      "slug": "/tools/dg-class-quick-lookup/",
+      "primary_keyword": "DG class quick lookup",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-3",
+      "category": "Dangerous Goods",
+      "name": "UN Number Shipping Checklist",
+      "slug": "/tools/un-number-shipping-checklist/",
+      "primary_keyword": "UN number shipping checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-4",
+      "category": "Dangerous Goods",
+      "name": "IATA DGR Document Screen",
+      "slug": "/tools/iata-dgr-document-screen/",
+      "primary_keyword": "IATA DGR document screen",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-5",
+      "category": "Dangerous Goods",
+      "name": "SDS Completeness Checker",
+      "slug": "/tools/sds-completeness-checker/",
+      "primary_keyword": "SDS completeness checker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-6",
+      "category": "Dangerous Goods",
+      "name": "Packing Instruction Finder",
+      "slug": "/tools/packing-instruction-finder/",
+      "primary_keyword": "packing instruction finder",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-7",
+      "category": "Dangerous Goods",
+      "name": "Restricted Cargo Acceptance Screen",
+      "slug": "/tools/restricted-cargo-acceptance-screen/",
+      "primary_keyword": "restricted cargo acceptance screen",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-8",
+      "category": "Dangerous Goods",
+      "name": "DG Label Checklist",
+      "slug": "/tools/dg-label-checklist/",
+      "primary_keyword": "DG label checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-9",
+      "category": "Dangerous Goods",
+      "name": "Temperature Control Compliance Checklist",
+      "slug": "/tools/temperature-control-compliance-checklist/",
+      "primary_keyword": "temperature control compliance checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "dangerous-goods-10",
+      "category": "Dangerous Goods",
+      "name": "Magnetized Material Checklist",
+      "slug": "/tools/magnetized-material-checklist/",
+      "primary_keyword": "magnetized material checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "lane-specific-1",
+      "category": "Lane-Specific",
+      "name": "China To Nigeria Air Freight Estimator",
+      "slug": "/tools/china-to-nigeria-air-freight-estimator/",
+      "primary_keyword": "china to nigeria air freight estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-2",
+      "category": "Lane-Specific",
+      "name": "China To Ghana Cargo Checklist",
+      "slug": "/tools/china-to-ghana-cargo-checklist/",
+      "primary_keyword": "china to ghana cargo checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-3",
+      "category": "Lane-Specific",
+      "name": "China To UAE Air Freight Estimator",
+      "slug": "/tools/china-to-uae-air-freight-estimator/",
+      "primary_keyword": "china to UAE air freight estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-4",
+      "category": "Lane-Specific",
+      "name": "China To Saudi Customs Checklist",
+      "slug": "/tools/china-to-saudi-customs-checklist/",
+      "primary_keyword": "china to Saudi customs checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-5",
+      "category": "Lane-Specific",
+      "name": "China To USA Air Freight Calculator",
+      "slug": "/tools/china-to-usa-air-freight-calculator/",
+      "primary_keyword": "china to USA air freight calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-6",
+      "category": "Lane-Specific",
+      "name": "China To Germany Transit Planner",
+      "slug": "/tools/china-to-germany-transit-planner/",
+      "primary_keyword": "china to Germany transit planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-7",
+      "category": "Lane-Specific",
+      "name": "China To Kenya Cargo Checklist",
+      "slug": "/tools/china-to-kenya-cargo-checklist/",
+      "primary_keyword": "china to Kenya cargo checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-8",
+      "category": "Lane-Specific",
+      "name": "China To South Africa Air Freight Estimator",
+      "slug": "/tools/china-to-south-africa-air-freight-estimator/",
+      "primary_keyword": "china to South Africa air freight estimator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-9",
+      "category": "Lane-Specific",
+      "name": "China To Brazil Route Planner",
+      "slug": "/tools/china-to-brazil-route-planner/",
+      "primary_keyword": "china to Brazil route planner",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "lane-specific-10",
+      "category": "Lane-Specific",
+      "name": "China To Mexico Air Cargo Checklist",
+      "slug": "/tools/china-to-mexico-air-cargo-checklist/",
+      "primary_keyword": "china to Mexico air cargo checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "procurement-1",
+      "category": "Procurement",
+      "name": "Freight RFQ Template Generator",
+      "slug": "/tools/freight-rfq-template-generator/",
+      "primary_keyword": "freight RFQ template generator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-2",
+      "category": "Procurement",
+      "name": "Forwarder Comparison Scorecard",
+      "slug": "/tools/forwarder-comparison-scorecard/",
+      "primary_keyword": "forwarder comparison scorecard",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-3",
+      "category": "Procurement",
+      "name": "Landed Cost Worksheet",
+      "slug": "/tools/landed-cost-worksheet/",
+      "primary_keyword": "landed cost worksheet",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-4",
+      "category": "Procurement",
+      "name": "Incoterms Selector",
+      "slug": "/tools/incoterms-selector/",
+      "primary_keyword": "incoterms selector",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-5",
+      "category": "Procurement",
+      "name": "Air Vs Ocean Decision Tool",
+      "slug": "/tools/air-vs-ocean-decision-tool/",
+      "primary_keyword": "air vs ocean decision tool",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-6",
+      "category": "Procurement",
+      "name": "Supplier Cargo Readiness Checklist",
+      "slug": "/tools/supplier-cargo-readiness-checklist/",
+      "primary_keyword": "supplier cargo readiness checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-7",
+      "category": "Procurement",
+      "name": "Lead Time Buffer Calculator",
+      "slug": "/tools/lead-time-buffer-calculator/",
+      "primary_keyword": "lead time buffer calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-8",
+      "category": "Procurement",
+      "name": "Insurance Value Calculator",
+      "slug": "/tools/insurance-value-calculator/",
+      "primary_keyword": "insurance value calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-9",
+      "category": "Procurement",
+      "name": "Shipment Priority Score",
+      "slug": "/tools/shipment-priority-score/",
+      "primary_keyword": "shipment priority score",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "procurement-10",
+      "category": "Procurement",
+      "name": "Quote Normalization Tool",
+      "slug": "/tools/quote-normalization-tool/",
+      "primary_keyword": "quote normalization tool",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-1",
+      "category": "Tracking & Intelligence",
+      "name": "MAWB Tracking Hub",
+      "slug": "/tools/mawb-tracking-hub/",
+      "primary_keyword": "MAWB tracking hub",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-2",
+      "category": "Tracking & Intelligence",
+      "name": "Airline Cargo Tracking Directory",
+      "slug": "/tools/airline-cargo-tracking-directory/",
+      "primary_keyword": "airline cargo tracking directory",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-3",
+      "category": "Tracking & Intelligence",
+      "name": "Air Cargo Market Update Dashboard",
+      "slug": "/tools/air-cargo-market-update-dashboard/",
+      "primary_keyword": "air cargo market update dashboard",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-4",
+      "category": "Tracking & Intelligence",
+      "name": "Airport Disruption Monitor",
+      "slug": "/tools/airport-disruption-monitor/",
+      "primary_keyword": "airport disruption monitor",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-5",
+      "category": "Tracking & Intelligence",
+      "name": "Fuel Surcharge Tracker",
+      "slug": "/tools/fuel-surcharge-tracker/",
+      "primary_keyword": "fuel surcharge tracker",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-6",
+      "category": "Tracking & Intelligence",
+      "name": "Capacity Watchlist",
+      "slug": "/tools/capacity-watchlist/",
+      "primary_keyword": "capacity watchlist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-7",
+      "category": "Tracking & Intelligence",
+      "name": "Rate Trend Explainer",
+      "slug": "/tools/rate-trend-explainer/",
+      "primary_keyword": "rate trend explainer",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-8",
+      "category": "Tracking & Intelligence",
+      "name": "Carrier Embargo Monitor",
+      "slug": "/tools/carrier-embargo-monitor/",
+      "primary_keyword": "carrier embargo monitor",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-9",
+      "category": "Tracking & Intelligence",
+      "name": "Holiday Calendar By Lane",
+      "slug": "/tools/holiday-calendar-by-lane/",
+      "primary_keyword": "holiday calendar by lane",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "tracking-intelligence-10",
+      "category": "Tracking & Intelligence",
+      "name": "Freight News Signal Board",
+      "slug": "/tools/freight-news-signal-board/",
+      "primary_keyword": "freight news signal board",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-1",
+      "category": "Conversion Tools",
+      "name": "Instant Project Cargo Qualification",
+      "slug": "/tools/instant-project-cargo-qualification/",
+      "primary_keyword": "instant project cargo qualification",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Request lane/project quote"
+    },
+    {
+      "id": "conversion-tools-2",
+      "category": "Conversion Tools",
+      "name": "Sales Email Builder For Shipment Inquiry",
+      "slug": "/tools/sales-email-builder-for-shipment-inquiry/",
+      "primary_keyword": "sales email builder for shipment inquiry",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-3",
+      "category": "Conversion Tools",
+      "name": "WhatsApp RFQ Link Generator",
+      "slug": "/tools/whatsapp-rfq-link-generator/",
+      "primary_keyword": "WhatsApp RFQ link generator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-4",
+      "category": "Conversion Tools",
+      "name": "Upload Document Intake Form",
+      "slug": "/tools/upload-document-intake-form/",
+      "primary_keyword": "upload document intake form",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-5",
+      "category": "Conversion Tools",
+      "name": "Lead Scoring Calculator",
+      "slug": "/tools/lead-scoring-calculator/",
+      "primary_keyword": "lead scoring calculator",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-6",
+      "category": "Conversion Tools",
+      "name": "Cargo Photo Requirement Checklist",
+      "slug": "/tools/cargo-photo-requirement-checklist/",
+      "primary_keyword": "cargo photo requirement checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-7",
+      "category": "Conversion Tools",
+      "name": "Quote Follow-Up Scheduler",
+      "slug": "/tools/quote-follow-up-scheduler/",
+      "primary_keyword": "quote follow-up scheduler",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-8",
+      "category": "Conversion Tools",
+      "name": "Shipment Readiness Assessment",
+      "slug": "/tools/shipment-readiness-assessment/",
+      "primary_keyword": "shipment readiness assessment",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-9",
+      "category": "Conversion Tools",
+      "name": "Freight Risk Score",
+      "slug": "/tools/freight-risk-score/",
+      "primary_keyword": "freight risk score",
+      "target_intent": "Tool / commercial investigation",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    },
+    {
+      "id": "conversion-tools-10",
+      "category": "Conversion Tools",
+      "name": "Customer Onboarding Checklist",
+      "slug": "/tools/customer-onboarding-checklist/",
+      "primary_keyword": "customer onboarding checklist",
+      "target_intent": "Operational informational",
+      "conversion_cta": "Send checked shipment to EASCargo"
+    }
+  ],
+  "article_matrix": [
+    {
+      "bucket": "Route guide",
+      "count": 250,
+      "template": "Air freight from China to {country/city}: cost, transit time, airports, documents, RFQ checklist"
+    },
+    {
+      "bucket": "Cargo type guide",
+      "count": 150,
+      "template": "How to ship {cargo type} by air from China: packaging, airline acceptance, risks, quote data"
+    },
+    {
+      "bucket": "Customs/document guide",
+      "count": 150,
+      "template": "Documents required for air freight from China to {market}: invoice, packing list, HS code, permits"
+    },
+    {
+      "bucket": "Project cargo guide",
+      "count": 120,
+      "template": "Oversized/heavy cargo air freight guide for {industry}: aircraft fit, lifting, route planning"
+    },
+    {
+      "bucket": "Air charter guide",
+      "count": 80,
+      "template": "Cargo charter from China to {region}: aircraft options, timeline, cost drivers"
+    },
+    {
+      "bucket": "Industry guide",
+      "count": 100,
+      "template": "Air freight logistics for {industry}: parts, machinery, samples, urgent replenishment"
+    },
+    {
+      "bucket": "Tool explainer",
+      "count": 80,
+      "template": "How to use {tool}: calculation examples and RFQ preparation"
+    },
+    {
+      "bucket": "Market intelligence",
+      "count": 70,
+      "template": "Weekly/monthly air cargo market update for {lane/region}: capacity, surcharge, disruption, demand"
+    }
+  ],
+  "nextjs_architecture": {
+    "framework": "Next.js App Router on Vercel",
+    "rendering": [
+      "Static generation for evergreen pages",
+      "ISR for market intelligence and route pages",
+      "Edge middleware only for routing/geo experiments, not SEO-critical rendering"
+    ],
+    "data": [
+      "Supabase Postgres for keywords, competitors, pages, leads, agent runs",
+      "Supabase Storage for cargo photos/doc uploads",
+      "pgvector for semantic keyword/content clustering"
+    ],
+    "cms": [
+      "Payload CMS on Postgres/Supabase for owned content model",
+      "Editorial workflow statuses: idea, outline, drafted, fact_checked, published, refresh_due"
+    ],
+    "seo_automation": [
+      "metadata factory per page type",
+      "schema factory for Organization, Service, FAQPage, HowTo, SoftwareApplication, BreadcrumbList, Dataset, Article",
+      "sitemap index split by site/page type",
+      "internal link graph generated from topical clusters",
+      "canonical rules per vertical site",
+      "robots and llms.txt generated from route registry"
+    ],
+    "lead_system": [
+      "RFQ forms by tool/lane/cargo type",
+      "Lead score by cargo complexity, lane, urgency, commercial value",
+      "Supabase lead table + email/CRM handoff",
+      "Source attribution with UTM and page intent"
+    ]
+  },
+  "daily_agents": [
+    "SEO Research Agent",
+    "Content Writer Agent",
+    "Competitor Monitor Agent",
+    "Keyword Discovery Agent",
+    "Customer Lead Agent",
+    "Freight Intelligence Agent"
+  ]
+}
