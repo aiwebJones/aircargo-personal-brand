@@ -4,17 +4,52 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUp, ClipboardCheck, Mail, MessageCircle, Phone } from 'lucide-react'
 
+const footerGroups = [
+  {
+    title: '核心航线',
+    links: [
+      ['非洲航线 Hub', '/africa-air-freight/'],
+      ['JNB 约翰内斯堡', '/africa-air-freight/jnb/'],
+      ['FBM 卢本巴希', '/africa-air-freight/fbm/'],
+      ['LUN 卢萨卡', '/africa-air-freight/lun/'],
+      ['LBV 利伯维尔', '/africa-air-freight/lbv/'],
+    ],
+  },
+  {
+    title: '航线与案例',
+    links: [
+      ['当前航线项目', '/route-programs/'],
+      ['MLE/SIN/MNL 经 ADD', '/route-programs/et-asia-africa-via-add/'],
+      ['LGG/BRU 中转方案', '/zh/lgg-africa-gateway/'],
+      ['公开项目记录', '/cases/'],
+    ],
+  },
+  {
+    title: '询价工具',
+    links: [
+      ['项目货询价 Agent', '/tools/africa-project-cargo-rfq/?source=home-footer-links'],
+      ['非洲空运工具箱', '/tools/'],
+      ['计费重计算器', '/tools/air-freight-chargeable-weight-calculator/'],
+      ['清关资料生成器', '/tools/africa-air-freight-customs-document-checklist/'],
+    ],
+  },
+  {
+    title: '专业资料',
+    links: [
+      ['全部专业资料', '/insights/'],
+      ['超大件询价清单', '/insights/oversized-air-freight-quote-checklist/'],
+      ['非洲清关资料清单', '/insights/africa-customs-documents-checklist-air-freight/'],
+      ['矿业设备询价模板', '/insights/africa-mining-equipment-air-freight-rfq-template/'],
+    ],
+  },
+] as const
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   const [wechatCopyState, setWechatCopyState] = useState<'idle' | 'copied' | 'manual'>('idle')
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
   const copyWechat = async () => {
     let copied = false
-
     try {
       await navigator.clipboard.writeText('jnb931')
       copied = true
@@ -28,210 +63,49 @@ export default function Footer() {
       copied = document.execCommand('copy')
       input.remove()
     }
-
     setWechatCopyState(copied ? 'copied' : 'manual')
     window.setTimeout(() => setWechatCopyState('idle'), 2500)
   }
 
   return (
-    <footer className="py-16 border-t border-borderLight bg-surface">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* 联系方式 */}
+    <footer className="border-t border-borderLight bg-surface py-14">
+      <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h3 className="text-xl font-bold text-textPrimary mb-6 text-center">
-            直接与主理人郑坚交流
-          </h3>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="/tools/africa-project-cargo-rfq/?source=home-footer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-amberGold text-textPrimary font-medium rounded-lg hover:bg-amberGold/90 transition-colors"
-            >
-              <ClipboardCheck className="w-5 h-5" />
-              <span>提交逐票询价</span>
+          <h3 className="mb-5 text-center text-xl font-bold text-textPrimary">把货物资料发来，先判断路线是否成立</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="/tools/africa-project-cargo-rfq/?source=home-footer" className="inline-flex items-center gap-2 rounded-lg bg-amberGold px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-400">
+              <ClipboardCheck className="h-5 w-5" />项目货询价 Agent
             </a>
-            <button
-              type="button"
-              onClick={copyWechat}
-              aria-live="polite"
-              title="复制微信号 jnb931"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>
-                {wechatCopyState === 'copied'
-                  ? '已复制微信号：jnb931'
-                  : wechatCopyState === 'manual'
-                    ? '请手动复制微信号：jnb931'
-                    : '微信：jnb931（点击复制）'}
-              </span>
+            <button type="button" onClick={copyWechat} aria-live="polite" title="复制微信号 jnb931" className="inline-flex items-center gap-2 rounded-lg border border-borderLight px-5 py-3 font-medium text-textSecondary transition hover:border-amberGold hover:text-amberGold">
+              <MessageCircle className="h-5 w-5" />
+              {wechatCopyState === 'copied' ? '已复制：jnb931' : wechatCopyState === 'manual' ? '请复制：jnb931' : '微信：jnb931'}
             </button>
-            <a
-              href="mailto:globegsa@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
-            >
-              <Mail className="w-5 h-5" />
-              <span>globegsa@gmail.com</span>
-            </a>
-            <a
-              href="tel:+8613816539222"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-borderLight text-textSecondary font-medium rounded-lg hover:border-amberGold hover:text-amberGold transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              <span>+86 138 1653 9222</span>
-            </a>
+            <a href="mailto:globegsa@gmail.com" className="inline-flex items-center gap-2 rounded-lg border border-borderLight px-5 py-3 font-medium text-textSecondary transition hover:border-amberGold hover:text-amberGold"><Mail className="h-5 w-5" />globegsa@gmail.com</a>
+            <a href="tel:+8613816539222" className="inline-flex items-center gap-2 rounded-lg border border-borderLight px-5 py-3 font-medium text-textSecondary transition hover:border-amberGold hover:text-amberGold"><Phone className="h-5 w-5" />+86 138 1653 9222</a>
           </div>
         </motion.div>
 
-        {/* 底部信息 */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-borderLight">
-          {/* Logo / Name */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-textPrimary font-semibold">神仙货运 Jones</p>
-            <p className="text-textMuted text-sm">16年空运实操 · 大件项目货 · 非洲欧洲中转</p>
-          </motion.div>
+        <nav aria-label="页脚导航" className="grid gap-8 border-t border-borderLight py-8 sm:grid-cols-2 lg:grid-cols-4">
+          {footerGroups.map((group) => (
+            <div key={group.title}>
+              <h4 className="mb-3 text-sm font-semibold text-textPrimary">{group.title}</h4>
+              <div className="grid gap-2 text-sm text-textMuted">
+                {group.links.map(([label, href]) => <a key={href} href={href} className="hover:text-amberGold">{label}</a>)}
+              </div>
+            </div>
+          ))}
+        </nav>
 
-          {/* Back to top */}
-          <motion.button
-            onClick={scrollToTop}
-            className="flex items-center gap-2 text-textMuted hover:text-amberGold transition-colors"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="text-sm">回到顶部</span>
-            <ArrowUp className="w-4 h-4" />
-          </motion.button>
-
-          {/* Copyright */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-textMuted text-sm"
-          >
-            <p>© {currentYear} 神仙货运Jones. 保留所有权利.</p>
-          </motion.div>
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-borderLight pt-7 text-sm text-textMuted md:flex-row">
+          <div><p className="font-semibold text-textPrimary">EASCargo Jones · 神仙货运</p><p>中国到非洲大件项目货逐票路线判断</p></div>
+          <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="inline-flex items-center gap-2 transition hover:text-amberGold"><span>回到顶部</span><ArrowUp className="h-4 w-4" /></button>
+          <p>© {currentYear} EASCargo Jones</p>
         </div>
-
-        <div className="mt-10 grid gap-6 border-t border-borderLight pt-8 md:grid-cols-4">
-          <div>
-            <h4 className="mb-3 text-sm font-semibold text-textPrimary">非洲航线</h4>
-            <div className="grid gap-2 text-sm text-textMuted">
-              <a href="/route-programs/" className="hover:text-amberGold">当前航线项目</a>
-              <a href="/route-programs/et-asia-africa-via-add/" className="hover:text-amberGold">MLE/SIN/MNL 经ADD至非洲</a>
-              <a href="/africa-air-freight/" className="hover:text-amberGold">非洲空运航线 Hub</a>
-              <a href="/africa-air-freight/jnb/" className="hover:text-amberGold">JNB 约翰内斯堡空运</a>
-              <a href="/africa-air-freight/fbm/" className="hover:text-amberGold">FBM 卢本巴希空运</a>
-              <a href="/africa-air-freight/lun/" className="hover:text-amberGold">LUN 卢萨卡空运</a>
-            </div>
-          </div>
-          <div>
-            <h4 className="mb-3 text-sm font-semibold text-textPrimary">大件专题</h4>
-            <div className="grid gap-2 text-sm text-textMuted">
-              <a href="/zh/lgg-africa-gateway/" className="hover:text-amberGold">LGG/BRU 非洲中转网络</a>
-              <a href="/china-africa-oversized-cargo-via-europe/" className="hover:text-amberGold">LGG Africa Gateway</a>
-              <a href="/insights/oversized-air-freight-quote-checklist/" className="hover:text-amberGold">超大件空运询价清单</a>
-              <a href="/insights/africa-customs-documents-checklist-air-freight/" className="hover:text-amberGold">非洲清关资料清单</a>
-            </div>
-          </div>
-          <div>
-            <h4 className="mb-3 text-sm font-semibold text-textPrimary">西非与东非</h4>
-            <div className="grid gap-2 text-sm text-textMuted">
-              <a href="/africa-air-freight/acc/" className="hover:text-amberGold">ACC 阿克拉空运</a>
-              <a href="/africa-air-freight/abj/" className="hover:text-amberGold">ABJ 阿比让空运</a>
-              <a href="/africa-air-freight/nbo/" className="hover:text-amberGold">NBO 内罗毕空运</a>
-              <a href="/insights/east-africa-nbo-ebb-dar-project-cargo/" className="hover:text-amberGold">东非项目货入口</a>
-            </div>
-          </div>
-          <div>
-            <h4 className="mb-3 text-sm font-semibold text-textPrimary">询价入口</h4>
-            <div className="grid gap-2 text-sm text-textMuted">
-              <a href="/tools/africa-project-cargo-rfq/?source=home-footer-links" className="font-semibold text-amber-700 hover:text-amberGold">中国到非洲逐票询价</a>
-              <a href="/tools/" className="hover:text-amberGold">非洲空运工具箱</a>
-              <a href="/tools/air-freight-chargeable-weight-calculator/" className="hover:text-amberGold">空运计费重计算器</a>
-              <a href="/tools/africa-air-freight-customs-document-checklist/" className="hover:text-amberGold">非洲清关资料生成器</a>
-              <a href="/insights/china-africa-air-freight-cost-chargeable-weight/" className="hover:text-amberGold">非洲空运多少钱一公斤</a>
-              <a href="/insights/china-africa-air-freight-forwarder-for-factories/" className="hover:text-amberGold">工厂找非洲空运货代</a>
-              <a href="/insights/africa-mining-equipment-air-freight-rfq-template/" className="hover:text-amberGold">矿业设备空运询价模板</a>
-              <a href="/insights/oversized-air-cargo-booking-documents-main-deck-africa/" className="hover:text-amberGold">超大件主甲板订舱资料</a>
-              <a href="/insights/eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight/" className="hover:text-amberGold">欧盟ICS2/NCTS政策更新</a>
-              <a href="/insights/ghana-acc-easypass-icums-air-freight-clearance/" className="hover:text-amberGold">加纳EasyPASS 2026</a>
-              <a href="/insights/egypt-cai-nafeza-aci-cargox-air-freight-clearance/" className="hover:text-amberGold">埃及ACI空运2026</a>
-              <a href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/" className="hover:text-amberGold">尼日利亚B’Odogwu清关</a>
-              <a href="/insights/nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance/" className="hover:text-amberGold">PHC油气备件清关</a>
-              <a href="/insights/iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight/" className="hover:text-amberGold">IATA锂电池DGR第67版</a>
-              <a href="/insights/air-cargo-data-loggers-tracking-devices-africa-cold-chain/" className="hover:text-amberGold">温控货数据记录仪</a>
-              <a href="/insights/rwanda-kgl-rra-rsb-air-freight-clearance-documents/" className="hover:text-amberGold">卢旺达KGL清关资料</a>
-              <a href="/insights/mozambique-mpm-mcnet-jue-air-freight-clearance/" className="hover:text-amberGold">莫桑比克MPM清关</a>
-              <a href="/insights/mali-bko-sydonia-import-intention-air-freight-clearance/" className="hover:text-amberGold">马里BKO清关资料</a>
-              <a href="/insights/guinea-cky-guceg-import-declaration-air-freight-clearance/" className="hover:text-amberGold">几内亚CKY清关资料</a>
-              <a href="/insights/burkina-faso-oua-sydonia-waemu-air-freight-clearance/" className="hover:text-amberGold">布基纳法索OUA清关</a>
-              <a href="/insights/niger-nim-guce-asycuda-air-freight-clearance/" className="hover:text-amberGold">尼日尔NIM清关资料</a>
-              <a href="/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/" className="hover:text-amberGold">加蓬LBV清关资料</a>
-              <a href="/insights/drc-fbm-guice-bivac-mining-spares-air-freight-clearance/" className="hover:text-amberGold">刚果金FBM矿业清关</a>
-              <a href="/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/" className="hover:text-amberGold">南非CPT/DUR清关</a>
-              <a href="/insights/south-africa-cpt-dur-port-marine-equipment-air-freight/" className="hover:text-amberGold">南非港口设备空运</a>
-              <a href="/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/" className="hover:text-amberGold">喀麦隆DLA清关资料</a>
-              <a href="/insights/togo-lfw-awb-certificate-origin-air-freight-clearance/" className="hover:text-amberGold">多哥LFW清关资料</a>
-              <a href="/insights/benin-coo-guce-avd-origin-air-freight-clearance/" className="hover:text-amberGold">贝宁COO清关资料</a>
-              <a href="/insights/chad-ndj-air-waybill-asycuda-import-documents-clearance/" className="hover:text-amberGold">乍得NDJ清关资料</a>
-              <a href="/insights/angola-lad-asycuda-aduaneiro-air-freight-clearance/" className="hover:text-amberGold">安哥拉LAD清关资料</a>
-              <a href="/insights/botswana-gbe-burs-single-window-sad500-air-freight-clearance/" className="hover:text-amberGold">博茨瓦纳GBE清关</a>
-              <a href="/insights/malawi-blz-llw-mra-asycuda-form12-air-freight-clearance/" className="hover:text-amberGold">马拉维BLZ/LLW清关</a>
-              <a href="/insights/sierra-leone-fna-nra-asycuda-idf-air-freight-clearance/" className="hover:text-amberGold">塞拉利昂FNA清关</a>
-              <a href="/insights/liberia-rob-lra-asycuda-bivac-air-freight-clearance/" className="hover:text-amberGold">利比里亚ROB清关</a>
-              <a href="/insights/gambia-bjl-gra-asycuda-sad-air-freight-clearance/" className="hover:text-amberGold">冈比亚BJL清关</a>
-              <a href="/insights/mauritania-nkc-douanes-sydonia-sgs-air-freight-clearance/" className="hover:text-amberGold">毛里塔尼亚NKC清关</a>
-              <a href="/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/" className="hover:text-amberGold">马达加斯加TNR清关</a>
-              <a href="/insights/mauritius-mru-mra-tradenet-boe-air-freight-clearance/" className="hover:text-amberGold">毛里求斯MRU清关</a>
-              <a href="/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/" className="hover:text-amberGold">塞舌尔SEZ清关</a>
-              <a href="/insights/djibouti-jib-dpcs-air-waybill-air-freight-clearance/" className="hover:text-amberGold">吉布提JIB清关</a>
-              <a href="/insights/cabo-verde-rai-dnre-customs-air-freight-clearance/" className="hover:text-amberGold">佛得角RAI清关</a>
-              <a href="/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/" className="hover:text-amberGold">阿尔及利亚ALG清关</a>
-              <a href="/insights/tunisia-tun-sinda-ttn-air-waybill-customs-clearance/" className="hover:text-amberGold">突尼斯TUN清关</a>
-              <a href="/insights/congo-brazzaville-bzv-pnr-guot-cemac-air-freight-clearance/" className="hover:text-amberGold">刚果布BZV/PNR清关</a>
-              <a href="/insights/equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance/" className="hover:text-amberGold">赤道几内亚SSG/BSG清关</a>
-              <a href="/insights/libya-mji-ben-aci-asycuda-lc-air-freight-clearance/" className="hover:text-amberGold">利比亚MJI/BEN清关</a>
-              <a href="/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/" className="hover:text-amberGold">南苏丹JUB清关</a>
-              <a href="/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/" className="hover:text-amberGold">索马里MGQ清关</a>
-              <a href="/insights/burundi-bjm-asycuda-single-window-pvoc-air-freight-clearance/" className="hover:text-amberGold">布隆迪BJM清关</a>
-              <a href="/insights/central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance/" className="hover:text-amberGold">中非BGF清关</a>
-              <a href="/insights/eritrea-asm-asycuda-world-import-permit-air-freight-clearance/" className="hover:text-amberGold">厄立特里亚ASM清关</a>
-              <a href="/insights/lesotho-msu-asycuda-world-import-permit-air-freight-clearance/" className="hover:text-amberGold">莱索托MSU清关</a>
-              <a href="/insights/guinea-bissau-oxb-asycudaworld-cee-air-freight-clearance/" className="hover:text-amberGold">几内亚比绍OXB清关</a>
-              <a href="/insights/sao-tome-principe-tms-asycudaworld-import-permit-air-freight-clearance/" className="hover:text-amberGold">圣多美TMS清关</a>
-              <a href="/insights/comoros-hah-asycuda-world-electronic-manifest-air-freight-clearance/" className="hover:text-amberGold">科摩罗HAH清关</a>
-              <a href="/insights/eswatini-sho-asycudaworld-sacu-first-port-import-permit-air-freight-clearance/" className="hover:text-amberGold">埃斯瓦蒂尼SHO清关</a>
-              <a href="/insights/zanzibar-znz-tancis-mainland-zanzibar-air-freight-clearance/" className="hover:text-amberGold">桑给巴尔ZNZ清关</a>
-              <a href="/insights/victoria-falls-vfa-zimra-asycuda-cbca-air-freight-clearance/" className="hover:text-amberGold">维多利亚瀑布VFA清关</a>
-              <a href="/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/" className="hover:text-amberGold">恩多拉NLA清关</a>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Quote */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 pt-8 border-t border-borderLight text-center"
-        >
-          <p className="text-textMuted text-sm tracking-wide">
-            "专注中国到非洲大件项目货：先判断能不能飞，再把欧洲中转、全货机和非洲二程路线做清楚"
-          </p>
-        </motion.div>
       </div>
     </footer>
   )

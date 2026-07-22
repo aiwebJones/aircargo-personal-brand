@@ -56,12 +56,12 @@ export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
               中国到非洲大件空运
               <br />
-              <span className="text-amberGold">国内直飞不了，也能经LGG/BRU做出来</span>
+              <span className="text-amberGold">先判断路线，再给逐票报价</span>
             </h1>
 
             <p className="mb-5 max-w-2xl text-xl leading-9 text-slate-600">
-              面向中国货代、工厂和贸易商：超长、超重、超高货先飞欧洲LGG/BRU，
-              再衔接B747F全货机或非洲Hub卡车中转，覆盖JNB、FBM、LUN、LBV及30+内陆目的地。
+              面向中国货代、工厂和贸易商：全国集货，逐票比较中国直出、ADD及LGG/BRU中转，
+              覆盖JNB、FBM、LUN、LBV及更多非洲项目地点。
             </p>
 
             <div className="mb-8 grid gap-3 text-base text-slate-700 sm:grid-cols-2">
@@ -76,24 +76,24 @@ export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
             </div>
 
             <div className="mb-8 flex flex-col gap-4 sm:flex-row">
+              <motion.a
+                href="/tools/africa-project-cargo-rfq/?source=home-hero-primary"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-amberGold px-7 py-4 text-base font-semibold text-slate-950 shadow-lg shadow-amberGold/20 transition hover:bg-amber-400"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                立即生成路线预判
+                <ArrowRight className="h-5 w-5" />
+              </motion.a>
+
               <motion.button
                 onClick={onOpenWechat}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amberGold to-orange-500 px-7 py-4 text-base font-semibold text-white shadow-xl shadow-amberGold/25 transition hover:shadow-amberGold/40"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-slate-950"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                发尺寸重量，先判断路线
-                <ArrowRight className="h-5 w-5" />
+                微信人工判断
               </motion.button>
-
-              <motion.a
-                href="/tools/africa-project-cargo-rfq/?source=home-hero"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-amberGold px-7 py-4 text-base font-semibold text-amberGold transition hover:bg-amberGold hover:text-white"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                提交逐票询价
-              </motion.a>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-sm text-slate-600 md:grid-cols-4">

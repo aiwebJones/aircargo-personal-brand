@@ -10,8 +10,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '中国到非洲大件空运专家 | JNB/FBM/LUN/LBV | LGG/BRU欧洲中转 | EASCargo Jones',
-  description: 'EASCargo Jones专注中国到非洲大件项目空运：JNB约翰内斯堡、FBM卢本巴希、LUN卢萨卡、LBV利伯维尔，提供LGG/BRU欧洲中转、B747F全货机、矿业设备和清关资料预判。',
+  title: '中国到非洲大件空运与项目货询价 | EASCargo Jones',
+  description: 'EASCargo提供中国到非洲大件和项目货逐票询价：全国集货，比较中国直出、ADD及LGG/BRU中转，核对装载、清关和最终交付。',
   keywords: [
     '非洲大件项目空运',
     'LGG欧洲中转非洲',
