@@ -1,6 +1,6 @@
 # EASCargo Jones Full AI Reference
 
-Last updated: 2026-07-20
+Last updated: 2026-07-23
 Canonical site: https://www.eascargo.com/
 Primary languages: Chinese and English
 Primary contact: Jones / Shenxian Cargo / EASCargo Jones
@@ -103,6 +103,7 @@ These airports are comparison points, not claims of direct or guaranteed service
 ### JNB - Johannesburg, South Africa
 
 Canonical route page: https://www.eascargo.com/africa-air-freight/jnb/
+Detailed mining-spares route guide: https://www.eascargo.com/insights/jnb-mining-spares-air-freight/
 
 JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
 
