@@ -753,7 +753,7 @@ const lunGatewayChecks = [
 ]
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
-  jnb: '2026-07-13',
+  jnb: '2026-07-24',
   fbm: '2026-07-13',
   lun: '2026-07-16',
   lbv: '2026-07-13',
@@ -957,6 +957,11 @@ function getFaq(item: (typeof pages)[Slug]) {
       answer: nationwideOriginFaq!.answer,
     },
     {
+      question: 'Can cargo move from FOC Fuzhou to JNB Johannesburg?',
+      answer:
+        'Yes, FOC is one origin option within EASCargo\'s nationwide China collection network, but it is not presented as a guaranteed direct service. For each shipment, compare FOC uplift and transfer acceptance with XMN, PVG, CAN, SZX, HKG or HAK feeder options. The decision depends on the factory location, piece dimensions and weight, cargo-ready date, current aircraft capacity, transit handling and the JNB customs and final-delivery plan.',
+    },
+    {
       question: 'What must a South African importer prepare before JNB arrival?',
       answer:
         'Confirm the importer or registered agent, customs code, clearing broker, HS Code, invoice, packing list, AWB data and Goods Declaration inputs. Restricted products may require a permit, certificate or Letter of Authority, and used goods may require ITAC import control before shipment.',
@@ -1028,7 +1033,7 @@ function currentMetadataTitle(
   item: (typeof pages)[Slug],
   chinese: (typeof chineseDestinations)[Slug],
 ) {
-  if (slug === 'jnb') return 'JNB约翰内斯堡空运 | 中国各大机场到南非项目货 | EASCargo Jones'
+  if (slug === 'jnb') return '全国到JNB约翰内斯堡空运 | FOC/PVG/CAN南非项目货 | EASCargo'
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return 'LBV利伯维尔空运 | 中国各大机场到加蓬长货项目 | EASCargo Jones'
@@ -1042,7 +1047,7 @@ function currentMetadataDescription(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') {
-    return '中国各大机场到JNB约翰内斯堡空运：比较PVG、CAN、SZX、PEK、XMN、FOC、CTU、CKG、HAK起运，全球Hub中转、LGG/BRU主甲板、SARS清关和南部非洲交付。'
+    return '全国集货到JNB约翰内斯堡空运：FOC福州货可比较XMN、PVG、CAN、SZX、HKG或HAK枢纽方案，再核实中转、主甲板、SARS清关和南部非洲交付。'
   }
   if (slug === 'fbm') {
     return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
@@ -1089,7 +1094,11 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               {chinese ? `${item.code} - ${chinese.city} / ${item.city}, ${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
             </div>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              {chinese ? `中国到 ${item.code} ${chinese.city} 空运` : item.title}
+              {chinese
+                ? currentSlug === 'jnb'
+                  ? `全国集货到 ${item.code} ${chinese.city} 空运`
+                  : `中国到 ${item.code} ${chinese.city} 空运`
+                : item.title}
               {chinese && <span className="block text-amberGold">China to {item.city} project cargo</span>}
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
@@ -1365,6 +1374,19 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">{originStrategy.heading}</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">{originStrategy.intro}</p>
               </div>
+              {currentSlug === 'jnb' && (
+                <article className="mt-10 max-w-4xl border-l-4 border-amberGold bg-white p-6 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">FOC / Fuzhou to JNB</p>
+                  <h3 className="mt-2 text-2xl font-bold text-slate-950">
+                    FOC福州到JNB怎么走：比较本地起运与全国枢纽集运。
+                  </h3>
+                  <p className="mt-4 leading-8 text-slate-600">
+                    FOC是全国起运网络中的一个选择，不代表固定直飞、固定舱位或保证接受。福建工厂货先核对FOC本地收货、
+                    机型和中转条件，再把XMN起运，以及集卡到PVG、CAN、SZX、HKG或HAK的总成本与时效放在一起比较。
+                    超大件还要继续确认单件尺寸重量、舱门与地板限制、转运装卸、JNB清关和最终项目现场交付。
+                  </p>
+                </article>
+              )}
               <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {chinaOriginClusters.map((cluster) => (
                   <article key={cluster.region} className="rounded-lg border border-slate-200 bg-white p-6">
