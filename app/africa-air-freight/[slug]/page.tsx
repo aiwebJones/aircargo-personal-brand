@@ -756,7 +756,7 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   jnb: '2026-07-24',
   fbm: '2026-07-13',
   lun: '2026-07-16',
-  lbv: '2026-07-13',
+  lbv: '2026-07-25',
   nbo: '2026-07-18',
   bko: '2026-07-19',
   cky: '2026-07-19',
@@ -949,6 +949,23 @@ function getFaq(item: (typeof pages)[Slug]) {
     ]
   }
 
+  if (item.code === 'LBV') {
+    return [
+      nationwideOriginFaq!,
+      {
+        question: 'Can 6-8 metre cargo fly from China to LBV Libreville?',
+        answer:
+          'Potentially, but acceptance is decided piece by piece. EASCargo first checks the packed dimensions, weight, centre of gravity, loading direction, lifting points and crate strength, then compares China gateway collection, main-deck or B747F nose-door feasibility, transfer handling and LBV unloading. A route or aircraft type is not treated as confirmed until every operating leg accepts the actual piece.',
+      },
+      {
+        question: 'What is needed to quote China to LBV long cargo?',
+        answer:
+          'Send the factory location, cargo-ready date, commodity, HS Code, quantity, packed dimensions and gross weight for every piece, packing photos or drawings, lifting points, centre of gravity if known, consignee details and final delivery site. The quote should state the route boundary, handling assumptions, customs responsibility and whether airport collection or project-site delivery is required.',
+      },
+      ...commonFaq.slice(0, 2),
+    ]
+  }
+
   if (item.code !== 'JNB') return nationwideOriginFaq ? [nationwideOriginFaq, ...commonFaq] : commonFaq
 
   return [
@@ -1036,7 +1053,7 @@ function currentMetadataTitle(
   if (slug === 'jnb') return '全国到JNB约翰内斯堡空运 | FOC/PVG/CAN南非项目货 | EASCargo'
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
-  if (slug === 'lbv') return 'LBV利伯维尔空运 | 中国各大机场到加蓬长货项目 | EASCargo Jones'
+  if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
   if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCargo Jones'
   return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
 }
@@ -1056,7 +1073,7 @@ function currentMetadataDescription(
     return '中国各大机场到LUN卢萨卡空运：全国集货、LUN或NLA入口、ZRA/ASYCUDA资料、LGG/BRU主甲板及Lusaka/Copperbelt项目现场交付判断。'
   }
   if (slug === 'lbv') {
-    return '中国各大机场到LBV利伯维尔空运：全国集货、长货主甲板、LGG/BRU与B747F方案、加蓬清关及油气能源项目现场交付。'
+    return '全国集货到LBV利伯维尔空运：按单件尺寸判断6-8米超长货、B747F主甲板或LGG/BRU中转可行性，并核实加蓬清关、卸货和项目现场交付。'
   }
   if (slug === 'nbo') {
     return '中国到NBO内罗毕空运：结合肯尼亚JKIA项目货、PVoC/CoC、IDF、进口商KRA PIN、东非二程和最终现场交付边界做逐票判断。'
@@ -1095,7 +1112,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </div>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
               {chinese
-                ? currentSlug === 'jnb'
+                ? ['jnb', 'lbv'].includes(currentSlug)
                   ? `全国集货到 ${item.code} ${chinese.city} 空运`
                   : `中国到 ${item.code} ${chinese.city} 空运`
                 : item.title}
@@ -1384,6 +1401,19 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                     FOC是全国起运网络中的一个选择，不代表固定直飞、固定舱位或保证接受。福建工厂货先核对FOC本地收货、
                     机型和中转条件，再把XMN起运，以及集卡到PVG、CAN、SZX、HKG或HAK的总成本与时效放在一起比较。
                     超大件还要继续确认单件尺寸重量、舱门与地板限制、转运装卸、JNB清关和最终项目现场交付。
+                  </p>
+                </article>
+              )}
+              {currentSlug === 'lbv' && (
+                <article className="mt-10 max-w-4xl border-l-4 border-amberGold bg-white p-6 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">LBV long-cargo answer</p>
+                  <h3 className="mt-2 text-2xl font-bold text-slate-950">
+                    6-8米超长货能否空运到LBV，先用实际包装尺寸逐段验收。
+                  </h3>
+                  <p className="mt-4 leading-8 text-slate-600">
+                    EASCargo先核对每件货物的包装长宽高、毛重、重心、装载方向、吊点和箱体强度，再比较全国集货口岸、
+                    主甲板或B747F开鼻门装载、LGG/BRU或其他可确认中转方案、LBV卸货设备和最终项目现场交付。
+                    页面提到的机场和机型都是待比较选项，只有实际货物获得全程逐段接受后，路线才算可执行。
                   </p>
                 </article>
               )}
