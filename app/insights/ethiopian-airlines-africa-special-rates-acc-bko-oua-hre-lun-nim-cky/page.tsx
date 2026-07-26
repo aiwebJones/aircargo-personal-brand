@@ -43,11 +43,13 @@ const articleSchema = {
     'ET埃塞俄比亚航空经ADD中转覆盖多个非洲目的地，适合工厂、贸易商和项目客户做非洲空运路线判断。',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.eascargo.com/#jones',
     name: '神仙货运Jones',
     jobTitle: 'China to Africa Oversized Air Freight Specialist',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.eascargo.com/#organization',
     name: 'EASCargo Jones',
   },
   mainEntityOfPage:
