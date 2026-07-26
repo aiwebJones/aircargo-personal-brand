@@ -105,6 +105,7 @@ export default function AfricaAirFreightCustomsDocumentChecklistPage() {
     },
     provider: {
       '@type': 'Organization',
+      '@id': 'https://www.eascargo.com/#organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com/',
       email: 'globegsa@gmail.com',
