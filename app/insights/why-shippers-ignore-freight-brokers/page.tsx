@@ -36,11 +36,13 @@ const articleSchema = {
     '非洲大件项目货的销售重点不是泛泛报价，而是路线可执行性判断、资料缺口清单和风险预判。',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.eascargo.com/#jones',
     name: '神仙货运Jones',
     jobTitle: 'China to Africa Oversized Air Freight Specialist',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.eascargo.com/#organization',
     name: 'EASCargo Jones',
   },
   mainEntityOfPage: 'https://www.eascargo.com/insights/why-shippers-ignore-freight-brokers/',
