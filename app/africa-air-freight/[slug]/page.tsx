@@ -1645,7 +1645,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: item.title,
-            provider: { '@type': 'Organization', name: 'EASCargo Jones', url: 'https://www.eascargo.com' },
+            provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCargo Jones', url: 'https://www.eascargo.com' },
             areaServed: item.country,
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
