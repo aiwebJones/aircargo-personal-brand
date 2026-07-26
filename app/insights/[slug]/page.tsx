@@ -62,11 +62,13 @@ export default function InsightDetailPage({ params }: Params) {
     description: insight.excerpt,
     author: {
       '@type': 'Person',
+      '@id': 'https://www.eascargo.com/#jones',
       name: insight.author,
       jobTitle: 'China to Africa Oversized Air Freight Specialist',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://www.eascargo.com/#organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com',
     },
