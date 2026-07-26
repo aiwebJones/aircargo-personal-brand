@@ -114,11 +114,13 @@ export default function OversizedCargoCasePage() {
     inLanguage: ['zh-CN', 'en'],
     author: {
       '@type': 'Person',
+      '@id': 'https://www.eascargo.com/#jones',
       name: '神仙货运Jones',
       jobTitle: 'China to Africa Oversized Air Freight Specialist',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://www.eascargo.com/#organization',
       name: 'EASCargo Jones',
       url: 'https://www.eascargo.com/',
     },
