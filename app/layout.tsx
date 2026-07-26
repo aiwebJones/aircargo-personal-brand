@@ -96,8 +96,17 @@ export default function RootLayout({
               '@type': 'Organization',
               '@id': 'https://www.eascargo.com/#organization',
               'name': 'EASCargo Jones',
-              'alternateName': ['神仙货运Jones', 'Shenxian Jones', '神仙货运'],
+              'alternateName': ['EASCargo', '神仙货运Jones', 'Shenxian Jones', '神仙货运'],
               'url': 'https://www.eascargo.com',
+              'email': 'globegsa@gmail.com',
+              'telephone': '+86-138-1653-9222',
+              'logo': {
+                '@type': 'ImageObject',
+                'url': 'https://www.eascargo.com/favicon.svg'
+              },
+              'founder': {
+                '@id': 'https://www.eascargo.com/#jones'
+              },
               'description': 'China to Africa oversized air freight specialist. LGG/BRU Europe transit, B747F freighters, JNB/FBM/LUN/LBV Africa project cargo routing, customs document checks and inland delivery planning.',
               'slogan': 'China to Africa oversized air freight expert',
               'address': {
@@ -137,11 +146,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
+              '@id': 'https://www.eascargo.com/#jones',
               'name': 'Jones',
               'alternateName': ['神仙', '神仙货运Jones', 'Shenxian Jones'],
               'jobTitle': 'China to Africa Oversized Air Freight Specialist',
               'description': 'Specialist in oversized and heavy air freight from China to Africa, including LGG/BRU Europe transit, B747F freighter planning, African hubs and customs document checks.',
               'url': 'https://www.eascargo.com',
+              'worksFor': {
+                '@id': 'https://www.eascargo.com/#organization'
+              },
               'knowsAbout': [
                 'Africa oversized air freight',
                 'China to Africa air cargo',
@@ -167,6 +180,7 @@ export default function RootLayout({
               'description': 'Oversized and heavy air freight from China to Africa via LGG/BRU Europe transit, B747F freighters, African hubs and inland delivery planning.',
               'provider': {
                 '@type': 'Organization',
+                '@id': 'https://www.eascargo.com/#organization',
                 'name': 'EASCargo Jones'
               },
               'areaServed': ['China', 'South Africa', 'Democratic Republic of the Congo', 'Zambia', 'Gabon', 'Nigeria', 'Kenya', 'Uganda', 'Ghana', 'Ivory Coast'],
@@ -186,6 +200,7 @@ export default function RootLayout({
               'description': 'Europe transit planning through LGG/BRU for China-origin Africa oversized cargo, including JNB, FBM, LUN, LBV and inland points.',
               'provider': {
                 '@type': 'Organization',
+                '@id': 'https://www.eascargo.com/#organization',
                 'name': 'EASCargo Jones'
               },
               'areaServed': ['ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI']
