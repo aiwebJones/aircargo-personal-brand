@@ -753,7 +753,7 @@ const lunGatewayChecks = [
 ]
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
-  jnb: '2026-07-24',
+  jnb: '2026-07-27',
   fbm: '2026-07-13',
   lun: '2026-07-16',
   lbv: '2026-07-25',
@@ -1050,7 +1050,7 @@ function currentMetadataTitle(
   item: (typeof pages)[Slug],
   chinese: (typeof chineseDestinations)[Slug],
 ) {
-  if (slug === 'jnb') return '全国到JNB约翰内斯堡空运 | FOC/PVG/CAN南非项目货 | EASCargo'
+  if (slug === 'jnb') return '全国到JNB约翰内斯堡空运 | 南非超大件/矿业急件 | EASCargo'
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
@@ -1064,7 +1064,7 @@ function currentMetadataDescription(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') {
-    return '全国集货到JNB约翰内斯堡空运：FOC福州货可比较XMN、PVG、CAN、SZX、HKG或HAK枢纽方案，再核实中转、主甲板、SARS清关和南部非洲交付。'
+    return '全国工厂提货到JNB约翰内斯堡：比较PVG、CAN、SZX、PEK、XMN、FOC、HAK等出口枢纽，逐票核实中转、主甲板、SARS清关和南部非洲交付。'
   }
   if (slug === 'fbm') {
     return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
