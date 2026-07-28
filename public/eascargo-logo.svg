@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" role="img" aria-labelledby="title desc">
+  <title id="title">EASCARGO</title>
+  <desc id="desc">EASCARGO air freight logo with an eastbound arrow</desc>
+  <rect width="48" height="48" rx="8" fill="#08111f"/>
+  <path d="M9 11h22v6H15v5h14v6H15v6h16v6H9z" fill="#f4b942"/>
+  <path d="M27 7l13 7-13 7v-5H17v-5h10z" fill="#fff"/>
+  <text x="62" y="33" fill="#08111f" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" letter-spacing="0">EASCARGO</text>
+</svg>

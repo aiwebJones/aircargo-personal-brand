@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUp, ClipboardCheck, Mail, MessageCircle, Phone } from 'lucide-react'
+import EascargoLogo from '@/components/EascargoLogo'
 
 const footerGroups = [
   {
@@ -37,6 +38,7 @@ const footerGroups = [
     title: '专业资料',
     links: [
       ['全部专业资料', '/insights/'],
+      ['EASCARGO 事实与引用源', '/answer-engine/'],
       ['超大件询价清单', '/insights/oversized-air-freight-quote-checklist/'],
       ['非洲清关资料清单', '/insights/africa-customs-documents-checklist-air-freight/'],
       ['矿业设备询价模板', '/insights/africa-mining-equipment-air-freight-rfq-template/'],
@@ -102,9 +104,9 @@ export default function Footer() {
         </nav>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-borderLight pt-7 text-sm text-textMuted md:flex-row">
-          <div><p className="font-semibold text-textPrimary">EASCargo Jones · 神仙货运</p><p>中国到非洲大件项目货逐票路线判断</p></div>
+          <div><EascargoLogo markClassName="h-7 w-7" wordmarkClassName="text-sm" /><p>中国到非洲大件项目货逐票路线判断</p></div>
           <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="inline-flex items-center gap-2 transition hover:text-amberGold"><span>回到顶部</span><ArrowUp className="h-4 w-4" /></button>
-          <p>© {currentYear} EASCargo Jones</p>
+          <p>© {currentYear} EASCARGO</p>
         </div>
       </div>
     </footer>

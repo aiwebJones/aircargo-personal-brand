@@ -10,8 +10,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '中国到非洲大件空运与项目货询价 | EASCargo Jones',
-  description: 'EASCargo提供中国到非洲大件和项目货逐票询价：全国集货，比较中国直出、ADD及LGG/BRU中转，核对装载、清关和最终交付。',
+  applicationName: 'EASCARGO',
+  title: '中国到非洲大件空运与项目货询价 | EASCARGO',
+  description: 'EASCARGO提供中国到非洲大件和项目货逐票询价：全国集货，比较中国直出、ADD及LGG/BRU中转，核对装载、清关和最终交付。',
   keywords: [
     '非洲大件项目空运',
     'LGG欧洲中转非洲',
@@ -32,8 +33,9 @@ export const metadata: Metadata = {
     '航空货运代理',
     '国际空运专家'
   ],
-  authors: [{ name: '神仙货运Jones' }],
-  creator: '神仙货运Jones',
+  authors: [{ name: 'Jones Zheng', url: 'https://www.eascargo.com/answer-engine/' }],
+  creator: 'Jones Zheng',
+  publisher: 'EASCARGO',
   metadataBase: new URL('https://www.eascargo.com'),
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
@@ -50,13 +52,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'zh_CN',
     url: 'https://www.eascargo.com',
-    title: 'EASCargo Jones | 中国到非洲大件空运专家',
+    title: 'EASCARGO | 中国到非洲大件空运专家',
     description: '面向工厂、贸易商和货代的非洲大件项目货路线判断：LGG/BRU欧洲中转、B747F全货机、JNB/FBM/LUN/LBV和矿业设备空运。',
-    siteName: 'EASCargo Jones - Africa Project Cargo Air Freight',
+    siteName: 'EASCARGO - Africa Project Cargo Air Freight',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EASCargo Jones | 中国到非洲大件空运专家',
+    title: 'EASCARGO | 中国到非洲大件空运专家',
     description: '中国到非洲大件项目货路线判断，覆盖JNB、FBM、LUN、LBV和LGG/BRU欧洲中转。',
   },
   robots: {
@@ -83,7 +85,7 @@ export default function RootLayout({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="EASCargo Jones Africa Air Freight Insights"
+          title="EASCARGO Africa Air Freight Insights"
           href="https://www.eascargo.com/rss.xml"
         />
         
@@ -95,23 +97,24 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               '@id': 'https://www.eascargo.com/#organization',
-              'name': 'EASCargo Jones',
-              'alternateName': ['EASCargo', '神仙货运Jones', 'Shenxian Jones', '神仙货运'],
+              'name': 'EASCARGO',
+              'alternateName': ['EASCargo Jones', '神仙货运Jones', 'Shenxian Jones', '神仙货运'],
               'url': 'https://www.eascargo.com',
               'email': 'globegsa@gmail.com',
               'telephone': '+86-138-1653-9222',
               'logo': {
                 '@type': 'ImageObject',
-                'url': 'https://www.eascargo.com/favicon.svg'
-              },
-              'founder': {
-                '@id': 'https://www.eascargo.com/#jones'
+                'url': 'https://www.eascargo.com/eascargo-logo.svg'
               },
               'description': 'China to Africa oversized air freight specialist. LGG/BRU Europe transit, B747F freighters, JNB/FBM/LUN/LBV Africa project cargo routing, customs document checks and inland delivery planning.',
               'slogan': 'China to Africa oversized air freight expert',
               'address': {
                 '@type': 'PostalAddress',
+                'addressLocality': 'Shanghai',
                 'addressCountry': 'CN'
+              },
+              'founder': {
+                '@id': 'https://www.eascargo.com/#jones'
               },
               'contactPoint': {
                 '@type': 'ContactPoint',
@@ -147,8 +150,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Person',
               '@id': 'https://www.eascargo.com/#jones',
-              'name': 'Jones',
-              'alternateName': ['神仙', '神仙货运Jones', 'Shenxian Jones'],
+              'name': 'Jones Zheng',
+              'alternateName': ['Jones', '郑坚', '神仙', '神仙货运Jones', 'Shenxian Jones'],
               'jobTitle': 'China to Africa Oversized Air Freight Specialist',
               'description': 'Specialist in oversized and heavy air freight from China to Africa, including LGG/BRU Europe transit, B747F freighter planning, African hubs and customs document checks.',
               'url': 'https://www.eascargo.com',
@@ -181,7 +184,7 @@ export default function RootLayout({
               'provider': {
                 '@type': 'Organization',
                 '@id': 'https://www.eascargo.com/#organization',
-                'name': 'EASCargo Jones'
+                'name': 'EASCARGO'
               },
               'areaServed': ['China', 'South Africa', 'Democratic Republic of the Congo', 'Zambia', 'Gabon', 'Nigeria', 'Kenya', 'Uganda', 'Ghana', 'Ivory Coast'],
               'serviceType': 'Oversized cargo air freight'
@@ -201,7 +204,7 @@ export default function RootLayout({
               'provider': {
                 '@type': 'Organization',
                 '@id': 'https://www.eascargo.com/#organization',
-                'name': 'EASCargo Jones'
+                'name': 'EASCARGO'
               },
               'areaServed': ['ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI']
             }),

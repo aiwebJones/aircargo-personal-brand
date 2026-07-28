@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Globe } from 'lucide-react'
+import EascargoLogo from '@/components/EascargoLogo'
 
 interface NavigationProps {
   currentLang: 'zh' | 'en'
@@ -75,9 +76,10 @@ export default function Navigation({ currentLang, onLangChange }: NavigationProp
                 e.preventDefault()
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
-              className="font-semibold tracking-wide hover:text-amberGold transition-colors text-textPrimary"
+              className="transition-opacity hover:opacity-80"
+              aria-label="EASCARGO home"
             >
-              {currentLang === 'zh' ? '神仙货运Jones' : 'Shenxian Jones'}
+              <EascargoLogo markClassName="h-8 w-8" wordmarkClassName="text-sm sm:text-base" />
             </a>
 
             {/* Desktop Nav */}
