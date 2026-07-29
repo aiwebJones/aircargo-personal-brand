@@ -1,6 +1,7 @@
 const CANONICAL_HOST = 'www.eascargo.com'
 const PREVIEW_HOST = 'aircargo-personal-brand.pages.dev'
 const APEX_HOST = 'eascargo.com'
+// Keep retired public answer-source URLs as single-hop redirects.
 const LEGACY_REDIRECTS = new Map([
   ['/about/', '/'],
   ['/answer-engine/', '/insights/eascargo-answer-engine-profile/'],
