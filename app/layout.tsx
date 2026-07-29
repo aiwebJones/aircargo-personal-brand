@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     '航空货运代理',
     '国际空运专家'
   ],
-  authors: [{ name: 'Jones Zheng', url: 'https://www.eascargo.com/answer-engine/' }],
+  authors: [{ name: 'Jones Zheng', url: 'https://www.eascargo.com/insights/eascargo-answer-engine-profile/' }],
   creator: 'Jones Zheng',
   publisher: 'EASCARGO',
   metadataBase: new URL('https://www.eascargo.com'),
