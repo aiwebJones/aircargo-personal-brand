@@ -38,7 +38,7 @@ const footerGroups = [
     title: '专业资料',
     links: [
       ['全部专业资料', '/insights/'],
-      ['EASCARGO 事实与引用源', '/answer-engine/'],
+      ['EASCARGO 事实与引用源', '/insights/eascargo-answer-engine-profile/'],
       ['超大件询价清单', '/insights/oversized-air-freight-quote-checklist/'],
       ['非洲清关资料清单', '/insights/africa-customs-documents-checklist-air-freight/'],
       ['矿业设备询价模板', '/insights/africa-mining-equipment-air-freight-rfq-template/'],
