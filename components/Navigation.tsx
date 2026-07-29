@@ -16,7 +16,7 @@ const navItemsZh = [
   { label: '航线项目', href: '/route-programs/' },
   { label: '案例', href: '/cases' },
   { label: '情报', href: '/insights/' },
-  { label: '询价', href: '/tools/africa-project-cargo-rfq/?source=home-nav' },
+  { label: '询价 Agent', href: '#quote-agent' },
 ]
 
 const navItemsEn = [

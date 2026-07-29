@@ -16,6 +16,7 @@ import Footer from '@/components/sections/Footer'
 import FooterEN from '@/components/sections/FooterEN'
 import BlogSection from '@/components/BlogSection'
 import BlogSectionEN from '@/components/BlogSectionEN'
+import HomeQuoteAgentSection from '@/components/sections/HomeQuoteAgentSection'
 
 const homeFaqSchema = {
   '@context': 'https://schema.org',
@@ -74,6 +75,7 @@ export default function Home() {
             <HeroSection 
               onOpenWechat={() => setIsWechatOpen(true)}
             />
+            <HomeQuoteAgentSection />
             <AfricaNetworkSection />
             <RouteProgramsSection />
             <AboutSection onOpenContact={() => setIsContactOpen(true)} />

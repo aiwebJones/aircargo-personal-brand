@@ -77,12 +77,12 @@ export default function HeroSection({ onOpenWechat }: HeroSectionProps) {
 
             <div className="mb-8 flex flex-col gap-4 sm:flex-row">
               <motion.a
-                href="/tools/africa-project-cargo-rfq/?source=home-hero-primary"
+                href="#quote-agent"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-amberGold px-7 py-4 text-base font-semibold text-slate-950 shadow-lg shadow-amberGold/20 transition hover:bg-amber-400"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                立即生成路线预判
+                使用询价 Agent
                 <ArrowRight className="h-5 w-5" />
               </motion.a>
 
