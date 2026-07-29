@@ -50,10 +50,11 @@ export function captureAttribution(): MarketingAttribution {
   const query = new URLSearchParams(window.location.search)
   const referrer = stored.referrer || externalReferrer()
   const querySource = clean(query.get('utm_source') || query.get('source'), 100)
+  const ctaSource = clean(query.get('source') || query.get('utm_source'), 100)
   const page = clean(`${window.location.pathname}${window.location.search}`, 500)
 
   const attribution: MarketingAttribution = {
-    ctaSource: clean(query.get('source'), 100) || stored.ctaSource || page || 'direct',
+    ctaSource: ctaSource || stored.ctaSource || page || 'direct',
     firstSource:
       stored.firstSource || querySource || referrerHost(referrer) || 'direct',
     topic: clean(query.get('topic'), 140) || stored.topic || '',
