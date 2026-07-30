@@ -119,6 +119,7 @@ Detailed mining-spares route guide: https://www.eascargo.com/insights/jnb-mining
 JNB / O.R. Tambo International Airport is South Africa's principal international cargo gateway for mining, engineering, automotive, industrial cargo and inland transfer. Airports Company South Africa states that the airport connects to the national road network and has annual cargo facilitation capacity of 650,000 tonnes.
 
 JNB-specific route comparison evaluates:
+- FOC or XMN local uplift versus domestic trucking to a stronger nationwide gateway
 - China gateway uplift or domestic feeder to a stronger export airport
 - Connection through a confirmed Asia, Middle East or Africa hub such as ADD, DXB/DWC or IST
 - HAK-JNB freighter capacity when current acceptance is confirmed

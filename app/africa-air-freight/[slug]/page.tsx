@@ -506,6 +506,25 @@ const jnbCapacityChecks = [
   'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
 ]
 
+const jnbFocDecisionRows = [
+  {
+    label: 'FOC local uplift',
+    detail: 'Check the current aircraft, cargo terminal acceptance and transfer plan from Fuzhou against the actual longest and heaviest piece.',
+  },
+  {
+    label: 'XMN alternative',
+    detail: 'Compare Xiamen when its current uplift, transfer handling or cargo cut-off is more workable for a Fujian factory shipment.',
+  },
+  {
+    label: 'Nationwide gateway feeder',
+    detail: 'Compare domestic trucking to PVG, CAN, SZX, HKG or another confirmed gateway on total cost, loading feasibility and required arrival date.',
+  },
+  {
+    label: 'Oversized route',
+    detail: 'If normal connections reject the piece, screen current main-deck options, HAK/JNB capacity or LGG/BRU transit before promising a route.',
+  },
+]
+
 const southAfricaCoastalChecks = [
   'Is CPT or DUR closer to the final site than a JNB handover plus inland trucking?',
   'Do the commercial invoice, HS Code, origin, importer and regulated-goods documents match before uplift?',
@@ -753,7 +772,7 @@ const lunGatewayChecks = [
 ]
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
-  jnb: '2026-07-27',
+  jnb: '2026-07-30',
   fbm: '2026-07-13',
   lun: '2026-07-16',
   lbv: '2026-07-25',
@@ -1050,7 +1069,7 @@ function currentMetadataTitle(
   item: (typeof pages)[Slug],
   chinese: (typeof chineseDestinations)[Slug],
 ) {
-  if (slug === 'jnb') return '全国到JNB约翰内斯堡空运 | 南非超大件/矿业急件 | EASCargo'
+  if (slug === 'jnb') return 'FOC to JNB空运 | 全国集货到约翰内斯堡项目货 | EASCargo'
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
@@ -1064,7 +1083,7 @@ function currentMetadataDescription(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') {
-    return '全国工厂提货到JNB约翰内斯堡：比较PVG、CAN、SZX、PEK、XMN、FOC、HAK等出口枢纽，逐票核实中转、主甲板、SARS清关和南部非洲交付。'
+    return 'FOC福州到JNB约翰内斯堡空运：比较FOC/XMN本地起运与PVG、CAN、SZX、HKG、HAK全国枢纽集运，再逐票核实中转、主甲板、SARS清关和南非项目现场交付。'
   }
   if (slug === 'fbm') {
     return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
@@ -1112,7 +1131,9 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </div>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
               {chinese
-                ? ['jnb', 'lbv'].includes(currentSlug)
+                ? currentSlug === 'jnb'
+                  ? `FOC / 全国集货到 ${item.code} ${chinese.city} 空运`
+                  : currentSlug === 'lbv'
                   ? `全国集货到 ${item.code} ${chinese.city} 空运`
                   : `中国到 ${item.code} ${chinese.city} 空运`
                 : item.title}
@@ -1120,7 +1141,9 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               {chinese
-                ? `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
+                ? currentSlug === 'jnb'
+                  ? 'FOC和XMN是福建货源的本地起运选项，但不是固定直飞承诺。逐票比较本地收货与全国枢纽集运，再核实单件装载、中转接受、SARS清关和南非最终交付。'
+                  : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
                 : item.description}
             </p>
             <a
@@ -1133,6 +1156,38 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           </div>
         </div>
       </section>
+
+      {currentSlug === 'jnb' && (
+        <section className="border-b border-slate-200 bg-white">
+          <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">FOC to JNB direct answer</p>
+              <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
+                FOC福州到JNB怎么走？
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                FOC可以作为福建工厂货到JNB的起运点，但不能在没有逐票确认时写成固定直飞、固定舱位或保证接受。
+                报价时先比较FOC和XMN本地起运，再把国内集卡到更强出口枢纽的总成本、装载可行性和到货要求放在一起判断。
+              </p>
+              <a
+                href="/tools/africa-project-cargo-rfq/?source=route&topic=jnb-foc"
+                className="mt-7 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+              >
+                Submit FOC / JNB cargo details
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+            <div className="divide-y divide-slate-200 border-y border-slate-200">
+              {jnbFocDecisionRows.map((row) => (
+                <div key={row.label} className="grid gap-2 py-5 sm:grid-cols-[0.55fr_1.45fr] sm:gap-6">
+                  <h3 className="font-semibold text-slate-950">{row.label}</h3>
+                  <p className="leading-7 text-slate-600">{row.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
@@ -1391,19 +1446,6 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">{originStrategy.heading}</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">{originStrategy.intro}</p>
               </div>
-              {currentSlug === 'jnb' && (
-                <article className="mt-10 max-w-4xl border-l-4 border-amberGold bg-white p-6 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">FOC / Fuzhou to JNB</p>
-                  <h3 className="mt-2 text-2xl font-bold text-slate-950">
-                    FOC福州到JNB怎么走：比较本地起运与全国枢纽集运。
-                  </h3>
-                  <p className="mt-4 leading-8 text-slate-600">
-                    FOC是全国起运网络中的一个选择，不代表固定直飞、固定舱位或保证接受。福建工厂货先核对FOC本地收货、
-                    机型和中转条件，再把XMN起运，以及集卡到PVG、CAN、SZX、HKG或HAK的总成本与时效放在一起比较。
-                    超大件还要继续确认单件尺寸重量、舱门与地板限制、转运装卸、JNB清关和最终项目现场交付。
-                  </p>
-                </article>
-              )}
               {currentSlug === 'lbv' && (
                 <article className="mt-10 max-w-4xl border-l-4 border-amberGold bg-white p-6 shadow-sm">
                   <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">LBV long-cargo answer</p>
