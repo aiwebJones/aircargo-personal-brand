@@ -543,6 +543,53 @@ const nboGatewayChecks = [
   'Does the cargo need JKIA airport pickup, bonded movement, cross-border trucking, cold-chain handling or final-site unloading support?',
 ]
 
+const inlandAfricaCustomsReadiness: Partial<
+  Record<
+    Slug,
+    {
+      eyebrow: string
+      heading: string
+      body: string
+      primaryHref: string
+      primaryLabel: string
+      secondaryHref: string
+      secondaryLabel: string
+      checks: string[]
+    }
+  >
+> = {
+  kgl: {
+    eyebrow: 'KGL customs readiness',
+    heading: 'Pair Kigali route planning with RRA, RICA and RSB document checks.',
+    body:
+      'KGL can work for Rwanda project cargo, healthcare, electronics and East Africa inland distribution, but the route quote is only useful if import documents are ready. Screen the RRA Electronic Single Window flow, RICA import inspection, RSB conformity requirements and final delivery boundary before booking urgent cargo.',
+    primaryHref: '/insights/rwanda-kgl-rra-rsb-air-freight-clearance-documents/',
+    primaryLabel: 'Check KGL RRA and RSB documents',
+    secondaryHref: '/insights/east-africa-nbo-ebb-dar-project-cargo/',
+    secondaryLabel: 'Compare East Africa project cargo routing',
+    checks: [
+      'Are importer TIN, clearing agent, invoice, packing list, AWB data, HS Code and value aligned for RRA/eSW filing?',
+      'Does the product trigger RICA import inspection, RSB certification, permit, label, test-report or conformity checks?',
+      'Is the quote boundary KGL airport pickup, Rwanda delivery, or onward East Africa inland project-site handover?',
+    ],
+  },
+  hre: {
+    eyebrow: 'HRE customs readiness',
+    heading: 'Treat Harare mining and industrial cargo as a ZIMRA/CBCA pre-check, not only an airport rate.',
+    body:
+      'HRE is useful for Zimbabwe mining, agriculture, medical and factory spares, but document gaps can erase airfreight speed. Confirm ZIMRA commercial import data, ASYCUDA/Bill of Entry responsibility, CBCA/PVoC scope and final handover terms before committing to a China-origin booking.',
+    primaryHref: '/insights/zimbabwe-hre-zimra-asycuda-cbca-air-freight-clearance/',
+    primaryLabel: 'Check HRE ZIMRA and CBCA documents',
+    secondaryHref: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/',
+    secondaryLabel: 'Compare ET/ADD options for HRE cargo',
+    checks: [
+      'Are importer Business Partner Number, clearing agent, invoice, packing list, AWB, freight and insurance data ready for ASYCUDA?',
+      'Does the cargo need CBCA/PVoC, Certificate of Conformity, import licence or restricted-goods approval before departure?',
+      'Is HRE the final airport, an inland clearance point, or one leg before a mine, farm, factory or project-site delivery?',
+    ],
+  },
+}
+
 const addRouteProgramDestinationSlugs: Slug[] = ['cmn', 'add', 'cky', 'oua', 'bko', 'ebb']
 
 const addRouteProgramChecks = [
@@ -783,6 +830,8 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   ebb: '2026-07-19',
   add: '2026-07-19',
   cmn: '2026-07-19',
+  kgl: '2026-07-30',
+  hre: '2026-07-30',
 }
 
 const deepDives: Partial<Record<Slug, DeepDive>> = {
@@ -1113,6 +1162,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
   const isNigeriaRoute = currentSlug === 'los'
   const isNboRoute = currentSlug === 'nbo'
+  const customsReadiness = inlandAfricaCustomsReadiness[currentSlug]
   const isAddRouteProgramDestination = addRouteProgramDestinationSlugs.includes(currentSlug)
   const officialFacts =
     currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : isNboRoute ? nboOfficialFacts : null
@@ -1389,6 +1439,38 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
         <div className="grid gap-3">
           {nboGatewayChecks.map((check) => (
+            <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+              <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+              <p className="leading-7 text-slate-700">{check}</p>
+            </div>
+          ))}
+        </div>
+      </section>}
+
+      {customsReadiness && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">{customsReadiness.eyebrow}</p>
+          <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">{customsReadiness.heading}</h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">{customsReadiness.body}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={customsReadiness.primaryHref}
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              {customsReadiness.primaryLabel}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href={customsReadiness.secondaryHref}
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+            >
+              {customsReadiness.secondaryLabel}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="grid gap-3">
+          {customsReadiness.checks.map((check) => (
             <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
               <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
               <p className="leading-7 text-slate-700">{check}</p>
