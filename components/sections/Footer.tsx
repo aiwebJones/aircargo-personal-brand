@@ -83,7 +83,7 @@ export default function Footer() {
             <a href="/tools/africa-project-cargo-rfq/?source=home-footer" className="inline-flex items-center gap-2 rounded-lg bg-amberGold px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-400">
               <ClipboardCheck className="h-5 w-5" />项目货询价 Agent
             </a>
-            <button type="button" onClick={copyWechat} aria-live="polite" title="复制微信号 jnb931" className="inline-flex items-center gap-2 rounded-lg border border-borderLight px-5 py-3 font-medium text-textSecondary transition hover:border-amberGold hover:text-amberGold">
+            <button type="button" onClick={copyWechat} data-conversion="wechat-copy" aria-live="polite" title="复制微信号 jnb931" className="inline-flex items-center gap-2 rounded-lg border border-borderLight px-5 py-3 font-medium text-textSecondary transition hover:border-amberGold hover:text-amberGold">
               <MessageCircle className="h-5 w-5" />
               {wechatCopyState === 'copied' ? '已复制：jnb931' : wechatCopyState === 'manual' ? '请复制：jnb931' : '微信：jnb931'}
             </button>

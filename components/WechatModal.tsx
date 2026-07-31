@@ -1,7 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, MessageCircle } from 'lucide-react'
+import { Check, ClipboardCheck, Copy, MessageCircle, X } from 'lucide-react'
 
 interface WechatModalProps {
   isOpen: boolean
@@ -9,6 +10,29 @@ interface WechatModalProps {
 }
 
 export default function WechatModal({ isOpen, onClose }: WechatModalProps) {
+  const [copyState, setCopyState] = useState<'idle' | 'copied' | 'manual'>('idle')
+
+  const copyWechat = async () => {
+    let copied = false
+
+    try {
+      await navigator.clipboard.writeText('jnb931')
+      copied = true
+    } catch {
+      const input = document.createElement('textarea')
+      input.value = 'jnb931'
+      input.style.position = 'fixed'
+      input.style.opacity = '0'
+      document.body.appendChild(input)
+      input.select()
+      copied = document.execCommand('copy')
+      input.remove()
+    }
+
+    setCopyState(copied ? 'copied' : 'manual')
+    window.setTimeout(() => setCopyState('idle'), 2500)
+  }
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -46,27 +70,30 @@ export default function WechatModal({ isOpen, onClose }: WechatModalProps) {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  扫码领清单
+                  微信询价
                 </h3>
                 <p className="text-gray-600 text-sm mb-6">
-                  添加微信 <span className="font-semibold text-amberGold">jnb931</span>，备注"领清单"，我拉你
+                  复制微信号后搜索添加，把货物资料发来，先判断路线是否成立。
                 </p>
 
-                {/* QR Code Placeholder */}
-                <div className="bg-gray-50 rounded-xl p-4 mb-6">
-                  <div className="w-48 h-48 bg-white border-2 border-amberGold/20 rounded-lg mx-auto flex items-center justify-center">
-                    {/* 这里放微信二维码图片 */}
-                    <div className="text-center">
-                      <MessageCircle className="w-16 h-16 text-amberGold mx-auto mb-2" />
-                      <p className="text-xs text-gray-400">微信二维码</p>
-                    </div>
-                  </div>
+                <button
+                  type="button"
+                  onClick={copyWechat}
+                  data-conversion="wechat-copy"
+                  className="mb-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-amberGold px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-400"
+                >
+                  {copyState === 'copied' ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
+                  {copyState === 'copied'
+                    ? '已复制：jnb931'
+                    : copyState === 'manual'
+                      ? '请手动复制：jnb931'
+                      : '复制微信号：jnb931'}
+                </button>
+
+                <div className="space-y-3 border-t border-gray-200 pt-5 text-left text-sm text-gray-600">
+                  <p className="flex gap-3"><MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-amberGold" />微信搜索并添加 <span className="font-semibold text-gray-900">jnb931</span></p>
+                  <p className="flex gap-3"><ClipboardCheck className="mt-0.5 h-4 w-4 shrink-0 text-amberGold" />发送起运地、目的港、品名、件数、重量和每件尺寸</p>
                 </div>
-
-                {/* Alternative */}
-                <p className="text-xs text-gray-500">
-                  或者直接搜索 <span className="font-semibold">jnb931</span> 添加
-                </p>
               </div>
             </div>
           </motion.div>
