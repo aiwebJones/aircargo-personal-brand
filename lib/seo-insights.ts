@@ -178,6 +178,68 @@ export const seoInsights: SeoInsight[] = [
     ],
   },
   {
+    slug: 'guangzhou-nairobi-freighter-can-nbo-east-africa-air-cargo',
+    title: '广州到内罗毕全货机恢复：CAN-NBO东非空运询价怎么判断？',
+    excerpt:
+      'Astral Aviation恢复广州-内罗毕Boeing 767-300F周班，说明CAN/NBO重新成为值得比较的中国到东非空运入口。对药品、冷链、电商、高价值工业设备和急件备件来说，关键是逐票确认舱位、NBO清关资料、PVoC/IDF和东非二程交付。',
+    date: '2026-07-31',
+    readTime: '11 分钟',
+    category: '航线情报',
+    author: defaultAuthor,
+    image: '/case-17t-2.jpg',
+    keywords: ['广州内罗毕全货机', 'CAN NBO air freight', 'Guangzhou Nairobi freighter', '中国到肯尼亚空运', '东非空运'],
+    template: 'generated',
+    audience: ['华南工厂', '肯尼亚进口商', '药品冷链和高价值货供应商', '东非项目货团队'],
+    angle: '把CAN-NBO B767-300F公开航线信号转成华南到东非空运的容量、资料和二程交付判断。',
+    sections: [
+      {
+        heading: 'CAN-NBO恢复的价值在于多一个东非入口',
+        body: [
+          'Logistics Update Africa在2026年7月20日报道，Astral Aviation恢复每周广州到内罗毕Boeing 767-300F全货机服务，服务货类包括电商、药品、生鲜、工业设备和普货。这个信号对EASCargo的意义不是马上承诺固定价格，而是华南到东非询盘多了一个需要优先核实的入口。',
+          '如果货在广州、佛山、东莞、深圳、中山、珠海、厦门或华南周边，CAN/NBO可以和SZX/HKG起运、ADD中转、NBO现有网络、LGG/BRU欧洲中转一起比较。客户问中国到肯尼亚空运时，销售要先判断货物属性和交付边界，再决定是否用CAN-NBO作为主方案。',
+        ],
+        bullets: ['CAN广州起运', 'NBO内罗毕入口', 'B767-300F全货机', '华南到东非比较'],
+      },
+      {
+        heading: 'B767-300F不等于所有项目货都能直接飞',
+        body: [
+          'B767-300F有全货机和主甲板优势，但它不是B747F鼻门或超大件万能方案。每件尺寸、单件重量、装载方向、托盘适配、叉车条件、温控要求、带电或危险品属性，仍然决定航空公司能不能接、地面能不能操作、NBO到港后能不能快速放行。',
+          '对八米长货、重型矿业设备、超宽设备或需要特殊吊装的项目货，CAN-NBO应该作为一个容量信号，而不是唯一答案。可执行路线仍可能是CAN/PVG/SZX到LGG或BRU，再接合适的非洲主甲板；也可能经ADD、JNB或其他东非节点衔接。',
+        ],
+        bullets: ['主甲板尺寸限制', '温控和药品筛查', '带电/DG预审', 'LGG/BRU备选路线'],
+      },
+      {
+        heading: 'NBO清关和东非二程要在报价前拆清',
+        body: [
+          'NBO只解决到肯尼亚入口，不自动解决进口资料和最终交付。肯尼亚空运常见资料要提前核对进口商、清关代理、HS Code、商业发票、装箱单、AWB、IDF、PVoC/CoC、税费责任和最终收货地址。药品、医疗设备、通信设备、食品接触、带电设备或温控货，还要让进口商确认许可证和监管要求。',
+          '如果最终目的地不是内罗毕，而是蒙巴萨、纳库鲁、埃尔多雷特、乌干达、坦桑尼亚、卢旺达或南苏丹项目点，就要把NBO机场提货、转关、边境资料、卡车温控、现场卸货和签收责任写进报价边界。',
+        ],
+        bullets: ['NBO airport clearance', 'PVoC/IDF资料', 'East Africa onward delivery', 'quote boundary'],
+      },
+      {
+        heading: '销售今天该怎么承接这类询盘',
+        body: [
+          '看到CAN/NBO、Guangzhou Nairobi freighter、China to Kenya air freight这类搜索或询价，不要只回复每公斤价格。先要货物明细：品名用途、每件尺寸重量、包装照片、是否药品/冷链/带电/DG、货值、HS Code、进口商资料、NBO还是最终现场交付、最晚到货时间。',
+          '如果资料齐，可以给客户一个路线判断：CAN-NBO公开容量信号值得查舱；普通小批量高价值货优先看速度和资料一致性；工业设备和急件备件要先查主甲板和NBO放行；超限件必须同步比较LGG/BRU或B747F方案。',
+        ],
+        bullets: ['先收资料再查舱', 'CAN-NBO容量核实', 'NBO清关预判', '超限件备选方案'],
+      },
+    ],
+    checklist: ['起运城市和是否可送CAN', 'NBO机场还是最终现场交付', '每件尺寸重量和包装照片', '英文品名、用途和HS Code', '货值、币种和贸易条款', '是否药品、冷链、生鲜、带电、DG、医疗或通信设备', '温控范围和数据记录要求如有', '进口商和肯尼亚清关代理资料', 'IDF、PVoC/CoC或许可证适用性', 'AWB主单/分单资料责任', 'NBO到内罗毕或东非二程责任', '现场卸货条件和最晚到货时间'],
+    relatedRoutes: [
+      { label: 'NBO 内罗毕航线页', href: '/africa-air-freight/nbo/' },
+      { label: '肯尼亚NBO PVoC/IDF资料', href: '/insights/kenya-nbo-pvoc-idf-air-freight-documents/' },
+      { label: '东非NBO/EBB/DAR项目货', href: '/insights/east-africa-nbo-ebb-dar-project-cargo/' },
+      { label: '非洲急件备件路线风险清单', href: '/tools/africa-urgent-spare-parts-route-risk-checklist/' },
+      { label: 'LGG/BRU 非洲中转网络', href: '/zh/lgg-africa-gateway/' },
+    ],
+    sources: [
+      { label: 'Logistics Update Africa: Astral Aviation resumes weekly Nairobi-Guangzhou freighter service', href: 'https://www.logupdateafrica.com/air-cargo/astral-aviation-resumes-weekly-nairobiguangzhou-freighter-service-1359939' },
+      { label: 'IATA: Air Cargo Demand Strengthens in June, Up 8.5%', href: 'https://www.iata.org/en/pressroom/2026-releases/07-29-air-cargo-demand-strengthens-june/' },
+      { label: 'Google Search Central: Link best practices', href: 'https://developers.google.com/search/docs/crawling-indexing/links-crawlable' },
+    ],
+  },
+  {
     slug: 'eu-ics2-ens-lgg-bru-africa-transit-air-freight',
     title: 'LGG/BRU中转非洲大件：欧盟ICS2/ENS资料为什么会卡住空运？',
     excerpt:

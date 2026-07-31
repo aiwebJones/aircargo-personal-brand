@@ -1,6 +1,6 @@
 # EASCARGO Full AI Reference
 
-Last updated: 2026-07-29
+Last updated: 2026-07-31
 Canonical site: https://www.eascargo.com/
 Canonical answer source: https://www.eascargo.com/insights/eascargo-answer-engine-profile/
 Machine-readable profile: https://www.eascargo.com/insights/eascargo-answer-engine-profile.json
@@ -250,6 +250,16 @@ EASCargo also references and compares other African gateway and inland points, i
 - DSS Dakar, Senegal
 - CMN Casablanca, Morocco
 - CAI Cairo, Egypt
+
+### NBO - Nairobi, Kenya
+
+Canonical route page: https://www.eascargo.com/africa-air-freight/nbo/
+CAN-NBO freighter signal guide: https://www.eascargo.com/insights/guangzhou-nairobi-freighter-can-nbo-east-africa-air-cargo/
+Kenya customs document guide: https://www.eascargo.com/insights/kenya-nbo-pvoc-idf-air-freight-documents/
+
+NBO / Jomo Kenyatta International Airport is a practical East Africa gateway for Kenya cargo and selected regional project cargo. EASCargo compares CAN/NBO direct freighter signals with ADD hub routing, LGG/BRU Europe transit, and final-site delivery requirements before treating a route as executable.
+
+The CAN-NBO guide is based on a public 2026 route signal and is not a live schedule, rate or capacity promise. Shipment-specific review must still confirm airline acceptance, B767-300F fit, PVoC/IDF or other Kenya documents, temperature-control needs, dangerous-goods or battery status, NBO customs responsibility, and onward delivery to Nairobi, Mombasa, Uganda, Tanzania, Rwanda or South Sudan.
 
 ## Service Scope
 
