@@ -558,6 +558,21 @@ const inlandAfricaCustomsReadiness: Partial<
     }
   >
 > = {
+  abj: {
+    eyebrow: 'ABJ customs readiness',
+    heading: 'Pair Abidjan route planning with GUCE, FDI and SYDAM readiness.',
+    body:
+      'ABJ can serve Cote dIvoire industrial, construction, medical and francophone West Africa project cargo, but the airport rate is only one part of an executable quote. Confirm the importer\'s GUCE workflow, FDI status, SYDAM/e-DAU declaration data, French-compatible cargo description and final delivery boundary before uplift.',
+    primaryHref: '/insights/cote-divoire-abj-guce-fdi-sydam-air-freight-clearance/',
+    primaryLabel: 'Check ABJ GUCE, FDI and SYDAM documents',
+    secondaryHref: '/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/',
+    secondaryLabel: 'Compare ACC and ABJ West Africa gateways',
+    checks: [
+      'Are the importer, customs broker, GUCE account, FDI status, AWB, invoice, packing list, HS Code and value aligned?',
+      'Does the product need an e-Certificate of Conformity, e-Phyto, Certificate of Origin, e-Licence or another controlled-goods document?',
+      'Is the quote boundary ABJ airport pickup, Abidjan delivery, or onward francophone West Africa project-site handover?',
+    ],
+  },
   kgl: {
     eyebrow: 'KGL customs readiness',
     heading: 'Pair Kigali route planning with RRA, RICA and RSB document checks.',
@@ -1123,6 +1138,7 @@ function currentMetadataTitle(
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
   if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCargo Jones'
+  if (slug === 'abj') return 'ABJ阿比让空运 | 科特迪瓦GUCE/FDI清关与项目货报价 | EASCargo'
   return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
 }
 
@@ -1145,6 +1161,9 @@ function currentMetadataDescription(
   }
   if (slug === 'nbo') {
     return '中国到NBO内罗毕空运：结合肯尼亚JKIA项目货、PVoC/CoC、IDF、进口商KRA PIN、东非二程和最终现场交付边界做逐票判断。'
+  }
+  if (slug === 'abj') {
+    return '中国到ABJ阿比让空运：比较全国集货、欧洲或非洲Hub中转和超限件装载，报价前核对GUCE账号、FDI、SYDAM/e-DAU、法文品名、目的港费用和科特迪瓦项目现场交付。'
   }
   return `中国到${item.code}${chinese.city}空运方案：${chinese.country}大件项目货、矿业备件、工程设备、LGG/BRU欧洲中转、清关资料和二程交付判断。`
 }
