@@ -538,6 +538,7 @@ const nigeriaOilGasChecks = [
 ]
 
 const nboGatewayChecks = [
+  'Can CAN-NBO be checked as a B767-300F capacity signal, or does the shipment still need ADD, LGG/BRU, JNB or another fallback route?',
   'Is NBO the final airport, a Kenya clearance point, or the first hub before Uganda, Tanzania, South Sudan, Rwanda or an inland project site?',
   'Do PVoC/CoC, IDF, importer KRA PIN, HS Code, invoice value and regulated-goods permits match before uplift?',
   'Does the cargo need JKIA airport pickup, bonded movement, cross-border trucking, cold-chain handling or final-site unloading support?',
@@ -824,6 +825,11 @@ const nboOfficialFacts = [
     detail: 'InfoTradeKenya lists IDF among the import steps and document requirements. Importer data, HS Code, value, invoice and permit fit should be aligned before cargo leaves China.',
     href: 'https://infotradekenya.go.ke/procedure/322?includeSearch=true&l=en',
   },
+  {
+    label: 'Guangzhou-Nairobi freighter route signal',
+    detail: 'Public CAN-NBO freighter coverage is useful for East Africa route screening, but every shipment still needs current capacity, commodity, document and final-delivery checks before booking.',
+    href: 'https://www.logupdateafrica.com/air-cargo/astral-aviation-resumes-weekly-nairobiguangzhou-freighter-service-1359939',
+  },
 ]
 
 const lunGatewayChecks = [
@@ -838,7 +844,7 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   fbm: '2026-07-13',
   lun: '2026-07-16',
   lbv: '2026-07-25',
-  nbo: '2026-07-18',
+  nbo: '2026-08-02',
   bko: '2026-07-19',
   cky: '2026-07-19',
   oua: '2026-07-19',
@@ -1435,14 +1441,22 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             Treat Nairobi as an East Africa route decision, not only a Kenya airport rate.
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            JKIA modernisation keeps NBO visible as a regional air-cargo hub, but each China-origin project shipment
-            still needs a document and handover check. Separate Kenya clearance from East Africa onward delivery, and
-            confirm PVoC, IDF, importer readiness and final-site responsibility before booking.
+            JKIA modernisation and the public CAN-NBO freighter signal keep NBO visible as a regional air-cargo hub, but
+            each China-origin project shipment still needs a capacity, document and handover check. Separate Kenya
+            clearance from East Africa onward delivery, and confirm PVoC, IDF, importer readiness and final-site
+            responsibility before booking.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="/insights/kenya-nbo-pvoc-idf-air-freight-documents/"
+              href="/insights/guangzhou-nairobi-freighter-can-nbo-east-africa-air-cargo/"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+            >
+              Check CAN-NBO freighter signal
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/insights/kenya-nbo-pvoc-idf-air-freight-documents/"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
               Check NBO PVoC and IDF documents
               <ArrowRight className="h-4 w-4" />
