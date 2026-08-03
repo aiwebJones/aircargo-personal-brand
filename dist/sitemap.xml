@@ -2,175 +2,787 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.eascargo.com/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.eascargo.com/insights/eascargo-answer-engine-profile/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.94</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/tools/africa-project-cargo-rfq/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/route-programs/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/route-programs/et-asia-africa-via-add/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://www.eascargo.com/en/africa-oversized-air-freight/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://www.eascargo.com/zh/lgg-africa-gateway/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://www.eascargo.com/china-africa-oversized-cargo-via-europe/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/cases/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/tools/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/airport-finder/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/tools/air-freight-chargeable-weight-calculator/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/tools/africa-air-freight-customs-document-checklist/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/tools/africa-urgent-spare-parts-route-risk-checklist/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/why-shippers-ignore-freight-brokers/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
-    <loc>https://www.eascargo.com/africa-air-freight/jnb/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/africa-air-cargo-demand-2026-route-risk/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/haikou-johannesburg-freighter-china-africa-project-cargo/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/guangzhou-nairobi-freighter-can-nbo-east-africa-air-cargo/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/eu-ics2-ens-lgg-bru-africa-transit-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/lithium-battery-equipment-africa-air-freight-2026/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/dangerous-goods-chemical-air-freight-africa-checklist/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/wood-packaging-ispm15-africa-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/kenya-nbo-pvoc-idf-air-freight-documents/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/nigeria-los-soncap-formm-paar-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/tanzania-dar-pvoc-coc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/uganda-ebb-unbs-pvoc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/ghana-acc-easypass-icums-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/south-africa-jnb-sars-nrcs-loa-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/egypt-cai-nafeza-aci-cargox-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/senegal-dss-dpi-dipa-customs-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/cote-divoire-abj-guce-fdi-sydam-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/rwanda-kgl-rra-rsb-air-freight-clearance-documents/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/namibia-wdh-namra-sad500-asycuda-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/mozambique-mpm-mcnet-jue-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/drc-fih-dgda-guice-occ-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/morocco-cmn-adii-badr-portnet-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/egypt-cai-nafeza-aci-cargox-goeic-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/ethiopia-add-customs-ecms-esw-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/zimbabwe-hre-zimra-asycuda-cbca-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/jnb-mining-spares-air-freight/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/fbm-copperbelt-mining-equipment-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/lun-zambia-industrial-air-freight-guide/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/africa-customs-documents-checklist-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/china-africa-via-europe-lgg-bru-transit/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/nigeria-los-air-freight-customs-risk/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/oversized-air-freight-quote-checklist/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/east-africa-nbo-ebb-dar-project-cargo/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/china-africa-air-freight-cost-chargeable-weight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/china-africa-air-freight-forwarder-for-factories/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/africa-mining-equipment-air-freight-rfq-template/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/oversized-air-cargo-booking-documents-main-deck-africa/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/eu-ics2-ncts-phase6-valid-ens-lgg-bru-africa-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/iata-dgr-67-lithium-battery-3m-stack-test-africa-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/air-cargo-data-loggers-tracking-devices-africa-cold-chain/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/mali-bko-sydonia-import-intention-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/guinea-cky-guceg-import-declaration-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/burkina-faso-oua-sydonia-waemu-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/niger-nim-guce-asycuda-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/gabon-lbv-asycuda-cemac-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/drc-fbm-guice-bivac-mining-spares-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/south-africa-cpt-dur-port-marine-equipment-air-freight/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/cameroon-dla-avi-pecae-coc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/togo-lfw-awb-certificate-origin-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/benin-coo-guce-avd-origin-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/chad-ndj-air-waybill-asycuda-import-documents-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/angola-lad-asycuda-aduaneiro-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/botswana-gbe-burs-single-window-sad500-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/malawi-blz-llw-mra-asycuda-form12-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/sierra-leone-fna-nra-asycuda-idf-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/liberia-rob-lra-asycuda-bivac-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/gambia-bjl-gra-asycuda-sad-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/mauritania-nkc-douanes-sydonia-sgs-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/madagascar-tnr-bsc-gasynet-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/mauritius-mru-mra-tradenet-boe-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/seychelles-sez-asycuda-bill-of-entry-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/djibouti-jib-dpcs-air-waybill-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/cabo-verde-rai-dnre-customs-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/algeria-alg-alces-bank-domiciliation-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/tunisia-tun-sinda-ttn-air-waybill-customs-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/congo-brazzaville-bzv-pnr-guot-cemac-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/equatorial-guinea-ssg-bsg-asycudaworld-cemac-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/libya-mji-ben-aci-asycuda-lc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/south-sudan-jub-acd-pvoc-ecustoms-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/somalia-mgq-somcas-cbca-coc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/burundi-bjm-asycuda-single-window-pvoc-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/central-african-republic-bgf-asycudaworld-pvoc-bivac-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/eritrea-asm-asycuda-world-import-permit-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/lesotho-msu-asycuda-world-import-permit-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/guinea-bissau-oxb-asycudaworld-cee-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/sao-tome-principe-tms-asycudaworld-import-permit-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/comoros-hah-asycuda-world-electronic-manifest-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/eswatini-sho-asycudaworld-sacu-first-port-import-permit-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/zanzibar-znz-tancis-mainland-zanzibar-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/victoria-falls-vfa-zimra-asycuda-cbca-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/insights/freight-network-value-wca-iata-jctrans-africa/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/jnb/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/fbm/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/lun/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/lbv/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.eascargo.com/africa-air-freight/nbo/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://www.eascargo.com/africa-air-freight/ebb/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://www.eascargo.com/africa-air-freight/los/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/acc/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.83</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/abj/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.83</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/bko/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.83</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/cky/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/oua/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://www.eascargo.com/africa-air-freight/hre/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/nim/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/nbo/</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/ebb/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/africa-air-freight/los/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.eascargo.com/africa-air-freight/kgl/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/dar/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/cpt/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/dur/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/wdh/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/mpm/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/fih/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/add/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/dss/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/cmn/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/cai/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
   </url>

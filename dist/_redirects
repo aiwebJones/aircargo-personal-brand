@@ -1,2 +1,4 @@
 https://eascargo.com/* https://www.eascargo.com/:splat 301
 https://aircargo-personal-brand.pages.dev/* https://www.eascargo.com/:splat 301
+/quote /tools/africa-project-cargo-rfq/ 301
+/quote/* /tools/africa-project-cargo-rfq/:splat 301

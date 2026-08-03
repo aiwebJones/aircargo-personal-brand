@@ -13,6 +13,7 @@ interface NavigationProps {
 const navItemsZh = [
   { label: '关于', href: '#about' },
   { label: '航线', href: '/africa-air-freight/' },
+  { label: '查机场', href: '/airport-finder/' },
   { label: '航线项目', href: '/route-programs/' },
   { label: '案例', href: '/cases' },
   { label: '情报', href: '/insights/' },

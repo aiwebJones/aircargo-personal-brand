@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navigation from '@/components/Navigation'
 import ContactModal from '@/components/ContactModal'
 import WechatModal from '@/components/WechatModal'
@@ -17,6 +17,8 @@ import FooterEN from '@/components/sections/FooterEN'
 import BlogSection from '@/components/BlogSection'
 import BlogSectionEN from '@/components/BlogSectionEN'
 import HomeQuoteAgentSection from '@/components/sections/HomeQuoteAgentSection'
+import AirportFinderSection from '@/components/sections/AirportFinderSection'
+import QuietAuthorityHome from '@/components/sections/QuietAuthorityHome'
 
 const homeFaqSchema = {
   '@context': 'https://schema.org',
@@ -61,6 +63,12 @@ export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
   const [isWechatOpen, setIsWechatOpen] = useState(false)
   const [currentLang, setCurrentLang] = useState<'zh' | 'en'>('zh')
+  const [isQuietPreview, setIsQuietPreview] = useState(false)
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    setIsQuietPreview(params.get('theme') === 'quiet')
+  }, [])
 
   return (
     <>
@@ -68,31 +76,41 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
       />
-      <Navigation currentLang={currentLang} onLangChange={setCurrentLang} />
-      <main className="min-h-screen bg-white">
-        {currentLang === 'zh' ? (
-          <>
-            <HeroSection 
-              onOpenWechat={() => setIsWechatOpen(true)}
-            />
-            <HomeQuoteAgentSection />
-            <AfricaNetworkSection />
-            <RouteProgramsSection />
-            <AboutSection onOpenContact={() => setIsContactOpen(true)} />
-            <CasesSection />
-            <BlogSection />
-            <Footer />
-          </>
-        ) : (
-          <>
-            <HeroSectionEN onOpenContact={() => setIsContactOpen(true)} />
-            <AboutSectionEN onOpenContact={() => setIsContactOpen(true)} />
-            <CasesSectionEN />
-            <BlogSectionEN />
-            <FooterEN />
-          </>
-        )}
-      </main>
+      {isQuietPreview ? (
+        <QuietAuthorityHome
+          onOpenContact={() => setIsContactOpen(true)}
+          onOpenWechat={() => setIsWechatOpen(true)}
+        />
+      ) : (
+        <>
+          <Navigation currentLang={currentLang} onLangChange={setCurrentLang} />
+          <main className="min-h-screen bg-white">
+            {currentLang === 'zh' ? (
+              <>
+                <HeroSection
+                  onOpenWechat={() => setIsWechatOpen(true)}
+                />
+                <HomeQuoteAgentSection />
+                <AfricaNetworkSection />
+                <AirportFinderSection />
+                <RouteProgramsSection />
+                <AboutSection onOpenContact={() => setIsContactOpen(true)} />
+                <CasesSection />
+                <BlogSection />
+                <Footer />
+              </>
+            ) : (
+              <>
+                <HeroSectionEN onOpenContact={() => setIsContactOpen(true)} />
+                <AboutSectionEN onOpenContact={() => setIsContactOpen(true)} />
+                <CasesSectionEN />
+                <BlogSectionEN />
+                <FooterEN />
+              </>
+            )}
+          </main>
+        </>
+      )}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       <WechatModal isOpen={isWechatOpen} onClose={() => setIsWechatOpen(false)} />
     </>

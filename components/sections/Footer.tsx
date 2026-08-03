@@ -29,6 +29,7 @@ const footerGroups = [
     title: '询价工具',
     links: [
       ['项目货询价 Agent', '/tools/africa-project-cargo-rfq/?source=home-footer-links'],
+      ['最近货运机场查询', '/airport-finder/'],
       ['非洲空运工具箱', '/tools/'],
       ['计费重计算器', '/tools/air-freight-chargeable-weight-calculator/'],
       ['清关资料生成器', '/tools/africa-air-freight-customs-document-checklist/'],

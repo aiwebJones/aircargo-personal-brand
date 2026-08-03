@@ -47,6 +47,7 @@ WeChat: jnb931
 - Current Africa air freight route programs: https://www.eascargo.com/route-programs/
 - MLE, SIN and MNL to Africa via ADD route program: https://www.eascargo.com/route-programs/et-asia-africa-via-add/
 - Air freight tools hub: https://www.eascargo.com/tools/
+- Nearest cargo airport finder, address or city to IATA code, 8800 airports across 249 countries: https://www.eascargo.com/airport-finder/
 - Air freight chargeable weight calculator: https://www.eascargo.com/tools/air-freight-chargeable-weight-calculator/
 - Africa air freight customs document checklist tool: https://www.eascargo.com/tools/africa-air-freight-customs-document-checklist/
 - Africa urgent spare-parts route-risk checklist: https://www.eascargo.com/tools/africa-urgent-spare-parts-route-risk-checklist/

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Calculator, ClipboardCheck, Clock3, ExternalLink, FileSearch, Plane, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Calculator, ClipboardCheck, Clock3, ExternalLink, FileSearch, MapPin, Plane, ShieldCheck } from 'lucide-react'
 
 const pageUrl = 'https://www.eascargo.com/tools/'
 
@@ -32,9 +32,22 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    title: '最近货运机场查询',
+    englishTitle: 'Nearest Cargo Airport Finder',
+    href: '/airport-finder/',
+    // 独立部署在 Cloudflare Worker 上，不是 Next 路由，必须走原生 <a>
+    external: true,
+    icon: MapPin,
+    description:
+      '输入目的地地址、城市或直接点地图，按直线距离列出最近的货运机场，含 IATA 三字码、距离和方位。覆盖 8800 个机场、249 个国家，可只看货运机场。',
+    searchIntent: ['nearest cargo airport', 'nearest airport to address', '最近货运机场查询', '地址查机场三字码'],
+    nextStep: '确定目的机场后，再去对应的非洲航线页看清关资料、二程交付和主甲板限制。',
+  },
+  {
     title: '空运计费重计算器',
     englishTitle: 'Air Freight Chargeable Weight Calculator',
     href: '/tools/air-freight-chargeable-weight-calculator/',
+    external: false,
     icon: Calculator,
     description:
       '输入件数、单件尺寸、总毛重和体积重除数，计算 CBM、体积重、计费重和泡货/重货判断。',
@@ -45,6 +58,7 @@ const tools = [
     title: '非洲空运清关资料生成器',
     englishTitle: 'Africa Air Freight Customs Document Checklist',
     href: '/tools/africa-air-freight-customs-document-checklist/',
+    external: false,
     icon: ClipboardCheck,
     description:
       '按目的国和货物属性生成清关资料清单，覆盖 EasyPASS、Form M/PAAR、ACI/CargoX、PVoC、SARS 等文件缺口。',
@@ -55,6 +69,7 @@ const tools = [
     title: '非洲急件备件路线风险清单',
     englishTitle: 'Africa Urgent Spare Parts Route Risk Checklist',
     href: '/tools/africa-urgent-spare-parts-route-risk-checklist/',
+    external: false,
     icon: Clock3,
     description:
       '停产急件、矿业备件、油气维修件和工厂设备空运前，先检查机场代码、主甲板、中转、清关和最终现场交付风险。',
@@ -212,13 +227,11 @@ export default function ToolsPage() {
         <div className="grid gap-5 lg:grid-cols-2">
           {tools.map((tool) => {
             const Icon = tool.icon
+            const cardClass =
+              'group rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-amberGold'
 
-            return (
-              <Link
-                key={tool.href}
-                href={tool.href}
-                className="group rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-amberGold"
-              >
+            const card = (
+              <>
                 <div className="flex items-start justify-between gap-5">
                   <div className="flex h-12 w-12 items-center justify-center rounded-md bg-slate-950 text-amberGold">
                     <Icon className="h-6 w-6" />
@@ -240,6 +253,16 @@ export default function ToolsPage() {
                 <div className="mt-6 rounded-md bg-amberGold/10 p-4 text-sm leading-7 text-slate-700">
                   {tool.nextStep}
                 </div>
+              </>
+            )
+
+            return tool.external ? (
+              <a key={tool.href} href={tool.href} className={cardClass}>
+                {card}
+              </a>
+            ) : (
+              <Link key={tool.href} href={tool.href} className={cardClass}>
+                {card}
               </Link>
             )
           })}
