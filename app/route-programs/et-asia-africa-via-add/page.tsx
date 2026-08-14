@@ -94,7 +94,7 @@ export default function EtAsiaAfricaRouteProgramPage() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
       url: 'https://www.eascargo.com/',
     },
     areaServed: ['Morocco', 'Algeria', 'Tunisia', 'Ethiopia', 'Guinea', 'Burkina Faso', 'Uganda', 'Comoros', 'Angola', 'Mali'],

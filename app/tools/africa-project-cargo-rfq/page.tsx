@@ -96,7 +96,7 @@ export default function QuotePage() {
       provider: {
         '@type': 'Organization',
         '@id': 'https://www.eascargo.com/#organization',
-        name: 'EASCargo Jones',
+        name: 'EASCARGO',
       },
       areaServed: ['China', 'Africa'],
       availableChannel: {
@@ -127,7 +127,7 @@ export default function QuotePage() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
     },
     featureList: [
       'Shipment detail normalization',
@@ -147,7 +147,7 @@ export default function QuotePage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'EASCargo Jones', item: 'https://www.eascargo.com/' },
+      { '@type': 'ListItem', position: 1, name: 'EASCARGO', item: 'https://www.eascargo.com/' },
       { '@type': 'ListItem', position: 2, name: '中国到非洲项目货询价', item: pageUrl },
     ],
   }

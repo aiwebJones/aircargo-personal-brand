@@ -145,7 +145,7 @@ export default function ToolsPage() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
       url: 'https://www.eascargo.com/',
     },
   }

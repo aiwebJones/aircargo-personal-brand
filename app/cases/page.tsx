@@ -26,7 +26,7 @@ export default function CasesPage() {
     publisher: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
     },
     mainEntity: {
       '@type': 'ItemList',
@@ -44,7 +44,7 @@ export default function CasesPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'EASCargo Jones', item: 'https://www.eascargo.com/' },
+      { '@type': 'ListItem', position: 1, name: 'EASCARGO', item: 'https://www.eascargo.com/' },
       { '@type': 'ListItem', position: 2, name: '公开项目记录', item: pageUrl },
     ],
   }

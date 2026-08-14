@@ -43,7 +43,7 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     '@id': 'https://www.eascargo.com/#organization',
-    name: 'EASCargo Jones',
+    name: 'EASCARGO',
   },
   mainEntityOfPage: 'https://www.eascargo.com/insights/why-shippers-ignore-freight-brokers/',
   datePublished: '2026-05-06',

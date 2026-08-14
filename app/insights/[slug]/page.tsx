@@ -69,7 +69,7 @@ export default function InsightDetailPage({ params }: Params) {
     publisher: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
       url: 'https://www.eascargo.com',
     },
     mainEntityOfPage: url,
@@ -85,7 +85,7 @@ export default function InsightDetailPage({ params }: Params) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'EASCargo Jones',
+        name: 'EASCARGO',
         item: 'https://www.eascargo.com/',
       },
       {

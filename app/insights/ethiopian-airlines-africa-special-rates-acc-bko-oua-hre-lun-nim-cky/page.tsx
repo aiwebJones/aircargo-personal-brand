@@ -50,7 +50,7 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     '@id': 'https://www.eascargo.com/#organization',
-    name: 'EASCargo Jones',
+    name: 'EASCARGO',
   },
   mainEntityOfPage:
     'https://www.eascargo.com/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/',

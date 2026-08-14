@@ -121,7 +121,7 @@ export default function OversizedCargoCasePage() {
     publisher: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
       url: 'https://www.eascargo.com/',
     },
     about: ['China to Africa oversized air freight', 'LGG BRU transit', 'B747F main-deck cargo'],
@@ -130,7 +130,7 @@ export default function OversizedCargoCasePage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'EASCargo Jones', item: 'https://www.eascargo.com/' },
+      { '@type': 'ListItem', position: 1, name: 'EASCARGO', item: 'https://www.eascargo.com/' },
       { '@type': 'ListItem', position: 2, name: '非洲空运情报库', item: 'https://www.eascargo.com/insights/' },
       { '@type': 'ListItem', position: 3, name: '中国到非洲8米长项目货空运案例', item: pageUrl },
     ],

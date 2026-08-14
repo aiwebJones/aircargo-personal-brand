@@ -169,7 +169,7 @@ export default function AfricaOversizedAirFreightPage() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'China to Africa oversized air freight',
-            provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCargo Jones', url: 'https://www.eascargo.com' },
+            provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCARGO', url: 'https://www.eascargo.com' },
             areaServed: ['South Africa', 'Democratic Republic of the Congo', 'Zambia', 'Gabon', 'Nigeria', 'Kenya', 'Uganda', 'Ghana', 'Ivory Coast'],
             serviceType: 'Oversized cargo air freight and project cargo routing',
             description: 'China to Africa oversized air freight via LGG/BRU Europe transit, B747F freighters, African hubs and inland delivery planning.',

@@ -131,7 +131,7 @@ export default function AfricaUrgentSparePartsRouteRiskChecklistPage() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
-      name: 'EASCargo Jones',
+      name: 'EASCARGO',
       url: 'https://www.eascargo.com/',
       email: 'globegsa@gmail.com',
     },

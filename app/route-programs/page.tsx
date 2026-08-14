@@ -52,7 +52,7 @@ export default function RouteProgramsPage() {
     url: pageUrl,
     description: metadata.description,
     dateModified: '2026-07-11',
-    provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCargo Jones' },
+    provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCARGO' },
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: 1,
