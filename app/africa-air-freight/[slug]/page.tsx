@@ -1139,7 +1139,7 @@ function currentMetadataTitle(
   item: (typeof pages)[Slug],
   chinese: (typeof chineseDestinations)[Slug],
 ) {
-  if (slug === 'jnb') return 'FOC to JNB空运 | 全国集货到约翰内斯堡项目货 | EASCargo'
+  if (slug === 'jnb') return '中国到JNB约翰内斯堡空运 | 全国集货与项目货询价 | EASCargo'
   if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
@@ -1154,7 +1154,7 @@ function currentMetadataDescription(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') {
-    return 'FOC福州到JNB约翰内斯堡空运：比较FOC/XMN本地起运与PVG、CAN、SZX、HKG、HAK全国枢纽集运，再逐票核实中转、主甲板、SARS清关和南非项目现场交付。'
+    return '中国各大口岸到JNB约翰内斯堡空运：全国集货，比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽，再逐票核实主甲板、中转、SARS清关和南非项目现场交付。'
   }
   if (slug === 'fbm') {
     return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
@@ -1207,7 +1207,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
               {chinese
                 ? currentSlug === 'jnb'
-                  ? `FOC / 全国集货到 ${item.code} ${chinese.city} 空运`
+                  ? `中国各大口岸到 ${item.code} ${chinese.city} 空运`
                   : currentSlug === 'lbv'
                   ? `全国集货到 ${item.code} ${chinese.city} 空运`
                   : `中国到 ${item.code} ${chinese.city} 空运`
@@ -1217,7 +1217,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               {chinese
                 ? currentSlug === 'jnb'
-                  ? 'FOC和XMN是福建货源的本地起运选项，但不是固定直飞承诺。逐票比较本地收货与全国枢纽集运，再核实单件装载、中转接受、SARS清关和南非最终交付。'
+                  ? '全国集货后比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽。按每票货核实单件装载、中转接受、SARS清关和南非最终交付，不预设固定机场、航班或舱位。'
                   : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
                 : item.description}
             </p>
@@ -1225,7 +1225,11 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               href={`/tools/africa-project-cargo-rfq/?source=route&topic=${item.code.toLowerCase()}`}
               className="mt-10 inline-flex items-center gap-2 rounded-lg bg-amberGold px-6 py-3 font-semibold text-slate-950"
             >
-              {chinese ? `提交 ${item.code} 逐票询价` : `Request a ${item.code} route review`}
+              {chinese
+                ? currentSlug === 'jnb'
+                  ? `提交 ${item.code} 货物资料，获取路线判断`
+                  : `提交 ${item.code} 逐票询价`
+                : `Request a ${item.code} route review`}
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1802,7 +1806,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: item.title,
-            provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCargo Jones', url: 'https://www.eascargo.com' },
+            provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCARGO', url: 'https://www.eascargo.com' },
             areaServed: item.country,
             serviceType: 'Oversized air freight and project cargo routing',
             description: item.description,
