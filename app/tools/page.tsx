@@ -5,9 +5,9 @@ import { ArrowRight, Calculator, ClipboardCheck, Clock3, ExternalLink, FileSearc
 const pageUrl = 'https://www.eascargo.com/tools/'
 
 export const metadata: Metadata = {
-  title: '非洲空运工具箱 | Air Freight Calculators and RFQ Tools | EASCargo Jones',
+  title: 'Air Cargo Tools for Africa | 计费重、清关与询价工具 | EASCARGO',
   description:
-    'EASCargo Jones air freight tools for China to Africa project cargo: chargeable weight calculator, customs document checklist, RFQ readiness and route-risk triage.',
+    '中国到非洲项目货空运工具：查询最近货运机场与 IATA 代码，计算计费重，整理清关资料、急件路线风险和询价信息；结果用于初步判断，最终路线和报价逐票复核。',
   keywords: [
     'air freight tools',
     'air freight calculator',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     canonical: pageUrl,
   },
   openGraph: {
-    title: '非洲空运工具箱 | EASCargo Jones',
-    description: '空运计费重、非洲清关资料和项目货询价前判断工具。',
+    title: 'Air Cargo Tools for Africa | EASCARGO',
+    description: '货运机场、空运计费重、非洲清关资料、路线风险和项目货询价准备工具。',
     url: pageUrl,
     type: 'website',
   },
@@ -128,7 +128,7 @@ export default function ToolsPage() {
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'EASCargo Jones Air Freight Tools',
+    name: 'EASCARGO Air Cargo Tools for Africa',
     url: pageUrl,
     description: metadata.description,
     mainEntity: {
@@ -183,7 +183,7 @@ export default function ToolsPage() {
       <section className="bg-slate-950 px-5 py-14 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
-            EASCargo Jones
+            EASCARGO
           </Link>
           <div className="mt-10 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
@@ -192,12 +192,12 @@ export default function ToolsPage() {
                 China to Africa air freight tools
               </div>
               <h1 className="mt-5 text-4xl font-black leading-tight sm:text-6xl">
-                非洲空运工具箱
-                <span className="block text-amberGold">把询价先变成可判断资料。</span>
+                Air Cargo Tools for Africa
+                <span className="block text-amberGold">非洲项目货询价工具箱</span>
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-                这里不是泛泛介绍空运，而是把客户询价前必须补齐的计费重、清关文件、
-                货物属性和目的地风险拆成可操作工具。适合工厂、贸易商、项目采购和货代同行快速判断。
+                查询最近货运机场与 IATA 代码，计算空运计费重，整理非洲清关文件、
+                急件路线风险和询价资料。适合工厂、贸易商、项目采购和货代同行做初步判断，最终路线和报价仍逐票复核。
               </p>
             </div>
             <div className="rounded-lg border border-white/10 bg-white/5 p-6">
