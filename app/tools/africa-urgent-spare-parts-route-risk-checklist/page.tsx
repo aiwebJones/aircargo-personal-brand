@@ -5,7 +5,7 @@ import { AlertTriangle, ArrowRight, CheckCircle2, Clock3, FileSearch, Plane, Rou
 const pageUrl = 'https://www.eascargo.com/tools/africa-urgent-spare-parts-route-risk-checklist/'
 
 export const metadata: Metadata = {
-  title: '非洲急件备件空运路线风险清单 | Africa Spare Parts Air Freight Route Risk Checklist | EASCargo Jones',
+  title: '非洲急件备件空运路线风险清单 | Africa Spare Parts Air Freight Route Risk Checklist | EASCARGO',
   description:
     'Pre-check China to Africa urgent spare-parts air freight route risk before quoting: airport code, downtime deadline, main-deck need, LGG/BRU transit, customs documents, importer readiness and final-site delivery.',
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: pageUrl,
   },
   openGraph: {
-    title: '非洲急件备件空运路线风险清单 | EASCargo Jones',
+    title: '非洲急件备件空运路线风险清单 | EASCARGO',
     description:
       'A route-risk checklist for China to Africa urgent spare-parts RFQs before promising price, transit time or airport delivery.',
     url: pageUrl,
@@ -193,7 +193,7 @@ export default function AfricaUrgentSparePartsRouteRiskChecklistPage() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
-              EASCargo Jones
+              EASCARGO
             </Link>
             <div className="mt-8 inline-flex items-center gap-2 rounded-md border border-amberGold/40 bg-amberGold/10 px-3 py-2 text-sm font-semibold text-amberGold">
               <Clock3 className="h-4 w-4" />

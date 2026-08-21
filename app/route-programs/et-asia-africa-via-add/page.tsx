@@ -6,7 +6,7 @@ import RouteProgramExplorer from './RouteProgramExplorer'
 const pageUrl = 'https://www.eascargo.com/route-programs/et-asia-africa-via-add/'
 
 export const metadata: Metadata = {
-  title: 'ET亚洲至非洲空运 | 马尔代夫/新加坡/菲律宾经ADD | EASCargo Jones',
+  title: 'ET亚洲至非洲空运 | 马尔代夫/新加坡/菲律宾经ADD | EASCARGO',
   description:
     'EASCargo比较马尔代夫MLE、新加坡SIN、菲律宾MNL经ADD至CMN、ALG、TUN、CKY、OUA、EBB、HAH、NBJ、BKO的非洲空运价格、总成本和执行风险。',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: 'MLE / SIN / MNL 经 ADD 至非洲空运项目 | EASCargo Jones',
+    title: 'MLE / SIN / MNL 经 ADD 至非洲空运项目 | EASCARGO',
     description: '比较亚洲第三地起运与中国直出的全程成本、舱位、文件和目的港执行风险。',
     url: pageUrl,
     type: 'website',

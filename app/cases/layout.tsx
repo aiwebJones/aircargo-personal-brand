@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.eascargo.com/cases/',
   },
   openGraph: {
-    title: '大件空运公开项目记录 | EASCargo Jones',
+    title: '大件空运公开项目记录 | EASCARGO',
     description:
       '查看LBV超长件、16.73吨单件和B777F 98.8吨历史记录的公开事实、判断逻辑与执行边界。',
     url: 'https://www.eascargo.com/cases/',

@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, Mail } from 'lucide-react'
 import ConversionReceipt from '@/components/ConversionReceipt'
 
 export const metadata: Metadata = {
-  title: '询盘已收到 | EASCargo Jones',
+  title: '询盘已收到 | EASCARGO',
   description: 'EASCargo已收到您的中国到非洲项目货空运询盘。',
   alternates: {
     canonical: 'https://www.eascargo.com/thank-you/',

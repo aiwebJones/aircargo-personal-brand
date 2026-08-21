@@ -14,7 +14,7 @@ export default function FooterEN() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Plane className="w-6 h-6 text-amberGold" />
-              <span className="text-xl font-bold text-textPrimary">EASCargo Jones</span>
+              <span className="text-xl font-bold text-textPrimary">EASCARGO</span>
             </div>
             <p className="text-textMuted mb-6 max-w-md">
               China to Africa oversized and project cargo air freight via LGG/BRU Europe transit,
@@ -64,7 +64,7 @@ export default function FooterEN() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-borderLight flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-textMuted text-sm">
-            © {currentYear} EASCargo Jones. All rights reserved.
+            © {currentYear} EASCARGO. All rights reserved.
           </p>
           <p className="text-textMuted text-sm">
             China to Africa Oversized Air Freight

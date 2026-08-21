@@ -6,7 +6,7 @@ import ChargeableWeightCalculator from './ChargeableWeightCalculator'
 const pageUrl = 'https://www.eascargo.com/tools/air-freight-chargeable-weight-calculator/'
 
 export const metadata: Metadata = {
-  title: '空运计费重计算器 | Air Freight Chargeable Weight Calculator | EASCargo Jones',
+  title: '空运计费重计算器 | Air Freight Chargeable Weight Calculator | EASCARGO',
   description:
     'Use this air freight chargeable weight calculator to calculate CBM, volumetric weight, chargeable weight, 6000/5000 divisor, and China to Africa project cargo RFQ data.',
   keywords: [
@@ -138,7 +138,7 @@ export default function AirFreightChargeableWeightCalculatorPage() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="pt-4">
             <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
-              EASCargo Jones
+              EASCARGO
             </Link>
             <div className="mt-8 inline-flex items-center gap-2 rounded-md border border-amberGold/40 bg-amberGold/10 px-3 py-2 text-sm font-semibold text-amberGold">
               <Ruler className="h-4 w-4" />

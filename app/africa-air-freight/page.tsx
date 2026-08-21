@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle2, FileCheck2, Plane, Route, ShieldCheck } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '非洲空运航线 Hub | JNB/FBM/LUN/LBV/ACC/BKO/CKY 项目货路线 | EASCargo Jones',
+  title: '非洲空运航线 Hub | JNB/FBM/LUN/LBV/ACC/BKO/CKY 项目货路线 | EASCARGO',
   description:
-    'EASCargo Jones非洲空运航线Hub，覆盖中国到非洲大件项目货、矿业设备、LGG/BRU欧洲中转、JNB/FBM/LUN/LBV/ACC/BKO/CKY/OUA/HRE/NIM等机场路线判断。',
+    'EASCARGO非洲空运航线Hub，覆盖中国到非洲大件项目货、矿业设备、LGG/BRU欧洲中转、JNB/FBM/LUN/LBV/ACC/BKO/CKY/OUA/HRE/NIM等机场路线判断。',
   keywords: [
     '非洲空运航线',
     '中国到非洲空运',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.eascargo.com/africa-air-freight/',
   },
   openGraph: {
-    title: '非洲空运航线 Hub | EASCargo Jones',
+    title: '非洲空运航线 Hub | EASCARGO',
     description: '中国到非洲大件项目货、矿业设备和机场代码路线判断。',
     url: 'https://www.eascargo.com/africa-air-freight/',
     type: 'website',
@@ -109,7 +109,7 @@ export default function AfricaAirFreightHubPage() {
       <section className="bg-slate-950 px-6 py-24 text-white">
         <div className="mx-auto max-w-6xl">
           <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
-            EASCargo Jones
+            EASCARGO
           </Link>
           <div className="mt-10 max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">

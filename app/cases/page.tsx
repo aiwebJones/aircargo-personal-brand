@@ -62,7 +62,7 @@ export default function CasesPage() {
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-14 pt-24 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-amberGold hover:text-white">
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            EASCargo Jones
+            EASCARGO
           </Link>
           <div className="mt-10 max-w-4xl">
             <p className="text-sm font-black text-amberGold">Public operation records</p>

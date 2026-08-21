@@ -6,7 +6,7 @@ import CustomsDocumentChecklistTool from './CustomsDocumentChecklistTool'
 const pageUrl = 'https://www.eascargo.com/tools/africa-air-freight-customs-document-checklist/'
 
 export const metadata: Metadata = {
-  title: '非洲空运清关资料生成器 | Africa Air Freight Customs Document Checklist | EASCargo Jones',
+  title: '非洲空运清关资料生成器 | Africa Air Freight Customs Document Checklist | EASCARGO',
   description:
     'Generate a China to Africa air freight customs document checklist by destination and cargo type: Ghana EasyPASS, Nigeria Form M/PAAR, Egypt ACI/CargoX, Kenya PVoC, South Africa SARS and more.',
   keywords: [
@@ -179,7 +179,7 @@ export default function AfricaAirFreightCustomsDocumentChecklistPage() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="pt-4">
             <Link href="/" className="text-sm font-semibold text-amberGold hover:text-white">
-              EASCargo Jones
+              EASCARGO
             </Link>
             <div className="mt-8 inline-flex items-center gap-2 rounded-md border border-amberGold/40 bg-amberGold/10 px-3 py-2 text-sm font-semibold text-amberGold">
               <ClipboardCheck className="h-4 w-4" />

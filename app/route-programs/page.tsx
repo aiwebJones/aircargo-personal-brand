@@ -5,13 +5,13 @@ import { ArrowRight, Calculator, FileCheck2, Plane, Route, ShieldCheck } from 'l
 const pageUrl = 'https://www.eascargo.com/route-programs/'
 
 export const metadata: Metadata = {
-  title: '非洲航线项目 | 当前可操作的价格与运力方案 | EASCargo Jones',
+  title: '非洲航线项目 | 当前可操作的价格与运力方案 | EASCARGO',
   description:
     'EASCargo非洲航线项目中心：把当前可操作的起运地、ADD/LGG/BRU中转、目的港、价格逻辑、货物限制、清关和最终交付整理成可执行方案。',
   keywords: ['非洲航线项目', '非洲空运价格方案', 'ADD中转非洲', '亚洲到非洲空运', '非洲项目货运力'],
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: '非洲航线项目 | EASCargo Jones',
+    title: '非洲航线项目 | EASCARGO',
     description: '当前可操作的非洲空运价格、运力和多起运地方案。',
     url: pageUrl,
     type: 'website',
@@ -77,7 +77,7 @@ export default function RouteProgramsPage() {
       >
         <div className="absolute inset-0 bg-slate-950/82" />
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 pt-24 sm:px-6 lg:px-8">
-          <Link href="/" className="text-sm font-bold text-amberGold hover:text-white">EASCargo Jones</Link>
+          <Link href="/" className="text-sm font-bold text-amberGold hover:text-white">EASCARGO</Link>
           <div className="mt-10 max-w-4xl">
             <div className="inline-flex items-center gap-2 rounded border border-amberGold/40 bg-slate-950/70 px-3 py-2 text-sm font-bold text-amberGold">
               <Route className="h-4 w-4" />

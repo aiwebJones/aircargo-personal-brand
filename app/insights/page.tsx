@@ -4,9 +4,9 @@ import { ArrowRight, Calendar, FileText, Plane, SearchCheck, ShieldCheck } from 
 import { seoInsights } from '@/lib/seo-insights'
 
 export const metadata: Metadata = {
-  title: '非洲空运情报库 | 中国到非洲空运价格、清关与项目货路线 | EASCargo Jones',
+  title: '非洲空运情报库 | 中国到非洲空运价格、清关与项目货路线 | EASCARGO',
   description:
-    'EASCargo Jones非洲空运情报库，覆盖中国到非洲空运价格、清关资料、ET埃塞俄比亚航空、LGG/BRU欧洲中转、JNB/FBM/LUN/LBV/ACC/BKO/CKY等项目货路线判断。',
+    'EASCARGO非洲空运情报库，覆盖中国到非洲空运价格、清关资料、ET埃塞俄比亚航空、LGG/BRU欧洲中转、JNB/FBM/LUN/LBV/ACC/BKO/CKY等项目货路线判断。',
   keywords: [
     '非洲空运情报',
     '中国到非洲空运',
@@ -72,7 +72,7 @@ export default function InsightsPage() {
   const insightsSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'EASCargo Jones 非洲空运情报库',
+    name: 'EASCARGO 非洲空运情报库',
     url: 'https://www.eascargo.com/insights/',
     description: metadata.description,
     mainEntity: {

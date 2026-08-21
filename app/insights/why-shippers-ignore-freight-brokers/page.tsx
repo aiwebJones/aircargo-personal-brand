@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, CheckCircle2, FileSearch, Plane, ShieldAlert } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入 | EASCargo Jones',
+  title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入 | EASCARGO',
   description:
     '客户不缺普通货代，客户缺能判断复杂异常票的人。本文讲清非洲大件项目货销售如何从泛泛报价，转向路线可执行性、资料缺口和风险清单。',
   keywords: [

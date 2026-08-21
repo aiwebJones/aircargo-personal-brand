@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { ArrowRight, CheckCircle2, FileCheck2, Globe2, PackageCheck, Plane, Route, ShieldCheck, Truck } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'China to Africa Oversized Air Freight Expert | EASCargo Jones',
+  title: 'China to Africa Oversized Air Freight Expert | EASCARGO',
   description:
-    'EASCargo Jones specializes in oversized and heavy air freight from China to Africa via LGG/BRU Europe transit, B747F freighters, JNB, FBM, LUN, LBV, customs document checks and inland delivery planning.',
+    'EASCARGO specializes in oversized and heavy air freight from China to Africa via LGG/BRU Europe transit, B747F freighters, JNB, FBM, LUN, LBV, customs document checks and inland delivery planning.',
   keywords: [
     'China to Africa oversized air freight',
     'Africa project cargo air freight',
@@ -46,7 +46,7 @@ export default function AfricaOversizedAirFreightPage() {
     <main className="min-h-screen bg-white text-slate-950">
       <section className="bg-slate-950 px-6 py-24 text-white">
         <div className="mx-auto max-w-6xl">
-          <a href="/" className="mb-10 inline-flex text-sm font-semibold text-amberGold">EASCargo Jones</a>
+          <a href="/" className="mb-10 inline-flex text-sm font-semibold text-amberGold">EASCARGO</a>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">
               <Plane className="h-4 w-4" />

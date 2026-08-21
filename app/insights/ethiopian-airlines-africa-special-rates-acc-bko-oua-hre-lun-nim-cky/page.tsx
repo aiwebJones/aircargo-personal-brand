@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, MapPinned, Plane, ShieldAlert } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选 | EASCargo Jones',
+  title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选 | EASCARGO',
   description:
     'ET埃塞俄比亚航空经ADD中转覆盖加纳ACC、马里BKO、布基纳法索OUA、津巴布韦HRE、赞比亚LUN、尼日尔NIM、几内亚CKY。本文讲清非洲空运询价、清关和项目货判断。',
   keywords: [

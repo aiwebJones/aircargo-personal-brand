@@ -1092,13 +1092,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const chinese = chineseDestinations[params.slug as Slug]
   if (!item) {
     return {
-      title: 'Africa Air Freight from China | EASCargo Jones',
+      title: 'Africa Air Freight from China | EASCARGO',
     }
   }
 
   const title = chinese
     ? currentMetadataTitle(params.slug as Slug, item, chinese)
-    : `${item.title} | EASCargo Jones`
+    : `${item.title} | EASCARGO`
   const description = chinese
     ? currentMetadataDescription(params.slug as Slug, item, chinese)
     : item.description
@@ -1140,12 +1140,12 @@ function currentMetadataTitle(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') return '中国到JNB约翰内斯堡空运 | 全国集货与项目货询价 | EASCargo'
-  if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCargo Jones'
-  if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCargo Jones'
+  if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCARGO'
+  if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCARGO'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
-  if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCargo Jones'
+  if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCARGO'
   if (slug === 'abj') return 'ABJ阿比让空运 | 科特迪瓦GUCE/FDI清关与项目货报价 | EASCargo'
-  return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCargo Jones`
+  return `${item.code} ${chinese.city}空运 | 中国到${chinese.country}大件项目货 | EASCARGO`
 }
 
 function currentMetadataDescription(

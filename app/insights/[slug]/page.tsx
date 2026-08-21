@@ -21,7 +21,7 @@ export function generateMetadata({ params }: Params): Metadata {
 
   if (!insight || insight.template !== 'generated') {
     return {
-      title: '非洲空运情报 | EASCargo Jones',
+      title: '非洲空运情报 | EASCARGO',
     }
   }
 
@@ -29,7 +29,7 @@ export function generateMetadata({ params }: Params): Metadata {
   const modifiedTime = insight.modifiedDate ?? insight.date
 
   return {
-    title: `${insight.title} | EASCargo Jones`,
+    title: `${insight.title} | EASCARGO`,
     description: insight.excerpt,
     keywords: insight.keywords,
     alternates: {

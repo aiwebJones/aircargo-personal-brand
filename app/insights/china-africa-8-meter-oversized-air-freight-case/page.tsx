@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck } from 'lucide-reac
 const pageUrl = 'https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/'
 
 export const metadata: Metadata = {
-  title: '中国到非洲8米长项目货空运案例：LGG/BRU中转怎么做？ | EASCargo Jones',
+  title: '中国到非洲8米长项目货空运案例：LGG/BRU中转怎么做？ | EASCARGO',
   description:
     '一票约8米长工业设备无法使用普通客机腹舱。案例拆解中国起运、LGG/BRU欧洲中转、B747F主甲板、LBV等非洲入口、报价逻辑和项目交付。',
   keywords: [

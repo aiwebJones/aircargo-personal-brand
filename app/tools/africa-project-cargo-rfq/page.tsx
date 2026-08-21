@@ -18,7 +18,7 @@ import QuoteOrchestrationAgent from '@/components/QuoteOrchestrationAgent'
 const pageUrl = 'https://www.eascargo.com/tools/africa-project-cargo-rfq/'
 
 export const metadata: Metadata = {
-  title: '中国到非洲大件空运询价 | 项目货路线预判 | EASCargo Jones',
+  title: '中国到非洲大件空运询价 | 项目货路线预判 | EASCARGO',
   description:
     '提交中国到非洲超大件、矿业备件、油气能源急件和项目货逐票询价：按尺寸重量、起运地、目的机场、清关和最终交付判断可执行路线。',
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: '中国到非洲大件/项目货逐票询价 | EASCargo Jones',
+    title: '中国到非洲大件/项目货逐票询价 | EASCARGO',
     description: '先核对装载、路线、清关和最终交付，再按真实货物资料逐票报价。',
     url: pageUrl,
     type: 'website',
@@ -173,7 +173,7 @@ export default function QuotePage() {
         <div className="mx-auto max-w-6xl px-5 pb-12 pt-8 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-amberGold hover:text-white">
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            EASCargo Jones
+            EASCARGO
           </Link>
           <div className="mt-10 max-w-4xl">
             <p className="text-sm font-bold text-amberGold">China to Africa project cargo RFQ</p>
