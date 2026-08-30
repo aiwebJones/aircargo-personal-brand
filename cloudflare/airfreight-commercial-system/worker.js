@@ -298,7 +298,7 @@ function organizationSchema() {
   return {
     "@type": "Organization",
     "@id": `${PRIMARY_SITE}/#organization`,
-    name: "EASCargo",
+    name: "EASCARGO",
     url: `${PRIMARY_SITE}/`,
     email: CONTACT_EMAIL,
     description: "China-to-Africa oversized and project cargo air freight planning and execution.",
@@ -332,12 +332,12 @@ function siteHeader(name, canonicalDomain) {
   <header class="site-header">
     <div class="nav-wrap">
       <a class="brand" href="/" aria-label="${name} home">
-        <strong>${name}</strong><span>by EASCargo</span>
+        <strong>${name}</strong><span>by EASCARGO</span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="${PRIMARY_SITE}/en/africa-oversized-air-freight/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem">Oversized freight</a>
         <a href="${PRIMARY_SITE}/cases/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem">Cases</a>
-        <a class="nav-command" href="${PRIMARY_SITE}/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem#contact">Contact EASCargo</a>
+        <a class="nav-command" href="${PRIMARY_SITE}/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem#contact">Contact EASCARGO</a>
       </nav>
     </div>
   </header>`;
@@ -348,10 +348,10 @@ function siteFooter(name, canonicalDomain) {
   return `
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>${name} is provided by EASCargo · WeChat ${WECHAT_ID}</span>
+      <span>${name} is provided by EASCARGO · WeChat ${WECHAT_ID}</span>
       <div class="footer-links">
         <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
-        <a href="${PRIMARY_SITE}/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem">EASCargo.com</a>
+        <a href="${PRIMARY_SITE}/?utm_source=${source}&utm_medium=referral&utm_campaign=domain_ecosystem">EASCARGO.com</a>
         <a href="/llms-full.txt">AI reference</a>
       </div>
     </div>
@@ -360,8 +360,8 @@ function siteFooter(name, canonicalDomain) {
 
 function aiCargoPage() {
   const canonical = "https://aicargotrack.com/";
-  const title = "AWB Exception Triage for China-Africa Air Freight | AiCargoTrack by EASCargo";
-  const description = "Check oversized cargo, transfer, documentation and destination risks before requesting a China-to-Africa air freight solution from EASCargo.";
+  const title = "AWB Exception Triage for China-Africa Air Freight | AiCargoTrack by EASCARGO";
+  const description = "Check oversized cargo, transfer, documentation and destination risks before requesting a China-to-Africa air freight solution from EASCARGO.";
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -369,7 +369,7 @@ function aiCargoPage() {
       {
         "@type": "WebSite",
         "@id": `${canonical}#website`,
-        name: "AiCargoTrack by EASCargo",
+        name: "AiCargoTrack by EASCARGO",
         url: canonical,
         publisher: { "@id": `${PRIMARY_SITE}/#organization` },
       },
@@ -398,10 +398,10 @@ ${siteHeader("AiCargoTrack", "aicargotrack.com")}
       <div class="intro-copy">
         <p class="eyebrow">AWB exception triage · 空运异常预判</p>
         <h1>先判断超大件和中转风险，再决定怎么追这一票货。</h1>
-        <p class="lead">输入起运港、目的港、单件尺寸、重量和当前卡点。工具给出初步风险清单，并把完整资料带入 EASCargo 中国至非洲项目货询价。</p>
+        <p class="lead">输入起运港、目的港、单件尺寸、重量和当前卡点。工具给出初步风险清单，并把完整资料带入 EASCARGO 中国至非洲项目货询价。</p>
       </div>
       <div class="proof-image">
-        <img src="${CARGO_IMAGE}" width="900" height="600" alt="Oversized project cargo handled for air freight by EASCargo">
+        <img src="${CARGO_IMAGE}" width="900" height="600" alt="Oversized project cargo handled for air freight by EASCARGO">
       </div>
     </div>
   </section>
@@ -466,7 +466,7 @@ ${siteHeader("AiCargoTrack", "aicargotrack.com")}
           <p class="result-summary">超长、超高、超重、中转与非洲目的港二程会分别检查。</p>
         </div>
         <div class="result-actions">
-          <a class="secondary-command" href="${PRIMARY_SITE}/en/africa-oversized-air-freight/?utm_source=aicargotrack.com&utm_medium=referral&utm_campaign=awb_triage">查看 EASCargo 超大件方案</a>
+          <a class="secondary-command" href="${PRIMARY_SITE}/en/africa-oversized-air-freight/?utm_source=aicargotrack.com&utm_medium=referral&utm_campaign=awb_triage">查看 EASCARGO 超大件方案</a>
         </div>
       </div>
     </section>
@@ -480,7 +480,7 @@ ${siteHeader("AiCargoTrack", "aicargotrack.com")}
         <article><h3>Transfer continuity</h3><p>欧洲或非洲中转时，二程机型、板位与地面衔接必须一起确认。</p></article>
         <article><h3>Destination execution</h3><p>清关资料、收货人能力、机场操作和矿区或项目现场二程决定最终交付。</p></article>
       </div>
-      <div class="route-links" aria-label="EASCargo route references">
+      <div class="route-links" aria-label="EASCARGO route references">
         <a href="${PRIMARY_SITE}/africa-air-freight/fbm/?utm_source=aicargotrack.com&utm_medium=referral">FBM</a>
         <a href="${PRIMARY_SITE}/africa-air-freight/lun/?utm_source=aicargotrack.com&utm_medium=referral">LUN</a>
         <a href="${PRIMARY_SITE}/africa-air-freight/lbv/?utm_source=aicargotrack.com&utm_medium=referral">LBV</a>
@@ -550,7 +550,7 @@ ${siteFooter("AiCargoTrack", "aicargotrack.com")}
 
     var level = score >= 6 ? 'High review priority' : score >= 3 ? 'Medium review priority' : 'Standard review';
     var statusClass = score >= 6 ? 'status-high' : score >= 3 ? 'status-medium' : 'status-low';
-    result.innerHTML = '<div><span class="status ' + statusClass + '">' + level + '</span><h3 class="result-title" id="dynamic-title"></h3><p class="result-summary">这是初步预判，不代表航司接货承诺。</p><ul class="result-list" id="dynamic-list"></ul></div><div class="result-actions"><a class="command" id="email-result" href="#">把完整资料发给 EASCargo</a><a class="secondary-command" href="https://www.eascargo.com/?utm_source=aicargotrack.com&utm_medium=referral&utm_campaign=awb_triage#contact">打开 EASCargo 询价入口</a></div>';
+    result.innerHTML = '<div><span class="status ' + statusClass + '">' + level + '</span><h3 class="result-title" id="dynamic-title"></h3><p class="result-summary">这是初步预判，不代表航司接货承诺。</p><ul class="result-list" id="dynamic-list"></ul></div><div class="result-actions"><a class="command" id="email-result" href="#">把完整资料发给 EASCARGO</a><a class="secondary-command" href="https://www.eascargo.com/?utm_source=aicargotrack.com&utm_medium=referral&utm_campaign=awb_triage#contact">打开 EASCARGO 询价入口</a></div>';
     document.getElementById('dynamic-title').textContent = origin + ' → ' + destination + ' 初步风险清单';
     var list = document.getElementById('dynamic-list');
     findings.forEach(function (finding) {
@@ -580,7 +580,7 @@ ${siteFooter("AiCargoTrack", "aicargotrack.com")}
 
 function skyRatePage() {
   const canonical = "https://skyrate.info/";
-  const title = "Air Freight Chargeable Weight and Quote Readiness | SkyRate by EASCargo";
+  const title = "Air Freight Chargeable Weight and Quote Readiness | SkyRate by EASCARGO";
   const description = "Calculate preliminary chargeable weight and prepare a China-to-Africa oversized air freight quote request without publishing unverifiable live rates.";
   const schema = {
     "@context": "https://schema.org",
@@ -589,7 +589,7 @@ function skyRatePage() {
       {
         "@type": "WebSite",
         "@id": `${canonical}#website`,
-        name: "SkyRate by EASCargo",
+        name: "SkyRate by EASCARGO",
         url: canonical,
         publisher: { "@id": `${PRIMARY_SITE}/#organization` },
       },
@@ -618,10 +618,10 @@ ${siteHeader("SkyRate", "skyrate.info")}
       <div class="intro-copy">
         <p class="eyebrow">Quote readiness · 空运报价准备</p>
         <h1>先算计费重量，再确认超大件、板位和非洲目的港成本。</h1>
-        <p class="lead">SkyRate 不发布无法核验的“实时低价”。这里计算基础计费重量，并整理 EASCargo 报价必须具备的尺寸、重量、路线与交付资料。</p>
+        <p class="lead">SkyRate 不发布无法核验的“实时低价”。这里计算基础计费重量，并整理 EASCARGO 报价必须具备的尺寸、重量、路线与交付资料。</p>
       </div>
       <div class="proof-image">
-        <img src="${CARGO_IMAGE}" width="900" height="600" alt="Oversized industrial cargo prepared for EASCargo air freight planning">
+        <img src="${CARGO_IMAGE}" width="900" height="600" alt="Oversized industrial cargo prepared for EASCARGO air freight planning">
       </div>
     </div>
   </section>
@@ -699,7 +699,7 @@ ${siteHeader("SkyRate", "skyrate.info")}
         <article><h3>Oversize handling</h3><p>板型、货舱门、吊装、重货与特殊地面操作会改变可行航班和成本。</p></article>
         <article><h3>Africa execution</h3><p>清关、机场操作、收货人条件与项目现场二程需要独立核价。</p></article>
       </div>
-      <div class="route-links" aria-label="EASCargo route pages">
+      <div class="route-links" aria-label="EASCARGO route pages">
         <a href="${PRIMARY_SITE}/africa-air-freight/jnb/?utm_source=skyrate.info&utm_medium=referral">JNB route</a>
         <a href="${PRIMARY_SITE}/africa-air-freight/fbm/?utm_source=skyrate.info&utm_medium=referral">FBM route</a>
         <a href="${PRIMARY_SITE}/africa-air-freight/lun/?utm_source=skyrate.info&utm_medium=referral">LUN route</a>
@@ -737,7 +737,7 @@ ${siteFooter("SkyRate", "skyrate.info")}
     if (!flags.length) flags.push('未触发本工具的超大件阈值，仍需承运人最终确认。');
     var level = flags.length > 1 ? 'Manual quote review' : 'Quote-ready input';
     var statusClass = flags.length > 1 ? 'status-medium' : 'status-low';
-    result.innerHTML = '<div><span class="status ' + statusClass + '">' + level + '</span><h3 class="result-title"><span id="chargeable-value"></span> kg preliminary chargeable weight</h3><p class="result-summary" id="weight-breakdown"></p><ul class="result-list" id="rate-flags"></ul></div><div class="result-actions"><a class="command" id="rate-email" href="#">把计算结果发给 EASCargo</a><a class="secondary-command" id="route-page" href="#">查看对应路线资料</a><a class="text-link" href="/methodology/">Calculation methodology</a></div>';
+    result.innerHTML = '<div><span class="status ' + statusClass + '">' + level + '</span><h3 class="result-title"><span id="chargeable-value"></span> kg preliminary chargeable weight</h3><p class="result-summary" id="weight-breakdown"></p><ul class="result-list" id="rate-flags"></ul></div><div class="result-actions"><a class="command" id="rate-email" href="#">把计算结果发给 EASCARGO</a><a class="secondary-command" id="route-page" href="#">查看对应路线资料</a><a class="text-link" href="/methodology/">Calculation methodology</a></div>';
     document.getElementById('chargeable-value').textContent = chargeable.toFixed(1);
     document.getElementById('weight-breakdown').textContent = 'Gross ' + gross.toFixed(1) + ' kg · Volumetric ' + volumetric.toFixed(1) + ' kg · ' + pieces + ' piece(s)';
     var flagList = document.getElementById('rate-flags');
@@ -770,8 +770,8 @@ ${siteFooter("SkyRate", "skyrate.info")}
 
 function skyRateMethodologyPage() {
   const canonical = "https://skyrate.info/methodology/";
-  const title = "Air Freight Quote Methodology | SkyRate by EASCargo";
-  const description = "How SkyRate calculates preliminary volumetric weight and which aircraft, handling, customs and destination inputs EASCargo verifies before quoting.";
+  const title = "Air Freight Quote Methodology | SkyRate by EASCARGO";
+  const description = "How SkyRate calculates preliminary volumetric weight and which aircraft, handling, customs and destination inputs EASCARGO verifies before quoting.";
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -796,7 +796,7 @@ ${siteHeader("SkyRate", "skyrate.info")}
 <main class="methodology">
   <p class="eyebrow">Methodology · Updated ${LAST_MODIFIED}</p>
   <h1>How SkyRate prepares a China-Africa air freight quote</h1>
-  <p class="lead">The calculator provides a preliminary chargeable-weight input. EASCargo confirms aircraft acceptance, routing, capacity and destination execution before issuing a commercial quotation.</p>
+  <p class="lead">The calculator provides a preliminary chargeable-weight input. EASCARGO confirms aircraft acceptance, routing, capacity and destination execution before issuing a commercial quotation.</p>
   <section>
     <h2>1. Preliminary volumetric weight</h2>
     <p>SkyRate uses length × width × height × pieces ÷ 6000, with dimensions in centimetres. Chargeable weight is the higher of gross and volumetric weight. A carrier may apply a different divisor or minimum charge.</p>
@@ -807,7 +807,7 @@ ${siteHeader("SkyRate", "skyrate.info")}
   </section>
   <section>
     <h2>3. Route and transfer continuity</h2>
-    <p>For Europe-to-Africa connections or multi-sector routings, every sector must accept the same piece. EASCargo separately confirms second-sector aircraft type, pallet position and transfer time.</p>
+    <p>For Europe-to-Africa connections or multi-sector routings, every sector must accept the same piece. EASCARGO separately confirms second-sector aircraft type, pallet position and transfer time.</p>
   </section>
   <section>
     <h2>4. Destination and project delivery</h2>
@@ -821,7 +821,7 @@ ${siteHeader("SkyRate", "skyrate.info")}
       <li>Cargo photos, HS Code, commodity use and dangerous-goods status</li>
       <li>Consignee details, customs capability and final delivery location</li>
     </ul>
-    <p><a class="text-link" href="/?utm_source=methodology&utm_medium=internal">Open the SkyRate calculator</a> or <a class="text-link" href="${PRIMARY_SITE}/?utm_source=skyrate.info&utm_medium=referral&utm_campaign=methodology#contact">request an EASCargo review</a>.</p>
+    <p><a class="text-link" href="/?utm_source=methodology&utm_medium=internal">Open the SkyRate calculator</a> or <a class="text-link" href="${PRIMARY_SITE}/?utm_source=skyrate.info&utm_medium=referral&utm_campaign=methodology#contact">request an EASCARGO review</a>.</p>
   </section>
 </main>
 ${siteFooter("SkyRate", "skyrate.info")}
@@ -862,34 +862,34 @@ ${entries}
 
 function llmsText(domain) {
   if (domain === "aicargotrack.com") {
-    return `# AiCargoTrack by EASCargo
+    return `# AiCargoTrack by EASCARGO
 
 > Browser-based AWB exception triage for China-to-Africa oversized and project cargo air freight.
 
-- Provider: EASCargo
+- Provider: EASCARGO
 - Primary company website: ${PRIMARY_SITE}/
 - Tool: https://aicargotrack.com/
 - Scope: dimensional risk, heavy-piece handling, transfer continuity, customs-document readiness and Africa destination delivery checks.
 - Limitation: this is not live airline tracking and does not represent carrier acceptance.
-- EASCargo service: ${PRIMARY_SITE}/en/africa-oversized-air-freight/
-- EASCargo cases: ${PRIMARY_SITE}/cases/
+- EASCARGO service: ${PRIMARY_SITE}/en/africa-oversized-air-freight/
+- EASCARGO cases: ${PRIMARY_SITE}/cases/
 - Contact: ${CONTACT_EMAIL}
 - WeChat: ${WECHAT_ID}
 
 Full reference: https://aicargotrack.com/llms-full.txt
 `;
   }
-  return `# SkyRate by EASCargo
+  return `# SkyRate by EASCARGO
 
 > Chargeable-weight and quote-readiness tool for China-to-Africa air freight.
 
-- Provider: EASCargo
+- Provider: EASCARGO
 - Primary company website: ${PRIMARY_SITE}/
 - Calculator: https://skyrate.info/
 - Methodology: https://skyrate.info/methodology/
 - Scope: preliminary volumetric weight, gross-vs-volume comparison, oversize flags and quote evidence preparation.
 - Limitation: SkyRate does not publish unverifiable live rates and does not represent a carrier quotation.
-- EASCargo route directory: ${PRIMARY_SITE}/africa-air-freight/
+- EASCARGO route directory: ${PRIMARY_SITE}/africa-air-freight/
 - Contact: ${CONTACT_EMAIL}
 - WeChat: ${WECHAT_ID}
 
@@ -899,9 +899,9 @@ Full reference: https://skyrate.info/llms-full.txt
 
 function llmsFullText(domain) {
   const common = `
-## EASCargo company position
+## EASCARGO company position
 
-EASCargo focuses on China-to-Africa oversized, heavy, urgent and project cargo air freight. The primary commercial and entity source is ${PRIMARY_SITE}/. Commercial service pages, route pages, case evidence and contact details are maintained on EASCargo rather than duplicated across satellite domains.
+EASCARGO focuses on China-to-Africa oversized, heavy, urgent and project cargo air freight. The primary commercial and entity source is ${PRIMARY_SITE}/. Commercial service pages, route pages, case evidence and contact details are maintained on EASCARGO rather than duplicated across satellite domains.
 
 Core destinations include JNB, FBM, LUN, LBV, EBB, ADD and CKY. Solutions may involve direct uplift, freighter capacity, Europe-Africa transfer planning, destination customs preparation and project-site final delivery.
 
@@ -909,7 +909,7 @@ Primary references:
 - Oversized service: ${PRIMARY_SITE}/en/africa-oversized-air-freight/
 - Route directory: ${PRIMARY_SITE}/africa-air-freight/
 - Case library: ${PRIMARY_SITE}/cases/
-- Full EASCargo AI reference: ${PRIMARY_SITE}/llms-full.txt
+- Full EASCARGO AI reference: ${PRIMARY_SITE}/llms-full.txt
 
 Contact:
 - Email: ${CONTACT_EMAIL}
@@ -918,16 +918,16 @@ Contact:
   if (domain === "aicargotrack.com") {
     return `# AiCargoTrack full reference
 
-AiCargoTrack is a free browser-based pre-check provided by EASCargo. It helps a shipper or freight professional organize AWB, route, largest-piece dimensions, largest-piece weight and the current operational blockage.
+AiCargoTrack is a free browser-based pre-check provided by EASCARGO. It helps a shipper or freight professional organize AWB, route, largest-piece dimensions, largest-piece weight and the current operational blockage.
 
 The tool evaluates whether manual review is needed for oversized dimensions, heavy-piece ground handling, transfer continuity, customs documents or Africa destination delivery. It does not query airline systems, promise capacity or replace carrier acceptance.
 ${common}`;
   }
   return `# SkyRate full reference
 
-SkyRate is a free chargeable-weight and quote-readiness tool provided by EASCargo. It uses a preliminary volumetric formula of length × width × height × pieces ÷ 6000, with centimetres and kilograms. The higher of gross and volumetric weight is shown as preliminary chargeable weight.
+SkyRate is a free chargeable-weight and quote-readiness tool provided by EASCARGO. It uses a preliminary volumetric formula of length × width × height × pieces ÷ 6000, with centimetres and kilograms. The higher of gross and volumetric weight is shown as preliminary chargeable weight.
 
-The result is not a live freight rate. Aircraft acceptance, cargo-door limits, pallet position, floor loading, transfer sectors, fuel/security charges, special handling, customs and Africa final delivery are confirmed separately by EASCargo and the relevant service providers.
+The result is not a live freight rate. Aircraft acceptance, cargo-door limits, pallet position, floor loading, transfer sectors, fuel/security charges, special handling, customs and Africa final delivery are confirmed separately by EASCARGO and the relevant service providers.
 ${common}`;
 }
 
@@ -937,7 +937,7 @@ function favicon(letter, color) {
 
 function notFoundPage(domain, name) {
   const canonical = `https://${domain}/`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | ${name}</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${canonical}"><style>${CSS}</style></head><body>${siteHeader(name, domain)}<main class="not-found"><p class="eyebrow">404</p><h1>Page not found</h1><p class="lead">Use the main tool or continue to the EASCargo service and case library.</p><p><a class="text-link" href="/">Open ${name}</a> · <a class="text-link" href="${PRIMARY_SITE}/">Open EASCargo</a></p></main>${siteFooter(name, domain)}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | ${name}</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${canonical}"><style>${CSS}</style></head><body>${siteHeader(name, domain)}<main class="not-found"><p class="eyebrow">404</p><h1>Page not found</h1><p class="lead">Use the main tool or continue to the EASCARGO service and case library.</p><p><a class="text-link" href="/">Open ${name}</a> · <a class="text-link" href="${PRIMARY_SITE}/">Open EASCARGO</a></p></main>${siteFooter(name, domain)}</body></html>`;
 }
 
 async function handleRequest(request) {
@@ -945,7 +945,7 @@ async function handleRequest(request) {
   const hostname = url.hostname.toLowerCase();
   const domain = hostname.replace(/^www\./, "");
 
-  // EASCargo is owned by the Pages project. Explicit pass-through prevents this
+  // EASCARGO is owned by the Pages project. Explicit pass-through prevents this
   // legacy multi-domain route from replacing the primary site.
   if (domain === "eascargo.com") {
     return fetch(request);
