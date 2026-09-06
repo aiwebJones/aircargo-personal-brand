@@ -19,17 +19,20 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
-    languages: {
-      zh: 'https://www.eascargo.com/',
-      en: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
-    },
   },
   openGraph: {
+    locale: 'en_US',
     title: 'China to Africa Oversized Air Freight Expert',
     description:
       'Oversized cargo from China to Africa via LGG/BRU, B747F freighters, African hubs and inland delivery.',
     url: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'China to Africa Oversized Air Freight Expert | EASCARGO',
+    description:
+      'Oversized cargo from China to Africa via LGG/BRU, B747F freighters, African hubs and inland delivery.',
   },
 }
 
