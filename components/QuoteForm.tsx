@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { AlertCircle, ArrowRight, ChevronDown, Send } from 'lucide-react'
-import { buildThankYouUrl, captureAttribution } from '@/lib/attribution'
+import { buildThankYouUrl, captureAttribution, getRouteRfqPrefill } from '@/lib/attribution'
 
 type QuoteFormData = {
   name: string
@@ -52,6 +52,19 @@ export default function QuoteForm({ compact = false, lang = 'zh' }: { compact?: 
   useEffect(() => {
     if (showContact) contactRef.current?.focus()
   }, [showContact])
+
+  useEffect(() => {
+    const prefill = getRouteRfqPrefill(captureAttribution())
+    if (!prefill) return
+
+    setFormData((current) => ({
+      ...current,
+      origin: current.origin || prefill.origin || current.origin,
+      destination: current.destination || prefill.destination,
+      cargoType: current.cargoType === initialFormData.cargoType ? prefill.cargoType : current.cargoType,
+      notes: current.notes || prefill.notes,
+    }))
+  }, [])
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>

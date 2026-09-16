@@ -177,8 +177,11 @@ export default function QuotePage() {
           </Link>
           <div className="mt-10 max-w-4xl">
             <p className="text-sm font-bold text-amberGold">China to Africa project cargo RFQ</p>
-            <h1 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">中国到非洲大件/项目货逐票询价</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            <h1 className="mt-4 break-all text-3xl font-black leading-tight min-[360px]:text-4xl sm:text-5xl">
+              <span className="block">中国到非洲大件</span>
+              <span className="block">项目货逐票询价</span>
+            </h1>
+            <p className="mt-6 max-w-3xl break-all text-lg leading-8 text-slate-300">
               先提交真实货物资料，再判断能不能装、走哪条线、目的地能不能清和最终现场能不能交。
               EASCargo 不用未经确认的固定价格、舱位或时效代替逐票判断。
             </p>
@@ -198,8 +201,11 @@ export default function QuotePage() {
         <aside className="space-y-9 lg:sticky lg:top-6 lg:self-start">
           <div>
             <p className="text-sm font-bold text-amber-700">报价判断顺序</p>
-            <h2 className="mt-3 text-3xl font-black">先把路线做成立，再比较全程成本。</h2>
-            <p className="mt-5 leading-8 text-slate-600">
+            <h2 className="mt-3 break-all text-2xl font-black leading-tight min-[360px]:text-3xl">
+              <span className="block">先把路线做成立，</span>
+              <span className="block">再比较全程成本。</span>
+            </h2>
+            <p className="mt-5 break-all leading-8 text-slate-600">
               航空运费只是总成本的一部分。超大件和项目货还会受到国内调拨、出口操作、特殊地服、欧洲或 ADD 中转、目的港费用、清关、卡车和现场卸货影响。
             </p>
           </div>
@@ -259,8 +265,11 @@ export default function QuotePage() {
         <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-bold text-amber-700">可比较的报价口径</p>
-            <h2 className="mt-3 text-3xl font-black">同一票货，至少比较四种可能路径。</h2>
-            <p className="mt-5 leading-8 text-slate-600">
+            <h2 className="mt-3 break-all text-2xl font-black leading-tight min-[360px]:text-3xl">
+              <span className="block">同一票货，</span>
+              <span className="block">至少比较四种可能路径。</span>
+            </h2>
+            <p className="mt-5 break-all leading-8 text-slate-600">
               中国直出、经 ADD 中转、经 LGG/BRU 欧洲中转、非洲 Hub 到最终城市延伸，并不是每票都适用。
               判断依据是实际尺寸、货好时间、目的地、全程责任和当票承运条件，而不是先选一个看起来便宜的机场代码。
             </p>
@@ -286,7 +295,7 @@ export default function QuotePage() {
 
       <section className="mx-auto max-w-4xl px-5 py-14 sm:px-6 lg:px-8">
         <p className="text-sm font-bold text-amber-700">询价常见问题</p>
-        <h2 className="mt-3 text-3xl font-black">提交之前先看清这三点。</h2>
+        <h2 className="mt-3 text-2xl font-black leading-tight min-[360px]:text-3xl">提交之前先看清这三点。</h2>
         <div className="mt-7 divide-y divide-slate-200 border-y border-slate-200">
           {faqs.map((faq) => (
             <section key={faq.question} className="py-6">

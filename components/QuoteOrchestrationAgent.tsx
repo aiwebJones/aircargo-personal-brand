@@ -18,7 +18,7 @@ import {
   Sparkles,
   X,
 } from 'lucide-react'
-import { buildThankYouUrl, captureAttribution } from '@/lib/attribution'
+import { buildThankYouUrl, captureAttribution, getRouteRfqPrefill } from '@/lib/attribution'
 import {
   buildQuoteAgentPlan,
   extractProjectFromBrief,
@@ -55,10 +55,32 @@ export default function QuoteOrchestrationAgent() {
   useEffect(() => {
     try {
       const stored = window.sessionStorage.getItem(DRAFT_KEY)
+      const prefill = getRouteRfqPrefill(captureAttribution())
       if (stored) {
         const parsed = JSON.parse(stored) as { project?: QuoteAgentProject; revision?: number }
-        if (parsed.project) setProject({ ...initialQuoteAgentProject, ...parsed.project })
+        if (parsed.project) {
+          const nextProject = { ...initialQuoteAgentProject, ...parsed.project }
+          if (prefill) {
+            setProject({
+              ...nextProject,
+              origin: nextProject.origin || prefill.origin || nextProject.origin,
+              destination: nextProject.destination || prefill.destination,
+              cargoType: nextProject.cargoType === initialQuoteAgentProject.cargoType ? prefill.cargoType : nextProject.cargoType,
+              notes: nextProject.notes || prefill.notes,
+            })
+          } else {
+            setProject(nextProject)
+          }
+        }
         if (parsed.revision) setRevision(parsed.revision)
+      } else if (prefill) {
+        setProject({
+          ...initialQuoteAgentProject,
+          origin: prefill.origin || initialQuoteAgentProject.origin,
+          destination: prefill.destination,
+          cargoType: prefill.cargoType,
+          notes: prefill.notes,
+        })
       }
       setSubmittedRunId(window.sessionStorage.getItem(SUBMITTED_RUN_KEY) || '')
     } catch {

@@ -10,6 +10,13 @@ export type MarketingAttribution = {
   referrer: string
 }
 
+export type RouteRfqPrefill = {
+  origin?: string
+  destination: string
+  cargoType: string
+  notes: string
+}
+
 const ATTRIBUTION_KEY = 'eascargo_attribution'
 const CONVERSION_KEY = 'eascargo_last_conversion'
 
@@ -85,6 +92,49 @@ export function buildThankYouUrl(attribution: MarketingAttribution, form: string
   if (attribution.campaign) query.set('campaign', attribution.campaign)
 
   return `/thank-you/?${query.toString()}`
+}
+
+export function getRouteRfqPrefill(attribution: Pick<MarketingAttribution, 'topic'>): RouteRfqPrefill | null {
+  const topic = clean(attribution.topic, 140).toLowerCase()
+
+  if (topic === 'jnb-foc') {
+    return {
+      origin: 'FOC Fuzhou / Fujian factory area',
+      destination: 'JNB Johannesburg + final South Africa site',
+      cargoType: '矿业/油气/能源急件',
+      notes:
+        'Route context: FOC/XMN local uplift versus trucking to PVG/CAN/SZX/HKG/HAK must be compared. Please add HS Code, packing photos, importer or clearing broker, SARS/ITAC/NRCS risk, and whether delivery ends at JNB airport or a project site.',
+    }
+  }
+
+  const routeTopics: Record<string, RouteRfqPrefill> = {
+    jnb: {
+      destination: 'JNB Johannesburg + final South Africa site',
+      cargoType: '矿业/油气/能源急件',
+      notes:
+        'Route context: China origin to JNB project cargo. Please add origin city or airport, HS Code, importer or clearing broker, SARS/ITAC/NRCS risk, and whether delivery ends at JNB airport or a project site.',
+    },
+    fbm: {
+      destination: 'FBM Lubumbashi + Copperbelt mine or plant',
+      cargoType: '矿业/油气/能源急件',
+      notes:
+        'Route context: FBM mining-spares cargo. Please add final mine or plant, unloading conditions, importer and clearing broker, French cargo description needs, and whether the quote ends at airport or includes mine-site handover.',
+    },
+    lun: {
+      destination: 'LUN Lusaka or NLA Ndola + final Zambia site',
+      cargoType: '超大件/项目货',
+      notes:
+        'Route context: Zambia project cargo. Please add final site, whether LUN or NLA should be screened, importer or clearing broker, ZRA/ASYCUDA data readiness, and airport-versus-site delivery boundary.',
+    },
+    lbv: {
+      destination: 'LBV Libreville + final Gabon project site',
+      cargoType: '超大件/项目货',
+      notes:
+        'Route context: LBV long or oversized cargo. Please add per-piece dimensions, gross weight, loading direction, lifting points, center of gravity if known, consignee readiness, and airport-versus-site delivery boundary.',
+    },
+  }
+
+  return routeTopics[topic] || null
 }
 
 export function recordConversionFromUrl() {
