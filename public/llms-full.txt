@@ -153,8 +153,12 @@ FBM planning must include:
 - HS Code consistency
 - Final mine-site or industrial site handover
 - Inland delivery and unloading conditions
+- Importer, appointed broker and French or bilingual cargo description readiness
+- GUICE, OCC/BIVAC and permit screening when the commodity requires it
 
 FBM nationwide-origin planning compares the nearest China gateway with stronger freighter gateways, LGG/BRU main-deck transfer, a currently confirmed Africa hub connection, and FBM airport or Copperbelt mine-site handover. No China origin is presented as a guaranteed direct FBM service.
+
+FBM airport-only, FBM airport pickup, customs-assisted release and Copperbelt mine-site handover are separate quote boundaries. EASCARGO asks for the final mine or plant, downtime deadline, single-piece dimensions, unloading tools, site access and importer/broker data before quoting shutdown spares.
 
 ### LUN - Lusaka, Zambia
 

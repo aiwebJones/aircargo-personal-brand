@@ -118,7 +118,7 @@ export function getRouteRfqPrefill(attribution: Pick<MarketingAttribution, 'topi
       destination: 'FBM Lubumbashi + Copperbelt mine or plant',
       cargoType: '矿业/油气/能源急件',
       notes:
-        'Route context: FBM mining-spares cargo. Please add final mine or plant, unloading conditions, importer and clearing broker, French cargo description needs, and whether the quote ends at airport or includes mine-site handover.',
+        'Route context: FBM mining-spares cargo. Please add final mine or plant, downtime deadline, single-piece dimensions, unloading conditions, importer and clearing broker, HS Code/French cargo description, GUICE/OCC-BIVAC risk, and whether the quote ends at airport or includes mine-site handover.',
     },
     lun: {
       destination: 'LUN Lusaka or NLA Ndola + final Zambia site',

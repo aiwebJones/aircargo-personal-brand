@@ -25,16 +25,16 @@ const pages = {
     country: 'Democratic Republic of the Congo',
     title: 'FBM Lubumbashi Air Freight for Mining Equipment',
     description:
-      'China to FBM Lubumbashi air freight for Copperbelt mining equipment, heavy spare parts and project cargo via Europe and African hub routing.',
+      'China to FBM Lubumbashi air freight for Copperbelt mining equipment, heavy spare parts and project cargo via Europe, African hub routing and mine-site handover checks.',
     cargo: ['Copperbelt mining spare parts', 'Transformers', 'Pumps', 'Electrical cabinets', 'Heavy maintenance equipment'],
     market:
-      'Lubumbashi is a mining supply chain destination. Air freight planning must consider the airport, customs broker, inland delivery and mine-site handover.',
+      'Lubumbashi is a mining supply chain destination for the DRC Copperbelt. Air freight planning must separate the FBM airport leg, destination customs broker work, Lubumbashi handling and final mine or plant handover.',
     customs:
-      'Confirm consignee documents, HS Code, import responsibility, destination agent capability, unloading conditions and final delivery boundary.',
+      'Confirm consignee documents, importer identity, HS Code, French or bilingual cargo description, commercial invoice, packing list, AWB/LTA data, destination broker capability and whether GUICE, OCC/BIVAC or other controlled-goods steps apply.',
     business:
       'Best for Copperbelt mining equipment, plant maintenance cargo, heavy spares and emergency replacement parts where downtime is expensive.',
     culture:
-      'French communication is useful. Many shipments are tied to mines, contractors and Chinese-backed industrial projects, so document consistency matters more than a cheap rate.',
+      'French communication is useful. Many shipments are tied to mines, contractors and Chinese-backed industrial projects, so document consistency, unloading responsibility and site access matter more than a cheap airport-to-airport rate.',
   },
   lun: {
     code: 'LUN',
@@ -500,6 +500,22 @@ const urgentSparePartChecks = [
   'Airport pickup, inland truck, unloading tools and final-site handover',
 ]
 
+const fbmHandoverChecks = [
+  'Does the quote stop at FBM airport, or does it continue to a Copperbelt mine, plant, warehouse or contractor yard?',
+  'Are importer NIF, clearing broker, HS Code, French cargo description, invoice, packing list and AWB/LTA data ready before uplift?',
+  'Can the heaviest piece be unloaded at Lubumbashi and moved to the site with the required forklift, crane, truck access and appointment?',
+  'Is the deadline tied to plant downtime, scheduled maintenance, contractor mobilization or a normal replenishment shipment?',
+]
+
+const fbmQuoteFields = [
+  'Final mine, plant, warehouse or city beyond FBM',
+  'Importer, consignee and appointed clearing broker',
+  'HS Code plus French or bilingual cargo description',
+  'Single-piece dimensions, gross weight, lifting points and packing photos',
+  'Unloading tools, site access, truck restrictions and delivery appointment',
+  'Latest acceptable site arrival date and downtime reason',
+]
+
 const jnbCapacityChecks = [
   'Can the cargo move through HAK/JNB, or does it still need LGG/BRU main-deck planning?',
   'Is JNB the true handover point, or only the first airport before a mine, plant or cross-border truck leg?',
@@ -776,6 +792,33 @@ const jnbOfficialFacts = [
   },
 ]
 
+const fbmOfficialFacts = [
+  {
+    label: 'FBM ground-handling presence',
+    detail:
+      'Menzies Aviation lists Lubumbashi FBM in its network and shows ground services at the airport. This supports treating FBM as a real operating point, but not as proof that any oversized piece, date or commodity is accepted without shipment-specific confirmation.',
+    href: 'https://menziesaviation.com/our-network/lubumbashi-fbm/',
+  },
+  {
+    label: 'DRC import customs declaration',
+    detail:
+      'DGDA import-procedure guidance describes customs declaration, DAU electronic declaration and carrier cargo manifest responsibilities. For air freight, AWB/LTA and manifest data must match invoice, packing list and cargo description.',
+    href: 'https://douane.gouv.cd/les-procedures-douanieres/les-procedures-de-dedouanement-a-limportation-en-rdc%EF%BF%BC/',
+  },
+  {
+    label: 'GUICE single-window process',
+    detail:
+      'SEGUCE operates the GUICE platform for DRC foreign-trade formalities. FBM cargo should be screened for pre-clearance, importer and broker readiness before departure from China.',
+    href: 'https://segucerdc.com/fr/home',
+  },
+  {
+    label: 'DRC import documentation checklist',
+    detail:
+      'Trade.gov lists DRC import-document requirements such as BIVAC or OCC verification where applicable, import license, commercial invoice, packing list, bill of lading or airway bill, insurance certificate and certificate of origin.',
+    href: 'https://www.trade.gov/country-commercial-guides/democratic-republic-congo-import-requirements-and-documentation',
+  },
+]
+
 const lunOfficialFacts = [
   {
     label: 'LUN and NLA are different Zambia gateways',
@@ -841,7 +884,7 @@ const lunGatewayChecks = [
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   jnb: '2026-07-30',
-  fbm: '2026-07-13',
+  fbm: '2026-09-17',
   lun: '2026-07-16',
   lbv: '2026-07-25',
   nbo: '2026-08-02',
@@ -1055,6 +1098,28 @@ function getFaq(item: (typeof pages)[Slug]) {
     ]
   }
 
+  if (item.code === 'FBM') {
+    return [
+      nationwideOriginFaq!,
+      {
+        question: 'Should an FBM quote end at Lubumbashi airport or include Copperbelt mine-site delivery?',
+        answer:
+          'Decide this before pricing. Airport-only FBM means airfreight and airport handover; a mine-site plan also needs customs coordination, truck availability, road and site access, unloading tools, receiver appointment and responsibility for delays after airport release.',
+      },
+      {
+        question: 'What DRC documents should be ready before FBM uplift?',
+        answer:
+          'Prepare importer and consignee data, appointed customs broker, HS Code, French or bilingual cargo description, commercial invoice, packing list, AWB/LTA data, cargo value, origin and any GUICE, OCC/BIVAC, import-license or certificate requirements that apply to the commodity.',
+      },
+      {
+        question: 'What cargo data is needed for urgent FBM mining spares?',
+        answer:
+          'Send the final mine or plant, downtime deadline, cargo-ready date, each piece dimension and gross weight, packing photos, lifting points, forklift pockets, center of gravity if known, dangerous-goods or battery status, and whether delivery is airport pickup or site handover.',
+      },
+      ...commonFaq.slice(0, 2),
+    ]
+  }
+
   if (item.code !== 'JNB') return nationwideOriginFaq ? [nationwideOriginFaq, ...commonFaq] : commonFaq
 
   return [
@@ -1140,7 +1205,7 @@ function currentMetadataTitle(
   chinese: (typeof chineseDestinations)[Slug],
 ) {
   if (slug === 'jnb') return '中国到JNB约翰内斯堡空运 | 全国集货与项目货询价 | EASCargo'
-  if (slug === 'fbm') return 'FBM卢本巴希空运 | 中国各大机场到刚果金矿业项目货 | EASCARGO'
+  if (slug === 'fbm') return '中国到FBM卢本巴希空运 | 铜钴矿区备件与矿区交付 | EASCARGO'
   if (slug === 'lun') return 'LUN卢萨卡空运 | 中国各大机场到赞比亚项目货 | EASCARGO'
   if (slug === 'lbv') return '全国到LBV利伯维尔空运 | 加蓬超长货/B747F | EASCargo'
   if (slug === 'nbo') return 'NBO内罗毕空运 | 肯尼亚JKIA项目货和清关资料 | EASCARGO'
@@ -1157,7 +1222,7 @@ function currentMetadataDescription(
     return '中国各大口岸到JNB约翰内斯堡空运：全国集货，比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽，再逐票核实主甲板、中转、SARS清关和南非项目现场交付。'
   }
   if (slug === 'fbm') {
-    return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、刚果金清关和Copperbelt矿区交付逐票判断。'
+    return '中国各大机场到FBM卢本巴希空运：全国集货、LGG/BRU主甲板、非洲Hub衔接、GUICE/法文资料、Lubumbashi机场卸货与Copperbelt矿区或工厂交付逐票判断。'
   }
   if (slug === 'lun') {
     return '中国各大机场到LUN卢萨卡空运：全国集货、LUN或NLA入口、ZRA/ASYCUDA资料、LGG/BRU主甲板及Lusaka/Copperbelt项目现场交付判断。'
@@ -1190,7 +1255,15 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const customsReadiness = inlandAfricaCustomsReadiness[currentSlug]
   const isAddRouteProgramDestination = addRouteProgramDestinationSlugs.includes(currentSlug)
   const officialFacts =
-    currentSlug === 'jnb' ? jnbOfficialFacts : currentSlug === 'lun' ? lunOfficialFacts : isNboRoute ? nboOfficialFacts : null
+    currentSlug === 'jnb'
+      ? jnbOfficialFacts
+      : currentSlug === 'fbm'
+        ? fbmOfficialFacts
+        : currentSlug === 'lun'
+          ? lunOfficialFacts
+          : isNboRoute
+            ? nboOfficialFacts
+            : null
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -1218,6 +1291,8 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               {chinese
                 ? currentSlug === 'jnb'
                   ? '全国集货后比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽。按每票货核实单件装载、中转接受、SARS清关和南非最终交付，不预设固定机场、航班或舱位。'
+                  : currentSlug === 'fbm'
+                  ? '全国集货后比较本地起运、PVG/CAN/SZX/HKG等强出口口岸、LGG/BRU主甲板和非洲Hub衔接。报价必须分清FBM机场段、刚果金清关、Lubumbashi卸货，以及是否继续到Copperbelt矿区或工厂现场。'
                   : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
                 : item.description}
             </p>
@@ -1634,6 +1709,44 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </div>
           </section>}
 
+          {currentSlug === 'fbm' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FBM handover decision</p>
+              <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
+                Separate the airport leg from Copperbelt mine-site delivery before quoting.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                A useful FBM quote must say where responsibility ends. Airport-to-airport, FBM airport pickup, customs-assisted
+                release and mine-site handover are different products. For shutdown spares, ask for the final mine or plant,
+                importer and broker readiness, unloading equipment and deadline before chasing a low airport rate.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="/insights/fbm-copperbelt-mining-equipment-air-freight/"
+                  className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+                >
+                  Read FBM Copperbelt mining cargo guide
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="/insights/drc-fih-dgda-guice-occ-air-freight-clearance/"
+                  className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
+                >
+                  Check DRC GUICE and OCC/BIVAC documents
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-3">
+              {fbmHandoverChecks.map((check) => (
+                <div key={check} className="flex gap-3 rounded-lg bg-slate-50 p-5">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-amberGold" />
+                  <p className="leading-7 text-slate-700">{check}</p>
+                </div>
+              ))}
+            </div>
+          </section>}
+
           {currentSlug === 'lun' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">LUN or NLA gateway decision</p>
@@ -1753,7 +1866,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
-            {quoteFields.map((field) => (
+            {(currentSlug === 'fbm' ? fbmQuoteFields : quoteFields).map((field) => (
               <div key={field} className="rounded-lg border border-white/10 bg-white/5 p-4 text-sm font-semibold leading-6 text-slate-200">
                 {field}
               </div>
