@@ -883,7 +883,7 @@ const lunGatewayChecks = [
 ]
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
-  jnb: '2026-07-30',
+  jnb: '2026-09-21',
   fbm: '2026-09-17',
   lun: '2026-07-16',
   lbv: '2026-07-25',
@@ -1189,6 +1189,14 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     ],
     alternates: {
       canonical: `https://www.eascargo.com/africa-air-freight/${params.slug}/`,
+      ...(params.slug === 'jnb'
+        ? {
+            languages: {
+              en: 'https://www.eascargo.com/en/africa-air-freight/jnb/',
+              'zh-CN': 'https://www.eascargo.com/africa-air-freight/jnb/',
+            },
+          }
+        : {}),
     },
     openGraph: {
       title,
@@ -1269,8 +1277,11 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
     <main className="min-h-screen bg-white text-slate-950">
       <section className="bg-slate-950 px-6 py-24 text-white">
         <div className="mx-auto max-w-6xl">
-          <a href="/en/africa-oversized-air-freight/" className="mb-10 inline-flex text-sm font-semibold text-amberGold">
-            China to Africa oversized air freight
+          <a
+            href={currentSlug === 'jnb' ? '/en/africa-air-freight/jnb/' : '/en/africa-oversized-air-freight/'}
+            className="mb-10 inline-flex text-sm font-semibold text-amberGold"
+          >
+            {currentSlug === 'jnb' ? 'English JNB route' : 'China to Africa oversized air freight'}
           </a>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">

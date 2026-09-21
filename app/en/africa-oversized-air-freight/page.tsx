@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 }
 
 const gateways = [
-  { code: 'JNB', name: 'Johannesburg, South Africa', role: 'Southern Africa hub for mining, engineering and inland transfer.' },
-  { code: 'FBM', name: 'Lubumbashi, DRC', role: 'Copperbelt project cargo point for mining equipment and urgent spare parts.' },
-  { code: 'LUN', name: 'Lusaka, Zambia', role: 'Mining and industrial equipment gateway for Zambia.' },
-  { code: 'LBV', name: 'Libreville, Gabon', role: 'Central Africa entry point for long cargo, oil and engineering projects.' },
+  { code: 'JNB', name: 'Johannesburg, South Africa', role: 'Southern Africa hub for mining, engineering and inland transfer.', href: '/en/africa-air-freight/jnb/' },
+  { code: 'FBM', name: 'Lubumbashi, DRC', role: 'Copperbelt project cargo point for mining equipment and urgent spare parts.', href: '/africa-air-freight/fbm/' },
+  { code: 'LUN', name: 'Lusaka, Zambia', role: 'Mining and industrial equipment gateway for Zambia.', href: '/africa-air-freight/lun/' },
+  { code: 'LBV', name: 'Libreville, Gabon', role: 'Central Africa entry point for long cargo, oil and engineering projects.', href: '/africa-air-freight/lbv/' },
 ]
 
 const inland = ['NBO Nairobi', 'KGL Kigali', 'CPT Cape Town', 'DUR Durban', 'WDH Windhoek', 'ABJ Abidjan', 'ACC Accra', 'LOS Lagos', 'EBB Entebbe', 'DAR Dar es Salaam', 'MPM Maputo', 'FIH Kinshasa']
@@ -108,7 +108,7 @@ export default function AfricaOversizedAirFreightPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {gateways.map((item) => (
-              <a key={item.code} href={`/africa-air-freight/${item.code.toLowerCase()}/`} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-amberGold">
+              <a key={item.code} href={item.href} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-amberGold">
                 <div className="mb-2 flex items-baseline justify-between gap-4">
                   <span className="text-3xl font-bold">{item.code}</span>
                   <span className="font-semibold text-amberGold">{item.name}</span>
