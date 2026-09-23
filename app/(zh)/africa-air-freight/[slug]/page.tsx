@@ -516,6 +516,17 @@ const fbmQuoteFields = [
   'Latest acceptable site arrival date and downtime reason',
 ]
 
+const lunQuoteFields = [
+  'Final Zambia city, mine, plant or project-site address',
+  'LUN, NLA or "help me choose the airport"',
+  'Importer, consignee and appointed clearing broker',
+  'Pieces, per-piece dimensions, gross weight and packing photos',
+  'Cargo-ready date and latest acceptable site arrival',
+  'Airport pickup, customs support or site-delivery boundary',
+  'Truck access, unloading equipment and delivery appointment',
+  'HS Code, invoice, packing list, AWB data and permit checks',
+]
+
 const jnbCapacityChecks = [
   'Can the cargo move through HAK/JNB, or does it still need LGG/BRU main-deck planning?',
   'Is JNB the true handover point, or only the first airport before a mine, plant or cross-border truck leg?',
@@ -882,10 +893,28 @@ const lunGatewayChecks = [
   'Does the quote stop at the airport, include customs coordination, or continue to the factory, mine or project site with unloading?',
 ]
 
+const lunGatewayDecisionRows = [
+  {
+    gateway: 'Screen LUN / Lusaka',
+    finalSite: 'Lusaka or a project site whose verified road plan works better from Lusaka.',
+    verify: 'Actual piece acceptance, connection, airport handover, clearance responsibility and onward truck plan.',
+  },
+  {
+    gateway: 'Screen NLA / Ndola',
+    finalSite: 'Ndola, Kitwe or another Copperbelt site where a verified Ndola handover may reduce the inland leg.',
+    verify: 'Actual piece acceptance, current connection, destination handling, broker readiness and site delivery.',
+  },
+  {
+    gateway: 'Compare both',
+    finalSite: 'The final site, delivery boundary or oversized-piece acceptance is not yet confirmed.',
+    verify: 'Compare executable total plans; an airport code or lower airport rate alone does not decide the route.',
+  },
+]
+
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
   jnb: '2026-09-21',
   fbm: '2026-09-17',
-  lun: '2026-07-16',
+  lun: '2026-09-23',
   lbv: '2026-07-25',
   nbo: '2026-08-02',
   bko: '2026-07-19',
@@ -1785,6 +1814,17 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
+              <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+                {lunGatewayDecisionRows.map((row) => (
+                  <div key={row.gateway} className="grid gap-2 py-5 sm:grid-cols-[10rem_1fr] sm:gap-6">
+                    <h3 className="font-semibold text-slate-950">{row.gateway}</h3>
+                    <div>
+                      <p className="leading-7 text-slate-700">{row.finalSite}</p>
+                      <p className="mt-2 text-sm leading-6 text-slate-500"><strong>Verify:</strong> {row.verify}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="grid gap-3">
               {lunGatewayChecks.map((check) => (
@@ -1877,7 +1917,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
-            {(currentSlug === 'fbm' ? fbmQuoteFields : quoteFields).map((field) => (
+            {(currentSlug === 'fbm' ? fbmQuoteFields : currentSlug === 'lun' ? lunQuoteFields : quoteFields).map((field) => (
               <div key={field} className="rounded-lg border border-white/10 bg-white/5 p-4 text-sm font-semibold leading-6 text-slate-200">
                 {field}
               </div>

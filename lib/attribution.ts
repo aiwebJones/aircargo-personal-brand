@@ -124,7 +124,7 @@ export function getRouteRfqPrefill(attribution: Pick<MarketingAttribution, 'topi
       destination: 'LUN Lusaka or NLA Ndola + final Zambia site',
       cargoType: '超大件/项目货',
       notes:
-        'Route context: Zambia project cargo. Please add final site, whether LUN or NLA should be screened, importer or clearing broker, ZRA/ASYCUDA data readiness, and airport-versus-site delivery boundary.',
+        'Route context: Zambia project cargo. Please add final site, whether LUN or NLA should be screened, pieces and per-piece dimensions/weight, cargo-ready date, importer or clearing broker, ZRA/ASYCUDA data readiness, truck access/unloading, latest site-arrival date, and airport-versus-site delivery boundary.',
     },
     lbv: {
       destination: 'LBV Libreville + final Gabon project site',
