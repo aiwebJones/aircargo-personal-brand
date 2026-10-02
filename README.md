@@ -1,4 +1,40 @@
-# 国际空运专家个人品牌官网
+# EASCargo 国际空运网站
+
+本仓库维护已上线的 [EASCargo 主站](https://www.eascargo.com/)：中国出口空运、大件项目货、非洲航线、案例、知识内容与逐票询价。仓库名称保留早期个人品牌项目的历史命名，当前网站不是待替换姓名和域名的模板。
+
+## 当前入口与源码
+
+| 入口 | 用途 | 主要源码 |
+|---|---|---|
+| `www.eascargo.com` | 公司、业务内容与询价主站 | `app/`、`components/`、`public/` |
+| `skyrate.info` | 计费重量与报价准备 | `cloudflare/airfreight-commercial-system/worker.js` |
+| `aicargotrack.com` | 超大件与中转异常初步预判 | 同一个 Worker 文件 |
+
+两个工具用于整理询价资料，不提供实时航司运价、舱位承诺或运单轨迹。首页由 `app/(zh)/page.tsx` 与 `components/SimpleHome.tsx` 构成。`components/QuoteForm.tsx` 和 `components/ContactModal.tsx` 均向现有 Formspree 端点发送请求，已不是模拟提交。表单请求成功与收件人实际收到需要分别验证。
+
+## 当前构建与发布方式
+
+技术栈为 Next.js 14.2.35、React 18、TypeScript、Tailwind CSS。使用满足 Next.js 要求的 Node.js（至少 18.17）；2026-10-02 以 Node 24.19.0 完成生产构建与类型检查，生成 135 个静态页面。旧 Node 16 无法运行本项目。
+
+```bash
+node --version
+npm ci
+npm run dev
+# 生产构建
+npm run build
+```
+
+`next.config.js` 配置静态导出到 `dist/`，应使用静态托管，不能按 `next start` 的服务器模式部署。构建需要下载 Google Fonts 的 Inter 字体；网络失败时先排除下载问题。部分 `dist/` 文件仍被 Git 跟踪，验证构建后应检查 diff，避免把所有产物混入源码修改。
+
+主站静态页面和 Cloudflare Worker 是两条发布链路。仓库没有可核实的 Wrangler 项目/路由配置或 GitHub Actions 发布工作流，生产目标须在当前托管配置中确认，Git 提交和构建成功均不代表上线。不要依据早期 ZIP 或旧 Vercel 教程覆盖现有网站。
+
+2026-10-02 浏览器验证：SkyRate 对 2 件 120×100×100 cm、毛重 250 kg 正确计算出 400 kg 计费重；AiCargoTrack 对超长、超高、重货产生对应复核提示。两个工具域的 Cloudflare Analytics 脚本被线上 CSP 阻止，虽然 Worker 源码已允许相应域名，仍需检查实际部署的响应头。本次没有发送真实询盘，未取得实际收件或转化数据。
+
+运价、承运人、舱位、时效和政策须有当前来源或人工确认。凭据使用环境变量或平台秘密存储，不提交到源码或构建产物中。
+
+## 早期模板说明（历史保留，不作为当前部署依据）
+
+以下内容和 `DEPLOY_STATUS.md`、`DEPLOY_CHECKLIST.md` 记录早期模板状态；其中姓名/域名占位符、模拟表单、待部署等描述已过时，以本页上半部分和实际托管配置为准。
 
 一个为资深国际空运专家打造的高质感个人品牌官网。
 
