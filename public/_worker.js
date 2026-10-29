@@ -27,14 +27,18 @@ function legacyRedirect(request) {
 
 function canonicalRedirect(request) {
   const url = new URL(request.url)
+  const insecure = url.protocol !== 'https:'
+  const offHost = url.hostname === APEX_HOST || url.hostname === PREVIEW_HOST
 
-  if (url.hostname === APEX_HOST || url.hostname === PREVIEW_HOST) {
-    url.protocol = 'https:'
-    url.hostname = CANONICAL_HOST
-    return Response.redirect(url.toString(), 301)
-  }
+  // Cloudflare Pages skips its automatic HTTP→HTTPS redirect once _worker.js
+  // owns the request. Fetching ASSETS with an http URL returns HTTP 500.
+  // Canonical host is https://www.eascargo.com. Apex and the pages.dev preview
+  // host fold into that host in the same hop.
+  if (!insecure && !offHost) return null
 
-  return null
+  url.protocol = 'https:'
+  if (offHost) url.hostname = CANONICAL_HOST
+  return Response.redirect(url.toString(), 301)
 }
 
 function assetRequest(request) {
@@ -49,6 +53,12 @@ function assetRequest(request) {
 }
 
 async function assetResponse(request, env) {
+  const assetUrl = new URL(request.url)
+  if (assetUrl.protocol !== 'https:') {
+    assetUrl.protocol = 'https:'
+    request = new Request(assetUrl.toString(), request)
+  }
+
   const response = await env.ASSETS.fetch(assetRequest(request))
   const contentType = response.headers.get('content-type') || ''
 

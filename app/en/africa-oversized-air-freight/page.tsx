@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     canonical: 'https://www.eascargo.com/en/africa-oversized-air-freight/',
   },
   openGraph: {
-    locale: 'en_US',
     title: 'China to Africa Oversized Air Freight Expert',
     description:
       'Oversized cargo from China to Africa via LGG/BRU, B747F freighters, African hubs and inland delivery.',

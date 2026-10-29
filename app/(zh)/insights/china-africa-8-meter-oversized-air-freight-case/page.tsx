@@ -100,6 +100,7 @@ const relatedRoutes = [
   { label: 'FBM卢本巴希矿业货', href: '/africa-air-freight/fbm/' },
   { label: 'LUN卢萨卡项目货', href: '/africa-air-freight/lun/' },
   { label: '大件空运案例库', href: '/cases/' },
+  { label: '项目数字对照表', href: '/cases/project-records/' },
 ]
 
 export default function OversizedCargoCasePage() {

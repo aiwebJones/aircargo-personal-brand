@@ -70,6 +70,10 @@ export default function CasesPage() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
               已完成非洲项目、历史特殊装载和历史全货机记录分开呈现。这里只写当前公开资料能支持的尺寸、重量、路线、判断动作和执行边界。
             </p>
+            <Link href="/cases/project-records/" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-amberGold hover:text-white">
+              查看 8 米、16,730 公斤和 98.8 吨对照表
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </section>

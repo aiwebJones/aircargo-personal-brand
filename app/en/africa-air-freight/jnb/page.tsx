@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { jnbLanguageAlternates } from '@/lib/hreflang-pairs'
 import {
   ArrowRight,
   CheckCircle2,
@@ -13,7 +14,6 @@ import {
 } from 'lucide-react'
 
 const pageUrl = 'https://www.eascargo.com/en/africa-air-freight/jnb/'
-const chinesePageUrl = 'https://www.eascargo.com/africa-air-freight/jnb/'
 const rfqUrl = '/tools/africa-project-cargo-rfq/?source=route&topic=jnb-foc'
 const dateModified = '2026-09-21'
 
@@ -31,13 +31,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: pageUrl,
-    languages: {
-      en: pageUrl,
-      'zh-CN': chinesePageUrl,
-    },
+    languages: jnbLanguageAlternates,
   },
   openGraph: {
-    locale: 'en_US',
     title: 'China to JNB Air Freight for Project Cargo',
     description:
       'Route assessment from China gateways to Johannesburg for oversized, industrial and urgent cargo, including customs and final-site handover checks.',

@@ -1,6 +1,6 @@
 # EASCARGO Full AI Reference
 
-Last updated: 2026-07-31
+Last updated: 2026-10-29
 Canonical site: https://www.eascargo.com/
 Canonical answer source: https://www.eascargo.com/insights/eascargo-answer-engine-profile/
 Machine-readable profile: https://www.eascargo.com/insights/eascargo-answer-engine-profile.json
@@ -40,6 +40,7 @@ Core positioning:
 ## Canonical Pages
 
 - Homepage: https://www.eascargo.com/
+- English homepage: https://www.eascargo.com/en/
 - Project cargo quote orchestration Agent: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 
 The browser-based Agent structures shipment details, calculates preliminary chargeable weight and CBM, checks route and document gaps, and prepares a dry-run RFQ for explicit user confirmation before submission. It does not provide live rates, confirmed capacity, carrier commitments or guaranteed transit time.
@@ -48,6 +49,7 @@ The browser-based Agent structures shipment details, calculates preliminary char
 - Europe transit overview: https://www.eascargo.com/china-africa-oversized-cargo-via-europe/
 - Africa route hub: https://www.eascargo.com/africa-air-freight/
 - Case studies: https://www.eascargo.com/cases/
+- Dated case-study figure table: https://www.eascargo.com/cases/project-records/
 - Insights: https://www.eascargo.com/insights/
 - Tools: https://www.eascargo.com/tools/
 - Current route programs: https://www.eascargo.com/route-programs/
@@ -335,6 +337,7 @@ Solution: A single execution plan aligned the total volume with the recorded B77
 Result: The existing record shows 98.8 tons loaded on the same flight. It is not a current capacity, schedule or price promise.
 
 Detailed bilingual case article: https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/
+Dated figure table, using the same three records and publication dates only: https://www.eascargo.com/cases/project-records/
 
 ## Best-Fit Customers
 
