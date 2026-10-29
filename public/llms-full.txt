@@ -39,7 +39,7 @@ Core positioning:
 
 ## Deepened Guides (2026-10-29)
 
-Ten articles now walk through loading, documents and route checks and cite https://www.eascargo.com/cases/project-records/ for the 8 m, 16,730 kg and 98.8 t records. Door, floor and certificate figures that were added later cite Boeing, Airbus, Lufthansa Cargo, ANA Cargo, ZACL, ASECNA, SON, TBS or KEBS, with an as-of date on the page. Live fuel, ground charges and any unsourced airport limit stay as a quote request or a TODO.
+Ten articles now walk through loading, documents and route checks and cite https://www.eascargo.com/cases/project-records/ for the 8 m, 16,730 kg and 98.8 t records. Door, floor, runway and certificate figures cite Boeing, Airbus, Lufthansa Cargo, ANA Cargo, Atlas Air, Qantas Freight, Avianca Cargo, ZACL, ASECNA, OurAirports, SkyVector, WFS, SON, TBS, KEBS or World Bank Doing Business 2020, with an as-of date on the page. Secondary runway and operator-door figures are labelled indicative. Live fuel and ground charges are not published; they are requested per shipment.
 
 - https://www.eascargo.com/insights/jnb-mining-spares-air-freight/
 - https://www.eascargo.com/insights/fbm-copperbelt-mining-equipment-air-freight/
