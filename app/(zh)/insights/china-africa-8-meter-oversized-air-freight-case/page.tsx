@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck } from 'lucide-react'
+import ArticleFeasibilityCta from '@/components/ArticleFeasibilityCta'
 
 const pageUrl = 'https://www.eascargo.com/insights/china-africa-8-meter-oversized-air-freight-case/'
 
@@ -156,6 +157,13 @@ export default function OversizedCargoCasePage() {
             一票约8米长的工业设备无法使用普通客机腹舱。案例拆解中国起运、LGG/BRU欧洲中转、
             B747F主甲板、LBV等非洲入口、报价逻辑和项目现场交付。
           </p>
+          <div className="mt-8 max-w-3xl">
+            <ArticleFeasibilityCta
+              lang="zh"
+              placement="top"
+              summary="约 8 米的单件进不了普通腹舱。公开做法是中国起运、LGG 或 BRU 组板，再按主甲板评估非洲二程。价格和天数没有写成承诺。把你的尺寸发来，按当票判断。"
+            />
+          </div>
           <p className="mt-6 text-sm text-slate-400">2026-07-10 · 11 分钟 / 11 min</p>
         </div>
       </header>
@@ -216,6 +224,9 @@ export default function OversizedCargoCasePage() {
             </nav>
           </section>
         </aside>
+      </div>
+      <div className="mx-auto mt-10 max-w-3xl px-5">
+        <ArticleFeasibilityCta lang="zh" placement="end" />
       </div>
     </main>
   )

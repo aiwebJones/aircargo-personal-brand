@@ -75,6 +75,8 @@ The Chinese LGG network page and the English Europe gateway are a language pair:
 
 - Homepage: https://www.eascargo.com/
 - English homepage: https://www.eascargo.com/en/
+- Short feasibility quote (Chinese): https://www.eascargo.com/quote/
+- Short feasibility quote (English): https://www.eascargo.com/en/quote/
 - Project cargo quote orchestration Agent: https://www.eascargo.com/tools/africa-project-cargo-rfq/
 
 The browser-based Agent structures shipment details, calculates preliminary chargeable weight and CBM, checks route and document gaps, and prepares a dry-run RFQ for explicit user confirmation before submission. It does not provide live rates, confirmed capacity, carrier commitments or guaranteed transit time.

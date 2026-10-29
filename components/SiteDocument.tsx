@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import AttributionCapture from '@/components/AttributionCapture'
+import SiteChrome from '@/components/SiteChrome'
+import { buildSiteSearchIndex } from '@/lib/site-search-index'
 import '@/app/globals.css'
 
 const inter = Inter({
@@ -218,8 +220,9 @@ export default function SiteDocument({
         />
 
       </head>
-      <body className={`${inter.className} bg-deepBlue`}>
+      <body className={`${inter.className} bg-white pb-16 md:pb-0`}>
         <AttributionCapture />
+        <SiteChrome lang={lang} searchIndex={buildSiteSearchIndex()} />
         {children}
       </body>
     </html>

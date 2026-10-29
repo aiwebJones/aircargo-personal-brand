@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, CheckCircle2, FileSearch, Plane, ShieldAlert } from 'lucide-react'
+import ArticleFeasibilityCta from '@/components/ArticleFeasibilityCta'
 
 export const metadata: Metadata = {
   title: '为什么客户不理货代？非洲大件项目货销售真正该怎么切入 | EASCARGO',
@@ -95,6 +96,13 @@ export default function WhyShippersIgnoreFreightBrokersPage() {
               客户不是不需要货代。客户是不缺普通货代。真正能打开对话的，不是又一个报价，
               而是帮客户判断这票复杂货到底能不能走、怎么走、哪里会卡。
             </p>
+            <div className="mt-8 max-w-3xl">
+              <ArticleFeasibilityCta
+                lang="zh"
+                placement="top"
+                summary="客户缺的是这票货能不能走、资料缺什么、哪里会卡。先把尺寸和目的地发来，再谈价格。"
+              />
+            </div>
             <div className="mt-8 grid gap-3 text-sm text-slate-300 sm:grid-cols-3">
               <div className="rounded-lg border border-white/10 bg-white/5 px-4 py-3">
                 关键词：中国到非洲项目货
@@ -264,6 +272,9 @@ export default function WhyShippersIgnoreFreightBrokersPage() {
               </div>
             </div>
           </aside>
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ArticleFeasibilityCta lang="zh" placement="end" />
         </div>
       </article>
     </main>

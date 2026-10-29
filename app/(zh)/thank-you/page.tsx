@@ -24,6 +24,9 @@ export default function ThankYouPage() {
         <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
           我们会根据货物尺寸、重量、目的地和时效要求判断可执行路线，并尽快回复。
         </p>
+        <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-slate-400" lang="en">
+          Received. Jones will check dimensions, weight and the destination, then reply. This is not a rate confirmation.
+        </p>
         <ConversionReceipt />
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
