@@ -62,7 +62,9 @@ WeChat: jnb931
 
 ## Deepened Guides
 
-These ten articles were expanded on 2026-10-29 with the loading figures published at https://www.eascargo.com/cases/project-records/. They do not add rates, transit times, or aircraft door dimensions.
+These ten articles were expanded on 2026-10-29. Loading figures cite https://www.eascargo.com/cases/project-records/. Door, floor, runway and certificate figures cite the public sources named on each page, with an as-of date. They do not publish EASCARGO rates, fuel, war-risk or ground charges.
+
+Chinese:
 
 - JNB mining spares: https://www.eascargo.com/insights/jnb-mining-spares-air-freight/
 - FBM Copperbelt equipment: https://www.eascargo.com/insights/fbm-copperbelt-mining-equipment-air-freight/
@@ -74,6 +76,19 @@ These ten articles were expanded on 2026-10-29 with the loading figures publishe
 - Mining equipment RFQ template: https://www.eascargo.com/insights/africa-mining-equipment-air-freight-rfq-template/
 - Chargeable weight before a rate: https://www.eascargo.com/insights/china-africa-air-freight-cost-chargeable-weight/
 - Africa customs document checklist: https://www.eascargo.com/insights/africa-customs-documents-checklist-air-freight/
+
+English, same facts, for international shippers and buyers in Africa:
+
+- JNB mining spares: https://www.eascargo.com/en/insights/jnb-mining-spares-air-freight/
+- FBM Copperbelt equipment: https://www.eascargo.com/en/insights/fbm-copperbelt-mining-equipment-air-freight/
+- LUN Zambia industrial guide: https://www.eascargo.com/en/insights/lun-zambia-industrial-air-freight-guide/
+- LBV 8-meter cargo: https://www.eascargo.com/en/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/
+- LGG/BRU transit logic: https://www.eascargo.com/en/insights/china-africa-via-europe-lgg-bru-transit/
+- Oversized quote checklist: https://www.eascargo.com/en/insights/oversized-air-freight-quote-checklist/
+- Main-deck booking documents: https://www.eascargo.com/en/insights/oversized-air-cargo-booking-documents-main-deck-africa/
+- Mining equipment RFQ template: https://www.eascargo.com/en/insights/africa-mining-equipment-air-freight-rfq-template/
+- Chargeable weight before a rate: https://www.eascargo.com/en/insights/china-africa-air-freight-cost-chargeable-weight/
+- Africa customs document checklist: https://www.eascargo.com/en/insights/africa-customs-documents-checklist-air-freight/
 
 Country customs pages keep their own sourced system names. The short Nigeria overview without sources, https://www.eascargo.com/insights/nigeria-los-air-freight-customs-risk/, is noindex. Use the SONCAP and B’Odogwu pages instead.
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, Tags } from 'lucide-react'
+import { insightLanguageAlternates, isEnglishCoreInsight } from '@/lib/hreflang-pairs'
 import { generatedSeoInsights, getInsightBySlug } from '@/lib/seo-insights'
 
 type Params = {
@@ -34,6 +35,7 @@ export function generateMetadata({ params }: Params): Metadata {
     keywords: insight.keywords,
     alternates: {
       canonical: url,
+      ...(isEnglishCoreInsight(insight.slug) ? { languages: insightLanguageAlternates(insight.slug) } : {}),
     },
     robots: insight.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
@@ -135,13 +137,24 @@ export default function InsightDetailPage({ params }: Params) {
 
       <section className="bg-[#08111f] text-white">
         <div className="mx-auto max-w-6xl px-5 py-8 sm:px-6 lg:px-8">
-          <Link
-            href="/insights/"
-            className="inline-flex items-center gap-2 text-sm text-amberGold transition-colors hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            返回非洲空运情报
-          </Link>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <Link
+              href="/insights/"
+              className="inline-flex items-center gap-2 text-sm text-amberGold transition-colors hover:text-white"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              返回非洲空运情报
+            </Link>
+            {isEnglishCoreInsight(insight.slug) && (
+              <Link
+                href={`/en/insights/${insight.slug}/`}
+                hrefLang="en"
+                className="text-sm font-semibold text-white/80 hover:text-white"
+              >
+                English
+              </Link>
+            )}
+          </div>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_330px] lg:items-end">
             <div className="max-w-4xl">
