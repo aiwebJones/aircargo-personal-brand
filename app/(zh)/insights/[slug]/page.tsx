@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, Tags } from 'lucide-react'
+import ArticleFeasibilityCta from '@/components/ArticleFeasibilityCta'
 import { insightLanguageAlternates, isEnglishCoreInsight } from '@/lib/hreflang-pairs'
 import { generatedSeoInsights, getInsightBySlug } from '@/lib/seo-insights'
 
@@ -194,6 +195,7 @@ export default function InsightDetailPage({ params }: Params) {
       <article className="mx-auto max-w-6xl px-5 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
           <div className="space-y-10">
+            <ArticleFeasibilityCta lang="zh" placement="top" summary={insight.answerLead ?? insight.excerpt} />
             {insight.noindex && (
               <section className="rounded-lg border border-amber-300 bg-amber-50 p-6 text-slate-800">
                 <h2 className="text-xl font-black">请改看有来源的页面</h2>
@@ -278,6 +280,7 @@ export default function InsightDetailPage({ params }: Params) {
               </section>
             )}
 
+            <ArticleFeasibilityCta lang="zh" placement="end" />
             <section className="rounded-lg bg-amberGold p-7 text-[#08111f] shadow-sm">
               <h2 className="text-2xl font-black">这页对应的询盘怎么接</h2>
               <p className="mt-5 text-lg leading-9">{insight.angle}</p>

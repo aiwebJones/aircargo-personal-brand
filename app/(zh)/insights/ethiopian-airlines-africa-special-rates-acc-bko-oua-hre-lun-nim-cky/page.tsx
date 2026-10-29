@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, MapPinned, Plane, ShieldAlert } from 'lucide-react'
+import ArticleFeasibilityCta from '@/components/ArticleFeasibilityCta'
 
 export const metadata: Metadata = {
   title: '埃塞俄比亚航空特价：ACC/BKO/OUA/HRE/LUN/NIM/CKY 非洲空运怎么选 | EASCARGO',
@@ -170,6 +171,13 @@ export default function EthiopianAirlinesAfricaSpecialRatesPage() {
                 ET 经亚的斯亚贝巴 ADD 中转，适合把中国货物快速接入多个非洲目的地。
                 但非洲空运不能只问“多少钱一公斤”，更要先判断目的国清关、机场操作和最终交付是否成立。
               </p>
+              <div className="mt-8 max-w-3xl">
+                <ArticleFeasibilityCta
+                  lang="zh"
+                  placement="top"
+                  summary="ET 经 ADD 可以比较多个非洲点。先看目的国清关、机场操作和最终交付，再看舱位。把尺寸和目的地发来做可行性判断。"
+                />
+              </div>
             </div>
             <div className="rounded-lg border border-white/10 bg-white/5 p-6">
               <p className="text-sm font-semibold text-amberGold">询价提醒</p>
@@ -332,6 +340,9 @@ export default function EthiopianAirlinesAfricaSpecialRatesPage() {
               </p>
             </div>
           </aside>
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ArticleFeasibilityCta lang="zh" placement="end" />
         </div>
       </article>
     </main>

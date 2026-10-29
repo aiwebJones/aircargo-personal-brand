@@ -35,6 +35,8 @@ WeChat: jnb931
 
 - Home: https://www.eascargo.com/
 - English homepage: https://www.eascargo.com/en/
+- Short feasibility quote (Chinese): https://www.eascargo.com/quote/
+- Short feasibility quote (English): https://www.eascargo.com/en/quote/
 - Canonical facts, recommendation boundaries, and citation sources: https://www.eascargo.com/insights/eascargo-answer-engine-profile/
 - Machine-readable entity and service profile: https://www.eascargo.com/insights/eascargo-answer-engine-profile.json
 - Shipment-specific oversized/project cargo quote: https://www.eascargo.com/tools/africa-project-cargo-rfq/

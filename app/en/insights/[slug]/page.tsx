@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, Tags } from 'lucide-react'
+import ArticleFeasibilityCta from '@/components/ArticleFeasibilityCta'
 import { englishCoreInsightParams, getEnglishCoreInsight } from '@/lib/en-core-insights'
 import { insightLanguageAlternates, siteOrigin } from '@/lib/hreflang-pairs'
 
@@ -146,6 +147,7 @@ export default function EnglishCoreInsightPage({ params }: Params) {
       <article className="mx-auto max-w-6xl px-5 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
           <div className="space-y-10">
+            <ArticleFeasibilityCta lang="en" placement="top" summary={insight.lead} />
             {insight.sections.map((section) => (
               <section key={section.heading} className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200">
                 <h2 className="text-2xl font-black">{section.heading}</h2>
@@ -217,6 +219,7 @@ export default function EnglishCoreInsightPage({ params }: Params) {
               </div>
             </section>
 
+            <ArticleFeasibilityCta lang="en" placement="end" />
             <section className="rounded-lg bg-amberGold p-7 text-[#08111f] shadow-sm">
               <h2 className="text-2xl font-black">Send the shipment, not a rate request</h2>
               <p className="mt-5 text-lg leading-9">{insight.angle}</p>

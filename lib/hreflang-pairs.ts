@@ -11,6 +11,12 @@ export const homeLanguageAlternates = {
   'x-default': `${siteOrigin}/`,
 } as const
 
+export const quoteLanguageAlternates = {
+  'zh-CN': `${siteOrigin}/quote/`,
+  en: `${siteOrigin}/en/quote/`,
+  'x-default': `${siteOrigin}/quote/`,
+} as const
+
 export const jnbLanguageAlternates = {
   'zh-CN': `${siteOrigin}/africa-air-freight/jnb/`,
   en: `${siteOrigin}/en/africa-air-freight/jnb/`,

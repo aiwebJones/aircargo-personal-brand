@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ArrowUpRight, Check, Copy, Mail, Phone } from 'lucide-react'
-import EascargoLogo from '@/components/EascargoLogo'
+import DestinationRouter from '@/components/DestinationRouter'
 import QuoteForm from '@/components/QuoteForm'
 import { chineseHomeFaqs, englishHomeFaqs } from '@/lib/home-faqs'
 
@@ -76,22 +76,6 @@ export default function SimpleHome({ lang }: { lang: 'zh' | 'en' }) {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-      <header className="border-b border-zinc-200">
-        <div className="mx-auto flex min-h-16 max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-3 sm:px-8">
-          <a href={zh ? '/' : '/en/'} aria-label="EASCARGO home">
-            <EascargoLogo wordmarkClassName="text-sm sm:text-base" />
-          </a>
-          <nav aria-label={zh ? '主导航' : 'Main navigation'} className="flex items-center gap-4 text-sm sm:gap-6">
-            <a href="/africa-air-freight/" className="hover:text-emerald-700">{zh ? '非洲航线' : 'Africa routes'}</a>
-            <a href="/cases/" className="hover:text-emerald-700">{zh ? '案例' : 'Cases'}</a>
-            <a href="#contact" className="hover:text-emerald-700">{zh ? '联系' : 'Contact'}</a>
-            <a href={zh ? '/en/' : '/'} className="inline-flex min-h-10 items-center font-medium text-emerald-800 hover:text-emerald-950" hrefLang={zh ? 'en' : 'zh-CN'}>
-              {zh ? 'English' : '中文'}
-            </a>
-          </nav>
-        </div>
-      </header>
-
       <main className="mx-auto max-w-5xl px-5 sm:px-8">
         <section className="pb-8 pt-9 sm:pb-10 sm:pt-12">
           <p className="text-sm font-semibold text-emerald-800">
@@ -111,6 +95,8 @@ export default function SimpleHome({ lang }: { lang: 'zh' | 'en' }) {
               : 'Cargo can be collected across China. Direct uplift, ADD transit and LGG/BRU Europe transit are compared on the same shipment. Unconfirmed space, carrier and transit time are not stated as promises.'}
           </p>
         </section>
+
+        <DestinationRouter lang={lang} />
 
         <section aria-label={zh ? '核心页面' : 'Core pages'} className="pb-9 sm:pb-12">
           <h2 className="text-lg font-semibold">{zh ? '先看这些页面' : 'Start with these pages'}</h2>
