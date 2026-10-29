@@ -27,6 +27,19 @@ const coreRoutes = {
   ],
 } as const
 
+const englishGuides = [
+  { href: '/en/insights/jnb-mining-spares-air-freight/', label: 'JNB mining spares', note: 'Loading, SARS papers and mine delivery before a Johannesburg rate' },
+  { href: '/en/insights/fbm-copperbelt-mining-equipment-air-freight/', label: 'FBM Copperbelt equipment', note: 'Airport, customs and mine-site boundaries for Lubumbashi' },
+  { href: '/en/insights/lun-zambia-industrial-air-freight-guide/', label: 'LUN and NLA Zambia', note: 'Lusaka versus Ndola, then ZRA documents' },
+  { href: '/en/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/', label: 'LBV 8-metre cargo', note: 'How the published long-cargo job was split into four legs' },
+  { href: '/en/insights/china-africa-via-europe-lgg-bru-transit/', label: 'LGG/BRU transit', note: 'When a Europe rebuild is worth comparing' },
+  { href: '/en/insights/oversized-air-freight-quote-checklist/', label: 'Oversized quote checklist', note: 'Twelve items before anyone should name a rate' },
+  { href: '/en/insights/oversized-air-cargo-booking-documents-main-deck-africa/', label: 'Main-deck booking file', note: 'Piece data, photos and published door ranges' },
+  { href: '/en/insights/africa-mining-equipment-air-freight-rfq-template/', label: 'Mining equipment RFQ', note: 'One template for pumps, motors and breakdown spares' },
+  { href: '/en/insights/china-africa-air-freight-cost-chargeable-weight/', label: 'Chargeable weight', note: 'The 6000 divisor, and what it does not price' },
+  { href: '/en/insights/africa-customs-documents-checklist-air-freight/', label: 'Customs document checklist', note: 'Shared papers, then the country page that actually applies' },
+] as const
+
 const checks = {
   zh: [
     { title: '能不能装', body: '核对每件长宽高、毛重、包装、吊点、叉车条件和重心，再判断腹舱、主甲板或 B747F 是否值得继续问。' },
@@ -115,6 +128,28 @@ export default function SimpleHome({ lang }: { lang: 'zh' | 'en' }) {
             ))}
           </ul>
         </section>
+
+        {!zh && (
+          <section aria-label="English freight guides" className="pb-9 sm:pb-12">
+            <h2 className="text-lg font-semibold">English guides</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-zinc-500">
+              The same ten China-to-Africa guides as the Chinese library, written for international shippers and buyers in Africa. Figures stay tied to the sources on each page.
+            </p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {englishGuides.map((guide) => (
+                <li key={guide.href}>
+                  <a href={guide.href} className="flex items-start justify-between gap-3 rounded-md border border-zinc-200 px-4 py-3 hover:border-emerald-700">
+                    <span>
+                      <span className="block text-sm font-semibold">{guide.label}</span>
+                      <span className="mt-1 block text-sm leading-6 text-zinc-500">{guide.note}</span>
+                    </span>
+                    <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-emerald-800" aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section id="quote-agent" className="scroll-mt-6 pb-9 sm:pb-12" aria-label={zh ? '空运询价' : 'Air freight quote'}>
           <QuoteForm compact lang={lang} />

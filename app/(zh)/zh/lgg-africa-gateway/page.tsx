@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { lggLanguageAlternates } from '@/lib/hreflang-pairs'
 import {
   ArrowRight,
   CheckCircle2,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     '面向中国货代、工厂和外贸公司：国内没有直飞方案时，通过LGG欧洲中转，衔接B747F直飞非洲与非洲Hub卡车中转，覆盖JNB、FBM、LUN、EBB、NBO、LOS、ACC及30+内陆点。',
   alternates: {
     canonical: 'https://www.eascargo.com/zh/lgg-africa-gateway/',
+    languages: lggLanguageAlternates,
   },
   robots: {
     index: true,
@@ -557,9 +559,14 @@ export default function LggAfricaGatewayZhPage() {
           }}
         />
         <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-28">
-          <a href="/" className="mb-10 inline-flex items-center text-sm text-amberGold hover:text-white">
-            返回 EASCargo 首页
-          </a>
+          <div className="mb-10 flex flex-wrap items-center justify-between gap-3">
+            <a href="/" className="inline-flex items-center text-sm text-amberGold hover:text-white">
+              返回 EASCargo 首页
+            </a>
+            <a href="/china-africa-oversized-cargo-via-europe/" hrefLang="en" className="text-sm font-semibold text-white/80 hover:text-white">
+              English
+            </a>
+          </div>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-medium text-amberGold">
               <MapPinned className="h-4 w-4" />

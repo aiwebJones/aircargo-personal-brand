@@ -41,6 +41,10 @@ Core positioning:
 
 Ten articles now walk through loading, documents and route checks and cite https://www.eascargo.com/cases/project-records/ for the 8 m, 16,730 kg and 98.8 t records. Door, floor, runway and certificate figures cite Boeing, Airbus, Lufthansa Cargo, ANA Cargo, Atlas Air, Qantas Freight, Avianca Cargo, ZACL, ASECNA, OurAirports, SkyVector, WFS, SON, TBS, KEBS or World Bank Doing Business 2020, with an as-of date on the page. Secondary runway and operator-door figures are labelled indicative. Live fuel and ground charges are not published; they are requested per shipment.
 
+Each guide has a Chinese page and an English page. hreflang pairs are zh-CN, en and x-default. x-default is the Chinese URL. The English pages repeat the same sourced figures for international shippers and buyers in Africa. They do not add rates.
+
+Chinese:
+
 - https://www.eascargo.com/insights/jnb-mining-spares-air-freight/
 - https://www.eascargo.com/insights/fbm-copperbelt-mining-equipment-air-freight/
 - https://www.eascargo.com/insights/lun-zambia-industrial-air-freight-guide/
@@ -51,6 +55,21 @@ Ten articles now walk through loading, documents and route checks and cite https
 - https://www.eascargo.com/insights/africa-mining-equipment-air-freight-rfq-template/
 - https://www.eascargo.com/insights/china-africa-air-freight-cost-chargeable-weight/
 - https://www.eascargo.com/insights/africa-customs-documents-checklist-air-freight/
+
+English:
+
+- https://www.eascargo.com/en/insights/jnb-mining-spares-air-freight/
+- https://www.eascargo.com/en/insights/fbm-copperbelt-mining-equipment-air-freight/
+- https://www.eascargo.com/en/insights/lun-zambia-industrial-air-freight-guide/
+- https://www.eascargo.com/en/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/
+- https://www.eascargo.com/en/insights/china-africa-via-europe-lgg-bru-transit/
+- https://www.eascargo.com/en/insights/oversized-air-freight-quote-checklist/
+- https://www.eascargo.com/en/insights/oversized-air-cargo-booking-documents-main-deck-africa/
+- https://www.eascargo.com/en/insights/africa-mining-equipment-air-freight-rfq-template/
+- https://www.eascargo.com/en/insights/china-africa-air-freight-cost-chargeable-weight/
+- https://www.eascargo.com/en/insights/africa-customs-documents-checklist-air-freight/
+
+The Chinese LGG network page and the English Europe gateway are a language pair: https://www.eascargo.com/zh/lgg-africa-gateway/ and https://www.eascargo.com/china-africa-oversized-cargo-via-europe/.
 
 ## Canonical Pages
 

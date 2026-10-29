@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { lggLanguageAlternates } from '@/lib/hreflang-pairs'
 import {
   ArrowRight,
   CheckCircle2,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     'China to Africa oversized cargo via LGG. B747F direct flights and Africa truck transfer network covering JNB, FBM, LUN, EBB, NBO, LOS, ACC and 30+ inland destinations.',
   alternates: {
     canonical: 'https://www.eascargo.com/china-africa-oversized-cargo-via-europe/',
+    languages: lggLanguageAlternates,
   },
   openGraph: {
     title: 'LGG Africa Gateway for Oversized Cargo',
@@ -108,9 +110,14 @@ export default function EuropeTransitCargoPage() {
           }}
         />
         <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-28">
-          <a href="/" className="mb-10 inline-flex items-center text-sm text-amberGold hover:text-white">
-            Back to EASCargo
-          </a>
+          <div className="mb-10 flex flex-wrap items-center justify-between gap-3">
+            <a href="/" className="inline-flex items-center text-sm text-amberGold hover:text-white">
+              Back to EASCargo
+            </a>
+            <a href="/zh/lgg-africa-gateway/" hrefLang="zh-CN" className="text-sm font-semibold text-white/80 hover:text-white">
+              中文
+            </a>
+          </div>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-medium text-amberGold">
               <MapPinned className="h-4 w-4" />
