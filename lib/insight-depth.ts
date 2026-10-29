@@ -21,9 +21,9 @@ type Expansion = {
 }
 
 /**
- * TODO（站长）：以下数字仓库里没有，十篇文章都故意不写：
- * 现行公斤价、舱位、航班天数、B747F/B777F 舱门厘米数、地板承重、
- * 非洲机场吊机吨位、各国清关天数和固定杂费。有实测资料后再补。
+ * 门洞、地板、跑道和证书有效期只写有链接的公开数字，并标查阅日。
+ * 仍缺：A330-200F 与 747-400F 侧门单句尺寸、FBM 现行跑道全长和吊装、
+ * LGG/BRU 统一截货小时、LUN/NLA/LBV 最大单件、到港放行天数、实时运价。
  */
 const caseBoundary =
   '三组数字都收录在项目数字对照表，只说明做过这类判断。8 米是中国经 LGG/BRU、按 B747F 主甲板逻辑评估后去 LBV 的长货记录。16,730 公斤（735×135×150 厘米，单票记录约 45 吨）是 PVG 出发的历史特殊装载，路线记的是中东，不是非洲航线，也不代表当前航班接受。98.8 吨是 PVG 到 AMS、一班 B777F 的历史组织记录，同样不是非洲舱位或价格承诺。'
@@ -77,7 +77,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '矿业急件的资料和约束',
         body: [
           '泵、电机、电气柜和维修件最常缺的是每件长宽高、毛重、包装照片、叉车孔、吊点和是否可倾斜。总重量过了，一件超轮廓，整套低价就作废。仓库没有收录 B747F 或 B777F 的舱门厘米数，所以这里不写“超过多少厘米一定走主甲板”。',
-          'TODO（站长补充）：当前航司对 JNB 的地板承重、轮廓代码和吊装吨位。没有这组实测之前，销售只能要求客户提供单件数据和照片，再向航司或地服确认。',
+          '飞机地板的公开口径只能当范围，不能当 JNB 的接受证明。波音 2024 年 5 月 14 日的 747-8F 资料写明，主甲板走行载荷与 747-400F 相同，按站位在 15–52 kg/cm（85–290 lb/in）之间，一张 96×125 英寸板的主甲板载荷示例从 3,401 kg 到 8,210 kg 不等；下货舱走行载荷为 21 kg/cm（116 lb/in）。全日空货机页把 767-300F 主甲板地板限制写成 1,221 kg/m²，并注明这是舱位限制，不是整机业载。轮廓代码和约翰内斯堡机坪吊机吨位，两份文件都没有。订舱前仍要向实际承运人和地服确认。来源：https://www.boeing.com/content/dam/boeing/v2/company/startupboeing/freighters/747-8F-freighter.pdf （查阅日 2026-10-29）；https://www.anacargo.jp/en/int/specification/b6_300f.html （查阅日 2026-10-29）。',
         ],
         bullets: ['每件尺寸和毛重', '吊点与叉车孔', '不写未记录的舱门尺寸', '二手件单独申报'],
       },
@@ -143,7 +143,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '资料和现场约束',
         body: [
           '需要法语或双语品名、HS Code、发票箱单、进口商、目的港代理、包装照片和卸货条件。矿区还要卡车能否进场、谁提供吊车或叉车、是否只在白天接收。',
-          'TODO（站长补充）：FBM 机场和常见矿区的实际吊装吨位、限高和夜间能否作业。仓库没有这些实测，页面不写“现场一定能卸”。',
+          'FBM 的跑道长度和机坪吊装，权威来源对不上，所以这里不写米数和吨位。刚果民航局 RVA 2009 年 9 月 30 日的机场表把卢本巴希写成“跑道入口内移后的剩余尺寸”，不是一条可以直接引用的全长，运行时间栏写的是 H24，那是 2009 年的表，不是今天的货机接受证明。第三方数据库互相不一致，不用。矿区吊车吨位、限高和夜间作业仍然没有机场当局页面。订舱前向 RVA 或当地代理要现行 AIP 和机坪能力。来源：https://www.rva.cd/admin/app/docs/ais.pdf （文件日期 2009-09-30，查阅日 2026-10-29）。TODO（仍缺）：现行跑道公布距离、货机机坪吊装吨位、夜间作业。',
         ],
         bullets: ['法语品名', '进口商和代理', '进场条件', '不写未测的吊装吨位'],
       },
@@ -152,7 +152,7 @@ export const insightExpansions: Record<string, Expansion> = {
         body: [
           '第一步确认最终是 FBM 机场、Lubumbashi 市区还是铜钴矿区，三句话不能合成一个价格。第二步收法语或双语品名、HS Code、发票和箱单，只有中文品名就停在资料阶段。第三步每件测量包装后的尺寸和毛重，照片要看见吊点和叉车孔。第四步比较中国出口口岸和 LGG/BRU 主甲板，任何一段没确认接受就不把下一段加进报价。',
           '第五步打开 FBM 清关资料页，只使用那里已经写明的系统和来源，不在邮件里新造证书名称。第六步写明谁卸货、卡车能否进场。约 8 米的公开记录入口是 LBV，用来说明腹舱不够时要改评估主甲板，不能把那条路径改写成 FBM 固定产品。16,730 公斤是 PVG 历史装载，不能当成卢本巴希地服能力。',
-          'TODO（站长补充）仍然有效：矿区吊装吨位和夜间作业不在仓库里，第六步只能向客户和当地代理提问，不能代答。',
+          '第六步仍然只能提问：矿区吊装吨位和夜间作业没有当局公布的数字，不能代答。',
         ],
         bullets: ['三段价格分开', '法语品名先齐', '主甲板单独评估', '吊装吨位留空'],
       },
@@ -193,7 +193,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '资料、标准和交付',
         body: [
           '把 ZRA 申报、发票箱单、AWB 和许可分成一条线，把航班和装载分成另一条线。两条线都成立，价格才可执行。强制标准类货物要提前问 ZCSA 是否适用，不要到港再猜。',
-          caseBoundary + 'TODO（站长补充）：ZRA 当前预申报时限和 LUN/NLA 地面最大单件重量。这两项不在仓库里。',
+          caseBoundary + '赞比亚机场公司页面写 LUN 跑道 3.9 km、宽 45 m、方向 10/28，并写可降落至 B747；同一机构 2022 年年报写 LUN 跑道 3,962 m×46 m、消防等级 9、每日 24 小时。NLA 机场资料页写跑道 3.5 km、宽 46 m、设计机型 B737-800、消防等级 7、运行 04:00–18:00 UTC；年报则写 3,500 m×45 m、06:00–20:00 CAT。两份官方材料宽度和时刻不完全一致，订舱前以最新 AIP 为准。两份文件都没有货机主甲板的最大单件重量，也没有 ZRA 预申报的小时数。来源：https://www.zacl.co.zm/airport-section/airports/kkia ；https://www.zacl.co.zm/airport-section/airports/smkia/general-aerodrome-info ；https://www.zacl.co.zm/application/files/9916/9536/6057/ZACL_Annual_Report_2022_Final.pdf （年报覆盖 2022 年，查阅日 2026-10-29）。TODO（仍缺）：ZRA 预申报时限、LUN/NLA 地面最大单件。',
         ],
         bullets: ['ZRA 资料线', '装载线', 'ZCSA 先问适用性', '不写清关天数'],
       },
@@ -243,7 +243,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '订舱前要交的约束',
         body: [
           '单件长度、包装后的宽和高、毛重、重心、吊点、能否倾斜、装卸照片，以及 LBV 谁卸货、卡车能否进场。法语品名和收货人资料与尺寸同时收，不要等舱位口头说可以了再补文件。',
-          'TODO（站长补充）：加蓬侧当前卸货设备和 LGG/BRU 仓库对超长件的接收截止时间。没有记录之前，对客户只说“需逐票确认”。',
+          '加蓬卸货设备和欧洲仓库的统一截货钟点，当局页面没有写成一个小时数。ASECNA AIP（页面标明自 2026-10-01 生效）写 LBV 跑道 16/34 为 3,000 m×45 m，强度栏为 Composite 80/F/B/W/T、PCR 820。这是跑道，不是吊机吨位。列日机场货运页列出超限货是其货类之一，但没有公布全机场统一的截货时间。布鲁塞尔机场写 BRUcargo 有 24 小时海关，货邮地面运输由持证代理操作；Q19 装卸月台的内部规则是每日 03:00–22:00，这不是超限货交仓截止。所以截货时间仍要向当票仓库和航司要。来源：https://aim.asecna.aero/html/eAIP/FR-_07AD-2.FOOL-fr-FR.html ；https://www.liegeairport.com/en/cargo/freight-types ；https://www.brusselsairport.be/en/real-estate/logistics-real-estate ；https://media.brusselsairport.be/bruweb/default/0001/26/4b5d23e4f7f8309f21e510725029415b89351242.pdf （查阅日 2026-10-29）。TODO（仍缺）：LBV 卸货设备吨位，以及 LGG/BRU 超限货的统一截货小时。',
         ],
         bullets: ['包装后尺寸', '重心和吊点', '目的港卸货人', '不写门高厘米'],
       },
@@ -293,7 +293,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '用公开记录对照，而不是用价格对照',
         body: [
           caseBoundary,
-          'TODO（站长补充）：LGG 与 BRU 对超限件的最新接收清单、截货时间和是否接受开鼻门货。仓库只有航线逻辑和 8 米案例，没有这两座机场的现行操作通告。',
+          '开鼻门是飞机能力，不是机场已经接受的证明。波音 747-8 机场规划手册 Rev E 写明 747-8F 保留 747-400F 的鼻门；2024 年 5 月 14 日的 StartupBoeing 图把鼻门净开口画成非矩形，标注里有 381 cm（150 in）、356 cm（140 in）和 249 cm（98 in），侧货门净开口标为 3.41 m（134.4 in）和 3.05 m（120 in），并写侧门可装 20 英尺集装器。列日机场页面承认超限货，但没有接收清单和截货钟点；布鲁塞尔机场也没有把开鼻门接受写成通告。这两项仍待当票确认。来源：https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-8_Rev_E.pdf ；https://www.boeing.com/content/dam/boeing/v2/company/startupboeing/freighters/747-8F-freighter.pdf （图注日期 14MAY24，查阅日 2026-10-29）。TODO（仍缺）：LGG/BRU 超限件接收清单、截货小时、是否接受开鼻门货。',
         ],
         bullets: ['8 米是非洲案例', '另两笔不是非洲运价', '不写截货时钟', 'ICS2 另文'],
       },
@@ -384,7 +384,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '什么情况下才上升到主甲板',
         body: [
           '腹舱或普通中转的门、轮廓或重量接不下时，才把主甲板、B747F 开鼻门逻辑和 LGG/BRU 组板放进比较。8 米记录走的就是这条判断，不是一条可以重复下单的产品。',
-          'TODO（站长补充）：常用集装板的最大毛重和外形限制。IATA 把集装器视为装载系统，但本仓库没有板型对照表，所以不列轮廓代码。',
+          '集装器毛重用航司公布值，并注明不是所有航司同一张表。汉莎货运集装器手册写 PMC/PAG 类 96 英寸或 88 英寸标准板最大毛重 6,804 kg，AKE（LD3）最大毛重 1,588 kg。波音 747-8F 资料把下货舱 LD-3 的最大毛重也写成 1,588 kg，并注明受下货舱走行载荷 116 lb/in 和全机结构限制。轮廓代码仍要看承运人的装载手册，不能从这三行推出每一块板都能装到这个重量。来源：https://www.lufthansa-cargo.com/documents/d/guest/brochure_pallets_containers_and_fleet ；https://www.boeing.com/content/dam/boeing/v2/company/startupboeing/freighters/747-8F-freighter.pdf （查阅日 2026-10-29）。',
         ],
         bullets: ['先证明腹舱不行', '再评估主甲板', '不列未收录的板型', '98.8 吨不是主甲板模板'],
       },
@@ -484,7 +484,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '非洲附加项要单列，且很多还没有公开数字',
         body: [
           '应单列而不是塞进公斤价的项目：超限操作、欧洲仓库、非洲二程、清关代理、仓储、卡车和卸货。哪些由发货人付、哪些由进口商付，写在报价边界里。',
-          'TODO（站长补充）：现行燃油、战险、超长加价和主要非洲机场的地面费。这些不在仓库中，本页保持空白，避免用过期数字充数。' + caseBoundary,
+          '燃油、战险、超长和地面费不在这里写金额。它们不是计费重公式的输出。承运人通常把燃油和战险做成随收费重或每公斤变化的附加费，超限加价按件的尺寸落在航司自己的档里，地面费则是机场或货站的价目，和空运费分开。汉莎和全日空都写明整机可装重量随航线、天气和业载变化，要向销售确认。货站可以另有价目，例如 WFS 在列日公布终端操作费，那是货站收费，不是 EASCARGO 的运价，本页不转抄那些欧元数字。实时金额只通过逐票询价给出。' + caseBoundary + '来源：https://www.lufthansa-cargo.com/en/fleet-ulds/fleet/b777f ；https://www.anacargo.jp/en/int/specification/b6_300f.html ；https://www.wfs.aero/wp-content/uploads/2022/08/2025-08-WFS-Belgium-Terminal-Handling-Charges-LGG-.pdf （WFS 价目写明自 2025-08-01 起，查阅日 2026-10-29）。',
         ],
         bullets: ['附加项单列', '付款方写清', '不填空缺的地面费', '案例不作价卡'],
       },
@@ -534,7 +534,7 @@ export const insightExpansions: Record<string, Expansion> = {
         heading: '和装载记录的关系',
         body: [
           caseBoundary + '清关页解决“文件叫什么”，对照表解决“什么样的件曾经需要特殊装载”。两者都不要被读成费率。',
-          'TODO（站长补充）：一份按国家更新的证书有效期表。现在各页只保留已引用的官方说法，过期与否要人工看链接，不能在总清单里写死。',
+          '能引用的有效期只覆盖已经核对的制度，不是全非洲一张表。尼日利亚标准局写：PC1 有效六个月且一次使用，PC2 和 PC3 有效 12 个月、可多次使用；SONCAP 证书（SC）只用于一批 PAAR，不能一批证书清多票；产品证书和 SC 的生成时间，SON 写的是考虑时区后 96 小时内，材料齐时可以到 24 小时，这是出证时间，不是港口放行天数。用于 Form M 的进口许可，SON 写有效 12 个月。坦桑尼亚标准局 2025 年 PVoC 指南写符合性证书自签发起三个月。肯尼亚标准局写 PVoC 路线 B 的注册有效一年、路线 C 的许可有效三年，这是注册或许可，不是每一票 CoC 的有效期。南非 SARS 没有在这些页面里给出一个“清关通常几天”。来源：https://son.gov.ng/soncap-faq/ ；https://www.tbs.go.tz/uploads/files/GUIDELINE%20FOR%20PVOC%20PROGRAMME%20-%202025.pdf ；https://inspection.kebs.go.ke/product-registration-routes/ （查阅日 2026-10-29）。TODO（仍缺）：其余国家的证书有效期，以及到港后放行的公开天数。',
         ],
         bullets: ['国家页负责系统名', '对照表负责装载', '不写统一时效', '证书有效期待补'],
       },
@@ -584,7 +584,8 @@ const moreDepth: Record<string, SeoInsight['sections'][number]> = {
     heading: '五个目录交齐之前不向航司提问',
     body: [
       '件号清单、照片、重心、非洲交付、贸易文件，五个目录缺一就先向客户补，不向航司问“能不能上主甲板”。件号清单必须一件一行。照片文件名要能对上件号，至少看见底座、叉车孔、吊点和不可倒置标记。重心未知就写未知。非洲交付写三字代码、最终城市和卸货责任人。贸易文件写发票品名是否与包装一致、HS Code、木箱、电池或油。',
-      '目录齐了才提问：腹舱是否失败，主甲板或开鼻门是否需要评估，LGG/BRU 是否要组板，目的港谁卸。约 8 米的记录是这种提问的公开例子，入口是 LBV，没有公布宽和高。不要把 16,730 公斤那件的 735×135×150 厘米写进 8 米货。98.8 吨的 B777F 是 PVG 到 AMS，用来提醒交仓顺序，不是非洲主甲板的上限。板型代码留空，等航司回复，仓库里没有对照表。',
+      '目录齐了才提问：腹舱是否失败，主甲板或开鼻门是否需要评估，LGG/BRU 是否要组板，目的港谁卸。约 8 米的记录是这种提问的公开例子，入口是 LBV，没有公布宽和高。不要把 16,730 公斤那件的 735×135×150 厘米写进 8 米货。98.8 吨的 B777F 是 PVG 到 AMS，用来提醒交仓顺序，不是非洲主甲板的上限。板型代码留空，等航司回复。',
+      '已公布的门洞和地板只能当范围，订舱以承运人装载手册为准。波音 747-8F（StartupBoeing，图注 2024-05-14）：侧货门净开口 3.41 m×3.05 m（134.4 in×120 in），鼻门是非矩形开口，标注含 381 cm、356 cm 和 249 cm；主甲板走行载荷与 747-400F 相同，按站位 15–52 kg/cm，一张 96×125 英寸板的示例载荷 3,401–8,210 kg；下货舱走行载荷 21 kg/cm。747-400F 的侧门厘米数不在这份 747-8F 图里，只写明地板走行载荷相同、鼻门被 747-8F 保留。汉莎货运 777F 页：侧门高×宽 120×142 in，主甲板装载高度最高 118 in，下货舱门 66×105 in，下货舱装载高度最高 64 in，公布业载 227,075 lb 且随航线变化。全日空 767-300F 页：主门宽×高 340×262 cm，下货舱门 340×170 cm（BCF 后货舱门改为 178×175 cm），主甲板地板 1,221 kg/m²、该舱最大 24,734 kg，页面写明这不是整机业载。空客 A330-200F 的 2022 年 8 月 1 日飞机特性文件写主甲板可用容积 336.8 m³（按 96×125 英寸板）、Trent 700 估算业载 65–70 吨、最大起飞重量 227 或 233 吨；同一时期的空客网站又把业载写成“最多 70 吨”和“61 吨”两种。门洞厘米数在特性文件的图上，正文没有单句标出，所以这里不转抄第三方门洞。来源见上段汉莎集装器链接，以及 https://www.boeing.com/content/dam/boeing/v2/company/startupboeing/freighters/747-8F-freighter.pdf 、https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-8_Rev_E.pdf 、https://www.lufthansa-cargo.com/en/fleet-ulds/fleet/b777f 、https://www.anacargo.jp/en/int/specification/b6_300f.html 、https://www.airbus.com/sites/g/files/jlcbta136/files/2022-08/Airbus-Commercial-Aircraft-AC-A330.pdf （查阅日 2026-10-29）。TODO（仍缺）：A330-200F 和 747-400F 侧门的官方单句门洞尺寸。',
     ],
   },
   'africa-mining-equipment-air-freight-rfq-template': {
