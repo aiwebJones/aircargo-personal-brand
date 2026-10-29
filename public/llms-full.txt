@@ -37,6 +37,21 @@ Core positioning:
 - Africa mining equipment and urgent spare parts air freight
 - Customs document checks and inland delivery planning for African destinations
 
+## Deepened Guides (2026-10-29)
+
+Ten articles now walk through loading, documents and route checks and cite https://www.eascargo.com/cases/project-records/ for the 8 m, 16,730 kg and 98.8 t records. Missing door sizes, live rates and clearance times are marked TODO rather than filled in.
+
+- https://www.eascargo.com/insights/jnb-mining-spares-air-freight/
+- https://www.eascargo.com/insights/fbm-copperbelt-mining-equipment-air-freight/
+- https://www.eascargo.com/insights/lun-zambia-industrial-air-freight-guide/
+- https://www.eascargo.com/insights/lbv-gabon-8-meter-cargo-via-lgg-bru/
+- https://www.eascargo.com/insights/china-africa-via-europe-lgg-bru-transit/
+- https://www.eascargo.com/insights/oversized-air-freight-quote-checklist/
+- https://www.eascargo.com/insights/oversized-air-cargo-booking-documents-main-deck-africa/
+- https://www.eascargo.com/insights/africa-mining-equipment-air-freight-rfq-template/
+- https://www.eascargo.com/insights/china-africa-air-freight-cost-chargeable-weight/
+- https://www.eascargo.com/insights/africa-customs-documents-checklist-air-freight/
+
 ## Canonical Pages
 
 - Homepage: https://www.eascargo.com/

@@ -47,7 +47,7 @@ const articleSchema = {
   },
   mainEntityOfPage: 'https://www.eascargo.com/insights/why-shippers-ignore-freight-brokers/',
   datePublished: '2026-05-06',
-  dateModified: '2026-05-06',
+  dateModified: '2026-09-07',
   about: [
     'China to Africa oversized air freight',
     'Africa project cargo',

@@ -30,14 +30,15 @@ export function generateMetadata({ params }: Params): Metadata {
 
   return {
     title: `${insight.title} | EASCARGO`,
-    description: insight.excerpt,
+    description: insight.answerLead ?? insight.excerpt,
     keywords: insight.keywords,
     alternates: {
       canonical: url,
     },
+    robots: insight.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       title: insight.title,
-      description: insight.excerpt,
+      description: insight.answerLead ?? insight.excerpt,
       url,
       type: 'article',
       publishedTime: insight.date,
@@ -55,6 +56,18 @@ export default function InsightDetailPage({ params }: Params) {
 
   const url = `https://www.eascargo.com/insights/${insight.slug}/`
   const modifiedTime = insight.modifiedDate ?? insight.date
+  const faqSchema = insight.faqs?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: insight.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
+      }
+    : null
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -109,6 +122,12 @@ export default function InsightDetailPage({ params }: Params) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -130,7 +149,10 @@ export default function InsightDetailPage({ params }: Params) {
               <h1 className="mt-4 text-4xl font-black leading-tight tracking-normal sm:text-5xl">
                 {insight.title}
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{insight.excerpt}</p>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{insight.answerLead ?? insight.excerpt}</p>
+              {insight.answerLead && (
+                <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-400">{insight.excerpt}</p>
+              )}
               <div className="mt-8 flex flex-wrap gap-2">
                 {insight.keywords.map((keyword) => (
                   <span key={keyword} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-300">
@@ -159,6 +181,18 @@ export default function InsightDetailPage({ params }: Params) {
       <article className="mx-auto max-w-6xl px-5 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
           <div className="space-y-10">
+            {insight.noindex && (
+              <section className="rounded-lg border border-amber-300 bg-amber-50 p-6 text-slate-800">
+                <h2 className="text-xl font-black">请改看有来源的页面</h2>
+                <p className="mt-3 leading-8">
+                  这篇没有独立官方来源，内容与后来的尼日利亚清关页重复。请使用下面两篇，本页保留网址但不再要求索引。
+                </p>
+                <div className="mt-4 flex flex-col gap-2 text-sm font-bold">
+                  <Link href="/insights/nigeria-los-soncap-formm-paar-air-freight/" className="text-amber-800 hover:text-slate-950">SONCAP、Form M 和 PAAR</Link>
+                  <Link href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/" className="text-amber-800 hover:text-slate-950">B’Odogwu、Form M 和 PAAR</Link>
+                </div>
+              </section>
+            )}
             {insight.sections.map((section) => (
               <section key={section.heading} className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200">
                 <h2 className="text-2xl font-black">{section.heading}</h2>
@@ -186,7 +220,7 @@ export default function InsightDetailPage({ params }: Params) {
                 <h2 className="text-2xl font-black">发资料前先准备这些</h2>
               </div>
               <p className="mt-5 text-lg leading-9 text-slate-300">
-                非洲空运报价不能只发一个目的港和总重量。资料越完整，越能快速判断能不能走、走哪条线、哪里会卡。
+                {insight.angle}下面这些项来自本页，不是所有非洲国家共用的同一套文件。
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {insight.checklist.map((item) => (
@@ -217,12 +251,23 @@ export default function InsightDetailPage({ params }: Params) {
               </section>
             )}
 
+            {insight.faqs && insight.faqs.length > 0 && (
+              <section id="faq" className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <h2 className="text-2xl font-black">常见问题</h2>
+                <div className="mt-5 divide-y divide-slate-200">
+                  {insight.faqs.map((faq) => (
+                    <article key={faq.question} className="py-5">
+                      <h3 className="text-lg font-black">{faq.question}</h3>
+                      <p className="mt-3 leading-8 text-slate-700">{faq.answer}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
+
             <section className="rounded-lg bg-amberGold p-7 text-[#08111f] shadow-sm">
-              <h2 className="text-2xl font-black">EASCargo 怎么处理这类询盘</h2>
-              <p className="mt-5 text-lg leading-9">
-                先判断货物能不能装、路线能不能接、目的港能不能清、最终现场能不能交付。路线成立后再谈价格，
-                否则低价只会把风险推迟到订舱和到港之后。
-              </p>
+              <h2 className="text-2xl font-black">这页对应的询盘怎么接</h2>
+              <p className="mt-5 text-lg leading-9">{insight.angle}</p>
               <Link
                 href={`/tools/africa-project-cargo-rfq/?source=insight&topic=${encodeURIComponent(insight.slug)}`}
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#08111f] px-6 py-3 font-bold text-white transition hover:bg-white hover:text-[#08111f]"
