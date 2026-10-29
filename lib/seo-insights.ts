@@ -1,3 +1,5 @@
+import { applyInsightDepth } from '@/lib/insight-depth'
+
 export type SeoInsight = {
   slug: string
   title: string
@@ -26,6 +28,12 @@ export type SeoInsight = {
     label: string
     href: string
   }>
+  faqs?: Array<{
+    question: string
+    answer: string
+  }>
+  noindex?: boolean
+  answerLead?: string
 }
 
 const defaultAuthor = '神仙货运Jones'
@@ -4869,5 +4877,7 @@ export const seoInsights: SeoInsight[] = [
 export const generatedSeoInsights = seoInsights.filter((insight) => insight.template === 'generated')
 
 export function getInsightBySlug(slug: string) {
-  return seoInsights.find((insight) => insight.slug === slug)
+  const insight = seoInsights.find((item) => item.slug === slug)
+  if (!insight) return undefined
+  return applyInsightDepth(insight)
 }
