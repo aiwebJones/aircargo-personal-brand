@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.eascargo.com/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.eascargo.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.eascargo.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eascargo.com/"/>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/en/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.eascargo.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.eascargo.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eascargo.com/"/>
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/eascargo-answer-engine-profile/</loc>
@@ -56,9 +68,15 @@
   </url>
   <url>
     <loc>https://www.eascargo.com/cases/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.eascargo.com/cases/project-records/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.eascargo.com/insights/</loc>
@@ -638,15 +656,21 @@
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/jnb/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.eascargo.com/africa-air-freight/jnb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.eascargo.com/en/africa-air-freight/jnb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eascargo.com/africa-air-freight/jnb/"/>
   </url>
   <url>
     <loc>https://www.eascargo.com/en/africa-air-freight/jnb/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.eascargo.com/africa-air-freight/jnb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.eascargo.com/en/africa-air-freight/jnb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eascargo.com/africa-air-freight/jnb/"/>
   </url>
   <url>
     <loc>https://www.eascargo.com/africa-air-freight/fbm/</loc>

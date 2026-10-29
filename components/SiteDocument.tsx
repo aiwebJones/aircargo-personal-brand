@@ -46,7 +46,6 @@ export const siteMetadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'zh_CN',
     url: 'https://www.eascargo.com',
     title: 'EASCARGO | 中国到非洲大件空运专家',
     description: '面向工厂、贸易商和货代的非洲大件项目货路线判断：LGG/BRU欧洲中转、B747F全货机、JNB/FBM/LUN/LBV和矿业设备空运。',
@@ -80,6 +79,7 @@ export default function SiteDocument({
   return (
     <html lang={lang} className={inter.variable}>
       <head>
+        <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'zh_CN'} />
         <link
           rel="alternate"
           type="application/rss+xml"
@@ -121,6 +121,14 @@ export default function SiteDocument({
                 'email': 'globegsa@gmail.com',
                 'availableLanguage': ['zh', 'en']
               },
+              // Profiles published in public/llms-full.txt only.
+              // TODO: add more Organization sameAs URLs when a verified profile is
+              // added to the repo. The Twitter/X URL in
+              // archive/legacy-public-content-plans/seo-schemas.json is an old
+              // template placeholder and is omitted.
+              'sameAs': [
+                'https://www.linkedin.com/in/shenxian-jones'
+              ],
               'areaServed': ['CN', 'ZA', 'CD', 'ZM', 'GA', 'NG', 'KE', 'UG', 'GH', 'CI', 'FR', 'BE'],
               'knowsAbout': [
                 'China to Africa oversized air freight',

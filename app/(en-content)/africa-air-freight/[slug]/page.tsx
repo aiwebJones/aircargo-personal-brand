@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { ArrowRight, CheckCircle2, FileCheck2, Globe2, Plane, Truck } from 'lucide-react'
+import { jnbLanguageAlternates } from '@/lib/hreflang-pairs'
 
 const pages = {
   jnb: {
@@ -1218,12 +1219,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     ],
     alternates: {
       canonical: `https://www.eascargo.com/africa-air-freight/${params.slug}/`,
+      // The JNB URL is the zh-CN hreflang target. Its body is still English-majority,
+      // so the document language is en; hreflang marks the market pair.
       ...(params.slug === 'jnb'
         ? {
-            languages: {
-              en: 'https://www.eascargo.com/en/africa-air-freight/jnb/',
-              'zh-CN': 'https://www.eascargo.com/africa-air-freight/jnb/',
-            },
+            languages: jnbLanguageAlternates,
           }
         : {}),
     },
@@ -1318,16 +1318,20 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               {chinese ? `${item.code} - ${chinese.city} / ${item.city}, ${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
             </div>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              {chinese
-                ? currentSlug === 'jnb'
-                  ? `中国各大口岸到 ${item.code} ${chinese.city} 空运`
-                  : currentSlug === 'lbv'
-                  ? `全国集货到 ${item.code} ${chinese.city} 空运`
-                  : `中国到 ${item.code} ${chinese.city} 空运`
-                : item.title}
+              {chinese ? (
+                <span lang="zh-CN">
+                  {currentSlug === 'jnb'
+                    ? `中国各大口岸到 ${item.code} ${chinese.city} 空运`
+                    : currentSlug === 'lbv'
+                    ? `全国集货到 ${item.code} ${chinese.city} 空运`
+                    : `中国到 ${item.code} ${chinese.city} 空运`}
+                </span>
+              ) : (
+                item.title
+              )}
               {chinese && <span className="block text-amberGold">China to {item.city} project cargo</span>}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300" lang={chinese ? 'zh-CN' : undefined}>
               {chinese
                 ? currentSlug === 'jnb'
                   ? '全国集货后比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽。按每票货核实单件装载、中转接受、SARS清关和南非最终交付，不预设固定机场、航班或舱位。'

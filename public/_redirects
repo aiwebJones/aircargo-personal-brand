@@ -1,3 +1,6 @@
+# Scheme redirects (http → https) are handled in _worker.js. This file matches
+# paths, and Pages does not apply _redirects once _worker.js receives the request.
+# Canonical host: https://www.eascargo.com
 https://eascargo.com/* https://www.eascargo.com/:splat 301
 https://aircargo-personal-brand.pages.dev/* https://www.eascargo.com/:splat 301
 /quote /tools/africa-project-cargo-rfq/ 301
