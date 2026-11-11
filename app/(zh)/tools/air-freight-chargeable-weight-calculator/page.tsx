@@ -261,7 +261,7 @@ export default function AirFreightChargeableWeightCalculatorPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-14 sm:px-6 lg:px-8">
-        <h2 className="text-xl font-black">Formula references</h2>
+        <h2 className="text-xl font-black">公式参考来源</h2>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
           {sourceLinks.map((item) => (
             <a

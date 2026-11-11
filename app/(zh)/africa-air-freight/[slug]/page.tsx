@@ -4,428 +4,428 @@ import { ArrowRight, CheckCircle2, FileCheck2, Globe2, Plane, Truck } from 'luci
 const pages = {
   jnb: {
     code: 'JNB',
-    city: 'Johannesburg',
-    country: 'South Africa',
-    title: 'JNB Johannesburg Oversized Air Freight from China',
+    city: '约翰内斯堡',
+    country: '南非',
+    title: '中国到JNB约翰内斯堡超大件空运',
     description:
-      'China major air cargo gateways to Johannesburg JNB for mining, engineering and urgent project cargo. Compare PVG, CAN, SZX, PEK, XMN, FOC, CTU, CKG and HAK origin options with global transit, main-deck planning, SARS customs and Southern Africa delivery.',
-    cargo: ['Mining spare parts', 'Engineering equipment', 'Automotive parts', 'High-value urgent project cargo'],
+      '中国各大空运口岸到JNB，适用于矿业、工程及紧急项目货。比较PVG、CAN、SZX、PEK、XMN、FOC、CTU、CKG和HAK等起运选项，并逐票核实全球中转、主甲板方案、SARS清关及南部非洲交付。',
+    cargo: ['矿业备件', '工程设备', '汽车零部件', '高价值紧急项目货'],
     market:
-      'O.R. Tambo International Airport is South Africa\'s principal international cargo gateway. Airports Company South Africa states that the airport has annual cargo facilitation capacity of 650,000 tonnes and direct road access to the national network.',
+      'O.R. Tambo国际机场是南非主要国际货运门户。南非机场公司称，该机场年货物处理能力为65万吨，并可直接连接全国公路网络。',
     customs:
-      'Check the South African importer or registered agent, customs code, HS Code, commercial invoice, packing list, AWB data and Goods Declaration before booking. Restricted goods may need a permit, certificate or Letter of Authority; used goods can require ITAC import control.',
+      '订舱前核实南非进口商或注册代理、海关编码、HS Code、商业发票、装箱单、AWB资料及货物申报。受限制商品可能需要许可证、证书或主管机关授权函；旧货可能需要ITAC进口管制。',
     business:
-      'Best for urgent mining spares, industrial maintenance cargo, automotive parts and high-value equipment serving Gauteng, South Africa and selected Southern Africa projects after route-specific customs and trucking checks.',
+      '经逐票核实清关和卡车安排后，可评估用于服务豪登省、南非及南部非洲部分项目的矿业急件、工业维修货、汽车零部件和高价值设备。',
     culture:
-      'English business communication is common, but the importer, customs broker, airline handler and final-site receiver must agree on documents, release responsibility, truck appointment and unloading before departure.',
+      '当地商务沟通常使用英语；出运前仍需由进口商、清关代理、航司操作方和最终收货现场确认单证、放货责任、卡车预约及卸货安排。',
   },
   fbm: {
     code: 'FBM',
-    city: 'Lubumbashi',
-    country: 'Democratic Republic of the Congo',
-    title: 'FBM Lubumbashi Air Freight for Mining Equipment',
+    city: '卢本巴希',
+    country: '刚果（金）',
+    title: 'FBM卢本巴希矿业设备空运',
     description:
-      'China to FBM Lubumbashi air freight for Copperbelt mining equipment, heavy spare parts and project cargo via Europe, African hub routing and mine-site handover checks.',
-    cargo: ['Copperbelt mining spare parts', 'Transformers', 'Pumps', 'Electrical cabinets', 'Heavy maintenance equipment'],
+      '中国到FBM卢本巴希空运，面向铜带矿区设备、重型备件和项目货；可逐票评估欧洲或非洲枢纽中转及矿区交接条件。',
+    cargo: ['铜带矿区备件', '变压器', '泵类', '电气柜', '重型维修设备'],
     market:
-      'Lubumbashi is a mining supply chain destination for the DRC Copperbelt. Air freight planning must separate the FBM airport leg, destination customs broker work, Lubumbashi handling and final mine or plant handover.',
+      '卢本巴希是刚果（金）铜带矿业供应链目的地。空运方案需区分FBM机场段、目的地清关代理工作、卢本巴希当地操作，以及最终矿区或工厂交接。',
     customs:
-      'Confirm consignee documents, importer identity, HS Code, French or bilingual cargo description, commercial invoice, packing list, AWB/LTA data, destination broker capability and whether GUICE, OCC/BIVAC or other controlled-goods steps apply.',
+      '核实收货人资料、进口商身份、HS Code、法文或双语品名、商业发票、装箱单、AWB/LTA资料、目的地代理能力，以及GUICE、OCC/BIVAC或其他受管制货物手续是否适用。',
     business:
-      'Best for Copperbelt mining equipment, plant maintenance cargo, heavy spares and emergency replacement parts where downtime is expensive.',
+      '适合评估铜带矿区设备、工厂维修货、重型备件及紧急替换件，尤其是停工成本较高的场景。',
     culture:
-      'French communication is useful. Many shipments are tied to mines, contractors and Chinese-backed industrial projects, so document consistency, unloading responsibility and site access matter more than a cheap airport-to-airport rate.',
+      '法语沟通有帮助。许多货物与矿山、承包商及中资工业项目有关，因此单证一致性、卸货责任和现场进出条件，比单纯追求低机场到机场运价更重要。',
   },
   lun: {
     code: 'LUN',
-    city: 'Lusaka',
-    country: 'Zambia',
-    title: 'LUN Lusaka Air Freight for Industrial and Mining Cargo',
+    city: '卢萨卡',
+    country: '赞比亚',
+    title: 'LUN卢萨卡工业及矿业货物空运',
     description:
-      'China major air cargo gateways to Lusaka LUN for Zambia industrial equipment, mining spares and urgent project cargo. Compare nationwide pickup, LGG/BRU main-deck transit, LUN versus NLA entry, ZRA/ASYCUDA data and Copperbelt delivery.',
-    cargo: ['Mining spare parts', 'Chemical pumps', 'Generators', 'Factory equipment', 'Industrial maintenance parts'],
+      '中国各大空运口岸到LUN，适用于赞比亚工业设备、矿业备件和紧急项目货。比较全国集货、LGG/BRU主甲板中转、LUN与NLA入境、ZRA/ASYCUDA资料及铜带矿区交付。',
+    cargo: ['矿业备件', '化工泵', '发电机', '工厂设备', '工业维修零部件'],
     market:
-      'Lusaka is an important entry point for Zambia industrial and mining supply chains. Project cargo often needs stable documents and clear delivery timing.',
+      '卢萨卡是赞比亚工业和矿业供应链的重要入境点。项目货通常需要稳定的单证准备和明确的交付时间安排。',
     customs:
-      'Align the importer and appointed clearing agent, HS Code, commercial invoice, packing list, AWB data, cargo value, permits and any ZCSA checks before shipment. Zambia air-cargo manifest data may be filed electronically through the ZRA ASYCUDA ACI process before arrival.',
+      '出运前对齐进口商及指定清关代理、HS Code、商业发票、装箱单、AWB资料、货值、许可证及ZCSA核查事项。赞比亚空运舱单资料可能需在到达前通过ZRA ASYCUDA ACI流程电子申报。',
     business:
-      'Best for Zambia mining support cargo, industrial spare parts, pumps, motors, chemical plant equipment and urgent factory maintenance cargo.',
+      '适合评估赞比亚矿业支持货、工业备件、泵类、电机、化工厂设备及工厂紧急维修货。',
     culture:
-      'English is widely used in business. Chinese companies are active in mining and infrastructure, which makes China-origin project cargo common but still document-sensitive.',
+      '商务中广泛使用英语。中资企业参与当地矿业和基础设施项目较多，中国起运项目货常见，但单证仍需谨慎核对。',
   },
   lbv: {
     code: 'LBV',
-    city: 'Libreville',
-    country: 'Gabon',
-    title: 'LBV Libreville Oversized Cargo via LGG/BRU and B747F',
+    city: '利伯维尔',
+    country: '加蓬',
+    title: 'LBV利伯维尔超长货空运：LGG/BRU与B747F方案',
     description:
-      'China to Libreville LBV oversized air freight via LGG/BRU Europe transit and B747F freighter planning for long cargo, oil, energy and engineering projects.',
-    cargo: ['Long cargo around 8 meters', 'Oil and energy equipment', 'Engineering spare parts', 'Project machinery'],
+      '中国到LBV超大件空运，可逐票评估LGG/BRU欧洲中转与B747F全货机方案，适用于长货、油气能源及工程项目货。',
+    cargo: ['约8米长货', '油气及能源设备', '工程备件', '项目机械'],
     market:
-      'Libreville can serve Gabon and Central Africa projects. Long cargo requires aircraft, main-deck and ground handling checks before rate discussion.',
+      '利伯维尔可服务加蓬及中非项目。长货应先核实机型、主甲板和地面操作条件，再讨论运价。',
     customs:
-      'French-language document communication, consignee readiness, cargo description, packing details and special handling at destination should be confirmed early.',
+      '应尽早确认法文单证沟通、收货人准备情况、货物描述、包装细节及目的地特殊操作要求。',
     business:
-      'Best for oil, energy, construction and long engineering cargo where B747F main-deck loading or Europe transit can unlock a workable route.',
+      '适合评估油气、能源、建筑和长尺寸工程货；B747F主甲板装载或欧洲中转可能提供可行路线，但需逐票确认。',
     culture:
-      'French is the practical business language. For special cargo, the local agent must confirm ground handling and truck access before the shipment leaves China.',
+      '当地商务沟通常用法语。特殊货物出中国前，需由当地代理确认地面操作和卡车进场条件。',
   },
   nbo: {
     code: 'NBO',
-    city: 'Nairobi',
-    country: 'Kenya',
-    title: 'NBO Nairobi Air Freight for East Africa Project Cargo',
+    city: '内罗毕',
+    country: '肯尼亚',
+    title: 'NBO内罗毕东非项目货空运',
     description:
-      'China to Nairobi NBO air freight for East Africa project cargo, machinery, telecom equipment, industrial spare parts and oversized cargo via Europe, JKIA or regional hub routing.',
-    cargo: ['Telecom equipment', 'Factory spare parts', 'Project machinery', 'Medical and industrial equipment'],
+      '中国到NBO空运，面向东非项目货、机械、通信设备、工业备件及超大件；可逐票评估欧洲、JKIA或区域枢纽路线。',
+    cargo: ['通信设备', '工厂备件', '项目机械', '医疗及工业设备'],
     market:
-      'Nairobi is one of the strongest East Africa cargo hubs and can support Kenya projects plus onward distribution to nearby countries. Current JKIA modernisation planning reinforces why NBO should be treated as a route-decision gateway, not only an airport code.',
+      '内罗毕是东非重要货运枢纽之一，可服务肯尼亚项目及周边国家的后续分拨。JKIA现代化规划也说明，NBO应作为路线决策节点评估，而不只是一个机场代码。',
     customs:
-      'Check importer PIN, HS Code, invoice value, packing list, permits for regulated goods and whether the consignee can clear at Jomo Kenyatta airport.',
+      '核实进口商PIN、HS Code、发票货值、装箱单、受管制货物许可证，以及收货人是否可在乔莫·肯雅塔机场办理清关。',
     business:
-      'Best for East Africa regional distribution, infrastructure projects, telecom rollouts and time-sensitive industrial maintenance cargo.',
+      '适合评估东非区域分拨、基础设施项目、通信部署及有时限要求的工业维修货。',
     culture:
-      'English is common and the business environment is relatively mature. Chinese suppliers and contractors are visible in infrastructure and equipment trades.',
+      '当地商务中常用英语，商业环境相对成熟。基础设施和设备贸易中可见中国供应商及承包商参与。',
   },
   ebb: {
     code: 'EBB',
-    city: 'Entebbe',
-    country: 'Uganda',
-    title: 'EBB Entebbe Air Freight from China for Uganda Projects',
+    city: '恩德培',
+    country: '乌干达',
+    title: '中国到EBB恩德培乌干达项目货空运',
     description:
-      'China to Entebbe EBB air freight for Uganda project cargo, industrial equipment, construction machinery parts and urgent spare parts via Europe or East Africa routing.',
-    cargo: ['Construction equipment parts', 'Energy project cargo', 'Industrial spares', 'Telecom equipment'],
+      '中国到EBB空运，适用于乌干达项目货、工业设备、工程机械零件和紧急备件，可逐票评估欧洲或东非中转。',
+    cargo: ['工程设备零件', '能源项目货', '工业备件', '通信设备'],
     market:
-      'Entebbe is Uganda’s main air cargo entry point. Shipments often need close coordination between airport clearance and Kampala or project-site delivery.',
+      '恩德培是乌干达主要空运入境点。货物通常需要协调机场清关与坎帕拉或项目现场交付。',
     customs:
-      'Confirm importer tax details, HS Code, invoice, packing list, permits and final delivery responsibility before booking.',
+      '订舱前确认进口商税务资料、HS Code、发票、装箱单、许可证及最终交付责任。',
     business:
-      'Best for Uganda infrastructure, energy, telecom and industrial maintenance cargo where delivery predictability is more important than ordinary airfreight speed.',
+      '适合评估乌干达基础设施、能源、通信及工业维修货；此类货物有时更看重交付可预期性，而非普通空运速度。',
     culture:
-      'English is widely used. Chinese contractors and suppliers are active, but destination-side clearance capability must be checked case by case.',
+      '当地广泛使用英语。中国承包商和供应商较活跃，但目的地清关能力仍需逐票核实。',
   },
   los: {
     code: 'LOS',
-    city: 'Lagos',
-    country: 'Nigeria',
-    title: 'LOS Lagos Heavy Air Freight from China to Nigeria',
+    city: '拉各斯',
+    country: '尼日利亚',
+    title: '中国到LOS拉各斯重货空运',
     description:
-      'China to Lagos LOS heavy air freight for Nigeria industrial cargo, oil and gas spare parts, factory machinery and project shipments requiring careful customs planning.',
-    cargo: ['Oil and gas spare parts', 'Factory machinery', 'Electrical equipment', 'High-value urgent cargo'],
+      '中国到LOS拉各斯重货空运，面向尼日利亚工业货、油气备件、工厂机械及需要提前规划清关的项目货。',
+    cargo: ['油气备件', '工厂机械', '电气设备', '高价值紧急货'],
     market:
-      'Lagos is Nigeria’s main commercial cargo gateway. Capacity exists, but customs documents, consignee readiness and demurrage risk must be controlled.',
+      '拉各斯是尼日利亚主要商业货运门户。路线需逐票确认，并管控清关资料、收货人准备情况及滞期风险。',
     customs:
-      'Check SONCAP or other regulated-goods requirements, HS Code, Form M where applicable, invoice value, packing list and importer documentation before departure.',
+      '出运前核实SONCAP或其他受管制货物要求、HS Code、适用时的Form M、发票货值、装箱单及进口商资料。',
     business:
-      'Best for Nigeria factory, oil service, power, telecom and trade cargo where customs preparation affects the real landed cost.',
+      '适合评估尼日利亚工厂、油服、电力、通信及贸易货物；清关准备情况会影响实际到岸成本。',
     culture:
-      'English is the business language. Nigeria has strong import demand, but clearance process discipline and trusted local agents are critical.',
+      '商务中使用英语。尼日利亚进口需求较强，但清关流程管理和可靠的当地代理至关重要。',
   },
   acc: {
     code: 'ACC',
-    city: 'Accra',
-    country: 'Ghana',
-    title: 'ACC Accra Air Freight from China for Ghana Project Cargo',
+    city: '阿克拉',
+    country: '加纳',
+    title: '中国到ACC阿克拉加纳项目货空运',
     description:
-      'China to Accra ACC air freight for Ghana project cargo, mining spares, machinery parts, medical equipment and industrial shipments via Europe transit.',
-    cargo: ['Mining spare parts', 'Medical equipment', 'Industrial equipment', 'Construction project cargo'],
+      '中国到ACC阿克拉空运，适用于加纳项目货、矿业备件、机械零件、医疗设备及工业货物，可评估欧洲中转。',
+    cargo: ['矿业备件', '医疗设备', '工业设备', '建筑项目货'],
     market:
-      'Accra serves Ghana’s commercial and mining supply chain. It is often suitable for urgent spare parts and high-value equipment.',
+      '阿克拉服务于加纳商业和矿业供应链，可评估用于紧急备件和高价值设备。',
     customs:
-      'Confirm importer tax identity, HS Code, invoice, packing list, permits and destination handling for heavy or fragile equipment.',
+      '确认进口商税务身份、HS Code、发票、装箱单、许可证，以及重货或易碎设备的目的地操作安排。',
     business:
-      'Best for Ghana mining, construction, healthcare and factory maintenance cargo that needs clear documentation and predictable delivery.',
+      '适合评估加纳矿业、建筑、医疗和工厂维修货物；此类货物需要清晰单证和可预期的交付安排。',
     culture:
-      'English is common. Ghana has a stable business environment, but clearance cost items should be explained before the customer approves the shipment.',
+      '当地商务中常用英语。加纳商业环境较稳定，但客户确认出运前应说明清关费用项目。',
   },
   abj: {
     code: 'ABJ',
-    city: 'Abidjan',
-    country: 'Cote dIvoire',
-    title: 'ABJ Abidjan Air Freight from China to West Africa',
+    city: '阿比让',
+    country: '科特迪瓦',
+    title: '中国到ABJ阿比让西非空运',
     description:
-      'China to Abidjan ABJ air freight for West Africa industrial cargo, oversized equipment, construction parts and French-speaking Africa project shipments.',
-    cargo: ['Construction machinery parts', 'Industrial equipment', 'Energy project cargo', 'Oversized spare parts'],
+      '中国到ABJ阿比让空运，面向西非工业货、超大设备、工程零件及法语区非洲项目货。',
+    cargo: ['工程机械零件', '工业设备', '能源项目货', '超大件备件'],
     market:
-      'Abidjan is a key West Africa gateway and can serve Cote dIvoire and nearby francophone markets for project cargo.',
+      '阿比让是西非重要门户，可服务科特迪瓦及周边法语区项目货。',
     customs:
-      'Prepare French-compatible descriptions, HS Code, invoice, packing list, importer documents and special handling notes for heavy cargo.',
+      '准备适用于法语单证的货物描述、HS Code、发票、装箱单、进口商资料及重货特殊操作说明。',
     business:
-      'Best for francophone West Africa projects, construction equipment, mining support and urgent factory spare parts.',
+      '适合评估西非法语区项目、工程设备、矿业支持货和工厂紧急备件。',
     culture:
-      'French is important. Chinese suppliers are active, but the local consignee and customs broker must align before cargo departure.',
+      '法语很重要。中国供应商较活跃，但货物离境前需与当地收货人和清关代理对齐资料。',
   },
   bko: {
     code: 'BKO',
-    city: 'Bamako',
-    country: 'Mali',
-    title: 'BKO Bamako Air Freight from China for Mali Projects',
+    city: '巴马科',
+    country: '马里',
+    title: '中国到BKO巴马科马里项目货空运',
     description:
-      'China to Bamako BKO air freight for Mali mining, construction and industrial project cargo with Europe transit and Africa hub routing options.',
-    cargo: ['Mining equipment parts', 'Construction parts', 'Power project cargo', 'Urgent industrial spares'],
+      '中国到BKO巴马科空运，适用于马里矿业、建筑和工业项目货，可评估欧洲中转及非洲枢纽路线。',
+    cargo: ['矿业设备零件', '建筑零件', '电力项目货', '工业紧急备件'],
     market:
-      'Bamako serves Mali’s mining and construction import demand. Route feasibility and ground handling should be checked early for large pieces.',
+      '巴马科服务于马里的矿业和建筑进口需求。大件货物应尽早核实路线可行性和地面操作条件。',
     customs:
-      'Confirm French documents, importer readiness, HS Code, invoice, packing list, permits and destination handling before booking.',
+      '订舱前确认法文单证、进口商准备情况、HS Code、发票、装箱单、许可证及目的地操作安排。',
     business:
-      'Best for mining and construction projects where delay cost is high and airfreight can rescue a project schedule.',
+      '适合评估延误成本较高、且空运可能帮助项目排期的矿业和建筑项目货。',
     culture:
-      'French communication is useful. Because routings can be limited, cargo dimensions and latest arrival date should be shared before price negotiation.',
+      '法语沟通有帮助。由于路线选择可能有限，价格沟通前应提供货物尺寸和最晚到货日期。',
   },
   cky: {
     code: 'CKY',
-    city: 'Conakry',
-    country: 'Guinea',
-    title: 'CKY Conakry Air Freight from China for Mining Cargo',
+    city: '科纳克里',
+    country: '几内亚',
+    title: '中国到CKY科纳克里矿业货空运',
     description:
-      'China to Conakry CKY air freight for Guinea mining cargo, industrial spares, project equipment and oversized shipments via Europe transit.',
-    cargo: ['Mining spare parts', 'Bauxite project equipment', 'Generators', 'Industrial maintenance cargo'],
+      '中国到CKY科纳克里空运，面向几内亚矿业货、工业备件、项目设备和超大件，可评估欧洲中转。',
+    cargo: ['矿业备件', '铝土矿项目设备', '发电机', '工业维修货'],
     market:
-      'Conakry is tied to Guinea mining and infrastructure projects. Cargo plans must consider airport handling and onward delivery conditions.',
+      '科纳克里与几内亚矿业和基础设施项目联系紧密。货运方案需考虑机场操作和后续交付条件。',
     customs:
-      'Confirm consignee documents, French descriptions, HS Code, invoice, packing list and whether special permits are needed.',
+      '确认收货人资料、法文货物描述、HS Code、发票、装箱单及是否需要特殊许可证。',
     business:
-      'Best for mining project support, urgent equipment replacement and industrial cargo where normal shipping is too slow.',
+      '适合评估矿业项目支持、紧急设备替换，以及普通运输速度不足以满足需求的工业货。',
     culture:
-      'French is common in documentation. Many shipments involve Chinese-backed mining supply chains, so bilingual coordination can reduce mistakes.',
+      '单证中常用法语。许多货物涉及中资矿业供应链，双语协调有助于减少差错。',
   },
   oua: {
     code: 'OUA',
-    city: 'Ouagadougou',
-    country: 'Burkina Faso',
-    title: 'OUA Ouagadougou Air Freight from China for Burkina Faso Projects',
+    city: '瓦加杜古',
+    country: '布基纳法索',
+    title: '中国到OUA瓦加杜古布基纳法索项目货空运',
     description:
-      'China to Ouagadougou OUA air freight for Burkina Faso mining, infrastructure, energy and urgent project cargo via ADD, Europe or West Africa hub routing.',
-    cargo: ['Mining spare parts', 'Infrastructure project cargo', 'Power equipment', 'Urgent industrial spares'],
+      '中国到OUA空运，适用于布基纳法索矿业、基础设施、能源和紧急项目货，可评估经ADD、欧洲或西非枢纽中转。',
+    cargo: ['矿业备件', '基础设施项目货', '电力设备', '工业紧急备件'],
     market:
-      'Ouagadougou is an inland West Africa destination. Route planning must account for limited uplift, destination handling and importer readiness before shipment.',
+      '瓦加杜古是西非内陆目的地。出运前规划路线需考虑可用运力、目的地操作和进口商准备情况。',
     customs:
-      'Prepare French cargo descriptions, HS Code, invoice, packing list, importer documents, permits and destination agent confirmation before booking.',
+      '订舱前准备法文货物描述、HS Code、发票、装箱单、进口商资料和许可证，并确认目的地代理安排。',
     business:
-      'Best for Burkina Faso mining, energy, infrastructure and emergency spare parts where air freight protects the project schedule.',
+      '适合评估布基纳法索矿业、能源、基础设施及紧急备件；空运可能有助于项目排期。',
     culture:
-      'French is the practical documentation language. Because routing choices can be limited, cargo dimensions and final delivery deadline should be confirmed early.',
+      '实际单证沟通常用法语。由于路线选择可能有限，应尽早确认货物尺寸和最终交付期限。',
   },
   hre: {
     code: 'HRE',
-    city: 'Harare',
-    country: 'Zimbabwe',
-    title: 'HRE Harare Air Freight from China for Zimbabwe Cargo',
+    city: '哈拉雷',
+    country: '津巴布韦',
+    title: '中国到HRE哈拉雷津巴布韦空运',
     description:
-      'China to Harare HRE air freight for Zimbabwe mining, agriculture, factory equipment, medical and industrial cargo via Africa hub or Europe transit.',
-    cargo: ['Agricultural machinery parts', 'Mining spare parts', 'Factory equipment', 'Medical and telecom equipment'],
+      '中国到HRE空运，适用于津巴布韦矿业、农业、工厂设备、医疗和工业货，可评估非洲枢纽或欧洲中转。',
+    cargo: ['农业机械零件', '矿业备件', '工厂设备', '医疗及通信设备'],
     market:
-      'Harare serves Zimbabwe industrial, mining and agricultural import demand. Landed cost and consignee readiness matter as much as the air sector.',
+      '哈拉雷服务于津巴布韦工业、矿业和农业进口需求。到岸成本和收货人准备情况与空运段同样重要。',
     customs:
-      'Confirm importer documentation, HS Code, invoice, packing list, permits, cargo value and destination pickup or delivery responsibility before departure.',
+      '出运前确认进口商资料、HS Code、发票、装箱单、许可证、货值及目的地提货或交付责任。',
     business:
-      'Best for Zimbabwe mining, agriculture, factory maintenance and urgent equipment replacement cargo.',
+      '适合评估津巴布韦矿业、农业、工厂维修及紧急设备替换货。',
     culture:
-      'English is commonly used in trade. Customers often care about total landed cost, so destination charges and clearance requirements should be explained before booking.',
+      '贸易中常用英语。客户通常关注总到岸成本，因此订舱前应说明目的地费用和清关要求。',
   },
   nim: {
     code: 'NIM',
-    city: 'Niamey',
-    country: 'Niger',
-    title: 'NIM Niamey Air Freight from China for Niger Projects',
+    city: '尼亚美',
+    country: '尼日尔',
+    title: '中国到NIM尼亚美尼日尔项目货空运',
     description:
-      'China to Niamey NIM air freight for Niger energy, construction, humanitarian, mining and urgent industrial cargo via ADD, Europe or West Africa routing.',
-    cargo: ['Energy project cargo', 'Construction equipment parts', 'Humanitarian supplies', 'Urgent industrial spares'],
+      '中国到NIM空运，适用于尼日尔能源、建筑、人道援助、矿业和工业紧急货，可评估经ADD、欧洲或西非中转。',
+    cargo: ['能源项目货', '工程设备零件', '人道援助物资', '工业紧急备件'],
     market:
-      'Niamey is an inland Sahel destination where route options, documents and local agent response must be checked before committing to a delivery promise.',
+      '尼亚美是萨赫勒内陆目的地。承诺交付前需核实路线选择、单证和当地代理响应情况。',
     customs:
-      'Confirm French descriptions, HS Code, invoice, packing list, consignee documents, permits and final delivery handover before shipment.',
+      '出运前确认法文货物描述、HS Code、发票、装箱单、收货人资料、许可证及最终交接安排。',
     business:
-      'Best for energy, infrastructure, mining support and emergency cargo where airfreight speed is needed but routing options are limited.',
+      '适合评估能源、基础设施、矿业支持和紧急货物；此类货可能需要空运速度，但路线选择有限。',
     culture:
-      'French communication is useful. For inland Sahel cargo, the professional task is to verify route feasibility and consignee readiness before rate negotiation.',
+      '法语沟通有帮助。对于萨赫勒内陆货物，应在商谈运价前核实路线可行性和收货人准备情况。',
   },
   kgl: {
     code: 'KGL',
-    city: 'Kigali',
-    country: 'Rwanda',
-    title: 'KGL Kigali Air Freight from China to Rwanda',
+    city: '基加利',
+    country: '卢旺达',
+    title: '中国到KGL基加利卢旺达空运',
     description:
-      'China to Kigali KGL air freight for Rwanda project cargo, industrial equipment, medical equipment and East Africa inland distribution.',
-    cargo: ['Medical equipment', 'Industrial spare parts', 'Telecom equipment', 'Project cargo'],
+      '中国到KGL基加利空运，适用于卢旺达项目货、工业设备、医疗设备及东非内陆分拨。',
+    cargo: ['医疗设备', '工业备件', '通信设备', '项目货'],
     market:
-      'Kigali is a clean and organized East Africa destination with growing demand for infrastructure, healthcare and technology cargo.',
+      '基加利是东非较有序的目的地，基础设施、医疗和科技货物需求持续发展。',
     customs:
-      'Check importer registration, HS Code, invoice, packing list, permits for medical or regulated goods and local delivery appointment.',
+      '核实进口商注册资料、HS Code、发票、装箱单、医疗或受管制货物许可证，以及当地配送预约。',
     business:
-      'Best for healthcare, telecom, factory and government-linked project cargo that needs controlled documents and clear arrival timing.',
+      '适合评估医疗、通信、工厂及政府相关项目货，尤其需要规范单证和明确到货时间的货物。',
     culture:
-      'English and French can both be useful. The market values process clarity, so route plan and document checklist should be given early.',
+      '英语和法语都可能派上用场。当地市场重视流程清晰，因此应尽早提供路线方案和单证清单。',
   },
   dar: {
     code: 'DAR',
-    city: 'Dar es Salaam',
-    country: 'Tanzania',
-    title: 'DAR Dar es Salaam Air Freight from China for Tanzania Cargo',
+    city: '达累斯萨拉姆',
+    country: '坦桑尼亚',
+    title: '中国到DAR达累斯萨拉姆坦桑尼亚空运',
     description:
-      'China to Dar es Salaam DAR air freight for Tanzania industrial cargo, mining parts, construction equipment and East Africa project shipments.',
-    cargo: ['Mining spare parts', 'Construction equipment parts', 'Energy equipment', 'Factory maintenance cargo'],
+      '中国到DAR空运，适用于坦桑尼亚工业货、矿业零件、工程设备和东非项目货。',
+    cargo: ['矿业备件', '工程设备零件', '能源设备', '工厂维修货'],
     market:
-      'Dar es Salaam supports Tanzania and regional East Africa logistics. It can be used for urgent cargo when ocean freight is too slow.',
+      '达累斯萨拉姆服务于坦桑尼亚及东非区域物流。海运速度无法满足需求时，可评估用于紧急货物。',
     customs:
-      'Confirm importer tax details, HS Code, invoice, packing list, regulated goods permits and final delivery responsibilities.',
+      '确认进口商税务资料、HS Code、发票、装箱单、受管制货物许可证及最终交付责任。',
     business:
-      'Best for Tanzania mining, construction, energy and industrial cargo requiring predictable arrival and local delivery coordination.',
+      '适合评估坦桑尼亚矿业、建筑、能源及工业货物，尤其需要可预期到货和当地交付协调的货物。',
     culture:
-      'English is used in business. Chinese contractors are active in infrastructure, but inland transport planning should be separated from airport-to-airport pricing.',
+      '商务中使用英语。中国承包商参与当地基础设施项目较多，但内陆运输规划应与机场到机场运价区分。',
   },
   cpt: {
     code: 'CPT',
-    city: 'Cape Town',
-    country: 'South Africa',
-    title: 'CPT Cape Town Air Freight from China for Project Cargo',
+    city: '开普敦',
+    country: '南非',
+    title: '中国到CPT开普敦项目货空运',
     description:
-      'China to Cape Town CPT air freight for South Africa industrial cargo, marine equipment, engineering spares and urgent project shipments.',
-    cargo: ['Marine equipment', 'Engineering spares', 'Factory equipment', 'High-value urgent cargo'],
+      '中国到CPT开普敦空运，适用于南非工业货、海事设备、工程备件及紧急项目货。',
+    cargo: ['海事设备', '工程备件', '工厂设备', '高价值紧急货'],
     market:
-      'Cape Town is useful for Western Cape projects, marine cargo and regional commercial shipments where Johannesburg is not the best final point.',
+      '当约翰内斯堡不是最佳最终交付点时，开普敦可评估用于西开普项目、海事货物及区域商业货运。',
     customs:
-      'Check importer VAT details, HS Code, commercial invoice, packing list and whether local delivery requires special equipment.',
+      '核实进口商VAT资料、HS Code、商业发票、装箱单，以及当地交付是否需要特殊设备。',
     business:
-      'Best for marine, engineering, food-processing and high-value equipment cargo serving Cape Town or nearby project sites.',
+      '适合评估服务开普敦或附近项目现场的海事、工程、食品加工及高价值设备货物。',
     culture:
-      'English business communication is common. Final-mile planning matters when the cargo is heavy, fragile or needs direct site delivery.',
+      '当地商务沟通常使用英语。货物较重、易碎或需直接送至现场时，应重视末端交付规划。',
   },
   dur: {
     code: 'DUR',
-    city: 'Durban',
-    country: 'South Africa',
-    title: 'DUR Durban Air Freight from China for South Africa Cargo',
+    city: '德班',
+    country: '南非',
+    title: '中国到DUR德班南非货物空运',
     description:
-      'China to Durban DUR air freight for South Africa industrial cargo, port-related equipment, factory spares and urgent project shipments.',
-    cargo: ['Port equipment parts', 'Factory spare parts', 'Industrial machinery', 'Urgent maintenance cargo'],
+      '中国到DUR德班空运，适用于南非工业货、港口相关设备、工厂备件及紧急项目货。',
+    cargo: ['港口设备零件', '工厂备件', '工业机械', '紧急维修货'],
     market:
-      'Durban is important for port, industrial and coastal South Africa cargo. It may be better than JNB when final delivery is around KwaZulu-Natal.',
+      '德班是南非港口、工业和沿海货运的重要节点。最终交付地位于夸祖鲁-纳塔尔省附近时，DUR可能比JNB更合适。',
     customs:
-      'Confirm importer details, HS Code, invoice, packing list and whether airport pickup or truck delivery is required.',
+      '确认进口商资料、HS Code、发票、装箱单，以及需要机场提货还是卡车配送。',
     business:
-      'Best for port-related industry, factories, marine service companies and urgent equipment cargo around Durban.',
+      '适合评估德班周边的港口相关行业、工厂、海事服务公司及紧急设备货。',
     culture:
-      'English is common. Customers should compare total landed time and inland cost instead of only airport-to-airport freight.',
+      '当地常用英语。客户应比较总到货时间和内陆成本，而不只看机场到机场运费。',
   },
   wdh: {
     code: 'WDH',
-    city: 'Windhoek',
-    country: 'Namibia',
-    title: 'WDH Windhoek Air Freight from China for Namibia Projects',
+    city: '温得和克',
+    country: '纳米比亚',
+    title: '中国到WDH温得和克纳米比亚项目货空运',
     description:
-      'China to Windhoek WDH air freight for Namibia mining, energy, construction and industrial spare parts via Europe or Southern Africa routing.',
-    cargo: ['Mining spare parts', 'Energy equipment', 'Construction parts', 'Industrial maintenance cargo'],
+      '中国到WDH空运，适用于纳米比亚矿业、能源、建筑和工业备件，可评估欧洲或南部非洲路线。',
+    cargo: ['矿业备件', '能源设备', '建筑零件', '工业维修货'],
     market:
-      'Windhoek serves Namibia’s mining, energy and infrastructure demand. Large cargo needs routing and handling checks before booking.',
+      '温得和克服务于纳米比亚矿业、能源和基础设施需求。大件货物订舱前需核实路线和操作条件。',
     customs:
-      'Confirm importer documents, HS Code, invoice, packing list, permits and delivery terms for remote project sites.',
+      '确认进口商资料、HS Code、发票、装箱单、许可证，以及偏远项目现场的交付条款。',
     business:
-      'Best for Namibia mining, renewable energy, construction and urgent repair cargo where ocean freight is too slow.',
+      '适合评估纳米比亚矿业、可再生能源、建筑及紧急维修货物，尤其海运无法满足时限的场景。',
     culture:
-      'English is used in business. Project sites can be remote, so airport arrival is only one part of the delivery plan.',
+      '商务中使用英语。项目现场可能较偏远，因此货物抵达机场只是交付方案的一部分。',
   },
   mpm: {
     code: 'MPM',
-    city: 'Maputo',
-    country: 'Mozambique',
-    title: 'MPM Maputo Air Freight from China for Mozambique Projects',
+    city: '马普托',
+    country: '莫桑比克',
+    title: '中国到MPM马普托莫桑比克项目货空运',
     description:
-      'China to Maputo MPM air freight for Mozambique energy, mining, construction and industrial project cargo with Europe transit planning.',
-    cargo: ['Energy project parts', 'Mining equipment spares', 'Construction machinery parts', 'Industrial cargo'],
+      '中国到MPM空运，适用于莫桑比克能源、矿业、建筑和工业项目货，可评估欧洲中转。',
+    cargo: ['能源项目零件', '矿业设备备件', '工程机械零件', '工业货物'],
     market:
-      'Maputo is a key Mozambique gateway for industrial and project cargo. Large shipments need destination agent and inland delivery confirmation.',
+      '马普托是莫桑比克工业和项目货的重要门户。大批量货物需确认目的地代理和内陆交付安排。',
     customs:
-      'Confirm importer documents, Portuguese or English descriptions, HS Code, invoice, packing list and regulated goods requirements.',
+      '确认进口商资料、葡萄牙语或英语货物描述、HS Code、发票、装箱单及受管制货物要求。',
     business:
-      'Best for Mozambique energy, construction, mining and factory project cargo where delivery deadline is tight.',
+      '适合评估莫桑比克能源、建筑、矿业和工厂项目货，尤其交付期限紧迫的货物。',
     culture:
-      'Portuguese is helpful for local documents. Chinese project cargo is common, but consignee and broker coordination must be done before departure.',
+      '当地单证使用葡萄牙语会有帮助。中国项目货较常见，但出运前仍需协调收货人和清关代理。',
   },
   fih: {
     code: 'FIH',
-    city: 'Kinshasa',
-    country: 'Democratic Republic of the Congo',
-    title: 'FIH Kinshasa Air Freight from China for DRC Projects',
+    city: '金沙萨',
+    country: '刚果（金）',
+    title: '中国到FIH金沙萨刚果（金）项目货空运',
     description:
-      'China to Kinshasa FIH air freight for DRC project cargo, telecom equipment, government and industrial shipments via Europe or Africa hub routing.',
-    cargo: ['Telecom equipment', 'Industrial equipment', 'Government project cargo', 'Urgent spare parts'],
+      '中国到FIH金沙萨空运，适用于刚果（金）项目货、通信设备、政府和工业货物，可评估欧洲或非洲枢纽中转。',
+    cargo: ['通信设备', '工业设备', '政府项目货', '紧急备件'],
     market:
-      'Kinshasa is the main DRC capital gateway. It is different from FBM and often serves administrative, telecom and western DRC demand.',
+      '金沙萨是刚果（金）首都的主要门户，与FBM不同，常服务行政、通信及刚果（金）西部需求。',
     customs:
-      'Confirm consignee documents, French descriptions, HS Code, invoice, packing list and whether cargo needs special permits or project approvals.',
+      '确认收货人资料、法文货物描述、HS Code、发票、装箱单，以及货物是否需要特殊许可证或项目审批。',
     business:
-      'Best for telecom, infrastructure, industrial and capital-region cargo that requires bilingual coordination and controlled documents.',
+      '适合评估通信、基础设施、工业及首都地区货物，尤其需要双语协调和规范单证的项目。',
     culture:
-      'French is important. DRC cargo should never be sold only by rate; consignee readiness and local handling capability decide the real result.',
+      '法语很重要。刚果（金）货物不应只按运价销售；收货人准备情况和当地操作能力会影响实际交付。',
   },
   add: {
     code: 'ADD',
-    city: 'Addis Ababa',
-    country: 'Ethiopia',
-    title: 'ADD Addis Ababa Air Freight from China for Ethiopia Cargo',
+    city: '亚的斯亚贝巴',
+    country: '埃塞俄比亚',
+    title: '中国到ADD亚的斯亚贝巴埃塞俄比亚空运',
     description:
-      'China to Addis Ababa ADD air freight for Ethiopia industrial cargo, machinery parts, medical equipment and East Africa project shipments.',
-    cargo: ['Industrial equipment', 'Medical equipment', 'Factory spare parts', 'Project cargo'],
+      '中国到ADD空运，适用于埃塞俄比亚工业货、机械零件、医疗设备及东非项目货。',
+    cargo: ['工业设备', '医疗设备', '工厂备件', '项目货'],
     market:
-      'Addis Ababa is a major East Africa aviation hub and can be suitable for Ethiopia cargo or regional air cargo planning.',
+      '亚的斯亚贝巴是东非重要航空枢纽，可用于评估埃塞俄比亚货物或区域空运方案。',
     customs:
-      'Confirm importer license, HS Code, invoice, packing list, permits for regulated goods and final delivery terms.',
+      '确认进口商许可证、HS Code、发票、装箱单、受管制货物所需许可证及最终交付条款。',
     business:
-      'Best for industrial, healthcare, manufacturing and infrastructure cargo requiring airfreight speed and clear document planning.',
+      '适合评估工业、医疗、制造和基础设施货物，尤其需要空运速度和清晰单证规划的货物。',
     culture:
-      'English is often used in international trade. Import control can be document-sensitive, so check permit and consignee readiness first.',
+      '国际贸易中常使用英语。进口管制对单证较敏感，因此应先核实许可证和收货人准备情况。',
   },
   dss: {
     code: 'DSS',
-    city: 'Dakar',
-    country: 'Senegal',
-    title: 'DSS Dakar Air Freight from China to Senegal',
+    city: '达喀尔',
+    country: '塞内加尔',
+    title: '中国到DSS达喀尔塞内加尔空运',
     description:
-      'China to Dakar DSS air freight for Senegal industrial cargo, construction equipment parts, medical equipment and West Africa project shipments.',
-    cargo: ['Construction parts', 'Medical equipment', 'Industrial spares', 'Project machinery'],
+      '中国到DSS达喀尔空运，适用于塞内加尔工业货、工程设备零件、医疗设备及西非项目货。',
+    cargo: ['建筑零件', '医疗设备', '工业备件', '项目机械'],
     market:
-      'Dakar is a key francophone West Africa gateway. It can support Senegal and regional projects when documents and routing are arranged early.',
+      '达喀尔是西非法语区的重要门户。提前安排单证和路线后，可评估用于塞内加尔及区域项目。',
     customs:
-      'Prepare French descriptions, importer documents, HS Code, invoice, packing list and any regulated-goods permits.',
+      '准备法文货物描述、进口商资料、HS Code、发票、装箱单及受管制货物所需许可证。',
     business:
-      'Best for Senegal infrastructure, healthcare, factory and trade cargo requiring reliable airfreight and French-language coordination.',
+      '适合评估塞内加尔基础设施、医疗、工厂及贸易货物，尤其需要可靠空运和法语协调的项目。',
     culture:
-      'French is the main business language. Local agent quality and document clarity are important for avoiding clearance delays.',
+      '法语是主要商务语言。当地代理质量和单证清晰度有助于避免清关延误。',
   },
   cmn: {
     code: 'CMN',
-    city: 'Casablanca',
-    country: 'Morocco',
-    title: 'CMN Casablanca Air Freight from China for Morocco Cargo',
+    city: '卡萨布兰卡',
+    country: '摩洛哥',
+    title: '中国到CMN卡萨布兰卡摩洛哥空运',
     description:
-      'China to Casablanca CMN air freight for Morocco industrial cargo, automotive parts, machinery and North Africa project shipments.',
-    cargo: ['Automotive parts', 'Factory equipment', 'Industrial spares', 'High-value cargo'],
+      '中国到CMN卡萨布兰卡空运，适用于摩洛哥工业货、汽车零部件、机械和北非项目货。',
+    cargo: ['汽车零部件', '工厂设备', '工业备件', '高价值货物'],
     market:
-      'Casablanca is a strong North Africa commercial gateway with manufacturing, automotive and industrial import demand.',
+      '卡萨布兰卡是北非重要商业门户，拥有制造业、汽车和工业进口需求。',
     customs:
-      'Confirm importer documents, HS Code, invoice, packing list, regulated goods permits and whether French or Arabic documentation support is needed.',
+      '确认进口商资料、HS Code、发票、装箱单、受管制货物许可证，以及是否需要法语或阿拉伯语单证支持。',
     business:
-      'Best for Morocco automotive, manufacturing, industrial and time-sensitive trade cargo.',
+      '适合评估摩洛哥汽车、制造、工业及有时限要求的贸易货物。',
     culture:
-      'French is widely useful in business. Morocco has a more developed logistics environment, but special cargo still needs handling checks.',
+      '商务中法语较常用。摩洛哥物流环境相对成熟，但特殊货物仍需核实操作条件。',
   },
   cai: {
     code: 'CAI',
-    city: 'Cairo',
-    country: 'Egypt',
-    title: 'CAI Cairo Air Freight from China for Egypt Project Cargo',
+    city: '开罗',
+    country: '埃及',
+    title: '中国到CAI开罗埃及项目货空运',
     description:
-      'China to Cairo CAI air freight for Egypt industrial cargo, energy projects, machinery parts and urgent equipment shipments.',
-    cargo: ['Energy equipment', 'Industrial machinery', 'Factory spare parts', 'Project cargo'],
+      '中国到CAI开罗空运，适用于埃及工业货、能源项目、机械零件及紧急设备货运。',
+    cargo: ['能源设备', '工业机械', '工厂备件', '项目货'],
     market:
-      'Cairo is a major North Africa and Middle East-linked cargo gateway. It is suitable for urgent industrial and project shipments.',
+      '开罗是连接北非和中东的重要货运门户，可评估用于紧急工业货和项目货。',
     customs:
-      'Check importer documents, HS Code, invoice, packing list, permits, cargo description and any regulated import approvals before departure.',
+      '出运前核实进口商资料、HS Code、发票、装箱单、许可证、货物描述及所需的受管制进口审批。',
     business:
-      'Best for Egypt energy, manufacturing, infrastructure and urgent industrial maintenance cargo.',
+      '适合评估埃及能源、制造、基础设施及工业紧急维修货。',
     culture:
-      'Arabic is local, English is common in international trade. Documents must be consistent because customs review can be strict.',
+      '当地语言为阿拉伯语，国际贸易中常用英语。海关审核可能较严格，因此单证必须保持一致。',
   },
 }
 
@@ -467,108 +467,108 @@ const chineseDestinations: Record<Slug, { city: string; country: string; keyword
 }
 
 const quoteFields = [
-  'Commodity and clear cargo description',
-  'HS Code and declared customs value',
-  'Length x width x height for every package',
-  'Gross weight and chargeable weight check',
-  'Packing photos, crate material and forklift access',
-  'Lifting points, center of gravity and loading direction',
-  'Origin city in China and cargo ready date',
-  'Final city, site address or airport pickup plan',
-  'Latest required arrival date and urgency reason',
+  '货物品名及清晰描述',
+  'HS Code及申报货值',
+  '每件包装的长、宽、高',
+  '毛重及计费重量核对',
+  '包装照片、箱体材料及叉车作业条件',
+  '吊点、重心及装载方向',
+  '中国起运城市及备货日期',
+  '最终城市、现场地址或机场提货方案',
+  '最晚到货日期及紧急原因',
 ]
 
 const routeSteps = [
   {
-    title: '1. China origin feasibility',
-    body: 'Before quoting, we check whether the cargo can leave China by passenger widebody belly, scheduled freighter, B747F main deck, truck-to-Europe combination or another practical export route.',
+    title: '1. 中国起运可行性',
+    body: '报价前核实货物能否通过客机宽体腹舱、定期全货机、B747F主甲板、卡车接驳欧洲或其他可行出口路线离开中国。',
   },
   {
-    title: '2. LGG/BRU Europe transit option',
-    body: 'When China direct flights cannot accept the size or weight, LGG/BRU can be used as a Europe cargo hub for rebuild, handover, charter connection or Africa second-leg planning.',
+    title: '2. LGG/BRU欧洲中转选项',
+    body: '中国直飞无法接收货物尺寸或重量时，可评估以LGG/BRU作为欧洲货运枢纽，安排重新组板、交接、包机衔接或非洲二程。',
   },
   {
-    title: '3. Africa arrival and inland delivery',
-    body: 'Airport arrival is not the end. The real plan must include customs broker readiness, ground handling, unloading tools, truck access and final delivery boundary.',
+    title: '3. 非洲到港与内陆交付',
+    body: '到达机场并不代表交付完成。实际方案还需明确清关代理准备情况、地面操作、卸货工具、卡车进场条件和最终交付范围。',
   },
 ]
 
 const urgentSparePartChecks = [
-  'Downtime deadline and latest acceptable site arrival',
-  'Longest piece, heaviest piece and main-deck loading need',
-  'Importer documents, regulated-goods permits and customs broker readiness',
-  'Airport pickup, inland truck, unloading tools and final-site handover',
+  '停工期限及现场最晚可接受到货时间',
+  '最长件、最重件及主甲板装载需求',
+  '进口商资料、受管制货物许可证及清关代理准备情况',
+  '机场提货、内陆卡车、卸货工具及最终现场交接',
 ]
 
 const fbmHandoverChecks = [
-  'Does the quote stop at FBM airport, or does it continue to a Copperbelt mine, plant, warehouse or contractor yard?',
-  'Are importer NIF, clearing broker, HS Code, French cargo description, invoice, packing list and AWB/LTA data ready before uplift?',
-  'Can the heaviest piece be unloaded at Lubumbashi and moved to the site with the required forklift, crane, truck access and appointment?',
-  'Is the deadline tied to plant downtime, scheduled maintenance, contractor mobilization or a normal replenishment shipment?',
+  '报价止于FBM机场，还是继续送至铜带矿区、工厂、仓库或承包商场地？',
+  '起飞前是否备齐进口商NIF、清关代理、HS Code、法文品名、发票、装箱单及AWB/LTA资料？',
+  '最重件能否在卢本巴希卸货，并使用所需叉车、吊车、卡车通道和预约安排送至现场？',
+  '交付期限是否与工厂停工、计划维修、承包商进场或普通补货有关？',
 ]
 
 const fbmQuoteFields = [
-  'Final mine, plant, warehouse or city beyond FBM',
-  'Importer, consignee and appointed clearing broker',
-  'HS Code plus French or bilingual cargo description',
-  'Single-piece dimensions, gross weight, lifting points and packing photos',
-  'Unloading tools, site access, truck restrictions and delivery appointment',
-  'Latest acceptable site arrival date and downtime reason',
+  'FBM以外的最终矿区、工厂、仓库或城市',
+  '进口商、收货人及指定清关代理',
+  'HS Code及法文或双语货物描述',
+  '单件尺寸、毛重、吊点及包装照片',
+  '卸货工具、现场通道、卡车限制及交付预约',
+  '现场最晚可接受到货日期及停工原因',
 ]
 
 const lunQuoteFields = [
-  'Final Zambia city, mine, plant or project-site address',
-  'LUN, NLA or "help me choose the airport"',
-  'Importer, consignee and appointed clearing broker',
-  'Pieces, per-piece dimensions, gross weight and packing photos',
-  'Cargo-ready date and latest acceptable site arrival',
-  'Airport pickup, customs support or site-delivery boundary',
-  'Truck access, unloading equipment and delivery appointment',
-  'HS Code, invoice, packing list, AWB data and permit checks',
+  '赞比亚最终城市、矿区、工厂或项目现场地址',
+  'LUN、NLA，或请协助选择机场',
+  '进口商、收货人及指定清关代理',
+  '件数、每件尺寸、毛重及包装照片',
+  '备货日期及现场最晚可接受到货时间',
+  '机场提货、清关支持或现场交付范围',
+  '卡车进场、卸货设备及交付预约',
+  'HS Code、发票、装箱单、AWB资料及许可证核查',
 ]
 
 const jnbCapacityChecks = [
-  'Can the cargo move through HAK/JNB, or does it still need LGG/BRU main-deck planning?',
-  'Is JNB the true handover point, or only the first airport before a mine, plant or cross-border truck leg?',
-  'Do SARS, NRCS, ITAC or importer-side documents match the cargo description before booking?',
+  '货物能否经HAK/JNB运输，还是仍需评估LGG/BRU主甲板方案？',
+  'JNB是否为实际交接点，还是仅为空运首站，后续还需送往矿区、工厂或跨境卡车段？',
+  '订舱前，SARS、NRCS、ITAC或进口商资料是否与货物描述一致？',
 ]
 
 const jnbFocDecisionRows = [
   {
-    label: 'FOC local uplift',
-    detail: 'Check the current aircraft, cargo terminal acceptance and transfer plan from Fuzhou against the actual longest and heaviest piece.',
+    label: 'FOC本地起运',
+    detail: '根据实际最长件和最重件，核实福州当前机型、货站收货条件及中转方案。',
   },
   {
-    label: 'XMN alternative',
-    detail: 'Compare Xiamen when its current uplift, transfer handling or cargo cut-off is more workable for a Fujian factory shipment.',
+    label: 'XMN备选口岸',
+    detail: '若厦门当前的起运、中转操作或截货时间更适合福建工厂货，可将XMN纳入比较。',
   },
   {
-    label: 'Nationwide gateway feeder',
-    detail: 'Compare domestic trucking to PVG, CAN, SZX, HKG or another confirmed gateway on total cost, loading feasibility and required arrival date.',
+    label: '全国枢纽集运',
+    detail: '比较国内卡车送往PVG、CAN、SZX、HKG或其他已确认枢纽的总成本、装载可行性和所需到货日期。',
   },
   {
-    label: 'Oversized route',
-    detail: 'If normal connections reject the piece, screen current main-deck options, HAK/JNB capacity or LGG/BRU transit before promising a route.',
+    label: '超大件路线',
+    detail: '普通航线拒收该件时，应先核实当前主甲板选项、HAK/JNB运力或LGG/BRU中转，再判断路线是否可行。',
   },
 ]
 
 const southAfricaCoastalChecks = [
-  'Is CPT or DUR closer to the final site than a JNB handover plus inland trucking?',
-  'Do the commercial invoice, HS Code, origin, importer and regulated-goods documents match before uplift?',
-  'Does the cargo need marine, port, factory or cold-chain handling instead of a normal airport pickup?',
+  '与经JNB交接后再内陆卡车运输相比，CPT或DUR是否更接近最终现场？',
+  '起飞前，商业发票、HS Code、原产地、进口商资料及受管制货物文件是否一致？',
+  '货物是否需要海事、港口、工厂或冷链操作，而非普通机场提货？',
 ]
 
 const nigeriaOilGasChecks = [
-  'Is LOS the right clearance airport, or is PHC needed for Port Harcourt, Onne, Bonny, Warri or oil-service delivery?',
-  'Do Form M, PAAR, SONCAP or National Single Window responsibilities match the AWB, invoice and product certificate data?',
-  'Is the quote boundary airport-only, customs-assisted, airport pickup, or final-site delivery for a shutdown spare?',
+  '清关机场应选LOS，还是因哈科特港、Onne、Bonny、Warri或油服交付而需要评估PHC？',
+  'Form M、PAAR、SONCAP或国家单一窗口的责任方，是否与AWB、发票和产品证书资料相匹配？',
+  '报价范围是机场到机场、协助清关、机场提货，还是停机检修备件的现场交付？',
 ]
 
 const nboGatewayChecks = [
-  'Can CAN-NBO be checked as a B767-300F capacity signal, or does the shipment still need ADD, LGG/BRU, JNB or another fallback route?',
-  'Is NBO the final airport, a Kenya clearance point, or the first hub before Uganda, Tanzania, South Sudan, Rwanda or an inland project site?',
-  'Do PVoC/CoC, IDF, importer KRA PIN, HS Code, invoice value and regulated-goods permits match before uplift?',
-  'Does the cargo need JKIA airport pickup, bonded movement, cross-border trucking, cold-chain handling or final-site unloading support?',
+  '可否将CAN-NBO作为B767-300F运力线索核实，还是仍需评估ADD、LGG/BRU、JNB或其他备选路线？',
+  'NBO是最终机场、肯尼亚清关点，还是前往乌干达、坦桑尼亚、南苏丹、卢旺达或内陆项目现场前的首个枢纽？',
+  '起飞前，PVoC/CoC、IDF、进口商KRA PIN、HS Code、发票货值和受管制货物许可证是否一致？',
+  '货物是否需要JKIA机场提货、保税运输、跨境卡车、冷链操作或最终现场卸货支持？',
 ]
 
 const inlandAfricaCustomsReadiness: Partial<
@@ -587,48 +587,48 @@ const inlandAfricaCustomsReadiness: Partial<
   >
 > = {
   abj: {
-    eyebrow: 'ABJ customs readiness',
-    heading: 'Pair Abidjan route planning with GUCE, FDI and SYDAM readiness.',
+    eyebrow: 'ABJ清关准备',
+    heading: 'ABJ路线规划与GUCE、FDI及SYDAM资料核查',
     body:
-      'ABJ can serve Cote dIvoire industrial, construction, medical and francophone West Africa project cargo, but the airport rate is only one part of an executable quote. Confirm the importer\'s GUCE workflow, FDI status, SYDAM/e-DAU declaration data, French-compatible cargo description and final delivery boundary before uplift.',
+      'ABJ可服务科特迪瓦工业、建筑、医疗及西非法语区项目货，但机场运价只是可执行报价的一部分。起飞前确认进口商GUCE流程、FDI状态、SYDAM/e-DAU申报资料、适用于法文单证的货物描述及最终交付范围。',
     primaryHref: '/insights/cote-divoire-abj-guce-fdi-sydam-air-freight-clearance/',
-    primaryLabel: 'Check ABJ GUCE, FDI and SYDAM documents',
+    primaryLabel: '核对ABJ的GUCE、FDI和SYDAM资料',
     secondaryHref: '/insights/ghana-acc-ivory-coast-abj-west-africa-air-freight/',
-    secondaryLabel: 'Compare ACC and ABJ West Africa gateways',
+    secondaryLabel: '比较ACC与ABJ西非门户',
     checks: [
-      'Are the importer, customs broker, GUCE account, FDI status, AWB, invoice, packing list, HS Code and value aligned?',
-      'Does the product need an e-Certificate of Conformity, e-Phyto, Certificate of Origin, e-Licence or another controlled-goods document?',
-      'Is the quote boundary ABJ airport pickup, Abidjan delivery, or onward francophone West Africa project-site handover?',
+      '进口商、清关代理、GUCE账号、FDI状态、AWB、发票、装箱单、HS Code和货值是否一致？',
+      '产品是否需要电子符合性证书、电子植物检疫证书、原产地证、电子许可证或其他受管制货物文件？',
+      '报价范围是ABJ机场提货、阿比让交付，还是继续送往西非法语区项目现场？',
     ],
   },
   kgl: {
-    eyebrow: 'KGL customs readiness',
-    heading: 'Pair Kigali route planning with RRA, RICA and RSB document checks.',
+    eyebrow: 'KGL清关准备',
+    heading: 'KGL路线规划与RRA、RICA及RSB资料核查',
     body:
-      'KGL can work for Rwanda project cargo, healthcare, electronics and East Africa inland distribution, but the route quote is only useful if import documents are ready. Screen the RRA Electronic Single Window flow, RICA import inspection, RSB conformity requirements and final delivery boundary before booking urgent cargo.',
+      'KGL可评估用于卢旺达项目货、医疗、电子产品及东非内陆分拨，但只有进口文件准备就绪，路线报价才有参考意义。紧急货订舱前核实RRA电子单一窗口流程、RICA进口检验、RSB符合性要求及最终交付范围。',
     primaryHref: '/insights/rwanda-kgl-rra-rsb-air-freight-clearance-documents/',
-    primaryLabel: 'Check KGL RRA and RSB documents',
+    primaryLabel: '核对KGL的RRA与RSB资料',
     secondaryHref: '/insights/east-africa-nbo-ebb-dar-project-cargo/',
-    secondaryLabel: 'Compare East Africa project cargo routing',
+    secondaryLabel: '比较东非项目货路线',
     checks: [
-      'Are importer TIN, clearing agent, invoice, packing list, AWB data, HS Code and value aligned for RRA/eSW filing?',
-      'Does the product trigger RICA import inspection, RSB certification, permit, label, test-report or conformity checks?',
-      'Is the quote boundary KGL airport pickup, Rwanda delivery, or onward East Africa inland project-site handover?',
+      '用于RRA/eSW申报的进口商TIN、清关代理、发票、装箱单、AWB资料、HS Code和货值是否一致？',
+      '产品是否触发RICA进口检验、RSB认证、许可证、标签、测试报告或符合性核查？',
+      '报价范围是KGL机场提货、卢旺达境内交付，还是继续送往东非内陆项目现场？',
     ],
   },
   hre: {
-    eyebrow: 'HRE customs readiness',
-    heading: 'Treat Harare mining and industrial cargo as a ZIMRA/CBCA pre-check, not only an airport rate.',
+    eyebrow: 'HRE清关准备',
+    heading: 'HRE矿业和工业货先核对ZIMRA/CBCA，再看机场价格',
     body:
-      'HRE is useful for Zimbabwe mining, agriculture, medical and factory spares, but document gaps can erase airfreight speed. Confirm ZIMRA commercial import data, ASYCUDA/Bill of Entry responsibility, CBCA/PVoC scope and final handover terms before committing to a China-origin booking.',
+      'HRE可评估用于津巴布韦矿业、农业、医疗和工厂备件，但单证缺失可能抵消空运速度优势。确认ZIMRA商业进口资料、ASYCUDA/进口报关单责任、CBCA/PVoC适用范围及最终交接条款后，再安排中国起运订舱。',
     primaryHref: '/insights/zimbabwe-hre-zimra-asycuda-cbca-air-freight-clearance/',
-    primaryLabel: 'Check HRE ZIMRA and CBCA documents',
+    primaryLabel: '核对HRE的ZIMRA与CBCA资料',
     secondaryHref: '/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/',
-    secondaryLabel: 'Compare ET/ADD options for HRE cargo',
+    secondaryLabel: '比较HRE货物的ET/ADD选项',
     checks: [
-      'Are importer Business Partner Number, clearing agent, invoice, packing list, AWB, freight and insurance data ready for ASYCUDA?',
-      'Does the cargo need CBCA/PVoC, Certificate of Conformity, import licence or restricted-goods approval before departure?',
-      'Is HRE the final airport, an inland clearance point, or one leg before a mine, farm, factory or project-site delivery?',
+      '用于ASYCUDA申报的进口商商业伙伴编号、清关代理、发票、装箱单、AWB、运费和保险资料是否已准备？',
+      '货物出运前是否需要CBCA/PVoC、符合性证书、进口许可证或受限制货物审批？',
+      'HRE是最终机场、内陆清关点，还是送往矿区、农场、工厂或项目现场前的一段路线？',
     ],
   },
 }
@@ -636,9 +636,9 @@ const inlandAfricaCustomsReadiness: Partial<
 const addRouteProgramDestinationSlugs: Slug[] = ['cmn', 'add', 'cky', 'oua', 'bko', 'ebb']
 
 const addRouteProgramChecks = [
-  'Is the cargo already in MLE, SIN or MNL, or would rerouting China-origin cargo add more cost and delay than it saves?',
-  'Can ADD transit accept the actual piece size, weight, cargo attribute and onward flight window for this destination?',
-  'Are destination documents, consignee readiness and final delivery boundary confirmed before chasing a lower airport rate?',
+  '货物是否已在MLE、SIN或MNL，还是将中国起运货物改道会增加更多成本和延误？',
+  'ADD中转能否接收该目的地货物的实际尺寸、重量、货物属性，并衔接后续航班窗口？',
+  '追求更低机场运价前，是否已确认目的地文件、收货人准备情况和最终交付范围？',
 ]
 
 const chinaOriginClusters = [
@@ -646,7 +646,7 @@ const chinaOriginClusters = [
     region: '华东出口口岸',
     airports: 'PVG / HGH / NKG',
     coverage: '上海、江苏、浙江、安徽及周边制造业货源',
-    decision: '优先比较宽体腹舱、全货机衔接、欧洲或全球Hub中转，以及超限件国内集卡成本。',
+    decision: '优先比较宽体腹舱、全货机衔接、欧洲或全球枢纽中转，以及超限件国内集卡成本。',
   },
   {
     region: '华南及香港口岸',
@@ -687,66 +687,66 @@ const originStrategies: Partial<Record<Slug, OriginStrategy>> = {
       'EASCargo不把JNB限定为某一个中国起运机场。根据货物所在地、单件尺寸重量和时效，比较全国主要口岸，再判断全球中转网络、HAK全货机容量信号和LGG/BRU主甲板方案。',
     routeOptions: [
       {
-        title: 'China gateway and domestic feeder',
-        body: 'Compare uplift from the nearest major airport with domestic trucking to a stronger gateway. The correct origin depends on total landed route cost, longest piece, heaviest piece, cargo-ready date and confirmed transfer acceptance, not airport code alone.',
+        title: '中国起运口岸与国内集运',
+        body: '比较最近主要机场起运与国内卡车送往更强枢纽。起运地应根据路线总成本、最长件、最重件、备货日期及已确认的中转接受情况决定，不能只看机场代码。',
       },
       {
-        title: 'Global hub connection',
-        body: 'ADD, DXB/DWC and IST are route families to screen for JNB, while other hubs may be available by shipment. Published connectivity does not prove acceptance: every booking still needs current capacity, aircraft, interline and transfer checks.',
+        title: '全球枢纽中转',
+        body: '可将ADD、DXB/DWC和IST作为JNB路线候选枢纽，其他枢纽需按具体货物评估。公开航线信息不等于货物获接收；每票仍需核实当前运力、机型、联运和中转条件。',
       },
       {
-        title: 'HAK-JNB freighter capacity signal',
-        body: 'Astral Aviation has publicly documented a Haikou-Johannesburg Boeing 767-300 freighter launch. Treat HAK as a capacity option to verify for each shipment, not a permanent schedule or guaranteed allocation.',
+        title: 'HAK-JNB全货机运力信号',
+        body: 'Astral Aviation曾公开发布海口至约翰内斯堡Boeing 767-300全货机启航信息。HAK应作为逐票核实的运力选项，不应视为固定班期或保证配载。',
       },
       {
-        title: 'LGG / BRU main-deck alternative',
-        body: 'When a piece cannot fit passenger belly or a connecting freighter, compare Europe transit and main-deck loading. Confirm door size, contour, floor loading, build-up, transfer handling and JNB unloading before quoting.',
+        title: 'LGG / BRU主甲板备选',
+        body: '单件无法装入客机腹舱或衔接全货机时，可比较欧洲中转和主甲板装载。报价前确认舱门尺寸、机舱轮廓、地板载荷、组板、中转操作及JNB卸货条件。',
       },
     ],
   },
   fbm: {
     heading: '全国主要航空口岸到 FBM：路线必须落到铜钴矿区交付。',
     intro:
-      'FBM不是换一个机场代码的普通非洲报价。全国集货后，要把可装载机型、欧洲或非洲Hub衔接、刚果金进口资料、Lubumbashi卸货和最终矿区交付放在同一票方案里。',
+      'FBM不是只替换机场代码的普通非洲报价。全国集货后，需在同一票方案中考虑可装载机型、欧洲或非洲枢纽衔接、刚果（金）进口资料、卢本巴希卸货及最终矿区交付。',
     routeOptions: [
       {
-        title: 'Nearest gateway vs stronger freighter gateway',
-        body: 'Compare local uplift with trucking to PVG, CAN, SZX, HKG or another stronger export gateway. Pumps, transformers and electrical cabinets must be checked by single-piece dimensions, floor loading, lifting points and transfer acceptance.',
+        title: '就近口岸与全货机枢纽比较',
+        body: '比较本地起运与卡车送往PVG、CAN、SZX、HKG或其他出口枢纽。泵、变压器和电气柜需按单件尺寸、地板载荷、吊点和中转接受条件核实。',
       },
       {
-        title: 'LGG / BRU and Africa second-leg planning',
-        body: 'For pieces rejected by normal belly routes, Europe transit can create a main-deck option. The second leg into FBM, transfer warehouse, build-up and destination unloading must all be confirmed before the Europe sector is booked.',
+        title: 'LGG / BRU欧洲中转与非洲二程',
+        body: '普通腹舱航线拒收的货物，可评估通过欧洲中转获得主甲板选项。预订欧洲段前，需确认飞往FBM的第二程、转运仓库、组板和目的地卸货安排。',
       },
       {
-        title: 'Africa hub comparison',
-        body: 'ADD, NBO, JNB or another African hub may be screened when current interline or truck options support the shipment. Do not assume a hub connection is valid until transit customs, piece acceptance and handover responsibility are confirmed.',
+        title: '非洲枢纽比较',
+        body: '当前联运或卡车方案适用时，可评估ADD、NBO、JNB或其他非洲枢纽。确认过境清关、单件接收和交接责任前，不应假定枢纽衔接可行。',
       },
       {
-        title: 'FBM clearance and mine-site handover',
-        body: 'The quote boundary must state whether it ends at FBM airport, includes customs coordination, or continues to a Copperbelt mine or plant. French cargo descriptions, consignee documents, unloading tools and final truck access are shipment-critical.',
+        title: 'FBM清关与矿区交付',
+        body: '报价范围必须说明止于FBM机场、是否包含清关协调，或是否继续送往铜带矿区/工厂。法文货物描述、收货人资料、卸货工具及末端卡车通行条件都会影响具体货物安排。',
       },
     ],
   },
   lun: {
     heading: '全国主要航空口岸到 LUN：不能把Lusaka机场价当作最终交付价。',
     intro:
-      'LUN可承接赞比亚工业、能源、矿业和工厂急件，但全国起运后仍要区分只到Lusaka、继续到Copperbelt，还是交付Ndola、Kitwe或具体项目现场。',
+      'LUN可评估用于赞比亚工业、能源、矿业和工厂急件。全国起运后仍需区分仅交至卢萨卡、继续送往铜带矿区，还是交付恩多拉、基特韦或具体项目现场。',
     routeOptions: [
       {
-        title: 'China origin and global hub screening',
-        body: 'Compare the nearest China uplift with stronger gateways and current hub connections. Passenger belly, freighter and interline acceptance must be checked against the longest and heaviest piece before selecting the origin airport.',
+        title: '中国起运口岸与全球枢纽筛选',
+        body: '比较最近的中国起运机场与更强的出口枢纽及当前中转连接。选择起运机场前，需按最长件和最重件核实客机腹舱、全货机及联运接收条件。',
       },
       {
-        title: 'Europe main-deck option for oversized pieces',
-        body: 'LGG/BRU can be compared when standard connections cannot accept package height, length or weight. Confirm the Africa second leg, transfer build-up and LUN ground handling before promising a route.',
+        title: '超限件欧洲主甲板方案',
+        body: '常规连接无法接收货物高度、长度或重量时，可比较LGG/BRU方案。承诺路线前，需确认非洲第二程、中转组板及LUN地面操作。',
       },
       {
-        title: 'LUN arrival vs regional extension',
-        body: 'A route ending at LUN is different from a plan continuing to Ndola, Kitwe, a mine or an industrial site. Compare airport clearance, in-country trucking and any alternative regional gateway on total delivery responsibility.',
+        title: 'LUN到港与区域延伸',
+        body: '止于LUN的路线与继续送往恩多拉、基特韦、矿区或工业现场的方案不同。比较机场清关、境内卡车运输及其他区域入口时，应核对完整交付责任。',
       },
       {
-        title: 'Zambia documents and final-site readiness',
-        body: 'Importer information, HS Code, invoice, packing list, permits, packing photos, truck access and unloading equipment must be aligned before departure. A fast flight does not solve an unprepared consignee or project site.',
+        title: '赞比亚文件与现场交付准备',
+        body: '出运前应对齐进口商资料、HS Code、发票、装箱单、许可证、包装照片、卡车通道和卸货设备。航班快并不能解决收货人或项目现场尚未准备好的问题。',
       },
     ],
   },
@@ -756,20 +756,20 @@ const originStrategies: Partial<Record<Slug, OriginStrategy>> = {
       'LBV的核心不是从哪个中国机场报出最低公斤价，而是长货、油气设备和工程件能否完成国内集运、主甲板装载、欧洲或非洲中转、Libreville卸货和项目现场交接。',
     routeOptions: [
       {
-        title: 'China gateway fit for long cargo',
-        body: 'Compare nationwide pickup and export gateways by aircraft door, contour, floor loading and warehouse handling. The nearest airport may be unsuitable for a six-to-eight-metre piece even when ordinary cargo capacity exists.',
+        title: '长货适配的中国起运口岸',
+        body: '根据机舱门尺寸、机舱轮廓、地板载荷和仓库操作比较全国集货及出口口岸。即使普通货物有舱位，最近的机场也可能无法接收6至8米长件。',
       },
       {
-        title: 'LGG / BRU and B747F feasibility',
-        body: 'Europe transit and B747F main-deck or nose-door planning may unlock long cargo, but only after loading direction, center of gravity, crate strength, transfer build-up and second-leg acceptance are checked.',
+        title: 'LGG / BRU与B747F可行性',
+        body: '欧洲中转及B747F主甲板或机鼻舱门方案可能适用于长货，但须先核实装载方向、重心、箱体强度、中转组板和第二程接收条件。',
       },
       {
-        title: 'Africa connection and LBV handling',
-        body: 'Any Africa hub or direct second leg must be screened against the actual piece. Confirm LBV unloading equipment, forklift or crane access, storage constraints and truck collection before cargo leaves China.',
+        title: '非洲衔接与LBV操作',
+        body: '任何非洲枢纽或直达第二程都需按实际单件核实。货物离开中国前确认LBV卸货设备、叉车或吊车通道、仓储限制及卡车提货安排。',
       },
       {
-        title: 'Gabon documents and project-site delivery',
-        body: 'French-compatible cargo descriptions, consignee readiness, customs broker responsibility and final oil, energy or construction site access must be clear. Airport arrival is only one milestone in the project plan.',
+        title: '加蓬文件与项目现场交付',
+        body: '需明确适用于法文单证的货物描述、收货人准备情况、清关代理责任，以及油气、能源或建筑项目现场通行条件。货物抵达机场只是项目计划中的一个节点。',
       },
     ],
   },
@@ -777,137 +777,137 @@ const originStrategies: Partial<Record<Slug, OriginStrategy>> = {
 
 const jnbOfficialFacts = [
   {
-    label: 'O.R. Tambo airport and cargo capacity',
-    detail: 'ACSA describes JNB as its flagship airport, connected to South Africa\'s national road network, with annual cargo facilitation capacity of 650,000 tonnes.',
+    label: 'O.R. Tambo机场与货运能力',
+    detail: 'ACSA将JNB列为其旗舰机场，称其连接南非全国公路网络，年货物处理能力为65万吨。',
     href: 'https://www.airports.co.za/airports/or-tambo-international-airport/the-airport/about-or-tambo',
   },
   {
-    label: 'South African importer and Goods Declaration',
-    detail: 'SARS requires importers or their agents to declare imported goods; foreign importers must nominate a registered agent in South Africa.',
+    label: '南非进口商与货物申报',
+    detail: 'SARS要求进口商或其代理申报进口货物；境外进口商须指定南非注册代理。',
     href: 'https://www.sars.gov.za/customs-and-excise/registration-licensing-and-accreditation/importers/',
   },
   {
-    label: 'Restricted and controlled goods',
-    detail: 'SARS states that restricted goods may enter only under specified conditions, such as a permit, certificate or Letter of Authority from the responsible authority.',
+    label: '受限制及受管制货物',
+    detail: 'SARS说明，受限制货物只有在满足规定条件后方可入境，例如取得许可证、证书或主管机关授权函。',
     href: 'https://www.sars.gov.za/customs-and-excise/prohibited-restricted-and-counterfeit-goods/',
   },
   {
-    label: 'Used and second-hand goods import control',
-    detail: 'South African government guidance says used goods, second-hand goods, waste and scrap are subject to import control and should be checked with ITAC before shipment.',
+    label: '旧货及二手货进口管制',
+    detail: '南非政府指引称，旧货、二手货、废料和废品受进口管制，出运前应向ITAC核实。',
     href: 'https://www.gov.za/services/import/import-permit-general-goods',
   },
   {
-    label: 'JNB road-feeder reach',
-    detail: 'Carrier-published road networks show JNB links into South African cities and selected Southern Africa points; availability and cargo acceptance must be reconfirmed per shipment.',
+    label: 'JNB公路接驳范围',
+    detail: '承运人公布的公路网络显示，JNB可连接南非城市及南部非洲部分地点；可用性和货物接收情况仍须逐票重新确认。',
     href: 'https://www.turkishcargo.com/documents/karayolu_tasimaciligi/EN/africa_truck_service2.pdf',
   },
 ]
 
 const fbmOfficialFacts = [
   {
-    label: 'FBM ground-handling presence',
+    label: 'FBM地面操作服务',
     detail:
-      'Menzies Aviation lists Lubumbashi FBM in its network and shows ground services at the airport. This supports treating FBM as a real operating point, but not as proof that any oversized piece, date or commodity is accepted without shipment-specific confirmation.',
+      'Menzies Aviation将卢本巴希FBM列入其网络并列出机场地面服务。这说明FBM是实际运营点，但不能据此推定任何超大件、日期或货类都能接收；仍需按货物逐票确认。',
     href: 'https://menziesaviation.com/our-network/lubumbashi-fbm/',
   },
   {
-    label: 'DRC import customs declaration',
+    label: '刚果（金）进口报关',
     detail:
-      'DGDA import-procedure guidance describes customs declaration, DAU electronic declaration and carrier cargo manifest responsibilities. For air freight, AWB/LTA and manifest data must match invoice, packing list and cargo description.',
+      'DGDA进口程序指引说明海关申报、DAU电子申报及承运人货物舱单责任。空运的AWB/LTA和舱单资料应与发票、装箱单及货物描述一致。',
     href: 'https://douane.gouv.cd/les-procedures-douanieres/les-procedures-de-dedouanement-a-limportation-en-rdc%EF%BF%BC/',
   },
   {
-    label: 'GUICE single-window process',
+    label: 'GUICE单一窗口流程',
     detail:
-      'SEGUCE operates the GUICE platform for DRC foreign-trade formalities. FBM cargo should be screened for pre-clearance, importer and broker readiness before departure from China.',
+      'SEGUCE运营刚果（金）外贸手续的GUICE平台。货物离开中国前，应核实FBM货物的预清关要求及进口商、代理准备情况。',
     href: 'https://segucerdc.com/fr/home',
   },
   {
-    label: 'DRC import documentation checklist',
+    label: '刚果（金）进口单证清单',
     detail:
-      'Trade.gov lists DRC import-document requirements such as BIVAC or OCC verification where applicable, import license, commercial invoice, packing list, bill of lading or airway bill, insurance certificate and certificate of origin.',
+      'Trade.gov列出的刚果（金）进口文件包括：适用时的BIVAC或OCC核验、进口许可证、商业发票、装箱单、提单或空运单、保险凭证及原产地证。',
     href: 'https://www.trade.gov/country-commercial-guides/democratic-republic-congo-import-requirements-and-documentation',
   },
 ]
 
 const lunOfficialFacts = [
   {
-    label: 'LUN and NLA are different Zambia gateways',
-    detail: 'Zambia Airports Corporation identifies Kenneth Kaunda International Airport in Lusaka and Simon Mwansa Kapwepwe International Airport in Ndola among the international airports it manages. Final-site geography should therefore be checked before choosing a Zambia entry point.',
+    label: 'LUN与NLA是赞比亚不同的入境门户',
+    detail: '赞比亚机场公司将卢萨卡的肯尼思·卡翁达国际机场和恩多拉的西蒙·姆万萨·卡普韦普韦国际机场列为其管理的国际机场。选择赞比亚入境点前，应核对最终现场位置。',
     href: 'https://www.zacl.co.zm/corporate',
   },
   {
-    label: 'Zambia import documents and ASYCUDA',
-    detail: 'Trade.gov lists airway bills and commercial invoices among customs-clearance documents and states that ZRA uses ASYCUDA. It also notes the Import Declaration Form and product-specific advance certification requirements.',
+    label: '赞比亚进口文件与ASYCUDA',
+    detail: 'Trade.gov将空运单和商业发票列为清关文件，并说明ZRA使用ASYCUDA；资料还提及进口申报表及特定产品的提前认证要求。',
     href: 'https://www.trade.gov/country-commercial-guides/zambia-import-requirements-documentation',
   },
   {
-    label: 'Advanced Cargo Information for air cargo',
-    detail: 'ASYCUDA reports that Zambia introduced an ACI module at international airports so airlines and cargo couriers can submit electronic manifests before arrival using ASYCUDAWorld and IATA Cargo XML standards.',
+    label: '空运货物预先信息',
+    detail: 'ASYCUDA称，赞比亚在国际机场启用ACI模块，航空公司和货运代理可依据ASYCUDAWorld及IATA Cargo XML标准，在货物到达前提交电子舱单。',
     href: 'https://asycuda.org/en/zambia-pilots-advanced-cargo-information-module-at-international-airports/',
   },
   {
-    label: 'ZRA air-cargo filing responsibility',
-    detail: 'ZRA guidance says air cargo is reported electronically before arrival and distinguishes carrier manifest and AWB filing from freight-forwarder house-waybill filing. Shipment data should be aligned before uplift rather than corrected after arrival.',
+    label: 'ZRA空运申报责任',
+    detail: 'ZRA指引称，空运货物需在到达前电子申报，并区分承运人舱单/AWB申报与货代分运单申报责任。货物起飞前应对齐资料，而不是到达后再修改。',
     href: 'https://www.zra.org.zm/wp-content/uploads/2024/02/ASYCUDA_IATA_Cargo_XML_Filing_Guidance_Version_Zambia.pdf',
   },
   {
-    label: 'Appointment of a Zambia clearing agent',
-    detail: 'ZRA states that importers and exporters appoint licensed clearing agents through a module linked to ASYCUDAWorld. The appointed broker and importer identity should be confirmed before the cargo departs China.',
+    label: '指定赞比亚清关代理',
+    detail: 'ZRA称，进出口商通过与ASYCUDAWorld关联的模块指定持牌清关代理。货物离开中国前应确认受委托的代理及进口商身份。',
     href: 'https://www.zra.org.zm/appointment-of-clearing-agents-2/',
   },
 ]
 
 const nboOfficialFacts = [
   {
-    label: 'JKIA modernisation and cargo hub signal',
-    detail: 'STAT Times reported Kenya appointed Dar Al-Handasah as engineer-consultant for the KSh154.2 billion JKIA modernisation project, with the master plan targeting cargo throughput growth from about 390,000 tonnes to 860,000 tonnes by 2045.',
+    label: 'JKIA现代化与货运枢纽规划',
+    detail: 'STAT Times报道，肯尼亚任命Dar Al-Handasah担任JKIA现代化项目工程顾问；项目金额为1,542亿肯尼亚先令，规划目标是到2045年将货运量从约39万吨提高至86万吨。',
     href: 'https://www.stattimes.com/cargo-airports/kenya-signs-engineer-consultant-deal-for-jkia-modernisation-1359919',
   },
   {
-    label: 'JKIA master planning and cargo support',
-    detail: 'Dar describes JKIA planning work that includes airside, terminal, landside, transport and urban development, with support facilities for ground operations, maintenance, cargo and utilities.',
+    label: 'JKIA总体规划与货运配套',
+    detail: 'Dar介绍的JKIA规划工作涵盖空侧、航站楼、陆侧、交通和城市发展，并包括地面操作、维修、货运及公用设施配套。',
     href: 'https://www.dar.com/work/project/jomo-kenyatta-international-airport-%28jkia%29-and-wilson-airport-%28wap%29-',
   },
   {
-    label: 'Kenya PVoC / CoC conformity check',
-    detail: 'KEBS explains that PVoC is used to verify conformity of regulated exports to Kenya before shipment, so product scope and certificate responsibility should be checked before an NBO booking.',
+    label: '肯尼亚PVoC/CoC符合性核验',
+    detail: 'KEBS说明，PVoC用于在货物发运前核验出口至肯尼亚的受管制商品是否符合要求，因此NBO订舱前应核实产品范围和证书责任方。',
     href: 'https://www.kebs.org/pre-export-verification-of-conformity/',
   },
   {
-    label: 'Kenya Import Declaration Form',
-    detail: 'InfoTradeKenya lists IDF among the import steps and document requirements. Importer data, HS Code, value, invoice and permit fit should be aligned before cargo leaves China.',
+    label: '肯尼亚进口申报表',
+    detail: 'InfoTradeKenya将IDF列为进口流程和文件要求之一。货物离开中国前应核对进口商资料、HS Code、货值、发票和许可证适用情况。',
     href: 'https://infotradekenya.go.ke/procedure/322?includeSearch=true&l=en',
   },
   {
-    label: 'Guangzhou-Nairobi freighter route signal',
-    detail: 'Public CAN-NBO freighter coverage is useful for East Africa route screening, but every shipment still needs current capacity, commodity, document and final-delivery checks before booking.',
+    label: '广州—内罗毕全货机航线线索',
+    detail: '公开的CAN-NBO全货机信息可供东非路线筛选参考，但每票订舱前仍需核实当前运力、货类、单证和最终交付条件。',
     href: 'https://www.logupdateafrica.com/air-cargo/astral-aviation-resumes-weekly-nairobiguangzhou-freighter-service-1359939',
   },
 ]
 
 const lunGatewayChecks = [
-  'Is the final site in Lusaka, Ndola, Kitwe, Mufulira, Chingola or another Copperbelt or project location?',
-  'Can the longest and heaviest piece be accepted through LUN, or should NLA or another currently confirmed regional route be compared?',
-  'Are the importer, appointed broker, AWB data, invoice, packing list, HS Code and permit or ZCSA checks aligned before uplift?',
-  'Does the quote stop at the airport, include customs coordination, or continue to the factory, mine or project site with unloading?',
+  '最终现场位于卢萨卡、恩多拉、基特韦、穆富利拉、钦戈拉，还是铜带矿区或其他项目地点？',
+  'LUN能否接收最长件和最重件，还是应比较NLA或其他已核实的区域路线？',
+  '起飞前，进口商、指定代理、AWB资料、发票、装箱单、HS Code及许可证或ZCSA核查是否已对齐？',
+  '报价止于机场、包含清关协调，还是包括卸货后送至工厂、矿区或项目现场？',
 ]
 
 const lunGatewayDecisionRows = [
   {
-    gateway: 'Screen LUN / Lusaka',
-    finalSite: 'Lusaka or a project site whose verified road plan works better from Lusaka.',
-    verify: 'Actual piece acceptance, connection, airport handover, clearance responsibility and onward truck plan.',
+    gateway: '筛选LUN / 卢萨卡',
+    finalSite: '卢萨卡，或经核实从卢萨卡出发的公路方案更合适的项目现场。',
+    verify: '核实单件接收、中转衔接、机场交接、清关责任及后续卡车计划。',
   },
   {
-    gateway: 'Screen NLA / Ndola',
-    finalSite: 'Ndola, Kitwe or another Copperbelt site where a verified Ndola handover may reduce the inland leg.',
-    verify: 'Actual piece acceptance, current connection, destination handling, broker readiness and site delivery.',
+    gateway: '筛选NLA / 恩多拉',
+    finalSite: '恩多拉、基特韦或其他铜带地点；经核实后，从恩多拉交接可能缩短内陆段。',
+    verify: '核实单件接收、当前中转、目的地操作、代理准备情况及现场交付。',
   },
   {
-    gateway: 'Compare both',
-    finalSite: 'The final site, delivery boundary or oversized-piece acceptance is not yet confirmed.',
-    verify: 'Compare executable total plans; an airport code or lower airport rate alone does not decide the route.',
+    gateway: '比较两者',
+    finalSite: '最终现场、交付范围或超大件接收情况尚未确认。',
+    verify: '比较完整可执行方案；不能只根据机场代码或较低机场运价决定路线。',
   },
 ]
 
@@ -929,167 +929,167 @@ const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
 
 const deepDives: Partial<Record<Slug, DeepDive>> = {
   jnb: {
-    heading: 'Deep route note for JNB Johannesburg oversized cargo',
+    heading: 'JNB约翰内斯堡超大件路线说明',
     intro:
-      'JNB is the benchmark route for many Africa oversized cargo quotes because it has stronger airport handling, more freight options and better inland distribution than many secondary African points. The trap is assuming that JNB solves every South Africa shipment. For oversized project cargo, we still compare final delivery city, unloading equipment, customs broker readiness and whether CPT or DUR is actually closer to the job site.',
+      '许多非洲超大件报价会以JNB作为比较路线，因为其机场操作、货运选项和内陆分拨条件通常优于不少次级节点。但不能因此假定JNB适用于所有南非货物。超大项目货仍需比较最终交付城市、卸货设备、清关代理准备情况，以及CPT或DUR是否更接近项目现场。',
     scenarios: [
-      'Mining or engineering spare parts for South Africa plants where downtime cost is higher than airfreight cost.',
-      'High-value automotive or industrial parts that can fly to JNB and move inland by controlled truck.',
-      'Oversized pieces rejected by China direct options, then rebuilt through LGG/BRU or a freighter-capable hub.',
+      '用于南非工厂的矿业或工程备件，停工成本可能高于空运成本。',
+      '可空运至JNB并通过受控卡车继续内陆运输的高价值汽车或工业零件。',
+      '被中国直达方案拒收、可再评估经LGG/BRU或具备全货机条件的枢纽重新组板运输的超大件。',
     ],
     risks: [
-      'Quoting airport-to-airport only while the customer needs mine-site or factory-site delivery.',
-      'Ignoring package height, forklift pockets, lifting points and unloading responsibility.',
-      'Treating Johannesburg as the final answer when Cape Town or Durban may reduce inland cost.',
+      '客户需要送至矿区或工厂现场，报价却只包含机场到机场运输。',
+      '忽略包装高度、叉车孔、吊点和卸货责任。',
+      '将约翰内斯堡当作唯一答案，而开普敦或德班可能降低内陆运输成本。',
     ],
     salesAngle:
-      'For JNB inquiries, the professional position is not just "we have airfreight to South Africa". It is "send dimensions and final site first, then we judge whether JNB is the right entry point or only the cheapest looking airport".',
+      '处理JNB询价时，不应只说“我们能空运到南非”；应请客户先提供尺寸和最终现场，再判断JNB是合适的入境点，还是仅看起来机场运价较低。',
   },
   fbm: {
-    heading: 'Deep route note for FBM Lubumbashi mining cargo',
+    heading: 'FBM卢本巴希矿业货物路线说明',
     intro:
-      'FBM is a high-intent project cargo destination because Lubumbashi is tied to the Copperbelt mining supply chain. Buyers are often not shopping for ordinary freight; they are trying to rescue production, maintenance or a site deadline. For this route, customs broker capability, consignee readiness and final mine-site handover are as important as the air sector.',
+      'FBM是具有项目货运输需求的目的地，因为卢本巴希与铜带矿业供应链紧密相关。客户往往不是在采购普通运输，而是在应对生产、维修或现场期限压力。此路线中，清关代理能力、收货人准备情况及最终矿区交接与空运段同样重要。',
     scenarios: [
-      'Copperbelt mining spare parts, pumps, transformers, electrical cabinets and repair equipment.',
-      'Urgent plant maintenance cargo where a few days of delay can cost more than the freight bill.',
-      'Heavy pieces that need Europe transit and Africa hub extension because China direct acceptance is limited.',
+      '铜带矿业备件、泵、变压器、电气柜和维修设备。',
+      '工厂紧急维修货；延误数日的损失可能高于运费。',
+      '中国直达接收受限、需要评估欧洲中转和非洲枢纽延伸的重货。',
     ],
     risks: [
-      'Customer only provides "airport FBM" but the real destination is a mine or remote industrial site.',
-      'French document description, HS Code and invoice value are inconsistent across documents.',
-      'Destination unloading conditions are not confirmed before the cargo leaves China.',
+      '客户只提供“FBM机场”，实际目的地却是矿区或偏远工业现场。',
+      '法文货物描述、HS Code和发票货值在不同文件中不一致。',
+      '货物离开中国前没有确认目的地卸货条件。',
     ],
     salesAngle:
-      'For FBM, sell risk control, not cheap freight. The buyer needs someone to tell them early whether the route is executable, which documents can block clearance and where the final delivery responsibility starts.',
+      'FBM业务应强调风险控制，而非低价运费。客户需要尽早了解路线是否可执行、哪些文件可能影响清关，以及最终交付责任从哪里开始。',
   },
   lun: {
-    heading: 'Deep route note for LUN Lusaka industrial and mining cargo',
+    heading: 'LUN卢萨卡工业与矿业货物路线说明',
     intro:
-      'LUN is often used for Zambia industrial, mining and maintenance cargo. Compared with FBM, the business communication is usually easier in English, but the route still needs a strict pre-check for HS Code, permits, consignee readiness and whether the final delivery goes beyond Lusaka.',
+      'LUN常用于赞比亚工业、矿业和维修货物。与FBM相比，当地商务沟通通常更容易使用英语，但仍需严格预先核实HS Code、许可证、收货人准备情况，以及最终交付是否超出卢萨卡。',
     scenarios: [
-      'Mining support equipment, pumps, motors, chemical plant spares and generators.',
-      'Factory maintenance cargo where stable arrival date matters more than the lowest rate.',
-      'Project cargo for Zambia where the consignee needs clear document guidance before shipment.',
+      '矿业支持设备、泵、电机、化工厂备件和发电机。',
+      '稳定到货日期比最低运价更重要的工厂维修货。',
+      '收货人需要在发货前获得清晰单证指导的赞比亚项目货。',
     ],
     risks: [
-      'Assuming all Zambia cargo ends in Lusaka while the final site may be far from the airport.',
-      'Missing permit or license checks for regulated industrial or chemical-related cargo.',
-      'Underestimating packaging, moisture protection and handling requirements for valuable equipment.',
+      '假定所有赞比亚货物都止于卢萨卡，而最终现场可能距机场较远。',
+      '遗漏受管制工业品或化学品相关货物的许可证核查。',
+      '低估高价值设备的包装、防潮和操作要求。',
     ],
     salesAngle:
-      'For LUN, the strongest selling point is clarity: route, document checklist, customs notes and final delivery boundary in one answer before the customer commits.',
+      'LUN路线的关键价值是信息清晰：客户确认前一次说明路线、单证清单、清关事项和最终交付范围。',
   },
   lbv: {
-    heading: 'Deep route note for LBV Libreville long cargo',
+    heading: 'LBV利伯维尔长货路线说明',
     intro:
-      'LBV is a good page to prove expertise because long cargo cannot be sold with a normal airfreight mindset. An 8-meter piece may need B747F nose-door loading, main-deck checks, Europe transit and destination ground handling confirmation. This is exactly where factories and trading companies need someone to judge feasibility before price.',
+      '长货不能按普通空运思路报价，因此LBV路线需要先判断操作可行性。8米货物可能需要B747F机鼻舱门装载、主甲板核查、欧洲中转及目的地地面操作确认。工厂和贸易商应在谈价格前先获得可行性判断。',
     scenarios: [
-      'Long engineering cargo around 6-8 meters where belly space is impossible.',
-      'Oil, energy, construction and Central Africa project cargo requiring controlled handover.',
-      'Cargo rejected by standard carriers but possible through B747F and LGG/BRU coordination.',
+      '约6至8米、无法使用客机腹舱的长尺寸工程货。',
+      '需要受控交接的油气、能源、建筑及中非项目货。',
+      '被普通承运方案拒收、但可评估经B747F及LGG/BRU协调运输的货物。',
     ],
     risks: [
-      'Only checking weight while ignoring length, center of gravity and loading direction.',
-      'Destination airport cannot confirm unloading equipment or truck access in time.',
-      'French document communication is late and customs description does not match cargo photos.',
+      '只核对重量，却忽略长度、重心和装载方向。',
+      '目的地机场未能及时确认卸货设备或卡车通行条件。',
+      '法文单证沟通过晚，清关描述与货物照片不一致。',
     ],
     salesAngle:
-      'For LBV, show the customer that the real product is feasibility judgment: can it load, where to transit, who handles it and what must be confirmed before money is spent.',
+      'LBV业务应让客户清楚，真正需要判断的是可行性：能否装载、在哪里中转、由谁操作，以及投入费用前必须确认什么。',
   },
   los: {
-    heading: 'Deep route note for LOS Lagos heavy cargo',
+    heading: 'LOS拉各斯重货路线说明',
     intro:
-      'LOS has large import demand, but Nigeria cargo is document-sensitive. The freight rate is only one part of the result. Importer documents, SONCAP or regulated goods checks, Form M where applicable, HS Code and local broker quality can change the real landed cost and timeline.',
+      'LOS进口需求较大，但尼日利亚货物对单证较敏感。运价只是整体结果的一部分；进口商资料、SONCAP或受管制货物核查、适用时的Form M、HS Code及当地代理能力都会影响实际到岸成本和时间安排。',
     scenarios: [
-      'Oil and gas spare parts, factory machinery, power equipment and high-value urgent cargo.',
-      'Industrial cargo where customs preparation affects the real delivery date more than flight time.',
-      'Heavy cargo that needs Europe transit or hub routing before entering Nigeria.',
+      '油气备件、工厂机械、电力设备及高价值紧急货物。',
+      '清关准备情况比飞行时间更影响实际交付日期的工业货物。',
+      '进入尼日利亚前需要评估欧洲中转或枢纽路线的重货。',
     ],
     risks: [
-      'The customer compares only freight rate and ignores destination charges or clearance risk.',
-      'Regulated goods documents are missing before cargo departure.',
-      'Invoice value, HS Code and product description are not aligned with Nigerian import requirements.',
+      '客户只比较运价，忽略目的地费用或清关风险。',
+      '货物离境前缺少受管制货物所需文件。',
+      '发票货值、HS Code和产品描述未按尼日利亚进口要求对齐。',
     ],
     salesAngle:
-      'For LOS, position the service as landed-risk control. Explain early that a cheap airfreight quote can become expensive if customs preparation is weak.',
+      'LOS服务应定位为到岸风险管理。应尽早说明，清关准备不足时，较低的空运报价也可能带来更高的后续成本。',
   },
   abj: {
-    heading: 'Deep route note for ABJ Abidjan and francophone West Africa',
+    heading: 'ABJ阿比让及西非法语区路线说明',
     intro:
-      'ABJ is an important gateway for Cote dIvoire and nearby francophone West Africa. For Chinese factories and traders, the value is often bilingual coordination: English or Chinese on the origin side, French-compatible document logic on the destination side.',
+      'ABJ是科特迪瓦及周边西非法语区的重要门户。对中国工厂和贸易商而言，双语协调可能很重要：起运端使用中文或英语，目的地单证则需适配法语要求。',
     scenarios: [
-      'Construction machinery parts, industrial equipment, energy project cargo and oversized spares.',
-      'West Africa project cargo that needs a practical alternative when direct options are limited.',
-      'Cargo for French-speaking consignees where document wording must be controlled.',
+      '工程机械零件、工业设备、能源项目货和超大件备件。',
+      '直达选项有限、需要评估实际替代方案的西非项目货。',
+      '收货人为法语使用者、需要控制单证措辞的货物。',
     ],
     risks: [
-      'Cargo description is translated casually and does not match HS Code or invoice.',
-      'Local broker and consignee are not aligned before the shipment leaves China.',
-      'Oversized pieces are quoted without destination handling confirmation.',
+      '货物描述翻译不严谨，与HS Code或发票不一致。',
+      '货物离开中国前未与当地代理和收货人对齐资料。',
+      '未确认目的地操作条件就为超大件报价。',
     ],
     salesAngle:
-      'For ABJ, the message should be "we reduce communication gaps". The customer is paying for route judgment plus Chinese-English-French coordination, not just kilograms.',
+      'ABJ沟通重点应是“减少信息传递偏差”。客户需要的是路线判断及中、英、法协调，而不只是按公斤计价。',
   },
   nbo: {
-    heading: 'Deep route note for NBO Nairobi and East Africa distribution',
+    heading: 'NBO内罗毕及东非分拨路线说明',
     intro:
-      'NBO is one of the strongest East Africa cargo hubs. It is useful for Kenya projects and sometimes regional distribution, but the right solution depends on whether the cargo ends in Nairobi, moves to another Kenyan city, or continues to nearby countries.',
+      'NBO是东非重要货运枢纽之一，可服务肯尼亚项目，有时也可用于区域分拨；合适方案取决于货物止于内罗毕、送往肯尼亚其他城市，还是继续发往周边国家。',
     scenarios: [
-      'Telecom, medical, infrastructure and factory spare parts for Kenya or East Africa projects.',
-      'Project cargo where NBO offers a better regional hub option than a smaller final airport.',
-      'Oversized pieces needing a balance of airport handling capability and inland delivery planning.',
+      '用于肯尼亚或东非项目的通信、医疗、基础设施及工厂备件。',
+      '与较小的最终目的机场相比，NBO可能提供更合适区域枢纽选项的项目货。',
+      '需要同时考虑机场操作能力和内陆交付安排的超大件。',
     ],
     risks: [
-      'Assuming NBO is final destination while customer needs inland or cross-border delivery.',
-      'Medical or regulated cargo permits are not checked before booking.',
-      'Packaging and handling notes are too vague for fragile or high-value equipment.',
+      '客户需要内陆或跨境交付，却误把NBO当作最终目的地。',
+      '订舱前未核实医疗或受管制货物许可证。',
+      '易碎或高价值设备的包装和操作说明过于笼统。',
     ],
     salesAngle:
-      'For NBO, sell regional judgment. Help the buyer decide whether to clear in Kenya, transfer inland, or use another East Africa route.',
+      'NBO业务应体现区域路线判断，协助客户决定在肯尼亚清关、转运内陆，还是采用其他东非路线。',
   },
   acc: {
-    heading: 'Deep route note for ACC Accra Ghana project cargo',
+    heading: 'ACC阿克拉项目货路线说明',
     intro:
-      'ACC is a strong West Africa destination for Ghana mining, healthcare, construction and industrial cargo. The opportunity is not only moving cargo into Accra, but explaining destination charges, customs documents and delivery expectations clearly before the buyer approves.',
+      'ACC是加纳矿业、医疗、建筑及工业货物的重要西非目的地。除了将货物运至阿克拉，还应在客户确认前清楚说明目的地费用、清关文件和交付预期。',
     scenarios: [
-      'Mining spare parts, medical equipment, industrial machinery and construction project cargo.',
-      'High-value or fragile equipment that needs predictable handling and customs preparation.',
-      'Urgent cargo where airfreight is used to protect a project or maintenance schedule.',
+      '矿业备件、医疗设备、工业机械和建筑项目货。',
+      '需要可预期操作和清关准备的高价值或易碎设备。',
+      '使用空运保障项目或维修排期的紧急货物。',
     ],
     risks: [
-      'Destination cost items are not explained and the customer only sees the airfreight line.',
-      'Importer tax identity, permit requirements or product classification are not ready.',
-      'Fragile or heavy equipment arrives without clear unloading and delivery responsibility.',
+      '未说明目的地费用项目，客户只看到空运费用。',
+      '进口商税务身份、许可证要求或产品分类资料尚未准备好。',
+      '易碎或重型设备到达时，卸货和交付责任仍不明确。',
     ],
     salesAngle:
-      'For ACC, win trust by being transparent about what is included, what is not included and what the consignee must prepare before cargo departure.',
+      'ACC业务应通过清楚说明报价包含项、不包含项，以及收货人在货物启运前需准备的资料来建立信任。',
   },
 }
 
 function getFaq(item: (typeof pages)[Slug]) {
   const commonFaq = [
     {
-      question: `Can oversized cargo fly from China to ${item.code} ${item.city}?`,
-      answer: `It depends on package dimensions, gross weight, lifting points, aircraft availability and destination handling at ${item.code}. For large pieces, we first check loading feasibility before discussing the airfreight rate.`,
+      question: `中国到${item.code} ${item.city}能否空运超大件货物？`,
+      answer: `这取决于包装尺寸、毛重、吊点、可用机型及${item.code}目的地操作条件。对于大件，应先核实装载可行性，再讨论空运价格。`,
     },
     {
-      question: `When should LGG/BRU Europe transit be considered for ${item.code}?`,
-      answer: `LGG/BRU should be considered when China direct flights cannot accept the cargo size, weight or timing. Europe transit can create a workable second-leg option for Africa project cargo, but it must be checked case by case.`,
+      question: `${item.code}什么情况下要考虑LGG/BRU欧洲中转？`,
+      answer: `当中国直飞无法接收货物尺寸、重量或时效要求时，可考虑LGG/BRU。欧洲中转可能为非洲项目货提供可行的第二程选项，但必须逐票核实。`,
     },
     {
-      question: `What documents are needed before quoting China to ${item.code} air freight?`,
-      answer: `Send commodity, HS Code, invoice value, packing list, dimensions, gross weight, packing photos, lifting points, origin city, destination city and latest arrival requirement. Regulated goods may need extra permits.`,
+      question: `中国到${item.code}空运报价前需要哪些资料？`,
+      answer: `请提供品名、HS Code、发票货值、装箱单、尺寸、毛重、包装照片、吊点、起运城市、目的地城市和最晚到货要求。受管制货物可能还需提供许可证。`,
     },
     {
-      question: `Is ${item.code} suitable for mining or engineering project cargo?`,
-      answer: `${item.business} The key is not only airport-to-airport freight, but whether customs, handling and inland delivery can support the project schedule.`,
+      question: `${item.code}适合矿业或工程项目货吗？`,
+      answer: `${item.business}关键不只是机场到机场运费，还要看清关、操作和内陆交付能否配合项目排期。`,
     },
   ]
 
   const nationwideOriginFaq = ['JNB', 'FBM', 'LUN', 'LBV'].includes(item.code)
     ? {
-        question: `Which China airports can be used for ${item.code} ${item.city} air freight?`,
-        answer: `EASCargo compares PVG, HGH, NKG, CAN, SZX, HKG, PEK, PKX, TSN, TAO, XMN, FOC, WUH, CGO, CTU, TFU, CKG, XIY and HAK according to cargo location and current acceptance. These are origin options, not claims of direct service. Heavy or oversized pieces may need domestic trucking to a stronger gateway, global hub transit or LGG/BRU main-deck planning.`,
+        question: `哪些中国起运机场可发往${item.code} ${item.city}？`,
+        answer: `EASCargo会根据货物所在地和当前接收条件，比较PVG、HGH、NKG、CAN、SZX、HKG、PEK、PKX、TSN、TAO、XMN、FOC、WUH、CGO、CTU、TFU、CKG、XIY和HAK等起运选项。这些是可评估的起运地，并不代表有直飞服务。重货或超大件可能需要国内卡车送至更强枢纽、经全球枢纽中转或评估LGG/BRU主甲板方案。`,
       }
     : null
 
@@ -1097,14 +1097,14 @@ function getFaq(item: (typeof pages)[Slug]) {
     return [
       nationwideOriginFaq!,
       {
-        question: 'Should Zambia project cargo arrive at LUN Lusaka or NLA Ndola?',
+        question: '赞比亚项目货应到LUN卢萨卡还是NLA恩多拉？',
         answer:
-          'Choose only after checking the final site, cargo acceptance and total delivery responsibility. LUN can suit Lusaka and national project demand, while NLA may be worth screening for Ndola, Kitwe and Copperbelt sites. Neither airport code proves current capacity or oversized-piece acceptance.',
+          '应先核实最终现场、货物接收情况和完整交付责任，再选择机场。LUN可评估用于卢萨卡及赞比亚全国项目需求；恩多拉、基特韦和铜带矿区可考虑筛选NLA。机场代码本身不能证明当前有运力或可接收超大件。',
       },
       {
-        question: 'What Zambia customs data should be ready before LUN uplift?',
+        question: 'LUN起运前应准备哪些赞比亚清关资料？',
         answer:
-          'Align the importer and appointed clearing agent, HS Code, commercial invoice, packing list, AWB and house-waybill data, value, origin and any permits or ZCSA checks. ZRA air-cargo electronic manifest requirements make consistent pre-arrival data important.',
+          '对齐进口商和指定清关代理、HS Code、商业发票、装箱单、AWB及分运单资料、货值、原产地，以及适用的许可证或ZCSA核查。ZRA空运电子舱单要求使到达前资料一致尤为重要。',
       },
       ...commonFaq.slice(0, 2),
     ]
@@ -1114,14 +1114,14 @@ function getFaq(item: (typeof pages)[Slug]) {
     return [
       nationwideOriginFaq!,
       {
-        question: 'Can 6-8 metre cargo fly from China to LBV Libreville?',
+        question: '6-8米货物能否从中国空运到LBV利伯维尔？',
         answer:
-          'Potentially, but acceptance is decided piece by piece. EASCargo first checks the packed dimensions, weight, centre of gravity, loading direction, lifting points and crate strength, then compares China gateway collection, main-deck or B747F nose-door feasibility, transfer handling and LBV unloading. A route or aircraft type is not treated as confirmed until every operating leg accepts the actual piece.',
+          '有可能，但须按单件决定是否接收。EASCargo先核实包装尺寸、重量、重心、装载方向、吊点和箱体强度，再比较中国口岸集货、主甲板或B747F机鼻舱门装载可行性、中转操作及LBV卸货条件。每一操作段都接受实际货物前，不把路线或机型视为已确认。',
       },
       {
-        question: 'What is needed to quote China to LBV long cargo?',
+        question: '询价中国到LBV长货需要提供什么资料？',
         answer:
-          'Send the factory location, cargo-ready date, commodity, HS Code, quantity, packed dimensions and gross weight for every piece, packing photos or drawings, lifting points, centre of gravity if known, consignee details and final delivery site. The quote should state the route boundary, handling assumptions, customs responsibility and whether airport collection or project-site delivery is required.',
+          '请提供工厂位置、备货日期、品名、HS Code、数量、每件包装尺寸和毛重、包装照片或图纸、吊点、已知重心、收货人资料及最终交付地点。报价应说明路线范围、操作假设、清关责任，以及需要机场提货还是送至项目现场。',
       },
       ...commonFaq.slice(0, 2),
     ]
@@ -1131,19 +1131,19 @@ function getFaq(item: (typeof pages)[Slug]) {
     return [
       nationwideOriginFaq!,
       {
-        question: 'Should an FBM quote end at Lubumbashi airport or include Copperbelt mine-site delivery?',
+        question: 'FBM报价止于卢本巴希机场，还是包含Copperbelt矿区交付？',
         answer:
-          'Decide this before pricing. Airport-only FBM means airfreight and airport handover; a mine-site plan also needs customs coordination, truck availability, road and site access, unloading tools, receiver appointment and responsibility for delays after airport release.',
+          '应在报价前确定范围。仅到FBM机场表示包含空运和机场交接；若送至矿区，还需协调清关、卡车可用性、道路及现场通行、卸货工具、收货预约，以及机场放货后的延误责任。',
       },
       {
-        question: 'What DRC documents should be ready before FBM uplift?',
+        question: 'FBM起运前应准备哪些刚果金清关资料？',
         answer:
-          'Prepare importer and consignee data, appointed customs broker, HS Code, French or bilingual cargo description, commercial invoice, packing list, AWB/LTA data, cargo value, origin and any GUICE, OCC/BIVAC, import-license or certificate requirements that apply to the commodity.',
+          '准备进口商和收货人资料、指定清关代理、HS Code、法文或双语货物描述、商业发票、装箱单、AWB/LTA资料、货值、原产地，以及该货类适用的GUICE、OCC/BIVAC、进口许可证或证书要求。',
       },
       {
-        question: 'What cargo data is needed for urgent FBM mining spares?',
+        question: 'FBM矿业急件询价需要哪些货物数据？',
         answer:
-          'Send the final mine or plant, downtime deadline, cargo-ready date, each piece dimension and gross weight, packing photos, lifting points, forklift pockets, center of gravity if known, dangerous-goods or battery status, and whether delivery is airport pickup or site handover.',
+          '请提供最终矿区或工厂、停工期限、备货日期、每件尺寸和毛重、包装照片、吊点、叉车孔、已知重心、危险品或电池属性，以及交付范围是机场提货还是现场交接。',
       },
       ...commonFaq.slice(0, 2),
     ]
@@ -1153,23 +1153,23 @@ function getFaq(item: (typeof pages)[Slug]) {
 
   return [
     {
-      question: 'Which China airports can be used for JNB Johannesburg air freight?',
+      question: '哪些中国起运机场可发往JNB约翰内斯堡？',
       answer: nationwideOriginFaq!.answer,
     },
     {
-      question: 'Can cargo move from FOC Fuzhou to JNB Johannesburg?',
+      question: '货物能否从FOC福州空运到JNB约翰内斯堡？',
       answer:
-        'Yes, FOC is one origin option within EASCargo\'s nationwide China collection network, but it is not presented as a guaranteed direct service. For each shipment, compare FOC uplift and transfer acceptance with XMN, PVG, CAN, SZX, HKG or HAK feeder options. The decision depends on the factory location, piece dimensions and weight, cargo-ready date, current aircraft capacity, transit handling and the JNB customs and final-delivery plan.',
+        '可以将FOC作为EASCargo中国全国集货网络中的一个起运选项，但不将其描述为保证直飞服务。每票应比较FOC起运和中转接收情况，以及XMN、PVG、CAN、SZX、HKG或HAK接驳选项。判断取决于工厂位置、单件尺寸和重量、备货日期、当前机型运力、中转操作、JNB清关及最终交付方案。',
     },
     {
-      question: 'What must a South African importer prepare before JNB arrival?',
+      question: '货物抵达JNB前，南非进口商需准备什么？',
       answer:
-        'Confirm the importer or registered agent, customs code, clearing broker, HS Code, invoice, packing list, AWB data and Goods Declaration inputs. Restricted products may require a permit, certificate or Letter of Authority, and used goods may require ITAC import control before shipment.',
+        '确认进口商或注册代理、海关编码、清关代理、HS Code、发票、装箱单、AWB资料及货物申报信息。受限制产品可能需要许可证、证书或授权函；旧货出运前可能需要ITAC进口管制。',
     },
     {
-      question: 'Can JNB be used for delivery beyond Johannesburg?',
+      question: 'JNB能否作为约翰内斯堡以外地区的交付入口？',
       answer:
-        'JNB can support inland and selected cross-border planning, but it is not automatic. Confirm whether cargo clears in South Africa, moves in bond or in transit, which carrier or trucker accepts the piece, and who controls permits, proof of export, unloading and final-site delivery.',
+        'JNB可用于评估内陆及部分跨境运输，但并非自动适用。需确认货物是在南非清关、保税运输还是过境运输，哪家承运人或卡车公司接收该件，以及由谁负责许可证、出口证明、卸货和最终现场交付。',
     },
     ...commonFaq,
   ]
@@ -1310,12 +1310,12 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             href={currentSlug === 'jnb' ? '/en/africa-air-freight/jnb/' : '/en/africa-oversized-air-freight/'}
             className="mb-10 inline-flex text-sm font-semibold text-amberGold"
           >
-            {currentSlug === 'jnb' ? 'English JNB route' : 'China to Africa oversized air freight'}
+            {currentSlug === 'jnb' ? 'English版JNB路线' : 'English版：非洲超大件空运'}
           </a>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">
               <Plane className="h-4 w-4" />
-              {chinese ? `${item.code} - ${chinese.city} / ${item.city}, ${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
+              {chinese ? `${item.code} - ${chinese.city}，${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
             </div>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
               {chinese
@@ -1325,14 +1325,14 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                   ? `全国集货到 ${item.code} ${chinese.city} 空运`
                   : `中国到 ${item.code} ${chinese.city} 空运`
                 : item.title}
-              {chinese && <span className="block text-amberGold">China to {item.city} project cargo</span>}
+              {chinese && <span className="block text-amberGold">{chinese.country}{chinese.city}项目货空运</span>}
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               {chinese
                 ? currentSlug === 'jnb'
                   ? '全国集货后比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽。按每票货核实单件装载、中转接受、SARS清关和南非最终交付，不预设固定机场、航班或舱位。'
                   : currentSlug === 'fbm'
-                  ? '全国集货后比较本地起运、PVG/CAN/SZX/HKG等强出口口岸、LGG/BRU主甲板和非洲Hub衔接。报价必须分清FBM机场段、刚果金清关、Lubumbashi卸货，以及是否继续到Copperbelt矿区或工厂现场。'
+                  ? '全国集货后比较本地起运、PVG/CAN/SZX/HKG等强出口口岸、LGG/BRU主甲板和非洲枢纽衔接。报价必须分清FBM机场段、刚果（金）清关、卢本巴希卸货，以及是否继续送至铜带矿区或工厂现场。'
                   : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
                 : item.description}
             </p>
@@ -1355,7 +1355,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         <section className="border-b border-slate-200 bg-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">FOC to JNB direct answer</p>
+              <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">FOC至JNB路线判断</p>
               <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
                 FOC福州到JNB怎么走？
               </h2>
@@ -1367,7 +1367,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 href="/tools/africa-project-cargo-rfq/?source=route&topic=jnb-foc"
                 className="mt-7 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
               >
-                Submit FOC / JNB cargo details
+                提交FOC / JNB货物资料
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
@@ -1386,14 +1386,14 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Destination profile</p>
-            <h2 className="text-3xl font-bold md:text-4xl">What makes {item.code} different?</h2>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">目的地概况</p>
+            <h2 className="text-3xl font-bold md:text-4xl">{item.city}航线与货物特点</h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">{item.market}</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-6">
             <div className="mb-4 flex items-center gap-3">
               <FileCheck2 className="h-6 w-6 text-amberGold" />
-              <h3 className="text-xl font-semibold">Customs and document checks</h3>
+              <h3 className="text-xl font-semibold">清关与单证核查</h3>
             </div>
             <p className="leading-7 text-slate-600">{item.customs}</p>
           </div>
@@ -1404,12 +1404,12 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         <div className="grid gap-5 lg:grid-cols-2">
           <div className="rounded-xl border border-slate-200 p-6">
             <Globe2 className="mb-4 h-8 w-8 text-amberGold" />
-            <h2 className="mb-3 text-2xl font-semibold">Local market and import profile</h2>
+            <h2 className="mb-3 text-2xl font-semibold">当地市场与进口特点</h2>
             <p className="leading-8 text-slate-600">{item.business}</p>
           </div>
           <div className="rounded-xl border border-slate-200 p-6">
             <Truck className="mb-4 h-8 w-8 text-amberGold" />
-            <h2 className="mb-3 text-2xl font-semibold">Business culture and coordination</h2>
+            <h2 className="mb-3 text-2xl font-semibold">商务沟通与协作</h2>
             <p className="leading-8 text-slate-600">{item.culture}</p>
           </div>
         </div>
@@ -1418,8 +1418,8 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-8 max-w-3xl">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Best fit cargo</p>
-            <h2 className="text-3xl font-bold md:text-4xl">Cargo types usually worth checking first.</h2>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">适配货物类型</p>
+            <h2 className="text-3xl font-bold md:text-4xl">优先核对的货物类型</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
             {item.cargo.map((cargo) => (
@@ -1449,20 +1449,18 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       <section className="bg-slate-50 py-20">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Urgent spares decision</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">紧急备件路线判断</p>
             <h2 className="text-3xl font-bold md:text-4xl">
-              If this {item.code} shipment is stopping a site, check route risk before rate.
+              项目现场等不起时，先核对 {item.code} 路线风险，再谈运价。
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              For mining, oil and gas, factory maintenance or energy-project spares, the first question is not the cheapest
-              airport-to-airport price. Confirm the deadline, aircraft fit, customs documents and final-site handover before
-              promising a {item.code} arrival plan.
+              对于矿业、油气、工厂维修或能源项目备件，首先要判断的不是最低机场到机场运价。承诺{item.code}到货方案前，应确认期限、机型适配、清关文件和最终现场交接。
             </p>
             <a
               href="/tools/africa-urgent-spare-parts-route-risk-checklist/"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
             >
-              Check {item.code} urgent spare-parts route risk
+              核对{item.code}紧急备件路线风险
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1479,28 +1477,26 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       {isSouthAfricaCoastalRoute && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">CPT/DUR route decision</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">CPT/DUR路线判断</p>
           <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-            Check South Africa coastal customs and final-site fit before routing via JNB.
+            经 JNB 转运前，先核对南非沿海清关与最终交付条件。
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            For Cape Town or Durban marine, port, factory and industrial spares, the route decision is not only
-            HAK/JNB capacity or the lowest airport code. Compare SARS document readiness, ITAC or NRCS risk,
-            coastal final delivery and whether JNB adds avoidable inland time.
+            对于开普敦或德班的海事、港口、工厂及工业备件，路线判断不能只看HAK/JNB运力或最低机场运价。还应比较SARS文件准备情况、ITAC或NRCS风险、沿海最终交付条件，以及经JNB是否会增加不必要的内陆运输时间。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/insights/south-africa-cpt-dur-sars-invoice-itac-nrcs-air-freight-clearance/"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
             >
-              Read the CPT/DUR customs document check
+              查看CPT/DUR清关文件核对
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="/insights/south-africa-cpt-dur-port-marine-equipment-air-freight/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
-              Review CPT/DUR port and marine spares
+              查看CPT/DUR港口及海事备件路线
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1517,28 +1513,26 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       {isNigeriaRoute && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Nigeria route decision</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">尼日利亚路线判断</p>
           <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-            Separate Lagos import demand from PHC oil-and-gas final-site risk.
+            区分拉各斯进口需求与 PHC 油气项目的现场交付风险。
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Nigeria heavy cargo can look like a simple LOS rate request, but oil and gas spares often need a PHC or
-            Port Harcourt delivery decision, importer document discipline, and a clear handover boundary before booking.
-            Treat Form M, PAAR, SONCAP, B&apos;Odogwu data and final-site urgency as part of the route plan.
+            尼日利亚重货可能看似只是询问LOS运价，但油气备件往往需要先判断是否应经PHC或送往哈科特港，并在订舱前明确进口商资料要求和交接范围。路线方案还应考虑Form M、PAAR、SONCAP、B&apos;Odogwu资料及最终现场的时限要求。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/insights/nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance/"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
             >
-              Check PHC oil and gas spares documents
+              核对PHC油气备件清关资料
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/"
+              href="/insights/nigeria-los-soncap-formm-paar-air-freight/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
-              Review B&apos;Odogwu, Form M and PAAR risk
+              核对SONCAP、Form M、PAAR及NSW准备情况
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1555,36 +1549,33 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       {isNboRoute && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">NBO gateway decision</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">NBO枢纽路线判断</p>
           <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-            Treat Nairobi as an East Africa route decision, not only a Kenya airport rate.
+            将内罗毕作为东非路线节点评估，不只比较肯尼亚机场价格。
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            JKIA modernisation and the public CAN-NBO freighter signal keep NBO visible as a regional air-cargo hub, but
-            each China-origin project shipment still needs a capacity, document and handover check. Separate Kenya
-            clearance from East Africa onward delivery, and confirm PVoC, IDF, importer readiness and final-site
-            responsibility before booking.
+            JKIA现代化规划及公开的CAN-NBO全货机线索，使NBO值得作为区域货运枢纽继续评估；但每票中国起运项目货仍需核实运力、文件和交接。订舱前应区分肯尼亚清关与东非后续交付，并确认PVoC、IDF、进口商准备情况和最终现场责任。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/insights/guangzhou-nairobi-freighter-can-nbo-east-africa-air-cargo/"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
             >
-              Check CAN-NBO freighter signal
+              核实CAN-NBO全货机线索
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="/insights/kenya-nbo-pvoc-idf-air-freight-documents/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
-              Check NBO PVoC and IDF documents
+              核对NBO的PVoC与IDF资料
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="/insights/east-africa-nbo-ebb-dar-project-cargo/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
-              Compare NBO, EBB and DAR project cargo
+              比较NBO、EBB与DAR项目货路线
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1633,28 +1624,26 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       {isAddRouteProgramDestination && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">ADD route program decision</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">ADD路线方案判断</p>
           <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-            Compare ET/ADD transit only when the full route beats a normal {item.code} quote.
+            只有全程方案更合适时，才比较 ET/ADD 中转与常规 {item.code} 路线。
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Ethiopian&apos;s China-Africa cargo focus makes ADD worth screening for some Africa shipments, but a lower
-            transit price is not enough. Check origin repositioning, ADD second-leg acceptance, destination documents and
-            the {item.code} final handover before choosing the program route.
+            Ethiopian的中非货运布局使ADD值得纳入部分非洲货物的路线筛选，但中转价格较低并不足以决定方案。选择该路线前，核实起运地调整、ADD第二程接收、目的地文件及{item.code}最终交接安排。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/route-programs/et-asia-africa-via-add/"
               className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
             >
-              Compare ET/ADD route program for {item.code}
+              比较{item.code}的ET/ADD路线方案
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="/insights/ethiopian-airlines-africa-special-rates-acc-bko-oua-hre-lun-nim-cky/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
             >
-              Read the ET/ADD Africa air freight guide
+              查看ET/ADD非洲空运指南
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1675,14 +1664,14 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">
-                  China origins to {item.code}
+                  中国起运口岸至{item.code}
                 </p>
                 <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">{originStrategy.heading}</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">{originStrategy.intro}</p>
               </div>
               {currentSlug === 'lbv' && (
                 <article className="mt-10 max-w-4xl border-l-4 border-amberGold bg-white p-6 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">LBV long-cargo answer</p>
+                  <p className="text-sm font-semibold uppercase tracking-wider text-amberGold">LBV长货路线判断</p>
                   <h3 className="mt-2 text-2xl font-bold text-slate-950">
                     6-8米超长货能否空运到LBV，先用实际包装尺寸逐段验收。
                   </h3>
@@ -1722,20 +1711,18 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
           {currentSlug === 'jnb' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">HAK/JNB capacity signal</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">HAK/JNB运力线索</p>
               <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-                Compare Haikou-Johannesburg capacity before locking a South Africa project-cargo route.
+                确认南非项目货路线前，先核实海口至约翰内斯堡的运力信息。
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                For South Africa mining, automotive, electronics, pharma or industrial spares, the useful question is not
-                only whether JNB has a flight. Check whether the cargo can use the HAK/JNB freighter signal, whether
-                LGG/BRU remains safer for oversized pieces, and who owns the JNB customs and final-site handover.
+                对于南非矿业、汽车、电子、医药或工业备件，关键不只是确认是否有飞往JNB的航班。还需核实货物能否使用HAK/JNB全货机线索、超大件是否仍应评估LGG/BRU，以及由谁负责JNB清关和最终现场交接。
               </p>
               <a
                 href="/insights/haikou-johannesburg-freighter-china-africa-project-cargo/"
                 className="mt-8 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
               >
-                Read the HAK-JNB project-cargo route check
+                查看HAK-JNB项目货路线核对
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
@@ -1751,28 +1738,26 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
           {currentSlug === 'fbm' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FBM handover decision</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FBM交接范围判断</p>
               <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-                Separate the airport leg from Copperbelt mine-site delivery before quoting.
+                报价前先区分 FBM 机场段与铜带矿区现场交付。
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                A useful FBM quote must say where responsibility ends. Airport-to-airport, FBM airport pickup, customs-assisted
-                release and mine-site handover are different products. For shutdown spares, ask for the final mine or plant,
-                importer and broker readiness, unloading equipment and deadline before chasing a low airport rate.
+                有效的FBM报价必须说明责任止于何处。机场到机场、FBM机场提货、协助清关放货和矿区现场交接属于不同服务范围。对于停机检修备件，应先了解最终矿区或工厂、进口商和代理准备情况、卸货设备及期限，再比较机场运价。
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="/insights/fbm-copperbelt-mining-equipment-air-freight/"
                   className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
                 >
-                  Read FBM Copperbelt mining cargo guide
+                  查看FBM铜带矿业货物指南
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="/insights/drc-fih-dgda-guice-occ-air-freight-clearance/"
                   className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
                 >
-                  Check DRC GUICE and OCC/BIVAC documents
+                  核对刚果（金）GUICE与OCC/BIVAC资料
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
@@ -1789,28 +1774,26 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
           {currentSlug === 'lun' && <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">LUN or NLA gateway decision</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">LUN或NLA入境点判断</p>
               <h2 className="text-3xl font-bold text-slate-950 md:text-4xl">
-                Match the Zambia entry airport to the final site, not the cheapest airport rate.
+                按最终地点选择赞比亚入境机场，不只比较最低机场运价。
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                LUN and NLA serve different project geographies. A nationwide China-origin quote should compare cargo fit,
-                current connection acceptance, ZRA data readiness, airport handover and the truck or site-delivery boundary
-                before choosing Lusaka or Ndola.
+                LUN和NLA对应不同的项目区域。中国全国集货报价应先比较货物适配、当前中转接收、ZRA资料准备、机场交接以及卡车或现场交付范围，再选择卢萨卡或恩多拉。
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="/insights/zambia-lun-zra-asycuda-zcsa-air-freight-clearance/"
                   className="inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
                 >
-                  Review LUN customs documents
+                  核对LUN清关文件
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/"
                   className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:border-amberGold hover:text-amberGold"
                 >
-                  Compare NLA Copperbelt entry
+                  比较NLA铜带矿区入境方案
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
@@ -1820,7 +1803,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                     <h3 className="font-semibold text-slate-950">{row.gateway}</h3>
                     <div>
                       <p className="leading-7 text-slate-700">{row.finalSite}</p>
-                      <p className="mt-2 text-sm leading-6 text-slate-500"><strong>Verify:</strong> {row.verify}</p>
+                      <p className="mt-2 text-sm leading-6 text-slate-500"><strong>核实：</strong>{row.verify}</p>
                     </div>
                   </div>
                 ))}
@@ -1839,11 +1822,10 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           {officialFacts && <section className="bg-slate-950 py-20 text-white">
             <div className="mx-auto max-w-6xl px-6">
               <div className="max-w-4xl">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Source research</p>
-                <h2 className="text-3xl font-bold md:text-4xl">{item.code} facts used in this route assessment.</h2>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">资料来源与核验范围</p>
+                <h2 className="text-3xl font-bold md:text-4xl">本路线评估采用的 {item.code} 资料</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
-                  These sources support airport, customs and network facts. They do not guarantee today&apos;s flight,
-                  allocation, rate, clearance time or truck acceptance; EASCargo reconfirms those items shipment by shipment.
+                  这些来源用于支持机场、清关及网络信息，不代表对当前航班、舱位、运价、清关时间或卡车接收作出保证；EASCargo会按具体货物逐票重新确认。
                 </p>
               </div>
               <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
@@ -1870,13 +1852,13 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         <section className="border-y border-slate-200 bg-white py-20">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mb-10 max-w-4xl">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Priority route analysis</p>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">重点路线分析</p>
               <h2 className="text-3xl font-bold md:text-4xl">{deepDive.heading}</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">{deepDive.intro}</p>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               <div className="rounded-xl border border-slate-200 p-6">
-                <h3 className="mb-4 text-xl font-semibold">Best-fit scenarios</h3>
+                <h3 className="mb-4 text-xl font-semibold">适用场景</h3>
                 <div className="space-y-3">
                   {deepDive.scenarios.map((scenario) => (
                     <div key={scenario} className="flex gap-3 text-slate-600">
@@ -1887,7 +1869,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 </div>
               </div>
               <div className="rounded-xl border border-slate-200 p-6">
-                <h3 className="mb-4 text-xl font-semibold">Common risk points</h3>
+                <h3 className="mb-4 text-xl font-semibold">常见风险点</h3>
                 <div className="space-y-3">
                   {deepDive.risks.map((risk) => (
                     <div key={risk} className="flex gap-3 text-slate-600">
@@ -1898,7 +1880,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
                 </div>
               </div>
               <div className="rounded-xl bg-slate-950 p-6 text-white">
-                <h3 className="mb-4 text-xl font-semibold text-amberGold">How we explain it to buyers</h3>
+                <h3 className="mb-4 text-xl font-semibold text-amberGold">向客户说明路线方案</h3>
                 <p className="leading-8 text-slate-300">{deepDive.salesAngle}</p>
               </div>
             </div>
@@ -1909,11 +1891,10 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       <section className="bg-slate-950 py-20 text-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Quote checklist</p>
-            <h2 className="text-3xl font-bold md:text-4xl">Send these details before asking for a {item.code} rate.</h2>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">询价资料清单</p>
+            <h2 className="text-3xl font-bold md:text-4xl">询价 {item.code} 航线前，请提供这些资料</h2>
             <p className="mt-5 text-lg leading-8 text-slate-300">
-              For oversized air cargo, a low quote without these details is usually not a real solution.
-              This checklist helps us judge whether the cargo can be loaded, transferred, cleared and delivered.
+              超大件空运若缺少这些资料，低价报价通常无法说明完整方案。该清单用于判断货物能否装载、中转、清关和交付。
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -1928,8 +1909,8 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10 max-w-3xl">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">FAQ</p>
-          <h2 className="text-3xl font-bold md:text-4xl">Common questions about China to {item.code} air freight.</h2>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">常见问题</p>
+          <h2 className="text-3xl font-bold md:text-4xl">中国到 {item.code} 空运常见问题</h2>
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           {faq.map((entry) => (
@@ -1944,8 +1925,8 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
       <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-8 max-w-3xl">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">Related destinations</p>
-            <h2 className="text-3xl font-bold md:text-4xl">Other Africa project cargo routes to compare.</h2>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-amberGold">相关目的地</p>
+            <h2 className="text-3xl font-bold md:text-4xl">可比较的其他非洲项目货路线</h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {relatedPages.map(([slug, page]) => (
@@ -1972,7 +1953,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             name: item.title,
             provider: { '@type': 'Organization', '@id': 'https://www.eascargo.com/#organization', name: 'EASCARGO', url: 'https://www.eascargo.com' },
             areaServed: item.country,
-            serviceType: 'Oversized air freight and project cargo routing',
+            serviceType: '超大件空运及项目货路线规划',
             description: item.description,
             url: `https://www.eascargo.com/africa-air-freight/${currentSlug}/`,
             ...(coreRouteModifiedDates[currentSlug]
@@ -1995,7 +1976,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'EASCargo', item: 'https://www.eascargo.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Africa air freight', item: 'https://www.eascargo.com/africa-air-freight/' },
+              { '@type': 'ListItem', position: 2, name: '非洲空运', item: 'https://www.eascargo.com/africa-air-freight/' },
               {
                 '@type': 'ListItem',
                 position: 3,

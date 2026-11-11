@@ -50,12 +50,12 @@ const relatedLinks = [
   },
   {
     title: '埃及 ACI / CargoX',
-    href: '/insights/egypt-cai-nafeza-aci-cargox-air-freight-clearance/',
+    href: '/insights/egypt-cai-nafeza-aci-cargox-goeic-air-freight-clearance/',
     note: 'CAI 空运要提前对齐 ACID、NAFEZA 和 CargoX。',
   },
   {
-    title: '尼日利亚 B’Odogwu / Form M',
-    href: '/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/',
+    title: '尼日利亚 SONCAP / Form M / B’Odogwu',
+    href: '/insights/nigeria-los-soncap-formm-paar-air-freight/',
     note: 'LOS/PHC 文件链决定真实到港成本和机场放行。',
   },
   {
@@ -300,7 +300,7 @@ export default function AfricaAirFreightCustomsDocumentChecklistPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-14 sm:px-6 lg:px-8">
-        <h2 className="text-xl font-black">Official reference entry points</h2>
+        <h2 className="text-xl font-black">官方资料入口</h2>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
           {sourceLinks.map((item) => (
             <a

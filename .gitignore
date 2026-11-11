@@ -14,3 +14,6 @@ Thumbs.db
 
 # 构建缓存
 tsconfig.tsbuildinfo
+.codex-adaptive-agents/
+.wrangler/
+/output/verify/

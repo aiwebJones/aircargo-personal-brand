@@ -7,6 +7,8 @@ const LEGACY_REDIRECTS = new Map([
   ['/answer-engine/', '/insights/eascargo-answer-engine-profile/'],
   ['/answer-engine-profile.json/', '/insights/eascargo-answer-engine-profile.json'],
   ['/insights/africa-oil-gas-equipment-air-freight/', '/insights/nigeria-phc-oil-gas-spares-soncap-nsw-air-freight-clearance/'],
+  ['/insights/egypt-cai-nafeza-aci-cargox-air-freight-clearance/', '/insights/egypt-cai-nafeza-aci-cargox-goeic-air-freight-clearance/'],
+  ['/insights/nigeria-los-bodogwu-form-m-paar-air-freight-clearance/', '/insights/nigeria-los-soncap-formm-paar-air-freight/'],
   ['/insights/africa-project-cargo-air-freight-rfq-checklist/', '/insights/oversized-air-freight-quote-checklist/'],
   ['/en/africa-mining-spares-air-freight/', '/en/africa-oversized-air-freight/'],
 ])
