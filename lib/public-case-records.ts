@@ -27,8 +27,8 @@ export type PublicCaseRecord = {
 export const publicCaseRecords: PublicCaseRecord[] = [
   {
     id: 'lbv-8m-via-europe',
-    statusZh: '已完成非洲项目',
-    statusEn: 'Completed Africa project',
+    statusZh: '路线评估记录',
+    statusEn: 'Route assessment record',
     titleZh: 'LBV 8米长项目货：经 LGG/BRU 衔接 B747F',
     titleEn: '8-meter project cargo to LBV via LGG/BRU and B747F',
     route: 'China -> LGG / BRU -> LBV',

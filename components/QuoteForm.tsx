@@ -41,12 +41,19 @@ const initialFormData: QuoteFormData = {
 const inputClassName =
   'mt-2 h-12 w-full rounded-md border border-slate-300 bg-white px-4 text-base text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-amberGold focus:ring-2 focus:ring-amberGold/20 disabled:bg-slate-100'
 
+type RoutePrefillField = 'origin' | 'destination' | 'cargoType' | 'notes'
+type RoutePrefillValues = Partial<Record<RoutePrefillField, string>>
+
 export default function QuoteForm({ compact = false, lang = 'zh' }: { compact?: boolean; lang?: 'zh' | 'en' }) {
   const [formData, setFormData] = useState<QuoteFormData>(initialFormData)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
   const [showContact, setShowContact] = useState(false)
   const contactRef = useRef<HTMLInputElement>(null)
+  const latestFormDataRef = useRef(formData)
+  const editedFieldsRef = useRef(new Set<keyof QuoteFormData>())
+  const autoPrefillRef = useRef<RoutePrefillValues>({})
+  const previousLangRef = useRef(lang)
   const zh = lang === 'zh'
 
   useEffect(() => {
@@ -54,23 +61,57 @@ export default function QuoteForm({ compact = false, lang = 'zh' }: { compact?: 
   }, [showContact])
 
   useEffect(() => {
+    const previousLang = previousLangRef.current
+    previousLangRef.current = lang
+
+    if (lang === 'en') {
+      if (previousLang === 'zh') {
+        const next = { ...latestFormDataRef.current }
+        for (const [field, value] of Object.entries(autoPrefillRef.current) as [RoutePrefillField, string][]) {
+          if (!editedFieldsRef.current.has(field) && next[field] === value) next[field] = ''
+        }
+        autoPrefillRef.current = {}
+        latestFormDataRef.current = next
+        setFormData(next)
+      }
+      return
+    }
+
     const prefill = getRouteRfqPrefill(captureAttribution())
     if (!prefill) return
 
-    setFormData((current) => ({
-      ...current,
-      origin: current.origin || prefill.origin || current.origin,
-      destination: current.destination || prefill.destination,
-      cargoType: current.cargoType === initialFormData.cargoType ? prefill.cargoType : current.cargoType,
-      notes: current.notes || prefill.notes,
-    }))
-  }, [])
+    const next = { ...latestFormDataRef.current }
+    const applied: RoutePrefillValues = {}
+    if (!editedFieldsRef.current.has('origin') && !next.origin && prefill.origin) {
+      next.origin = prefill.origin
+      applied.origin = prefill.origin
+    }
+    if (!editedFieldsRef.current.has('destination') && !next.destination) {
+      next.destination = prefill.destination
+      applied.destination = prefill.destination
+    }
+    if (!editedFieldsRef.current.has('cargoType') && next.cargoType === initialFormData.cargoType) {
+      next.cargoType = prefill.cargoType
+      applied.cargoType = prefill.cargoType
+    }
+    if (!editedFieldsRef.current.has('notes') && !next.notes) {
+      next.notes = prefill.notes
+      applied.notes = prefill.notes
+    }
+    autoPrefillRef.current = applied
+    latestFormDataRef.current = next
+    setFormData(next)
+  }, [lang])
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = event.target
-    setFormData((current) => ({ ...current, [name]: value }))
+    const key = name as keyof QuoteFormData
+    editedFieldsRef.current.add(key)
+    const next = { ...latestFormDataRef.current, [key]: value }
+    latestFormDataRef.current = next
+    setFormData(next)
   }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -159,6 +200,7 @@ export default function QuoteForm({ compact = false, lang = 'zh' }: { compact?: 
             </label>
             <label className="min-w-0 text-sm font-medium">{zh ? '货物类型' : 'Cargo type'}
               <select name="cargoType" className={fieldClass} value={formData.cargoType} onChange={handleChange}>
+                {formData.cargoType === '' && <option value="">{zh ? '请选择货物类型' : 'Select cargo type'}</option>}
                 <option value="超大件/项目货">{zh ? '大件项目货' : 'Oversized'}</option>
                 <option value="普通工业货">{zh ? '普通货物' : 'General'}</option>
                 <option value="矿业/油气/能源急件">{zh ? '工业急件' : 'Urgent'}</option>
@@ -318,6 +360,7 @@ export default function QuoteForm({ compact = false, lang = 'zh' }: { compact?: 
             required
             disabled={isSubmitting}
           >
+            {formData.cargoType === '' && <option value="">请选择货物类型</option>}
             <option>超大件/项目货</option>
             <option>矿业/油气/能源急件</option>
             <option>普通工业货</option>

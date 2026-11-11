@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import { ArrowRight, CheckCircle2, FileCheck2, Globe2, Plane, Truck } from 'lucide-react'
+import type { ReactNode } from 'react'
+import { ArrowRight, CheckCircle2, ChevronDown, FileCheck2, Globe2, Plane, Truck } from 'lucide-react'
+import EascargoLogo from '@/components/EascargoLogo'
 
 const pages = {
   jnb: {
@@ -430,6 +432,90 @@ const pages = {
 }
 
 type Slug = keyof typeof pages
+
+type CoreRouteBrief = {
+  fields: string[]
+  links: Array<{ href: string; label: string }>
+  caseNote?: string
+}
+
+const coreRouteBriefs: Partial<Record<Slug, CoreRouteBrief>> = {
+  jnb: {
+    fields: [
+      '实际货物所在地、起运城市及货好日期',
+      '件数、每件包装尺寸与毛重',
+      '进口商或清关代理、HS Code资料',
+      'JNB机场提货或最终城市/现场及交接范围',
+    ],
+    links: [
+      { href: '/tools/air-freight-chargeable-weight-calculator/', label: '核对计费重量' },
+      { href: '/tools/africa-air-freight-customs-document-checklist/', label: '查看非洲空运单证清单' },
+    ],
+  },
+  fbm: {
+    fields: [
+      '最终城市、矿区/工厂地址与交付期限',
+      '每件尺寸、毛重、吊点及包装照片情况',
+      '进口商、清关代理、HS Code与法文品名',
+      'FBM卸货工具、卡车通道与报价责任终点',
+    ],
+    links: [
+      { href: '/tools/africa-air-freight-customs-document-checklist/', label: '查看非洲空运单证清单' },
+      { href: '/tools/africa-urgent-spare-parts-route-risk-checklist/', label: '核对紧急备件路线风险' },
+    ],
+  },
+  lun: {
+    fields: [
+      '最终城市、矿区/工厂或项目现场',
+      '是否已有偏好LUN或NLA，或需协助比较',
+      '件数、单件尺寸重量及货好日期',
+      '进口商/清关代理、单证状态与交付范围',
+    ],
+    links: [
+      { href: '/insights/ndola-nla-zra-asycuda-aci-copperbelt-mining-air-freight-clearance/', label: '比较NLA与铜带交付资料' },
+      { href: '/tools/air-freight-chargeable-weight-calculator/', label: '核对计费重量' },
+    ],
+  },
+  lbv: {
+    fields: [
+      '每件包装长宽高与毛重',
+      '装载方向、吊点、已知重心及箱体情况',
+      '收货人/代理准备状态与可用卸货条件',
+      'LBV机场提货或加蓬最终城市/现场交付',
+    ],
+    links: [
+      { href: '/cases/#lbv-8m-via-europe', label: '查看LBV约8米路线评估记录' },
+      { href: '/tools/air-freight-chargeable-weight-calculator/', label: '核对计费重量' },
+    ],
+    caseNote: '匿名路线评估：约8米单件，经LGG/BRU衔接至LBV。需逐段确认装载、中转接收和目的地卸货；不代表当前舱位、运价或交付承诺。',
+  },
+  abj: {
+    fields: [
+      'ABJ机场、阿比让交付或其他最终城市/现场',
+      '进口商、清关代理及GUCE / FDI状态',
+      '法文品名、HS Code、发票与装箱单资料',
+      '件数、单件尺寸重量及卸货条件',
+    ],
+    links: [
+      { href: '/insights/cote-divoire-abj-guce-fdi-sydam-air-freight-clearance/', label: '核对ABJ单证状态' },
+      { href: '/tools/africa-air-freight-customs-document-checklist/', label: '查看非洲空运单证清单' },
+    ],
+  },
+}
+
+function RouteSupplement({ enabled, children }: { enabled: boolean; children: ReactNode }) {
+  if (!enabled) return <>{children}</>
+
+  return (
+    <details id="route-supplement" data-testid="route-supplement" className="border-y border-slate-200 bg-slate-50">
+      <summary data-testid="route-supplement-toggle" className="mx-auto flex max-w-6xl cursor-pointer list-none items-center justify-between gap-4 px-6 py-6 font-semibold text-slate-900 marker:hidden">
+        <span>展开路线背景、操作细节与常见问题</span>
+        <ChevronDown className="h-4 w-4 shrink-0 text-slate-500" aria-hidden="true" />
+      </summary>
+      <div>{children}</div>
+    </details>
+  )
+}
 type DeepDive = {
   heading: string
   intro: string
@@ -912,10 +998,11 @@ const lunGatewayDecisionRows = [
 ]
 
 const coreRouteModifiedDates: Partial<Record<Slug, string>> = {
-  jnb: '2026-09-21',
-  fbm: '2026-09-17',
-  lun: '2026-09-23',
-  lbv: '2026-07-25',
+  jnb: '2026-11-12',
+  fbm: '2026-11-12',
+  lun: '2026-11-12',
+  lbv: '2026-11-12',
+  abj: '2026-11-12',
   nbo: '2026-08-02',
   bko: '2026-07-19',
   cky: '2026-07-19',
@@ -1286,6 +1373,7 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
   const faq = getFaq(item)
   const deepDive = deepDives[currentSlug]
   const originStrategy = originStrategies[currentSlug]
+  const coreRouteBrief = coreRouteBriefs[currentSlug]
   const isSouthAfricaCoastalRoute = currentSlug === 'cpt' || currentSlug === 'dur'
   const isNigeriaRoute = currentSlug === 'los'
   const isNboRoute = currentSlug === 'nbo'
@@ -1304,36 +1392,53 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
 
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <section className="bg-slate-950 px-6 py-24 text-white">
+      {coreRouteBrief && (
+        <div className="border-b border-slate-200 bg-white">
+          <div className="mx-auto max-w-6xl px-6 py-3">
+            <a href="/" aria-label="EASCARGO 首页" className="inline-flex min-h-9 items-center">
+              <EascargoLogo markClassName="h-7 w-7" wordmarkClassName="text-sm" />
+            </a>
+          </div>
+        </div>
+      )}
+      <section className={`bg-slate-950 px-6 text-white ${coreRouteBrief ? 'py-16 md:py-20' : 'py-24'}`}>
         <div className="mx-auto max-w-6xl">
           <a
             href={currentSlug === 'jnb' ? '/en/africa-air-freight/jnb/' : '/en/africa-oversized-air-freight/'}
             className="mb-10 inline-flex text-sm font-semibold text-amberGold"
           >
-            {currentSlug === 'jnb' ? 'English版JNB路线' : 'English版：非洲超大件空运'}
+            {coreRouteBrief ? '英文版' : currentSlug === 'jnb' ? 'English版JNB路线' : 'English版：非洲超大件空运'}
           </a>
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amberGold/40 bg-amberGold/10 px-4 py-2 text-sm font-semibold text-amberGold">
               <Plane className="h-4 w-4" />
               {chinese ? `${item.code} - ${chinese.city}，${chinese.country}` : `${item.code} - ${item.city}, ${item.country}`}
             </div>
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              {chinese
+            <h1 className={`font-bold leading-tight ${coreRouteBrief ? 'text-3xl md:text-5xl' : 'text-4xl md:text-6xl'}`}>
+              {coreRouteBrief && chinese
+                ? `中国到${chinese.city}（${item.code}）空运`
+                : chinese
                 ? currentSlug === 'jnb'
                   ? `中国各大口岸到 ${item.code} ${chinese.city} 空运`
                   : currentSlug === 'lbv'
                   ? `全国集货到 ${item.code} ${chinese.city} 空运`
                   : `中国到 ${item.code} ${chinese.city} 空运`
                 : item.title}
-              {chinese && <span className="block text-amberGold">{chinese.country}{chinese.city}项目货空运</span>}
+              {chinese && !coreRouteBrief && <span className="block text-amberGold">{chinese.country}{chinese.city}项目货空运</span>}
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               {chinese
                 ? currentSlug === 'jnb'
-                  ? '全国集货后比较PVG、CAN、SZX、HKG、HAK、FOC、XMN等出口枢纽。按每票货核实单件装载、中转接受、SARS清关和南非最终交付，不预设固定机场、航班或舱位。'
+                  ? '比较FOC / XMN本地起运与全国口岸集运；再确认JNB机场交接，还是继续到南非其他城市或项目现场。'
                   : currentSlug === 'fbm'
-                  ? '全国集货后比较本地起运、PVG/CAN/SZX/HKG等强出口口岸、LGG/BRU主甲板和非洲枢纽衔接。报价必须分清FBM机场段、刚果（金）清关、卢本巴希卸货，以及是否继续送至铜带矿区或工厂现场。'
-                  : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
+                  ? '先确认目的地是FBM机场，还是刚果（金）铜带矿区或工厂；卸货、清关与现场交接责任按票区分。'
+                  : currentSlug === 'lun'
+                    ? '按赞比亚最终城市或项目现场比较LUN与NLA；分别说明机场提货、清关协助和内陆交付范围。'
+                    : currentSlug === 'lbv'
+                      ? '公开的约8米LBV记录仅作路线评估参考。报价前需核对单件尺寸、装载条件、中转接收与LBV卸货。'
+                      : currentSlug === 'abj'
+                        ? '先确认进口商与清关代理资料状态、GUCE / FDI / SYDAM / e-DAU资料及最终科特迪瓦城市。'
+                        : `覆盖${chinese.country}大件项目货、矿业备件、工程设备和紧急空运。先判断尺寸重量、LGG/BRU欧洲中转、清关资料、机场操作和最终交付，再给可执行报价。`
                 : item.description}
             </p>
             <a
@@ -1351,6 +1456,35 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
         </div>
       </section>
 
+      {coreRouteBrief && (
+        <section id="core-route-brief" className="border-b border-slate-200 bg-white">
+          <div className="mx-auto max-w-6xl px-6 py-12">
+            <p className="text-sm font-semibold text-amber-700">{item.code} 询价准备</p>
+            <h2 className="mt-2 text-2xl font-bold text-slate-950">报价前先补充</h2>
+            <div className="mt-7 grid gap-8 border-y border-slate-200 py-6 md:grid-cols-[0.7fr_1.3fr]">
+              <h3 className="font-semibold text-slate-950">询价时请补充</h3>
+              <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                {coreRouteBrief.fields.map((field) => (
+                  <li key={field} className="border-l-2 border-amber-500 pl-3 text-sm leading-6 text-slate-700">{field}</li>
+                ))}
+              </ul>
+            </div>
+            {coreRouteBrief.caseNote && (
+              <p className="mt-5 max-w-4xl text-sm leading-6 text-slate-600">{coreRouteBrief.caseNote}</p>
+            )}
+            <nav aria-label={`${item.code}相关资料`} className="mt-5 flex flex-wrap gap-x-6 gap-y-3">
+              {coreRouteBrief.links.map((link) => (
+                <a key={link.href} href={link.href} className="inline-flex items-center gap-1 text-sm font-semibold text-amber-800 underline underline-offset-4 hover:text-slate-950">
+                  {link.label}<ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                </a>
+              ))}
+            </nav>
+          </div>
+        </section>
+      )}
+
+      <RouteSupplement enabled={Boolean(coreRouteBrief)}>
+      <>
       {currentSlug === 'jnb' && (
         <section className="border-b border-slate-200 bg-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -1365,10 +1499,10 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
               </p>
               <a
                 href="/tools/africa-project-cargo-rfq/?source=route&topic=jnb-foc"
-                className="mt-7 inline-flex items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-amberGold hover:text-slate-950"
+                className="mt-7 inline-flex items-center gap-1 text-sm font-semibold text-amber-800 underline underline-offset-4 hover:text-slate-950"
               >
                 提交FOC / JNB货物资料
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-3.5 w-3.5" />
               </a>
             </div>
             <div className="divide-y divide-slate-200 border-y border-slate-200">
@@ -1921,6 +2055,8 @@ export default function AfricaDestinationPage({ params }: { params: { slug: stri
           ))}
         </div>
       </section>
+      </>
+      </RouteSupplement>
 
       <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-6xl px-6">

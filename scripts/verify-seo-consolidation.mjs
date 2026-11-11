@@ -204,7 +204,7 @@ for (const slug of routeSlugs) {
     assert.match(text, /提交\s*JNB\s*货物资料，获取路线判断/, 'JNB route CTA is not Chinese')
     assert.ok(text.includes('货物能否从FOC福州空运到JNB约翰内斯堡？'), 'JNB FOC FAQ question missing')
     assert.ok(text.includes('先核实装载可行性，再讨论空运价格'), 'JNB FAQ answer is not Chinese')
-    assert.ok(text.includes('English版JNB路线'), 'JNB English-language switch was removed')
+    assert.ok(text.includes('英文版') && html.includes('href="/en/africa-air-freight/jnb/"'), 'JNB English-language switch was removed')
   } else {
     assert.match(text, new RegExp(`提交\\s*${slug.toUpperCase()}\\s*逐票询价`), `route ${slug} CTA is not Chinese`)
   }

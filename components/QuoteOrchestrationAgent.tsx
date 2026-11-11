@@ -18,7 +18,7 @@ import {
   Sparkles,
   X,
 } from 'lucide-react'
-import { buildThankYouUrl, captureAttribution, getRouteRfqPrefill } from '@/lib/attribution'
+import { buildThankYouUrl, captureAttribution, getRouteRfqPrefill, type RouteRfqPrefill } from '@/lib/attribution'
 import {
   buildQuoteAgentPlan,
   extractProjectFromBrief,
@@ -41,6 +41,16 @@ function formatNumber(value: number | null, suffix: string) {
   return `${new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2 }).format(value)} ${suffix}`
 }
 
+function applyRoutePrefill(project: QuoteAgentProject, prefill: RouteRfqPrefill): QuoteAgentProject {
+  return {
+    ...project,
+    origin: prefill.origin || '',
+    destination: prefill.destination,
+    cargoType: prefill.cargoType,
+    notes: prefill.notes,
+  }
+}
+
 export default function QuoteOrchestrationAgent() {
   const [project, setProject] = useState<QuoteAgentProject>(initialQuoteAgentProject)
   const [revision, setRevision] = useState(1)
@@ -60,27 +70,16 @@ export default function QuoteOrchestrationAgent() {
         const parsed = JSON.parse(stored) as { project?: QuoteAgentProject; revision?: number }
         if (parsed.project) {
           const nextProject = { ...initialQuoteAgentProject, ...parsed.project }
-          if (prefill) {
-            setProject({
-              ...nextProject,
-              origin: nextProject.origin || prefill.origin || nextProject.origin,
-              destination: nextProject.destination || prefill.destination,
-              cargoType: nextProject.cargoType === initialQuoteAgentProject.cargoType ? prefill.cargoType : nextProject.cargoType,
-              notes: nextProject.notes || prefill.notes,
-            })
-          } else {
-            setProject(nextProject)
-          }
+          const hasUserEdits = Number(parsed.revision) > 1 || (
+            parsed.revision == null && Object.entries(nextProject).some(([key, value]) =>
+              value !== initialQuoteAgentProject[key as keyof QuoteAgentProject],
+            )
+          )
+          setProject(prefill && !hasUserEdits ? applyRoutePrefill(nextProject, prefill) : nextProject)
         }
         if (parsed.revision) setRevision(parsed.revision)
       } else if (prefill) {
-        setProject({
-          ...initialQuoteAgentProject,
-          origin: prefill.origin || initialQuoteAgentProject.origin,
-          destination: prefill.destination,
-          cargoType: prefill.cargoType,
-          notes: prefill.notes,
-        })
+        setProject(applyRoutePrefill(initialQuoteAgentProject, prefill))
       }
       setSubmittedRunId(window.sessionStorage.getItem(SUBMITTED_RUN_KEY) || '')
     } catch {
@@ -258,12 +257,20 @@ export default function QuoteOrchestrationAgent() {
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          <TextField label="货物所在地 / 起运城市" value={project.origin} onChange={(value) => updateField('origin', value)} placeholder="上海、深圳、郑州、MLE、SIN..." />
-          <TextField label="目的机场 + 最终城市" value={project.destination} onChange={(value) => updateField('destination', value)} placeholder="JNB + 项目现场" />
+          <TextField testId="quote-agent-origin" label="货物所在地 / 起运城市" value={project.origin} onChange={(value) => updateField('origin', value)} placeholder="上海、深圳、郑州、MLE、SIN..." />
+          <TextField testId="quote-agent-destination" label="目的机场 + 最终城市" value={project.destination} onChange={(value) => updateField('destination', value)} placeholder="JNB + 项目现场" />
           <TextField label="具体品名" value={project.cargoName} onChange={(value) => updateField('cargoName', value)} placeholder="矿山电机、钻机部件、变压器..." />
           <label className="text-sm font-bold text-slate-700">
             货物类型
-            <select className={fieldClass} value={project.cargoType} onChange={(event) => updateField('cargoType', event.target.value)}>
+            <select
+              id="quote-agent-cargo-type"
+              name="cargoType"
+              data-testid="quote-agent-cargo-type"
+              className={fieldClass}
+              value={project.cargoType}
+              onChange={(event) => updateField('cargoType', event.target.value)}
+            >
+              {project.cargoType === '' && <option value="">请选择货物类型</option>}
               <option>超大件/项目货</option>
               <option>矿业/油气/能源急件</option>
               <option>普通工业货</option>
@@ -274,12 +281,12 @@ export default function QuoteOrchestrationAgent() {
             </select>
           </label>
           <TextField label="件数" value={project.pieces} onChange={(value) => updateField('pieces', value)} placeholder="3" inputMode="numeric" />
-          <TextField label="总毛重" value={project.grossWeight} onChange={(value) => updateField('grossWeight', value)} placeholder="4,850 kg" />
+          <TextField testId="quote-agent-gross-weight" label="总毛重" value={project.grossWeight} onChange={(value) => updateField('grossWeight', value)} placeholder="4,850 kg" />
         </div>
 
         <label className="mt-4 block text-sm font-bold text-slate-700">
           每件尺寸（长 × 宽 × 高）
-          <textarea className={`${fieldClass} min-h-24 py-3`} value={project.dimensions} onChange={(event) => updateField('dimensions', event.target.value)} placeholder="320 × 180 × 195 cm；如尺寸不同，请逐件列出并在备注说明" />
+          <textarea data-testid="quote-agent-dimensions" className={`${fieldClass} min-h-24 py-3`} value={project.dimensions} onChange={(event) => updateField('dimensions', event.target.value)} placeholder="320 × 180 × 195 cm；如尺寸不同，请逐件列出并在备注说明" />
         </label>
 
         <details className="mt-5 border-y border-slate-200 py-4">
@@ -297,7 +304,7 @@ export default function QuoteOrchestrationAgent() {
           </div>
           <label className="mt-4 block text-sm font-bold text-slate-700">
             包装、货物属性和最终交付要求
-            <textarea className={`${fieldClass} min-h-28 py-3`} value={project.notes} onChange={(event) => updateField('notes', event.target.value)} placeholder="木箱/裸装、是否可叠放、带电/危险品、是否需要清关、卡车和现场卸货..." />
+            <textarea data-testid="quote-agent-notes" className={`${fieldClass} min-h-28 py-3`} value={project.notes} onChange={(event) => updateField('notes', event.target.value)} placeholder="木箱/裸装、是否可叠放、带电/危险品、是否需要清关、卡车和现场卸货..." />
           </label>
         </details>
 
@@ -415,6 +422,7 @@ export default function QuoteOrchestrationAgent() {
 }
 
 function TextField({
+  testId,
   label,
   value,
   onChange,
@@ -423,6 +431,7 @@ function TextField({
   autoComplete,
   inputMode,
 }: {
+  testId?: string
   label: string
   value: string
   onChange: (value: string) => void
@@ -434,7 +443,7 @@ function TextField({
   return (
     <label className="text-sm font-bold text-slate-700">
       {label}
-      <input className={fieldClass} value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} type={type} autoComplete={autoComplete} inputMode={inputMode} />
+      <input data-testid={testId} className={fieldClass} value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} type={type} autoComplete={autoComplete} inputMode={inputMode} />
     </label>
   )
 }

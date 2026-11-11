@@ -22,7 +22,7 @@ export default function CasesPage() {
     url: pageUrl,
     description:
       'Public EASCargo records covering an 8-meter LBV project, a 16,730 kg single-piece loading operation and a 98.8-ton B777F single-flight operation.',
-    dateModified: '2026-07-17',
+    dateModified: '2026-11-12',
     publisher: {
       '@type': 'Organization',
       '@id': 'https://www.eascargo.com/#organization',
@@ -68,7 +68,7 @@ export default function CasesPage() {
             <p className="text-sm font-black text-amberGold">Public operation records</p>
             <h1 className="mt-4 text-4xl font-black leading-tight sm:text-6xl">大件空运公开项目记录</h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-              已完成非洲项目、历史特殊装载和历史全货机记录分开呈现。这里只写当前公开资料能支持的尺寸、重量、路线、判断动作和执行边界。
+              匿名路线评估记录、历史特殊装载和历史全货机记录分开呈现。这里只写公开资料能支持的尺寸、重量、路线难点与评估动作，不声称交付完成。
             </p>
           </div>
         </div>
@@ -77,8 +77,8 @@ export default function CasesPage() {
       <section className="border-b border-slate-200 bg-slate-50 py-12">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 sm:px-6 md:grid-cols-3 lg:px-8">
           <div>
-            <p className="text-sm font-black text-amber-700">已完成非洲项目</p>
-            <p className="mt-3 text-sm leading-7 text-slate-600">可说明具体货物、路线难点和执行结果，并链接完整复盘。</p>
+            <p className="text-sm font-black text-amber-700">匿名路线评估记录</p>
+            <p className="mt-3 text-sm leading-7 text-slate-600">可说明路线难点与评估动作，不声称交付完成或目的地现场交接。</p>
           </div>
           <div>
             <p className="text-sm font-black text-amber-700">历史装载记录</p>

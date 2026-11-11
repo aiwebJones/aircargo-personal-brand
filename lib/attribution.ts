@@ -99,38 +99,44 @@ export function getRouteRfqPrefill(attribution: Pick<MarketingAttribution, 'topi
 
   if (topic === 'jnb-foc') {
     return {
-      origin: 'FOC Fuzhou / Fujian factory area',
-      destination: 'JNB Johannesburg + final South Africa site',
-      cargoType: '矿业/油气/能源急件',
+      origin: '福州（FOC）/ 福建工厂周边',
+      destination: 'JNB 约翰内斯堡；最终南非城市或现场待补',
+      cargoType: '',
       notes:
-        'Route context: FOC/XMN local uplift versus trucking to PVG/CAN/SZX/HKG/HAK must be compared. Please add HS Code, packing photos, importer or clearing broker, SARS/ITAC/NRCS risk, and whether delivery ends at JNB airport or a project site.',
+        '路线背景：请补充实际货物所在地、单件尺寸重量、HS Code、进口商或清关代理，以及交付止于JNB机场还是继续到南非项目现场。FOC/XMN本地起运与国内集运口岸需按实际货物比较。',
     }
   }
 
   const routeTopics: Record<string, RouteRfqPrefill> = {
     jnb: {
-      destination: 'JNB Johannesburg + final South Africa site',
-      cargoType: '矿业/油气/能源急件',
+      destination: 'JNB 约翰内斯堡；最终南非城市或现场待补',
+      cargoType: '',
       notes:
-        'Route context: China origin to JNB project cargo. Please add origin city or airport, HS Code, importer or clearing broker, SARS/ITAC/NRCS risk, and whether delivery ends at JNB airport or a project site.',
+        '请补充货物所在地、单件尺寸重量、HS Code、进口商或清关代理，以及交付止于JNB机场还是继续到南非项目现场。FOC/XMN本地起运与全国集运口岸可按货物情况比较。',
     },
     fbm: {
-      destination: 'FBM Lubumbashi + Copperbelt mine or plant',
-      cargoType: '矿业/油气/能源急件',
+      destination: 'FBM 卢本巴希；最终城市、矿区或工厂待补',
+      cargoType: '',
       notes:
-        'Route context: FBM mining-spares cargo. Please add final mine or plant, downtime deadline, single-piece dimensions, unloading conditions, importer and clearing broker, HS Code/French cargo description, GUICE/OCC-BIVAC risk, and whether the quote ends at airport or includes mine-site handover.',
+        '请补充最终城市或矿区/工厂、交付期限、单件尺寸重量、卸货条件、进口商与清关代理、HS Code及法文品名，并说明报价止于FBM机场还是包含现场交接。',
     },
     lun: {
-      destination: 'LUN Lusaka or NLA Ndola + final Zambia site',
-      cargoType: '超大件/项目货',
+      destination: 'LUN 卢萨卡或 NLA 恩多拉；最终赞比亚地点待补',
+      cargoType: '',
       notes:
-        'Route context: Zambia project cargo. Please add final site, whether LUN or NLA should be screened, pieces and per-piece dimensions/weight, cargo-ready date, importer or clearing broker, ZRA/ASYCUDA data readiness, truck access/unloading, latest site-arrival date, and airport-versus-site delivery boundary.',
+        '请补充赞比亚最终城市或现场、是否比较LUN与NLA、件数及单件尺寸重量、货好日期、进口商或清关代理、单证准备情况、卡车进场/卸货条件，并说明机场或现场交付范围。',
     },
     lbv: {
-      destination: 'LBV Libreville + final Gabon project site',
-      cargoType: '超大件/项目货',
+      destination: 'LBV 利伯维尔；最终加蓬城市或现场待补',
+      cargoType: '',
       notes:
-        'Route context: LBV long or oversized cargo. Please add per-piece dimensions, gross weight, loading direction, lifting points, center of gravity if known, consignee readiness, and airport-versus-site delivery boundary.',
+        '请补充每件包装尺寸与毛重、装载方向、吊点及已知重心、收货人准备情况，并说明交付止于LBV机场还是继续到项目现场。历史约8米路线记录仅供参考，不代表本票已获接收。',
+    },
+    abj: {
+      destination: 'ABJ 阿比让；最终科特迪瓦城市或现场待补',
+      cargoType: '',
+      notes:
+        '请补充最终城市或现场、法文货物描述、HS Code、进口商与清关代理，以及GUCE、FDI、SYDAM/e-DAU相关资料的当前准备状态；同时说明交付止于ABJ机场还是继续到现场。',
     },
   }
 
