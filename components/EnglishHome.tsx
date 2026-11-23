@@ -52,7 +52,8 @@ export default function EnglishHome() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#quote" className="inline-flex min-h-12 items-center gap-2 rounded-md bg-emerald-800 px-6 font-semibold text-white hover:bg-emerald-900">Get a quote <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></a>
-                <a href="https://wa.me/8613816539222" target="_blank" rel="noopener noreferrer" data-conversion="whatsapp-hero" className="inline-flex min-h-12 items-center gap-2 rounded-md border border-zinc-300 px-6 font-semibold hover:border-emerald-700 hover:text-emerald-800"><MessageCircle className="h-4 w-4" aria-hidden="true" />WhatsApp us</a>
+                <a href="mailto:globegsa@gmail.com" data-conversion="email-hero" className="inline-flex min-h-12 items-center gap-2 rounded-md border border-zinc-300 px-6 font-semibold hover:border-emerald-700 hover:text-emerald-800"><Mail className="h-4 w-4" aria-hidden="true" />Email globegsa@gmail.com</a>
+                <span className="inline-flex min-h-12 items-center gap-2 rounded-md border border-zinc-300 px-6 font-semibold"><MessageCircle className="h-4 w-4" aria-hidden="true" />WeChat ID: jnb931</span>
               </div>
             </div>
             <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-6">
@@ -120,8 +121,8 @@ export default function EnglishHome() {
         <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-4 text-sm">
             <span className="font-semibold">Contact EASCARGO</span>
-            <a href="https://wa.me/8613816539222" target="_blank" rel="noopener noreferrer" data-conversion="whatsapp-footer" className="inline-flex min-h-10 items-center gap-2 hover:text-emerald-700"><MessageCircle className="h-4 w-4" aria-hidden="true" />WhatsApp +86 138 1653 9222</a>
-            <a href="mailto:quote@eascargo.com" className="inline-flex min-h-10 items-center gap-2 hover:text-emerald-700"><Mail className="h-4 w-4" aria-hidden="true" />quote@eascargo.com</a>
+            <span className="inline-flex min-h-10 items-center gap-2"><MessageCircle className="h-4 w-4" aria-hidden="true" />WeChat ID: jnb931</span>
+            <a href="mailto:globegsa@gmail.com" data-conversion="email-footer" className="inline-flex min-h-10 items-center gap-2 hover:text-emerald-700"><Mail className="h-4 w-4" aria-hidden="true" />globegsa@gmail.com</a>
             <span className="inline-flex min-h-10 items-center gap-2 text-zinc-600"><Globe className="h-4 w-4" aria-hidden="true" />Shanghai, China</span>
           </div>
           <nav aria-label="Resources and tools" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-zinc-200 pt-6 text-xs text-zinc-600">
